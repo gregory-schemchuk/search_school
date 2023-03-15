@@ -1,151 +1,783 @@
-<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Badtitle page-Служебная_Недопустимое_название rootpage-Служебная_Недопустимое_название skin-vector action-view"><div class="noprint" id="mw-page-base"></div>
-<div class="noprint" id="mw-head-base"></div>
-<div class="mw-body" id="content" role="main">
-<a id="top"></a>
-<div id="siteNotice"><!-- CentralNotice --></div>
-<div class="mw-indicators">
+<body itemscope="" itemtype="http://schema.org/WebPage" onload="">
+<script type="text/javascript">
+      var yaParams = {'Логин': 'Гость'};
+      var userName = 'Гость';
+    </script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  </script>
+<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<script type="text/javascript">
+    try {
+        var yaCounter22692712 = new Ya.Metrika({
+            id:22692712,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    } catch(e) { }
+    </script>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/22692712" style="position:absolute; left:-9999px;"/></div></noscript>
+<header class="cf" id="header"><div class="wrapper cf"><a class="header-logo" href="/"></a><nav class="header-nav"><a href="/discussions/" onclick="yaCounter22692712.reachGoal('clickDiscussion'); return true;">Обсуждения</a><a href="/books/popular/" onclick="yaCounter22692712.reachGoal('clickBooks');return true;">Книги</a><a href="/authors/" onclick="yaCounter22692712.reachGoal('clickAuthors'); return true;">Авторы</a><a href="/users/" onclick="yaCounter22692712.reachGoal('clickUsers'); return true;">Читатели</a></nav><div class="header-search" data-ng-controller="BookSearchCtrl" data-outside-click="closeDropDown()"><form action="/search/" class="dropdown-triger"><input autocomplete="off" data-ng-change="search()" data-ng-click="openDropDown()" data-ng-init="q=''" data-ng-model="q" data-ng-model-options="{debounce: 300}" name="q" placeholder="Поиск автора или книги..." type="text"/><a href="/search/?q={[{ q }]}" rel="nofollow"><i class="icon_sprite search-w"></i></a></form><div class="dropdown-content ng-cloak" data-ng-show="isOpen()"><div class="dd-search-result-list" data-load-spinner="" data-loading="loading"><div class="dd-search-result-counter">
+Книги <span>{[{ count }]}</span></div><div class="user-lib-new--book-list--item cf" data-ng-repeat="book in results"><div class="book-cover"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}" title="{[{ book.title }]}"><img alt="{[{ book.title }]}" class="dropdown-content--search-bimage" data-ng-src="{[{ book.cover | imageUrl:'book.Book':1 }]}"/></a></div><div class="book-main-info"><h3 class="book-title dropdown-content--book-title"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}">{[{ book.title }]}</a></h3><p>{[{ book.author[0].name }]}</p></div></div><div class="dd-goToResult" data-ng-show="results.length"><a href="/search/?q={[{ q }]}" rel="nofollow">
+К результатам поиска по запросу {[{ q }]} »
+</a></div></div></div></div><a class="shuffle-btn header-btn-icon" href="/books/i_am_lucky/" rel="nofollow"><i class="icon_sprite shuffle"></i></a><div class="header--login-new"><a class="header--login-btn-new" href="/user/login/" rel="nofollow">Войти</a><a class="button-normal fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form()" rel="nofollow">Регистрация</a></div></div></header>
+<div id="global-wrap">
+<a class="fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form();yaCounter22692712.reachGoal('open_banner');" rel="nofollow"><div class="top_banner visible-lg visible-md"> </div></a>
+<script>
+    var book_profile = {"rating": 9.2, "quote_count": 14, "isbn": "", "content_type": 13, "links": [], "show": true, "rates_count": 244, "quotes": [{"hashtags": [], "author": "\u041a\u0432\u043e\u0443\u0442", "text": "<p>- \u0412\u0441\u0435 \u044d\u0434\u0435\u043c\u0430 \u0440\u0443\u044d - \u043e\u0434\u043d\u0430 \u0441\u0435\u043c\u044c\u044f, - \u043e\u0431\u044a\u044f\u0441\u043d\u0438\u043b \u044f. - \u0415\u0434\u0438\u043d\u044b\u0439 \u043a\u0440\u0443\u0433. \u041d\u0435\u0432\u0430\u0436\u043d\u043e, \u0447\u0442\u043e \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0438\u0437 \u043d\u0430\u0441 \u043d\u0435 \u0437\u043d\u0430\u043a\u043e\u043c\u044b \u0434\u0440\u0443\u0433 \u0441 \u0434\u0440\u0443\u0433\u043e\u043c, \u0432\u0441\u0451 \u0440\u0430\u0432\u043d\u043e \u043c\u044b \u0432\u0441\u0435 \u0441\u0435\u043c\u044c\u044f, \u0432\u0441\u0435 \u043c\u044b \u0431\u043b\u0438\u0437\u043a\u0438\u0435. \u0418\u043d\u0430\u0447\u0435 \u043d\u0430\u043c \u043d\u0435\u043b\u044c\u0437\u044f, \u043c\u044b \u0432\u0435\u0434\u044c \u0447\u0443\u0436\u0438\u0435 \u0432\u0435\u0437\u0434\u0435, \u043a\u0443\u0434\u0430 \u043d\u0438 \u043f\u0440\u0438\u0445\u043e\u0434\u0438\u043c. \u041c\u044b \u0440\u0430\u0441\u0441\u0435\u044f\u043d\u044b \u043f\u043e \u0441\u0432\u0435\u0442\u0443, \u043b\u044e\u0434\u0438 \u043d\u0430\u0441 \u043d\u0435\u043d\u0430\u0432\u0438\u0434\u044f\u0442.</p>", "created_at": "2020-09-18T02:06:06", "object_type": 20, "updated_at": "2020-09-18T02:06:06", "object_id": 74508, "comment_count": 0, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 27955, "name": "\u042e\u0440\u0438\u0439 \u0413 (@yura_richi)", "avatar": "avatars/4/c/4cabf3fdbc4dd07a3b621effdb32d5a7.jpg", "url": "/user/27955/", "username": "yura_richi", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "\u041a\u0432\u043e\u0443\u0442 \u0446\u0438\u0442\u0438\u0440\u0443\u0435\u0442 \u0422\u0435\u043a\u043a\u0430\u043c", "text": "<p>\"\u041d\u0435 \u0441\u0442\u043e\u0438\u0442 \u043d\u0430\u0437\u044b\u0432\u0430\u0442\u044c \u043e\u0442\u0432\u0430\u0436\u043d\u044b\u043c \u0442\u043e\u0433\u043e, \u043a\u0442\u043e \u043d\u0438 \u0440\u0430\u0437\u0443 \u043d\u0435 \u043f\u0440\u043e\u0448\u0435\u043b \u0441\u043e\u0442\u043d\u0438 \u043a\u0438\u043b\u043e\u043c\u0435\u0442\u0440\u043e\u0432. \u0415\u0441\u043b\u0438 \u0445\u043e\u0447\u0435\u0448\u044c \u043f\u043e\u0441\u0442\u0438\u0447\u044c, \u043a\u0442\u043e \u0442\u044b \u043d\u0430 \u0441\u0430\u043c\u043e\u043c \u0434\u0435\u043b\u0435, \u0441\u0442\u0443\u043f\u0430\u0439 \u0438 \u0438\u0434\u0438, \u043f\u043e\u043a\u0430 \u0432\u043e\u043a\u0440\u0443\u0433 \u0442\u0435\u0431\u044f \u043d\u0435 \u043e\u0441\u0442\u0430\u043d\u0435\u0442\u0441\u044f \u0442\u0435\u0445, \u043a\u0442\u043e \u0437\u043d\u0430\u0435\u0442 \u0442\u0435\u0431\u044f \u043f\u043e \u0438\u043c\u0435\u043d\u0438. \u041f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435 - \u0432\u0435\u043b\u0438\u043a\u0438\u0439 \u0443\u0440\u0430\u0432\u043d\u0438\u0442\u0435\u043b\u044c, \u0432\u0435\u043b\u0438\u043a\u0438\u0439 \u0443\u0447\u0438\u0442\u0435\u043b\u044c, \u0433\u043e\u0440\u044c\u043a\u0438\u0439, \u043a\u0430\u043a \u043b\u0435\u043a\u0430\u0440\u0441\u0442\u0432\u043e, \u0438 \u0442\u0432\u0435\u0440\u0434\u044b\u0439 \u043a\u0430\u043a \u0437\u0435\u0440\u043a\u0430\u043b\u043e. \u0414\u043e\u043b\u0433\u0438\u0439 \u043f\u0443\u0442\u044c \u043f\u043e\u0437\u0432\u043e\u043b\u0438\u0442 \u0442\u0435\u0431\u0435 \u0443\u0437\u043d\u0430\u0442\u044c \u043e \u0441\u0435\u0431\u0435 \u0431\u043e\u043b\u044c\u0448\u0435, \u0447\u0435\u043c \u0441\u043e\u0442\u043d\u044f \u043b\u0435\u0442 \u0441\u043f\u043e\u043a\u043e\u0439\u043d\u043e\u0433\u043e \u0441\u043e\u0437\u0435\u0440\u0446\u0430\u043d\u0438\u044f\"</p>", "created_at": "2020-09-18T00:48:11", "object_type": 20, "updated_at": "2020-09-18T00:48:11", "object_id": 74507, "comment_count": 0, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 27955, "name": "\u042e\u0440\u0438\u0439 \u0413 (@yura_richi)", "avatar": "avatars/4/c/4cabf3fdbc4dd07a3b621effdb32d5a7.jpg", "url": "/user/27955/", "username": "yura_richi", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "\u041a\u0432\u043e\u0443\u0442", "text": "<p>\u042f \u043f\u043e\u0447\u0443\u0432\u0441\u0442\u0432\u043e\u0432\u0430\u043b, \u0447\u0442\u043e \u043b\u0438\u0446\u043e \u0443 \u043c\u0435\u043d\u044f \u043f\u043e\u043c\u0440\u0430\u0447\u043d\u0435\u043b\u043e. \u041d\u0435\u0442, \u044f \u043d\u0435 \u043f\u0440\u043e\u0442\u0438\u0432, \u043a\u043e\u0433\u0434\u0430 \u043c\u0435\u043d\u044f \u043d\u0430\u0437\u044b\u0432\u0430\u044e\u0442 \u043b\u0436\u0435\u0446\u043e\u043c. \u042f \u0438 \u0435\u0441\u0442\u044c \u043b\u0436\u0435\u0446. \u042f \u0432\u0435\u043b\u0438\u043a\u043e\u043b\u0435\u043f\u043d\u043e \u0443\u043c\u0435\u044e \u043b\u0433\u0430\u0442\u044c. \u041d\u043e \u044f \u0442\u0435\u0440\u043f\u0435\u0442\u044c \u043d\u0435 \u043c\u043e\u0433\u0443, \u043a\u043e\u0433\u0434\u0430 \u043c\u0435\u043d\u044f \u043d\u0430\u0437\u044b\u0432\u0430\u044e\u0442 \u043b\u0436\u0435\u0446\u043e\u043c, \u0435\u0441\u043b\u0438 \u044f \u0433\u043e\u0432\u043e\u0440\u044e \u0447\u0438\u0441\u0442\u0443\u044e \u043f\u0440\u0430\u0432\u0434\u0443.</p>", "created_at": "2020-08-21T07:49:36", "object_type": 20, "updated_at": "2020-08-21T07:49:36", "object_id": 74367, "comment_count": 0, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 27955, "name": "\u042e\u0440\u0438\u0439 \u0413 (@yura_richi)", "avatar": "avatars/4/c/4cabf3fdbc4dd07a3b621effdb32d5a7.jpg", "url": "/user/27955/", "username": "yura_richi", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "\u041a\u0432\u043e\u0443\u0442", "text": "<p>\u041e\u0434\u0438\u043d \u0438\u0437 \u043d\u0438\u0445 \u0437\u0430\u0436\u0438\u043c\u0430\u043b \u043c\u043d\u0435 \u0440\u043e\u0442 \u043b\u0430\u0434\u043e\u043d\u044c\u044e. \u042d\u0442\u043e \u043d\u0435 \u0438\u043c\u0435\u043b\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f. \u042f \u0443\u0436\u0435 \u043c\u043d\u043e\u0433\u043e \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u043f\u0440\u043e\u0432\u0435\u043b \u0432 \u0433\u043e\u0440\u043e\u0434\u0435. \u042f \u0437\u043d\u0430\u043b, \u0447\u0442\u043e \u043d\u0430 \u043f\u043e\u043c\u043e\u0449\u044c \u0437\u0432\u0430\u0442\u044c \u043d\u0435 \u0441\u0442\u043e\u0438\u0442. \u0412 \u043b\u0443\u0447\u0448\u0435\u043c \u0441\u043b\u0443\u0447\u0430\u0435 \u043d\u0438\u043a\u0442\u043e \u043d\u0435 \u043f\u0440\u0438\u0434\u0435\u0442. \u0412 \u0445\u0443\u0434\u0448\u0435\u043c \u2014 \u043a\u0442\u043e-\u043d\u0438\u0431\u0443\u0434\u044c \u043f\u0440\u0438\u0434\u0435\u0442, \u0438 \u0438\u0445 \u0441\u0442\u0430\u043d\u0435\u0442 \u0435\u0449\u0435 \u0431\u043e\u043b\u044c\u0448\u0435.</p>", "created_at": "2020-08-21T07:24:35", "object_type": 20, "updated_at": "2020-08-21T07:24:35", "object_id": 74366, "comment_count": 0, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 27955, "name": "\u042e\u0440\u0438\u0439 \u0413 (@yura_richi)", "avatar": "avatars/4/c/4cabf3fdbc4dd07a3b621effdb32d5a7.jpg", "url": "/user/27955/", "username": "yura_richi", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "\u041a\u0432\u043e\u0443\u0442", "text": "<p>\u042f \u0443\u0432\u0438\u0434\u0435\u043b, \u043a\u0430\u043a \u0435\u0433\u043e \u0433\u043b\u0430\u0437\u0430 \u0440\u0430\u0441\u0448\u0438\u0440\u0438\u043b\u0438\u0441\u044c, \u0438 \u0443\u043b\u044b\u0431\u043d\u0443\u043b\u0441\u044f \u0435\u043c\u0443 \u0443\u043b\u044b\u0431\u043a\u043e\u0439, \u0434\u043e\u0441\u0442\u043e\u0439\u043d\u043e\u0439 \u0422\u0430\u0431\u043e\u0440\u043b\u0438\u043d\u0430 \u0412\u0435\u043b\u0438\u043a\u043e\u0433\u043e. \u0423\u043b\u044b\u0431\u043a\u0430 \u0432\u044b\u0448\u043b\u0430 \u0442\u0430\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439, \u0448\u0438\u0440\u043e\u043a\u043e\u0439, \u0443\u0432\u0435\u0440\u0435\u043d\u043d\u043e\u0439 \u0438 \u0431\u043e\u043b\u0435\u0435 \u0447\u0435\u043c \u0441\u0430\u043c\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u043d\u043e\u0439. \u042d\u0442\u0430 \u0443\u043b\u044b\u0431\u043a\u0430 \u0441\u0430\u043c\u0430 \u043f\u043e \u0441\u0435\u0431\u0435 \u0441\u0442\u043e\u0438\u043b\u0430 \u0446\u0435\u043b\u043e\u0439 \u0438\u0441\u0442\u043e\u0440\u0438\u0438.</p>", "created_at": "2020-08-18T06:12:38", "object_type": 20, "updated_at": "2020-08-18T06:12:38", "object_id": 74354, "comment_count": 0, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 27955, "name": "\u042e\u0440\u0438\u0439 \u0413 (@yura_richi)", "avatar": "avatars/4/c/4cabf3fdbc4dd07a3b621effdb32d5a7.jpg", "url": "/user/27955/", "username": "yura_richi", "gender": 1}, "favorited_users": []}, {"book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "slideMoreLink": true}], "tag": [], "alter_titles": "", "year": 0, "facts": [], "id": 60685, "by_shelves": {"shelf_count_1": 119, "shelf_count_2": 1, "shelf_count_3": 284, "shelf_count_4": 10}, "rating_sort": 0.0, "review_count": 4, "author": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "create": "2013-10-29T14:32:38", "unique_text": false, "filming": [], "comment_count": 0, "show_rating": 9.2, "description": "\u0412 \u0440\u043e\u043c\u0430\u043d\u0435 \u00ab\u0421\u0442\u0440\u0430\u0445 \u043c\u0443\u0434\u0440\u0435\u0446\u0430\u00bb \u041a\u0432\u043e\u0443\u0442 \u0441\u043e\u0432\u0435\u0440\u0448\u0438\u0442 \u043f\u0435\u0440\u0432\u044b\u0435 \u0448\u0430\u0433\u0438 \u043f\u043e \u0434\u043e\u0440\u043e\u0433\u0435 \u0433\u0435\u0440\u043e\u0435\u0432 \u0438 \u043f\u043e\u0437\u043d\u0430\u0435\u0442 \u043a\u0430\u043a\u043e\u0439 \u0441\u043b\u043e\u0436\u043d\u043e\u0439 \u043c\u043e\u0436\u0435\u0442 \u0441\u0442\u0430\u0442\u044c \u0436\u0438\u0437\u043d\u044c, \u043a\u043e\u0433\u0434\u0430 \u0447\u0435\u043b\u043e\u0432\u0435\u043a \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0441\u044f \u043b\u0435\u0433\u0435\u043d\u0434\u043e\u0439 \u043f\u0440\u0438 \u0436\u0438\u0437\u043d\u0438.", "readers_count": 404, "award": [], "sorter": 9.17, "series_position": 3, "seria": 1242, "favorites": 10, "genre": [{"url": "/genre/191/", "id": 191, "name": "\u041f\u0440\u0438\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f", "is_show": true}, {"url": "/genre/190/", "id": 190, "name": "\u0424\u044d\u043d\u0442\u0435\u0437\u0438", "is_show": true}], "fact_count": 0, "publisher": "\u042d\u043a\u0441\u043c\u043e, \u0414\u043e\u043c\u0438\u043d\u043e", "url": "/book/60685/", "title": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "_id": 60685, "user": {"possible_rate": null, "id": null}};
+</script>
+<div class="wrapper content clearfix">
+<article class="book-article" itemscope="" itemtype="http://schema.org/Book">
+<div class="content-cols">
+<div class="content-cols--main">
+<h1 class="book-article--title" itemprop="name">Страхи мудреца. Книга 2</h1>
+<div class="book-article--author">
+<label class="author-name">Автор книги:</label>
+<a href="/author/15742/"><h2 itemprop="author">Патрик Ротфусс</h2></a>
 </div>
-<h1 class="firstHeading mw-first-heading" id="firstHeading">Недопустимое название</h1>
-<div class="vector-body" id="bodyContent">
-<div id="contentSub"><div id="mw-content-subtitle"></div></div>
-<div id="contentSub2"></div>
-<div id="jump-to-nav"></div>
-<a class="mw-jump-link" href="#mw-head">Перейти к навигации</a>
-<a class="mw-jump-link" href="#searchInput">Перейти к поиску</a>
-<div class="mw-body-content" id="mw-content-text"><p>Запрашиваемое название страницы содержит недопустимые символы: «
-».
-</p><p id="mw-returnto">Возврат к странице <a href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Заглавная страница">Заглавная страница</a>.</p>
-<!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img alt="" height="1" src="//ru.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" title="" width="1"/></noscript>
-<div class="printfooter" data-nosnippet="">Источник — <a dir="ltr" href="https://ru.wikipedia.org/wiki/Служебная:Недопустимое_название">https://ru.wikipedia.org/wiki/Служебная:Недопустимое_название</a></div></div>
-<div class="catlinks catlinks-allhidden" data-mw="interface" id="catlinks"></div>
+<div class="book-article--details">
+<div class="ba-details--row">
+<label class="row-label"><span>серия книг:</span></label>
+<span class="row-value">
+<a href="/serie/1242/">Хроники убийцы короля</a>
+(3 книга из 3)
+</span>
+</div>
+<div class="ba-details--row">
+<label class="row-label"><span>жанры:</span></label>
+<span class="row-value">
+<a href="/genre/191/">приключения</a>
+,
+<a href="/genre/190/">фэнтези</a>
+</span>
+</div>
+<div class="book-article--description">
+<br/>
+<h3 class="book-author-title">Описание</h3>
+<p><p>В романе «Страх мудреца» Квоут совершит первые шаги по дороге героев и познает какой сложной может стать жизнь, когда человек становится легендой при жизни.</p></p>
+</div>
+<div class="ng-cloak book-profile-rating-height" data-ng-controller="BookProfileCtrl" id="book_profile_book-rating-app" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<div data-book-id="book.id" data-book-rating="" data-rating="book.user.rating"></div>
+<meta content="10" itemprop="bestRating"/>
+<meta content="9,2" itemprop="ratingValue"/>
+<meta content="244" itemprop="ratingCount"/>
+<div class="book-circular-correct">
+<span class="book-profile--rate">9,2</span>
+<span class="book-profile--rates-count">(244 оценки)</span>
+</div>
+<div class="book-top100">
+<a href="/books/top/">
+<span>Топ-100:</span> 42
+</a>
 </div>
 </div>
-<div id="mw-navigation">
-<h2>Навигация</h2>
-<div id="mw-head">
-<nav aria-labelledby="p-personal-label" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" id="p-personal" role="navigation">
-<h3 class="vector-menu-heading" id="p-personal-label">
-<span class="vector-menu-heading-label">Персональные инструменты</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="pt-anonuserpage"><span title="Страница участника для моего IP">Вы не представились системе</span></li><li class="mw-list-item" id="pt-anontalk"><a accesskey="n" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D1%91_%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" title="Страница обсуждений для моего IP [n]"><span>Обсуждение</span></a></li><li class="mw-list-item" id="pt-anoncontribs"><a accesskey="y" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D0%B9_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4" title="Список правок, сделанных с этого IP-адреса [y]"><span>Вклад</span></a></li><li class="mw-list-item" id="pt-createaccount"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&amp;returnto=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F%3A%D0%9D%D0%B5%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D0%B5+%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно."><span>Создать учётную запись</span></a></li><li class="mw-list-item" id="pt-login"><a accesskey="o" href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&amp;returnto=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F%3A%D0%9D%D0%B5%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D0%B5+%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]"><span>Войти</span></a></li></ul>
+<div class="ng-cloak" data-ng-controller="WhereToBuyCtrl" data-ng-init="aggregate('Страхи мудреца. Книга 2', 'Патрик  Ротфусс')" id="book_profile-where_to_buy-app">
+<h2 class="where-to-buy-title book-author-title rel-h2" data-ng-show="aggregated.length">Купить книгу Страхи мудреца. Книга 2, Патрик Ротфусс</h2>
+<div class="books-aggregate">
+<div class="aggregate-row" data-ng-class-odd="'book-aggregate-row-odd'" data-ng-repeat="agg in aggregated">
+<a data-ng-href="{[{ agg.url }]}" target="_blank"><img alt="" class="aggregate-shop-img" data-ng-src="{[{ agg.market_logo }]}"/></a>
+<a class="aggregate-shop" data-ng-bind="agg.market_name" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
+<a class="aggregate-book" data-ng-bind="agg.title" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
+<div class="fr">
+<b class="aggregate-price"><span data-ng-bind="agg.price"></span> р.</b>
+<a class="aggregate-buy-button-litres" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market=='litres'" target="_blank">Скачать</a>
+<a class="aggregate-buy-button" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market!='litres'" target="_blank">Купить</a>
 </div>
+</div>
+</div>
+</div>
+<br class="clear"/>
+<div data-ng-controller="BookProfileCtrl" id="book_profile_facts-quotes-app">
+<div data-book-id="book.id" data-fact-list="" data-facts="book.facts"></div>
+<div data-book-id="book.id" data-quote-list="" data-quotes="book.quotes" data-user-id="book.user.id"></div>
+</div>
+<div class="invisible-content">
+<div class="h3-title-wadd"><h3>Интересные факты</h3></div>
+<div class="ba-facts-list">
+</div>
+</div>
+<div class="invisible-content">
+<div class="h3-title-wadd">
+<h3>Цитаты из книги</h3>
+</div>
+<div class="ba-facts-list">
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;- Все эдема руэ - одна семья, - объяснил я. - Единый круг. Неважно, что некоторые из нас не знакомы друг с другом, всё равно мы все семья, все мы близкие. Иначе нам нельзя, мы ведь чужие везде, куда ни приходим. Мы рассеяны по свету, люди нас ненавидят.&lt;/p&gt;<br/><em class="quote-sign">Квоут</em>
+<div class="discussion-item-author disable-float">
+
+Добавил: <a class="user" href="/user/27955/" rel="nofollow"><i class="ico"></i>yura_richi</a>
+</div>
+</div>
+</div>
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;"Не стоит называть отважным того, кто ни разу не прошел сотни километров. Если хочешь постичь, кто ты на самом деле, ступай и иди, пока вокруг тебя не останется тех, кто знает тебя по имени. Путешествие - великий уравнитель, великий учитель, горький, как лекарство, и твердый как зеркало. Долгий путь позволит тебе узнать о себе больше, чем сотня лет спокойного созерцания"&lt;/p&gt;<br/><em class="quote-sign">Квоут цитирует Теккам</em>
+<div class="discussion-item-author disable-float">
+
+Добавил: <a class="user" href="/user/27955/" rel="nofollow"><i class="ico"></i>yura_richi</a>
+</div>
+</div>
+</div>
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Я почувствовал, что лицо у меня помрачнело. Нет, я не против, когда меня называют лжецом. Я и есть лжец. Я великолепно умею лгать. Но я терпеть не могу, когда меня называют лжецом, если я говорю чистую правду.&lt;/p&gt;<br/><em class="quote-sign">Квоут</em>
+<div class="discussion-item-author disable-float">
+
+Добавил: <a class="user" href="/user/27955/" rel="nofollow"><i class="ico"></i>yura_richi</a>
+</div>
+</div>
+</div>
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Один из них зажимал мне рот ладонью. Это не имело значения. Я уже много месяцев провел в городе. Я знал, что на помощь звать не стоит. В лучшем случае никто не придет. В худшем — кто-нибудь придет, и их станет еще больше.&lt;/p&gt;<br/><em class="quote-sign">Квоут</em>
+<div class="discussion-item-author disable-float">
+
+Добавил: <a class="user" href="/user/27955/" rel="nofollow"><i class="ico"></i>yura_richi</a>
+</div>
+</div>
+</div>
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Я увидел, как его глаза расширились, и улыбнулся ему улыбкой, достойной Таборлина Великого. Улыбка вышла таинственной, широкой, уверенной и более чем самодовольной. Эта улыбка сама по себе стоила целой истории.&lt;/p&gt;<br/><em class="quote-sign">Квоут</em>
+<div class="discussion-item-author disable-float">
+
+Добавил: <a class="user" href="/user/27955/" rel="nofollow"><i class="ico"></i>yura_richi</a>
+</div>
+</div>
+</div>
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>
+<blockquote class="book-profile--quote-more-slide">
+<a href="/book/60685/quotes/">Все цитаты из книги "Страхи мудреца. Книга 2" →</a>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<h2 class="book-author-title rel-h2">С этой книгой читают:</h2>
+<div class="book-related-list">
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/60684/" rel="nofollow">
+<img alt="Анжелика в Новом Свете" src="/public/media/covers/6/c/6ca2e604aba7a980d5e098298912af8a_160x0.jpg" title="Анжелика в Новом Свете"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/60684/">
+Анжелика в Новом Свете
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/60683/" rel="nofollow">
+<img alt="Прощание с иллюзиями" src="/public/media/covers/8/9/89a85f75a3c2233fc226dea6e1f6c652_160x0.jpg" title="Прощание с иллюзиями"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/60683/">
+Прощание с иллюзиями
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/60682/" rel="nofollow">
+<img alt="Тайна запутанного следа" src="/public/media/covers/a/3/a31a2f133fc647eb635f9dce98ab5e2f_160x0.jpg" title="Тайна запутанного следа"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/60682/">
+Тайна запутанного следа
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/60680/" rel="nofollow">
+<img alt="Скала" src="/public/media/covers/4/b/4be0ac0f04fdbd4b1428d8078352748b_160x0.jpg" title="Скала"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/60680/">
+Скала
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/60679/" rel="nofollow">
+<img alt="Эоган О'Салливан" src="/public/media/covers/c/7/c7d91b23e7ae15d1fb0c006d86a14396_160x0.jpg" title="Эоган О'Салливан"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/60679/">
+Эоган О'Салливан
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="ba-timeline-container">
+<nav class="tape-select" id="timelinenav">
+<ul>
+<li class="active">
+<a href="/book/60685/?filter=reviews#!/#timelinenav" rel="nofollow">Рецензии</a>
+</li>
+<li>
+<a href="/book/60685/?filter=comments#!/#timelinenav" rel="nofollow">Отзывы</a>
+</li>
+</ul>
 </nav>
-<div id="left-navigation">
-<nav aria-labelledby="p-namespaces-label" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" id="p-namespaces" role="navigation">
-<h3 class="vector-menu-heading" id="p-namespaces-label">
-<span class="vector-menu-heading-label">Пространства имён</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="selected mw-list-item" id="ca-nstab-special"><a href="/wiki/%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5_%D0%BD%D0%B0_%D0%BA%D1%80%D0%B0%D0%B9_%D0%BD%D0%BE%D1%87%D0%B8%0A" title="Это служебная страница, она недоступна для редактирования"><span>Служебная страница</span></a></li></ul>
-</div>
+<div id="filter-search-results-container">
+<div class="filter-panel-index">
+<div class="page-column-main __timeline">
+<section class="review-timeline-list">
+<nav class="nav-filter">
+<ul class="nav-filter-list">
+<li class="active">
+<a href="/book/60685/
+?filter=reviews&amp;sort=last#!/timelinenav" rel="nofollow">Последнее</a>
+</li>
+<li>
+<a href="/book/60685/
+?filter=reviews&amp;sort=useful#!/timelinenav" rel="nofollow">Популярное</a>
+</li>
+<li>
+<a href="/book/60685/
+?filter=reviews&amp;sort=new#!/timelinenav" rel="nofollow">Новое</a>
+</li>
+</ul>
 </nav>
-<nav aria-labelledby="p-variants-label" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" id="p-variants" role="navigation">
-<input aria-haspopup="true" aria-labelledby="p-variants-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-variants" id="p-variants-checkbox" role="button" type="checkbox"/>
-<label aria-label="Изменить вариант языка" class="vector-menu-heading" id="p-variants-label">
-<span class="vector-menu-heading-label">русский</span>
-</label>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
+<div id="book_profile_timeline-app">
+<span id="reactComponent-Readly.bookTimelineBox"><div data-react-checksum="-1077980504" data-reactid=".16dfgosa7eo"><div class="rtl--comment-add" data-reactid=".16dfgosa7eo.0"><div class="rtl--start-discussion rtl--start-discussion-compat bookpost bookpost-review" data-reactid=".16dfgosa7eo.0.0"><textarea class="sd--input" data-reactid=".16dfgosa7eo.0.0.0" placeholder="Оставить рецензию..."></textarea></div></div><div data-reactid=".16dfgosa7eo.1"><div data-reactid=".16dfgosa7eo.1.0"><div class="discussion-wrap" data-reactid=".16dfgosa7eo.1.0.$71439"><div class="discussion-item clearfix" data-reactid=".16dfgosa7eo.1.0.$71439.0"><div data-reactid=".16dfgosa7eo.1.0.$71439.0.0"><div class="discussion-item-user-avatar" data-reactid=".16dfgosa7eo.1.0.$71439.0.0.0"><a class="user-avatar-50-50" data-reactid=".16dfgosa7eo.1.0.$71439.0.0.0.0" href="/user/15917/" rel="nofollow"><img data-reactid=".16dfgosa7eo.1.0.$71439.0.0.0.0.0" src="/public/media/avatars/e/0/e0c0a90cf6f46d48f3e035a18e6d2d41_80x80.jpg"/></a></div><div class="user-name" data-reactid=".16dfgosa7eo.1.0.$71439.0.0.1"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.0.1.0"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.0.1.0.0" href="/user/15917/" rel="nofollow">Наталия (@fairytale22)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".16dfgosa7eo.1.0.$71439.0.1"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".16dfgosa7eo.1.0.$71439.0.1.1">6 мая 2020 15:00</span><div class="stars-rating" data-reactid=".16dfgosa7eo.1.0.$71439.0.1.2"><div data-reactid=".16dfgosa7eo.1.0.$71439.0.1.2.0"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".16dfgosa7eo.1.0.$71439.0.1.2.0.1"><div class="ur-rate-stars _10" data-reactid=".16dfgosa7eo.1.0.$71439.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".16dfgosa7eo.1.0.$71439.0.1.2.0.2">10/10</span></div></div></div><div class="reviews-status" data-reactid=".16dfgosa7eo.1.0.$71439.0.2"><img alt="" data-reactid=".16dfgosa7eo.1.0.$71439.0.2.0" src="/public/static/images/new/positive.png"/></div><div class="discussion-item-index clearfix" data-reactid=".16dfgosa7eo.1.0.$71439.0.3"><div class="reveal-block-index clearfix" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.0"><div class="book-pic" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.0.0"><img data-reactid=".16dfgosa7eo.1.0.$71439.0.3.0.0.0" src="/public/media/covers/5/c/5c01083205df93ed69edc80d5392fbe4_100x0.jpg"/></div><span class="book-name" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.0.1">Страхи мудреца. Книга 2</span><span class="book-autor" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.0.2">Патрик Ротфусс</span></div><div class="discussion-item-text clearfix" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.1"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.1.1"> </span><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.1.3"> </span><div data-reactid=".16dfgosa7eo.1.0.$71439.0.3.1.4"><div class="rc-review--text-short" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.1.4.1"><p>Продолжение книги <a href="https://readly.ru/book/58914/">Страхи мудреца. Книга 1</a>. <br>Юный Квоут взял паузу в обучении, но это не мешает ему попадать в новые неприятности. В попытке обрести покровителя главный герой вынужден выполнять поручения довольно своенравного и влиятельного монарха, рискуя собственной жизнью. Цепь событий закручивается так лихо, что основное внимание смещается, и перед нами абсолютно новые герои и места, что порождает новые тайны и загадки… Не представляю, как автор будет заканчивать это все, потому что к разгадке основной ветки Квоут практически не приблизился, но, в то же время, добавился еще вагон вопросов. </br></p>
+<p>На любовном фронте тоже особо без перемен, Денна по-прежнему загадочна и неуловима, пока не совсем понимаю ее роль во всем этом. Зато, в плане полового воспитания Квоут оказался впереди планеты всей, благодаря мифической Фелуриан, в плену которой оказался. Вообще, проблемы героя стали значительно серьезнее, по сравнению с первой книгой, решение каждой из них ломает Квоута, толкая на крайние меры. Тут возникает вопрос к автору – почему главному герою все еще 17 лет? Его действия и мысли намного взрослее, зачем умещать столько событий в пару лет?</p>
+<p>Тем временем, слава главного героя растет, истории о нем рассказываются во всех трактирах, удача тоже оказалась на его стороне, особенно в финале книги… Чувствую назревает серьезная буря, если следующая часть таки выйдет, на что я очень сильно рассчитываю)).<br>От книги невозможно было оторваться, интерес не ослабевает на протяжении всех трех частей, несмотря на внушительный объем. Видно, что каждая сцена тщательно продумана и переписана несколько раз, доведенная до совершенства.<br><a href="/tag/%D0%91%D0%9A_2020/">#БК_2020</a> (Книга-толстушка (более 600 печатных страниц))<br><a href="/tag/%D0%B2%D0%BE%D0%B8%D0%BD%D1%8B_%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8/">#воины_времени</a></br></br></br></p></div></div></div><div class="bottom-part" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2"><div class="discussion-item-filter" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0"><div data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0"><noindex data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0"><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/71439/" rel="nofollow" target="_blank"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0"><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/71439/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/71439/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/71439/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/71439/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/71439/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2"><div data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0.1.3">1</span><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.1" href="" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.3.2.1.0"></span></a></div></div><div class="comments-start" data-reactid=".16dfgosa7eo.1.0.$71439.0.4"></div><div class="discussion-item--comment clearfix" data-reactid=".16dfgosa7eo.1.0.$71439.0.5"><div data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032"><div data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0"><div class="discussion-item-user-avatar" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.0"><a class="user-avatar-50-50" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.0.0" href="/user/3854/" rel="nofollow"><img data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.0.0.0" src="/public/media/avatars/1/1/11f12811b869f7fca883c99da45268c6_80x80.jpg"/></a></div><div class="user-name-smaller" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.1"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.1.0" href="/user/3854/" rel="nofollow"> На этот раз добрая Нюта (@nuta2019)</a><span class="date-time-post" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.1.1">6 мая 2020 18:46</span></div><div class="discussion-item-comment" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.2"><p data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.2.0"><p>Теперь осталось два рассказа (повести), и ты меня обгонишь)))</p></p></div><a class="send-reply ui-20" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.3" href="#71439_18" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.3.0">Ответить</span></a><div class="like-heart rtl-comment-like data-like" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.5" href=""><span class="like-heart--num like-counter" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.5.0">0</span><i class="icon-like" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.5.1"></i><span class="like-heart--text" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.0.5.2">Мне нравится</span></div></div><hr data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335032.1"/></div><div data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045"><div data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0"><div class="discussion-item-user-avatar" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.0"><a class="user-avatar-50-50" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.0.0" href="/user/15917/" rel="nofollow"><img data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.0.0.0" src="/public/media/avatars/e/0/e0c0a90cf6f46d48f3e035a18e6d2d41_80x80.jpg"/></a></div><div class="user-name-smaller" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.1"><a data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.1.0" href="/user/15917/" rel="nofollow">Наталия (@fairytale22)</a><span class="date-time-post" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.1.1">6 мая 2020 23:33</span></div><div class="discussion-item-comment" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.2"><p data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.2.0"><p><a href="/user/3854/">@nuta2019</a>, очень хочу про Баста прочитать, самый интересный персонаж)</p></p></div><a class="send-reply ui-20" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.3" href="#71439_18" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.3.0">Ответить</span></a><div class="like-heart rtl-comment-like data-like" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.5" href=""><span class="like-heart--num like-counter" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.5.0">1</span><i class="icon-like" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.5.1"></i><span class="like-heart--text" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.0:$335045.0.5.2">Мне нравится</span></div></div></div><a class="anchor" data-reactid=".16dfgosa7eo.1.0.$71439.0.5.1" name="71439_18" rel="nofollow"></a></div></div></div><div class="discussion-wrap" data-reactid=".16dfgosa7eo.1.0.$68689"><div class="discussion-item clearfix" data-reactid=".16dfgosa7eo.1.0.$68689.0"><div data-reactid=".16dfgosa7eo.1.0.$68689.0.0"><div class="discussion-item-user-avatar" data-reactid=".16dfgosa7eo.1.0.$68689.0.0.0"><a class="user-avatar-50-50" data-reactid=".16dfgosa7eo.1.0.$68689.0.0.0.0" href="/user/3854/" rel="nofollow"><img data-reactid=".16dfgosa7eo.1.0.$68689.0.0.0.0.0" src="/public/media/avatars/1/1/11f12811b869f7fca883c99da45268c6_80x80.jpg"/></a></div><div class="user-name" data-reactid=".16dfgosa7eo.1.0.$68689.0.0.1"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.0.1.0"><a data-reactid=".16dfgosa7eo.1.0.$68689.0.0.1.0.0" href="/user/3854/" rel="nofollow"> На этот раз добрая Нюта (@nuta2019)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".16dfgosa7eo.1.0.$68689.0.1"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".16dfgosa7eo.1.0.$68689.0.1.1">15 февраля 2020 16:32</span><div class="stars-rating" data-reactid=".16dfgosa7eo.1.0.$68689.0.1.2"><div data-reactid=".16dfgosa7eo.1.0.$68689.0.1.2.0"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".16dfgosa7eo.1.0.$68689.0.1.2.0.1"><div class="ur-rate-stars _9" data-reactid=".16dfgosa7eo.1.0.$68689.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".16dfgosa7eo.1.0.$68689.0.1.2.0.2">9/10</span></div></div></div><noscript data-reactid=".16dfgosa7eo.1.0.$68689.0.2"></noscript><div class="discussion-item-index clearfix" data-reactid=".16dfgosa7eo.1.0.$68689.0.3"><div class="reveal-block-index clearfix" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.0"><div class="book-pic" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.0.0"><img data-reactid=".16dfgosa7eo.1.0.$68689.0.3.0.0.0" src="/public/media/covers/5/c/5c01083205df93ed69edc80d5392fbe4_100x0.jpg"/></div><span class="book-name" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.0.1">Страхи мудреца. Книга 2</span><span class="book-autor" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.0.2">Патрик Ротфусс</span></div><div class="discussion-item-text clearfix" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.1"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.1.1"> </span><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.1.3"> </span><div data-reactid=".16dfgosa7eo.1.0.$68689.0.3.1.4"><div class="rc-review--text-short" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.1.4.1"><p><a href="/tag/%D0%BA%D0%BD%D0%B8%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD2020/">#книжный_марафон2020</a><br><a href="/tag/%D0%9F%D1%83%D1%84%D1%84%D0%B5%D0%BD%D0%B4%D1%83%D0%B9_%D0%9E/">#Пуффендуй_О</a><br><a href="/tag/%D1%81%D0%B5%D1%80%D0%B8%D0%B9%D0%BD%D1%8B%D0%B5_%D1%83%D0%B1%D0%B8%D0%B9%D1%86%D1%8B_2_0/">#серийные_убийцы_2_0</a></br></br></p>
+<p>Начало рецензии здесь – <a href="https://readly.ru/book/58914/">Страхи мудреца. Книга 1</a></p>
+<p>Однозначно – разрывать роман было полной нелепостью. </p>
+<p>Бродилки Квоута продолжаются. Тейлу великий! Этот парень просто мастер лезть из одной неприятности в другую, и иногда даже кажется, будто некоторые из них не играют такой уж огромной роли на саму сущность всей истории, просто Ротфусс после первого тома трилогии, тучного и насыщенного, решил «набить подушку» дополнительными перьями-событиями, для соответствия. <br>Зато. Этот том отличился полунамёками, за которые я просто готова расцеловать автора! <br/>Маму героя все помнят? Самый важный «крючок» держит в качестве наживки её историю, которую не рассказали, нооооо... Касательно Хрониста тоже имеет место какая-то странная история, ведь он безымянный, но, похоже что на самом деле читателям он знаком. А этот чёртов Баст? Да разве ж можно было втиснуть в эту историю персонаж ещё более интригующий и странный! Как я могу задаваться вопросом существования каких-то там Чандриан и Амир, если буквально под носом сидит то ли демон, то ли кто? Последний же намёк звучал рефреном на протяжении всех двух томов: если что-то идёт не так, жди новых неприятностей; если всё хорошо, то это не на долго. Из-за чего лично я думаю, что излишне положительный финал «Страхов мудреца» означает только одно – в следующем томе стоит ждать полный ахтунг и аллес капут! </br></p></div></div></div><div class="bottom-part" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2"><div class="discussion-item-filter" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0"><div data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0"><noindex data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0"><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/68689/" rel="nofollow" target="_blank"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0"><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/68689/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/68689/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/68689/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/68689/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/68689/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2"><div data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0.1.3">3</span><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.1" href="" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$68689.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".16dfgosa7eo.1.0.$68689.0.5"><a class="anchor" data-reactid=".16dfgosa7eo.1.0.$68689.0.5.1" name="68689_18" rel="nofollow"></a></div></div></div><div class="discussion-wrap" data-reactid=".16dfgosa7eo.1.0.$67587"><div class="discussion-item clearfix" data-reactid=".16dfgosa7eo.1.0.$67587.0"><div data-reactid=".16dfgosa7eo.1.0.$67587.0.0"><div class="discussion-item-user-avatar" data-reactid=".16dfgosa7eo.1.0.$67587.0.0.0"><a class="user-avatar-50-50" data-reactid=".16dfgosa7eo.1.0.$67587.0.0.0.0" href="/user/92258/" rel="nofollow"><img data-reactid=".16dfgosa7eo.1.0.$67587.0.0.0.0.0" src="/public/media/avatars/a/a/aa9423f8c44666c16d44c9e85e205f30_80x80.jpg"/></a></div><div class="user-name" data-reactid=".16dfgosa7eo.1.0.$67587.0.0.1"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.0.1.0"><a data-reactid=".16dfgosa7eo.1.0.$67587.0.0.1.0.0" href="/user/92258/" rel="nofollow">Валерия (@oblakomorali)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".16dfgosa7eo.1.0.$67587.0.1"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".16dfgosa7eo.1.0.$67587.0.1.1">21 декабря 2019 22:18</span><div class="stars-rating" data-reactid=".16dfgosa7eo.1.0.$67587.0.1.2"><div data-reactid=".16dfgosa7eo.1.0.$67587.0.1.2.0"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".16dfgosa7eo.1.0.$67587.0.1.2.0.1"><div class="ur-rate-stars _9" data-reactid=".16dfgosa7eo.1.0.$67587.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".16dfgosa7eo.1.0.$67587.0.1.2.0.2">9/10</span></div></div></div><noscript data-reactid=".16dfgosa7eo.1.0.$67587.0.2"></noscript><div class="discussion-item-index clearfix" data-reactid=".16dfgosa7eo.1.0.$67587.0.3"><div class="reveal-block-index clearfix" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.0"><div class="book-pic" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.0.0"><img data-reactid=".16dfgosa7eo.1.0.$67587.0.3.0.0.0" src="/public/media/covers/5/c/5c01083205df93ed69edc80d5392fbe4_100x0.jpg"/></div><span class="book-name" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.0.1">Страхи мудреца. Книга 2</span><span class="book-autor" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.0.2">Патрик Ротфусс</span></div><div class="discussion-item-text clearfix" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.1"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.1.1"> </span><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.1.3"> </span><div data-reactid=".16dfgosa7eo.1.0.$67587.0.3.1.4"><div class="rc-review--text-short" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.1.4.1"><p>Второй том книги «Страхи мудреца» отличается от первого. Несмотря на меньший объём, рассказано там о большем количестве событий. Но при этом, с мертвой точки ничего так и не сдвинулось! И я не понимаю, какого размера должна быть третья часть серии, чтобы автору удалось поместить туда все ответы на главные сюжетные линии, которых теперь прибавилось. И самое главное: он вообще, собирается писать последнюю книгу?<br/>Что касается второго тома: читается также живо, интересно. Но в этой книге заявлено якобы развитие персонажа: Квоут познает женщин, убивает людей, спасает девушек из беды. Вроде что-то в нем меняется, но по возвращении в Университет все возвращается на круги своя: он мстит старому забытому врагу, причём как-то по-детски, тормозит рядом с девушкой, в которую влюблён, отрицает свою влюбленность при разговоре с друзьями. Обмочи мочало, как говорится.<br/>Автор очень любит добавлять новых персонажей или раскрывать существующих с новой стороны (как он это сделал с Бастом). И я повторяю вопрос: Патрик, алё! Ты там накрутил намудрил в первых книгах, что там по финалочке, есть соображения?</p></div></div></div><div class="bottom-part" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2"><div class="discussion-item-filter" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0"><div data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0"><noindex data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0"><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/67587/" rel="nofollow" target="_blank"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0"><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/67587/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/67587/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/67587/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/67587/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/67587/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2"><div data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0.1.3">1</span><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.1" href="" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$67587.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".16dfgosa7eo.1.0.$67587.0.5"><a class="anchor" data-reactid=".16dfgosa7eo.1.0.$67587.0.5.1" name="67587_18" rel="nofollow"></a></div></div></div><div class="discussion-wrap" data-reactid=".16dfgosa7eo.1.0.$15025"><div class="discussion-item clearfix" data-reactid=".16dfgosa7eo.1.0.$15025.0"><div data-reactid=".16dfgosa7eo.1.0.$15025.0.0"><div class="discussion-item-user-avatar" data-reactid=".16dfgosa7eo.1.0.$15025.0.0.0"><a class="user-avatar-50-50" data-reactid=".16dfgosa7eo.1.0.$15025.0.0.0.0" href="/user/40495/" rel="nofollow"><img data-reactid=".16dfgosa7eo.1.0.$15025.0.0.0.0.0" src="/public/static/images/new/default_avatar.jpg"/></a></div><div class="user-name" data-reactid=".16dfgosa7eo.1.0.$15025.0.0.1"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.0.1.0"><a data-reactid=".16dfgosa7eo.1.0.$15025.0.0.1.0.0" href="/user/40495/" rel="nofollow">Дарья (@dashik)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".16dfgosa7eo.1.0.$15025.0.1"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".16dfgosa7eo.1.0.$15025.0.1.1">28 июня 2015 10:42</span><div class="stars-rating" data-reactid=".16dfgosa7eo.1.0.$15025.0.1.2"><div data-reactid=".16dfgosa7eo.1.0.$15025.0.1.2.0"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".16dfgosa7eo.1.0.$15025.0.1.2.0.1"><div class="ur-rate-stars _10" data-reactid=".16dfgosa7eo.1.0.$15025.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".16dfgosa7eo.1.0.$15025.0.1.2.0.2">10/10</span></div></div></div><noscript data-reactid=".16dfgosa7eo.1.0.$15025.0.2"></noscript><div class="discussion-item-index clearfix" data-reactid=".16dfgosa7eo.1.0.$15025.0.3"><div class="reveal-block-index clearfix" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.0"><div class="book-pic" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.0.0"><img data-reactid=".16dfgosa7eo.1.0.$15025.0.3.0.0.0" src="/public/media/covers/5/c/5c01083205df93ed69edc80d5392fbe4_100x0.jpg"/></div><span class="book-name" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.0.1">Страхи мудреца. Книга 2</span><span class="book-autor" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.0.2">Патрик Ротфусс</span></div><div class="discussion-item-text clearfix" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.1"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.1.1"> </span><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.1.3"> </span><div data-reactid=".16dfgosa7eo.1.0.$15025.0.3.1.4"><div class="rc-review--text-short" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.1.4.1"><p>Здравствуйте! Хочу сказать, что у меня долго не могла родиться рецензия на эту книгу. Прежде всего из-за боязни, что я со своим куцым лексиконом и косноязычием не смогу описать того большого счастья, которое подарил мне Патрик Ротфусс этой книгой, того нового мира, с которым столкнулась на страницах произведения и который теперь навсегда в моем сердце. Второй причиной моих страхов была неоконченность цикла: трудно описывать и оценивать, когда сюжет еще не завершен. Но я все-таки решилась, пусть другие книголюбы смогут воистину насладиться этой книгой, и я буду тому катализатором.<br/>Эта книга о мальчике, мальчике обычном и необыкновенном. У него есть любимые родители, с которыми он с малых лет путешествует по свету и показывает представления. О, они не просто бродячие артисты, это большой театр на колесах, они показывают самые серьезные произведения, есть в их репертуаре и легкие пьесы, в роли они вкладывают все эмоции, всю жизнь - ведь они эдема руэ - НАСТОЯЩИЕ артисты! Мальчик схватывает все на лету, так складываются обстоятельства, что он начинает учиться основам симпатии - это магия+наука того мира, но в его жизни случаются страшные вещи, переломившие ход его истории, изменившие, казалось бы, понятную судьбу, давшие новую цель в пути под названием жизнь. <br/>Не буду дальше спойлерить о сюжете, это действительно стоит прочитать самим, дальше просто поделюсь впечатлением о своих чувствах, вызванных книгой. Помимо книг я сама очень люблю музыку и пение: главный герой играет на лире и поет. И надо отдать должное автору: он описывает его игру так, что только уже из-за этого хочется попасть в ЕГО мир и услышать эту музыку. Читала книгу пару месяцев назад, но до сих пор в душе бушуют чувства при воспоминании, как он играл, как сливался с природой, как плакали и были обескуражены его игрой окружающие люди. Мне хотелось бы в этой жизни услышать хоть одно музыкальное произведение, которое так же затронет мою душу, как описание его игры...<br/>У главного героя насыщенная жизнь, где-то вместе с ним плачешь, горюешь о пришедшей беде, где-то удивляешься его напористости и смекалке, и вот он перед тобой, уже взрослый мужчина, который в жизни пережил такое, что многим и привидеться не могло,и просто хочется прижать его к груди и сказать: "ну что же с тобой сделала эта жизнь, мой хороший!".<br/>Я советую эту книгу всем любителям жанра и другим читателям, которые готовы увидеть рядом любовь и смерть, голод и надежду, страхи и цель, величие и никчемность.<br/></p></div></div></div><div class="bottom-part" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2"><div class="discussion-item-filter" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0"><div data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0"><noindex data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0"><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/15025/" rel="nofollow" target="_blank"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0"><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/15025/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/15025/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/15025/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/15025/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/15025/" rel="nofollow" target="_self"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2"><div data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0.1.3">9</span><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.1" href="" rel="nofollow"><span data-reactid=".16dfgosa7eo.1.0.$15025.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".16dfgosa7eo.1.0.$15025.0.5"><a class="anchor" data-reactid=".16dfgosa7eo.1.0.$15025.0.5.1" name="15025_18" rel="nofollow"></a></div></div></div></div><div class="section-buttons" data-reactid=".16dfgosa7eo.1.1"><a class="btn-simple loadmore" data-reactid=".16dfgosa7eo.1.1.0" href=""><i class="b-icon loadmore" data-reactid=".16dfgosa7eo.1.1.0.0"></i><span data-reactid=".16dfgosa7eo.1.1.0.1">Показать еще</span></a></div></div></div></span>
 </div>
-</nav>
+</section>
 </div>
-<div id="right-navigation">
-<nav aria-labelledby="p-views-label" class="vector-menu mw-portlet mw-portlet-views emptyPortlet vector-menu-tabs vector-menu-tabs-legacy" id="p-views" role="navigation">
-<h3 class="vector-menu-heading" id="p-views-label">
-<span class="vector-menu-heading-label">Просмотры</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
 </div>
-</nav>
-<nav aria-labelledby="p-cactions-label" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" id="p-cactions" role="navigation" title="Больше возможностей">
-<input aria-haspopup="true" aria-labelledby="p-cactions-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-cactions" id="p-cactions-checkbox" role="button" type="checkbox"/>
-<label class="vector-menu-heading" id="p-cactions-label">
-<span class="vector-menu-heading-label">Ещё</span>
-</label>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
 </div>
-</nav>
-<div class="vector-search-box-vue vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
-<div>
-<form action="/w/index.php" class="vector-search-box-form" id="searchform">
-<div class="vector-search-box-inner" data-search-loc="header-navigation" id="simpleSearch">
-<input accesskey="f" aria-label="Искать в Википедии" autocapitalize="sentences" class="vector-search-box-input" id="searchInput" name="search" placeholder="Искать в Википедии" title="Искать в Википедии [f]" type="search"/>
-<input name="title" type="hidden" value="Служебная:Поиск"/>
-<input class="searchButton mw-fallbackSearchButton" id="mw-searchButton" name="fulltext" title="Найти страницы, содержащие указанный текст" type="submit" value="Найти"/>
-<input class="searchButton" id="searchButton" name="go" title="Перейти к странице, имеющей в точности такое название" type="submit" value="Перейти"/>
 </div>
+</div>
+<div class="content-cols--aside">
+<div class="book-article--aside" data-inject-global-var="book_profile">
+<div class="book-article--img">
+<img alt="Обложка Страхи мудреца. Книга 2" src="/public/media/covers/5/c/5c01083205df93ed69edc80d5392fbe4_200x0.jpg" title="Страхи мудреца. Книга 2"/>
+</div>
+<div class="ba-about">
+<h3>О книге</h3>
+<ul class="ba-counters">
+<li>
+<i class="bc-icon readers"></i>
+<a href="/book/60685/readers/5/" rel="nofollow">
+Читатели (404)
+</a>
+</li>
+<li class="reviews">
+<i class="bc-icon reviews"></i>
+<a alt="Страхи мудреца. Книга 2 рецензии" href="/book/60685/reviews/">
+Рецензии (4)
+</a>
+</li>
+<li class="quotes">
+<i class="bc-icon quotes"></i>
+<a alt="Страхи мудреца. Книга 2 цитаты" href="/book/60685/quotes/">
+Цитаты (14)
+</a>
+</li>
+<li class="facts">
+<i class="bc-icon facts"></i>
+<a alt="Страхи мудреца. Книга 2 интересные факты" href="/book/60685/facts/">
+Факты (0)
+</a>
+</li>
+<li class="reviews">
+<i class="bc-icon comments"></i>
+<a alt="Страхи мудреца. Книга 2 отзывы" href="/book/60685/comments/">
+Отзывы (0)
+</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class="book-article--links" data-hide-show="">
+<li class="book--share" data-ng-class="{_opened: isVisible()}">
+<i class="b-icon" data-ng-class="{'share-plus': !isVisible(), 'share-minus': isVisible()}"></i>
+<a class="book-share--toggle" data-ng-click="toggle()" href="" rel="nofollow">
+Поделиться книгой с друзьями
+</a>
+<div class="book-share--counters">
+<div class="ya-share-book-profile">
+<script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript"></script>
+<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharequickservices="vkontakte,twitter,odnoklassniki,gplus" data-yasharetheme="counter" data-yasharetype="small"></div>
+</div>
+</div>
+</li>
+</ul>
+<div class="ba--edit-info edit-book-info-margin">
+<a class="fancybox-book-edit-info-form" data-ng-href="#!/#book-edit-info-form" rel="nofollow">
+Изменить информацию о книге
+</a>
+<span class="rarr">→</span>
+</div>
+<a class="centered h3-top100-title" href="/books/top/">
+<div class="b-icon thebest"></div>Лучшие книги - Топ 100
+</a>
+<div class="aside-top100">
+<div class="a-top100-item">
+<div class="a-t100-number">47.</div>
+<div class="a-t100-image">
+<a href="/book/77182/" rel="nofollow">
+<img alt=" Избранное" src="/public/media/covers/4/e/4ef178099d93b90a005480ea92b75923_100x0.jpg" title=" Избранное"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/77182/"> Избранное</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.1</strong>
+(403 оценки)
+</div>
+</div>
+</div>
+<div class="a-top100-item">
+<div class="a-t100-number">48.</div>
+<div class="a-t100-image">
+<a href="/book/7282/" rel="nofollow">
+<img alt="Танец с драконами. Книга 1. Грёзы и пыль" src="/public/media/covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a_100x0.jpg" title="Танец с драконами. Книга 1. Грёзы и пыль"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/7282/">Танец с драконами. Книга 1. Грёзы и пыль</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.0</strong>
+(1407 оценок)
+</div>
+</div>
+</div>
+<div class="a-top100-item">
+<div class="a-t100-number">49.</div>
+<div class="a-t100-image">
+<a href="/book/12408/" rel="nofollow">
+<img alt="Его прощальный поклон" src="/public/media/covers/2/f/2fece950daa2a7ef6cd22490f677cb13_100x0.jpg" title="Его прощальный поклон"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/12408/">Его прощальный поклон</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.1</strong>
+(376 оценок)
+</div>
+</div>
+</div>
+<div class="a-top100-item">
+<div class="a-t100-number">50.</div>
+<div class="a-t100-image">
+<a href="/book/83371/" rel="nofollow">
+<img alt="Проклятый горн" src="/public/media/covers/2/5/25f145fdd0c6843054f404e8de598e0b_100x0.jpg" title="Проклятый горн"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/83371/">Проклятый горн</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.2</strong>
+(217 оценок)
+</div>
+</div>
+</div>
+<div class="a-t100--show-all"><a class="a-arrowed" href="/books/top/" rel="nofollow">Весь рейтинг</a></div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div id="book-edit-info-form">
+<div data-ng-controller="BookEditInfoCtrl" id="book_edit_info_form-book-edit-info-form-app">
+<div class="feedback-form-send" data-ng-show="showSendForm">
+<div class="feedback-head">
+<p>Редактирование информации:</p>
+<span class="book-edit-form-book-name">Страхи мудреца. Книга 2</span>
+</div>
+<div class="feedback-body">
+<span class="book-edit-thanks">Спасибо, что помогаете делать наш сайт лучше!</span>
+<textarea class="generic-input-20" data-ng-model="message" placeholder="Напишите, что вы предлагаете исправить: название книги, обложку, автора, описание, год написания произведения, серию?" rows="10"></textarea>
+<a class="ui-20 show-filming" data-ng-click="addFilms=true" data-ng-hide="addFilms" href="" rel="nofollow">Указать экранизацию книги?</a>
+<input class="ui-20 show-filming" data-ng-model="filming" data-ng-show="addFilms" placeholder="Добавьте ссылку с кинопоиска на фильм, снятый по книге" type="text"/>
+<button class="btn-blue-20 send-book-info" data-ng-click="send()" data-ng-disabled="loading">
+Отправить
+</button>
+</div>
+</div>
+<div class="feedback-form-thanks" data-ng-hide="showSendForm">
+<div class="feedback-head">
+<span>Ваше сообщение отправлено</span>
+</div>
+<div class="feedback-body">
+<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
+нашими специалистами в самое ближайшее время.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="libr" id="libr">
+<div class="libr-lightbox">
+<div class="libr-heading">
+<span class="libr-title libr-dark-gray">Гарри Поттер и Орден Феникса</span>
+<ul class="libr-heading-icons">
+<li><a class="libr-ico-help" href="">Помощь</a></li>
+<li><a class="libr-ico-close" href="">Закрыть</a></li>
+</ul>
+</div>
+<form action="#" class="libr-form-librarian">
+<fieldset>
+<aside class="libr-sidebar">
+<div class="libr-buttons">
+<a class="libr-button libr-will-read" href="">Хочу прочитать</a>
+<a class="libr-button libr-now-reading" href="">Читаю</a>
+<a class="libr-button libr-already-read active" href="">Прочитал</a>
+</div>
+<div class="libr-check-area">
+<div class="libr-form-row">
+<input checked="" hidden="" id="print" type="checkbox">
+<label for="print">Печатное издание</label>
+</input></div>
+<div class="libr-form-row">
+<input hidden="" id="audiobook" type="checkbox"/>
+<label for="audiobook">Аудиокнигу</label>
+</div>
+<div class="libr-form-row">
+<input disabled="" hidden="" id="electronic-version" type="checkbox"/>
+<label for="electronic-version">Электронную версию</label>
+</div>
+<div class="libr-form-row">
+<input disabled="" hidden="" id="original-language" type="checkbox"/>
+<label for="original-language">На оригинальном языке</label>
+</div>
+</div>
+<ul class="libr-sidebar-icons">
+<li><a class="libr-ico-favorite" href="">В избранное</a></li>
+<li><a class="libr-ico-rss" href="">Подписаться на рецензии</a></li>
+</ul>
+</aside>
+<div class="libr-main-block">
+<ul class="libr-tabset">
+<li><a class="active" href="#libr-tab1"><span class="libr-inner libr-create-shelf">Добавить/Оценить</span></a></li>
+<li><a class="disabled" href="#libr-tab2"><span class="libr-inner libr-calendar">Указать период</span></a></li>
+<li><a href="#libr-tab3"><span class="libr-inner libr-edit-note">Добавить заметку</span></a></li>
+</ul>
+<div class="libr-tabs-content">
+<div id="libr-tab1">
+<div class="libr-content-block">
+<div class="libr-add-shelf-section">
+<div class="libr-heading-block">
+<strong class="libr-title">Добавить на полку:</strong>
+<a class="alignright" href="">Создать полку</a>
+</div>
+<div class="libr-select-block libr-popup-holder">
+<div class="libr-open">
+<input readonly="readonly" type="text" value="Выбрать созданную полку"/>
+</div>
+<div class="libr-popup">
+<ul>
+<li class="libr-red">
+<span class="libr-text-link">Хотите удалить полку?</span>
+<div class="libr-block-links"><a href="">Да</a> / <a href="">Нет</a></div>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Моя летнаяя полка</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Моя летнаяя полка</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Книги, которые не дочитал</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Книги от друзей</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Полка под флешмоб</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Для личностного роста</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Детям на ночь</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Коллекция 2015</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Коллекция 2015 - добавление</a>
+<a class="libr-delete" href="">Удалить</a>
+<span class="libr-loader-white"></span>
+</li>
+<li class="libr-red">
+<span class="libr-loader-white"></span>
+<span class="libr-text-link">Удаление...</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="libr-heading-block">
+<strong class="libr-title">Поставить оценку:</strong>
+<span class="alignright">Средняя оценка 7.4</span>
+</div>
+<ul class="libr-rating">
+<li><a href="">1</a></li>
+<li><a href="">2</a></li>
+<li><a href="">3</a></li>
+<li><a href="">4</a></li>
+<li><a href="">5</a></li>
+<li><a href="">6</a></li>
+<li><a href="">7</a></li>
+<li><a href="">8</a></li>
+<li><a href="">9</a></li>
+<li><a href="">10</a></li>
+</ul>
+<div class="libr-text-row">Вероятно, Вы оцените книгу на: <span class="circle green">7</span></div>
+</div>
+</div>
+<div class="libr-bottom-block">
+<a class="libr-button alignright" href="">Сохранено</a>
+</div>
+</div>
+<div id="libr-tab2">
+<div class="libr-content-block">
+<div class="libr-calendar-section">
+<div class="libr-top-block-calendar">
+<div class="libr-arrows"></div>
+<span class="libr-text-period">Июль - Август, 2015</span>
+<div class="libr-select-block libr-popup-holder libr-select-year alignright">
+<div class="libr-open">
+<input type="text" value="2015"/>
+</div>
+<div class="libr-popup">
+<ul>
+<li><a class="text-link" href="">2015</a></li>
+<li><a class="text-link" href="">2016</a></li>
+<li><a class="text-link" href="">2017</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="libr-calendar-block"></div>
+</div>
+</div>
+<div class="libr-bottom-block">
+<div class="alignleft libr-calendar-bottom">
+<input type="text" value="20-07-2015"/>
+<span class="text">-</span>
+<input type="text" value="14-08-2015"/>
+<a class="libr-text" href="">Убрать период?</a>
+</div>
+<a class="libr-button alignright libr-blue" href="">Сохранить</a>
+</div>
+</div>
+<div id="libr-tab3">
+<div class="libr-content-block">
+<div class="libr-text-note">Заметки - это удобный и простой способ хранить нужную информацию <br/>или мысли о книге для личного использования. Ваша заметка будет видна только вам.</div>
+<textarea class="libr-textarea-scrollbar scrollbar-outer" cols="40" placeholder="Заметка..." rows="8"></textarea>
+</div>
+<div class="libr-bottom-block">
+<a class="libr-button alignright libr-blue" href="">Добавить</a>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
 </form>
 </div>
 </div>
 </div>
+<div id="libr"></div>
+<div id="feedback-form">
+<div data-ng-controller="FeedbackCtrl" id="feedback_form_feedback-form-app">
+<div class="feedback-form-send" data-ng-show="showSendForm">
+<div class="feedback-head">
+<span>Нашли ошибку?</span>
+<p>Расскажите нам о найденной ошибке, и мы сможем сделать наш сервис еще лучше.</p>
 </div>
-<div class="vector-legacy-sidebar" id="mw-panel">
-<div id="p-logo" role="banner">
-<a class="mw-wiki-logo" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу"></a>
+<div class="feedback-body">
+<div class="select-box _fr" id="feedback-form-select-box">
+<div class="select-box--current">
+<span>{[{ currentCategoryName }]}</span>
 </div>
-<nav aria-labelledby="p-navigation-label" class="vector-menu mw-portlet mw-portlet-navigation vector-menu-portal portal" id="p-navigation" role="navigation">
-<h3 class="vector-menu-heading" id="p-navigation-label">
-<span class="vector-menu-heading-label">Навигация</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="n-mainpage-description"><a accesskey="z" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу [z]"><span>Заглавная страница</span></a></li><li class="mw-list-item" id="n-content"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5"><span>Содержание</span></a></li><li class="mw-list-item" id="n-featured"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Статьи, считающиеся лучшими статьями проекта"><span>Избранные статьи</span></a></li><li class="mw-list-item" id="n-randompage"><a accesskey="x" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Посмотреть случайно выбранную страницу [x]"><span>Случайная статья</span></a></li><li class="mw-list-item" id="n-currentevents"><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Статьи о текущих событиях в мире"><span>Текущие события</span></a></li><li class="mw-list-item" id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_ru.wikipedia.org&amp;uselang=ru" title="Поддержите нас"><span>Пожертвовать</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-participation-label" class="vector-menu mw-portlet mw-portlet-participation vector-menu-portal portal" id="p-participation" role="navigation">
-<h3 class="vector-menu-heading" id="p-participation-label">
-<span class="vector-menu-heading-label">Участие</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="n-bug_in_article"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D1%85" title="Сообщить об ошибке в этой статье"><span>Сообщить об ошибке</span></a></li><li class="mw-list-item" id="n-introduction"><a href="/wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5"><span>Как править статьи</span></a></li><li class="mw-list-item" id="n-portal"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="О проекте, о том, чем здесь можно заниматься, а также — где что находится"><span>Сообщество</span></a></li><li class="mw-list-item" id="n-forum"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A4%D0%BE%D1%80%D1%83%D0%BC" title="Форум участников Википедии"><span>Форум</span></a></li><li class="mw-list-item" id="n-recentchanges"><a accesskey="r" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8" title="Список последних изменений [r]"><span>Свежие правки</span></a></li><li class="mw-list-item" id="n-newpages"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список недавно созданных страниц"><span>Новые страницы</span></a></li><li class="mw-list-item" id="n-help"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Место расположения Справки"><span>Справка</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-tb-label" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" id="p-tb" role="navigation">
-<h3 class="vector-menu-heading" id="p-tb-label">
-<span class="vector-menu-heading-label">Инструменты</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="t-specialpages"><a accesskey="q" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BF%D0%B5%D1%86%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список служебных страниц [q]"><span>Служебные страницы</span></a></li><li class="mw-list-item" id="t-print"><a accesskey="p" href="javascript:print();" rel="alternate" title="Версия этой страницы для печати [p]"><span>Версия для печати</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-coll-print_export-label" class="vector-menu mw-portlet mw-portlet-coll-print_export emptyPortlet vector-menu-portal portal" id="p-coll-print_export" role="navigation">
-<h3 class="vector-menu-heading" id="p-coll-print_export-label">
-<span class="vector-menu-heading-label">Печать/экспорт</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-lang-label" class="vector-menu mw-portlet mw-portlet-lang vector-menu-portal portal" id="p-lang" role="navigation">
-<h3 class="vector-menu-heading" id="p-lang-label">
-<span class="vector-menu-heading-label">На других языках</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
-<div class="after-portlet after-portlet-lang"><span class="uls-after-portlet-link"></span></div>
-</div>
+<div class="dropdown-box _select">
+<nav class="dropdown-select-options">
+<a data-ng-click="selectCategory(-1, 'Без темы')" href="#" onclick="return false" rel="nofollow">Без темы</a>
+<a data-ng-click="selectCategory(7, 'Ошибка в информации о книге')" href="#" onclick="return false" rel="nofollow">
+Ошибка в информации о книге
+</a>
+<a data-ng-click="selectCategory(8, 'Плагиат')" href="#" onclick="return false" rel="nofollow">
+Плагиат
+</a>
+<a data-ng-click="selectCategory(9, 'Спойлер')" href="#" onclick="return false" rel="nofollow">
+Спойлер
+</a>
+<a data-ng-click="selectCategory(10, 'Другая ошибка')" href="#" onclick="return false" rel="nofollow">
+Другая ошибка
+</a>
+<a data-ng-click="selectCategory(11, 'Авторы')" href="#" onclick="return false" rel="nofollow">
+Авторы
+</a>
 </nav>
 </div>
 </div>
-<footer class="mw-footer" id="footer" role="contentinfo">
-<ul id="footer-info">
-</ul>
-<ul id="footer-places">
-<li id="footer-places-privacy"><a href="https://meta.wikimedia.org/wiki/Privacy_policy/ru">Политика конфиденциальности</a></li>
-<li id="footer-places-about"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5">Описание Википедии</a></li>
-<li id="footer-places-disclaimers"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Отказ от ответственности</a></li>
-<li id="footer-places-contact"><a href="//ru.wikipedia.org/wiki/Википедия:Контакты">Свяжитесь с нами</a></li>
-<li id="footer-places-mobileview"><a class="noprint stopMobileRedirectToggle" href="//ru.m.wikipedia.org/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9D%D0%B5%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D0%B5_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&amp;mobileaction=toggle_view_mobile">Мобильная версия</a></li>
-<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Разработчики</a></li>
-<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/ru.wikipedia.org">Статистика</a></li>
-<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Заявление о куки</a></li>
-</ul>
-<ul class="noprint" id="footer-icons">
-<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img alt="Wikimedia Foundation" height="31" loading="lazy" src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88"/></a></li>
-<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" loading="lazy" src="/static/images/footer/poweredby_mediawiki_88x31.png" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88"/></a></li>
-</ul>
-</footer>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":63,"wgHostname":"mw2335"});});</script>
+<span class="feedback-category-text">Категория:</span>
+<textarea class="generic-input-20" data-ng-model="message" placeholder="Опишите ошибку..." rows="10"></textarea>
+<button class="btn-blue-20" data-ng-click="send()" data-ng-disabled="loading">
+Отправить
+</button>
+</div>
+</div>
+<div class="feedback-form-thanks" data-ng-hide="showSendForm">
+<div class="feedback-head">
+<span>Ваше сообщение отправлено</span>
+</div>
+<div class="feedback-body">
+<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
+нашими специалистами в самое ближайшее время.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="help-readly">
+<div>
+<span class="help-readly--title">Помоги Ридли!</span>
+<div class="help-readly--text">
+Мы вкладываем душу в Ридли. Спасибо, что вы с нами! Расскажите о нас друзьям, чтобы они могли присоединиться к нашей дружной семье книголюбов.
+</div>
+<div class="social">
+<div class="social-buttons">
+<a class="vk" href="https://vk.com/share.php?url=http%3A%2F%2Freadly.ru&amp;title=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru&amp;image=" rel="nofollow" target="_blank" title="Вконтакте"></a>
+<a class="tw" href="https://twitter.com/intent/tweet?status=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Twitter"></a>
+<a class="gp" href="https://plus.google.com/share?url=http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Google+"></a>
+<a class="ok" href="https://www.ok.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=http%3A%2F%2Freadly.ru&amp;st.comments=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru" rel="nofollow" target="_blank" title="Odnoklassniki"></a>
+</div>
+</div>
+</div>
+</div>
+<script src="/public/static/dist/js/readly.js?b8cabe27e37a" type="text/javascript"></script>
+<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.librarianEmitter.js" type="text/javascript"></script>
+<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
+<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
+<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.bookTimelineBox.js"></script>
+<script>
+
+if (typeof React === 'undefined') throw new Error('Cannot find `React` global variable. Have you added a script element to this page which points to React?');
+if (typeof Readly.bookTimelineBox === 'undefined') throw new Error('Cannot find component variable `Readly.bookTimelineBox`');
+(function(React, component, containerId) {
+  var props = {"perPage": 5, "bookId": 60685, "initialParams": {"comment_count": 3, "object_type": "reviews", "book_id": 60685}, "initialItems": [{"book_rating": 10, "hashtags": ["\u0411\u041a_2020", "\u0432\u043e\u0438\u043d\u044b_\u0432\u0440\u0435\u043c\u0435\u043d\u0438"], "rating": {"positive": 1, "negative": 0}, "text": "<p>\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u043a\u043d\u0438\u0433\u0438 <a href=\"http://readly.ru/book/58914/\">\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 1</a>. <br />\u042e\u043d\u044b\u0439 \u041a\u0432\u043e\u0443\u0442 \u0432\u0437\u044f\u043b \u043f\u0430\u0443\u0437\u0443 \u0432 \u043e\u0431\u0443\u0447\u0435\u043d\u0438\u0438, \u043d\u043e \u044d\u0442\u043e \u043d\u0435 \u043c\u0435\u0448\u0430\u0435\u0442 \u0435\u043c\u0443 \u043f\u043e\u043f\u0430\u0434\u0430\u0442\u044c \u0432 \u043d\u043e\u0432\u044b\u0435 \u043d\u0435\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0441\u0442\u0438. \u0412 \u043f\u043e\u043f\u044b\u0442\u043a\u0435 \u043e\u0431\u0440\u0435\u0441\u0442\u0438 \u043f\u043e\u043a\u0440\u043e\u0432\u0438\u0442\u0435\u043b\u044f \u0433\u043b\u0430\u0432\u043d\u044b\u0439 \u0433\u0435\u0440\u043e\u0439 \u0432\u044b\u043d\u0443\u0436\u0434\u0435\u043d \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0442\u044c \u043f\u043e\u0440\u0443\u0447\u0435\u043d\u0438\u044f \u0434\u043e\u0432\u043e\u043b\u044c\u043d\u043e \u0441\u0432\u043e\u0435\u043d\u0440\u0430\u0432\u043d\u043e\u0433\u043e \u0438 \u0432\u043b\u0438\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u043c\u043e\u043d\u0430\u0440\u0445\u0430, \u0440\u0438\u0441\u043a\u0443\u044f \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u0436\u0438\u0437\u043d\u044c\u044e. \u0426\u0435\u043f\u044c \u0441\u043e\u0431\u044b\u0442\u0438\u0439 \u0437\u0430\u043a\u0440\u0443\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u0442\u0430\u043a \u043b\u0438\u0445\u043e, \u0447\u0442\u043e \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u0435 \u0432\u043d\u0438\u043c\u0430\u043d\u0438\u0435 \u0441\u043c\u0435\u0449\u0430\u0435\u0442\u0441\u044f, \u0438 \u043f\u0435\u0440\u0435\u0434 \u043d\u0430\u043c\u0438 \u0430\u0431\u0441\u043e\u043b\u044e\u0442\u043d\u043e \u043d\u043e\u0432\u044b\u0435 \u0433\u0435\u0440\u043e\u0438 \u0438 \u043c\u0435\u0441\u0442\u0430, \u0447\u0442\u043e \u043f\u043e\u0440\u043e\u0436\u0434\u0430\u0435\u0442 \u043d\u043e\u0432\u044b\u0435 \u0442\u0430\u0439\u043d\u044b \u0438 \u0437\u0430\u0433\u0430\u0434\u043a\u0438\u2026 \u041d\u0435 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u044e, \u043a\u0430\u043a \u0430\u0432\u0442\u043e\u0440 \u0431\u0443\u0434\u0435\u0442 \u0437\u0430\u043a\u0430\u043d\u0447\u0438\u0432\u0430\u0442\u044c \u044d\u0442\u043e \u0432\u0441\u0435, \u043f\u043e\u0442\u043e\u043c\u0443 \u0447\u0442\u043e \u043a \u0440\u0430\u0437\u0433\u0430\u0434\u043a\u0435 \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u0432\u0435\u0442\u043a\u0438 \u041a\u0432\u043e\u0443\u0442 \u043f\u0440\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u043d\u0435 \u043f\u0440\u0438\u0431\u043b\u0438\u0437\u0438\u043b\u0441\u044f, \u043d\u043e, \u0432 \u0442\u043e \u0436\u0435 \u0432\u0440\u0435\u043c\u044f, \u0434\u043e\u0431\u0430\u0432\u0438\u043b\u0441\u044f \u0435\u0449\u0435 \u0432\u0430\u0433\u043e\u043d \u0432\u043e\u043f\u0440\u043e\u0441\u043e\u0432. </p>\n\n<p>\u041d\u0430 \u043b\u044e\u0431\u043e\u0432\u043d\u043e\u043c \u0444\u0440\u043e\u043d\u0442\u0435 \u0442\u043e\u0436\u0435 \u043e\u0441\u043e\u0431\u043e \u0431\u0435\u0437 \u043f\u0435\u0440\u0435\u043c\u0435\u043d, \u0414\u0435\u043d\u043d\u0430 \u043f\u043e-\u043f\u0440\u0435\u0436\u043d\u0435\u043c\u0443 \u0437\u0430\u0433\u0430\u0434\u043e\u0447\u043d\u0430 \u0438 \u043d\u0435\u0443\u043b\u043e\u0432\u0438\u043c\u0430, \u043f\u043e\u043a\u0430 \u043d\u0435 \u0441\u043e\u0432\u0441\u0435\u043c \u043f\u043e\u043d\u0438\u043c\u0430\u044e \u0435\u0435 \u0440\u043e\u043b\u044c \u0432\u043e \u0432\u0441\u0435\u043c \u044d\u0442\u043e\u043c. \u0417\u0430\u0442\u043e, \u0432 \u043f\u043b\u0430\u043d\u0435 \u043f\u043e\u043b\u043e\u0432\u043e\u0433\u043e \u0432\u043e\u0441\u043f\u0438\u0442\u0430\u043d\u0438\u044f \u041a\u0432\u043e\u0443\u0442 \u043e\u043a\u0430\u0437\u0430\u043b\u0441\u044f \u0432\u043f\u0435\u0440\u0435\u0434\u0438 \u043f\u043b\u0430\u043d\u0435\u0442\u044b \u0432\u0441\u0435\u0439, \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f \u043c\u0438\u0444\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0424\u0435\u043b\u0443\u0440\u0438\u0430\u043d, \u0432 \u043f\u043b\u0435\u043d\u0443 \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u043a\u0430\u0437\u0430\u043b\u0441\u044f. \u0412\u043e\u043e\u0431\u0449\u0435, \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u044b \u0433\u0435\u0440\u043e\u044f \u0441\u0442\u0430\u043b\u0438 \u0437\u043d\u0430\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0441\u0435\u0440\u044c\u0435\u0437\u043d\u0435\u0435, \u043f\u043e \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u044e \u0441 \u043f\u0435\u0440\u0432\u043e\u0439 \u043a\u043d\u0438\u0433\u043e\u0439, \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043a\u0430\u0436\u0434\u043e\u0439 \u0438\u0437 \u043d\u0438\u0445 \u043b\u043e\u043c\u0430\u0435\u0442 \u041a\u0432\u043e\u0443\u0442\u0430, \u0442\u043e\u043b\u043a\u0430\u044f \u043d\u0430 \u043a\u0440\u0430\u0439\u043d\u0438\u0435 \u043c\u0435\u0440\u044b. \u0422\u0443\u0442 \u0432\u043e\u0437\u043d\u0438\u043a\u0430\u0435\u0442 \u0432\u043e\u043f\u0440\u043e\u0441 \u043a \u0430\u0432\u0442\u043e\u0440\u0443 \u2013 \u043f\u043e\u0447\u0435\u043c\u0443 \u0433\u043b\u0430\u0432\u043d\u043e\u043c\u0443 \u0433\u0435\u0440\u043e\u044e \u0432\u0441\u0435 \u0435\u0449\u0435 17 \u043b\u0435\u0442? \u0415\u0433\u043e \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0438 \u043c\u044b\u0441\u043b\u0438 \u043d\u0430\u043c\u043d\u043e\u0433\u043e \u0432\u0437\u0440\u043e\u0441\u043b\u0435\u0435, \u0437\u0430\u0447\u0435\u043c \u0443\u043c\u0435\u0449\u0430\u0442\u044c \u0441\u0442\u043e\u043b\u044c\u043a\u043e \u0441\u043e\u0431\u044b\u0442\u0438\u0439 \u0432 \u043f\u0430\u0440\u0443 \u043b\u0435\u0442?</p>\n\n<p>\u0422\u0435\u043c \u0432\u0440\u0435\u043c\u0435\u043d\u0435\u043c, \u0441\u043b\u0430\u0432\u0430 \u0433\u043b\u0430\u0432\u043d\u043e\u0433\u043e \u0433\u0435\u0440\u043e\u044f \u0440\u0430\u0441\u0442\u0435\u0442, \u0438\u0441\u0442\u043e\u0440\u0438\u0438 \u043e \u043d\u0435\u043c \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0432\u043e \u0432\u0441\u0435\u0445 \u0442\u0440\u0430\u043a\u0442\u0438\u0440\u0430\u0445, \u0443\u0434\u0430\u0447\u0430 \u0442\u043e\u0436\u0435 \u043e\u043a\u0430\u0437\u0430\u043b\u0430\u0441\u044c \u043d\u0430 \u0435\u0433\u043e \u0441\u0442\u043e\u0440\u043e\u043d\u0435, \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e \u0432 \u0444\u0438\u043d\u0430\u043b\u0435 \u043a\u043d\u0438\u0433\u0438\u2026 \u0427\u0443\u0432\u0441\u0442\u0432\u0443\u044e \u043d\u0430\u0437\u0440\u0435\u0432\u0430\u0435\u0442 \u0441\u0435\u0440\u044c\u0435\u0437\u043d\u0430\u044f \u0431\u0443\u0440\u044f, \u0435\u0441\u043b\u0438 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0430\u044f \u0447\u0430\u0441\u0442\u044c \u0442\u0430\u043a\u0438 \u0432\u044b\u0439\u0434\u0435\u0442, \u043d\u0430 \u0447\u0442\u043e \u044f \u043e\u0447\u0435\u043d\u044c \u0441\u0438\u043b\u044c\u043d\u043e \u0440\u0430\u0441\u0441\u0447\u0438\u0442\u044b\u0432\u0430\u044e)).<br />\u041e\u0442 \u043a\u043d\u0438\u0433\u0438 \u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u0431\u044b\u043b\u043e \u043e\u0442\u043e\u0440\u0432\u0430\u0442\u044c\u0441\u044f, \u0438\u043d\u0442\u0435\u0440\u0435\u0441 \u043d\u0435 \u043e\u0441\u043b\u0430\u0431\u0435\u0432\u0430\u0435\u0442 \u043d\u0430 \u043f\u0440\u043e\u0442\u044f\u0436\u0435\u043d\u0438\u0438 \u0432\u0441\u0435\u0445 \u0442\u0440\u0435\u0445 \u0447\u0430\u0441\u0442\u0435\u0439, \u043d\u0435\u0441\u043c\u043e\u0442\u0440\u044f \u043d\u0430 \u0432\u043d\u0443\u0448\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043e\u0431\u044a\u0435\u043c. \u0412\u0438\u0434\u043d\u043e, \u0447\u0442\u043e \u043a\u0430\u0436\u0434\u0430\u044f \u0441\u0446\u0435\u043d\u0430 \u0442\u0449\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043f\u0440\u043e\u0434\u0443\u043c\u0430\u043d\u0430 \u0438 \u043f\u0435\u0440\u0435\u043f\u0438\u0441\u0430\u043d\u0430 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0440\u0430\u0437, \u0434\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u0430\u044f \u0434\u043e \u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u0441\u0442\u0432\u0430.<br /><a href=\"/tag/%D0%91%D0%9A_2020/\">#\u0411\u041a_2020</a> (\u041a\u043d\u0438\u0433\u0430-\u0442\u043e\u043b\u0441\u0442\u0443\u0448\u043a\u0430 (\u0431\u043e\u043b\u0435\u0435 600 \u043f\u0435\u0447\u0430\u0442\u043d\u044b\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446))<br /><a href=\"/tag/%D0%B2%D0%BE%D0%B8%D0%BD%D1%8B_%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8/\">#\u0432\u043e\u0438\u043d\u044b_\u0432\u0440\u0435\u043c\u0435\u043d\u0438</a></p>", "created_at": "2020-05-06T12:00:47", "object_type": 18, "updated_at": "2020-05-06T20:33:26", "object_id": 71439, "comment_count": 2, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 15917, "name": "\u041d\u0430\u0442\u0430\u043b\u0438\u044f (@fairytale22)", "avatar": "avatars/e/0/e0c0a90cf6f46d48f3e035a18e6d2d41.gif", "url": "/user/15917/", "username": "fairytale22", "gender": 0}, "has_spoilers": false, "review_type": 1, "rated_users": {"positive": [3854], "negative": []}, "comments": [{"text": "<p>\u0422\u0435\u043f\u0435\u0440\u044c \u043e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u0434\u0432\u0430 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u0430 (\u043f\u043e\u0432\u0435\u0441\u0442\u0438), \u0438 \u0442\u044b \u043c\u0435\u043d\u044f \u043e\u0431\u0433\u043e\u043d\u0438\u0448\u044c)))</p>", "created_at": "2020-05-06T15:46:35", "object_id": 335032, "item_type": 18, "likes": 0, "item_id": 71439, "liked_users": [], "user": {"id": 3854, "name": " \u041d\u0430 \u044d\u0442\u043e\u0442 \u0440\u0430\u0437 \u0434\u043e\u0431\u0440\u0430\u044f \u041d\u044e\u0442\u0430  (@nuta2019)", "avatar": "avatars/1/1/11f12811b869f7fca883c99da45268c6.jpeg", "url": "/user/3854/", "username": "nuta2019", "gender": 0}}, {"text": "<p><a href=\"/user/3854/\">@nuta2019</a>, \u043e\u0447\u0435\u043d\u044c \u0445\u043e\u0447\u0443 \u043f\u0440\u043e \u0411\u0430\u0441\u0442\u0430 \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u0442\u044c, \u0441\u0430\u043c\u044b\u0439 \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0439 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436)</p>", "created_at": "2020-05-06T20:33:26", "object_id": 335045, "item_type": 18, "likes": 1, "item_id": 71439, "liked_users": [3854], "user": {"id": 15917, "name": "\u041d\u0430\u0442\u0430\u043b\u0438\u044f (@fairytale22)", "avatar": "avatars/e/0/e0c0a90cf6f46d48f3e035a18e6d2d41.gif", "url": "/user/15917/", "username": "fairytale22", "gender": 0}}]}, {"book_rating": 9, "hashtags": ["\u043a\u043d\u0438\u0436\u043d\u044b\u0439_\u043c\u0430\u0440\u0430\u0444\u043e\u043d2020", "\u041f\u0443\u0444\u0444\u0435\u043d\u0434\u0443\u0439_\u041e", "\u0441\u0435\u0440\u0438\u0439\u043d\u044b\u0435_\u0443\u0431\u0438\u0439\u0446\u044b_2_0"], "rating": {"positive": 3, "negative": 0}, "text": "<p><a href=\"/tag/%D0%BA%D0%BD%D0%B8%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD2020/\">#\u043a\u043d\u0438\u0436\u043d\u044b\u0439_\u043c\u0430\u0440\u0430\u0444\u043e\u043d2020</a><br /><a href=\"/tag/%D0%9F%D1%83%D1%84%D1%84%D0%B5%D0%BD%D0%B4%D1%83%D0%B9_%D0%9E/\">#\u041f\u0443\u0444\u0444\u0435\u043d\u0434\u0443\u0439_\u041e</a><br /><a href=\"/tag/%D1%81%D0%B5%D1%80%D0%B8%D0%B9%D0%BD%D1%8B%D0%B5_%D1%83%D0%B1%D0%B8%D0%B9%D1%86%D1%8B_2_0/\">#\u0441\u0435\u0440\u0438\u0439\u043d\u044b\u0435_\u0443\u0431\u0438\u0439\u0446\u044b_2_0</a></p>\n\n<p>\u041d\u0430\u0447\u0430\u043b\u043e \u0440\u0435\u0446\u0435\u043d\u0437\u0438\u0438 \u0437\u0434\u0435\u0441\u044c \u2013 <a href=\"http://readly.ru/book/58914/\">\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 1</a></p>\n\n<p>\u041e\u0434\u043d\u043e\u0437\u043d\u0430\u0447\u043d\u043e \u2013 \u0440\u0430\u0437\u0440\u044b\u0432\u0430\u0442\u044c \u0440\u043e\u043c\u0430\u043d \u0431\u044b\u043b\u043e \u043f\u043e\u043b\u043d\u043e\u0439 \u043d\u0435\u043b\u0435\u043f\u043e\u0441\u0442\u044c\u044e. </p>\n\n<p>\u0411\u0440\u043e\u0434\u0438\u043b\u043a\u0438 \u041a\u0432\u043e\u0443\u0442\u0430 \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0430\u044e\u0442\u0441\u044f. \u0422\u0435\u0439\u043b\u0443 \u0432\u0435\u043b\u0438\u043a\u0438\u0439! \u042d\u0442\u043e\u0442 \u043f\u0430\u0440\u0435\u043d\u044c \u043f\u0440\u043e\u0441\u0442\u043e \u043c\u0430\u0441\u0442\u0435\u0440 \u043b\u0435\u0437\u0442\u044c \u0438\u0437 \u043e\u0434\u043d\u043e\u0439 \u043d\u0435\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0441\u0442\u0438 \u0432 \u0434\u0440\u0443\u0433\u0443\u044e, \u0438 \u0438\u043d\u043e\u0433\u0434\u0430 \u0434\u0430\u0436\u0435 \u043a\u0430\u0436\u0435\u0442\u0441\u044f, \u0431\u0443\u0434\u0442\u043e \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0438\u0437 \u043d\u0438\u0445 \u043d\u0435 \u0438\u0433\u0440\u0430\u044e\u0442 \u0442\u0430\u043a\u043e\u0439 \u0443\u0436 \u043e\u0433\u0440\u043e\u043c\u043d\u043e\u0439 \u0440\u043e\u043b\u0438 \u043d\u0430 \u0441\u0430\u043c\u0443 \u0441\u0443\u0449\u043d\u043e\u0441\u0442\u044c \u0432\u0441\u0435\u0439 \u0438\u0441\u0442\u043e\u0440\u0438\u0438, \u043f\u0440\u043e\u0441\u0442\u043e \u0420\u043e\u0442\u0444\u0443\u0441\u0441 \u043f\u043e\u0441\u043b\u0435 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0442\u043e\u043c\u0430 \u0442\u0440\u0438\u043b\u043e\u0433\u0438\u0438, \u0442\u0443\u0447\u043d\u043e\u0433\u043e \u0438 \u043d\u0430\u0441\u044b\u0449\u0435\u043d\u043d\u043e\u0433\u043e, \u0440\u0435\u0448\u0438\u043b \u00ab\u043d\u0430\u0431\u0438\u0442\u044c \u043f\u043e\u0434\u0443\u0448\u043a\u0443\u00bb \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u043f\u0435\u0440\u044c\u044f\u043c\u0438-\u0441\u043e\u0431\u044b\u0442\u0438\u044f\u043c\u0438, \u0434\u043b\u044f \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u044f. <br />\u0417\u0430\u0442\u043e. \u042d\u0442\u043e\u0442 \u0442\u043e\u043c \u043e\u0442\u043b\u0438\u0447\u0438\u043b\u0441\u044f \u043f\u043e\u043b\u0443\u043d\u0430\u043c\u0451\u043a\u0430\u043c\u0438, \u0437\u0430 \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u044f \u043f\u0440\u043e\u0441\u0442\u043e \u0433\u043e\u0442\u043e\u0432\u0430 \u0440\u0430\u0441\u0446\u0435\u043b\u043e\u0432\u0430\u0442\u044c \u0430\u0432\u0442\u043e\u0440\u0430! <br />\u041c\u0430\u043c\u0443 \u0433\u0435\u0440\u043e\u044f \u0432\u0441\u0435 \u043f\u043e\u043c\u043d\u044f\u0442? \u0421\u0430\u043c\u044b\u0439 \u0432\u0430\u0436\u043d\u044b\u0439 \u00ab\u043a\u0440\u044e\u0447\u043e\u043a\u00bb \u0434\u0435\u0440\u0436\u0438\u0442 \u0432 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043d\u0430\u0436\u0438\u0432\u043a\u0438 \u0435\u0451 \u0438\u0441\u0442\u043e\u0440\u0438\u044e, \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u043d\u0435 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u0430\u043b\u0438, \u043d\u043e\u043e\u043e\u043e\u043e... \u041a\u0430\u0441\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0425\u0440\u043e\u043d\u0438\u0441\u0442\u0430 \u0442\u043e\u0436\u0435 \u0438\u043c\u0435\u0435\u0442 \u043c\u0435\u0441\u0442\u043e \u043a\u0430\u043a\u0430\u044f-\u0442\u043e \u0441\u0442\u0440\u0430\u043d\u043d\u0430\u044f \u0438\u0441\u0442\u043e\u0440\u0438\u044f, \u0432\u0435\u0434\u044c \u043e\u043d \u0431\u0435\u0437\u044b\u043c\u044f\u043d\u043d\u044b\u0439, \u043d\u043e, \u043f\u043e\u0445\u043e\u0436\u0435 \u0447\u0442\u043e \u043d\u0430 \u0441\u0430\u043c\u043e\u043c \u0434\u0435\u043b\u0435 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044f\u043c \u043e\u043d \u0437\u043d\u0430\u043a\u043e\u043c. \u0410 \u044d\u0442\u043e\u0442 \u0447\u0451\u0440\u0442\u043e\u0432 \u0411\u0430\u0441\u0442? \u0414\u0430 \u0440\u0430\u0437\u0432\u0435 \u0436 \u043c\u043e\u0436\u043d\u043e \u0431\u044b\u043b\u043e \u0432\u0442\u0438\u0441\u043d\u0443\u0442\u044c \u0432 \u044d\u0442\u0443 \u0438\u0441\u0442\u043e\u0440\u0438\u044e \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436 \u0435\u0449\u0451 \u0431\u043e\u043b\u0435\u0435 \u0438\u043d\u0442\u0440\u0438\u0433\u0443\u044e\u0449\u0438\u0439 \u0438 \u0441\u0442\u0440\u0430\u043d\u043d\u044b\u0439! \u041a\u0430\u043a \u044f \u043c\u043e\u0433\u0443 \u0437\u0430\u0434\u0430\u0432\u0430\u0442\u044c\u0441\u044f \u0432\u043e\u043f\u0440\u043e\u0441\u043e\u043c \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043d\u0438\u044f \u043a\u0430\u043a\u0438\u0445-\u0442\u043e \u0442\u0430\u043c \u0427\u0430\u043d\u0434\u0440\u0438\u0430\u043d \u0438 \u0410\u043c\u0438\u0440, \u0435\u0441\u043b\u0438 \u0431\u0443\u043a\u0432\u0430\u043b\u044c\u043d\u043e \u043f\u043e\u0434 \u043d\u043e\u0441\u043e\u043c \u0441\u0438\u0434\u0438\u0442 \u0442\u043e \u043b\u0438 \u0434\u0435\u043c\u043e\u043d, \u0442\u043e \u043b\u0438 \u043a\u0442\u043e? \u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0436\u0435 \u043d\u0430\u043c\u0451\u043a \u0437\u0432\u0443\u0447\u0430\u043b \u0440\u0435\u0444\u0440\u0435\u043d\u043e\u043c \u043d\u0430 \u043f\u0440\u043e\u0442\u044f\u0436\u0435\u043d\u0438\u0438 \u0432\u0441\u0435\u0445 \u0434\u0432\u0443\u0445 \u0442\u043e\u043c\u043e\u0432: \u0435\u0441\u043b\u0438 \u0447\u0442\u043e-\u0442\u043e \u0438\u0434\u0451\u0442 \u043d\u0435 \u0442\u0430\u043a, \u0436\u0434\u0438 \u043d\u043e\u0432\u044b\u0445 \u043d\u0435\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0441\u0442\u0435\u0439; \u0435\u0441\u043b\u0438 \u0432\u0441\u0451 \u0445\u043e\u0440\u043e\u0448\u043e, \u0442\u043e \u044d\u0442\u043e \u043d\u0435 \u043d\u0430 \u0434\u043e\u043b\u0433\u043e. \u0418\u0437-\u0437\u0430 \u0447\u0435\u0433\u043e \u043b\u0438\u0447\u043d\u043e \u044f \u0434\u0443\u043c\u0430\u044e, \u0447\u0442\u043e \u0438\u0437\u043b\u0438\u0448\u043d\u0435 \u043f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0444\u0438\u043d\u0430\u043b \u00ab\u0421\u0442\u0440\u0430\u0445\u043e\u0432 \u043c\u0443\u0434\u0440\u0435\u0446\u0430\u00bb \u043e\u0437\u043d\u0430\u0447\u0430\u0435\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0434\u043d\u043e \u2013 \u0432 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u043c \u0442\u043e\u043c\u0435 \u0441\u0442\u043e\u0438\u0442 \u0436\u0434\u0430\u0442\u044c \u043f\u043e\u043b\u043d\u044b\u0439 \u0430\u0445\u0442\u0443\u043d\u0433 \u0438 \u0430\u043b\u043b\u0435\u0441 \u043a\u0430\u043f\u0443\u0442! </p>", "created_at": "2020-02-15T13:32:18", "object_type": 18, "updated_at": "2020-02-15T13:32:18", "object_id": 68689, "comment_count": 0, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 3854, "name": " \u041d\u0430 \u044d\u0442\u043e\u0442 \u0440\u0430\u0437 \u0434\u043e\u0431\u0440\u0430\u044f \u041d\u044e\u0442\u0430  (@nuta2019)", "avatar": "avatars/1/1/11f12811b869f7fca883c99da45268c6.jpeg", "url": "/user/3854/", "username": "nuta2019", "gender": 0}, "has_spoilers": false, "review_type": 0, "rated_users": {"positive": [1219, 15917, 57299], "negative": []}, "comments": []}, {"book_rating": 9, "hashtags": [], "rating": {"positive": 1, "negative": 0}, "text": "<p>\u0412\u0442\u043e\u0440\u043e\u0439 \u0442\u043e\u043c \u043a\u043d\u0438\u0433\u0438 \u00ab\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430\u00bb \u043e\u0442\u043b\u0438\u0447\u0430\u0435\u0442\u0441\u044f \u043e\u0442 \u043f\u0435\u0440\u0432\u043e\u0433\u043e. \u041d\u0435\u0441\u043c\u043e\u0442\u0440\u044f \u043d\u0430 \u043c\u0435\u043d\u044c\u0448\u0438\u0439 \u043e\u0431\u044a\u0451\u043c, \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u0430\u043d\u043e \u0442\u0430\u043c \u043e \u0431\u043e\u043b\u044c\u0448\u0435\u043c \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u0435 \u0441\u043e\u0431\u044b\u0442\u0438\u0439. \u041d\u043e \u043f\u0440\u0438 \u044d\u0442\u043e\u043c, \u0441 \u043c\u0435\u0440\u0442\u0432\u043e\u0439 \u0442\u043e\u0447\u043a\u0438 \u043d\u0438\u0447\u0435\u0433\u043e \u0442\u0430\u043a \u0438 \u043d\u0435 \u0441\u0434\u0432\u0438\u043d\u0443\u043b\u043e\u0441\u044c! \u0418 \u044f \u043d\u0435 \u043f\u043e\u043d\u0438\u043c\u0430\u044e, \u043a\u0430\u043a\u043e\u0433\u043e \u0440\u0430\u0437\u043c\u0435\u0440\u0430 \u0434\u043e\u043b\u0436\u043d\u0430 \u0431\u044b\u0442\u044c \u0442\u0440\u0435\u0442\u044c\u044f \u0447\u0430\u0441\u0442\u044c \u0441\u0435\u0440\u0438\u0438, \u0447\u0442\u043e\u0431\u044b \u0430\u0432\u0442\u043e\u0440\u0443 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043c\u0435\u0441\u0442\u0438\u0442\u044c \u0442\u0443\u0434\u0430 \u0432\u0441\u0435 \u043e\u0442\u0432\u0435\u0442\u044b \u043d\u0430 \u0433\u043b\u0430\u0432\u043d\u044b\u0435 \u0441\u044e\u0436\u0435\u0442\u043d\u044b\u0435 \u043b\u0438\u043d\u0438\u0438, \u043a\u043e\u0442\u043e\u0440\u044b\u0445 \u0442\u0435\u043f\u0435\u0440\u044c \u043f\u0440\u0438\u0431\u0430\u0432\u0438\u043b\u043e\u0441\u044c. \u0418 \u0441\u0430\u043c\u043e\u0435 \u0433\u043b\u0430\u0432\u043d\u043e\u0435: \u043e\u043d \u0432\u043e\u043e\u0431\u0449\u0435, \u0441\u043e\u0431\u0438\u0440\u0430\u0435\u0442\u0441\u044f \u043f\u0438\u0441\u0430\u0442\u044c \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044e\u044e \u043a\u043d\u0438\u0433\u0443?<br />\u0427\u0442\u043e \u043a\u0430\u0441\u0430\u0435\u0442\u0441\u044f \u0432\u0442\u043e\u0440\u043e\u0433\u043e \u0442\u043e\u043c\u0430: \u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044f \u0442\u0430\u043a\u0436\u0435 \u0436\u0438\u0432\u043e, \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u043e. \u041d\u043e \u0432 \u044d\u0442\u043e\u0439 \u043a\u043d\u0438\u0433\u0435 \u0437\u0430\u044f\u0432\u043b\u0435\u043d\u043e \u044f\u043a\u043e\u0431\u044b \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0435 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0430: \u041a\u0432\u043e\u0443\u0442 \u043f\u043e\u0437\u043d\u0430\u0435\u0442 \u0436\u0435\u043d\u0449\u0438\u043d, \u0443\u0431\u0438\u0432\u0430\u0435\u0442 \u043b\u044e\u0434\u0435\u0439, \u0441\u043f\u0430\u0441\u0430\u0435\u0442 \u0434\u0435\u0432\u0443\u0448\u0435\u043a \u0438\u0437 \u0431\u0435\u0434\u044b. \u0412\u0440\u043e\u0434\u0435 \u0447\u0442\u043e-\u0442\u043e \u0432 \u043d\u0435\u043c \u043c\u0435\u043d\u044f\u0435\u0442\u0441\u044f, \u043d\u043e \u043f\u043e \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0438 \u0432 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u0432\u0441\u0435 \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044f \u043d\u0430 \u043a\u0440\u0443\u0433\u0438 \u0441\u0432\u043e\u044f: \u043e\u043d \u043c\u0441\u0442\u0438\u0442 \u0441\u0442\u0430\u0440\u043e\u043c\u0443 \u0437\u0430\u0431\u044b\u0442\u043e\u043c\u0443 \u0432\u0440\u0430\u0433\u0443, \u043f\u0440\u0438\u0447\u0451\u043c \u043a\u0430\u043a-\u0442\u043e \u043f\u043e-\u0434\u0435\u0442\u0441\u043a\u0438, \u0442\u043e\u0440\u043c\u043e\u0437\u0438\u0442 \u0440\u044f\u0434\u043e\u043c \u0441 \u0434\u0435\u0432\u0443\u0448\u043a\u043e\u0439, \u0432 \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u0432\u043b\u044e\u0431\u043b\u0451\u043d, \u043e\u0442\u0440\u0438\u0446\u0430\u0435\u0442 \u0441\u0432\u043e\u044e \u0432\u043b\u044e\u0431\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u043f\u0440\u0438 \u0440\u0430\u0437\u0433\u043e\u0432\u043e\u0440\u0435 \u0441 \u0434\u0440\u0443\u0437\u044c\u044f\u043c\u0438. \u041e\u0431\u043c\u043e\u0447\u0438 \u043c\u043e\u0447\u0430\u043b\u043e, \u043a\u0430\u043a \u0433\u043e\u0432\u043e\u0440\u0438\u0442\u0441\u044f.<br />\u0410\u0432\u0442\u043e\u0440 \u043e\u0447\u0435\u043d\u044c \u043b\u044e\u0431\u0438\u0442 \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u0442\u044c \u043d\u043e\u0432\u044b\u0445 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0435\u0439 \u0438\u043b\u0438 \u0440\u0430\u0441\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0445 \u0441 \u043d\u043e\u0432\u043e\u0439 \u0441\u0442\u043e\u0440\u043e\u043d\u044b (\u043a\u0430\u043a \u043e\u043d \u044d\u0442\u043e \u0441\u0434\u0435\u043b\u0430\u043b \u0441 \u0411\u0430\u0441\u0442\u043e\u043c). \u0418 \u044f \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u044e \u0432\u043e\u043f\u0440\u043e\u0441: \u041f\u0430\u0442\u0440\u0438\u043a, \u0430\u043b\u0451! \u0422\u044b \u0442\u0430\u043c \u043d\u0430\u043a\u0440\u0443\u0442\u0438\u043b \u043d\u0430\u043c\u0443\u0434\u0440\u0438\u043b \u0432 \u043f\u0435\u0440\u0432\u044b\u0445 \u043a\u043d\u0438\u0433\u0430\u0445, \u0447\u0442\u043e \u0442\u0430\u043c \u043f\u043e \u0444\u0438\u043d\u0430\u043b\u043e\u0447\u043a\u0435, \u0435\u0441\u0442\u044c \u0441\u043e\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f?</p>", "created_at": "2019-12-21T19:18:20", "object_type": 18, "updated_at": "2019-12-21T19:18:20", "object_id": 67587, "comment_count": 0, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 92258, "name": "\u0412\u0430\u043b\u0435\u0440\u0438\u044f (@oblakomorali)", "avatar": "avatars/a/a/aa9423f8c44666c16d44c9e85e205f30.jpeg", "url": "/user/92258/", "username": "oblakomorali", "gender": 0}, "has_spoilers": false, "review_type": 0, "rated_users": {"positive": [146694], "negative": []}, "comments": []}, {"book_rating": 10, "hashtags": [], "rating": {"positive": 9, "negative": 0}, "text": "<p>\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435! \u0425\u043e\u0447\u0443 \u0441\u043a\u0430\u0437\u0430\u0442\u044c, \u0447\u0442\u043e \u0443 \u043c\u0435\u043d\u044f \u0434\u043e\u043b\u0433\u043e \u043d\u0435 \u043c\u043e\u0433\u043b\u0430 \u0440\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u0440\u0435\u0446\u0435\u043d\u0437\u0438\u044f \u043d\u0430 \u044d\u0442\u0443 \u043a\u043d\u0438\u0433\u0443. \u041f\u0440\u0435\u0436\u0434\u0435 \u0432\u0441\u0435\u0433\u043e \u0438\u0437-\u0437\u0430 \u0431\u043e\u044f\u0437\u043d\u0438, \u0447\u0442\u043e \u044f \u0441\u043e \u0441\u0432\u043e\u0438\u043c \u043a\u0443\u0446\u044b\u043c \u043b\u0435\u043a\u0441\u0438\u043a\u043e\u043d\u043e\u043c \u0438 \u043a\u043e\u0441\u043d\u043e\u044f\u0437\u044b\u0447\u0438\u0435\u043c \u043d\u0435 \u0441\u043c\u043e\u0433\u0443 \u043e\u043f\u0438\u0441\u0430\u0442\u044c \u0442\u043e\u0433\u043e \u0431\u043e\u043b\u044c\u0448\u043e\u0433\u043e \u0441\u0447\u0430\u0441\u0442\u044c\u044f, \u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u043f\u043e\u0434\u0430\u0440\u0438\u043b \u043c\u043d\u0435 \u041f\u0430\u0442\u0440\u0438\u043a \u0420\u043e\u0442\u0444\u0443\u0441\u0441 \u044d\u0442\u043e\u0439 \u043a\u043d\u0438\u0433\u043e\u0439, \u0442\u043e\u0433\u043e \u043d\u043e\u0432\u043e\u0433\u043e \u043c\u0438\u0440\u0430, \u0441 \u043a\u043e\u0442\u043e\u0440\u044b\u043c  \u0441\u0442\u043e\u043b\u043a\u043d\u0443\u043b\u0430\u0441\u044c \u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f \u0438 \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0442\u0435\u043f\u0435\u0440\u044c \u043d\u0430\u0432\u0441\u0435\u0433\u0434\u0430 \u0432 \u043c\u043e\u0435\u043c \u0441\u0435\u0440\u0434\u0446\u0435. \u0412\u0442\u043e\u0440\u043e\u0439 \u043f\u0440\u0438\u0447\u0438\u043d\u043e\u0439 \u043c\u043e\u0438\u0445 \u0441\u0442\u0440\u0430\u0445\u043e\u0432 \u0431\u044b\u043b\u0430 \u043d\u0435\u043e\u043a\u043e\u043d\u0447\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0446\u0438\u043a\u043b\u0430: \u0442\u0440\u0443\u0434\u043d\u043e \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0442\u044c \u0438 \u043e\u0446\u0435\u043d\u0438\u0432\u0430\u0442\u044c, \u043a\u043e\u0433\u0434\u0430 \u0441\u044e\u0436\u0435\u0442 \u0435\u0449\u0435 \u043d\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d. \u041d\u043e \u044f \u0432\u0441\u0435-\u0442\u0430\u043a\u0438 \u0440\u0435\u0448\u0438\u043b\u0430\u0441\u044c, \u043f\u0443\u0441\u0442\u044c \u0434\u0440\u0443\u0433\u0438\u0435 \u043a\u043d\u0438\u0433\u043e\u043b\u044e\u0431\u044b \u0441\u043c\u043e\u0433\u0443\u0442 \u0432\u043e\u0438\u0441\u0442\u0438\u043d\u0443 \u043d\u0430\u0441\u043b\u0430\u0434\u0438\u0442\u044c\u0441\u044f \u044d\u0442\u043e\u0439 \u043a\u043d\u0438\u0433\u043e\u0439, \u0438 \u044f \u0431\u0443\u0434\u0443 \u0442\u043e\u043c\u0443 \u043a\u0430\u0442\u0430\u043b\u0438\u0437\u0430\u0442\u043e\u0440\u043e\u043c.<br />\u042d\u0442\u0430 \u043a\u043d\u0438\u0433\u0430 \u043e \u043c\u0430\u043b\u044c\u0447\u0438\u043a\u0435, \u043c\u0430\u043b\u044c\u0447\u0438\u043a\u0435 \u043e\u0431\u044b\u0447\u043d\u043e\u043c \u0438 \u043d\u0435\u043e\u0431\u044b\u043a\u043d\u043e\u0432\u0435\u043d\u043d\u043e\u043c. \u0423 \u043d\u0435\u0433\u043e \u0435\u0441\u0442\u044c \u043b\u044e\u0431\u0438\u043c\u044b\u0435 \u0440\u043e\u0434\u0438\u0442\u0435\u043b\u0438, \u0441 \u043a\u043e\u0442\u043e\u0440\u044b\u043c\u0438 \u043e\u043d \u0441 \u043c\u0430\u043b\u044b\u0445 \u043b\u0435\u0442 \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u043f\u043e \u0441\u0432\u0435\u0442\u0443 \u0438 \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u044f. \u041e, \u043e\u043d\u0438 \u043d\u0435 \u043f\u0440\u043e\u0441\u0442\u043e \u0431\u0440\u043e\u0434\u044f\u0447\u0438\u0435 \u0430\u0440\u0442\u0438\u0441\u0442\u044b, \u044d\u0442\u043e \u0431\u043e\u043b\u044c\u0448\u043e\u0439 \u0442\u0435\u0430\u0442\u0440 \u043d\u0430 \u043a\u043e\u043b\u0435\u0441\u0430\u0445, \u043e\u043d\u0438 \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u044e\u0442 \u0441\u0430\u043c\u044b\u0435 \u0441\u0435\u0440\u044c\u0435\u0437\u043d\u044b\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f, \u0435\u0441\u0442\u044c \u0432 \u0438\u0445 \u0440\u0435\u043f\u0435\u0440\u0442\u0443\u0430\u0440\u0435 \u0438 \u043b\u0435\u0433\u043a\u0438\u0435 \u043f\u044c\u0435\u0441\u044b, \u0432 \u0440\u043e\u043b\u0438 \u043e\u043d\u0438 \u0432\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u044e\u0442 \u0432\u0441\u0435 \u044d\u043c\u043e\u0446\u0438\u0438, \u0432\u0441\u044e \u0436\u0438\u0437\u043d\u044c - \u0432\u0435\u0434\u044c \u043e\u043d\u0438 \u044d\u0434\u0435\u043c\u0430 \u0440\u0443\u044d - \u041d\u0410\u0421\u0422\u041e\u042f\u0429\u0418\u0415 \u0430\u0440\u0442\u0438\u0441\u0442\u044b! \u041c\u0430\u043b\u044c\u0447\u0438\u043a \u0441\u0445\u0432\u0430\u0442\u044b\u0432\u0430\u0435\u0442 \u0432\u0441\u0435 \u043d\u0430 \u043b\u0435\u0442\u0443, \u0442\u0430\u043a \u0441\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u043e\u0431\u0441\u0442\u043e\u044f\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430, \u0447\u0442\u043e \u043e\u043d \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442 \u0443\u0447\u0438\u0442\u044c\u0441\u044f \u043e\u0441\u043d\u043e\u0432\u0430\u043c \u0441\u0438\u043c\u043f\u0430\u0442\u0438\u0438 - \u044d\u0442\u043e \u043c\u0430\u0433\u0438\u044f+\u043d\u0430\u0443\u043a\u0430 \u0442\u043e\u0433\u043e \u043c\u0438\u0440\u0430, \u043d\u043e \u0432 \u0435\u0433\u043e \u0436\u0438\u0437\u043d\u0438 \u0441\u043b\u0443\u0447\u0430\u044e\u0442\u0441\u044f \u0441\u0442\u0440\u0430\u0448\u043d\u044b\u0435 \u0432\u0435\u0449\u0438, \u043f\u0435\u0440\u0435\u043b\u043e\u043c\u0438\u0432\u0448\u0438\u0435 \u0445\u043e\u0434 \u0435\u0433\u043e \u0438\u0441\u0442\u043e\u0440\u0438\u0438, \u0438\u0437\u043c\u0435\u043d\u0438\u0432\u0448\u0438\u0435, \u043a\u0430\u0437\u0430\u043b\u043e\u0441\u044c \u0431\u044b, \u043f\u043e\u043d\u044f\u0442\u043d\u0443\u044e \u0441\u0443\u0434\u044c\u0431\u0443, \u0434\u0430\u0432\u0448\u0438\u0435 \u043d\u043e\u0432\u0443\u044e \u0446\u0435\u043b\u044c \u0432 \u043f\u0443\u0442\u0438 \u043f\u043e\u0434 \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435\u043c \u0436\u0438\u0437\u043d\u044c. <br />\u041d\u0435 \u0431\u0443\u0434\u0443 \u0434\u0430\u043b\u044c\u0448\u0435 \u0441\u043f\u043e\u0439\u043b\u0435\u0440\u0438\u0442\u044c \u043e \u0441\u044e\u0436\u0435\u0442\u0435, \u044d\u0442\u043e \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0441\u0442\u043e\u0438\u0442 \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u0442\u044c \u0441\u0430\u043c\u0438\u043c, \u0434\u0430\u043b\u044c\u0448\u0435 \u043f\u0440\u043e\u0441\u0442\u043e \u043f\u043e\u0434\u0435\u043b\u044e\u0441\u044c \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u0435\u043c \u043e \u0441\u0432\u043e\u0438\u0445 \u0447\u0443\u0432\u0441\u0442\u0432\u0430\u0445, \u0432\u044b\u0437\u0432\u0430\u043d\u043d\u044b\u0445 \u043a\u043d\u0438\u0433\u043e\u0439. \u041f\u043e\u043c\u0438\u043c\u043e \u043a\u043d\u0438\u0433 \u044f \u0441\u0430\u043c\u0430 \u043e\u0447\u0435\u043d\u044c \u043b\u044e\u0431\u043b\u044e \u043c\u0443\u0437\u044b\u043a\u0443 \u0438 \u043f\u0435\u043d\u0438\u0435: \u0433\u043b\u0430\u0432\u043d\u044b\u0439 \u0433\u0435\u0440\u043e\u0439 \u0438\u0433\u0440\u0430\u0435\u0442 \u043d\u0430 \u043b\u0438\u0440\u0435 \u0438 \u043f\u043e\u0435\u0442. \u0418 \u043d\u0430\u0434\u043e \u043e\u0442\u0434\u0430\u0442\u044c \u0434\u043e\u043b\u0436\u043d\u043e\u0435 \u0430\u0432\u0442\u043e\u0440\u0443: \u043e\u043d \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442 \u0435\u0433\u043e \u0438\u0433\u0440\u0443 \u0442\u0430\u043a, \u0447\u0442\u043e \u0442\u043e\u043b\u044c\u043a\u043e \u0443\u0436\u0435 \u0438\u0437-\u0437\u0430 \u044d\u0442\u043e\u0433\u043e \u0445\u043e\u0447\u0435\u0442\u0441\u044f \u043f\u043e\u043f\u0430\u0441\u0442\u044c \u0432 \u0415\u0413\u041e \u043c\u0438\u0440 \u0438 \u0443\u0441\u043b\u044b\u0448\u0430\u0442\u044c \u044d\u0442\u0443 \u043c\u0443\u0437\u044b\u043a\u0443. \u0427\u0438\u0442\u0430\u043b\u0430 \u043a\u043d\u0438\u0433\u0443 \u043f\u0430\u0440\u0443 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u043d\u0430\u0437\u0430\u0434, \u043d\u043e \u0434\u043e \u0441\u0438\u0445 \u043f\u043e\u0440 \u0432 \u0434\u0443\u0448\u0435 \u0431\u0443\u0448\u0443\u044e\u0442 \u0447\u0443\u0432\u0441\u0442\u0432\u0430 \u043f\u0440\u0438 \u0432\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0438, \u043a\u0430\u043a \u043e\u043d \u0438\u0433\u0440\u0430\u043b, \u043a\u0430\u043a \u0441\u043b\u0438\u0432\u0430\u043b\u0441\u044f \u0441 \u043f\u0440\u0438\u0440\u043e\u0434\u043e\u0439, \u043a\u0430\u043a \u043f\u043b\u0430\u043a\u0430\u043b\u0438 \u0438 \u0431\u044b\u043b\u0438 \u043e\u0431\u0435\u0441\u043a\u0443\u0440\u0430\u0436\u0435\u043d\u044b \u0435\u0433\u043e \u0438\u0433\u0440\u043e\u0439 \u043e\u043a\u0440\u0443\u0436\u0430\u044e\u0449\u0438\u0435 \u043b\u044e\u0434\u0438. \u041c\u043d\u0435 \u0445\u043e\u0442\u0435\u043b\u043e\u0441\u044c \u0431\u044b \u0432 \u044d\u0442\u043e\u0439 \u0436\u0438\u0437\u043d\u0438  \u0443\u0441\u043b\u044b\u0448\u0430\u0442\u044c \u0445\u043e\u0442\u044c \u043e\u0434\u043d\u043e \u043c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u043e\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0435, \u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u0442\u0430\u043a \u0436\u0435 \u0437\u0430\u0442\u0440\u043e\u043d\u0435\u0442 \u043c\u043e\u044e \u0434\u0443\u0448\u0443, \u043a\u0430\u043a \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u0435\u0433\u043e \u0438\u0433\u0440\u044b...<br />\u0423 \u0433\u043b\u0430\u0432\u043d\u043e\u0433\u043e \u0433\u0435\u0440\u043e\u044f \u043d\u0430\u0441\u044b\u0449\u0435\u043d\u043d\u0430\u044f \u0436\u0438\u0437\u043d\u044c, \u0433\u0434\u0435-\u0442\u043e \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u043d\u0438\u043c \u043f\u043b\u0430\u0447\u0435\u0448\u044c, \u0433\u043e\u0440\u044e\u0435\u0448\u044c \u043e \u043f\u0440\u0438\u0448\u0435\u0434\u0448\u0435\u0439 \u0431\u0435\u0434\u0435, \u0433\u0434\u0435-\u0442\u043e \u0443\u0434\u0438\u0432\u043b\u044f\u0435\u0448\u044c\u0441\u044f \u0435\u0433\u043e \u043d\u0430\u043f\u043e\u0440\u0438\u0441\u0442\u043e\u0441\u0442\u0438 \u0438 \u0441\u043c\u0435\u043a\u0430\u043b\u043a\u0435, \u0438 \u0432\u043e\u0442 \u043e\u043d \u043f\u0435\u0440\u0435\u0434 \u0442\u043e\u0431\u043e\u0439, \u0443\u0436\u0435 \u0432\u0437\u0440\u043e\u0441\u043b\u044b\u0439 \u043c\u0443\u0436\u0447\u0438\u043d\u0430, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0432 \u0436\u0438\u0437\u043d\u0438 \u043f\u0435\u0440\u0435\u0436\u0438\u043b \u0442\u0430\u043a\u043e\u0435, \u0447\u0442\u043e \u043c\u043d\u043e\u0433\u0438\u043c \u0438 \u043f\u0440\u0438\u0432\u0438\u0434\u0435\u0442\u044c\u0441\u044f \u043d\u0435 \u043c\u043e\u0433\u043b\u043e,\u0438 \u043f\u0440\u043e\u0441\u0442\u043e \u0445\u043e\u0447\u0435\u0442\u0441\u044f \u043f\u0440\u0438\u0436\u0430\u0442\u044c \u0435\u0433\u043e \u043a \u0433\u0440\u0443\u0434\u0438 \u0438 \u0441\u043a\u0430\u0437\u0430\u0442\u044c: \"\u043d\u0443 \u0447\u0442\u043e \u0436\u0435 \u0441 \u0442\u043e\u0431\u043e\u0439 \u0441\u0434\u0435\u043b\u0430\u043b\u0430 \u044d\u0442\u0430 \u0436\u0438\u0437\u043d\u044c, \u043c\u043e\u0439 \u0445\u043e\u0440\u043e\u0448\u0438\u0439!\".<br />\u042f \u0441\u043e\u0432\u0435\u0442\u0443\u044e \u044d\u0442\u0443 \u043a\u043d\u0438\u0433\u0443 \u0432\u0441\u0435\u043c \u043b\u044e\u0431\u0438\u0442\u0435\u043b\u044f\u043c \u0436\u0430\u043d\u0440\u0430 \u0438 \u0434\u0440\u0443\u0433\u0438\u043c \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044f\u043c, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0433\u043e\u0442\u043e\u0432\u044b \u0443\u0432\u0438\u0434\u0435\u0442\u044c \u0440\u044f\u0434\u043e\u043c \u043b\u044e\u0431\u043e\u0432\u044c \u0438 \u0441\u043c\u0435\u0440\u0442\u044c, \u0433\u043e\u043b\u043e\u0434 \u0438 \u043d\u0430\u0434\u0435\u0436\u0434\u0443, \u0441\u0442\u0440\u0430\u0445\u0438 \u0438 \u0446\u0435\u043b\u044c, \u0432\u0435\u043b\u0438\u0447\u0438\u0435 \u0438 \u043d\u0438\u043a\u0447\u0435\u043c\u043d\u043e\u0441\u0442\u044c.<br /></p>", "created_at": "2015-06-28T07:42:00", "object_type": 18, "updated_at": "2015-06-28T07:42:00", "object_id": 15025, "comment_count": 0, "book": {"id": 60685, "name": "\u0421\u0442\u0440\u0430\u0445\u0438 \u043c\u0443\u0434\u0440\u0435\u0446\u0430. \u041a\u043d\u0438\u0433\u0430 2", "cover": "covers/5/c/5c01083205df93ed69edc80d5392fbe4.jpg", "authors": [{"name": "\u041f\u0430\u0442\u0440\u0438\u043a  \u0420\u043e\u0442\u0444\u0443\u0441\u0441", "url": "/author/15742/", "id": 15742}], "url": "/book/60685/"}, "user": {"id": 40495, "name": "\u0414\u0430\u0440\u044c\u044f (@dashik)", "avatar": "", "url": "/user/40495/", "username": "dashik", "gender": 0}, "has_spoilers": false, "review_type": 0, "rated_users": {"positive": [4163, 8669, 12398, 27723, 29264, 34790, 37230, 37907, 39773], "negative": []}, "comments": []}], "user": {"username": "", "name": "AnonymousUser"}, "objectType": "reviews"};
+  var element = React.createElement(component, props);
+  var container = document.getElementById(containerId);
+  if (!container) throw new Error('Cannot find the container element `#reactComponent-Readly.bookTimelineBox` for component `Readly.bookTimelineBox`');
+  React.render(element, container);
+})(React, Readly.bookTimelineBox, 'reactComponent-Readly.bookTimelineBox');
+
+</script>
+<script>
+
+ga('create', 'UA-47935002-1', 'readly.ru');
+ga('require', 'displayfeatures');
+ga('set', 'dimension1', userName);
+ga('set', 'dimension3', 0);
+ga('set', 'dimension4', 1);
+ga('send', 'pageview');
+
+</script>
+<script async="" defer="" src="https://apis.google.com/js/platform.js">
+  {lang: 'ru'}
+</script>
+<footer class="cf" id="footer"><div class="wrapper"><div class="footer-column"><a class="footer-logo" href="#" rel="nofollow"></a><p class="copy">Ридли.ру © 2013-2023<p><div class="footer--meta"><a class="footer--bookmark" href="javascript:addToFavorite()" rel="nofollow"><i class="icon_sprite bookmark"></i><span>В закладки</span></a><a class="footer--mobile" href="http://m.readly.ru/"><i class="icon_sprite mobile"></i><span>Мобильная версия</span></a></div></p></p></div><div class="footer-column"><span class="h4">Разделы</span><nav><a href="/books/">Что почитать</a><a href="/books/popular/">Популярные книги</a><a href="/books/top/">Рейтинг книг</a><a href="/collections/">Подборки книг</a><a href="/books/new/">Книжные новинки</a><a href="/authors/">Популярные авторы</a><a href="/books/i_am_lucky/">Случайная книга</a></nav></div><div class="footer-column"><span class="h4">Обсуждения</span><nav><a href="/discussions/theme/last/" rel="nofollow">Топики</a><a href="/discussions/reviews/last/" rel="nofollow">Рецензии</a><a href="/discussions/flashmob/last/" rel="nofollow">Флешмобы</a><a href="/discussions/game/last/" rel="nofollow">Игры</a><a href="/discussions/competition/last/" rel="nofollow">Конкурсы</a><a href="/discussions/academy/last/" rel="nofollow">Книжная академия</a><a href="/discussions/flood/last/" rel="nofollow">Флудилка</a></nav></div><div class="footer-column"><span class="h4">Подписки</span><nav><a href="https://vk.com/vmireknig" rel="nofollow" target="_blank">Вконтакте</a><a href="https://twitter.com/ReadlyRu" rel="nofollow" target="_blank">Твиттер</a></nav></div><div class="footer-column"><span class="h4">О проекте</span><nav><a href="/pages/about/" rel="nofollow">Описание сервиса</a><a href="/pages/faq/" rel="nofollow">Вопрос-ответ</a><a class="fancybox fancybox-feedback-form" data-ng-href="#!/#feedback-form" rel="nofollow">Обратная связь</a><a href="http://readly.reformal.ru" rel="nofollow" target="_blank">Предложения</a><a href="/pages/copyright/" rel="nofollow">Правообладателям</a><a href="/pages/contacts/" rel="nofollow">Контакты</a><a href="/pages/rules/" rel="nofollow">Правила</a></nav></div><div class="footer-column footer-column-apps"><span class="h4">Приложения</span><img class="appstore" src="/public/static//images/appstore.png"><img src="/public/static//images/googleplay.png"/></img></div></div></footer>
+<div class="singin-form" id="login-form">
+<div class="singin__head">
+<span class="singin__title">Зарегистрируйтесь, и вы сможете:</span>
+<div class="singin__possibilities clearfix">
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico1"><i></i></div>
+<div class="singin__poss_item_text">
+Получать персональные
+<strong>рекомендации книг</strong>
+</div>
+</div>
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico2"><i></i></div>
+<div class="singin__poss_item_text">
+Создать собственную
+<strong>виртуальную библиотеку</strong>
+</div>
+</div>
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico3"><i></i></div>
+<div class="singin__poss_item_text">
+Следить за тем,
+<strong>что читают Ваши друзья</strong>
+</div>
+</div>
+</div>
+</div>
+<div class="singin__body clearfix">
+<div class="singin__body_col">
+<div class="singin__form_tabs">
+<a class="active" href="/user/register/" rel="nofollow">Регистрация</a>
+</div>
+<form action="/user/register/?next=/book/60685/
+" method="post">
+<input name="csrfmiddlewaretoken" type="hidden" value="1H4tYCWdEAEeRLdXOfJoFg2nQ0uIw2va"/>
+<div class="singin__inputs_form">
+<input name="email" placeholder="E-mail адрес" type="text"/>
+<input name="username" placeholder="Логин" type="text"/>
+<input name="password" placeholder="Пароль" type="password"/>
+<div class="singin__submit_foot">
+<button class="btn-blue-20 fr" onclick="yaCounter22692712.reachGoal('register_button');">Регистрация</button>
+</div>
+</div>
+</form>
+</div>
+<div class="singin__body_col">
+<span class="singin__sub_title">Через соцсети</span>
+<div class="big_social_buttons__container">
+<a class="big_social_button vk" href="/login/vk-oauth2/?next=/" rel="nofollow" title="Вконтакте">
+<i class="icon"></i> Войти через Вконтакт
+</a>
+<a class="big_social_button tw" href="/login/twitter/?next=/" rel="nofollow" title="Twitter">
+<i class="icon"></i> Войти через Твиттер
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function open_reg_form() {
+        ga('send','event', 'Регистрация', 'open_form_reg');
+        ga('send','pageview', '/user/reg_form/');
+    }
+</script>
+<div id="registration-alert">
+<span>Данное действие доступно только для</span>
+<b>зарегистрированных пользователей</b>
+<a class="btn-green-20" href="/user/register/">Регистрация</a>
+<a class="ui-20" href="/user/login/">Войти на сайт</a>
+</div>
 </body>

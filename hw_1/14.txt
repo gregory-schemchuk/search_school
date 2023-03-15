@@ -1,388 +1,754 @@
-<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Заглавная_страница rootpage-Заглавная_страница skin-vector action-view"><div class="noprint" id="mw-page-base"></div>
-<div class="noprint" id="mw-head-base"></div>
-<div class="mw-body" id="content" role="main">
-<a id="top"></a>
-<div id="siteNotice"><!-- CentralNotice --></div>
-<div class="mw-indicators">
+<body itemscope="" itemtype="http://schema.org/WebPage" onload="">
+<script type="text/javascript">
+      var yaParams = {'Логин': 'Гость'};
+      var userName = 'Гость';
+    </script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  </script>
+<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<script type="text/javascript">
+    try {
+        var yaCounter22692712 = new Ya.Metrika({
+            id:22692712,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    } catch(e) { }
+    </script>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/22692712" style="position:absolute; left:-9999px;"/></div></noscript>
+<header class="cf" id="header"><div class="wrapper cf"><a class="header-logo" href="/"></a><nav class="header-nav"><a href="/discussions/" onclick="yaCounter22692712.reachGoal('clickDiscussion'); return true;">Обсуждения</a><a href="/books/popular/" onclick="yaCounter22692712.reachGoal('clickBooks');return true;">Книги</a><a href="/authors/" onclick="yaCounter22692712.reachGoal('clickAuthors'); return true;">Авторы</a><a href="/users/" onclick="yaCounter22692712.reachGoal('clickUsers'); return true;">Читатели</a></nav><div class="header-search" data-ng-controller="BookSearchCtrl" data-outside-click="closeDropDown()"><form action="/search/" class="dropdown-triger"><input autocomplete="off" data-ng-change="search()" data-ng-click="openDropDown()" data-ng-init="q=''" data-ng-model="q" data-ng-model-options="{debounce: 300}" name="q" placeholder="Поиск автора или книги..." type="text"/><a href="/search/?q={[{ q }]}" rel="nofollow"><i class="icon_sprite search-w"></i></a></form><div class="dropdown-content ng-cloak" data-ng-show="isOpen()"><div class="dd-search-result-list" data-load-spinner="" data-loading="loading"><div class="dd-search-result-counter">
+Книги <span>{[{ count }]}</span></div><div class="user-lib-new--book-list--item cf" data-ng-repeat="book in results"><div class="book-cover"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}" title="{[{ book.title }]}"><img alt="{[{ book.title }]}" class="dropdown-content--search-bimage" data-ng-src="{[{ book.cover | imageUrl:'book.Book':1 }]}"/></a></div><div class="book-main-info"><h3 class="book-title dropdown-content--book-title"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}">{[{ book.title }]}</a></h3><p>{[{ book.author[0].name }]}</p></div></div><div class="dd-goToResult" data-ng-show="results.length"><a href="/search/?q={[{ q }]}" rel="nofollow">
+К результатам поиска по запросу {[{ q }]} »
+</a></div></div></div></div><a class="shuffle-btn header-btn-icon" href="/books/i_am_lucky/" rel="nofollow"><i class="icon_sprite shuffle"></i></a><div class="header--login-new"><a class="header--login-btn-new" href="/user/login/" rel="nofollow">Войти</a><a class="button-normal fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form()" rel="nofollow">Регистрация</a></div></div></header>
+<div id="global-wrap">
+<a class="fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form();yaCounter22692712.reachGoal('open_banner');" rel="nofollow"><div class="top_banner visible-lg visible-md"> </div></a>
+<script>
+    var book_profile = {"rating": 9.2, "quote_count": 1, "isbn": "978-5-4357-0035-0", "content_type": 13, "links": [{"format": "fb2", "id": 650, "link": "http://www.litmir.net/BookFileDownloadLink/?id=10804"}], "show": true, "rates_count": 945, "quotes": [{"hashtags": [], "author": "", "text": "<p>\u0421\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u043c\u043e\u0435\u0439 \u0442\u0435\u043e\u0440\u0438\u0438, \u043a\u0430\u0436\u0434\u044b\u0439 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0443\u043c \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u0435\u0442 \u0432 \u0441\u0432\u043e\u0435\u043c \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0438 \u0438\u0441\u0442\u043e\u0440\u0438\u044e \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044f \u0432\u0441\u0435\u0445 \u0441\u0432\u043e\u0438\u0445 \u043f\u0440\u0435\u0434\u043a\u043e\u0432, \u0438 \u044f \u0441\u0447\u0438\u0442\u0430\u044e, \u0447\u0442\u043e \u043a\u0430\u0436\u0434\u044b\u0439 \u043d\u0435\u043e\u0436\u0438\u0434\u0430\u043d\u043d\u044b\u0439 \u043f\u043e\u0432\u043e\u0440\u043e\u0442 \u0432 \u0441\u0442\u043e\u0440\u043e\u043d\u0443 \u0434\u043e\u0431\u0440\u0430 \u0438\u043b\u0438 \u0437\u043b\u0430 \u043e\u0431\u044a\u044f\u0441\u043d\u044f\u0435\u0442\u0441\u044f \u043a\u0430\u043a\u0438\u043c-\u043d\u0438\u0431\u0443\u0434\u044c \u0441\u0438\u043b\u044c\u043d\u044b\u043c \u0432\u043b\u0438\u044f\u043d\u0438\u0435\u043c, \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0433\u043e \u043d\u0430\u0434\u043e \u0438\u0441\u043a\u0430\u0442\u044c \u0432 \u0440\u043e\u0434\u043e\u0441\u043b\u043e\u0432\u043d\u043e\u0439 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430. \u0418 \u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e, \u0435\u0433\u043e \u0431\u0438\u043e\u0433\u0440\u0430\u0444\u0438\u044f \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043a\u0430\u043a \u0431\u044b \u043e\u0442\u0440\u0430\u0436\u0435\u043d\u0438\u0435\u043c \u0432 \u043c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u0435 \u0431\u0438\u043e\u0433\u0440\u0430\u0444\u0438\u0438 \u0432\u0441\u0435\u0439 \u0441\u0435\u043c\u044c\u0438.</p>", "created_at": "2014-10-28T16:38:13", "object_type": 20, "updated_at": "2014-10-28T16:38:13", "object_id": 17439, "comment_count": 0, "book": {"id": 62516, "name": "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0428\u0435\u0440\u043b\u043e\u043a\u0430 \u0425\u043e\u043b\u043c\u0441\u0430 (\u0430\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0439 \u0441\u0431\u043e\u0440\u043d\u0438\u043a)", "cover": "covers/7/1/717f9e1762ec115253a30e072d05b6f9.jpg", "authors": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "url": "/book/62516/"}, "user": {"id": 8275, "name": "\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u041b\u0430\u0440\u0438\u0447\u0435\u0432\u0430 (@anastasia_ln)", "avatar": "avatars/d/0/d0556c851b7923bdf3639d3b0aae5c82.jpg", "url": "/user/8275/", "username": "anastasia_ln", "gender": 0}, "favorited_users": []}], "tag": [], "alter_titles": "", "year": 1905, "facts": [], "id": 62516, "by_shelves": {"shelf_count_1": 246, "shelf_count_2": 19, "shelf_count_3": 1338, "shelf_count_4": 8}, "rating_sort": 0.0, "review_count": 2, "author": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "create": "2013-10-29T14:32:38", "unique_text": false, "filming": [], "comment_count": 0, "show_rating": 9.2, "description": "\u041a\u043e\u043d\u0430\u043d \u0414\u043e\u0439\u043b \u0441\u0447\u0438\u0442\u0430\u043b \u043d\u0435\u0441\u0435\u0440\u044c\u0451\u0437\u043d\u044b\u043c\u0438 \u0441\u0432\u043e\u0438 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u044b \u043e \u0428\u0435\u0440\u043b\u043e\u043a\u0435 \u0425\u043e\u043b\u043c\u0441\u0435, \u043f\u043e\u044d\u0442\u043e\u043c\u0443 \u0440\u0435\u0448\u0438\u043b \u0435\u0433\u043e \u00ab\u0443\u0431\u0438\u0442\u044c\u00bb \u2014 \u0440\u0430\u0441\u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0451\u043d\u043d\u044b\u0439 \u043f\u0440\u0438\u0451\u043c \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u0435\u0439. \u041f\u043e\u0441\u043b\u0435 \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u0438 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u0430 \u00ab\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0434\u0435\u043b\u043e \u0425\u043e\u043b\u043c\u0441\u0430\u00bb \u043e\u0431\u0440\u0443\u0448\u0438\u043b\u0441\u044f \u0433\u043d\u0435\u0432\u043d\u044b\u0439 \u043f\u043e\u0442\u043e\u043a \u043f\u0438\u0441\u0435\u043c. \u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u043d\u0435\u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d\u043d\u0430\u044f \u043b\u0435\u0433\u0435\u043d\u0434\u0430 \u043e \u043f\u0438\u0441\u044c\u043c\u0435 \u043a\u043e\u0440\u043e\u043b\u0435\u0432\u044b \u041a\u043e\u043d\u0430\u043d \u0414\u043e\u0439\u043b\u0443, \u0447\u0442\u043e \u0441\u043c\u0435\u0440\u0442\u044c \u0428\u0435\u0440\u043b\u043e\u043a\u0430 \u0425\u043e\u043b\u043c\u0441\u0430 \u2014 \u043b\u0438\u0448\u044c \u0445\u0438\u0442\u0440\u044b\u0439 \u0445\u043e\u0434 \u0441\u044b\u0449\u0438\u043a\u0430. \u0418 \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u044e \u043f\u0440\u0438\u0448\u043b\u043e\u0441\u044c \u00ab\u043e\u0436\u0438\u0432\u0438\u0442\u044c\u00bb \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0430...\n\u041f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0438\u0437 \u0437\u043d\u0430\u043c\u0435\u043d\u0438\u0442\u043e\u0433\u043e \u0446\u0438\u043a\u043b\u0430 <a href=\"/book/70041/\">\u00ab\u0428\u0435\u0440\u043b\u043e\u043a \u0425\u043e\u043b\u043c\u0441\u00bb</a>.", "readers_count": 1603, "award": [], "sorter": 9.19, "series_position": 30, "seria": 2, "favorites": 8, "genre": [{"url": "/genre/195/", "id": 195, "name": "\u042d\u043a\u0440\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044f", "is_show": true}, {"url": "/genre/76/", "id": 76, "name": "\u041b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430 20 \u0432\u0435\u043a\u0430", "is_show": true}, {"url": "/genre/109/", "id": 109, "name": "\u041a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0434\u0435\u0442\u0435\u043a\u0442\u0438\u0432\u044b", "is_show": true}, {"url": "/genre/180/", "id": 180, "name": "\u041a\u043b\u0430\u0441\u0441\u0438\u043a\u0430", "is_show": true}, {"url": "/genre/58/", "id": 58, "name": "\u0417\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u0430\u044f \u043a\u043b\u0430\u0441\u0441\u0438\u043a\u0430", "is_show": true}, {"url": "/genre/188/", "id": 188, "name": "\u0414\u0435\u0442\u0435\u043a\u0442\u0438\u0432\u044b \u0438 \u0442\u0440\u0438\u043b\u043b\u0435\u0440\u044b", "is_show": true}], "fact_count": 0, "publisher": "\u041f\u0435\u0442\u0440\u043e\u0433\u043b\u0438\u0444", "url": "/book/62516/", "title": "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0428\u0435\u0440\u043b\u043e\u043a\u0430 \u0425\u043e\u043b\u043c\u0441\u0430 (\u0430\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0439 \u0441\u0431\u043e\u0440\u043d\u0438\u043a)", "cover": "covers/7/1/717f9e1762ec115253a30e072d05b6f9.jpg", "_id": 62516, "user": {"possible_rate": null, "id": null}};
+</script>
+<div class="wrapper content clearfix">
+<article class="book-article" itemscope="" itemtype="http://schema.org/Book">
+<div class="content-cols">
+<div class="content-cols--main">
+<h1 class="book-article--title" itemprop="name">Возвращение Шерлока Холмса (авторский сборник)</h1>
+<div class="book-article--author">
+<label class="author-name">Автор книги:</label>
+<a href="/author/208/"><h2 itemprop="author">Артур Конан Дойл</h2></a>
 </div>
-<h1 class="firstHeading mw-first-heading" id="firstHeading" style="display: none"><span class="mw-page-title-main">Заглавная страница</span></h1>
-<div class="vector-body" id="bodyContent">
-<div class="noprint" id="siteSub">Материал из Википедии — свободной энциклопедии</div>
-<div id="contentSub"><div id="mw-content-subtitle"><div class="flaggedrevs_short flaggedrevs_stable_synced plainlinks noprint" id="mw-fr-revisiontag"><div class="flaggedrevs_short_basic"><span class="flaggedrevs-icon oo-ui-widget oo-ui-widget-enabled oo-ui-iconElement-icon oo-ui-icon-articleSearch oo-ui-iconElement oo-ui-labelElement-invisible oo-ui-iconWidget" title="Правки этой страницы требуют проверки."></span><span class="flaggedrevs-icon oo-ui-widget oo-ui-widget-enabled oo-ui-iconElement-icon oo-ui-icon-eye oo-ui-iconElement oo-ui-labelElement-invisible oo-ui-iconWidget" title="Это отпатрулированная версия страницы"></span><span class="fr-toggle-arrow oo-ui-widget oo-ui-widget-enabled oo-ui-indicatorElement-indicator oo-ui-indicator-down oo-ui-indicatorElement oo-ui-labelElement-invisible oo-ui-indicatorWidget" id="mw-fr-revisiontoggle" title="показать/скрыть подробности"></span></div>
-<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div class="flaggedrevs_short_details" id="mw-fr-revisiondetails" style="display:none">Это <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9F%D0%B0%D1%82%D1%80%D1%83%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Википедия:Патрулирование">стабильная версия</a>, <a class="external text" href="https://ru.wikipedia.org/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%96%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D1%8B&amp;type=review&amp;page=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">отпатрулированная</a> <i>8 февраля 2023</i>.</div>
+<div class="book-article--details">
+<div class="ba-details--row">
+<label class="row-label"><span>год написания:</span></label>
+<span class="row-value">1905</span>
+</div>
+<div class="ba-details--row">
+<label class="row-label"><span>серия книг:</span></label>
+<span class="row-value">
+<a href="/serie/2/">Шерлок Холмс</a>
+(30 книга из 67)
+</span>
+</div>
+<div class="ba-details--row">
+<label class="row-label"><span>жанры:</span></label>
+<span class="row-value">
+<a href="/genre/195/">экранизация</a>
+,
+<a href="/genre/76/">литература 20 века</a>
+,
+<a href="/genre/109/">классические детективы</a>
+,
+<a href="/genre/180/">классика</a>
+,
+<a href="/genre/58/">зарубежная классика</a>
+,
+<a href="/genre/188/">детективы и триллеры</a>
+</span>
+</div>
+<div class="book-article--description">
+<br/>
+<h3 class="book-author-title">Описание</h3>
+<p><p>Конан Дойл считал несерьёзными свои рассказы о Шерлоке Холмсе, поэтому решил его «убить» — распространённый приём писателей. После публикации рассказа «Последнее дело Холмса» обрушился гневный поток писем. Существует неподтверждённая легенда о письме королевы Конан Дойлу, что смерть Шерлока Холмса — лишь хитрый ход сыщика. И писателю пришлось «оживить» персонажа...<br>Произведение из знаменитого цикла <a href="/book/70041/">«Шерлок Холмс»</a>.</br></p></p>
+</div>
+<div class="ng-cloak book-profile-rating-height" data-ng-controller="BookProfileCtrl" id="book_profile_book-rating-app" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<div data-book-id="book.id" data-book-rating="" data-rating="book.user.rating"></div>
+<meta content="10" itemprop="bestRating"/>
+<meta content="9,2" itemprop="ratingValue"/>
+<meta content="945" itemprop="ratingCount"/>
+<div class="book-circular-correct">
+<span class="book-profile--rate">9,2</span>
+<span class="book-profile--rates-count">(945 оценок)</span>
+</div>
+<div class="book-top100">
+<a href="/books/top/">
+<span>Топ-100:</span> 15
+</a>
 </div>
 </div>
-</div></div>
-<div id="contentSub2"></div>
-<div id="jump-to-nav"></div>
-<a class="mw-jump-link" href="#mw-head">Перейти к навигации</a>
-<a class="mw-jump-link" href="#searchInput">Перейти к поиску</a>
-<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="ru"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r113278219">.mw-parser-output .main-header{border-bottom-color:transparent;margin-bottom:0.25em;margin-top:0;padding-bottom:0;padding-top:0}.mw-parser-output .main-plainlist>ul{list-style:none;margin:0;padding:0}.mw-parser-output .main-plainlist li{margin-bottom:0}.mw-parser-output .main-top-right .mw-ui-quiet:hover,.mw-parser-output .main-top-right .mw-ui-quiet:focus,.mw-parser-output .main-footer .mw-ui-quiet:hover,.mw-parser-output .main-footer .mw-ui-quiet:focus{color:#0645ad}.mw-parser-output .mw-headline-number{display:none}@media(min-width:720px){.mw-parser-output .main-wikimedia{padding-top:1rem;padding-left:1rem;padding-right:1rem}}@media(min-width:1000px){.mw-parser-output .main-wrapper{display:flex;margin:0 -0.75rem}.mw-parser-output .main-wrapper-column{flex:1;margin:0 0.75rem}.mw-parser-output .main-wikimedia{padding-top:1.5rem;padding-left:1.5rem;padding-right:1.5rem}}</style>
-<style data-mw-deduplicate="TemplateStyles:r125466701">.mw-parser-output .main-top{clear:both;font-size:1rem;margin-top:1rem;padding-bottom:1.5rem}.mw-parser-output .main-top-left>p{font-size:0.875em;margin:0}.mw-parser-output .main-top-right{font-size:0.875em;margin-top:0.5em}.mw-parser-output .main-top-right>ul{display:none;margin-top:0.5rem}.mw-parser-output .main-top-header{border-bottom:0;margin-bottom:0;margin-top:0}.mw-parser-output .main-top-articleCount{margin-bottom:0}body.skin-minerva .mw-parser-output .main-top-articleCount{display:none}.mw-parser-output .main-top-mobileSearch{display:none;margin-top:1rem}body.skin-minerva .mw-parser-output .main-top-mobileSearch{display:block}.mw-parser-output .main-top-mobileSearchButton{background:#fff;border:none;box-shadow:0 2px 2px 0 rgba(0,0,0,0.25);color:#72777d;font-weight:normal;max-width:none;text-align:left;width:100%}@media(min-width:720px){.mw-parser-output .main-top{background-color:#f8f9fa;border:1px solid #c8ccd1;border-radius:2px;box-shadow:0 1px 1px rgba(0,0,0,.15);margin-bottom:1rem;padding:1rem}.mw-parser-output .main-top-right>ul{display:flex;flex-wrap:wrap}.mw-parser-output .main-top-articleCount{margin-bottom:0.5rem}body.skin-minerva .mw-parser-output .main-top-articleCount{display:block}body.skin-minerva .mw-parser-output .main-top-mobileSearch{display:none}}@media(min-width:1000px){.mw-parser-output .main-top{align-items:center;background-image:url("https://upload.wikimedia.org/wikipedia/commons/e/e3/Wikipedia_logo_letters_banner.svg");background-position:right;background-repeat:no-repeat;display:flex;margin-bottom:1.5rem;margin-top:0.5rem;padding-bottom:0;padding-left:0;padding-top:0}.mw-parser-output .main-top-left{background-image:linear-gradient(to right,#f8f9fa 0%,#f8f9fa 70%,rgba(248,249,250,0)100%);flex:2.5;padding:2rem 0 2rem 1rem}.mw-parser-output .main-top-right{flex:2;margin-top:0;text-align:right}.mw-parser-output .main-top-right>ul{align-items:center;flex-direction:row-reverse;justify-content:right;margin-top:0;text-align:left}.mw-parser-output .main-top-createArticle{margin-left:12px}}@media(max-width:999px){.mw-parser-output .main-top-createArticle{margin-right:12px}}@media(min-width:1280px){.mw-parser-output .main-top{padding-right:1.5rem}body.skin-minerva .mw-parser-output .main-top,body.skin-vector-2022 .mw-parser-output .main-top{padding-right:1rem}.mw-parser-output .main-top-left{padding-left:1.5rem}body.skin-minerva .mw-parser-output .main-top-left,body.skin-vector-2022 .mw-parser-output .main-top-left{padding-left:1rem}}</style>
-<div class="main-top">
-<div class="main-top-left">
-<h1 class="main-top-header"><span id=".D0.94.D0.BE.D0.B1.D1.80.D0.BE_.D0.BF.D0.BE.D0.B6.D0.B0.D0.BB.D0.BE.D0.B2.D0.B0.D1.82.D1.8C_.D0.B2_.D0.92.D0.B8.D0.BA.D0.B8.D0.BF.D0.B5.D0.B4.D0.B8.D1.8E.2C"></span><span class="mw-headline" id="Добро_пожаловать_в_Википедию,">Добро пожаловать в <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F" title="Википедия">Википедию</a>,</span></h1>
-<p><a href="/wiki/%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82" title="Свободный контент">свободную энциклопедию</a>, которую <a href="/wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8E" title="Справка:Введение в Википедию">может редактировать каждый</a>.
-</p>
-<div class="main-top-mobileSearch"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9F%D0%BE%D0%B8%D1%81%D0%BA" title="Служебная:Поиск"><span class="mw-ui-button main-top-mobileSearchButton skin-minerva-search-trigger">Искать среди 1 899 413 статей</span></a></div>
+<div class="ng-cloak" data-ng-controller="WhereToBuyCtrl" data-ng-init="aggregate('Возвращение Шерлока Холмса (авторский сборник)', 'Артур Конан  Дойл')" id="book_profile-where_to_buy-app">
+<h2 class="where-to-buy-title book-author-title rel-h2" data-ng-show="aggregated.length">Купить книгу Возвращение Шерлока Холмса (авторский сборник), Артур Конан Дойл</h2>
+<div class="books-aggregate">
+<div class="aggregate-row" data-ng-class-odd="'book-aggregate-row-odd'" data-ng-repeat="agg in aggregated">
+<a data-ng-href="{[{ agg.url }]}" target="_blank"><img alt="" class="aggregate-shop-img" data-ng-src="{[{ agg.market_logo }]}"/></a>
+<a class="aggregate-shop" data-ng-bind="agg.market_name" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
+<a class="aggregate-book" data-ng-bind="agg.title" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
+<div class="fr">
+<b class="aggregate-price"><span data-ng-bind="agg.price"></span> р.</b>
+<a class="aggregate-buy-button-litres" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market=='litres'" target="_blank">Скачать</a>
+<a class="aggregate-buy-button" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market!='litres'" target="_blank">Купить</a>
 </div>
-<div class="main-top-right main-plainlist">
-<p class="main-top-articleCount">Сейчас в Википедии <b><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0" title="Служебная:Статистика">1 899 413 статей</a></b> на <a href="/wiki/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Русский язык">русском языке</a>.</p>
+</div>
+</div>
+</div>
+<br class="clear"/>
+<div data-ng-controller="BookProfileCtrl" id="book_profile_facts-quotes-app">
+<div data-book-id="book.id" data-fact-list="" data-facts="book.facts"></div>
+<div data-book-id="book.id" data-quote-list="" data-quotes="book.quotes" data-user-id="book.user.id"></div>
+</div>
+<div class="invisible-content">
+<div class="h3-title-wadd"><h3>Интересные факты</h3></div>
+<div class="ba-facts-list">
+</div>
+</div>
+<div class="invisible-content">
+<div class="h3-title-wadd">
+<h3>Цитаты из книги</h3>
+</div>
+<div class="ba-facts-list">
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Согласно моей теории, каждый индивидуум повторяет в своем развитии историю развития всех своих предков, и я считаю, что каждый неожиданный поворот в сторону добра или зла объясняется каким-нибудь сильным влиянием, источник которого надо искать в родословной человека. И следовательно, его биография является как бы отражением в миниатюре биографии всей семьи.&lt;/p&gt;<br/><em class="quote-sign"></em>
+<div class="discussion-item-author disable-float">
+
+Добавила: <a class="user" href="/user/8275/" rel="nofollow"><i class="ico"></i>anastasia_ln</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="book-author-title rel-h2">С этой книгой читают:</h2>
+<div class="book-related-list">
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/62514/" rel="nofollow">
+<img alt="Свидетель обвинения" src="/public/media/covers/6/9/69d630a1ebee85c91caac9b0d4985def_160x0.jpg" title="Свидетель обвинения"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/62514/">
+Свидетель обвинения
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/62511/" rel="nofollow">
+<img alt="Иосиф и его братья. Том 2" src="/public/media/covers/4/9/49be44f5c77d81a32a1dea3a01b460b4_160x0.jpg" title="Иосиф и его братья. Том 2"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/62511/">
+Иосиф и его братья. Том 2
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/62509/" rel="nofollow">
+<img alt="Юмористические рассказы" src="/public/media/covers/f/f/ff6a52c75c478d87a2751a7487a17f5c_160x0.jpg" title="Юмористические рассказы"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/62509/">
+Юмористические рассказы
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/62507/" rel="nofollow">
+<img alt="Реальность абсурда" src="/public/media/covers/5/e/5e5a798dcc1fbca44cda225574cbf8bd_160x0.jpg" title="Реальность абсурда"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/62507/">
+Реальность абсурда
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/62506/" rel="nofollow">
+<img alt="Цыпленок" src="/public/media/covers/3/f/3f51cacdbc0eae85da5b422d61ca7312_160x0.jpg" title="Цыпленок"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/62506/">
+Цыпленок
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="ba-timeline-container">
+<nav class="tape-select" id="timelinenav">
 <ul>
-<li class="main-top-createArticle"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80_%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9" title="Википедия:Мастер статей"><span class="mw-ui-button">Создать статью</span></a></li>
-<li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Википедия:Справка"><span class="mw-ui-button mw-ui-quiet">Справка</span></a></li>
-<li><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%9E%D0%B1%D0%B7%D0%BE%D1%80" title="Портал:Обзор"><span class="mw-ui-button mw-ui-quiet">Порталы</span></a></li>
+<li class="active">
+<a href="/book/62516/?filter=reviews#!/#timelinenav" rel="nofollow">Рецензии</a>
+</li>
+<li>
+<a href="/book/62516/?filter=comments#!/#timelinenav" rel="nofollow">Отзывы</a>
+</li>
+</ul>
+</nav>
+<div id="filter-search-results-container">
+<div class="filter-panel-index">
+<div class="page-column-main __timeline">
+<section class="review-timeline-list">
+<nav class="nav-filter">
+<ul class="nav-filter-list">
+<li class="active">
+<a href="/book/62516/
+?filter=reviews&amp;sort=last#!/timelinenav" rel="nofollow">Последнее</a>
+</li>
+<li>
+<a href="/book/62516/
+?filter=reviews&amp;sort=useful#!/timelinenav" rel="nofollow">Популярное</a>
+</li>
+<li>
+<a href="/book/62516/
+?filter=reviews&amp;sort=new#!/timelinenav" rel="nofollow">Новое</a>
+</li>
+</ul>
+</nav>
+<div id="book_profile_timeline-app">
+<span id="reactComponent-Readly.bookTimelineBox"><div data-react-checksum="-1039774688" data-reactid=".1qalnwsv6rk"><div class="rtl--comment-add" data-reactid=".1qalnwsv6rk.0"><div class="rtl--start-discussion rtl--start-discussion-compat bookpost bookpost-review" data-reactid=".1qalnwsv6rk.0.0"><textarea class="sd--input" data-reactid=".1qalnwsv6rk.0.0.0" placeholder="Оставить рецензию..."></textarea></div></div><div data-reactid=".1qalnwsv6rk.1"><div data-reactid=".1qalnwsv6rk.1.0"><div class="discussion-wrap" data-reactid=".1qalnwsv6rk.1.0.$40261"><div class="discussion-item clearfix" data-reactid=".1qalnwsv6rk.1.0.$40261.0"><div data-reactid=".1qalnwsv6rk.1.0.$40261.0.0"><div class="discussion-item-user-avatar" data-reactid=".1qalnwsv6rk.1.0.$40261.0.0.0"><a class="user-avatar-50-50" data-reactid=".1qalnwsv6rk.1.0.$40261.0.0.0.0" href="/user/87494/" rel="nofollow"><img data-reactid=".1qalnwsv6rk.1.0.$40261.0.0.0.0.0" src="/public/media/avatars/1/0/1068818ae48758d6356fb581503df607_80x80.jpg"/></a></div><div class="user-name" data-reactid=".1qalnwsv6rk.1.0.$40261.0.0.1"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.0.1.0"><a data-reactid=".1qalnwsv6rk.1.0.$40261.0.0.1.0.0" href="/user/87494/" rel="nofollow">Митрандир (@fizik224566)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".1qalnwsv6rk.1.0.$40261.0.1"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.1.0">написал рецензию</span><span class="dashed-row" data-reactid=".1qalnwsv6rk.1.0.$40261.0.1.1">9 апреля 2017 21:16</span><div class="stars-rating" data-reactid=".1qalnwsv6rk.1.0.$40261.0.1.2"><div data-reactid=".1qalnwsv6rk.1.0.$40261.0.1.2.0"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".1qalnwsv6rk.1.0.$40261.0.1.2.0.1"><div class="ur-rate-stars _9" data-reactid=".1qalnwsv6rk.1.0.$40261.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".1qalnwsv6rk.1.0.$40261.0.1.2.0.2">9/10</span></div></div></div><div class="reviews-status" data-reactid=".1qalnwsv6rk.1.0.$40261.0.2"><img alt="" data-reactid=".1qalnwsv6rk.1.0.$40261.0.2.0" src="/public/static/images/new/positive.png"/></div><div class="discussion-item-index clearfix" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3"><div class="reveal-block-index clearfix" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.0"><div class="book-pic" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.0.0"><img data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.0.0.0" src="/public/media/covers/7/1/717f9e1762ec115253a30e072d05b6f9_100x0.jpg"/></div><span class="book-name" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.0.1">Возвращение Шерлока Холмса (авторский сборник)</span><span class="book-autor" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.0.2">Артур Конан Дойл</span></div><div class="discussion-item-text clearfix" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.1"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.1.1"> </span><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.1.3"> </span><div data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.1.4"><div class="rc-review--text-short" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.1.4.1"><p>В авторский сборник "Возвращение Шерлока Холмса" входит 13 рассказов описывающих действия сыщика-консультанта. Тем самым продолжив повествования о расследований преступлений 2 главных героев. </p>
+<p>Как нам уже известно из других сборников рассказов Артура Конана Дойла, Холмс "погиб" в Рейхенбахском водопаде со своим врагом. Однако выяснятся, что Холмс залег на дно для того что бы раскрыть всю сеть преступного синдиката, образованного самим профессором Мориарти.</p>
+<p>Я заметил одно удивительное стечение обстоятельств. Данные рассказы обычно занимают по 20-25 страниц, где описывается определенное преступление и раскрытие виновных. И на этих страницах автор успевает рассказать всё что там происходит. Это как нужно владеть языком, что бы рядовые читатели сразу же погружались в этот мир. И с легкостью понимали всю сюжетную линию.</p>
+<p>Как же приятно читать такие запутанные истории и при этом осознавать, что ответ находиться практический под носом. Не возможно остановиться, так как хочется узнать чем же все закончится несмотря ни на что. </p></div></div></div><div class="bottom-part" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2"><div class="discussion-item-filter" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0"><div data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0"><noindex data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0"><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/40261/" rel="nofollow" target="_blank"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0"><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/40261/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/40261/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/40261/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/40261/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/40261/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2"><div data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0.1.3">4</span><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.1" href="" rel="nofollow"><span data-reactid=".1qalnwsv6rk.1.0.$40261.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".1qalnwsv6rk.1.0.$40261.0.5"><a class="anchor" data-reactid=".1qalnwsv6rk.1.0.$40261.0.5.1" name="40261_18" rel="nofollow"></a></div></div></div><div class="discussion-wrap" data-reactid=".1qalnwsv6rk.1.0.$2042"><div class="discussion-item clearfix" data-reactid=".1qalnwsv6rk.1.0.$2042.0"><div data-reactid=".1qalnwsv6rk.1.0.$2042.0.0"><div class="discussion-item-user-avatar" data-reactid=".1qalnwsv6rk.1.0.$2042.0.0.0"><a class="user-avatar-50-50" data-reactid=".1qalnwsv6rk.1.0.$2042.0.0.0.0" href="/user/881/" rel="nofollow"><img data-reactid=".1qalnwsv6rk.1.0.$2042.0.0.0.0.0" src="/public/media/avatars/0/5/055bd7cb4c8c348fc59d6d786db63f32_80x80.jpg"/></a></div><div class="user-name" data-reactid=".1qalnwsv6rk.1.0.$2042.0.0.1"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.0.1.0"><a data-reactid=".1qalnwsv6rk.1.0.$2042.0.0.1.0.0" href="/user/881/" rel="nofollow">@elena_ks</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".1qalnwsv6rk.1.0.$2042.0.1"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".1qalnwsv6rk.1.0.$2042.0.1.1">28 марта 2014 10:21</span><div class="stars-rating" data-reactid=".1qalnwsv6rk.1.0.$2042.0.1.2"><div data-reactid=".1qalnwsv6rk.1.0.$2042.0.1.2.0"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".1qalnwsv6rk.1.0.$2042.0.1.2.0.1"><div class="ur-rate-stars _10" data-reactid=".1qalnwsv6rk.1.0.$2042.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".1qalnwsv6rk.1.0.$2042.0.1.2.0.2">10/10</span></div></div></div><noscript data-reactid=".1qalnwsv6rk.1.0.$2042.0.2"></noscript><div class="discussion-item-index clearfix" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3"><div class="reveal-block-index clearfix" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.0"><div class="book-pic" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.0.0"><img data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.0.0.0" src="/public/media/covers/7/1/717f9e1762ec115253a30e072d05b6f9_100x0.jpg"/></div><span class="book-name" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.0.1">Возвращение Шерлока Холмса (авторский сборник)</span><span class="book-autor" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.0.2">Артур Конан Дойл</span></div><div class="discussion-item-text clearfix" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.1"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.1.1"> </span><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.1.3"> </span><div data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.1.4"><div class="rc-review--text-short" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.1.4.1"><p>Великого классика мировой литературы Артура Конан Дойля я начинала читать еще в далеком детстве и перечитываю до сих пор с удовольствием. Этот автор обязателен к прочтению, один из тех волшебников, обладающих даром увлекать в свой мир, жить вместе с персонажами и сопереживать им, страстно желать продолжения, с надеждой перелистывать каждую страницу, радоваться вновь изданной (или купленной) книге. В его произведения проваливаешься настолько, что утро наступает незаметно, в моей практике была даже сгоревшая кофта, которой я накрывала торшер, чтобы меня не ругали родители за бессонные ночи.</p></div></div></div><div class="bottom-part" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2"><div class="discussion-item-filter" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0"><div data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0"><noindex data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0"><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/2042/" rel="nofollow" target="_blank"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0"><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/2042/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/2042/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/2042/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/2042/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/2042/" rel="nofollow" target="_self"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2"><div data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0.1.3">6</span><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.1" href="" rel="nofollow"><span data-reactid=".1qalnwsv6rk.1.0.$2042.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".1qalnwsv6rk.1.0.$2042.0.5"><a class="anchor" data-reactid=".1qalnwsv6rk.1.0.$2042.0.5.1" name="2042_18" rel="nofollow"></a></div></div></div></div><div class="section-buttons" data-reactid=".1qalnwsv6rk.1.1"><a class="btn-simple loadmore" data-reactid=".1qalnwsv6rk.1.1.0" href=""><i class="b-icon loadmore" data-reactid=".1qalnwsv6rk.1.1.0.0"></i><span data-reactid=".1qalnwsv6rk.1.1.0.1">Показать еще</span></a></div></div></div></span>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-cols--aside">
+<div class="book-article--aside" data-inject-global-var="book_profile">
+<div class="book-article--img">
+<img alt="Обложка Возвращение Шерлока Холмса (авторский сборник)" src="/public/media/covers/7/1/717f9e1762ec115253a30e072d05b6f9_200x0.jpg" title="Возвращение Шерлока Холмса (авторский сборник)"/>
+</div>
+<div class="ba-about">
+<h3>О книге</h3>
+<ul class="ba-counters">
+<li>
+<i class="bc-icon readers"></i>
+<a href="/book/62516/readers/5/" rel="nofollow">
+Читатели (1603)
+</a>
+</li>
+<li class="reviews">
+<i class="bc-icon reviews"></i>
+<a alt="Возвращение Шерлока Холмса (авторский сборник) рецензии" href="/book/62516/reviews/">
+Рецензии (2)
+</a>
+</li>
+<li class="quotes">
+<i class="bc-icon quotes"></i>
+<a alt="Возвращение Шерлока Холмса (авторский сборник) цитаты" href="/book/62516/quotes/">
+Цитаты (1)
+</a>
+</li>
+<li class="facts">
+<i class="bc-icon facts"></i>
+<a alt="Возвращение Шерлока Холмса (авторский сборник) интересные факты" href="/book/62516/facts/">
+Факты (0)
+</a>
+</li>
+<li class="reviews">
+<i class="bc-icon comments"></i>
+<a alt="Возвращение Шерлока Холмса (авторский сборник) отзывы" href="/book/62516/comments/">
+Отзывы (0)
+ </a>
+</li>
 </ul>
 </div>
 </div>
-<div class="main-wrapper">
-<div class="main-wrapper-column">
-<style data-mw-deduplicate="TemplateStyles:r125466734">.mw-parser-output .main-box{background:#fff;border:solid #c8ccd1;border-width:1px 0;box-shadow:0 1px 1px rgba(0,0,0,0.15);margin:0 -1rem 1.5rem;padding:1rem}.mw-parser-output .main-box>p:last-child{margin-bottom:0}.mw-parser-output .main-box-image-only>.main-box-content{margin:0.5rem -1rem 0;text-align:center}.mw-parser-output .main-box-image-only>.main-box-content img{height:auto;max-width:100%}.mw-parser-output .main-box-imageCaption{display:flex;justify-content:center}.mw-parser-output .main-box-imageCaption>p{margin-bottom:0}.mw-parser-output .main-box-subtitle{color:#72777d;line-height:1.25;margin-top:-.125em}.mw-parser-output .main-box-header{margin-top:-.15em}.mw-parser-output .main-box-header a{color:inherit}.mw-parser-output .main-box-subtitle+.main-box-header{margin-top:0}.mw-parser-output .main-box-header a:focus,.mw-parser-output .main-box:hover .main-box-header a,.mw-parser-output .main-box:hover .main-featuredLists-link a{color:#0645ad}.mw-parser-output .main-footer{display:block;margin-top:1rem;position:relative}html.client-js .mw-parser-output .main-footer{display:flex;justify-content:flex-end}.mw-parser-output .main-footer:empty{display:none}.mw-parser-output .main-footer-actions{flex:1}.mw-parser-output .main-footer-actions>ul{align-items:center;display:flex}.mw-parser-output .main-footer-actions .mw-ui-button{min-height:inherit}.mw-parser-output .main-footer-menu{align-items:stretch;display:flex}.mw-parser-output .main-footer-menuToggle{display:none}html.client-js .mw-parser-output .main-footer-menuToggle{align-items:center;display:flex;float:none;height:100%;opacity:0.87}.mw-parser-output .main-footer-menuToggle:hover{opacity:0.51}.mw-parser-output .main-footer-menuDropdown{font-size:0.85em;margin:0.5em 0 -0.5rem}html.client-js .mw-parser-output .main-footer-menuDropdown{background:#fff;border:1px solid #a2a9b1;border-radius:2px;box-shadow:0 2px 2px 0 rgba(0,0,0,0.25);font-size:1em;max-width:15em;margin:0;position:absolute;right:0;top:100%;z-index:100}html.client-nojs .mw-parser-output .main-footer-menuDropdown>ul{display:flex}html.client-nojs .mw-parser-output .main-footer-menuDropdown .mw-ui-button{min-width:0;max-width:none;padding-left:0;white-space:nowrap}html.client-js .mw-parser-output .main-footer-menuDropdown .mw-ui-button{text-align:left;width:100%}@media(max-width:719px){.mw-parser-output .main-box-responsive-image>.floatleft,.mw-parser-output .main-box-responsive-image>.floatright{float:none;margin-left:-1rem;margin-right:-1rem;text-align:center}.mw-parser-output .main-box-responsive-image>.floatleft>a,.mw-parser-output .main-box-responsive-image>.floatright>a{display:block}}@media(min-width:720px){.mw-parser-output .main-box{border-radius:2px;border-width:1px;margin-bottom:1rem;margin-left:0;margin-right:0}}@media(min-width:1280px){.mw-parser-output .main-box{margin-bottom:1.5rem;padding:1.5rem}body.skin-minerva .mw-parser-output .main-box,body.skin-vector-2022 .mw-parser-output .main-box{padding:1rem}body:not(.skin-minerva):not(.skin-vector-2022) .mw-parser-output .main-box-image-only>.main-box-content{margin-left:-1.5rem;margin-right:-1.5rem}}</style>
-<div class="main-box main-box-responsive-image" id="main-tfa"><div class="main-box-subtitle">Избранная статья</div><h2 class="main-header main-box-header"><span id=".D0.9D.D1.83.D1.80.D0.B1.D0.B0.D0.BD.D1.83-.D1.81.D1.83.D0.BB.D1.82.D0.B0.D0.BD"></span><span class="mw-headline" id="Нурбану-султан"><a href="/wiki/%D0%9D%D1%83%D1%80%D0%B1%D0%B0%D0%BD%D1%83-%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD" title="Нурбану-султан">Нурбану-султан</a></span></h2>
-<div class="floatright"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Nurbanu%27s_burial,_Shahanshahnama.jpg" title="Похороны валиде-султан Нурбану. Миниатюра из «Шехиншахнаме» Сейида Локмана, 1592 год"><img alt="Похороны валиде-султан Нурбану. Миниатюра из «Шехиншахнаме» Сейида Локмана, 1592 год" data-file-height="393" data-file-width="249" decoding="async" height="205" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Nurbanu%27s_burial%2C_Shahanshahnama.jpg/130px-Nurbanu%27s_burial%2C_Shahanshahnama.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Nurbanu%27s_burial%2C_Shahanshahnama.jpg/195px-Nurbanu%27s_burial%2C_Shahanshahnama.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/3/3a/Nurbanu%27s_burial%2C_Shahanshahnama.jpg 2x" width="130"/></a></div>
-<p><b><a href="/wiki/%D0%9D%D1%83%D1%80%D0%B1%D0%B0%D0%BD%D1%83-%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD" title="Нурбану-султан">Нурбану-султан</a></b> (<a href="/wiki/%D0%A2%D1%83%D1%80%D0%B5%D1%86%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Турецкий язык">тур.</a> <span lang="tr" style="font-style:italic;">Nurbanu Sultan</span>), также <b>Нурубану-султан</b> (<a href="/wiki/%D0%A2%D1%83%D1%80%D0%B5%D1%86%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Турецкий язык">тур.</a> <span lang="tr" style="font-style:italic;">Nurubanu Sultan</span>; ум. <a href="/wiki/7_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F" title="7 декабря">7 декабря</a> <a href="/wiki/1583_%D0%B3%D0%BE%D0%B4" title="1583 год">1583 года</a> в <a href="/wiki/%D0%A1%D1%82%D0%B0%D0%BC%D0%B1%D1%83%D0%BB" title="Стамбул">Стамбуле</a>) — фаворитка <a class="mw-redirect" href="/wiki/%D0%9E%D1%81%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD" title="Османский султан">османского султана</a> <a href="/wiki/%D0%A1%D0%B5%D0%BB%D0%B8%D0%BC_II" title="Селим II">Селима II</a> с титулом <a class="mw-redirect" href="/wiki/%D0%A5%D0%B0%D1%81%D0%B5%D0%BA%D0%B8-%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD" title="Хасеки-султан">хасеки-султан</a>, мать султана <a href="/wiki/%D0%9C%D1%83%D1%80%D0%B0%D0%B4_III" title="Мурад III">Мурада III</a>. Первая официальная носительница титула <a href="/wiki/%D0%92%D0%B0%D0%BB%D0%B8%D0%B4%D0%B5-%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD" title="Валиде-султан">валиде-султан</a> и первая валиде-султан периода <a href="/wiki/%D0%96%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD%D0%B0%D1%82" title="Женский султанат">Султаната женщин</a>.
-</p><p>Нурбану, предположительно происходившая из двух знатных венецианских родов, попала в гарем будущего султана Селима II в период между 1542 и 1544 годами, когда он служил <a class="mw-redirect" href="/wiki/%D0%A1%D0%B0%D0%BD%D0%B4%D0%B6%D0%B0%D0%BA%D0%B1%D0%B5%D0%B9" title="Санджакбей">санджакбеем</a> <a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D1%8F" title="Конья">Коньи</a>. В 1546 году Нурбану родила шехзаде Селиму первого сына, шехзаде Мурада, и вплоть до восшествия Селима на престол она оставалась матерью его единственного наследника и, вероятно, его единственной <a href="/wiki/%D0%A5%D0%B0%D1%81%D0%B5%D0%BA%D0%B8" title="Хасеки">хасеки</a>. В 1566 году, когда Селим стал султаном, сама Нурбану возглавила султанский гарем как мать старшего наследника. Она оставалась в фаворе у султана на протяжении всего правления Селима II, несмотря на то, что больше детей не рожала.
-</p><p>После смерти Селима II на трон взошёл сын Нурбану Мурад III, даровавший матери новый титул — валиде-султан. Помимо управления гаремом и занятия благотворительностью, Нурбану активно вмешивалась в политику сына, а также вела переписку с иностранными правителями. При Нурбану в султанском дворце распространилось взяточничество и влияние евреев, в частности близки с матерью султана были Эстер Хандали, кира Нурбану, и семейство Наси. Когда Нурбану умерла в 1583 году, Мурад III, вопреки традициям, лично принял участие в похоронах. Кроме того, по распоряжению Мурада III, его мать была захоронена рядом с его отцом в комплексе мечети <a href="/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B9_%D0%A1%D0%BE%D1%84%D0%B8%D0%B8_(%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C)" title="Собор Святой Софии (Константинополь)">Ая-Софья</a>. Таким образом, Нурбану стала первой наложницей султана, погребённой рядом со своим господином, а сам Мурад этим поступком признал свою валиде полноправным членом правящей династии.
-</p>
-<div style="clear:both;"></div>
-<div class="main-footer"><div class="main-footer-actions main-plainlist">
-<ul><li><a href="/wiki/%D0%9D%D1%83%D1%80%D0%B1%D0%B0%D0%BD%D1%83-%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD" title="Нурбану-султан"><span class="mw-ui-button">Читать</span></a></li>
-<li><span class="nomobile"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Википедия:Избранные статьи"><span class="mw-ui-button mw-ui-quiet">1741 избранная статья</span></a></span></li></ul>
-</div><div class="main-footer-menu mw-collapsible mw-collapsed nomobile" id="mw-customcollapsible-tfa">
-<div class="main-footer-menuToggle mw-collapsible-toggle mw-customtoggle-main-tfa"><img alt="Доп. действия" data-file-height="20" data-file-width="20" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/30px-OOjs_UI_icon_ellipsis.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/40px-OOjs_UI_icon_ellipsis.svg.png 2x" title="Дополнительные действия" width="20"/></div>
-<div class="main-footer-menuDropdown mw-collapsible-content main-plainlist">
-<ul><li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%8B_%D0%B2_%D0%B8%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Википедия:Кандидаты в избранные статьи"><span class="mw-ui-button mw-ui-quiet">Кандидаты</span></a></li>
-<li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B0%D1%8F_%D0%B8%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F" title="Шаблон:Текущая избранная статья"><span class="mw-ui-button mw-ui-quiet">Просмотр шаблона</span></a></li></ul>
-</div></div></div>
+<ul class="book-article--links" data-hide-show="">
+<li class="book--share" data-ng-class="{_opened: isVisible()}">
+<i class="b-icon" data-ng-class="{'share-plus': !isVisible(), 'share-minus': isVisible()}"></i>
+<a class="book-share--toggle" data-ng-click="toggle()" href="" rel="nofollow">
+Поделиться книгой с друзьями
+</a>
+<div class="book-share--counters">
+<div class="ya-share-book-profile">
+<script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript"></script>
+<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharequickservices="vkontakte,twitter,odnoklassniki,gplus" data-yasharetheme="counter" data-yasharetype="small"></div>
 </div>
-<link href="mw-data:TemplateStyles:r125466734" rel="mw-deduplicated-inline-style"/>
-<div class="main-box main-box-responsive-image" id="main-tga"><div class="main-box-subtitle">Хорошая статья</div><h2 class="main-header main-box-header"><span id=".D0.A1.D1.80.D0.B0.D0.B6.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.B8_.D0.9E.D1.80.D0.BA.D0.B8.D0.BD.D0.B8.D0.B8"></span><span class="mw-headline" id="Сражение_при_Оркинии"><a href="/wiki/%D0%A1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B8_%D0%9E%D1%80%D0%BA%D0%B8%D0%BD%D0%B8%D0%B8" title="Сражение при Оркинии">Сражение при Оркинии</a></span></h2>
-<p><b><a href="/wiki/%D0%A1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B8_%D0%9E%D1%80%D0%BA%D0%B8%D0%BD%D0%B8%D0%B8" title="Сражение при Оркинии">Сражение при Оркинии</a></b> — сражение, которое состоялось в 320 или 319 году до н. э. между войсками <a href="/wiki/%D0%AD%D0%B2%D0%BC%D0%B5%D0%BD_%D0%B8%D0%B7_%D0%9A%D0%B0%D1%80%D0%B4%D0%B8%D0%B8" title="Эвмен из Кардии">Эвмена</a> и <a href="/wiki/%D0%90%D0%BD%D1%82%D0%B8%D0%B3%D0%BE%D0%BD_I_%D0%9E%D0%B4%D0%BD%D0%BE%D0%B3%D0%BB%D0%B0%D0%B7%D1%8B%D0%B9" title="Антигон I Одноглазый">Антигона</a> около поселения Оркиния. Сражению предшествовала <a href="/wiki/%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0_%D0%B4%D0%B8%D0%B0%D0%B4%D0%BE%D1%85%D0%BE%D0%B2" title="Первая война диадохов">Первая война диадохов</a> между регентом <a href="/wiki/%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F" title="Македонская империя">Македонской империи</a> <a href="/wiki/%D0%9F%D0%B5%D1%80%D0%B4%D0%B8%D0%BA%D0%BA%D0%B0_(%D0%B4%D0%B8%D0%B0%D0%B4%D0%BE%D1%85)" title="Пердикка (диадох)">Пердиккой</a> с <a href="/wiki/%D0%A1%D0%B0%D1%82%D1%80%D0%B0%D0%BF" title="Сатрап">сатрапом</a> <a href="/wiki/%D0%AD%D0%BB%D0%BB%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82" title="Эллинистический Египет">Египта</a> <a href="/wiki/%D0%9F%D1%82%D0%BE%D0%BB%D0%B5%D0%BC%D0%B5%D0%B9_I_%D0%A1%D0%BE%D1%82%D0%B5%D1%80" title="Птолемей I Сотер">Птолемеем</a> и соправителями Македонии <a href="/wiki/%D0%9A%D1%80%D0%B0%D1%82%D0%B5%D1%80_(%D0%B2%D0%BE%D0%B5%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA)" title="Кратер (военачальник)">Кратером</a> и <a href="/wiki/%D0%90%D0%BD%D1%82%D0%B8%D0%BF%D0%B0%D1%82%D1%80_(%D0%BF%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B5%D1%86)" title="Антипатр (полководец)">Антипатром</a>. Царская армия во главе с Пердиккой отправилась в Египет, в то время как Эвмену было поручено руководство войсками в Малой Азии. Эвмен одержал две блестящие победы, а Пердикка был убит восставшими военачальниками. Во время последующего <a href="/wiki/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB_%D0%B2_%D0%A2%D1%80%D0%B8%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D1%81%D0%B5" title="Раздел в Трипарадисе">раздела империи в Трипарадисе</a> новый регент империи Антипатр поручил сатрапу Великой Фригии Антигону разбить остатки сторонников Пердикки, к которым принадлежал Эвмен. Причинами поражения Эвмена при Оркинии стали неспособность «пердикканцев» объединить силы и назначить общего военачальника, предательство со стороны командира конницы Аполлонида, а также, возможно, хитрость Антигона, который смог скрыть истинную численность своего войска.
-</p>
-<div style="clear:both;"></div>
-<div class="main-footer"><div class="main-footer-actions main-plainlist">
-<ul><li><a href="/wiki/%D0%A1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B8_%D0%9E%D1%80%D0%BA%D0%B8%D0%BD%D0%B8%D0%B8" title="Сражение при Оркинии"><span class="mw-ui-button">Читать</span></a></li>
-<li><span class="nomobile"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A5%D0%BE%D1%80%D0%BE%D1%88%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Википедия:Хорошие статьи"><span class="mw-ui-button mw-ui-quiet">Все 4445 хороших статей</span></a></span></li></ul>
-</div><div class="main-footer-menu mw-collapsible mw-collapsed nomobile" id="mw-customcollapsible-tga">
-<div class="main-footer-menuToggle mw-collapsible-toggle mw-customtoggle-main-tga"><img alt="Доп. действия" data-file-height="20" data-file-width="20" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/30px-OOjs_UI_icon_ellipsis.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/40px-OOjs_UI_icon_ellipsis.svg.png 2x" title="Дополнительные действия" width="20"/></div>
-<div class="main-footer-menuDropdown mw-collapsible-content main-plainlist">
-<ul><li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%8B_%D0%B2_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Википедия:Кандидаты в хорошие статьи"><span class="mw-ui-button mw-ui-quiet">Кандидаты</span></a></li>
-<li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B0%D1%8F_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B0%D1%8F_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F" title="Шаблон:Текущая хорошая статья"><span class="mw-ui-button mw-ui-quiet">Просмотр шаблона</span></a></li></ul>
-</div></div></div>
 </div>
-<link href="mw-data:TemplateStyles:r125466734" rel="mw-deduplicated-inline-style"/>
-<div class="main-box" id="main-tfl">
-<style data-mw-deduplicate="TemplateStyles:r126432845">.mw-parser-output .main-featuredLists>.main-featuredLists-item{align-items:stretch;break-inside:avoid;clear:both;display:flex;page-break-inside:avoid;margin-bottom:1rem}.mw-parser-output .main-featuredLists>.main-featuredLists-item:last-child{margin-bottom:0}.mw-parser-output .main-featuredLists-image{flex:0 auto;width:50px}.mw-parser-output .main-featuredLists-noImage{width:50px}.mw-parser-output .main-featuredLists-link{flex:1;margin-left:16px}.mw-parser-output .main-featuredLists-link a{color:inherit;text-decoration:none}.mw-parser-output .main-featuredLists-link a:hover,.mw-parser-output .main-featuredLists-link a:focus{color:#0645ad}.mw-parser-output .main-featuredLists-header{color:inherit;margin-bottom:0}.mw-parser-output .main-featuredLists-link a:hover>.main-featuredLists-header{text-decoration:underline}.mw-parser-output .main-featuredLists-subtitle{color:#72777d;display:block;font-size:1em;line-height:1.25;margin-top:-.125em}</style>
-<div class="main-plainlist">
-<ul class="main-featuredLists">
-<li class="main-featuredLists-item"><div class="main-featuredLists-image"><div class="center"><div class="floatnone"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:170727_CGV_%EC%9A%A9%EC%82%B0_%EB%B0%95%EC%B0%AC%EC%9A%B1%EA%B4%80_%EA%B0%9C%EA%B4%80%EC%8B%9D_%EA%B9%80%ED%83%9C%EB%A6%AC_(1).jpg" title="Декоративное изображение"><img alt="Декоративное изображение" data-file-height="749" data-file-width="500" decoding="async" height="75" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/170727_CGV_%EC%9A%A9%EC%82%B0_%EB%B0%95%EC%B0%AC%EC%9A%B1%EA%B4%80_%EA%B0%9C%EA%B4%80%EC%8B%9D_%EA%B9%80%ED%83%9C%EB%A6%AC_%281%29.jpg/50px-170727_CGV_%EC%9A%A9%EC%82%B0_%EB%B0%95%EC%B0%AC%EC%9A%B1%EA%B4%80_%EA%B0%9C%EA%B4%80%EC%8B%9D_%EA%B9%80%ED%83%9C%EB%A6%AC_%281%29.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/170727_CGV_%EC%9A%A9%EC%82%B0_%EB%B0%95%EC%B0%AC%EC%9A%B1%EA%B4%80_%EA%B0%9C%EA%B4%80%EC%8B%9D_%EA%B9%80%ED%83%9C%EB%A6%AC_%281%29.jpg/75px-170727_CGV_%EC%9A%A9%EC%82%B0_%EB%B0%95%EC%B0%AC%EC%9A%B1%EA%B4%80_%EA%B0%9C%EA%B4%80%EC%8B%9D_%EA%B9%80%ED%83%9C%EB%A6%AC_%281%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/68/170727_CGV_%EC%9A%A9%EC%82%B0_%EB%B0%95%EC%B0%AC%EC%9A%B1%EA%B4%80_%EA%B0%9C%EA%B4%80%EC%8B%9D_%EA%B9%80%ED%83%9C%EB%A6%AC_%281%29.jpg/100px-170727_CGV_%EC%9A%A9%EC%82%B0_%EB%B0%95%EC%B0%AC%EC%9A%B1%EA%B4%80_%EA%B0%9C%EA%B4%80%EC%8B%9D_%EA%B9%80%ED%83%9C%EB%A6%AC_%281%29.jpg 2x" width="50"/></a></div></div></div><div class="main-featuredLists-link"><a href="/wiki/%D0%9F%D1%80%D0%B5%D0%BC%D0%B8%D1%8F_%C2%AB%D0%9F%D1%8D%D0%BA%D1%81%D0%B0%D0%BD%C2%BB_%D0%B7%D0%B0_%D0%BB%D1%83%D1%87%D1%88%D1%83%D1%8E_%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D1%83%D1%8E_%D1%80%D0%BE%D0%BB%D1%8C_(%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5)" title="Премия «Пэксан» за лучшую женскую роль (телевидение)"><span class="main-featuredLists-subtitle">Последний избранный список</span><h2 class="main-header main-featuredLists-header"> Премия «Пэксан» за лучшую женскую роль (телевидение)
-</h2></a></div></li>
-<li class="main-featuredLists-item"><div class="main-featuredLists-image"><div class="center"><div class="floatnone"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Flag_of_Greece.svg" title="Декоративное изображение"><img alt="Декоративное изображение" data-file-height="400" data-file-width="600" decoding="async" height="33" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/50px-Flag_of_Greece.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/75px-Flag_of_Greece.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/100px-Flag_of_Greece.svg.png 2x" width="50"/></a></div></div></div><div class="main-featuredLists-link"><a href="/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B3%D0%BB%D0%B0%D0%B2_%D0%93%D1%80%D0%B5%D1%86%D0%B8%D0%B8" title="Список глав Греции"><span class="main-featuredLists-subtitle">Предыдущий избранный список</span><h2 class="main-header main-featuredLists-header"> Список глав Греции
-</h2></a></div></li>
+</li>
+</ul>
+<div class="ba--edit-info edit-book-info-margin">
+<a class="fancybox-book-edit-info-form" data-ng-href="#!/#book-edit-info-form" rel="nofollow">
+Изменить информацию о книге
+</a>
+<span class="rarr">→</span>
+</div>
+<a class="centered h3-top100-title" href="/books/top/">
+<div class="b-icon thebest"></div>Лучшие книги - Топ 100
+</a>
+<div class="aside-top100">
+<div class="a-top100-item">
+<div class="a-t100-number">47.</div>
+<div class="a-t100-image">
+<a href="/book/77182/" rel="nofollow">
+<img alt=" Избранное" src="/public/media/covers/4/e/4ef178099d93b90a005480ea92b75923_100x0.jpg" title=" Избранное"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/77182/"> Избранное</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.1</strong>
+(403 оценки)
+</div>
+</div>
+</div>
+<div class="a-top100-item">
+<div class="a-t100-number">48.</div>
+<div class="a-t100-image">
+<a href="/book/7282/" rel="nofollow">
+<img alt="Танец с драконами. Книга 1. Грёзы и пыль" src="/public/media/covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a_100x0.jpg" title="Танец с драконами. Книга 1. Грёзы и пыль"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/7282/">Танец с драконами. Книга 1. Грёзы и пыль</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.0</strong>
+(1407 оценок)
+</div>
+</div>
+</div>
+<div class="a-top100-item">
+<div class="a-t100-number">49.</div>
+<div class="a-t100-image">
+<a href="/book/12408/" rel="nofollow">
+<img alt="Его прощальный поклон" src="/public/media/covers/2/f/2fece950daa2a7ef6cd22490f677cb13_100x0.jpg" title="Его прощальный поклон"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/12408/">Его прощальный поклон</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.1</strong>
+(376 оценок)
+</div>
+</div>
+</div>
+<div class="a-top100-item">
+<div class="a-t100-number">50.</div>
+<div class="a-t100-image">
+<a href="/book/83371/" rel="nofollow">
+<img alt="Проклятый горн" src="/public/media/covers/2/5/25f145fdd0c6843054f404e8de598e0b_100x0.jpg" title="Проклятый горн"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/83371/">Проклятый горн</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.2</strong>
+(217 оценок)
+</div>
+</div>
+</div>
+<div class="a-t100--show-all"><a class="a-arrowed" href="/books/top/" rel="nofollow">Весь рейтинг</a></div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div id="book-edit-info-form">
+<div data-ng-controller="BookEditInfoCtrl" id="book_edit_info_form-book-edit-info-form-app">
+<div class="feedback-form-send" data-ng-show="showSendForm">
+<div class="feedback-head">
+<p>Редактирование информации:</p>
+<span class="book-edit-form-book-name">Возвращение Шерлока Холмса (авторский сборник)</span>
+</div>
+<div class="feedback-body">
+<span class="book-edit-thanks">Спасибо, что помогаете делать наш сайт лучше!</span>
+<textarea class="generic-input-20" data-ng-model="message" placeholder="Напишите, что вы предлагаете исправить: название книги, обложку, автора, описание, год написания произведения, серию?" rows="10"></textarea>
+<a class="ui-20 show-filming" data-ng-click="addFilms=true" data-ng-hide="addFilms" href="" rel="nofollow">Указать экранизацию книги?</a>
+<input class="ui-20 show-filming" data-ng-model="filming" data-ng-show="addFilms" placeholder="Добавьте ссылку с кинопоиска на фильм, снятый по книге" type="text"/>
+<button class="btn-blue-20 send-book-info" data-ng-click="send()" data-ng-disabled="loading">
+Отправить
+</button>
+</div>
+</div>
+<div class="feedback-form-thanks" data-ng-hide="showSendForm">
+<div class="feedback-head">
+<span>Ваше сообщение отправлено</span>
+</div>
+<div class="feedback-body">
+<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
+нашими специалистами в самое ближайшее время.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="libr" id="libr">
+<div class="libr-lightbox">
+<div class="libr-heading">
+<span class="libr-title libr-dark-gray">Гарри Поттер и Орден Феникса</span>
+<ul class="libr-heading-icons">
+<li><a class="libr-ico-help" href="">Помощь</a></li>
+<li><a class="libr-ico-close" href="">Закрыть</a></li>
 </ul>
 </div>
-<div style="clear:both;"></div>
-<div class="main-footer"><div class="main-footer-actions main-plainlist nomobile">
-<ul><li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8_%D0%B8_%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB%D1%8B" title="Википедия:Избранные списки и порталы"><span class="mw-ui-button">Другие избранные списки</span></a></li></ul>
-</div><div class="main-footer-menu mw-collapsible mw-collapsed nomobile" id="mw-customcollapsible-tfl">
-<div class="main-footer-menuToggle mw-collapsible-toggle mw-customtoggle-main-tfl"><img alt="Доп. действия" data-file-height="20" data-file-width="20" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/30px-OOjs_UI_icon_ellipsis.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/40px-OOjs_UI_icon_ellipsis.svg.png 2x" title="Дополнительные действия" width="20"/></div>
-<div class="main-footer-menuDropdown mw-collapsible-content main-plainlist">
-<ul><li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%8B_%D0%B2_%D0%B8%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8_%D0%B8_%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB%D1%8B" title="Википедия:Кандидаты в избранные списки и порталы"><span class="mw-ui-button mw-ui-quiet">Кандидаты</span></a></li>
-<li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B9_%D0%B8%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA" title="Шаблон:Текущий избранный список"><span class="mw-ui-button mw-ui-quiet">Просмотр шаблона</span></a></li></ul>
-</div></div></div>
+<form action="#" class="libr-form-librarian">
+<fieldset>
+<aside class="libr-sidebar">
+<div class="libr-buttons">
+<a class="libr-button libr-will-read" href="">Хочу прочитать</a>
+<a class="libr-button libr-now-reading" href="">Читаю</a>
+<a class="libr-button libr-already-read active" href="">Прочитал</a>
 </div>
-<link href="mw-data:TemplateStyles:r125466734" rel="mw-deduplicated-inline-style"/>
-<div class="main-box main-box-image-only" id="main-potd"><h2 class="main-header main-box-header"><span id=".D0.98.D0.B7.D0.BE.D0.B1.D1.80.D0.B0.D0.B6.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B4.D0.BD.D1.8F"></span><span class="mw-headline" id="Изображение_дня">Изображение дня</span></h2>
-<div class="main-box-content"><div class="center"><div class="floatnone"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Sarcococca_hookeriana_24-01-2022._(d.j.b).jpg" title="Sarcococca hookeriana[d] в цвету"><img alt="Sarcococca hookeriana[d] в цвету" data-file-height="3456" data-file-width="3456" decoding="async" height="500" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sarcococca_hookeriana_24-01-2022._%28d.j.b%29.jpg/500px-Sarcococca_hookeriana_24-01-2022._%28d.j.b%29.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sarcococca_hookeriana_24-01-2022._%28d.j.b%29.jpg/750px-Sarcococca_hookeriana_24-01-2022._%28d.j.b%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sarcococca_hookeriana_24-01-2022._%28d.j.b%29.jpg/1000px-Sarcococca_hookeriana_24-01-2022._%28d.j.b%29.jpg 2x" width="500"/></a></div></div></div>
-<div class="main-box-imageCaption">
-<p><i><span data-interwiki-article="Q3061687" data-interwiki-lang="d"><a class="new" href="/w/index.php?title=Sarcococca_hookeriana&amp;action=edit&amp;redlink=1" title="Sarcococca hookeriana (страница отсутствует)">Sarcococca hookeriana</a></span><span class="noprint" style="font-style:normal; font-weight:normal;"><sup><a class="extiw" href="https://www.wikidata.org/wiki/Q3061687#sitelinks-wikipedia" title="d:Q3061687"><span title="Элемент статьи «Sarcococca hookeriana» в Викиданных">[d]</span></a></sup></span></i> в цвету
-</p>
+<div class="libr-check-area">
+<div class="libr-form-row">
+<input checked="" hidden="" id="print" type="checkbox">
+<label for="print">Печатное издание</label>
+</input></div>
+<div class="libr-form-row">
+<input hidden="" id="audiobook" type="checkbox"/>
+<label for="audiobook">Аудиокнигу</label>
 </div>
-<div style="clear:both;"></div>
-<div class="main-footer"><div class="main-footer-menu mw-collapsible mw-collapsed nomobile" id="mw-customcollapsible-potd">
-<div class="main-footer-menuToggle mw-collapsible-toggle mw-customtoggle-main-potd"><img alt="Доп. действия" data-file-height="20" data-file-width="20" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/30px-OOjs_UI_icon_ellipsis.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/40px-OOjs_UI_icon_ellipsis.svg.png 2x" title="Дополнительные действия" width="20"/></div>
-<div class="main-footer-menuDropdown mw-collapsible-content main-plainlist">
-<ul><li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BD%D1%8F" title="Википедия:Изображение дня"><span class="mw-ui-button mw-ui-quiet">Просмотр шаблона</span></a></li></ul>
-</div></div></div>
+<div class="libr-form-row">
+<input disabled="" hidden="" id="electronic-version" type="checkbox"/>
+<label for="electronic-version">Электронную версию</label>
 </div>
-</div>
-<div class="main-wrapper-column">
-<link href="mw-data:TemplateStyles:r125466734" rel="mw-deduplicated-inline-style"/>
-<div class="main-box" id="main-dyk"><div class="main-box-subtitle">Из новых материалов</div><h2 class="main-header main-box-header"><span id=".D0.97.D0.BD.D0.B0.D0.B5.D1.82.D0.B5_.D0.BB.D0.B8_.D0.B2.D1.8B.3F"></span><span class="mw-headline" id="Знаете_ли_вы?">Знаете ли вы?</span></h2>
-<p><small><i>Выпуск посвящён <a href="/wiki/%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C" title="Международный женский день">Международному женскому дню</a></i></small>
-</p>
-<div class="floatright"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Margaret,_Maid_of_Norway.jpg" title="Витраж с изображением Маргариты Шотландской Девы в ратуше Леруика"><img alt="Витраж с изображением Маргариты Шотландской Девы в ратуше Леруика" data-file-height="480" data-file-width="413" decoding="async" height="139" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Margaret%2C_Maid_of_Norway.jpg/120px-Margaret%2C_Maid_of_Norway.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Margaret%2C_Maid_of_Norway.jpg/180px-Margaret%2C_Maid_of_Norway.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Margaret%2C_Maid_of_Norway.jpg/240px-Margaret%2C_Maid_of_Norway.jpg 2x" width="120"/></a></div>
-<ul><li>Смерть <b><a href="/wiki/%D0%9C%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B5%D1%82_%D0%9D%D0%BE%D1%80%D0%B2%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%94%D0%B5%D0%B2%D0%B0" title="Маргарет Норвежская Дева">шотландской королевы</a></b> <span class="nowrap"><i>(<abbr style="text-decoration:none" title="на иллюстрации">на илл.</abbr>)</i></span> вызвала <a href="/wiki/%D0%92%D0%BE%D0%B9%D0%BD%D1%8B_%D0%B7%D0%B0_%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C_%D0%A8%D0%BE%D1%82%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D0%B8" title="Войны за независимость Шотландии">жестокий династический кризис</a>.</li>
-<li>Знаменитого <a href="/wiki/%D0%94%D1%83%D0%B1%D0%B5%D0%BB%D1%8C%D1%82,_%D0%9B%D0%B5%D0%BE%D0%BD%D1%82%D0%B8%D0%B9_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87" title="Дубельт, Леонтий Васильевич">жандарма</a> содержала <b><a href="/wiki/%D0%94%D1%83%D0%B1%D0%B5%D0%BB%D1%8C%D1%82,_%D0%90%D0%BD%D0%BD%D0%B0_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%BD%D0%B0" title="Дубельт, Анна Николаевна">помещица</a></b>, на досуге переводившая романы с английского.</li>
-<li>Интерес к миниатюрам <b><a href="/wiki/%D0%A5%D0%BE%D0%BB%D0%BB,_%D0%AD%D0%BD%D0%BD" title="Холл, Энн">первой женщины</a></b> — члена <a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F_%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B0" title="Национальная академия дизайна">Национальной академии дизайна США</a> вырос после продажи дома, в котором она жила.</li>
-<li><b><a href="/wiki/Holland,_1945" title="Holland, 1945">Оптимистичная</a></b> песня с пластинки культового <a href="/wiki/%D0%98%D0%BD%D0%B4%D0%B8-%D1%80%D0%BE%D0%BA" title="Инди-рок">инди</a>-<a href="/wiki/In_the_Aeroplane_Over_the_Sea" title="In the Aeroplane Over the Sea">альбома</a> была посвящена <a href="/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D0%BA,_%D0%90%D0%BD%D0%BD%D0%B0" title="Франк, Анна">жертвам</a> <a href="/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D0%BA,_%D0%9C%D0%B0%D1%80%D0%B3%D0%BE" title="Франк, Марго">Освенцима</a>.</li></ul>
-<div class="floatright"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Choir_at_southern_Sudan_referendum_mass.jpg" title="Женский хор в южносуданской церкви"><img alt="Женский хор в южносуданской церкви" data-file-height="576" data-file-width="864" decoding="async" height="80" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Choir_at_southern_Sudan_referendum_mass.jpg/120px-Choir_at_southern_Sudan_referendum_mass.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Choir_at_southern_Sudan_referendum_mass.jpg/180px-Choir_at_southern_Sudan_referendum_mass.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Choir_at_southern_Sudan_referendum_mass.jpg/240px-Choir_at_southern_Sudan_referendum_mass.jpg 2x" width="120"/></a></div>
-<ul><li>Следование «<a href="/wiki/%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5_%D1%86%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Семейные ценности">традиционным ценностям</a>» в <a href="/wiki/%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%A1%D1%83%D0%B4%D0%B0%D0%BD" title="Южный Судан">Южном Судане</a> <span class="nowrap"><i>(<abbr style="text-decoration:none" title="на иллюстрации">на илл.</abbr>)</i></span> <b><a href="/wiki/%D0%96%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B_%D0%B2_%D0%AE%D0%B6%D0%BD%D0%BE%D0%BC_%D0%A1%D1%83%D0%B4%D0%B0%D0%BD%D0%B5" title="Женщины в Южном Судане">привело</a></b> к одному из самых высоких в мире уровней <a href="/wiki/%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C" title="Материнская смертность">материнской смертности</a>.</li>
-<li>За голову <b><a href="/wiki/%D0%A4%D0%B5%D1%80%D0%BD%D0%B0%D0%BD%D0%B4%D0%B5%D1%81,_%D0%9D%D1%8C%D0%B5%D0%B2%D0%B5%D1%81" title="Фернандес, Ньевес">сельской учительницы</a></b>, командовавшей партизанским отрядом, <a href="/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D1%80%D0%BC%D0%B8%D1%8F_%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D0%B8" title="Императорская армия Японии">японцы</a> назначили крупную денежную премию.</li>
-<li><b><a href="/wiki/%D0%A1%D1%83%D0%B1%D0%B1%D0%BE%D1%82%D0%B8%D0%BD%D0%B0,_%D0%A2%D0%B0%D1%82%D1%8C%D1%8F%D0%BD%D0%B0_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0" title="Субботина, Татьяна Михайловна">Российская пенсионерка</a></b> прославилась на весь мир, снимая обучающие видео по использованию <a href="/wiki/%D0%A5%D1%80%D0%BE%D0%BC%D0%B0%D0%BA%D0%B5%D0%B9" title="Хромакей">хромакея</a>.</li>
-<li>В <b><a class="mw-redirect" href="/wiki/100_%D1%81%D0%B0%D0%BC%D1%8B%D1%85_%D0%B8%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D1%85_%D1%81%D0%B5%D1%80%D0%B1%D0%BE%D0%B2_%D0%BF%D0%BE_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8_%D0%A1%D0%B5%D1%80%D0%B1%D1%81%D0%BA%D0%BE%D0%B9_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D0%B8_%D0%BD%D0%B0%D1%83%D0%BA_%D0%B8_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2" title="100 самых известных сербов по версии Сербской академии наук и искусств">списке 100 самых известных сербов</a></b> всего 3 женщины — <a href="/wiki/%D0%95%D1%84%D0%B8%D0%BC%D0%B8%D1%8F_(%D0%9C%D1%80%D0%BD%D1%8F%D0%B2%D1%87%D0%B5%D0%B2%D0%B8%D1%87)" title="Ефимия (Мрнявчевич)">монахиня</a>, <a href="/wiki/%D0%A1%D0%B5%D0%BA%D1%83%D0%BB%D0%B8%D1%87,_%D0%98%D1%81%D0%B8%D0%B4%D0%BE%D1%80%D0%B0" title="Секулич, Исидора">учёная</a> и <a href="/wiki/%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87,_%D0%9D%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0" title="Петрович, Надежда">художница</a>.</li></ul>
-<div class="floatright"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%C2%AB%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%C2%BB.jpg" title="Фонтан Ольги Кудравцевой «Хоровод» в 1943 году"><img alt="Фонтан Ольги Кудравцевой «Хоровод» в 1943 году" data-file-height="1002" data-file-width="1511" decoding="async" height="80" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%C2%AB%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%C2%BB.jpg/120px-%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%C2%AB%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%C2%BB.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%C2%AB%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%C2%BB.jpg/180px-%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%C2%AB%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%C2%BB.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e8/%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%C2%AB%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%C2%BB.jpg/240px-%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%C2%AB%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%C2%BB.jpg 2x" width="120"/></a></div>
-<ul><li><b><a href="/wiki/%D0%9A%D1%83%D0%B4%D1%80%D1%8F%D0%B2%D1%86%D0%B5%D0%B2%D0%B0,_%D0%9E%D0%BB%D1%8C%D0%B3%D0%B0_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%BD%D0%B0" title="Кудрявцева, Ольга Николаевна">Скульптор</a></b> из <a href="/wiki/%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2" title="Харьков">Харькова</a> создала <a href="/wiki/%D0%91%D0%B0%D1%80%D0%BC%D0%B0%D0%BB%D0%B5%D0%B9_(%D1%84%D0%BE%D0%BD%D1%82%D0%B0%D0%BD)" title="Бармалей (фонтан)">известный фонтан</a> <span class="nowrap"><i>(<abbr style="text-decoration:none" title="на иллюстрации">на илл.</abbr>)</i></span>, который пережил <a href="/wiki/%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0" title="Сталинградская битва">Сталинградскую битву</a>.</li>
-<li><b><a href="/wiki/%D0%9A%D0%B2%D0%B8%D0%BD%D0%BD,_%D0%A5%D0%B5%D0%BB%D0%B5%D0%BD" title="Квинн, Хелен">Американка</a></b> стояла у истоков <a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D0%B8_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" title="Теории Великого объединения">теорий Великого объединения</a> и <a href="/wiki/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C" title="Стандартная модель">стандартной модели элементарных частиц</a>.</li>
-<li>Каждый седьмой гражданин Дании имеет то же происхождение, что и <b><a href="/wiki/%D0%A0%D1%83%D0%B1%D0%B8%D0%BD,_%D0%9C%D0%BE%D0%BD%D0%B8%D0%BA%D0%B0" title="Рубин, Моника">два</a></b> <b><a href="/wiki/%D0%9D%D0%B0%D0%B2%D0%B0,_%D0%A1%D0%B0%D0%BC%D0%B8%D1%80%D0%B0" title="Нава, Самира">депутата</a></b> парламента.</li>
-<li><b><a href="/wiki/%D0%A1%D0%BB%D0%B5%D0%B9,_%D0%A1%D0%B8%D0%BB%D1%8C%D0%B2%D0%B8%D1%8F" title="Слей, Сильвия">Художница-феминистка</a></b> знаменита изображением обнажённых мужчин в позах, которые традиционно ассоциировались с женщинами.</li></ul>
-<div style="clear:both;"></div>
-<div style="clear:both;"></div>
-<div style="clear:both;"></div>
-<div class="main-footer"><div class="main-footer-actions main-plainlist nomobile">
-<ul><li><a href="/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%B0:%D0%97%D0%BD%D0%B0%D0%B5%D1%82%D0%B5_%D0%BB%D0%B8_%D0%B2%D1%8B" title="Обсуждение шаблона:Знаете ли вы"><span class="mw-ui-button">Обсудить</span></a></li></ul>
-</div><div class="main-footer-menu mw-collapsible mw-collapsed nomobile" id="mw-customcollapsible-dyk">
-<div class="main-footer-menuToggle mw-collapsible-toggle mw-customtoggle-main-dyk"><img alt="Доп. действия" data-file-height="20" data-file-width="20" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/30px-OOjs_UI_icon_ellipsis.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/40px-OOjs_UI_icon_ellipsis.svg.png 2x" title="Дополнительные действия" width="20"/></div>
-<div class="main-footer-menuDropdown mw-collapsible-content main-plainlist">
-<ul><li><a href="/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%97%D0%BD%D0%B0%D0%B5%D1%82%D0%B5_%D0%BB%D0%B8_%D0%B2%D1%8B/%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0_%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B5%D0%B3%D0%BE_%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%B0" title="Проект:Знаете ли вы/Подготовка следующего выпуска"><span class="mw-ui-button mw-ui-quiet">Предложения</span></a></li>
-<li><a href="/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%97%D0%BD%D0%B0%D0%B5%D1%82%D0%B5_%D0%BB%D0%B8_%D0%B2%D1%8B/%D0%90%D1%80%D1%85%D0%B8%D0%B2_%D1%80%D1%83%D0%B1%D1%80%D0%B8%D0%BA%D0%B8" title="Проект:Знаете ли вы/Архив рубрики"><span class="mw-ui-button mw-ui-quiet">Архив</span></a></li>
-<li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%97%D0%BD%D0%B0%D0%B5%D1%82%D0%B5_%D0%BB%D0%B8_%D0%B2%D1%8B" title="Шаблон:Знаете ли вы"><span class="mw-ui-button mw-ui-quiet">Просмотр шаблона</span></a></li></ul>
-</div></div></div>
-</div>
-<link href="mw-data:TemplateStyles:r125466734" rel="mw-deduplicated-inline-style"/>
-<div class="main-box" id="main-cur"><h2 class="main-header main-box-header"><span id=".D0.A2.D0.B5.D0.BA.D1.83.D1.89.D0.B8.D0.B5_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"></span><span class="mw-headline" id="Текущие_события">Текущие события</span></h2>
-<div class="hlist" style="margin-left: 0em;">
-<dl><dt>Актуальные темы</dt>
-<dd><a href="/wiki/%D0%91%D0%BB%D0%BE%D0%BA%D0%B0%D0%B4%D0%B0_%D0%9D%D0%B0%D0%B3%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE_%D0%9A%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D1%85%D0%B0_(2022%E2%80%942023)" title="Блокада Нагорного Карабаха (2022—2023)">блокада Нагорного Карабаха</a></dd>
-<dd><a href="/wiki/%D0%92%D1%82%D0%BE%D1%80%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%D0%BD%D0%B0_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D1%83_(%D1%81_2022)" title="Вторжение России на Украину (с 2022)">вторжение России на Украину</a></dd>
-<dd><a href="/wiki/%D0%9F%D1%80%D0%BE%D1%82%D0%B5%D1%81%D1%82%D1%8B_%D0%B2_%D0%93%D1%80%D1%83%D0%B7%D0%B8%D0%B8_(2023)" title="Протесты в Грузии (2023)">протесты в Грузии</a> <b>|</b> <a href="/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%83%D0%BC%D0%B5%D1%80%D1%88%D0%B8%D1%85_%D0%B2_2023_%D0%B3%D0%BE%D0%B4%D1%83" title="Список умерших в 2023 году">Недавно умершие</a></dd></dl>
-</div>
-<div class="floatright"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Djokovic_MCM22_(52035377907)_(cropped).jpg" title="Новак Джокович в 2022 году"><img alt="Новак Джокович в 2022 году" data-file-height="1580" data-file-width="1629" decoding="async" height="116" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Djokovic_MCM22_%2852035377907%29_%28cropped%29.jpg/120px-Djokovic_MCM22_%2852035377907%29_%28cropped%29.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Djokovic_MCM22_%2852035377907%29_%28cropped%29.jpg/180px-Djokovic_MCM22_%2852035377907%29_%28cropped%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Djokovic_MCM22_%2852035377907%29_%28cropped%29.jpg/240px-Djokovic_MCM22_%2852035377907%29_%28cropped%29.jpg 2x" width="120"/></a></div>
-<ul><li><b><a href="/wiki/%D0%94%D0%B6%D0%BE%D0%BA%D0%BE%D0%B2%D0%B8%D1%87,_%D0%9D%D0%BE%D0%B2%D0%B0%D0%BA" title="Джокович, Новак">Новак Джокович</a></b> <span class="nowrap"><i>(<abbr style="text-decoration:none" title="на иллюстрации">на илл.</abbr>)</i></span> стал рекордсменом профессиональных теннисных туров по числу недель на <a href="/wiki/%D0%A0%D0%B5%D0%B9%D1%82%D0%B8%D0%BD%D0%B3_ATP#Первые_ракетки_мира" title="Рейтинг ATP">1-м месте в рейтинге</a>.</li>
-<li>Представитель правящего <a href="/wiki/%D0%92%D1%81%D0%B5%D0%BE%D0%B1%D1%89%D0%B8%D0%B9_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D0%B3%D1%80%D0%B5%D1%81%D1%81" title="Всеобщий прогрессивный конгресс">Всеобщего прогрессивного конгресса</a> <b><a href="/wiki/%D0%A2%D0%B8%D0%BD%D1%83%D0%B1%D1%83,_%D0%91%D0%BE%D0%BB%D0%B0" title="Тинубу, Бола">Бола Тинубу</a></b> <a class="extiw" href="https://en.wikipedia.org/wiki/2023_Nigerian_presidential_election" title="en:2023 Nigerian presidential election"><span title="2023 Nigerian presidential election — версия статьи «Всеобщие выборы в Нигерии (2023)» на английском языке">избран</span></a><span class="noprint" style="font-style:normal; font-weight:normal;"> <span style="display:inline-block; font-size:80%; position:relative;"><span style="font-size:117.6%; margin-left:-0.43em; position:relative; top:0.28em;"> <small class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</small></span><span class="link-ru metadata" style="margin-left:-0.43em; position:absolute; left:0; z-index:1; margin-top:-0.35em;"><span style="visibility:hidden; margin-right:0.099em;"> (</span><span data-interwiki-article="2023 Nigerian presidential election" data-interwiki-lang="en"><a class="new" href="/w/index.php?title=%D0%92%D1%81%D0%B5%D0%BE%D0%B1%D1%89%D0%B8%D0%B5_%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D1%8B_%D0%B2_%D0%9D%D0%B8%D0%B3%D0%B5%D1%80%D0%B8%D0%B8_(2023)&amp;action=edit&amp;redlink=1" title="Всеобщие выборы в Нигерии (2023) (страница отсутствует)">рус.</a></span></span></span></span> <a href="/wiki/%D0%9F%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%82_%D0%9D%D0%B8%D0%B3%D0%B5%D1%80%D0%B8%D0%B8" title="Президент Нигерии">президентом</a> <a href="/wiki/%D0%9D%D0%B8%D0%B3%D0%B5%D1%80%D0%B8%D1%8F" title="Нигерия">Нигерии</a>.</li>
-<li>В <a href="/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" title="Москва">Москве</a> состоялось открытие <b><a href="/wiki/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B5%D0%B2%D0%B0%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F" title="Большая кольцевая линия">Большой кольцевой линии</a></b> (с её замыканием) — самой протяжённой кольцевой линии метро в мире.</li>
-<li>Учёные описали древнейшие <a href="/wiki/%D0%A4%D0%BE%D1%81%D1%81%D0%B8%D0%BB%D0%B8%D0%B8" title="Фоссилии">ископаемые остатки</a> <b><a href="/wiki/Tillyardembiidae" title="Tillyardembiidae">вероятных насекомых-опылителей</a></b>.</li>
-<li>В результате <b><a href="/wiki/%D0%A1%D1%82%D0%BE%D0%BB%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4%D0%BE%D0%B2_%D0%B2_%D0%A2%D0%B5%D0%BC%D0%B1%D0%B8" title="Столкновение поездов в Темби">лобового столкновения</a></b> пассажирского и грузового поездов в <a href="/wiki/%D0%93%D1%80%D0%B5%D1%86%D0%B8%D1%8F" title="Греция">Греции</a> погибли 57 человек, ещё более 80 ранены.</li>
-<li><b><a href="/wiki/%D0%9C%D0%B5%D1%81%D1%81%D0%B8,_%D0%9B%D0%B8%D0%BE%D0%BD%D0%B5%D0%BB%D1%8C" title="Месси, Лионель">Лионель Месси</a></b> и <b><a href="/wiki/%D0%9F%D1%83%D1%82%D0%B5%D0%BB%D1%8C%D1%8F%D1%81,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D1%8F" title="Путельяс, Алексия">Алексия Путельяс</a></b> признаны <b><a href="/wiki/The_Best_FIFA_Football_Awards_2022" title="The Best FIFA Football Awards 2022">лучшими футболистами 2022 года</a></b> по версии <a href="/wiki/%D0%A4%D0%98%D0%A4%D0%90" title="ФИФА">ФИФА</a>.</li></ul>
-<div style="clear:both;"></div>
-<div class="main-footer"><div class="main-footer-actions main-plainlist nomobile">
-<ul><li><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Портал:Текущие события"><span class="mw-ui-button">Другие текущие события</span></a></li></ul>
-</div><div class="main-footer-menu mw-collapsible mw-collapsed nomobile" id="mw-customcollapsible-cur">
-<div class="main-footer-menuToggle mw-collapsible-toggle mw-customtoggle-main-cur"><img alt="Доп. действия" data-file-height="20" data-file-width="20" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/30px-OOjs_UI_icon_ellipsis.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/40px-OOjs_UI_icon_ellipsis.svg.png 2x" title="Дополнительные действия" width="20"/></div>
-<div class="main-footer-menuDropdown mw-collapsible-content main-plainlist">
-<ul><li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B7%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B5/%D0%9A%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%8B" title="Википедия:Текущие события на заглавной странице/Кандидаты"><span class="mw-ui-button mw-ui-quiet">Кандидаты</span></a></li>
-<li><a class="mw-redirect" href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B7%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B5/%D0%90%D1%80%D1%85%D0%B8%D0%B2_%D1%80%D1%83%D0%B1%D1%80%D0%B8%D0%BA%D0%B8" title="Википедия:Текущие события на заглавной странице/Архив рубрики"><span class="mw-ui-button mw-ui-quiet">Архив</span></a></li>
-<li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B7%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B5" title="Шаблон:Текущие события на заглавной странице"><span class="mw-ui-button mw-ui-quiet">Просмотр шаблона</span></a></li></ul>
-</div></div></div>
-</div>
-<link href="mw-data:TemplateStyles:r125466734" rel="mw-deduplicated-inline-style"/>
-<div class="main-box" id="main-itd"><div class="main-box-subtitle">В этот день</div><h2 class="main-header main-box-header"><span id="9_.D0.BC.D0.B0.D1.80.D1.82.D0.B0"></span><span class="mw-headline" id="9_марта"><a href="/wiki/9_%D0%BC%D0%B0%D1%80%D1%82%D0%B0" title="9 марта">9 марта</a></span></h2>
-<div class="floatright"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Avignon,_Palais_des_Papes_by_JM_Rosier.jpg" title="Папский дворец в Авиньоне"><img alt="Папский дворец в Авиньоне" data-file-height="1728" data-file-width="4241" decoding="async" height="57" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/db/Avignon%2C_Palais_des_Papes_by_JM_Rosier.jpg/140px-Avignon%2C_Palais_des_Papes_by_JM_Rosier.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/db/Avignon%2C_Palais_des_Papes_by_JM_Rosier.jpg/210px-Avignon%2C_Palais_des_Papes_by_JM_Rosier.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/db/Avignon%2C_Palais_des_Papes_by_JM_Rosier.jpg/280px-Avignon%2C_Palais_des_Papes_by_JM_Rosier.jpg 2x" width="140"/></a></div>
-<ul><li><a href="/wiki/1309_%D0%B3%D0%BE%D0%B4" title="1309 год">1309</a> — <a href="/wiki/%D0%90%D0%B2%D0%B8%D0%BD%D1%8C%D0%BE%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D0%BF%D0%BB%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D0%B0%D0%BF" title="Авиньонское пленение пап">Авиньонское пленение пап</a>: <a href="/wiki/%D0%9A%D0%BB%D0%B8%D0%BC%D0%B5%D0%BD%D1%82_V" title="Климент V">Климент V</a> обосновался в <a href="/wiki/%D0%90%D0%B2%D0%B8%D0%BD%D1%8C%D0%BE%D0%BD" title="Авиньон">Авиньоне</a> <i>(на илл.)</i></li>
-<li><a href="/wiki/1617_%D0%B3%D0%BE%D0%B4" title="1617 год">1617</a> — <a href="/wiki/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE-%D1%88%D0%B2%D0%B5%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0_(1610%E2%80%941617)" title="Русско-шведская война (1610—1617)">Русско-шведская война</a> завершилась заключением <a href="/wiki/%D0%A1%D1%82%D0%BE%D0%BB%D0%B1%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B8%D1%80" title="Столбовский мир">Столбовского мира</a></li>
-<li><a href="/wiki/1796_%D0%B3%D0%BE%D0%B4" title="1796 год">1796</a> — <a href="/wiki/%D0%9D%D0%B0%D0%BF%D0%BE%D0%BB%D0%B5%D0%BE%D0%BD_I" title="Наполеон I">Наполеон Бонапарт</a> женился на <a href="/wiki/%D0%96%D0%BE%D0%B7%D0%B5%D1%84%D0%B8%D0%BD%D0%B0_%D0%91%D0%BE%D0%B3%D0%B0%D1%80%D0%BD%D0%B5" title="Жозефина Богарне">Жозефине Богарне</a></li>
-<li><a href="/wiki/1842_%D0%B3%D0%BE%D0%B4" title="1842 год">1842</a> — в <a href="/wiki/%D0%9C%D0%B8%D0%BB%D0%B0%D0%BD" title="Милан">миланском</a> театре «<a href="/wiki/%D0%9B%D0%B0_%D0%A1%D0%BA%D0%B0%D0%BB%D0%B0" title="Ла Скала">Ла Скала</a>» состоялась премьера оперы <a href="/wiki/%D0%92%D0%B5%D1%80%D0%B4%D0%B8,_%D0%94%D0%B6%D1%83%D0%B7%D0%B5%D0%BF%D0%BF%D0%B5" title="Верди, Джузеппе">Верди</a> «<a href="/wiki/%D0%9D%D0%B0%D0%B1%D1%83%D0%BA%D0%BA%D0%BE_(%D0%BE%D0%BF%D0%B5%D1%80%D0%B0)" title="Набукко (опера)">Набукко</a>»</li>
-<li><a href="/wiki/1918_%D0%B3%D0%BE%D0%B4" title="1918 год">1918</a> — столица <a class="mw-redirect" href="/wiki/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F" title="Советская Россия">Советской России</a> <a href="/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BD%D0%BE%D1%81_%D1%81%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8B_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%D0%B8%D0%B7_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D0%B0_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%83" title="Перенос столицы России из Петрограда в Москву">перенесена</a> из <a href="/wiki/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3" title="Санкт-Петербург">Петрограда</a> в <a href="/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" title="Москва">Москву</a></li>
-<li><a href="/wiki/1933_%D0%B3%D0%BE%D0%B4" title="1933 год">1933</a> — в <a href="/wiki/%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%B5_%D0%A8%D1%82%D0%B0%D1%82%D1%8B_%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8" title="Соединённые Штаты Америки">США</a> отменён <a href="/wiki/%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9_%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82" title="Золотой стандарт">золотой стандарт</a></li>
-<li><a href="/wiki/1956_%D0%B3%D0%BE%D0%B4" title="1956 год">1956</a> — разгон <a class="mw-redirect" href="/wiki/%D0%A2%D0%B1%D0%B8%D0%BB%D0%B8%D1%81%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F_(1956)" title="Тбилисские события (1956)">митингов в Тбилиси</a> против <a href="/wiki/XX_%D1%81%D1%8A%D0%B5%D0%B7%D0%B4_%D0%9A%D0%9F%D0%A1%D0%A1" title="XX съезд КПСС">хрущёвского осуждения</a> <a href="/wiki/%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD,_%D0%98%D0%BE%D1%81%D0%B8%D1%84_%D0%92%D0%B8%D1%81%D1%81%D0%B0%D1%80%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" title="Сталин, Иосиф Виссарионович">Сталина</a></li>
-<li><a href="/wiki/1959_%D0%B3%D0%BE%D0%B4" title="1959 год">1959</a> — в <a href="/wiki/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA" title="Нью-Йорк">Нью-Йорке</a> на ярмарке игрушек продемонстрирована новинка — кукла <a href="/wiki/%D0%91%D0%B0%D1%80%D0%B1%D0%B8" title="Барби">Барби</a></li></ul>
-<div style="clear:both;"></div>
-<div class="main-footer"><div class="main-footer-actions main-plainlist">
-<ul><li><a href="/wiki/9_%D0%BC%D0%B0%D1%80%D1%82%D0%B0" title="9 марта"><span class="mw-ui-button">Читать</span></a></li></ul>
-</div><div class="main-footer-menu mw-collapsible mw-collapsed nomobile" id="mw-customcollapsible-itd">
-<div class="main-footer-menuToggle mw-collapsible-toggle mw-customtoggle-main-itd"><img alt="Доп. действия" data-file-height="20" data-file-width="20" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/30px-OOjs_UI_icon_ellipsis.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/40px-OOjs_UI_icon_ellipsis.svg.png 2x" title="Дополнительные действия" width="20"/></div>
-<div class="main-footer-menuDropdown mw-collapsible-content main-plainlist">
-<ul><li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A1%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F_%D0%B4%D0%BD%D1%8F:03-9" title="Шаблон:События дня:03-9"><span class="mw-ui-button mw-ui-quiet">Просмотр шаблона</span></a></li></ul>
-</div></div></div>
-</div>
-<div class="nomobile">
-<link href="mw-data:TemplateStyles:r125466734" rel="mw-deduplicated-inline-style"/>
-<div class="main-box" id="main-wotw"><h2 class="main-header main-box-header"><span id=".D0.A1.D0.BE.D0.B2.D0.BC.D0.B5.D1.81.D1.82.D0.BD.D0.B0.D1.8F_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.B0_.D0.BD.D0.B5.D0.B4.D0.B5.D0.BB.D0.B8"></span><span class="mw-headline" id="Совместная_работа_недели">Совместная работа недели</span></h2>
-<div class="wraplinks">Приглашаем всех желающих принять участие в работе над статьями о <b><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A_%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E/%D0%96%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B" title="Википедия:К созданию/Женщины">женщинах</a></b>, <b><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A1%D1%82%D0%B8%D0%B2%D0%B5%D0%BD_%D0%A8%D0%B2%D0%B0%D1%80%D1%86" title="Шаблон:Стивен Шварц">Стивене Шварце</a></b> и <b><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:Twice" title="Шаблон:Twice">группе Twice</a></b>.
-<ul><li><style data-mw-deduplicate="TemplateStyles:r117895138">.mw-parser-output .ts-templateCallCode-weak{color:#72777d}.mw-parser-output .ts-templateCallCode-pipe{margin:0 2px}.mw-parser-output .ts-templateCallCode-pipe+.ts-templateCallCode-pipe,.mw-parser-output .ts-templateCallCode-pipe+.ts-templateCallCode-param>.ts-templateCallCode-weak:first-child>.ts-templateCallCode-pipe:first-child{margin-left:0}.mw-parser-output .ts-templateCallCode-param+.ts-templateCallCode-closing{margin-left:2px}.mw-parser-output span.ts-templateCallCode>.ts-templateCallCode-templateName a{padding:0 0.5em!important;position:relative;margin:-0.5em}</style><span class="ts-templateCallCode"><span class="ts-templateCallCode-opening ts-templateCallCode-weak">{{</span><span class="ts-templateCallCode-templateName" data-navboxnavigation-link="0"><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A1%D1%82%D0%B8%D0%B2%D0%B5%D0%BD_%D0%A8%D0%B2%D0%B0%D1%80%D1%86" title="Шаблон:Стивен Шварц">Стивен Шварц</a></span><span class="ts-templateCallCode-closing ts-templateCallCode-weak">}}</span></span></li>
-<li><link href="mw-data:TemplateStyles:r117895138" rel="mw-deduplicated-inline-style"/><span class="ts-templateCallCode"><span class="ts-templateCallCode-opening ts-templateCallCode-weak">{{</span><span class="ts-templateCallCode-templateName" data-navboxnavigation-link="0"><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:Twice" title="Шаблон:Twice">Twice</a></span><span class="ts-templateCallCode-closing ts-templateCallCode-weak">}}</span></span></li></ul></div>
-<div class="plainlist">
-<ul><li class="mw-empty-elt"></li>
-<li class="mw-empty-elt"></li>
-<li class="mw-empty-elt"></li>
-<li><i>Примите также участие в <span class="flagicon"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Flag_of_East_Timor.svg" title="Восточный Тимор"><img alt="Восточный Тимор" class="thumbborder" data-file-height="600" data-file-width="1200" decoding="async" height="11" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_East_Timor.svg/22px-Flag_of_East_Timor.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_East_Timor.svg/33px-Flag_of_East_Timor.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_East_Timor.svg/44px-Flag_of_East_Timor.svg.png 2x" width="22"/></a></span> «<b><a href="/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%A2%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F/%D0%A2%D0%B8%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F" title="Проект:Тематическая неделя/Тиморская неделя">Тиморской неделе</a></b>».</i></li>
-<li class="mw-empty-elt"></li></ul>
-<ul><li class="mw-empty-elt"></li>
-<li class="mw-empty-elt"></li>
-<li class="mw-empty-elt"></li>
-<li class="mw-empty-elt"></li>
-<li class="mw-empty-elt"></li></ul>
-</div>
-<p><i>Примите также участие в конкурсах:</i>
-</p>
-<ul><li><b><a href="/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%BE%D0%BD%D0%B8%D0%B7%D0%BC/%D0%9C%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD/%D0%9A%D0%B8%D0%BD%D0%BE/2023" title="Проект:Разумный инклюзионизм/Марафон/Кино/2023">Киномарафон</a></b></li></ul>
-<div style="clear:both;"></div>
-<div class="main-footer"><div class="main-footer-menu mw-collapsible mw-collapsed nomobile" id="mw-customcollapsible-wotw">
-<div class="main-footer-menuToggle mw-collapsible-toggle mw-customtoggle-main-wotw"><img alt="Доп. действия" data-file-height="20" data-file-width="20" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/30px-OOjs_UI_icon_ellipsis.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/40px-OOjs_UI_icon_ellipsis.svg.png 2x" title="Дополнительные действия" width="20"/></div>
-<div class="main-footer-menuDropdown mw-collapsible-content main-plainlist">
-<ul><li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%8B_%D0%BD%D0%B0_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83_%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8" title="Википедия:Кандидаты на работу недели"><span class="mw-ui-button mw-ui-quiet">Кандидаты</span></a></li>
-<li><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%8B_%D0%BD%D0%B0_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83_%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8/%D0%90%D1%80%D1%85%D0%B8%D0%B2" title="Википедия:Кандидаты на работу недели/Архив"><span class="mw-ui-button mw-ui-quiet">Архив</span></a></li>
-<li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8" title="Шаблон:Работа недели"><span class="mw-ui-button mw-ui-quiet">Просмотр шаблона</span></a></li></ul>
-</div></div></div>
+<div class="libr-form-row">
+<input disabled="" hidden="" id="original-language" type="checkbox"/>
+<label for="original-language">На оригинальном языке</label>
 </div>
 </div>
+<ul class="libr-sidebar-icons">
+<li><a class="libr-ico-favorite" href="">В избранное</a></li>
+<li><a class="libr-ico-rss" href="">Подписаться на рецензии</a></li>
+</ul>
+</aside>
+<div class="libr-main-block">
+<ul class="libr-tabset">
+<li><a class="active" href="#libr-tab1"><span class="libr-inner libr-create-shelf">Добавить/Оценить</span></a></li>
+<li><a class="disabled" href="#libr-tab2"><span class="libr-inner libr-calendar">Указать период</span></a></li>
+<li><a href="#libr-tab3"><span class="libr-inner libr-edit-note">Добавить заметку</span></a></li>
+</ul>
+<div class="libr-tabs-content">
+<div id="libr-tab1">
+<div class="libr-content-block">
+<div class="libr-add-shelf-section">
+<div class="libr-heading-block">
+<strong class="libr-title">Добавить на полку:</strong>
+<a class="alignright" href="">Создать полку</a>
 </div>
+<div class="libr-select-block libr-popup-holder">
+<div class="libr-open">
+<input readonly="readonly" type="text" value="Выбрать созданную полку"/>
 </div>
-<style data-mw-deduplicate="TemplateStyles:r113288212">.mw-parser-output .main-wikimedia-header{text-align:center}.mw-parser-output .main-wikimedia-icon{margin:0 0 0.5rem;text-align:center}.mw-parser-output .main-wikimedia-list{column-count:4;column-width:15em;margin-top:0.5rem}.mw-parser-output .main-wikimedia-list>.main-wikimedia-listItem{align-items:stretch;break-inside:avoid;clear:both;display:flex;page-break-inside:avoid;margin-bottom:0.5rem}.mw-parser-output .main-wikimedia-listItem>img{flex:0 auto}.mw-parser-output .main-wikimedia-listItem>a{flex:1;margin-left:-48px;padding-left:56px;position:relative;text-decoration:none}.mw-parser-output .main-wikimedia-listItem>a>em{font-style:normal}.mw-parser-output .main-wikimedia-listItem>a:hover>em{text-decoration:underline}.mw-parser-output .main-wikimedia-listItem>a>small{color:#72777d;display:block;font-size:0.85em;line-height:1.25}@media(max-width:719px){.mw-parser-output .main-wikimedia-header{font-family:inherit;font-size:1em}.mw-parser-output .main-wikimedia-list{font-size:0.85em;column-width:10em}}@media(min-width:720px){.mw-parser-output .main-wikimedia-header{margin-bottom:1rem}.mw-parser-output .main-wikimedia-listItem>a>small{font-size:1em}}@media(min-width:1000px){.mw-parser-output .main-wikimedia-header{margin-left:auto;margin-right:auto;width:80%}}</style>
-<div class="main-wikimedia main-plainlist">
-<div class="main-wikimedia-icon"><div class="center"><div class="floatnone"><img alt="" data-file-height="512" data-file-width="512" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wikimedia-logo_black.svg/48px-Wikimedia-logo_black.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wikimedia-logo_black.svg/72px-Wikimedia-logo_black.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wikimedia-logo_black.svg/96px-Wikimedia-logo_black.svg.png 2x" width="48"/></div></div></div>
-<h2 class="main-header main-wikimedia-header"><span id=".D0.92.D0.B8.D0.BA.D0.B8.D0.BF.D0.B5.D0.B4.D0.B8.D1.8F_.D1.80.D0.B0.D1.81.D0.BF.D0.BE.D0.BB.D0.BE.D0.B6.D0.B5.D0.BD.D0.B0_.D0.BD.D0.B0_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80.D0.B0.D1.85_.D0.A4.D0.BE.D0.BD.D0.B4.D0.B0_.D0.92.D0.B8.D0.BA.D0.B8.D0.BC.D0.B5.D0.B4.D0.B8.D0.B0_.E2.80.94_.D0.BD.D0.B5.D0.BA.D0.BE.D0.BC.D0.BC.D0.B5.D1.80.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B9_.D0.BE.D1.80.D0.B3.D0.B0.D0.BD.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D0.B8.2C_.D1.82.D0.B0.D0.BA.D0.B6.D0.B5_.D0.BE.D0.B1.D0.B5.D1.81.D0.BF.D0.B5.D1.87.D0.B8.D0.B2.D0.B0.D1.8E.D1.89.D0.B5.D0.B9_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.83_.D1.80.D1.8F.D0.B4.D0.B0_.D0.B4.D1.80.D1.83.D0.B3.D0.B8.D1.85_.D0.BF.D1.80.D0.BE.D0.B5.D0.BA.D1.82.D0.BE.D0.B2"></span><span class="mw-headline" id="Википедия_расположена_на_серверах_Фонда_Викимедиа_—_некоммерческой_организации,_также_обеспечивающей_работу_ряда_других_проектов">Википедия расположена на серверах <a href="/wiki/%D0%A4%D0%BE%D0%BD%D0%B4_%D0%92%D0%B8%D0%BA%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0" title="Фонд Викимедиа">Фонда Викимедиа</a> — некоммерческой организации, также обеспечивающей работу ряда других проектов</span></h2>
-<ul class="main-wikimedia-list">
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Notification-icon-Wiktionary-logo.svg/48px-Notification-icon-Wiktionary-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Notification-icon-Wiktionary-logo.svg/72px-Notification-icon-Wiktionary-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Notification-icon-Wiktionary-logo.svg/96px-Notification-icon-Wiktionary-logo.svg.png 2x" title="Викисловарь" width="48"/><a class="extiw" href="https://ru.wiktionary.org/wiki/" title="wikt:"><em>Викисловарь</em> <small>Словарь</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikiquote.svg/48px-Notification-icon-Wikiquote.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikiquote.svg/72px-Notification-icon-Wikiquote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikiquote.svg/96px-Notification-icon-Wikiquote.svg.png 2x" title="Викицитатник" width="48"/><a class="extiw" href="https://ru.wikiquote.org/wiki/" title="q:"><em>Викицитатник</em> <small>Цитаты</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Notification-icon-Wikibooks-logo.svg/48px-Notification-icon-Wikibooks-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Notification-icon-Wikibooks-logo.svg/72px-Notification-icon-Wikibooks-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Notification-icon-Wikibooks-logo.svg/96px-Notification-icon-Wikibooks-logo.svg.png 2x" title="Викиучебник" width="48"/><a class="extiw" href="https://ru.wikibooks.org/wiki/" title="b:"><em>Викиучебник</em> <small>Учебники</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikisource-logo.svg/48px-Notification-icon-Wikisource-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikisource-logo.svg/72px-Notification-icon-Wikisource-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikisource-logo.svg/96px-Notification-icon-Wikisource-logo.svg.png 2x" title="Викитека" width="48"/><a class="extiw" href="https://ru.wikisource.org/wiki/" title="s:"><em>Викитека</em> <small>Библиотека текстов</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/57/Notification-icon-Wikinews-logo.svg/48px-Notification-icon-Wikinews-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/57/Notification-icon-Wikinews-logo.svg/72px-Notification-icon-Wikinews-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/57/Notification-icon-Wikinews-logo.svg/96px-Notification-icon-Wikinews-logo.svg.png 2x" title="Викиновости" width="48"/><a class="extiw" href="https://ru.wikinews.org/wiki/" title="n:"><em>Викиновости</em> <small>Новости</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/01/Notification-icon-Wikiversity-logo.svg/48px-Notification-icon-Wikiversity-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/01/Notification-icon-Wikiversity-logo.svg/72px-Notification-icon-Wikiversity-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/01/Notification-icon-Wikiversity-logo.svg/96px-Notification-icon-Wikiversity-logo.svg.png 2x" title="Викиверситет" width="48"/><a class="extiw" href="https://ru.wikiversity.org/wiki/" title="v:"><em>Викиверситет</em> <small>Обучающие материалы</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/76/Notification-icon-Commons-logo.svg/48px-Notification-icon-Commons-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/76/Notification-icon-Commons-logo.svg/72px-Notification-icon-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/76/Notification-icon-Commons-logo.svg/96px-Notification-icon-Commons-logo.svg.png 2x" title="Викисклад" width="48"/><a class="extiw" href="https://commons.wikimedia.org/wiki/" title="c:"><em>Викисклад</em> <small>Хранилище медиафайлов</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/47/Notification-icon-Wikivoyage-logo.svg/48px-Notification-icon-Wikivoyage-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/47/Notification-icon-Wikivoyage-logo.svg/72px-Notification-icon-Wikivoyage-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/47/Notification-icon-Wikivoyage-logo.svg/96px-Notification-icon-Wikivoyage-logo.svg.png 2x" title="Викигид" width="48"/><a class="extiw" href="https://ru.wikivoyage.org/wiki/" title="voy:"><em>Викигид</em> <small>Путеводитель</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Notification-icon-Wikidata-logo.svg/48px-Notification-icon-Wikidata-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Notification-icon-Wikidata-logo.svg/72px-Notification-icon-Wikidata-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/67/Notification-icon-Wikidata-logo.svg/96px-Notification-icon-Wikidata-logo.svg.png 2x" title="Викиданные" width="48"/><a class="extiw" href="https://www.wikidata.org/wiki/" title="d:"><em>Викиданные</em> <small>База знаний</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/08/Notification-icon-Wikispecies-logo.svg/48px-Notification-icon-Wikispecies-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/08/Notification-icon-Wikispecies-logo.svg/72px-Notification-icon-Wikispecies-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/08/Notification-icon-Wikispecies-logo.svg/96px-Notification-icon-Wikispecies-logo.svg.png 2x" title="Викивиды" width="48"/><a class="extiw" href="https://species.wikimedia.org/wiki/" title="species:"><em>Викивиды</em> <small>Каталог биологических видов</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="30" data-file-width="30" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/Notification-icon-Meta-logo.svg/48px-Notification-icon-Meta-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/Notification-icon-Meta-logo.svg/72px-Notification-icon-Meta-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/Notification-icon-Meta-logo.svg/96px-Notification-icon-Meta-logo.svg.png 2x" title="Мета-вики" width="48"/><a class="extiw" href="https://meta.wikimedia.org/wiki/" title="m:"><em>Мета-вики</em> <small>Координация сообществ</small></a></li>
-<li class="main-wikimedia-listItem"><img alt="" data-file-height="100" data-file-width="100" decoding="async" height="48" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a6/MediaWiki-2020-icon.svg/48px-MediaWiki-2020-icon.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a6/MediaWiki-2020-icon.svg/72px-MediaWiki-2020-icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a6/MediaWiki-2020-icon.svg/96px-MediaWiki-2020-icon.svg.png 2x" title="Медиавики" width="48"/><a class="extiw" href="https://www.mediawiki.org/wiki/" title="mw:"><em>Медиавики</em> <small>Вики-движок</small></a></li>
+<div class="libr-popup">
+<ul>
+<li class="libr-red">
+<span class="libr-text-link">Хотите удалить полку?</span>
+<div class="libr-block-links"><a href="">Да</a> / <a href="">Нет</a></div>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Моя летнаяя полка</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Моя летнаяя полка</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Книги, которые не дочитал</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Книги от друзей</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Полка под флешмоб</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Для личностного роста</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Детям на ночь</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Коллекция 2015</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Коллекция 2015 - добавление</a>
+<a class="libr-delete" href="">Удалить</a>
+<span class="libr-loader-white"></span>
+</li>
+<li class="libr-red">
+<span class="libr-loader-white"></span>
+<span class="libr-text-link">Удаление...</span>
+</li>
 </ul>
 </div>
-<p class="mw-empty-elt">
-</p></div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img alt="" height="1" src="//ru.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" title="" width="1"/></noscript>
-<div class="printfooter" data-nosnippet="">Источник — <a dir="ltr" href="https://ru.wikipedia.org/w/index.php?title=Заглавная_страница&amp;oldid=128374687">https://ru.wikipedia.org/w/index.php?title=Заглавная_страница&amp;oldid=128374687</a></div></div>
-<div class="catlinks catlinks-allhidden" data-mw="interface" id="catlinks"><div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">Скрытая категория: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B_%D1%81_%D0%B5%D0%B6%D0%B5%D1%87%D0%B0%D1%81%D0%BD%D0%BE_%D0%BE%D1%87%D0%B8%D1%89%D0%B0%D0%B5%D0%BC%D1%8B%D0%BC_%D0%BA%D1%8D%D1%88%D0%B5%D0%BC" title="Категория:Википедия:Страницы с ежечасно очищаемым кэшем">Википедия:Страницы с ежечасно очищаемым кэшем</a></li></ul></div></div>
+</div>
+<div class="libr-heading-block">
+<strong class="libr-title">Поставить оценку:</strong>
+<span class="alignright">Средняя оценка 7.4</span>
+</div>
+<ul class="libr-rating">
+<li><a href="">1</a></li>
+<li><a href="">2</a></li>
+<li><a href="">3</a></li>
+<li><a href="">4</a></li>
+<li><a href="">5</a></li>
+<li><a href="">6</a></li>
+<li><a href="">7</a></li>
+<li><a href="">8</a></li>
+<li><a href="">9</a></li>
+<li><a href="">10</a></li>
+</ul>
+<div class="libr-text-row">Вероятно, Вы оцените книгу на: <span class="circle green">7</span></div>
 </div>
 </div>
-<div id="mw-navigation">
-<h2>Навигация</h2>
-<div id="mw-head">
-<nav aria-labelledby="p-personal-label" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" id="p-personal" role="navigation">
-<h3 class="vector-menu-heading" id="p-personal-label">
-<span class="vector-menu-heading-label">Персональные инструменты</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="pt-anonuserpage"><span title="Страница участника для моего IP">Вы не представились системе</span></li><li class="mw-list-item" id="pt-anontalk"><a accesskey="n" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D1%91_%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" title="Страница обсуждений для моего IP [n]"><span>Обсуждение</span></a></li><li class="mw-list-item" id="pt-anoncontribs"><a accesskey="y" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D0%B9_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4" title="Список правок, сделанных с этого IP-адреса [y]"><span>Вклад</span></a></li><li class="mw-list-item" id="pt-createaccount"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&amp;returnto=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно."><span>Создать учётную запись</span></a></li><li class="mw-list-item" id="pt-login"><a accesskey="o" href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&amp;returnto=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]"><span>Войти</span></a></li></ul>
+<div class="libr-bottom-block">
+<a class="libr-button alignright" href="">Сохранено</a>
 </div>
-</nav>
-<div id="left-navigation">
-<nav aria-labelledby="p-namespaces-label" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" id="p-namespaces" role="navigation">
-<h3 class="vector-menu-heading" id="p-namespaces-label">
-<span class="vector-menu-heading-label">Пространства имён</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="selected mw-list-item" id="ca-nstab-main"><a accesskey="c" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Просмотр основной страницы [c]"><span>Заглавная</span></a></li><li class="mw-list-item" id="ca-talk"><a accesskey="t" href="/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" rel="discussion" title="Обсуждение основной страницы [t]"><span>Обсуждение</span></a></li></ul>
 </div>
-</nav>
-<nav aria-labelledby="p-variants-label" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" id="p-variants" role="navigation">
-<input aria-haspopup="true" aria-labelledby="p-variants-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-variants" id="p-variants-checkbox" role="button" type="checkbox"/>
-<label aria-label="Изменить вариант языка" class="vector-menu-heading" id="p-variants-label">
-<span class="vector-menu-heading-label">русский</span>
-</label>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
+<div id="libr-tab2">
+<div class="libr-content-block">
+<div class="libr-calendar-section">
+<div class="libr-top-block-calendar">
+<div class="libr-arrows"></div>
+<span class="libr-text-period">Июль - Август, 2015</span>
+<div class="libr-select-block libr-popup-holder libr-select-year alignright">
+<div class="libr-open">
+<input type="text" value="2015"/>
 </div>
-</nav>
+<div class="libr-popup">
+<ul>
+<li><a class="text-link" href="">2015</a></li>
+<li><a class="text-link" href="">2016</a></li>
+<li><a class="text-link" href="">2017</a></li>
+</ul>
 </div>
-<div id="right-navigation">
-<nav aria-labelledby="p-views-label" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" id="p-views" role="navigation">
-<h3 class="vector-menu-heading" id="p-views-label">
-<span class="vector-menu-heading-label">Просмотры</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="selected mw-list-item" id="ca-view"><a href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"><span>Читать</span></a></li><li class="mw-list-item" id="ca-viewsource"><a accesskey="e" href="/w/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0&amp;action=edit" title="Эта страница защищена от изменений.
-Вы можете посмотреть её исходный текст. [e]"><span>Просмотр кода</span></a></li><li class="mw-list-item" id="ca-history"><a accesskey="h" href="/w/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0&amp;action=history" title="Журнал изменений страницы [h]"><span>История</span></a></li></ul>
 </div>
-</nav>
-<nav aria-labelledby="p-cactions-label" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" id="p-cactions" role="navigation" title="Больше возможностей">
-<input aria-haspopup="true" aria-labelledby="p-cactions-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-cactions" id="p-cactions-checkbox" role="button" type="checkbox"/>
-<label class="vector-menu-heading" id="p-cactions-label">
-<span class="vector-menu-heading-label">Ещё</span>
-</label>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
 </div>
-</nav>
-<div class="vector-search-box-vue vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
-<div>
-<form action="/w/index.php" class="vector-search-box-form" id="searchform">
-<div class="vector-search-box-inner" data-search-loc="header-navigation" id="simpleSearch">
-<input accesskey="f" aria-label="Искать в Википедии" autocapitalize="sentences" class="vector-search-box-input" id="searchInput" name="search" placeholder="Искать в Википедии" title="Искать в Википедии [f]" type="search"/>
-<input name="title" type="hidden" value="Служебная:Поиск"/>
-<input class="searchButton mw-fallbackSearchButton" id="mw-searchButton" name="fulltext" title="Найти страницы, содержащие указанный текст" type="submit" value="Найти"/>
-<input class="searchButton" id="searchButton" name="go" title="Перейти к странице, имеющей в точности такое название" type="submit" value="Перейти"/>
+<div class="libr-calendar-block"></div>
 </div>
+</div>
+<div class="libr-bottom-block">
+<div class="alignleft libr-calendar-bottom">
+<input type="text" value="20-07-2015"/>
+<span class="text">-</span>
+<input type="text" value="14-08-2015"/>
+<a class="libr-text" href="">Убрать период?</a>
+</div>
+<a class="libr-button alignright libr-blue" href="">Сохранить</a>
+</div>
+</div>
+<div id="libr-tab3">
+<div class="libr-content-block">
+<div class="libr-text-note">Заметки - это удобный и простой способ хранить нужную информацию <br>или мысли о книге для личного использования. Ваша заметка будет видна только вам.</br></div>
+<textarea class="libr-textarea-scrollbar scrollbar-outer" cols="40" placeholder="Заметка..." rows="8"></textarea>
+</div>
+<div class="libr-bottom-block">
+<a class="libr-button alignright libr-blue" href="">Добавить</a>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
 </form>
 </div>
 </div>
 </div>
+<div id="libr"></div>
+<div id="feedback-form">
+<div data-ng-controller="FeedbackCtrl" id="feedback_form_feedback-form-app">
+<div class="feedback-form-send" data-ng-show="showSendForm">
+<div class="feedback-head">
+<span>Нашли ошибку?</span>
+<p>Расскажите нам о найденной ошибке, и мы сможем сделать наш сервис еще лучше.</p>
 </div>
-<div class="vector-legacy-sidebar" id="mw-panel">
-<div id="p-logo" role="banner">
-<a class="mw-wiki-logo" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу"></a>
+<div class="feedback-body">
+<div class="select-box _fr" id="feedback-form-select-box">
+<div class="select-box--current">
+<span>{[{ currentCategoryName }]}</span>
 </div>
-<nav aria-labelledby="p-navigation-label" class="vector-menu mw-portlet mw-portlet-navigation vector-menu-portal portal" id="p-navigation" role="navigation">
-<h3 class="vector-menu-heading" id="p-navigation-label">
-<span class="vector-menu-heading-label">Навигация</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="n-mainpage-description"><a accesskey="z" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу [z]"><span>Заглавная страница</span></a></li><li class="mw-list-item" id="n-content"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5"><span>Содержание</span></a></li><li class="mw-list-item" id="n-featured"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Статьи, считающиеся лучшими статьями проекта"><span>Избранные статьи</span></a></li><li class="mw-list-item" id="n-randompage"><a accesskey="x" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Посмотреть случайно выбранную страницу [x]"><span>Случайная статья</span></a></li><li class="mw-list-item" id="n-currentevents"><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Статьи о текущих событиях в мире"><span>Текущие события</span></a></li><li class="mw-list-item" id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_ru.wikipedia.org&amp;uselang=ru" title="Поддержите нас"><span>Пожертвовать</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-participation-label" class="vector-menu mw-portlet mw-portlet-participation vector-menu-portal portal" id="p-participation" role="navigation">
-<h3 class="vector-menu-heading" id="p-participation-label">
-<span class="vector-menu-heading-label">Участие</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="n-bug_in_article"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D1%85" title="Сообщить об ошибке в этой статье"><span>Сообщить об ошибке</span></a></li><li class="mw-list-item" id="n-introduction"><a href="/wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5"><span>Как править статьи</span></a></li><li class="mw-list-item" id="n-portal"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="О проекте, о том, чем здесь можно заниматься, а также — где что находится"><span>Сообщество</span></a></li><li class="mw-list-item" id="n-forum"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A4%D0%BE%D1%80%D1%83%D0%BC" title="Форум участников Википедии"><span>Форум</span></a></li><li class="mw-list-item" id="n-recentchanges"><a accesskey="r" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8" title="Список последних изменений [r]"><span>Свежие правки</span></a></li><li class="mw-list-item" id="n-newpages"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список недавно созданных страниц"><span>Новые страницы</span></a></li><li class="mw-list-item" id="n-help"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Место расположения Справки"><span>Справка</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-tb-label" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" id="p-tb" role="navigation">
-<h3 class="vector-menu-heading" id="p-tb-label">
-<span class="vector-menu-heading-label">Инструменты</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="t-whatlinkshere"><a accesskey="j" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D1%81%D1%8E%D0%B4%D0%B0/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Список всех страниц, ссылающихся на данную [j]"><span>Ссылки сюда</span></a></li><li class="mw-list-item" id="t-recentchangeslinked"><a accesskey="k" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" rel="nofollow" title="Последние изменения в страницах, на которые ссылается эта страница [k]"><span>Связанные правки</span></a></li><li class="mw-list-item" id="t-specialpages"><a accesskey="q" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BF%D0%B5%D1%86%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список служебных страниц [q]"><span>Служебные страницы</span></a></li><li class="mw-list-item" id="t-permalink"><a href="/w/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0&amp;oldid=128374687" title="Постоянная ссылка на эту версию страницы"><span>Постоянная ссылка</span></a></li><li class="mw-list-item" id="t-info"><a href="/w/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0&amp;action=info" title="Подробнее об этой странице"><span>Сведения о странице</span></a></li><li class="mw-list-item" id="t-cite"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A6%D0%B8%D1%82%D0%B0%D1%82%D0%B0&amp;page=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0&amp;id=128374687&amp;wpFormIdentifier=titleform" title="Информация о том, как цитировать эту страницу"><span>Цитировать страницу</span></a></li><li class="mw-list-item" id="t-wikibase"><a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q5296" title="Ссылка на связанный элемент репозитория данных [g]"><span>Элемент Викиданных</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-coll-print_export-label" class="vector-menu mw-portlet mw-portlet-coll-print_export vector-menu-portal portal" id="p-coll-print_export" role="navigation">
-<h3 class="vector-menu-heading" id="p-coll-print_export-label">
-<span class="vector-menu-heading-label">Печать/экспорт</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="coll-create_a_book"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F_%D0%BA%D0%BD%D0%B8%D0%B3&amp;bookcmd=book_creator&amp;referer=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Создать книгу или коллекцию статей"><span>Создать книгу</span></a></li><li class="mw-list-item" id="coll-download-as-rl"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:DownloadAsPdf&amp;page=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0&amp;action=show-download-screen" title="Скачать эту страницу как файл PDF"><span>Скачать как PDF</span></a></li><li class="mw-list-item" id="t-print"><a accesskey="p" href="/w/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0&amp;printable=yes" title="Версия этой страницы для печати [p]"><span>Версия для печати</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-wikibase-otherprojects-label" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects vector-menu-portal portal" id="p-wikibase-otherprojects" role="navigation">
-<h3 class="vector-menu-heading" id="p-wikibase-otherprojects-label">
-<span class="vector-menu-heading-label">В других проектах</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Main_Page" hreflang="en"><span>Викисклад</span></a></li><li class="wb-otherproject-link wb-otherproject-mediawiki mw-list-item"><a href="https://www.mediawiki.org/wiki/MediaWiki" hreflang="en"><span>Медиавики</span></a></li><li class="wb-otherproject-link wb-otherproject-meta mw-list-item"><a href="https://meta.wikimedia.org/wiki/Main_Page" hreflang="en"><span>Мета-вики</span></a></li><li class="wb-otherproject-link wb-otherproject-sources mw-list-item"><a href="https://wikisource.org/wiki/Main_Page" hreflang="en"><span>Многоязычная Викитека</span></a></li><li class="wb-otherproject-link wb-otherproject-species mw-list-item"><a href="https://species.wikimedia.org/wiki/Main_Page" hreflang="en"><span>Викивиды</span></a></li><li class="wb-otherproject-link wb-otherproject-wikibooks mw-list-item"><a href="https://ru.wikibooks.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" hreflang="ru"><span>Викиучебник</span></a></li><li class="wb-otherproject-link wb-otherproject-wikidata mw-list-item"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" hreflang="en"><span>Викиданные</span></a></li><li class="wb-otherproject-link wb-otherproject-wikinews mw-list-item"><a href="https://ru.wikinews.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" hreflang="ru"><span>Викиновости</span></a></li><li class="wb-otherproject-link wb-otherproject-wikiquote mw-list-item"><a href="https://ru.wikiquote.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" hreflang="ru"><span>Викицитатник</span></a></li><li class="wb-otherproject-link wb-otherproject-wikisource mw-list-item"><a href="https://ru.wikisource.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" hreflang="ru"><span>Викитека</span></a></li><li class="wb-otherproject-link wb-otherproject-wikiversity mw-list-item"><a href="https://ru.wikiversity.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" hreflang="ru"><span>Викиверситет</span></a></li><li class="wb-otherproject-link wb-otherproject-wikivoyage mw-list-item"><a href="https://ru.wikivoyage.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" hreflang="ru"><span>Викигид</span></a></li><li class="wb-otherproject-link wb-otherproject-wiktionary mw-list-item"><a href="https://ru.wiktionary.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C:%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" hreflang="ru"><span>Викисловарь</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-lang-label" class="vector-menu mw-portlet mw-portlet-lang vector-menu-portal portal" id="p-lang" role="navigation">
-<h3 class="vector-menu-heading" id="p-lang-label">
-<span class="vector-menu-heading-label">На других языках</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a class="interlanguage-link-target" href="https://ar.wikipedia.org/wiki/" hreflang="ar" lang="ar" title="арабский"><span>العربية</span></a></li><li class="interlanguage-link interwiki-az mw-list-item"><a class="interlanguage-link-target" href="https://az.wikipedia.org/wiki/" hreflang="az" lang="az" title="азербайджанский"><span>Azərbaycanca</span></a></li><li class="interlanguage-link interwiki-ba mw-list-item"><a class="interlanguage-link-target" href="https://ba.wikipedia.org/wiki/" hreflang="ba" lang="ba" title="башкирский"><span>Башҡортса</span></a></li><li class="interlanguage-link interwiki-be mw-list-item"><a class="interlanguage-link-target" href="https://be.wikipedia.org/wiki/" hreflang="be" lang="be" title="белорусский"><span>Беларуская</span></a></li><li class="interlanguage-link interwiki-be-x-old mw-list-item"><a class="interlanguage-link-target" href="https://be-tarask.wikipedia.org/wiki/" hreflang="be-tarask" lang="be-tarask" title="Belarusian (Taraškievica orthography)"><span>Беларуская (тарашкевіца)</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a class="interlanguage-link-target" href="https://bg.wikipedia.org/wiki/" hreflang="bg" lang="bg" title="болгарский"><span>Български</span></a></li><li class="interlanguage-link interwiki-ce mw-list-item"><a class="interlanguage-link-target" href="https://ce.wikipedia.org/wiki/" hreflang="ce" lang="ce" title="чеченский"><span>Нохчийн</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a class="interlanguage-link-target" href="https://cs.wikipedia.org/wiki/" hreflang="cs" lang="cs" title="чешский"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-cv mw-list-item"><a class="interlanguage-link-target" href="https://cv.wikipedia.org/wiki/" hreflang="cv" lang="cv" title="чувашский"><span>Чӑвашла</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a class="interlanguage-link-target" href="https://da.wikipedia.org/wiki/" hreflang="da" lang="da" title="датский"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a class="interlanguage-link-target" href="https://de.wikipedia.org/wiki/" hreflang="de" lang="de" title="немецкий"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a class="interlanguage-link-target" href="https://el.wikipedia.org/wiki/" hreflang="el" lang="el" title="греческий"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a class="interlanguage-link-target" href="https://en.wikipedia.org/wiki/" hreflang="en" lang="en" title="английский"><span>English</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a class="interlanguage-link-target" href="https://es.wikipedia.org/wiki/" hreflang="es" lang="es" title="испанский"><span>Español</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a class="interlanguage-link-target" href="https://et.wikipedia.org/wiki/" hreflang="et" lang="et" title="эстонский"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a class="interlanguage-link-target" href="https://fa.wikipedia.org/wiki/" hreflang="fa" lang="fa" title="персидский"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a class="interlanguage-link-target" href="https://fi.wikipedia.org/wiki/" hreflang="fi" lang="fi" title="финский"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a class="interlanguage-link-target" href="https://fr.wikipedia.org/wiki/" hreflang="fr" lang="fr" title="французский"><span>Français</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a class="interlanguage-link-target" href="https://he.wikipedia.org/wiki/" hreflang="he" lang="he" title="иврит"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a class="interlanguage-link-target" href="https://hu.wikipedia.org/wiki/" hreflang="hu" lang="hu" title="венгерский"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-hy mw-list-item"><a class="interlanguage-link-target" href="https://hy.wikipedia.org/wiki/" hreflang="hy" lang="hy" title="армянский"><span>Հայերեն</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a class="interlanguage-link-target" href="https://it.wikipedia.org/wiki/" hreflang="it" lang="it" title="итальянский"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a class="interlanguage-link-target" href="https://ja.wikipedia.org/wiki/" hreflang="ja" lang="ja" title="японский"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ka mw-list-item"><a class="interlanguage-link-target" href="https://ka.wikipedia.org/wiki/" hreflang="ka" lang="ka" title="грузинский"><span>ქართული</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a class="interlanguage-link-target" href="https://kk.wikipedia.org/wiki/" hreflang="kk" lang="kk" title="казахский"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a class="interlanguage-link-target" href="https://ko.wikipedia.org/wiki/" hreflang="ko" lang="ko" title="корейский"><span>한국어</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a class="interlanguage-link-target" href="https://lt.wikipedia.org/wiki/" hreflang="lt" lang="lt" title="литовский"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-lv mw-list-item"><a class="interlanguage-link-target" href="https://lv.wikipedia.org/wiki/" hreflang="lv" lang="lv" title="латышский"><span>Latviešu</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a class="interlanguage-link-target" href="https://nl.wikipedia.org/wiki/" hreflang="nl" lang="nl" title="нидерландский"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a class="interlanguage-link-target" href="https://no.wikipedia.org/wiki/" hreflang="nb" lang="nb" title="норвежский букмол"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-os mw-list-item"><a class="interlanguage-link-target" href="https://os.wikipedia.org/wiki/" hreflang="os" lang="os" title="осетинский"><span>Ирон</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a class="interlanguage-link-target" href="https://pl.wikipedia.org/wiki/" hreflang="pl" lang="pl" title="польский"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a class="interlanguage-link-target" href="https://pt.wikipedia.org/wiki/" hreflang="pt" lang="pt" title="португальский"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a class="interlanguage-link-target" href="https://ro.wikipedia.org/wiki/" hreflang="ro" lang="ro" title="румынский"><span>Română</span></a></li><li class="interlanguage-link interwiki-sah mw-list-item"><a class="interlanguage-link-target" href="https://sah.wikipedia.org/wiki/" hreflang="sah" lang="sah" title="саха"><span>Саха тыла</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a class="interlanguage-link-target" href="https://sr.wikipedia.org/wiki/" hreflang="sr" lang="sr" title="сербский"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a class="interlanguage-link-target" href="https://sv.wikipedia.org/wiki/" hreflang="sv" lang="sv" title="шведский"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a class="interlanguage-link-target" href="https://tr.wikipedia.org/wiki/" hreflang="tr" lang="tr" title="турецкий"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-tt mw-list-item"><a class="interlanguage-link-target" href="https://tt.wikipedia.org/wiki/" hreflang="tt" lang="tt" title="татарский"><span>Татарча / tatarça</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a class="interlanguage-link-target" href="https://uk.wikipedia.org/wiki/" hreflang="uk" lang="uk" title="украинский"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a class="interlanguage-link-target" href="https://vi.wikipedia.org/wiki/" hreflang="vi" lang="vi" title="вьетнамский"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a class="interlanguage-link-target" href="https://zh.wikipedia.org/wiki/" hreflang="zh" lang="zh" title="китайский"><span>中文</span></a></li></ul>
-</div>
+<div class="dropdown-box _select">
+<nav class="dropdown-select-options">
+<a data-ng-click="selectCategory(-1, 'Без темы')" href="#" onclick="return false" rel="nofollow">Без темы</a>
+<a data-ng-click="selectCategory(7, 'Ошибка в информации о книге')" href="#" onclick="return false" rel="nofollow">
+Ошибка в информации о книге
+</a>
+<a data-ng-click="selectCategory(8, 'Плагиат')" href="#" onclick="return false" rel="nofollow">
+Плагиат
+</a>
+<a data-ng-click="selectCategory(9, 'Спойлер')" href="#" onclick="return false" rel="nofollow">
+Спойлер
+</a>
+<a data-ng-click="selectCategory(10, 'Другая ошибка')" href="#" onclick="return false" rel="nofollow">
+Другая ошибка
+</a>
+<a data-ng-click="selectCategory(11, 'Авторы')" href="#" onclick="return false" rel="nofollow">
+Авторы
+</a>
 </nav>
 </div>
 </div>
-<footer class="mw-footer" id="footer" role="contentinfo">
-<ul id="footer-info">
-<li id="footer-info-lastmod"> Эта страница в последний раз была отредактирована 8 февраля 2023 в 00:35.</li>
-<li id="footer-info-copyright">Текст доступен по <a href="//ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" rel="license">лицензии Creative Commons Attribution-ShareAlike</a><a href="//creativecommons.org/licenses/by-sa/3.0/" rel="license" style="display:none;"></a>; в отдельных случаях могут действовать дополнительные условия.
-<span class="noprint">Подробнее см. <a href="//foundation.wikimedia.org/wiki/Terms_of_Use/ru">Условия использования</a>.</span><br/>
-Wikipedia® — зарегистрированный товарный знак некоммерческой организации <a href="//wikimediafoundation.org">Wikimedia Foundation, Inc.</a></li>
-</ul>
-<ul id="footer-places">
-<li id="footer-places-privacy"><a href="https://meta.wikimedia.org/wiki/Privacy_policy/ru">Политика конфиденциальности</a></li>
-<li id="footer-places-about"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5">Описание Википедии</a></li>
-<li id="footer-places-disclaimers"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Отказ от ответственности</a></li>
-<li id="footer-places-contact"><a href="//ru.wikipedia.org/wiki/Википедия:Контакты">Свяжитесь с нами</a></li>
-<li id="footer-places-mobileview"><a class="noprint stopMobileRedirectToggle" href="//ru.m.wikipedia.org/w/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0&amp;mobileaction=toggle_view_mobile">Мобильная версия</a></li>
-<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Разработчики</a></li>
-<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/ru.wikipedia.org">Статистика</a></li>
-<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Заявление о куки</a></li>
-</ul>
-<ul class="noprint" id="footer-icons">
-<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img alt="Wikimedia Foundation" height="31" loading="lazy" src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88"/></a></li>
-<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" loading="lazy" src="/static/images/footer/poweredby_mediawiki_88x31.png" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88"/></a></li>
-</ul>
-</footer>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.321","walltime":"0.479","ppvisitednodes":{"value":1688,"limit":1000000},"postexpandincludesize":{"value":105547,"limit":2097152},"templateargumentsize":{"value":40255,"limit":2097152},"expansiondepth":{"value":22,"limit":100},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":33301,"limit":5000000},"entityaccesscount":{"value":2,"limit":400},"timingprofile":["100.00%  351.465      1 -total"," 85.85%  301.747      8 Шаблон:Раздел_заглавной_страницы"," 24.20%   85.060      6 Шаблон:Заглавная/Статья"," 22.76%   80.005     24 Шаблон:Yesno"," 21.20%   74.504      3 Шаблон:Текущая_избранная_статья"," 16.76%   58.904      1 Шаблон:Работа_недели"," 10.26%   36.072      3 Шаблон:Последние_хорошие_статьи","  9.64%   33.893      3 Шаблон:Текущая_хорошая_статья","  8.47%   29.783      2 Шаблон:Trim","  7.16%   25.154      1 Шаблон:Текущие_события_на_заглавной_странице"]},"scribunto":{"limitreport-timeusage":{"value":"0.062","limit":"10.000"},"limitreport-memusage":{"value":2214649,"limit":52428800}},"cachereport":{"origin":"mw2391","timestamp":"20230309190108","ttl":3600,"transientcontent":true}}});});</script>
-<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"\u0417\u0430\u0433\u043b\u0430\u0432\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430","url":"https:\/\/ru.wikipedia.org\/wiki\/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5296","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5296","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"\u0424\u043e\u043d\u0434 \u0412\u0438\u043a\u0438\u043c\u0435\u0434\u0438\u0430","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-04-27T10:57:16Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3a\/Nurbanu%27s_burial%2C_Shahanshahnama.jpg","headline":"\u0437\u0430\u0433\u043b\u0430\u0432\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u0412\u0438\u043a\u0438\u043c\u0435\u0434\u0438\u0430"}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"\u0417\u0430\u0433\u043b\u0430\u0432\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430","url":"https:\/\/ru.wikipedia.org\/wiki\/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5296","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5296","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"\u0424\u043e\u043d\u0434 \u0412\u0438\u043a\u0438\u043c\u0435\u0434\u0438\u0430","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-04-27T10:57:16Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3a\/Nurbanu%27s_burial%2C_Shahanshahnama.jpg","headline":"\u0437\u0430\u0433\u043b\u0430\u0432\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u0412\u0438\u043a\u0438\u043c\u0435\u0434\u0438\u0430"}</script>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":138,"wgHostname":"mw2325"});});</script>
+<span class="feedback-category-text">Категория:</span>
+<textarea class="generic-input-20" data-ng-model="message" placeholder="Опишите ошибку..." rows="10"></textarea>
+<button class="btn-blue-20" data-ng-click="send()" data-ng-disabled="loading">
+Отправить
+</button>
+</div>
+</div>
+<div class="feedback-form-thanks" data-ng-hide="showSendForm">
+<div class="feedback-head">
+<span>Ваше сообщение отправлено</span>
+</div>
+<div class="feedback-body">
+<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
+нашими специалистами в самое ближайшее время.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="help-readly">
+<div>
+<span class="help-readly--title">Помоги Ридли!</span>
+<div class="help-readly--text">
+Мы вкладываем душу в Ридли. Спасибо, что вы с нами! Расскажите о нас друзьям, чтобы они могли присоединиться к нашей дружной семье книголюбов.
+</div>
+<div class="social">
+<div class="social-buttons">
+<a class="vk" href="https://vk.com/share.php?url=http%3A%2F%2Freadly.ru&amp;title=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru&amp;image=" rel="nofollow" target="_blank" title="Вконтакте"></a>
+<a class="tw" href="https://twitter.com/intent/tweet?status=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Twitter"></a>
+<a class="gp" href="https://plus.google.com/share?url=http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Google+"></a>
+<a class="ok" href="https://www.ok.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=http%3A%2F%2Freadly.ru&amp;st.comments=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru" rel="nofollow" target="_blank" title="Odnoklassniki"></a>
+</div>
+</div>
+</div>
+</div>
+<script src="/public/static/dist/js/readly.js?b8cabe27e37a" type="text/javascript"></script>
+<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.librarianEmitter.js" type="text/javascript"></script>
+<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
+<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
+<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.bookTimelineBox.js"></script>
+<script>
+
+if (typeof React === 'undefined') throw new Error('Cannot find `React` global variable. Have you added a script element to this page which points to React?');
+if (typeof Readly.bookTimelineBox === 'undefined') throw new Error('Cannot find component variable `Readly.bookTimelineBox`');
+(function(React, component, containerId) {
+  var props = {"perPage": 5, "bookId": 62516, "initialParams": {"comment_count": 3, "object_type": "reviews", "book_id": 62516}, "initialItems": [{"book_rating": 9, "hashtags": [], "rating": {"positive": 4, "negative": 0}, "text": "<p>\u0412 \u0430\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0439 \u0441\u0431\u043e\u0440\u043d\u0438\u043a \"\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0428\u0435\u0440\u043b\u043e\u043a\u0430 \u0425\u043e\u043b\u043c\u0441\u0430\" \u0432\u0445\u043e\u0434\u0438\u0442 13 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u043e\u0432 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u044e\u0449\u0438\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0441\u044b\u0449\u0438\u043a\u0430-\u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u043d\u0442\u0430. \u0422\u0435\u043c \u0441\u0430\u043c\u044b\u043c \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0432 \u043f\u043e\u0432\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043d\u0438\u044f \u043e \u0440\u0430\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0439 \u043f\u0440\u0435\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0439 2 \u0433\u043b\u0430\u0432\u043d\u044b\u0445 \u0433\u0435\u0440\u043e\u0435\u0432. </p>\n\n<p>\u041a\u0430\u043a \u043d\u0430\u043c \u0443\u0436\u0435 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e \u0438\u0437 \u0434\u0440\u0443\u0433\u0438\u0445 \u0441\u0431\u043e\u0440\u043d\u0438\u043a\u043e\u0432 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u043e\u0432 \u0410\u0440\u0442\u0443\u0440\u0430 \u041a\u043e\u043d\u0430\u043d\u0430 \u0414\u043e\u0439\u043b\u0430, \u0425\u043e\u043b\u043c\u0441 \"\u043f\u043e\u0433\u0438\u0431\" \u0432 \u0420\u0435\u0439\u0445\u0435\u043d\u0431\u0430\u0445\u0441\u043a\u043e\u043c \u0432\u043e\u0434\u043e\u043f\u0430\u0434\u0435 \u0441\u043e \u0441\u0432\u043e\u0438\u043c \u0432\u0440\u0430\u0433\u043e\u043c. \u041e\u0434\u043d\u0430\u043a\u043e \u0432\u044b\u044f\u0441\u043d\u044f\u0442\u0441\u044f, \u0447\u0442\u043e \u0425\u043e\u043b\u043c\u0441 \u0437\u0430\u043b\u0435\u0433 \u043d\u0430 \u0434\u043d\u043e \u0434\u043b\u044f \u0442\u043e\u0433\u043e \u0447\u0442\u043e \u0431\u044b \u0440\u0430\u0441\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u044e \u0441\u0435\u0442\u044c \u043f\u0440\u0435\u0441\u0442\u0443\u043f\u043d\u043e\u0433\u043e \u0441\u0438\u043d\u0434\u0438\u043a\u0430\u0442\u0430, \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u043d\u043d\u043e\u0433\u043e \u0441\u0430\u043c\u0438\u043c \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u043e\u0440\u043e\u043c \u041c\u043e\u0440\u0438\u0430\u0440\u0442\u0438.</p>\n\n<p>\u042f \u0437\u0430\u043c\u0435\u0442\u0438\u043b \u043e\u0434\u043d\u043e \u0443\u0434\u0438\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0441\u0442\u0435\u0447\u0435\u043d\u0438\u0435 \u043e\u0431\u0441\u0442\u043e\u044f\u0442\u0435\u043b\u044c\u0441\u0442\u0432. \u0414\u0430\u043d\u043d\u044b\u0435 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u044b \u043e\u0431\u044b\u0447\u043d\u043e \u0437\u0430\u043d\u0438\u043c\u0430\u044e\u0442 \u043f\u043e 20-25 \u0441\u0442\u0440\u0430\u043d\u0438\u0446, \u0433\u0434\u0435 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u043d\u043e\u0435 \u043f\u0440\u0435\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0435 \u0438 \u0440\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0435 \u0432\u0438\u043d\u043e\u0432\u043d\u044b\u0445. \u0418 \u043d\u0430 \u044d\u0442\u0438\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430\u0445 \u0430\u0432\u0442\u043e\u0440 \u0443\u0441\u043f\u0435\u0432\u0430\u0435\u0442 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0441\u0451 \u0447\u0442\u043e \u0442\u0430\u043c \u043f\u0440\u043e\u0438\u0441\u0445\u043e\u0434\u0438\u0442. \u042d\u0442\u043e \u043a\u0430\u043a \u043d\u0443\u0436\u043d\u043e \u0432\u043b\u0430\u0434\u0435\u0442\u044c \u044f\u0437\u044b\u043a\u043e\u043c, \u0447\u0442\u043e \u0431\u044b \u0440\u044f\u0434\u043e\u0432\u044b\u0435 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u0438 \u0441\u0440\u0430\u0437\u0443 \u0436\u0435 \u043f\u043e\u0433\u0440\u0443\u0436\u0430\u043b\u0438\u0441\u044c \u0432 \u044d\u0442\u043e\u0442 \u043c\u0438\u0440. \u0418 \u0441 \u043b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u044e \u043f\u043e\u043d\u0438\u043c\u0430\u043b\u0438 \u0432\u0441\u044e \u0441\u044e\u0436\u0435\u0442\u043d\u0443\u044e \u043b\u0438\u043d\u0438\u044e.</p>\n\n<p>\u041a\u0430\u043a \u0436\u0435 \u043f\u0440\u0438\u044f\u0442\u043d\u043e \u0447\u0438\u0442\u0430\u0442\u044c \u0442\u0430\u043a\u0438\u0435 \u0437\u0430\u043f\u0443\u0442\u0430\u043d\u043d\u044b\u0435 \u0438\u0441\u0442\u043e\u0440\u0438\u0438 \u0438 \u043f\u0440\u0438 \u044d\u0442\u043e\u043c \u043e\u0441\u043e\u0437\u043d\u0430\u0432\u0430\u0442\u044c, \u0447\u0442\u043e \u043e\u0442\u0432\u0435\u0442 \u043d\u0430\u0445\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u043f\u0440\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043f\u043e\u0434 \u043d\u043e\u0441\u043e\u043c. \u041d\u0435 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c\u0441\u044f, \u0442\u0430\u043a \u043a\u0430\u043a \u0445\u043e\u0447\u0435\u0442\u0441\u044f \u0443\u0437\u043d\u0430\u0442\u044c \u0447\u0435\u043c \u0436\u0435 \u0432\u0441\u0435 \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u0441\u044f \u043d\u0435\u0441\u043c\u043e\u0442\u0440\u044f \u043d\u0438 \u043d\u0430 \u0447\u0442\u043e. </p>", "created_at": "2017-04-09T18:16:10", "object_type": 18, "updated_at": "2017-04-09T18:16:10", "object_id": 40261, "comment_count": 0, "book": {"id": 62516, "name": "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0428\u0435\u0440\u043b\u043e\u043a\u0430 \u0425\u043e\u043b\u043c\u0441\u0430 (\u0430\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0439 \u0441\u0431\u043e\u0440\u043d\u0438\u043a)", "cover": "covers/7/1/717f9e1762ec115253a30e072d05b6f9.jpg", "authors": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "url": "/book/62516/"}, "user": {"id": 87494, "name": "\u041c\u0438\u0442\u0440\u0430\u043d\u0434\u0438\u0440 (@fizik224566)", "avatar": "avatars/1/0/1068818ae48758d6356fb581503df607.jpg", "url": "/user/87494/", "username": "fizik224566", "gender": 1}, "has_spoilers": false, "review_type": 1, "rated_users": {"positive": [8669, 86282, 90228, 94248], "negative": []}, "comments": []}, {"book_rating": 10, "hashtags": [], "rating": {"positive": 6, "negative": 0}, "text": "<p>\u0412\u0435\u043b\u0438\u043a\u043e\u0433\u043e \u043a\u043b\u0430\u0441\u0441\u0438\u043a\u0430 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0410\u0440\u0442\u0443\u0440\u0430 \u041a\u043e\u043d\u0430\u043d \u0414\u043e\u0439\u043b\u044f \u044f \u043d\u0430\u0447\u0438\u043d\u0430\u043b\u0430 \u0447\u0438\u0442\u0430\u0442\u044c \u0435\u0449\u0435 \u0432 \u0434\u0430\u043b\u0435\u043a\u043e\u043c \u0434\u0435\u0442\u0441\u0442\u0432\u0435 \u0438 \u043f\u0435\u0440\u0435\u0447\u0438\u0442\u044b\u0432\u0430\u044e \u0434\u043e \u0441\u0438\u0445 \u043f\u043e\u0440 \u0441 \u0443\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u0438\u0435\u043c. \u042d\u0442\u043e\u0442 \u0430\u0432\u0442\u043e\u0440 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u0435\u043d \u043a \u043f\u0440\u043e\u0447\u0442\u0435\u043d\u0438\u044e, \u043e\u0434\u0438\u043d \u0438\u0437 \u0442\u0435\u0445 \u0432\u043e\u043b\u0448\u0435\u0431\u043d\u0438\u043a\u043e\u0432, \u043e\u0431\u043b\u0430\u0434\u0430\u044e\u0449\u0438\u0445 \u0434\u0430\u0440\u043e\u043c \u0443\u0432\u043b\u0435\u043a\u0430\u0442\u044c \u0432 \u0441\u0432\u043e\u0439 \u043c\u0438\u0440, \u0436\u0438\u0442\u044c \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0430\u043c\u0438 \u0438 \u0441\u043e\u043f\u0435\u0440\u0435\u0436\u0438\u0432\u0430\u0442\u044c \u0438\u043c, \u0441\u0442\u0440\u0430\u0441\u0442\u043d\u043e \u0436\u0435\u043b\u0430\u0442\u044c \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u044f, \u0441 \u043d\u0430\u0434\u0435\u0436\u0434\u043e\u0439 \u043f\u0435\u0440\u0435\u043b\u0438\u0441\u0442\u044b\u0432\u0430\u0442\u044c \u043a\u0430\u0436\u0434\u0443\u044e \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443, \u0440\u0430\u0434\u043e\u0432\u0430\u0442\u044c\u0441\u044f \u0432\u043d\u043e\u0432\u044c \u0438\u0437\u0434\u0430\u043d\u043d\u043e\u0439 (\u0438\u043b\u0438 \u043a\u0443\u043f\u043b\u0435\u043d\u043d\u043e\u0439) \u043a\u043d\u0438\u0433\u0435. \u0412 \u0435\u0433\u043e \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f \u043f\u0440\u043e\u0432\u0430\u043b\u0438\u0432\u0430\u0435\u0448\u044c\u0441\u044f \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043a\u043e, \u0447\u0442\u043e \u0443\u0442\u0440\u043e \u043d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u043d\u0435\u0437\u0430\u043c\u0435\u0442\u043d\u043e, \u0432 \u043c\u043e\u0435\u0439 \u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0435 \u0431\u044b\u043b\u0430 \u0434\u0430\u0436\u0435 \u0441\u0433\u043e\u0440\u0435\u0432\u0448\u0430\u044f \u043a\u043e\u0444\u0442\u0430, \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u044f \u043d\u0430\u043a\u0440\u044b\u0432\u0430\u043b\u0430 \u0442\u043e\u0440\u0448\u0435\u0440, \u0447\u0442\u043e\u0431\u044b \u043c\u0435\u043d\u044f \u043d\u0435 \u0440\u0443\u0433\u0430\u043b\u0438 \u0440\u043e\u0434\u0438\u0442\u0435\u043b\u0438 \u0437\u0430 \u0431\u0435\u0441\u0441\u043e\u043d\u043d\u044b\u0435 \u043d\u043e\u0447\u0438.</p>", "created_at": "2014-03-28T07:21:08", "object_type": 18, "updated_at": "2014-03-28T07:21:08", "object_id": 2042, "comment_count": 0, "book": {"id": 62516, "name": "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0428\u0435\u0440\u043b\u043e\u043a\u0430 \u0425\u043e\u043b\u043c\u0441\u0430 (\u0430\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0439 \u0441\u0431\u043e\u0440\u043d\u0438\u043a)", "cover": "covers/7/1/717f9e1762ec115253a30e072d05b6f9.jpg", "authors": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "url": "/book/62516/"}, "user": {"id": 881, "name": "@elena_ks", "avatar": "avatars/0/5/055bd7cb4c8c348fc59d6d786db63f32.jpg", "url": "/user/881/", "username": "elena_ks", "gender": 0}, "has_spoilers": false, "rated_users": {"positive": [2, 6, 7, 874, 938, 2156], "negative": []}, "comments": []}], "user": {"username": "", "name": "AnonymousUser"}, "objectType": "reviews"};
+  var element = React.createElement(component, props);
+  var container = document.getElementById(containerId);
+  if (!container) throw new Error('Cannot find the container element `#reactComponent-Readly.bookTimelineBox` for component `Readly.bookTimelineBox`');
+  React.render(element, container);
+})(React, Readly.bookTimelineBox, 'reactComponent-Readly.bookTimelineBox');
+
+</script>
+<script>
+
+ga('create', 'UA-47935002-1', 'readly.ru');
+ga('require', 'displayfeatures');
+ga('set', 'dimension1', userName);
+ga('set', 'dimension3', 0);
+ga('set', 'dimension4', 1);
+ga('send', 'pageview');
+
+</script>
+<script async="" defer="" src="https://apis.google.com/js/platform.js">
+  {lang: 'ru'}
+</script>
+<footer class="cf" id="footer"><div class="wrapper"><div class="footer-column"><a class="footer-logo" href="#" rel="nofollow"></a><p class="copy">Ридли.ру © 2013-2023<p><div class="footer--meta"><a class="footer--bookmark" href="javascript:addToFavorite()" rel="nofollow"><i class="icon_sprite bookmark"></i><span>В закладки</span></a><a class="footer--mobile" href="http://m.readly.ru/"><i class="icon_sprite mobile"></i><span>Мобильная версия</span></a></div></p></p></div><div class="footer-column"><span class="h4">Разделы</span><nav><a href="/books/">Что почитать</a><a href="/books/popular/">Популярные книги</a><a href="/books/top/">Рейтинг книг</a><a href="/collections/">Подборки книг</a><a href="/books/new/">Книжные новинки</a><a href="/authors/">Популярные авторы</a><a href="/books/i_am_lucky/">Случайная книга</a></nav></div><div class="footer-column"><span class="h4">Обсуждения</span><nav><a href="/discussions/theme/last/" rel="nofollow">Топики</a><a href="/discussions/reviews/last/" rel="nofollow">Рецензии</a><a href="/discussions/flashmob/last/" rel="nofollow">Флешмобы</a><a href="/discussions/game/last/" rel="nofollow">Игры</a><a href="/discussions/competition/last/" rel="nofollow">Конкурсы</a><a href="/discussions/academy/last/" rel="nofollow">Книжная академия</a><a href="/discussions/flood/last/" rel="nofollow">Флудилка</a></nav></div><div class="footer-column"><span class="h4">Подписки</span><nav><a href="https://vk.com/vmireknig" rel="nofollow" target="_blank">Вконтакте</a><a href="https://twitter.com/ReadlyRu" rel="nofollow" target="_blank">Твиттер</a></nav></div><div class="footer-column"><span class="h4">О проекте</span><nav><a href="/pages/about/" rel="nofollow">Описание сервиса</a><a href="/pages/faq/" rel="nofollow">Вопрос-ответ</a><a class="fancybox fancybox-feedback-form" data-ng-href="#!/#feedback-form" rel="nofollow">Обратная связь</a><a href="http://readly.reformal.ru" rel="nofollow" target="_blank">Предложения</a><a href="/pages/copyright/" rel="nofollow">Правообладателям</a><a href="/pages/contacts/" rel="nofollow">Контакты</a><a href="/pages/rules/" rel="nofollow">Правила</a></nav></div><div class="footer-column footer-column-apps"><span class="h4">Приложения</span><img class="appstore" src="/public/static//images/appstore.png"><img src="/public/static//images/googleplay.png"/></img></div></div></footer>
+<div class="singin-form" id="login-form">
+<div class="singin__head">
+<span class="singin__title">Зарегистрируйтесь, и вы сможете:</span>
+<div class="singin__possibilities clearfix">
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico1"><i></i></div>
+<div class="singin__poss_item_text">
+Получать персональные
+<strong>рекомендации книг</strong>
+</div>
+</div>
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico2"><i></i></div>
+<div class="singin__poss_item_text">
+Создать собственную
+<strong>виртуальную библиотеку</strong>
+</div>
+</div>
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico3"><i></i></div>
+<div class="singin__poss_item_text">
+Следить за тем,
+<strong>что читают Ваши друзья</strong>
+</div>
+</div>
+</div>
+</div>
+<div class="singin__body clearfix">
+<div class="singin__body_col">
+<div class="singin__form_tabs">
+<a class="active" href="/user/register/" rel="nofollow">Регистрация</a>
+</div>
+<form action="/user/register/?next=/book/62516/
+" method="post">
+<input name="csrfmiddlewaretoken" type="hidden" value="HrcwRCgzMcBNwkwHS6YfhzX8oVjCpFNT"/>
+<div class="singin__inputs_form">
+<input name="email" placeholder="E-mail адрес" type="text"/>
+<input name="username" placeholder="Логин" type="text"/>
+<input name="password" placeholder="Пароль" type="password"/>
+<div class="singin__submit_foot">
+<button class="btn-blue-20 fr" onclick="yaCounter22692712.reachGoal('register_button');">Регистрация</button>
+</div>
+</div>
+</form>
+</div>
+<div class="singin__body_col">
+<span class="singin__sub_title">Через соцсети</span>
+<div class="big_social_buttons__container">
+<a class="big_social_button vk" href="/login/vk-oauth2/?next=/" rel="nofollow" title="Вконтакте">
+<i class="icon"></i> Войти через Вконтакт
+</a>
+<a class="big_social_button tw" href="/login/twitter/?next=/" rel="nofollow" title="Twitter">
+<i class="icon"></i> Войти через Твиттер
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function open_reg_form() {
+        ga('send','event', 'Регистрация', 'open_form_reg');
+        ga('send','pageview', '/user/reg_form/');
+    }
+</script>
+<div id="registration-alert">
+<span>Данное действие доступно только для</span>
+<b>зарегистрированных пользователей</b>
+<a class="btn-green-20" href="/user/register/">Регистрация</a>
+<a class="ui-20" href="/user/login/">Войти на сайт</a>
+</div>
 </body>

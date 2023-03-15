@@ -18,7 +18,8 @@ def doParse():
         # делаем запрос и получаем html
         html_text = requests.get(url).text
         # используем парсер lxml
-        body = BeautifulSoup(html_text).find('body').text
+        #body = BeautifulSoup(html_text).find('body').text
+        body = BeautifulSoup(html_text).find('div', {"id": "global-wrap"}).get_text(" ")
         all_text = all_text + str(body).lower()
     with open("all_text.txt", "w", encoding='utf-8') as file:
         file.write(all_text)
@@ -29,7 +30,7 @@ def remove_chars_from_text(text, chars):
 
 
 def tokenize(text):
-    spec_chars = string.punctuation + '\n\xa0«»\t—…abcdefghijklmnopqrstuvwxyz↑'
+    spec_chars = string.punctuation + '\n\xa0«»\t—…abcdefghijklmnopqrstuvwxyz↑©•–”→'
     text = remove_chars_from_text(text, spec_chars)
     text = remove_chars_from_text(text, string.digits)
     text_tokens = word_tokenize(text)
@@ -48,8 +49,17 @@ def lemmatize(text_tokens):
             if str(p.normal_form) not in forms:
                 forms.append(str(p.normal_form))
         final_text = final_text + word + ": " + ' '.join(forms) + "\n"
-    with open("lemmas.txt", "w", encoding='utf-8') as file:
+    with open("lemmas_bin.txt", "w", encoding='utf-8') as file:
         file.write(final_text)
+
+    # удалить дубликаты
+    lines_seen = set()
+    outfile = open("lemmas.txt", "w")
+    for line in open("lemmas_bin.txt", "r"):
+        if line not in lines_seen:
+            outfile.write(line)
+            lines_seen.add(line)
+    outfile.close()
 
 
 if __name__ == '__main__':

@@ -1,433 +1,754 @@
-<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Жионо_Жан rootpage-Жионо_Жан skin-vector action-view"><div class="noprint" id="mw-page-base"></div>
-<div class="noprint" id="mw-head-base"></div>
-<div class="mw-body" id="content" role="main">
-<a id="top"></a>
-<div id="siteNotice"><!-- CentralNotice --></div>
-<div class="mw-indicators">
+<body itemscope="" itemtype="http://schema.org/WebPage" onload="">
+<script type="text/javascript">
+      var yaParams = {'Логин': 'Гость'};
+      var userName = 'Гость';
+    </script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  </script>
+<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<script type="text/javascript">
+    try {
+        var yaCounter22692712 = new Ya.Metrika({
+            id:22692712,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    } catch(e) { }
+    </script>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/22692712" style="position:absolute; left:-9999px;"/></div></noscript>
+<header class="cf" id="header"><div class="wrapper cf"><a class="header-logo" href="/"></a><nav class="header-nav"><a href="/discussions/" onclick="yaCounter22692712.reachGoal('clickDiscussion'); return true;">Обсуждения</a><a href="/books/popular/" onclick="yaCounter22692712.reachGoal('clickBooks');return true;">Книги</a><a href="/authors/" onclick="yaCounter22692712.reachGoal('clickAuthors'); return true;">Авторы</a><a href="/users/" onclick="yaCounter22692712.reachGoal('clickUsers'); return true;">Читатели</a></nav><div class="header-search" data-ng-controller="BookSearchCtrl" data-outside-click="closeDropDown()"><form action="/search/" class="dropdown-triger"><input autocomplete="off" data-ng-change="search()" data-ng-click="openDropDown()" data-ng-init="q=''" data-ng-model="q" data-ng-model-options="{debounce: 300}" name="q" placeholder="Поиск автора или книги..." type="text"/><a href="/search/?q={[{ q }]}" rel="nofollow"><i class="icon_sprite search-w"></i></a></form><div class="dropdown-content ng-cloak" data-ng-show="isOpen()"><div class="dd-search-result-list" data-load-spinner="" data-loading="loading"><div class="dd-search-result-counter">
+Книги <span>{[{ count }]}</span></div><div class="user-lib-new--book-list--item cf" data-ng-repeat="book in results"><div class="book-cover"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}" title="{[{ book.title }]}"><img alt="{[{ book.title }]}" class="dropdown-content--search-bimage" data-ng-src="{[{ book.cover | imageUrl:'book.Book':1 }]}"/></a></div><div class="book-main-info"><h3 class="book-title dropdown-content--book-title"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}">{[{ book.title }]}</a></h3><p>{[{ book.author[0].name }]}</p></div></div><div class="dd-goToResult" data-ng-show="results.length"><a href="/search/?q={[{ q }]}" rel="nofollow">
+К результатам поиска по запросу {[{ q }]} »
+</a></div></div></div></div><a class="shuffle-btn header-btn-icon" href="/books/i_am_lucky/" rel="nofollow"><i class="icon_sprite shuffle"></i></a><div class="header--login-new"><a class="header--login-btn-new" href="/user/login/" rel="nofollow">Войти</a><a class="button-normal fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form()" rel="nofollow">Регистрация</a></div></div></header>
+<div id="global-wrap">
+<a class="fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form();yaCounter22692712.reachGoal('open_banner');" rel="nofollow"><div class="top_banner visible-lg visible-md"> </div></a>
+<script>
+    var book_profile = {"rating": 9.0, "quote_count": 3, "isbn": "978-5-9922-1010-1", "content_type": 13, "links": [], "show": true, "rates_count": 256, "quotes": [{"hashtags": [], "author": "\u0413\u0430\u0440\u0440\u0435\u0442", "text": "<p>\u00ab\u041e\u0434\u043d\u043e \u043c\u043e\u0433\u0443 \u0441\u043a\u0430\u0437\u0430\u0442\u044c \u0442\u0435\u0431\u0435 \u0442\u043e\u0447\u043d\u043e \u2014 \u044d\u0442\u0430 \u0438\u0441\u0442\u043e\u0440\u0438\u044f \u043f\u043e\u0434\u043e\u0448\u043b\u0430 \u043a \u043a\u043e\u043d\u0446\u0443. \u041d\u043e \u0431\u0443\u0434\u0443\u0442 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435. \u0411\u044b\u0432\u0430\u0439, \u0421\u0435\u0440\u044b\u0439, \u0438 \u0434\u0435\u0440\u0436\u0438\u0441\u044c \u0432\u0435\u0442\u0440\u0430. \u041e\u043d \u0432\u044b\u0432\u0435\u0434\u0435\u0442\u00bb</p>", "created_at": "2015-10-25T09:55:49", "object_type": 20, "updated_at": "2015-10-25T09:55:49", "object_id": 42460, "comment_count": 0, "book": {"id": 7340, "name": "\u0418\u0441\u043a\u0440\u0430 \u0438 \u0432\u0435\u0442\u0435\u0440", "cover": "covers/4/1/414d7c9b069140d61b4f0c57477e8ec6.jpg", "authors": [{"name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439  \u041f\u0435\u0445\u043e\u0432", "url": "/author/3793/", "id": 3793}], "url": "/book/7340/"}, "user": {"id": 23671, "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u041d\u0430\u0437\u0430\u0440\u043e\u0432 (@112358)", "avatar": "avatars/1/a/1a8b07d676db77ae1f14c51e315a4ef9.jpg", "url": "/user/23671/", "username": "112358", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>\u0421\u0438\u043b\u044c\u043d\u0435\u0435 \u043b\u044e\u0431\u0432\u0438 \u043c\u0430\u0433\u0438\u0438 \u043d\u0435\u0442. \u041e\u043d\u0430 \u2014 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a \u0432\u0441\u0435\u0433\u043e \u0441\u0443\u0449\u0435\u0433\u043e. \u041f\u0435\u0440\u0435\u0434 \u0442\u0435\u043c, \u043a\u0442\u043e \u043e\u0441\u0432\u043e\u0438\u0442 \u044d\u0442\u043e \u0447\u0443\u0432\u0441\u0442\u0432\u043e \u0431\u0435\u0437 \u043e\u0441\u0442\u0430\u0442\u043a\u0430, \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0432\u043e\u0438\u0441\u0442\u0438\u043d\u0443 \u0433\u0440\u0430\u043d\u0434\u0438\u043e\u0437\u043d\u044b\u0435 \u043f\u0435\u0440\u0441\u043f\u0435\u043a\u0442\u0438\u0432\u044b... \u0415\u0451 \u043b\u044e\u0431\u043e\u0432\u044c \u0441\u043f\u0430\u0441\u043b\u0430 \u0442\u0435\u0431\u044f, \u0430 \u0442\u0432\u043e\u044f \u2014 \u0435\u0451.</p>", "created_at": "2015-10-25T02:06:05", "object_type": 20, "updated_at": "2015-10-25T02:06:05", "object_id": 42459, "comment_count": 0, "book": {"id": 7340, "name": "\u0418\u0441\u043a\u0440\u0430 \u0438 \u0432\u0435\u0442\u0435\u0440", "cover": "covers/4/1/414d7c9b069140d61b4f0c57477e8ec6.jpg", "authors": [{"name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439  \u041f\u0435\u0445\u043e\u0432", "url": "/author/3793/", "id": 3793}], "url": "/book/7340/"}, "user": {"id": 23671, "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u041d\u0430\u0437\u0430\u0440\u043e\u0432 (@112358)", "avatar": "avatars/1/a/1a8b07d676db77ae1f14c51e315a4ef9.jpg", "url": "/user/23671/", "username": "112358", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>... \u043a\u043e\u0433\u0434\u0430 \u0442\u044b \u0432\u0441\u0435\u0441\u0438\u043b\u0435\u043d, \u043f\u0440\u0438\u0445\u043e\u0434\u0438\u0442\u0441\u044f \u043f\u0440\u0438\u0434\u0443\u043c\u044b\u0432\u0430\u0442\u044c \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f. \u041d\u0435 \u0434\u043b\u044f \u043c\u0438\u0440\u0430. \u0414\u043b\u044f \u0441\u0435\u0431\u044f. \u0418\u043d\u0430\u0447\u0435 \u0436\u0438\u0437\u043d\u044c \u0442\u0435\u0440\u044f\u0435\u0442 \u0432\u0441\u044f\u043a\u0438\u0439 \u0441\u043c\u044b\u0441\u043b, \u0435\u0441\u043b\u0438 \u0432 \u043b\u044e\u0431\u043e\u0435 \u043c\u0433\u043d\u043e\u0432\u0435\u043d\u0438\u0435 \u043c\u043e\u0436\u043d\u043e \u0434\u043e\u0441\u0442\u0430\u0442\u044c \u043b\u0443\u043d\u0443 \u0441 \u043d\u0435\u0431\u0435\u0441.</p>", "created_at": "2015-10-25T02:04:59", "object_type": 20, "updated_at": "2015-10-25T02:04:59", "object_id": 42458, "comment_count": 0, "book": {"id": 7340, "name": "\u0418\u0441\u043a\u0440\u0430 \u0438 \u0432\u0435\u0442\u0435\u0440", "cover": "covers/4/1/414d7c9b069140d61b4f0c57477e8ec6.jpg", "authors": [{"name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439  \u041f\u0435\u0445\u043e\u0432", "url": "/author/3793/", "id": 3793}], "url": "/book/7340/"}, "user": {"id": 23671, "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u041d\u0430\u0437\u0430\u0440\u043e\u0432 (@112358)", "avatar": "avatars/1/a/1a8b07d676db77ae1f14c51e315a4ef9.jpg", "url": "/user/23671/", "username": "112358", "gender": 1}, "favorited_users": []}], "tag": [], "alter_titles": "", "year": 2008, "facts": [], "id": 7340, "by_shelves": {"shelf_count_1": 40, "shelf_count_2": 2, "shelf_count_3": 318, "shelf_count_4": 5}, "rating_sort": 0.0, "review_count": 2, "author": [{"name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439  \u041f\u0435\u0445\u043e\u0432", "url": "/author/3793/", "id": 3793}], "create": "2013-07-21T00:00:00", "unique_text": false, "filming": [], "comment_count": 1, "show_rating": 9.0, "description": "\u041a\u043e\u0433\u0434\u0430 \u0441\u0443\u0440\u043e\u0432\u0430\u044f \u0437\u0438\u043c\u0430 \u043d\u0430 \u0438\u0441\u0445\u043e\u0434\u0435, \u044e\u0436\u043d\u044b\u0439 \u0432\u0435\u0442\u0435\u0440 \u0438\u0437-\u0437\u0430 \u0433\u043e\u0440 \u043d\u0435\u0441\u0435\u0442 \u043d\u0430 \u0441\u0432\u043e\u0435\u043c \u0445\u0432\u043e\u0441\u0442\u0435 \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u044b. \u041d\u043e \u043a \u0434\u043e\u0431\u0440\u0443 \u043b\u0438? \u041f\u043b\u0430\u043c\u044f \u0432\u043e\u0439\u043d\u044b \u043f\u044b\u043b\u0430\u0435\u0442 \u043d\u0430\u0434 \u0440\u0430\u0432\u043d\u0438\u043d\u0430\u043c\u0438 \u0438 \u0433\u043e\u0440\u043e\u0434\u0430\u043c\u0438 \u0441\u0435\u0432\u0435\u0440\u0430. \u0422\u0440\u0438 \u0430\u0440\u043c\u0438\u0438 \u041f\u0440\u043e\u043a\u043b\u044f\u0442\u044b\u0445 \u0440\u0432\u0443\u0442\u0441\u044f \u043a \u041a\u043e\u0440\u0443\u043d\u043d\u0443. \u041f\u043e \u0445\u0440\u0435\u0431\u0442\u0430\u043c \u0437\u0430\u0438\u043d\u0434\u0435\u0432\u0435\u0432\u0448\u0438\u0445 \u0433\u043e\u0440, \u0441\u043a\u0432\u043e\u0437\u044c \u044f\u0434\u043e\u0432\u0438\u0442\u044b\u0439 \u0442\u0443\u043c\u0430\u043d \u041e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0445 \u0431\u043e\u043b\u043e\u0442, \u0447\u0435\u0440\u0435\u0437 \u0433\u043e\u0440\u044c\u043a\u0438\u0439 \u043f\u0435\u043f\u0435\u043b \u0411\u0440\u0430\u0433\u0443\u043d-\u0417\u0430\u043d\u0430, \u043f\u043e \u043f\u0443\u0441\u0442\u044b\u043d\u043d\u044b\u043c \u043a\u0440\u0430\u0441\u043d\u044b\u043c \u0445\u043e\u043b\u043c\u0430\u043c, \u043c\u0438\u043c\u043e \u0432\u044b\u0436\u0436\u0435\u043d\u043d\u044b\u0445 \u0433\u043e\u0440\u043e\u0434\u043e\u0432 \u0438 \u0434\u0435\u0440\u0435\u0432\u0435\u043d\u044c \u0442\u0435, \u043a\u043e\u0433\u043e \u043d\u0430\u0437\u044b\u0432\u0430\u044e\u0442 \u0418\u0441\u043a\u0430\u0442\u0435\u043b\u044f\u043c\u0438 \u0432\u0435\u0442\u0440\u0430, \u0434\u043e\u043b\u0436\u043d\u044b \u0434\u043e\u0439\u0442\u0438 \u0434\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0439 \u0447\u0435\u0440\u0442\u044b. \u0418\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u043e\u0438\u0442 \u0440\u0435\u0448\u0438\u0442\u044c, \u0447\u0442\u043e \u0432\u0430\u0436\u043d\u0435\u0435 \u0432 \u043c\u0438\u0440\u0435 \u0425\u0430\u0440\u044b \u2013 \u00ab\u0438\u0441\u043a\u0440\u0430\u00bb, \u0432\u0435\u0442\u0435\u0440 \u0438\u043b\u0438, \u0431\u044b\u0442\u044c \u043c\u043e\u0436\u0435\u0442, \u043b\u044e\u0431\u043e\u0432\u044c\u2026", "readers_count": 360, "award": [], "sorter": 8.98, "series_position": 5, "seria": 1723, "favorites": 5, "genre": [{"url": "/genre/56/", "id": 56, "name": "\u0411\u043e\u0435\u0432\u043e\u0435 \u0444\u044d\u043d\u0442\u0435\u0437\u0438", "is_show": true}, {"url": "/genre/190/", "id": 190, "name": "\u0424\u044d\u043d\u0442\u0435\u0437\u0438", "is_show": true}, {"url": "/genre/55/", "id": 55, "name": "\u041a\u043d\u0438\u0433\u0438 \u043f\u0440\u043e \u0432\u043e\u043b\u0448\u0435\u0431\u043d\u0438\u043a\u043e\u0432", "is_show": true}], "fact_count": 0, "pages": 490, "publisher": "\u0410\u0432\u0442\u043e\u0440", "url": "/book/7340/", "title": "\u0418\u0441\u043a\u0440\u0430 \u0438 \u0432\u0435\u0442\u0435\u0440", "cover": "covers/4/1/414d7c9b069140d61b4f0c57477e8ec6.jpg", "_id": 7340, "user": {"possible_rate": null, "id": null}};
+</script>
+<div class="wrapper content clearfix">
+<article class="book-article" itemscope="" itemtype="http://schema.org/Book">
+<div class="content-cols">
+<div class="content-cols--main">
+<h1 class="book-article--title" itemprop="name">Искра и ветер</h1>
+<div class="book-article--author">
+<label class="author-name">Автор книги:</label>
+<a href="/author/3793/"><h2 itemprop="author">Алексей Пехов</h2></a>
 </div>
-<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Жионо, Жан</span></h1>
-<div class="vector-body" id="bodyContent">
-<div class="noprint" id="siteSub">Материал из Википедии — свободной энциклопедии</div>
-<div id="contentSub"><div id="mw-content-subtitle"></div></div>
-<div id="contentSub2"></div>
-<div id="jump-to-nav"></div>
-<a class="mw-jump-link" href="#mw-head">Перейти к навигации</a>
-<a class="mw-jump-link" href="#searchInput">Перейти к поиску</a>
-<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="ru"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r117420410/mw-parser-output/.infobox[data-name=Писатель]">body.skin-modern .mw-parser-output .infobox[data-name=Писатель] .infobox-above,body.skin-modern .mw-parser-output .infobox[data-name=Писатель] .infobox-header,body.skin-modern .mw-parser-output .infobox[data-name=Писатель] .infobox-below,body.skin-monobook .mw-parser-output .infobox[data-name=Писатель] .infobox-above,body.skin-monobook .mw-parser-output .infobox[data-name=Писатель] .infobox-header,body.skin-monobook .mw-parser-output .infobox[data-name=Писатель] .infobox-below,body.skin-timeless .mw-parser-output .infobox[data-name=Писатель] .infobox-above,body.skin-timeless .mw-parser-output .infobox[data-name=Писатель] .infobox-header,body.skin-timeless .mw-parser-output .infobox[data-name=Писатель] .infobox-below,body.skin-vector .mw-parser-output .infobox[data-name=Писатель] .infobox-above,body.skin-vector .mw-parser-output .infobox[data-name=Писатель] .infobox-header,body.skin-vector .mw-parser-output .infobox[data-name=Писатель] .infobox-below{background:#eaecf0}</style>
-<table class="infobox infobox-f78378c2630838f1" data-name="Писатель" style=""><tbody><tr><th class="infobox-above" colspan="2" scope="colgroup" style="">Жан Жионо</th></tr><tr><td class="" colspan="2" style="text-align:center;"><span class="no-wikidata" data-wikidata-property-id="P1559"><a href="/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Французский язык">фр.</a> <span lang="fr" style="font-style:italic;">Jean Giono</span></span></td></tr><tr><td class="infobox-image" colspan="2" style=""> <span class="wikidata-claim" data-wikidata-claim-id="Q177411$08879774-2994-4CC3-B7C3-EDAE6A25D8B0" data-wikidata-property-id="P18"><span class="wikidata-snak wikidata-main-snak"><a class="image" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg"><img alt="Eugène Martel Portrait de Jean Giono en 1937.jpg" data-file-height="3456" data-file-width="2597" decoding="async" height="365" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg/274px-Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg/411px-Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/09/Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg/548px-Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg 2x" width="274"/></a></span></span> </td></tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Имя при рождении</th>
-<td class="plainlist">
-<span class="wikidata-claim" data-wikidata-claim-id="Q177411$e3fdd362-499f-cef3-9798-5d277e3df58f" data-wikidata-property-id="P1477"><span class="wikidata-snak wikidata-main-snak"><a href="/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Французский язык">фр.</a> <span lang="fr" style="font-style:italic;">Jean Fernand Giono</span></span></span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Дата рождения</th>
-<td class="plainlist">
-<span class="no-wikidata" data-wikidata-property-id="P569"><a href="/wiki/30_%D0%BC%D0%B0%D1%80%D1%82%D0%B0" title="30 марта">30 марта</a> <a href="/wiki/1895_%D0%B3%D0%BE%D0%B4" title="1895 год">1895</a></span><span style="display:none">(<span class="bday">1895-03-30</span>)</span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Место рождения</th>
-<td class="plainlist">
-<span class="no-wikidata" data-wikidata-property-id="P19"><a href="/wiki/%D0%9C%D0%B0%D0%BD%D0%BE%D1%81%D0%BA" title="Маноск">Маноск</a> (<a href="/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%8F" title="Франция">Франция</a>)</span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Дата смерти</th>
-<td class="plainlist">
-<span class="no-wikidata" data-wikidata-property-id="P570"><a href="/wiki/8_%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F" title="8 октября">8 октября</a> <a href="/wiki/1970_%D0%B3%D0%BE%D0%B4" title="1970 год">1970</a></span><span style="display:none">(<span class="dday">1970-10-08</span>)</span> <span class="nowrap">(75 лет)</span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Место смерти</th>
-<td class="plainlist">
-<span class="no-wikidata" data-wikidata-property-id="P20"><a href="/wiki/%D0%9C%D0%B0%D0%BD%D0%BE%D1%81%D0%BA" title="Маноск">Маноск</a> (Франция)</span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Гражданство</th>
-<td class="plainlist">
-<span class="no-wikidata" data-wikidata-property-id="P27"><span class="nowrap"><span class="nowrap" data-sort-value="Франция"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="600" data-file-width="900" decoding="async" height="15" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/22px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/33px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/44px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png 2x" width="22"/></span> <a href="/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%8F" title="Франция"><span class="wrap">Франция</span></a></span></span></span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Род деятельности</th>
-<td class="plainlist">
-<span class="no-wikidata" data-wikidata-property-id="P106">писатель</span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Годы творчества</th>
-<td class="plainlist">
-<span class="wikidata-claim" data-wikidata-claim-id="Q177411$369F1B9D-6406-4AD2-AF34-C36B69E41B4E" data-wikidata-property-id="P2031"><span class="wikidata-snak wikidata-main-snak"><span class="nowrap"><a href="/wiki/1923_%D0%B3%D0%BE%D0%B4" title="1923 год">1923</a></span></span></span> — <span class="wikidata-claim" data-wikidata-claim-id="Q177411$8d8c5d7b-4a03-b35a-6296-34bd6833fb01" data-wikidata-property-id="P2032"><span class="wikidata-snak wikidata-main-snak"><span class="nowrap"><a href="/wiki/1970_%D0%B3%D0%BE%D0%B4" title="1970 год">1970</a></span></span></span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Язык произведений</th>
-<td class="plainlist">
-<span class="no-wikidata" data-wikidata-property-id="P6886"><a href="/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Французский язык">французский</a></span></td>
-</tr>
-<tr>
-<th class="plainlist" scope="row" style="min-width:9em;">Награды</th>
-<td class="plainlist">
-<div style="text-align:justify"><span class="wikidata-claim" data-wikidata-claim-id="Q177411$E35C9084-A631-46E5-8B48-1B9147063766" data-wikidata-property-id="P166"><span class="wikidata-snak wikidata-main-snak"><span style="display:inline-block; text-align:left"><a href="/wiki/%D0%9E%D1%80%D0%B4%D0%B5%D0%BD_%D0%9F%D0%BE%D1%87%D1%91%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BB%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0" title="Орден Почётного легиона">орден Почётного легиона</a></span></span></span> <span class="wikidata-claim" data-wikidata-claim-id="Q177411$485A1DA9-1A6F-425B-8CCB-8934B9279A63" data-wikidata-property-id="P166"><span class="wikidata-snak wikidata-main-snak"><span style="display:inline-block; text-align:left"><span class="plainlinks"><a class="external text" href="https://ru.wikipedia.org/w/index.php?title=%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F+%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%8F+%D0%BA%D0%BD%D1%8F%D0%B7%D1%8F+%D0%9C%D0%BE%D0%BD%D0%B0%D0%BA%D0%BE&amp;action=edit&amp;editintro=T:Нет_статьи/editintro&amp;preload=T:Нет_статьи/preload&amp;preloadparams%5B%5D=Q24805355&amp;preloadparams%5B%5D=%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F+%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%8F+%D0%BA%D0%BD%D1%8F%D0%B7%D1%8F+%D0%9C%D0%BE%D0%BD%D0%B0%D0%BA%D0%BE&amp;preloadparams%5B%5D=Универсальная+карточка"><span style="color: #ba0000; text-decoration: inherit; -moz-text-decoration-color: #ba0000; text-decoration-color: #ba0000;">литературная премия князя Монако</span></a></span><sup><a class="extiw" href="https://www.wikidata.org/wiki/Q24805355" title="d:Q24805355">[d]</a></sup></span></span></span></div></td>
-</tr><tr><td class="infobox-below" colspan="2" style=";"><a href="https://ru.wikisource.org/wiki/fr:Auteur:Jean_Giono" title="Логотип Викитеки"><img alt="Логотип Викитеки" data-file-height="430" data-file-width="410" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/15px-Wikisource-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/23px-Wikisource-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/30px-Wikisource-logo.svg.png 2x" width="15"/></a> <a class="extiw" href="https://ru.wikisource.org/wiki/fr:Auteur:Jean_Giono" title="s:fr:Auteur:Jean Giono">Произведения в Викитеке</a></td></tr><tr><td class="infobox-below" colspan="2" style=";"><span class="wikidata-claim" data-wikidata-claim-id="q177411$681E6FE7-5315-4B16-99D2-1A89771471AA" data-wikidata-property-id="P373"><span class="wikidata-snak wikidata-main-snak"><a href="https://commons.wikimedia.org/wiki/Category:Jean_Giono" title="commons:Category:Jean Giono"><img alt="Логотип Викисклада" data-file-height="1376" data-file-width="1024" decoding="async" height="20" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/15px-Commons-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/23px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png 2x" width="15"/></a> <a class="extiw" href="https://commons.wikimedia.org/wiki/Category:Jean_Giono" title="commons:Category:Jean Giono">Медиафайлы на Викискладе</a></span></span></td></tr><tr><td class="infobox-below" colspan="2" style=";"><a href="https://ru.wikiquote.org/wiki/fr:Jean_Giono" title="Логотип Викицитатника"><img alt="Логотип Викицитатника" data-file-height="355" data-file-width="300" decoding="async" height="18" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/15px-Wikiquote-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/23px-Wikiquote-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/30px-Wikiquote-logo.svg.png 2x" width="15"/></a> <a class="extiw" href="https://ru.wikiquote.org/wiki/fr:Jean_Giono" title="q:fr:Jean Giono">Цитаты в Викицитатнике</a></td></tr>
-</tbody></table>
-<p><b>Жан Жионо</b> (<a href="/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Французский язык">фр.</a> <span lang="fr" style="font-style:italic;">Jean Giono</span>, <span class="nowrap"><span class="no-wikidata" data-wikidata-property-id="P569"><a href="/wiki/30_%D0%BC%D0%B0%D1%80%D1%82%D0%B0" title="30 марта">30 марта</a> <a href="/wiki/1895_%D0%B3%D0%BE%D0%B4" title="1895 год">1895</a></span><span class="noprint" style="display:none"> (<span class="bday">1895-03-30</span>)</span></span> — <span class="no-wikidata" data-wikidata-property-id="P570"><a href="/wiki/8_%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F" title="8 октября">8 октября</a> <a href="/wiki/1970_%D0%B3%D0%BE%D0%B4" title="1970 год">1970</a></span>) — французский писатель, действие произведений которого, как правило, происходит в <a href="/wiki/%D0%9F%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D1%81" title="Прованс">Провансе</a>.
-</p>
-<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="ru"><h2 id="mw-toc-heading">Содержание</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="book-article--details">
+<div class="ba-details--row">
+<label class="row-label"><span>год написания:</span></label>
+<span class="row-value">2008</span>
+</div>
+<div class="ba-details--row">
+<label class="row-label"><span>серия книг:</span></label>
+<span class="row-value">
+<a href="/serie/1723/">Ветер и искры</a>
+(5 книга из 6)
+</span>
+</div>
+<div class="ba-details--row">
+<label class="row-label"><span>жанры:</span></label>
+<span class="row-value">
+<a href="/genre/56/">боевое фэнтези</a>
+,
+<a href="/genre/190/">фэнтези</a>
+,
+<a href="/genre/55/">книги про волшебников</a>
+</span>
+</div>
+<div class="book-article--description">
+<br/>
+<h3 class="book-author-title">Описание</h3>
+<p><p>Когда суровая зима на исходе, южный ветер из-за гор несет на своем хвосте перемены. Но к добру ли? Пламя войны пылает над равнинами и городами севера. Три армии Проклятых рвутся к Корунну. По хребтам заиндевевших гор, сквозь ядовитый туман Оставленных болот, через горький пепел Брагун-Зана, по пустынным красным холмам, мимо выжженных городов и деревень те, кого называют Искателями ветра, должны дойти до последней черты. Им предстоит решить, что важнее в мире Хары – «искра», ветер или, быть может, любовь…</p></p>
+</div>
+<div class="ng-cloak book-profile-rating-height" data-ng-controller="BookProfileCtrl" id="book_profile_book-rating-app" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<div data-book-id="book.id" data-book-rating="" data-rating="book.user.rating"></div>
+<meta content="10" itemprop="bestRating"/>
+<meta content="9,0" itemprop="ratingValue"/>
+<meta content="256" itemprop="ratingCount"/>
+<div class="book-circular-correct">
+<span class="book-profile--rate">9,0</span>
+<span class="book-profile--rates-count">(256 оценок)</span>
+</div>
+</div>
+<div class="ng-cloak" data-ng-controller="WhereToBuyCtrl" data-ng-init="aggregate('Искра и ветер', 'Алексей  Пехов')" id="book_profile-where_to_buy-app">
+<h2 class="where-to-buy-title book-author-title rel-h2" data-ng-show="aggregated.length">Купить книгу Искра и ветер, Алексей Пехов</h2>
+<div class="books-aggregate">
+<div class="aggregate-row" data-ng-class-odd="'book-aggregate-row-odd'" data-ng-repeat="agg in aggregated">
+<a data-ng-href="{[{ agg.url }]}" target="_blank"><img alt="" class="aggregate-shop-img" data-ng-src="{[{ agg.market_logo }]}"/></a>
+<a class="aggregate-shop" data-ng-bind="agg.market_name" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
+<a class="aggregate-book" data-ng-bind="agg.title" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
+<div class="fr">
+<b class="aggregate-price"><span data-ng-bind="agg.price"></span> р.</b>
+<a class="aggregate-buy-button-litres" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market=='litres'" target="_blank">Скачать</a>
+<a class="aggregate-buy-button" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market!='litres'" target="_blank">Купить</a>
+</div>
+</div>
+</div>
+</div>
+<br class="clear"/>
+<div data-ng-controller="BookProfileCtrl" id="book_profile_facts-quotes-app">
+<div data-book-id="book.id" data-fact-list="" data-facts="book.facts"></div>
+<div data-book-id="book.id" data-quote-list="" data-quotes="book.quotes" data-user-id="book.user.id"></div>
+</div>
+<div class="invisible-content">
+<div class="h3-title-wadd"><h3>Интересные факты</h3></div>
+<div class="ba-facts-list">
+</div>
+</div>
+<div class="invisible-content">
+<div class="h3-title-wadd">
+<h3>Цитаты из книги</h3>
+</div>
+<div class="ba-facts-list">
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;«Одно могу сказать тебе точно — эта история подошла к концу. Но будут и другие. Бывай, Серый, и держись ветра. Он выведет»&lt;/p&gt;<br/><em class="quote-sign">Гаррет</em>
+<div class="discussion-item-author disable-float">
+
+Добавил: <a class="user" href="/user/23671/" rel="nofollow"><i class="ico"></i>112358</a>
+</div>
+</div>
+</div>
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Сильнее любви магии нет. Она — источник всего сущего. Перед тем, кто освоит это чувство без остатка, открываются воистину грандиозные перспективы... Её любовь спасла тебя, а твоя — её.&lt;/p&gt;<br/><em class="quote-sign"></em>
+<div class="discussion-item-author disable-float">
+
+Добавил: <a class="user" href="/user/23671/" rel="nofollow"><i class="ico"></i>112358</a>
+</div>
+</div>
+</div>
+<div class="discussion-item-text clearfix">
+<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;... когда ты всесилен, приходится придумывать ограничения. Не для мира. Для себя. Иначе жизнь теряет всякий смысл, если в любое мгновение можно достать луну с небес.&lt;/p&gt;<br/><em class="quote-sign"></em>
+<div class="discussion-item-author disable-float">
+
+Добавил: <a class="user" href="/user/23671/" rel="nofollow"><i class="ico"></i>112358</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="book-author-title rel-h2">С этой книгой читают:</h2>
+<div class="book-related-list">
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/7339/" rel="nofollow">
+<img alt="Ветер полыни" src="/public/media/covers/3/4/34d72af767e484acc4ac9238486dbd8e_160x0.jpg" title="Ветер полыни"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/7339/">
+Ветер полыни
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/7338/" rel="nofollow">
+<img alt="Поиск" src="/public/media/covers/8/f/8f054e5694cafcd86f31f477ce66855f_160x0.jpg" title="Поиск"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/7338/">
+Поиск
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/7337/" rel="nofollow">
+<img alt="Внучка бабы Яги" src="/public/media/covers/a/3/a3e38919f0fab4a3f1ac16dc0a785c2f_160x0.jpg" title="Внучка бабы Яги"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/7337/">
+Внучка бабы Яги
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/7336/" rel="nofollow">
+<img alt="Добыча" src="/public/media/covers/5/3/5362c75d9e8ad05d18de6f3f06e9c3fc_160x0.jpg" title="Добыча"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/7336/">
+Добыча
+</a>
+</div>
+</div>
+<div class="related-book--item">
+<div class="related-book--image">
+<a href="/book/7335/" rel="nofollow">
+<img alt="Одинокая блондинка желает познакомиться, или Бойтесь сбывшихся желаний!" src="/public/media/covers/b/7/b7a50d27fb3340d6f373472196d83ebc_160x0.jpg" title="Одинокая блондинка желает познакомиться, или Бойтесь сбывшихся желаний!"/>
+</a>
+</div>
+<div class="related-book--title">
+<a href="/book/7335/">
+Одинокая блондинка желает познакомить...
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="ba-timeline-container">
+<nav class="tape-select" id="timelinenav">
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Биография_и_творчество"><span class="tocnumber">1</span> <span class="toctext">Биография и творчество</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Произведения"><span class="tocnumber">2</span> <span class="toctext">Произведения</span></a>
-<ul>
-<li class="toclevel-2 tocsection-3"><a href="#Романы,_повести,_хроники"><span class="tocnumber">2.1</span> <span class="toctext">Романы, повести, хроники</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#Незавершенные_романы"><span class="tocnumber">2.2</span> <span class="toctext">Незавершенные романы</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Очерки_и_статьи"><span class="tocnumber">2.3</span> <span class="toctext">Очерки и статьи</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#Стихи"><span class="tocnumber">2.4</span> <span class="toctext">Стихи</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Пьесы"><span class="tocnumber">2.5</span> <span class="toctext">Пьесы</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="#Письма"><span class="tocnumber">2.6</span> <span class="toctext">Письма</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#Интервью"><span class="tocnumber">2.7</span> <span class="toctext">Интервью</span></a></li>
-<li class="toclevel-2 tocsection-10"><a href="#Переводы"><span class="tocnumber">2.8</span> <span class="toctext">Переводы</span></a></li>
-<li class="toclevel-2 tocsection-11"><a href="#Сценарии"><span class="tocnumber">2.9</span> <span class="toctext">Сценарии</span></a></li>
-</ul>
+<li class="active">
+<a href="/book/7340/?filter=reviews#!/#timelinenav" rel="nofollow">Рецензии</a>
 </li>
-<li class="toclevel-1 tocsection-12"><a href="#Экранизации"><span class="tocnumber">3</span> <span class="toctext">Экранизации</span></a></li>
-<li class="toclevel-1 tocsection-13"><a href="#Публикации_на_русском_языке"><span class="tocnumber">4</span> <span class="toctext">Публикации на русском языке</span></a></li>
-<li class="toclevel-1 tocsection-14"><a href="#Ссылки"><span class="tocnumber">5</span> <span class="toctext">Ссылки</span></a></li>
+<li>
+<a href="/book/7340/?filter=comments#!/#timelinenav" rel="nofollow">Отзывы</a>
+</li>
+</ul>
+</nav>
+<div id="filter-search-results-container">
+<div class="filter-panel-index">
+<div class="page-column-main __timeline">
+<section class="review-timeline-list">
+<nav class="nav-filter">
+<ul class="nav-filter-list">
+<li class="active">
+<a href="/book/7340/?filter=reviews&amp;sort=last#!/timelinenav" rel="nofollow">Последнее</a>
+</li>
+<li>
+<a href="/book/7340/?filter=reviews&amp;sort=useful#!/timelinenav" rel="nofollow">Популярное</a>
+</li>
+<li>
+<a href="/book/7340/?filter=reviews&amp;sort=new#!/timelinenav" rel="nofollow">Новое</a>
+</li>
+</ul>
+</nav>
+<div id="book_profile_timeline-app">
+<span id="reactComponent-Readly.bookTimelineBox"><div data-react-checksum="939584248" data-reactid=".2dlregblczk"><div class="rtl--comment-add" data-reactid=".2dlregblczk.0"><div class="rtl--start-discussion rtl--start-discussion-compat bookpost bookpost-review" data-reactid=".2dlregblczk.0.0"><textarea class="sd--input" data-reactid=".2dlregblczk.0.0.0" placeholder="Оставить рецензию..."></textarea></div></div><div data-reactid=".2dlregblczk.1"><div data-reactid=".2dlregblczk.1.0"><div class="discussion-wrap" data-reactid=".2dlregblczk.1.0.$75921"><div class="discussion-item clearfix" data-reactid=".2dlregblczk.1.0.$75921.0"><div data-reactid=".2dlregblczk.1.0.$75921.0.0"><div class="discussion-item-user-avatar" data-reactid=".2dlregblczk.1.0.$75921.0.0.0"><a class="user-avatar-50-50" data-reactid=".2dlregblczk.1.0.$75921.0.0.0.0" href="/user/95850/" rel="nofollow"><img data-reactid=".2dlregblczk.1.0.$75921.0.0.0.0.0" src="/public/media/avatars/2/3/236c2aac06e86f9b67fae6d56b6c0c5e_80x80.jpg"/></a></div><div class="user-name" data-reactid=".2dlregblczk.1.0.$75921.0.0.1"><span data-reactid=".2dlregblczk.1.0.$75921.0.0.1.0"><a data-reactid=".2dlregblczk.1.0.$75921.0.0.1.0.0" href="/user/95850/" rel="nofollow">Алена (@bepeck)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".2dlregblczk.1.0.$75921.0.1"><span data-reactid=".2dlregblczk.1.0.$75921.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".2dlregblczk.1.0.$75921.0.1.1">26 января 2021 14:53</span><div class="stars-rating" data-reactid=".2dlregblczk.1.0.$75921.0.1.2"></div></div><div class="reviews-status" data-reactid=".2dlregblczk.1.0.$75921.0.2"><img alt="" data-reactid=".2dlregblczk.1.0.$75921.0.2.0" src="/public/static/images/new/positive.png"/></div><div class="discussion-item-index clearfix" data-reactid=".2dlregblczk.1.0.$75921.0.3"><div class="reveal-block-index clearfix" data-reactid=".2dlregblczk.1.0.$75921.0.3.0"><div class="book-pic" data-reactid=".2dlregblczk.1.0.$75921.0.3.0.0"><img data-reactid=".2dlregblczk.1.0.$75921.0.3.0.0.0" src="/public/media/covers/4/1/414d7c9b069140d61b4f0c57477e8ec6_100x0.jpg"/></div><span class="book-name" data-reactid=".2dlregblczk.1.0.$75921.0.3.0.1">Искра и ветер</span><span class="book-autor" data-reactid=".2dlregblczk.1.0.$75921.0.3.0.2">Алексей Пехов</span></div><div class="discussion-item-text clearfix" data-reactid=".2dlregblczk.1.0.$75921.0.3.1"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.1.1"> </span><span data-reactid=".2dlregblczk.1.0.$75921.0.3.1.3"> </span><div data-reactid=".2dlregblczk.1.0.$75921.0.3.1.4"><div class="rc-review--text-short" data-reactid=".2dlregblczk.1.0.$75921.0.3.1.4.1"><p>«…Ветер, когда-то пойманный за хвост, все-таки донес всех нас почти до последней черты.»<br>Ох уж этот ветер, он несет наших героев как пушинки, то оставляет на время в покое, то порывами кидает из стороны в сторону, но всё равно несет вперед. <br>Книга мне показалась намного динамичнее третьей. И неожиданных (малоожидаемых) моментов хватало. Хотя несколько трагичных моментов, терялись на фоне второй книги. Во что-то не поверилось, про что-то было лишь мельком. Не обошлось и без потерь среди героев (а я одному очень симпатизировала Т.Т) Но большинство основных персонажей доживут до последних страниц, хоть и не без труда. А некоторые даже познают самую главную силу, на которой изначально строилась Хара – «Дом Любви».<br>Что порадовало, Нэсс не был в каждой битве «героем», хотя (что весьма забавно, учитывая споры с Шеном всё в той же второй части) повоюет наш любимый гиян в армии)))<br>Что же касается окончания войны… я думала, если честно, что результаты будут несколько более ярко выраженные (для искры), хотя и вышло правдоподобнее, чем мне представлялось.<br>В этой части было немало «провалов» в прошлое, что позволило ещё больше сблизиться с героями (я, например, начала сочувствовать Тиф). Но это не уменьшало динамичности, наверное, потому, что практически не было «бытовых мелочей» и в результате в книге захвачен довольно-таки большой временной период.<br/>А уж какие будут разгаданы тайны… Вот например, вы думаете, что знаете все секреты Лаэн?))) хехехе…. Автору еще найдется, чем вас удивить.<br/>Думаю, всех интересовал кто такой Гаррет?) у меня было два предположения, одно развеялось к середине книги, второе, оказалось созвучно с предположением Нэсса, но тоже не верно, а когда вы узнаете кто на самом деле тот, на кого мы подумали… Но вышло красиво)) </br></br></br></br></br></p>
+<p>«– И что теперь? Хара спасена?<br/>–Ну, по крайней мере, у нее появился какой-никакой, а шанс. Одно могу сказать точно – эта история подошла к концу. Но будут и другие. Бывай, Серый, и держись ветра. Он выведет…»<br/>P.S. надеюсь мне удалось запутать не меньше чем наспойлерить))<br/></p></div></div></div><div class="bottom-part" data-reactid=".2dlregblczk.1.0.$75921.0.3.2"><div class="discussion-item-filter" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0"><div data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0"><noindex data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0"><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/75921/" rel="nofollow" target="_blank"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0"><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/75921/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/75921/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/75921/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/75921/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/75921/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2"><div data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0.1.3">3</span><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".2dlregblczk.1.0.$75921.0.3.2.1" href="" rel="nofollow"><span data-reactid=".2dlregblczk.1.0.$75921.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".2dlregblczk.1.0.$75921.0.5"><a class="anchor" data-reactid=".2dlregblczk.1.0.$75921.0.5.1" name="75921_18" rel="nofollow"></a></div></div></div><div class="discussion-wrap" data-reactid=".2dlregblczk.1.0.$43618"><div class="discussion-item clearfix" data-reactid=".2dlregblczk.1.0.$43618.0"><div data-reactid=".2dlregblczk.1.0.$43618.0.0"><div class="discussion-item-user-avatar" data-reactid=".2dlregblczk.1.0.$43618.0.0.0"><a class="user-avatar-50-50" data-reactid=".2dlregblczk.1.0.$43618.0.0.0.0" href="/user/27568/" rel="nofollow"><img data-reactid=".2dlregblczk.1.0.$43618.0.0.0.0.0" src="/public/media/avatars/c/0/c021bdc57c43ded600dadf1a1c2e3b00_80x80.jpg"/></a></div><div class="user-name" data-reactid=".2dlregblczk.1.0.$43618.0.0.1"><span data-reactid=".2dlregblczk.1.0.$43618.0.0.1.0"><a data-reactid=".2dlregblczk.1.0.$43618.0.0.1.0.0" href="/user/27568/" rel="nofollow">@kupalinka</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".2dlregblczk.1.0.$43618.0.1"><span data-reactid=".2dlregblczk.1.0.$43618.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".2dlregblczk.1.0.$43618.0.1.1">28 июля 2017 11:48</span><div class="stars-rating" data-reactid=".2dlregblczk.1.0.$43618.0.1.2"><div data-reactid=".2dlregblczk.1.0.$43618.0.1.2.0"><span data-reactid=".2dlregblczk.1.0.$43618.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".2dlregblczk.1.0.$43618.0.1.2.0.1"><div class="ur-rate-stars _9" data-reactid=".2dlregblczk.1.0.$43618.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".2dlregblczk.1.0.$43618.0.1.2.0.2">9/10</span></div></div></div><noscript data-reactid=".2dlregblczk.1.0.$43618.0.2"></noscript><div class="discussion-item-index clearfix" data-reactid=".2dlregblczk.1.0.$43618.0.3"><div class="reveal-block-index clearfix" data-reactid=".2dlregblczk.1.0.$43618.0.3.0"><div class="book-pic" data-reactid=".2dlregblczk.1.0.$43618.0.3.0.0"><img data-reactid=".2dlregblczk.1.0.$43618.0.3.0.0.0" src="/public/media/covers/4/1/414d7c9b069140d61b4f0c57477e8ec6_100x0.jpg"/></div><span class="book-name" data-reactid=".2dlregblczk.1.0.$43618.0.3.0.1">Искра и ветер</span><span class="book-autor" data-reactid=".2dlregblczk.1.0.$43618.0.3.0.2">Алексей Пехов</span></div><div class="discussion-item-text clearfix" data-reactid=".2dlregblczk.1.0.$43618.0.3.1"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.1.1"> </span><span data-reactid=".2dlregblczk.1.0.$43618.0.3.1.3"> </span><div data-reactid=".2dlregblczk.1.0.$43618.0.3.1.4"><div class="rc-review--text-short" data-reactid=".2dlregblczk.1.0.$43618.0.3.1.4.1"><p>Люблю я Пехова. Наткнулась один раз (кажется, что это было в рекомендациях для меня от Readly), так в общем взахлеб я прочитала все, что смогла достать. <br/>В рецензии на эту книгу, я опишу пожалуй, свое впечатление о серии. Помимо моей рецензии на серию, на первой книге другие читатели тоже оставляли рецензии о серии, рекомендую ознакомиться и с ними (<a href="https://readly.ru/book/7329/">Искатели ветра</a>), ибо мнения расходятся и на вкус и цвет все фломастеры разные.<br/>Серия из разряда типичного фентези (у Пехова не все такое), что слегка уменьшает шансы вспоминать серию в списке “любовь всей жизни”. Но серия очень хорошо читается. Пожалуй на равне с другими рецензентами сравню серию с Хрониками Сиалы. Так вот по если в Хрониках был основной персонаж а все остальные третьестепенные, то тут не главные персонажи раскрыты куда больше, что мне собственно и понравилось. <br/>Понравилось описание “верхушки” обоих лагерей. Даже интриги расписаны просто и в то же время стильненько, что ли. Чем-то, если честно, общепринятые в мире злодеи напомнили “Хроники Черного Отряда” в первых книгах. <br/>Не понравились отсылки к “чему-то большему”, но если в Хрониках Сиалы доходило до фейспалма, то тут все же автор был сдержанней. Введенные “чистые душой” персонажи типа Шена и еще одной девушки (даже с учетом последующих их действий и решений) раздражали безмерно. Ладно один идиот, которому с такими взглядами в таких условиях удалось выжить, но когда их больше, реально портит картину. Зато все корыстные и плохие персонажи выглядят куда как лучше: в их действиях прослеживается логика. <br/>В общем, почитать чтобы отдохнуть можно. Я читала дважды, ибо чтение такой легкой и ненавязчивой литературы позволяет моему мозгу нагененрировать ярких картинок в голове и отдохнуть от всего того заумного, что приходится творить на работе.</p>
+<p><a href="/tag/%D0%A2%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5_%D1%81%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D0%B8%D1%89%D0%B0_%D0%A0%D0%B8%D0%B4%D0%BB%D0%B84/">#Тайные_сокровища_Ридли4</a></p></div></div></div><div class="bottom-part" data-reactid=".2dlregblczk.1.0.$43618.0.3.2"><div class="discussion-item-filter" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0"><div data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0"><noindex data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0"><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/43618/" rel="nofollow" target="_blank"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0"><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/43618/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/43618/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/43618/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/43618/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/43618/" rel="nofollow" target="_self"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2"><div data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0.1.3">1</span><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".2dlregblczk.1.0.$43618.0.3.2.1" href="" rel="nofollow"><span data-reactid=".2dlregblczk.1.0.$43618.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".2dlregblczk.1.0.$43618.0.5"><a class="anchor" data-reactid=".2dlregblczk.1.0.$43618.0.5.1" name="43618_18" rel="nofollow"></a></div></div></div></div><div class="section-buttons" data-reactid=".2dlregblczk.1.1"><a class="btn-simple loadmore" data-reactid=".2dlregblczk.1.1.0" href=""><i class="b-icon loadmore" data-reactid=".2dlregblczk.1.1.0.0"></i><span data-reactid=".2dlregblczk.1.1.0.1">Показать еще</span></a></div></div></div></span>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-cols--aside">
+<div class="book-article--aside" data-inject-global-var="book_profile">
+<div class="book-article--img">
+<img alt="Обложка Искра и ветер" src="/public/media/covers/4/1/414d7c9b069140d61b4f0c57477e8ec6_200x0.jpg" title="Искра и ветер"/>
+</div>
+<div class="ba-about">
+<h3>О книге</h3>
+<ul class="ba-counters">
+<li>
+<i class="bc-icon readers"></i>
+<a href="/book/7340/readers/5/" rel="nofollow">
+Читатели (360)
+</a>
+</li>
+<li class="reviews">
+<i class="bc-icon reviews"></i>
+<a alt="Искра и ветер рецензии" href="/book/7340/reviews/">
+Рецензии (2)
+</a>
+</li>
+<li class="quotes">
+<i class="bc-icon quotes"></i>
+<a alt="Искра и ветер цитаты" href="/book/7340/quotes/">
+Цитаты (3)
+</a>
+</li>
+<li class="facts">
+<i class="bc-icon facts"></i>
+<a alt="Искра и ветер интересные факты" href="/book/7340/facts/">
+Факты (0)
+</a>
+</li>
+<li class="reviews">
+<i class="bc-icon comments"></i>
+<a alt="Искра и ветер отзывы" href="/book/7340/comments/">
+Отзывы (1)
+</a>
+</li>
 </ul>
 </div>
-<h2><span id=".D0.91.D0.B8.D0.BE.D0.B3.D1.80.D0.B0.D1.84.D0.B8.D1.8F_.D0.B8_.D1.82.D0.B2.D0.BE.D1.80.D1.87.D0.B5.D1.81.D1.82.D0.B2.D0.BE"></span><span class="mw-headline" id="Биография_и_творчество">Биография и творчество</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=1" title="Редактировать раздел «Биография и творчество»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=1" title="Редактировать раздел «Биография и творчество»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>Родившись в небогатой семье сапожника и прачки, Жионо многие годы жил в <a href="/wiki/%D0%9C%D0%B0%D0%BD%D0%BE%D1%81%D0%BA" title="Маноск">Маноске</a> (департамент <a href="/wiki/%D0%90%D0%BB%D1%8C%D0%BF%D1%8B_%D0%92%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B3%D0%BE_%D0%9F%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D1%81%D0%B0" title="Альпы Верхнего Прованса">Альпы Верхнего Прованса</a>). По завершении учёбы в местной школе, работал банковским служащим до <a href="/wiki/%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F_%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0" title="Первая мировая война">Первой мировой войны</a>, во время которой служил солдатом. В <a href="/wiki/1919_%D0%B3%D0%BE%D0%B4" title="1919 год">1919 году</a> вернулся в банк, а год спустя женился на подруге детства, с которой у него было двое детей. Ушёл из банка в <a href="/wiki/1930_%D0%B3%D0%BE%D0%B4" title="1930 год">1930 году</a>, чтобы полностью посвятить себя писательской деятельности после успеха своего первого романа, «<i>Холм</i>».
-</p><p>В <a href="/wiki/1953_%D0%B3%D0%BE%D0%B4" title="1953 год">1953 году</a> он был удостоен литературной премии князя <a href="/wiki/%D0%9C%D0%BE%D0%BD%D0%B0%D0%BA%D0%BE" title="Монако">Монако</a> <a href="/wiki/%D0%A0%D0%B5%D0%BD%D1%8C%D0%B5_III_(%D0%BA%D0%BD%D1%8F%D0%B7%D1%8C_%D0%9C%D0%BE%D0%BD%D0%B0%D0%BA%D0%BE)" title="Ренье III (князь Монако)">Ренье</a> за жизненные заслуги. Позднее стал членом <a href="/wiki/%D0%93%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F" title="Гонкуровская академия">Гонкуровской академии</a> (<a class="mw-redirect" href="/wiki/1954" title="1954">1954</a>), вошёл в <a class="new" href="/w/index.php?title=%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B9_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82_%D0%9C%D0%BE%D0%BD%D0%B0%D0%BA%D0%BE&amp;action=edit&amp;redlink=1" title="Литературный Совет Монако (страница отсутствует)">Литературный Совет Монако</a> (<a class="mw-redirect" href="/wiki/1963" title="1963">1963</a>).
-</p><p>Среди наиболее известных его произведений три романа трилогии «<i>Пан</i>», посвящённых греческому богу <a href="/wiki/%D0%9F%D0%B0%D0%BD_(%D0%BC%D0%B8%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)" title="Пан (мифология)">Пану</a> и <a href="/wiki/%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D0%B8%D0%B7%D0%BC" title="Пантеизм">пантеизму</a>: «<i>Холм</i>», «<i>Парень из Бомюня</i>», и «<i>Отава</i>». Он также известен книгой «<i>Путешествие в Италию</i>» и новеллой «<i><a href="/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA,_%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9_%D1%81%D0%B0%D0%B6%D0%B0%D0%BB_%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D1%8F" title="Человек, который сажал деревья">Человек, который сажал деревья</a></i>» (<a class="mw-redirect" href="/wiki/1953" title="1953">1953</a>).
-</p><p>Многие произведения Жионо были экранизированы: фильмы по его книгам снимали <a href="/wiki/%D0%9F%D0%B0%D0%BD%D1%8C%D0%BE%D0%BB%D1%8C,_%D0%9C%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D1%8C" title="Паньоль, Марсель">Марсель Паньоль</a>, <a href="/wiki/%D0%A0%D0%B0%D0%BF%D0%BF%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD-%D0%9F%D0%BE%D0%BB%D1%8C" title="Раппно, Жан-Поль">Жан-Поль Раппно</a>, <a class="mw-redirect" href="/wiki/%D0%A0%D0%B0%D1%83%D0%BB%D1%8C_%D0%A0%D1%83%D0%B8%D1%81" title="Рауль Руис">Рауль Руис</a>. Он возглавлял жюри <a href="/wiki/%D0%9A%D0%B0%D0%BD%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B8%D0%BD%D0%BE%D1%84%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D1%8C" title="Каннский кинофестиваль">Каннского МКФ</a> (<a class="mw-redirect" href="/wiki/1961" title="1961">1961</a>), входил в его жюри (<a class="mw-redirect" href="/wiki/1966" title="1966">1966</a>).
-</p>
-<h2><span id=".D0.9F.D1.80.D0.BE.D0.B8.D0.B7.D0.B2.D0.B5.D0.B4.D0.B5.D0.BD.D0.B8.D1.8F"></span><span class="mw-headline" id="Произведения">Произведения</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=2" title="Редактировать раздел «Произведения»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=2" title="Редактировать раздел «Произведения»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
-<h3><span id=".D0.A0.D0.BE.D0.BC.D0.B0.D0.BD.D1.8B.2C_.D0.BF.D0.BE.D0.B2.D0.B5.D1.81.D1.82.D0.B8.2C_.D1.85.D1.80.D0.BE.D0.BD.D0.B8.D0.BA.D0.B8"></span><span class="mw-headline" id="Романы,_повести,_хроники">Романы, повести, хроники</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=3" title="Редактировать раздел «Романы, повести, хроники»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=3" title="Редактировать раздел «Романы, повести, хроники»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Colline</i> — <a href="/wiki/%D0%93%D1%80%D0%B0%D1%81%D1%81%D0%B5_(%D0%B8%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE)" title="Грассе (издательство)">Grasset</a> — 1929</li>
-<li><i>Un de Baumugnes</i> — Grasset — 1929</li>
-<li><i>Regain</i> — Grasset — 1930</li>
-<li><i>Naissance de l’Odyssée</i> — Editions Kra — 1930</li>
-<li><i>Le Grand Troupeau</i> — <a href="/wiki/%D0%93%D0%B0%D0%BB%D0%BB%D0%B8%D0%BC%D0%B0%D1%80" title="Галлимар">Gallimard</a> — 1931</li>
-<li><i>Jean le Bleu</i> — Grasset — 1932</li>
-<li><i>Solitude de la pitié</i> — Gallimard 1932</li>
-<li><i>Le Chant du monde</i> — Gallimard — 1934</li>
-<li><i>Que ma joie demeure</i> — Grasset — 1936</li>
-<li><i>Batailles dans la montagne</i> — Gallimard — 1937</li>
-<li><i>Pour saluer Melville</i> — Gallimard — 1941</li>
-<li><i>L’eau vive</i> — Gallimard — 1943 (Rondeur des Jours et l’Oiseau bagué −1973)</li>
-<li><a href="/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%B1%D0%B5%D0%B7_%D1%80%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B9" title="Король без развлечений">Король без развлечений</a> / <i>Un roi sans divertissement</i> — Gallimard — 1947</li>
-<li><i>Noé</i> — Editions la Table ronde — 1947</li>
-<li><i>Fragments d’un paradis</i> — Déchalotte — 1948</li>
-<li><i>Mort d’un personnage</i> — Grasset — 1949</li>
-<li><i>Les Âmes fortes</i> — Gallimard — 1949</li>
-<li><i>Les Grands Chemins</i> — Gallimard — 1951</li>
-<li><i>Le Hussard sur le toit</i> (<i>Гусар на крыше</i>) — Gallimard — 1951</li>
-<li><i>Le Moulin de Pologne</i> — 1952</li>
-<li><a href="/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA,_%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9_%D1%81%D0%B0%D0%B6%D0%B0%D0%BB_%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D1%8F" title="Человек, который сажал деревья">Человек, который сажал деревья</a> / <i>L’homme qui plantait des arbres</i> — Reader’s Digest — 1953</li>
-<li><i>Le Bonheur fou</i> — Gallimard — 1957</li>
-<li><i>Angelo</i> — Gallimard — 1958</li>
-<li><i>Hortense ou l’Eau vive</i> (avec Jean Allioux) Editions France-Empire — 1958</li>
-<li><i>Deux cavaliers de l’orage</i> — Gallimard — 1965</li>
-<li><i>Le Déserteur</i> — René Creux Editeur — 1966 (le Déserteur et autres récits — Gallimard — 1973)</li>
-<li><i>Ennemonde et Autres Caractères</i> — Gallimard — 1968</li>
-<li><i>L’Iris de Suse</i> — Gallimard — 1970</li>
-<li><i>Les Récits de la demi-brigade</i> — Gallimard — 1972</li>
-<li><i>Faust au village</i> — Gallimard — 1977</li>
-<li><i>Le Bestiaire</i> — Ramsay — 1991</li></ul>
-<h3><span id=".D0.9D.D0.B5.D0.B7.D0.B0.D0.B2.D0.B5.D1.80.D1.88.D0.B5.D0.BD.D0.BD.D1.8B.D0.B5_.D1.80.D0.BE.D0.BC.D0.B0.D0.BD.D1.8B"></span><span class="mw-headline" id="Незавершенные_романы">Незавершенные романы</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=4" title="Редактировать раздел «Незавершенные романы»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=4" title="Редактировать раздел «Незавершенные романы»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Angélique</i> — Gallimard — 1980</li>
-<li><i>Cœur, Passions, Caractères</i> — Gallimard — 1982</li>
-<li><i>Dragoon suivi d’Olympe</i> — Gallimard — 1982</li></ul>
-<h3><span id=".D0.9E.D1.87.D0.B5.D1.80.D0.BA.D0.B8_.D0.B8_.D1.81.D1.82.D0.B0.D1.82.D1.8C.D0.B8"></span><span class="mw-headline" id="Очерки_и_статьи">Очерки и статьи</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=5" title="Редактировать раздел «Очерки и статьи»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=5" title="Редактировать раздел «Очерки и статьи»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Présentation de Pan</i> — Grasset — 1930</li>
-<li><i>Manosque-des-plateaux</i> — Emile-Paul Frères — 1931</li>
-<li><i>Le Serpent d’Etoile</i> — Grasset — 1933</li>
-<li><i>Les Vraies Richesses</i> — Grasset — 1936</li>
-<li><i>Refus d’obéissance</i> — Gallimard 1937</li>
-<li><i>Le Poids du ciel</i> — Gallimard — 1938</li>
-<li><i>Lettre aux paysans sur la pauvreté et la paix</i> — Grasset — 1938</li>
-<li><i>Précisions</i> — Grasset — 1939</li>
-<li><i>Recherche de la pureté</i> — Gallimard — 1939</li>
-<li><i>Triomphe de la vie</i> — Ides et Calendes — 1941</li>
-<li><i>Voyage en Italie</i> — Gallimard — 1953</li>
-<li><i>Notes sur l’affaire Dominici</i> — Gallimard — 1955</li>
-<li><i>Le Désastre de Pavie</i> -Gallimard — 1963</li>
-<li><i>Les Terrasses de l’Ile d'</i>Elbe — Gallimard — 1976</li>
-<li><i>Les Trois Arbres de Palzem</i> — Gallimard — 1984</li>
-<li><i>De Homère à Machiavel</i> — Gallimard — 1986</li>
-<li><i>Images d’un jour de pluie et autres récits de jeunesse</i> — Editions Philippe Auzou — 1987</li>
-<li><i>La Chasse au Bonheur</i> — Gallimard — 1988</li>
-<li><i>Provence</i> — Gallimard — 1993</li>
-<li><i>Les Héraclides</i> — Quatuor — 1995</li>
-<li><i>De Montluc à la «Série Noire»</i> — Gallimard — 1998</li></ul>
-<h3><span id=".D0.A1.D1.82.D0.B8.D1.85.D0.B8"></span><span class="mw-headline" id="Стихи">Стихи</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=6" title="Редактировать раздел «Стихи»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=6" title="Редактировать раздел «Стихи»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Accompagne de la flute</i> — les Cahiers de l’Artisan — 1923</li>
-<li><i>La Chute des Anges, Fragment d’un Déluge, Le Cœur-Cerf</i> — Rico — 1969</li></ul>
-<h3><span id=".D0.9F.D1.8C.D0.B5.D1.81.D1.8B"></span><span class="mw-headline" id="Пьесы">Пьесы</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=7" title="Редактировать раздел «Пьесы»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=7" title="Редактировать раздел «Пьесы»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Le bout de la Route — Lanceur de Graines — La Femme du boulanger</i> — Gallimard — 1943</li>
-<li><i>Le Voyage en calèche</i> — Editions du Rocher — 1947. Cette pièce à été interdite par l’occupant pendant la seconde guerre mondiale.</li>
-<li><i>Domitien, suivi de Joseph à Dothan</i> — Gallimard — 1959</li>
-<li><i>Le Cheval fou</i> — Gallimard — 1974</li></ul>
-<h3><span id=".D0.9F.D0.B8.D1.81.D1.8C.D0.BC.D0.B0"></span><span class="mw-headline" id="Письма">Письма</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=8" title="Редактировать раздел «Письма»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=8" title="Редактировать раздел «Письма»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Avec Jean Paulhan</i> — Gallimard — 2000</li>
-<li><i>Avec André Gide</i> — Université de Lyon — 1983</li>
-<li><i>Avec Jean Guéhenno</i> — Seghers — 1975</li>
-<li><i>Avec Lucien Jacques</i> — Gallimard — 1981 et 1983 (2 volumes)</li></ul>
-<h3><span id=".D0.98.D0.BD.D1.82.D0.B5.D1.80.D0.B2.D1.8C.D1.8E"></span><span class="mw-headline" id="Интервью">Интервью</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=9" title="Редактировать раздел «Интервью»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=9" title="Редактировать раздел «Интервью»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Avec Jean Carrière</i> — La Manufacture — 1985</li>
-<li><i>Avec Jean et Taos Amrouche</i> — Gallimard — 1990</li></ul>
-<h3><span id=".D0.9F.D0.B5.D1.80.D0.B5.D0.B2.D0.BE.D0.B4.D1.8B"></span><span class="mw-headline" id="Переводы">Переводы</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=10" title="Редактировать раздел «Переводы»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=10" title="Редактировать раздел «Переводы»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Moby Dick</i> (traduction du roman d’Herman Melville; avec Lucien Jacques et Joan Smith) — Les Cahiers du Contadour — 1939</li>
-<li><i>L’expédition d’Humphry C</i>linker (traduction du roman de Tobias G. Smollet; avec Catherine d’Ivernois) — Gallimard — 1955</li></ul>
-<h3><span id=".D0.A1.D1.86.D0.B5.D0.BD.D0.B0.D1.80.D0.B8.D0.B8"></span><span class="mw-headline" id="Сценарии">Сценарии</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=11" title="Редактировать раздел «Сценарии»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=11" title="Редактировать раздел «Сценарии»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
-<ul><li><i>Crésus</i> — Rico — 1961</li></ul>
-<h2><span id=".D0.AD.D0.BA.D1.80.D0.B0.D0.BD.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D0.B8"></span><span class="mw-headline" id="Экранизации">Экранизации</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=12" title="Редактировать раздел «Экранизации»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=12" title="Редактировать раздел «Экранизации»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
-<ul><li>1934 — «<a href="/wiki/%D0%90%D0%BD%D0%B6%D0%B5%D0%BB%D1%8C_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)" title="Анжель (фильм)">Анжель</a>»</li>
-<li><a href="/wiki/1963_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%BA%D0%B8%D0%BD%D0%BE" title="1963 год в кино">1963</a> — «<a href="/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%B1%D0%B5%D0%B7_%D1%80%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B9_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)" title="Король без развлечений (фильм)">Король без развлечений</a>»</li>
-<li><a href="/wiki/1987_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%BA%D0%B8%D0%BD%D0%BE" title="1987 год в кино">1987</a> — «<a class="new" href="/w/index.php?title=%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA,_%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9_%D1%81%D0%B0%D0%B6%D0%B0%D0%BB_%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D1%8F_(%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)&amp;action=edit&amp;redlink=1" title="Человек, который сажал деревья (мультфильм) (страница отсутствует)">Человек, который сажал деревья</a>»</li>
-<li><a href="/wiki/1995_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%BA%D0%B8%D0%BD%D0%BE" title="1995 год в кино">1995</a> — «<a href="/wiki/%D0%93%D1%83%D1%81%D0%B0%D1%80_%D0%BD%D0%B0_%D0%BA%D1%80%D1%8B%D1%88%D0%B5" title="Гусар на крыше">Гусар на крыше</a>»</li>
-<li><a href="/wiki/2001_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%BA%D0%B8%D0%BD%D0%BE" title="2001 год в кино">2001</a> — «<a href="/wiki/%D0%A1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%B4%D1%83%D1%88%D0%B8" title="Сильные души">Сильные души</a>»</li></ul>
-<h2><span id=".D0.9F.D1.83.D0.B1.D0.BB.D0.B8.D0.BA.D0.B0.D1.86.D0.B8.D0.B8_.D0.BD.D0.B0_.D1.80.D1.83.D1.81.D1.81.D0.BA.D0.BE.D0.BC_.D1.8F.D0.B7.D1.8B.D0.BA.D0.B5"></span><span class="mw-headline" id="Публикации_на_русском_языке">Публикации на русском языке</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=13" title="Редактировать раздел «Публикации на русском языке»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=13" title="Редактировать раздел «Публикации на русском языке»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
-<ul><li>Холм, 1934</li>
-<li>Большое стадо, 1934</li>
-<li>Песнь земли, 1935</li>
-<li>Радость, 1936</li>
-<li>Гусар на крыше. Польская мельница. М., 1992</li>
-<li>Король без развлечений. Гусар на крыше. М., 2002</li>
-<li><a class="external text" href="http://www.pinetum.org/GionoRU.htm" rel="nofollow">Человек, который сажал деревья</a></li></ul>
-<h2><span id=".D0.A1.D1.81.D1.8B.D0.BB.D0.BA.D0.B8"></span><span class="mw-headline" id="Ссылки">Ссылки</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit&amp;section=14" title="Редактировать раздел «Ссылки»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;section=14" title="Редактировать раздел «Ссылки»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
-<ul><li><a class="external text" href="http://pages.infinit.net/poibru/giono/index.htm" rel="nofollow">Персональный сайт</a> <a class="external text" href="https://web.archive.org/web/20200512220741/http://pages.infinit.net/poibru/giono/index.htm" rel="nofollow">Архивная копия</a> от 12 мая 2020 на <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></li>
-<li><a class="external text" href="http://www.centrejeangiono.com" rel="nofollow">Сайт Центра Жионо в Маноске</a></li>
-<li><a class="external autonumber" href="http://www.giono.com" rel="nofollow">[1]</a> <small class="ref-info" style="cursor:help;" title="на французском языке">(фр.)</small></li>
-<li><a class="external text" href="https://www.imdb.com/name/nm0320274" rel="nofollow">На сайте IMDb</a></li>
-<li><a class="external text" href="https://www.imdb.com/title/tt0093488/" rel="nofollow">Мультфильм «Человек, который сажал деревья» на сайте «IMDb»</a></li></ul>
-<div aria-label="Навигационный шаблон" class="navbox" data-name="External links" role="navigation"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th class="navbox-group" scope="row" style="width:1px"><div style="padding: 0 35px 0 0; width: 100%;"><div style="float: left;"><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8" title="Перейти к шаблону «Внешние ссылки»"><img alt="Перейти к шаблону «Внешние ссылки»" class="noprint" data-file-height="14" data-file-width="14" decoding="async" height="14" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/14px-Wikipedia_interwiki_section_gear_icon.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/21px-Wikipedia_interwiki_section_gear_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/28px-Wikipedia_interwiki_section_gear_icon.svg.png 2x" width="14"/></a>  <a href="https://www.wikidata.org/wiki/Q177411#identifiers" title="Перейти к элементу Викиданных"><img alt="Перейти к элементу Викиданных" data-file-height="20" data-file-width="20" decoding="async" height="14" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/14px-OOjs_UI_icon_edit-ltr-progressive.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/21px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/28px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" width="14"/></a></div>  Тематические сайты</div></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
-<ul><li><a class="external text" href="https://www.allmovie.com/artist/p183455" rel="nofollow">AllMovie</a></li>
-<li><a class="external text" href="https://www.allocine.fr/personne/fichepersonne_gen_cpersonne=37756.html" rel="nofollow">AlloCiné</a></li>
-<li><a class="external text" href="https://www.csfd.cz/tvurce/192554" rel="nofollow">ČSFD</a></li>
-<li><a class="external text" href="https://www.dfi.dk/viden-om-film/filmdatabasen/person/83207" rel="nofollow">Датская национальная фильмография</a></li>
-<li><a class="external text" href="https://www.discogs.com/artist/1509282" rel="nofollow">Discogs</a></li>
-<li><a class="external text" href="https://www.imdb.com/name/nm0320274" rel="nofollow">Internet Movie Database</a></li>
-<li><a class="external text" href="https://www.kinopoisk.ru/name/98711/" rel="nofollow">Кинопоиск</a></li>
-<li><a class="external text" href="http://www.isfdb.org/cgi-bin/ea.cgi?263978" rel="nofollow">Internet Speculative Fiction Database</a></li></ul>
-</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Словари и энциклопедии</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
-<ul><li><a class="external text" href="https://wikidata-externalid-url.toolforge.org/?p=8313&amp;url_prefix=https://denstoredanske.lex.dk/&amp;id=Jean_Giono">Большая датская</a></li>
-<li><a class="external text" href="https://www.enciclopedia.cat/ec-gec-0030059.xml" rel="nofollow">Большая каталанская</a></li>
-<li><a class="external text" href="https://snl.no/Jean_Giono" rel="nofollow">Большая норвежская</a></li>
-<li><a class="external text" href="https://old.bigenc.ru/text/1982846" rel="nofollow">Большая российская</a></li>
-<li><a class="external text" href="https://www.treccani.it/enciclopedia/jean-giono_(Enciclopedia-Italiana)" rel="nofollow">Итальянская</a></li>
-<li><a class="external text" href="https://www.krugosvet.ru/enc/kultura_i_obrazovanie/literatura/ZHIONO_ZHAN.html" rel="nofollow">Кругосвет</a></li>
-<li><a class="external text" href="https://www.vle.lt/straipsnis/jean-giono" rel="nofollow">Литовская универсальная</a></li>
-<li><a class="external text" href="https://www.enciklopedija.hr/Natuknica.aspx?ID=22046" rel="nofollow">Хорватская</a></li>
-<li><a class="external text" href="https://www.britannica.com/biography/Jean-Giono" rel="nofollow">Britannica (онлайн)</a></li>
-<li><a class="external text" href="https://www.treccani.it/enciclopedia/jean-giono" rel="nofollow">Treccani</a></li>
-<li><a class="external text" href="https://www.universalis.fr/encyclopedie/jean-giono/" rel="nofollow">Universalis</a></li></ul>
-</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Генеалогия и некрополистика</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
-<ul><li><a class="external text" href="https://www.findagrave.com/memorial/6756" rel="nofollow">Find a Grave</a></li></ul>
-</div></td></tr><tr><td class="navbox-list navbox-even" colspan="2" style="width:100%;padding:0px"><div style="padding:0em 0.25em"><style data-mw-deduplicate="TemplateStyles:r113287755">.mw-parser-output .ts-navbox-plaintitle{font-size:100%!important;margin:0 6em!important}</style></div><table class="nowraplinks authoritycontrol collapsible collapsed navbox-subgroup" style="border-spacing:0;text-align: left;"><tbody><tr><th class="navbox-title" colspan="2" scope="colgroup"><div class="ts-navbox-plaintitle" id="В_библиографических_каталогах" style="font-size:114%;margin:0 5em">В библиографических каталогах</div></th></tr><tr><td class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em">
-<ul><li>BIBSYS: <a class="external text" href="https://authority.bibsys.no/authority/rest/authorities/html/90171243" rel="nofollow">90171243</a></li>
-<li><a href="/wiki/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%BD%D0%B8%D0%B8" title="Библиотека Каталонии">BNC</a>: <a class="external text" href="https://cantic.bnc.cat/registres/CUCId/a10471169" rel="nofollow">a10471169</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8" title="Национальная библиотека Испании">BNE</a>: <a class="external text" href="https://datos.bne.es/resource/XX1154886" rel="nofollow">XX1154886</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D0%B8" title="Национальная библиотека Франции">BNF</a>: <a class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb119050002" rel="nofollow">119050002</a></li>
-<li><a href="/wiki/CiNii" title="CiNii">CiNii</a>: <a class="external text" href="https://ci.nii.ac.jp/author/DA0224625X" rel="nofollow">DA0224625X</a></li>
-<li><span style="border-bottom: 1px dotted; cursor: help;" title="CONOR.Sl">CONOR</span>: <a class="external text" href="https://plus.cobiss.net/cobiss/si/sl/conor/7863139" rel="nofollow">7863139</a></li>
-<li><a href="/wiki/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B8%D0%BD%D0%B0" title="Библиотека Александрина">EGAXA</a>: <a class="external text" href="https://viaf.org/processed/EGAXA%7Cvtls001877334" rel="nofollow">vtls001877334</a></li>
-<li><a href="/wiki/Gemeinsame_Normdatei" title="Gemeinsame Normdatei">GND</a>: <a class="external text" href="https://d-nb.info/gnd/118717545" rel="nofollow">118717545</a></li>
-<li><span style="border-bottom: 1px dotted; cursor: help;" title="Istituto Centrale per il Catalogo Unico">ICCU</span>: <a class="external text" href="https://opac.sbn.it/opacsbn/opac/iccu/scheda_authority.jsp?bid=CFIV066543" rel="nofollow">CFIV066543</a></li>
-<li><a href="/wiki/%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80_%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D1%85_%D0%BD%D0%B0%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9" title="Международный идентификатор стандартных наименований">ISNI</a>: <a class="external text" href="http://isni-url.oclc.nl/isni/000000012100966X" rel="nofollow">0000 0001 2100 966X</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%98%D0%B7%D1%80%D0%B0%D0%B8%D0%BB%D1%8F" title="Национальная библиотека Израиля">J9U</a>: <a class="external text" href="http://uli.nli.org.il/F/?func=find-b&amp;local_base=NLX10&amp;find_code=UID&amp;request=987007261747205171" rel="nofollow">987007261747205171</a></li>
-<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BD%D0%BE%D0%BC%D0%B5%D1%80_%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B8_%D0%9A%D0%BE%D0%BD%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0" title="Контрольный номер Библиотеки Конгресса">LCCN</a>: <a class="external text" href="https://id.loc.gov/authorities/n80045867" rel="nofollow">n80045867</a></li>
-<li><a href="/wiki/%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0" title="Латвийская национальная библиотека">LNB</a>: <a class="external text" href="https://kopkatalogs.lv/F/?func=direct&amp;local_base=lnc10&amp;doc_number=000019577" rel="nofollow">000019577</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_(%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F)" title="Национальная парламентская библиотека (Япония)">NDL</a>: <a class="external text" href="https://id.ndl.go.jp/auth/ndlna/00467196" rel="nofollow">00467196</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%A7%D0%B5%D1%88%D1%81%D0%BA%D0%BE%D0%B9_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8" title="Национальная библиотека Чешской Республики">NKC</a>: <a class="external text" href="https://aleph.nkp.cz/F/?func=find-c&amp;local_base=aut&amp;ccl_term=ica=jn19990002694&amp;CON_LNG=ENG" rel="nofollow">jn19990002694</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B8" title="Национальная библиотека Австралии">NLA</a>: <a class="external text" href="https://nla.gov.au/anbd.aut-an35126058" rel="nofollow">35126058</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%93%D1%80%D0%B5%D1%86%D0%B8%D0%B8" title="Национальная библиотека Греции">NLG</a>: <a class="external text" href="https://catalogue.nlg.gr/Authority/Record?id=au.72816" rel="nofollow">72816</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B8" title="Национальная библиотека Польши">NLP</a>: <a class="external text" href="http://mak.bn.org.pl/cgi-bin/KHW/makwww.exe?BM=1&amp;NU=1&amp;IM=5&amp;WI=A11814706" rel="nofollow">A11814706</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B8_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%97%D0%B0%D0%B3%D1%80%D0%B5%D0%B1%D0%B0" title="Национальная и университетская библиотека Загреба">NSK</a>: <a class="external text" href="https://katalog.nsk.hr/F/?func=direct&amp;local_base=nsk10&amp;doc_number=000055890" rel="nofollow">000055890</a></li>
-<li><a href="/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%BE%D0%B2" title="Королевская национальная библиотека Нидерландов">NTA</a>: <a class="external text" href="https://data.bibliotheken.nl/doc/thes/p068414579" rel="nofollow">068414579</a></li>
-<li><a href="/wiki/NUKAT" title="NUKAT">NUKAT</a>: <a class="external text" href="http://nukat.edu.pl/aut/n%20%2096101146" rel="nofollow">n96101146</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B3%D0%B0%D0%BB%D0%B8%D0%B8" title="Национальная библиотека Португалии">PTBNP</a>: <a class="external text" href="https://viaf.org/processed/PTBNP%7C34781" rel="nofollow">34781</a></li>
-<li><a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D0%B8" title="Национальная библиотека Швеции">LIBRIS</a>: <a class="external text" href="https://libris.kb.se/0xbdf8tj3m2m01m" rel="nofollow">0xbdf8tj3m2m01m</a></li>
-<li><a href="/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8" title="Университетская система документации">SUDOC</a>: <a class="external text" href="https://www.idref.fr/026892286" rel="nofollow">026892286</a></li>
-<li><a href="/wiki/%D0%92%D0%B0%D1%82%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0" title="Ватиканская апостольская библиотека">VcBA</a>: <a class="external text" href="https://opac.vatlib.it/auth/detail/495_319495" rel="nofollow">495/319495</a></li>
-<li><a href="/wiki/VIAF" title="VIAF">VIAF</a>: <a class="external text" href="https://viaf.org/viaf/44299388/" rel="nofollow">44299388</a></li>
-<li><a href="/wiki/WorldCat" title="WorldCat">WorldCat VIAF</a>: <a class="external text" href="https://www.worldcat.org/identities/containsVIAFID/44299388" rel="nofollow">44299388</a></li>
-<li><a href="/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0" title="Российская национальная библиотека">РНБ</a>: <a class="external text" href="https://webservices.nlr.ru/semweb/?method=afnlr&amp;query=NLR10%3A%3ARU%5CNLR%5CAUTH%5C770175120" rel="nofollow">770175120</a>, <a class="external text" href="https://webservices.nlr.ru/semweb/?method=afnlr&amp;query=NLR10%3A%3ARU%5CNLR%5CAUTH%5C770175107" rel="nofollow">770175107</a></li></ul>
-</div></td></tr></tbody></table><div></div></td></tr></tbody></table></div>
-<!-- 
-NewPP limit report
-Parsed by mw2313
-Cached time: 20230307124409
-Cache expiry: 1814400
-Reduced expiry: false
-Complications: [vary‐revision‐sha1, show‐toc, no‐toc‐conversion]
-CPU time usage: 0.425 seconds
-Real time usage: 0.569 seconds
-Preprocessor visited node count: 1700/1000000
-Post‐expand include size: 53022/2097152 bytes
-Template argument size: 6273/2097152 bytes
-Highest expansion depth: 20/100
-Expensive parser function count: 7/500
-Unstrip recursion depth: 0/20
-Unstrip post‐expand size: 1431/5000000 bytes
-Lua time usage: 0.295/10.000 seconds
-Lua memory usage: 9857846/52428800 bytes
-Number of Wikibase entities loaded: 6/400
--->
-<!--
-Transclusion expansion time report (%,ms,calls,template)
-100.00%  506.163      1 -total
- 70.02%  354.396      1 Шаблон:Писатель
- 61.35%  310.539      1 Шаблон:Карточка
- 25.70%  130.089      1 Шаблон:Библиоинформация
- 20.04%  101.420     11 Шаблон:Wikidata
-  7.41%   37.530      1 Шаблон:Карточка/Викитека
-  5.03%   25.451      1 Шаблон:Карточка/оригинал_имени
-  3.08%   15.607      1 Шаблон:Карточка/Викицитатник
-  2.93%   14.838      1 Шаблон:Удалить_теги
-  2.21%   11.181      1 Шаблон:Wikidata/p569
--->
-<!-- Saved in parser cache with key ruwiki:pcache:idhash:1802502-0!canonical and timestamp 20230307124408 and revision id 117541584. Rendering was triggered because: page-view
- -->
-</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img alt="" height="1" src="//ru.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" title="" width="1"/></noscript>
-<div class="printfooter" data-nosnippet="">Источник — <a dir="ltr" href="https://ru.wikipedia.org/w/index.php?title=Жионо,_Жан&amp;oldid=117541584">https://ru.wikipedia.org/w/index.php?title=Жионо,_Жан&amp;oldid=117541584</a></div></div>
-<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8" title="Служебная:Категории">Категории</a>: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A0%D0%BE%D0%B4%D0%B8%D0%B2%D1%88%D0%B8%D0%B5%D1%81%D1%8F_30_%D0%BC%D0%B0%D1%80%D1%82%D0%B0" title="Категория:Родившиеся 30 марта">Родившиеся 30 марта</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A0%D0%BE%D0%B4%D0%B8%D0%B2%D1%88%D0%B8%D0%B5%D1%81%D1%8F_%D0%B2_1895_%D0%B3%D0%BE%D0%B4%D1%83" title="Категория:Родившиеся в 1895 году">Родившиеся в 1895 году</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D0%B8%D0%B8_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83" title="Категория:Персоналии по алфавиту">Персоналии по алфавиту</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A0%D0%BE%D0%B4%D0%B8%D0%B2%D1%88%D0%B8%D0%B5%D1%81%D1%8F_%D0%B2_%D0%B4%D0%B5%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B5_%D0%90%D0%BB%D1%8C%D0%BF%D1%8B_%D0%92%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B3%D0%BE_%D0%9F%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D1%81%D0%B0" title="Категория:Родившиеся в департаменте Альпы Верхнего Прованса">Родившиеся в департаменте Альпы Верхнего Прованса</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A3%D0%BC%D0%B5%D1%80%D1%88%D0%B8%D0%B5_8_%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F" title="Категория:Умершие 8 октября">Умершие 8 октября</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A3%D0%BC%D0%B5%D1%80%D1%88%D0%B8%D0%B5_%D0%B2_1970_%D0%B3%D0%BE%D0%B4%D1%83" title="Категория:Умершие в 1970 году">Умершие в 1970 году</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9D%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D1%91%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BE%D1%80%D0%B4%D0%B5%D0%BD%D0%BE%D0%BC_%D0%9F%D0%BE%D1%87%D1%91%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BB%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0" title="Категория:Награждённые орденом Почётного легиона">Награждённые орденом Почётного легиона</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9F%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%B8_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83" title="Категория:Писатели по алфавиту">Писатели по алфавиту</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9F%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%B8_%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D0%B8_XX_%D0%B2%D0%B5%D0%BA%D0%B0" title="Категория:Писатели Франции XX века">Писатели Франции XX века</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B5_%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%B8" title="Категория:Французские писатели">Французские писатели</a></li></ul></div></div>
+</div>
+<ul class="book-article--links" data-hide-show="">
+<li class="book--share" data-ng-class="{_opened: isVisible()}">
+<i class="b-icon" data-ng-class="{'share-plus': !isVisible(), 'share-minus': isVisible()}"></i>
+<a class="book-share--toggle" data-ng-click="toggle()" href="" rel="nofollow">
+Поделиться книгой с друзьями
+</a>
+<div class="book-share--counters">
+<div class="ya-share-book-profile">
+<script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript"></script>
+<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharequickservices="vkontakte,twitter,odnoklassniki,gplus" data-yasharetheme="counter" data-yasharetype="small"></div>
 </div>
 </div>
-<div id="mw-navigation">
-<h2>Навигация</h2>
-<div id="mw-head">
-<nav aria-labelledby="p-personal-label" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" id="p-personal" role="navigation">
-<h3 class="vector-menu-heading" id="p-personal-label">
-<span class="vector-menu-heading-label">Персональные инструменты</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="pt-anonuserpage"><span title="Страница участника для моего IP">Вы не представились системе</span></li><li class="mw-list-item" id="pt-anontalk"><a accesskey="n" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D1%91_%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" title="Страница обсуждений для моего IP [n]"><span>Обсуждение</span></a></li><li class="mw-list-item" id="pt-anoncontribs"><a accesskey="y" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D0%B9_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4" title="Список правок, сделанных с этого IP-адреса [y]"><span>Вклад</span></a></li><li class="mw-list-item" id="pt-createaccount"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&amp;returnto=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE%2C+%D0%96%D0%B0%D0%BD" title="Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно."><span>Создать учётную запись</span></a></li><li class="mw-list-item" id="pt-login"><a accesskey="o" href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&amp;returnto=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE%2C+%D0%96%D0%B0%D0%BD" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]"><span>Войти</span></a></li></ul>
+</li>
+</ul>
+<div class="ba--edit-info edit-book-info-margin">
+<a class="fancybox-book-edit-info-form" data-ng-href="#!/#book-edit-info-form" rel="nofollow">
+Изменить информацию о книге
+</a>
+<span class="rarr">→</span>
 </div>
-</nav>
-<div id="left-navigation">
-<nav aria-labelledby="p-namespaces-label" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" id="p-namespaces" role="navigation">
-<h3 class="vector-menu-heading" id="p-namespaces-label">
-<span class="vector-menu-heading-label">Пространства имён</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="selected mw-list-item" id="ca-nstab-main"><a accesskey="c" href="/wiki/%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD" title="Просмотр основной страницы [c]"><span>Статья</span></a></li><li class="new mw-list-item" id="ca-talk"><a accesskey="t" href="/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit&amp;redlink=1" rel="discussion" title="Обсуждение основной страницы (страница отсутствует) [t]"><span>Обсуждение</span></a></li></ul>
+<a class="centered h3-top100-title" href="/books/top/">
+<div class="b-icon thebest"></div>Лучшие книги - Топ 100
+</a>
+<div class="aside-top100">
+<div class="a-top100-item">
+<div class="a-t100-number">95.</div>
+<div class="a-t100-image">
+<a href="/book/71973/" rel="nofollow">
+<img alt="Ведьмак (цикл)" src="/public/media/covers/2/f/2f4edd4f81955f744628057ef07eab48_100x0.jpg" title="Ведьмак (цикл)"/>
+</a>
 </div>
-</nav>
-<nav aria-labelledby="p-variants-label" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" id="p-variants" role="navigation">
-<input aria-haspopup="true" aria-labelledby="p-variants-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-variants" id="p-variants-checkbox" role="button" type="checkbox"/>
-<label aria-label="Изменить вариант языка" class="vector-menu-heading" id="p-variants-label">
-<span class="vector-menu-heading-label">русский</span>
-</label>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/71973/">Ведьмак (цикл)</a>
 </div>
-</nav>
+<div class="a-t100-rating">
+<strong>8.9</strong>
+(1355 оценок)
 </div>
-<div id="right-navigation">
-<nav aria-labelledby="p-views-label" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" id="p-views" role="navigation">
-<h3 class="vector-menu-heading" id="p-views-label">
-<span class="vector-menu-heading-label">Просмотры</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="selected mw-list-item" id="ca-view"><a href="/wiki/%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD"><span>Читать</span></a></li><li class="mw-list-item" id="ca-ve-edit"><a accesskey="v" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;veaction=edit" title="Редактировать данную страницу [v]"><span>Править</span></a></li><li class="collapsible mw-list-item" id="ca-edit"><a accesskey="e" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=edit" title="Эту статью можно изменять. Перед сохранением изменений, пожалуйста, нажмите кнопку предварительного просмотра для визуальной проверки результата [e]"><span>Править код</span></a></li><li class="mw-list-item" id="ca-history"><a accesskey="h" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=history" title="Журнал изменений страницы [h]"><span>История</span></a></li></ul>
 </div>
-</nav>
-<nav aria-labelledby="p-cactions-label" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" id="p-cactions" role="navigation" title="Больше возможностей">
-<input aria-haspopup="true" aria-labelledby="p-cactions-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-cactions" id="p-cactions-checkbox" role="button" type="checkbox"/>
-<label class="vector-menu-heading" id="p-cactions-label">
-<span class="vector-menu-heading-label">Ещё</span>
-</label>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"></ul>
 </div>
-</nav>
-<div class="vector-search-box-vue vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
-<div>
-<form action="/w/index.php" class="vector-search-box-form" id="searchform">
-<div class="vector-search-box-inner" data-search-loc="header-navigation" id="simpleSearch">
-<input accesskey="f" aria-label="Искать в Википедии" autocapitalize="sentences" class="vector-search-box-input" id="searchInput" name="search" placeholder="Искать в Википедии" title="Искать в Википедии [f]" type="search"/>
-<input name="title" type="hidden" value="Служебная:Поиск"/>
-<input class="searchButton mw-fallbackSearchButton" id="mw-searchButton" name="fulltext" title="Найти страницы, содержащие указанный текст" type="submit" value="Найти"/>
-<input class="searchButton" id="searchButton" name="go" title="Перейти к странице, имеющей в точности такое название" type="submit" value="Перейти"/>
+<div class="a-top100-item">
+<div class="a-t100-number">96.</div>
+<div class="a-t100-image">
+<a href="/book/58800/" rel="nofollow">
+<img alt="Часодеи. Часовое имя" src="/public/media/covers/d/c/dc6f1a582d6dd7331ab4f2de20f65056_100x0.jpg" title="Часодеи. Часовое имя"/>
+</a>
 </div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/58800/">Часодеи. Часовое имя</a>
+</div>
+<div class="a-t100-rating">
+<strong>9.0</strong>
+(319 оценок)
+</div>
+</div>
+</div>
+<div class="a-top100-item">
+<div class="a-t100-number">97.</div>
+<div class="a-t100-image">
+<a href="/book/63392/" rel="nofollow">
+<img alt="Знак четырех" src="/public/media/covers/c/e/ce392f441b1925bb0a703cbde3d9af49_100x0.jpg" title="Знак четырех"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/63392/">Знак четырех</a>
+</div>
+<div class="a-t100-rating">
+<strong>8.9</strong>
+(1312 оценок)
+</div>
+</div>
+</div>
+<div class="a-top100-item">
+<div class="a-t100-number">98.</div>
+<div class="a-t100-image">
+<a href="/book/7286/" rel="nofollow">
+<img alt="Пир стервятников" src="/public/media/covers/d/7/d7322792c98e74921554c1feb0c986e0_100x0.jpg" title="Пир стервятников"/>
+</a>
+</div>
+<div class="a-t100-desc">
+<div class="a-t100-title">
+<a href="/book/7286/">Пир стервятников</a>
+</div>
+<div class="a-t100-rating">
+<strong>8.9</strong>
+(1270 оценок)
+</div>
+</div>
+</div>
+<div class="a-t100--show-all"><a class="a-arrowed" href="/books/top/" rel="nofollow">Весь рейтинг</a></div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div id="book-edit-info-form">
+<div data-ng-controller="BookEditInfoCtrl" id="book_edit_info_form-book-edit-info-form-app">
+<div class="feedback-form-send" data-ng-show="showSendForm">
+<div class="feedback-head">
+<p>Редактирование информации:</p>
+<span class="book-edit-form-book-name">Искра и ветер</span>
+</div>
+<div class="feedback-body">
+<span class="book-edit-thanks">Спасибо, что помогаете делать наш сайт лучше!</span>
+<textarea class="generic-input-20" data-ng-model="message" placeholder="Напишите, что вы предлагаете исправить: название книги, обложку, автора, описание, год написания произведения, серию?" rows="10"></textarea>
+<a class="ui-20 show-filming" data-ng-click="addFilms=true" data-ng-hide="addFilms" href="" rel="nofollow">Указать экранизацию книги?</a>
+<input class="ui-20 show-filming" data-ng-model="filming" data-ng-show="addFilms" placeholder="Добавьте ссылку с кинопоиска на фильм, снятый по книге" type="text"/>
+<button class="btn-blue-20 send-book-info" data-ng-click="send()" data-ng-disabled="loading">
+Отправить
+</button>
+</div>
+</div>
+<div class="feedback-form-thanks" data-ng-hide="showSendForm">
+<div class="feedback-head">
+<span>Ваше сообщение отправлено</span>
+</div>
+<div class="feedback-body">
+<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
+нашими специалистами в самое ближайшее время.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="libr" id="libr">
+<div class="libr-lightbox">
+<div class="libr-heading">
+<span class="libr-title libr-dark-gray">Гарри Поттер и Орден Феникса</span>
+<ul class="libr-heading-icons">
+<li><a class="libr-ico-help" href="">Помощь</a></li>
+<li><a class="libr-ico-close" href="">Закрыть</a></li>
+</ul>
+</div>
+<form action="#" class="libr-form-librarian">
+<fieldset>
+<aside class="libr-sidebar">
+<div class="libr-buttons">
+<a class="libr-button libr-will-read" href="">Хочу прочитать</a>
+<a class="libr-button libr-now-reading" href="">Читаю</a>
+<a class="libr-button libr-already-read active" href="">Прочитал</a>
+</div>
+<div class="libr-check-area">
+<div class="libr-form-row">
+<input checked="" hidden="" id="print" type="checkbox">
+<label for="print">Печатное издание</label>
+</input></div>
+<div class="libr-form-row">
+<input hidden="" id="audiobook" type="checkbox"/>
+<label for="audiobook">Аудиокнигу</label>
+</div>
+<div class="libr-form-row">
+<input disabled="" hidden="" id="electronic-version" type="checkbox"/>
+<label for="electronic-version">Электронную версию</label>
+</div>
+<div class="libr-form-row">
+<input disabled="" hidden="" id="original-language" type="checkbox"/>
+<label for="original-language">На оригинальном языке</label>
+</div>
+</div>
+<ul class="libr-sidebar-icons">
+<li><a class="libr-ico-favorite" href="">В избранное</a></li>
+<li><a class="libr-ico-rss" href="">Подписаться на рецензии</a></li>
+</ul>
+</aside>
+<div class="libr-main-block">
+<ul class="libr-tabset">
+<li><a class="active" href="#libr-tab1"><span class="libr-inner libr-create-shelf">Добавить/Оценить</span></a></li>
+<li><a class="disabled" href="#libr-tab2"><span class="libr-inner libr-calendar">Указать период</span></a></li>
+<li><a href="#libr-tab3"><span class="libr-inner libr-edit-note">Добавить заметку</span></a></li>
+</ul>
+<div class="libr-tabs-content">
+<div id="libr-tab1">
+<div class="libr-content-block">
+<div class="libr-add-shelf-section">
+<div class="libr-heading-block">
+<strong class="libr-title">Добавить на полку:</strong>
+<a class="alignright" href="">Создать полку</a>
+</div>
+<div class="libr-select-block libr-popup-holder">
+<div class="libr-open">
+<input readonly="readonly" type="text" value="Выбрать созданную полку"/>
+</div>
+<div class="libr-popup">
+<ul>
+<li class="libr-red">
+<span class="libr-text-link">Хотите удалить полку?</span>
+<div class="libr-block-links"><a href="">Да</a> / <a href="">Нет</a></div>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Моя летнаяя полка</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Моя летнаяя полка</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Книги, которые не дочитал</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Книги от друзей</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Полка под флешмоб</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li class="selected">
+<a class="libr-text-link" href="">Для личностного роста</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Детям на ночь</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Коллекция 2015</a>
+<a class="libr-delete" href="">Удалить</a>
+</li>
+<li>
+<a class="libr-text-link" href="">Коллекция 2015 - добавление</a>
+<a class="libr-delete" href="">Удалить</a>
+<span class="libr-loader-white"></span>
+</li>
+<li class="libr-red">
+<span class="libr-loader-white"></span>
+<span class="libr-text-link">Удаление...</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="libr-heading-block">
+<strong class="libr-title">Поставить оценку:</strong>
+<span class="alignright">Средняя оценка 7.4</span>
+</div>
+<ul class="libr-rating">
+<li><a href="">1</a></li>
+<li><a href="">2</a></li>
+<li><a href="">3</a></li>
+<li><a href="">4</a></li>
+<li><a href="">5</a></li>
+<li><a href="">6</a></li>
+<li><a href="">7</a></li>
+<li><a href="">8</a></li>
+<li><a href="">9</a></li>
+<li><a href="">10</a></li>
+</ul>
+<div class="libr-text-row">Вероятно, Вы оцените книгу на: <span class="circle green">7</span></div>
+</div>
+</div>
+<div class="libr-bottom-block">
+<a class="libr-button alignright" href="">Сохранено</a>
+</div>
+</div>
+<div id="libr-tab2">
+<div class="libr-content-block">
+<div class="libr-calendar-section">
+<div class="libr-top-block-calendar">
+<div class="libr-arrows"></div>
+<span class="libr-text-period">Июль - Август, 2015</span>
+<div class="libr-select-block libr-popup-holder libr-select-year alignright">
+<div class="libr-open">
+<input type="text" value="2015"/>
+</div>
+<div class="libr-popup">
+<ul>
+<li><a class="text-link" href="">2015</a></li>
+<li><a class="text-link" href="">2016</a></li>
+<li><a class="text-link" href="">2017</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="libr-calendar-block"></div>
+</div>
+</div>
+<div class="libr-bottom-block">
+<div class="alignleft libr-calendar-bottom">
+<input type="text" value="20-07-2015"/>
+<span class="text">-</span>
+<input type="text" value="14-08-2015"/>
+<a class="libr-text" href="">Убрать период?</a>
+</div>
+<a class="libr-button alignright libr-blue" href="">Сохранить</a>
+</div>
+</div>
+<div id="libr-tab3">
+<div class="libr-content-block">
+<div class="libr-text-note">Заметки - это удобный и простой способ хранить нужную информацию <br/>или мысли о книге для личного использования. Ваша заметка будет видна только вам.</div>
+<textarea class="libr-textarea-scrollbar scrollbar-outer" cols="40" placeholder="Заметка..." rows="8"></textarea>
+</div>
+<div class="libr-bottom-block">
+<a class="libr-button alignright libr-blue" href="">Добавить</a>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
 </form>
 </div>
 </div>
 </div>
+<div id="libr"></div>
+<div id="feedback-form">
+<div data-ng-controller="FeedbackCtrl" id="feedback_form_feedback-form-app">
+<div class="feedback-form-send" data-ng-show="showSendForm">
+<div class="feedback-head">
+<span>Нашли ошибку?</span>
+<p>Расскажите нам о найденной ошибке, и мы сможем сделать наш сервис еще лучше.</p>
 </div>
-<div class="vector-legacy-sidebar" id="mw-panel">
-<div id="p-logo" role="banner">
-<a class="mw-wiki-logo" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу"></a>
+<div class="feedback-body">
+<div class="select-box _fr" id="feedback-form-select-box">
+<div class="select-box--current">
+<span>{[{ currentCategoryName }]}</span>
 </div>
-<nav aria-labelledby="p-navigation-label" class="vector-menu mw-portlet mw-portlet-navigation vector-menu-portal portal" id="p-navigation" role="navigation">
-<h3 class="vector-menu-heading" id="p-navigation-label">
-<span class="vector-menu-heading-label">Навигация</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="n-mainpage-description"><a accesskey="z" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу [z]"><span>Заглавная страница</span></a></li><li class="mw-list-item" id="n-content"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5"><span>Содержание</span></a></li><li class="mw-list-item" id="n-featured"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Статьи, считающиеся лучшими статьями проекта"><span>Избранные статьи</span></a></li><li class="mw-list-item" id="n-randompage"><a accesskey="x" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Посмотреть случайно выбранную страницу [x]"><span>Случайная статья</span></a></li><li class="mw-list-item" id="n-currentevents"><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Статьи о текущих событиях в мире"><span>Текущие события</span></a></li><li class="mw-list-item" id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_ru.wikipedia.org&amp;uselang=ru" title="Поддержите нас"><span>Пожертвовать</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-participation-label" class="vector-menu mw-portlet mw-portlet-participation vector-menu-portal portal" id="p-participation" role="navigation">
-<h3 class="vector-menu-heading" id="p-participation-label">
-<span class="vector-menu-heading-label">Участие</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="n-bug_in_article"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D1%85" title="Сообщить об ошибке в этой статье"><span>Сообщить об ошибке</span></a></li><li class="mw-list-item" id="n-introduction"><a href="/wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5"><span>Как править статьи</span></a></li><li class="mw-list-item" id="n-portal"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="О проекте, о том, чем здесь можно заниматься, а также — где что находится"><span>Сообщество</span></a></li><li class="mw-list-item" id="n-forum"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A4%D0%BE%D1%80%D1%83%D0%BC" title="Форум участников Википедии"><span>Форум</span></a></li><li class="mw-list-item" id="n-recentchanges"><a accesskey="r" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8" title="Список последних изменений [r]"><span>Свежие правки</span></a></li><li class="mw-list-item" id="n-newpages"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список недавно созданных страниц"><span>Новые страницы</span></a></li><li class="mw-list-item" id="n-help"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Место расположения Справки"><span>Справка</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-tb-label" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" id="p-tb" role="navigation">
-<h3 class="vector-menu-heading" id="p-tb-label">
-<span class="vector-menu-heading-label">Инструменты</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="t-whatlinkshere"><a accesskey="j" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D1%81%D1%8E%D0%B4%D0%B0/%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD" title="Список всех страниц, ссылающихся на данную [j]"><span>Ссылки сюда</span></a></li><li class="mw-list-item" id="t-recentchangeslinked"><a accesskey="k" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8/%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD" rel="nofollow" title="Последние изменения в страницах, на которые ссылается эта страница [k]"><span>Связанные правки</span></a></li><li class="mw-list-item" id="t-specialpages"><a accesskey="q" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BF%D0%B5%D1%86%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список служебных страниц [q]"><span>Служебные страницы</span></a></li><li class="mw-list-item" id="t-permalink"><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;oldid=117541584" title="Постоянная ссылка на эту версию страницы"><span>Постоянная ссылка</span></a></li><li class="mw-list-item" id="t-info"><a href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;action=info" title="Подробнее об этой странице"><span>Сведения о странице</span></a></li><li class="mw-list-item" id="t-cite"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A6%D0%B8%D1%82%D0%B0%D1%82%D0%B0&amp;page=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE%2C_%D0%96%D0%B0%D0%BD&amp;id=117541584&amp;wpFormIdentifier=titleform" title="Информация о том, как цитировать эту страницу"><span>Цитировать страницу</span></a></li><li class="mw-list-item" id="t-wikibase"><a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q177411" title="Ссылка на связанный элемент репозитория данных [g]"><span>Элемент Викиданных</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-coll-print_export-label" class="vector-menu mw-portlet mw-portlet-coll-print_export vector-menu-portal portal" id="p-coll-print_export" role="navigation">
-<h3 class="vector-menu-heading" id="p-coll-print_export-label">
-<span class="vector-menu-heading-label">Печать/экспорт</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="mw-list-item" id="coll-create_a_book"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F_%D0%BA%D0%BD%D0%B8%D0%B3&amp;bookcmd=book_creator&amp;referer=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE%2C+%D0%96%D0%B0%D0%BD" title="Создать книгу или коллекцию статей"><span>Создать книгу</span></a></li><li class="mw-list-item" id="coll-download-as-rl"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:DownloadAsPdf&amp;page=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE%2C_%D0%96%D0%B0%D0%BD&amp;action=show-download-screen" title="Скачать эту страницу как файл PDF"><span>Скачать как PDF</span></a></li><li class="mw-list-item" id="t-print"><a accesskey="p" href="/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;printable=yes" title="Версия этой страницы для печати [p]"><span>Версия для печати</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-wikibase-otherprojects-label" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects vector-menu-portal portal" id="p-wikibase-otherprojects" role="navigation">
-<h3 class="vector-menu-heading" id="p-wikibase-otherprojects-label">
-<span class="vector-menu-heading-label">В других проектах</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Jean_Giono" hreflang="en"><span>Викисклад</span></a></li></ul>
-</div>
-</nav>
-<nav aria-labelledby="p-lang-label" class="vector-menu mw-portlet mw-portlet-lang vector-menu-portal portal" id="p-lang" role="navigation">
-<h3 class="vector-menu-heading" id="p-lang-label">
-<span class="vector-menu-heading-label">На других языках</span>
-</h3>
-<div class="vector-menu-content">
-<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-an mw-list-item"><a class="interlanguage-link-target" href="https://an.wikipedia.org/wiki/Jean_Giono" hreflang="an" lang="an" title="Jean Giono — арагонский"><span>Aragonés</span></a></li><li class="interlanguage-link interwiki-ar mw-list-item"><a class="interlanguage-link-target" href="https://ar.wikipedia.org/wiki/%D8%AC%D8%A7%D9%86_%D8%AC%D9%8A%D9%88%D9%86%D9%88" hreflang="ar" lang="ar" title="جان جيونو — арабский"><span>العربية</span></a></li><li class="interlanguage-link interwiki-arz mw-list-item"><a class="interlanguage-link-target" href="https://arz.wikipedia.org/wiki/%D8%AC%D8%A7%D9%86_%D8%AC%D9%8A%D9%88%D9%86%D9%88" hreflang="arz" lang="arz" title="جان جيونو — Egyptian Arabic"><span>مصرى</span></a></li><li class="interlanguage-link interwiki-azb mw-list-item"><a class="interlanguage-link-target" href="https://azb.wikipedia.org/wiki/%DA%98%D8%A7%D9%86_%DA%98%DB%8C%D9%88%D9%86%D9%88" hreflang="azb" lang="azb" title="ژان ژیونو — South Azerbaijani"><span>تۆرکجه</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a class="interlanguage-link-target" href="https://bg.wikipedia.org/wiki/%D0%96%D0%B0%D0%BD_%D0%96%D0%B8%D0%BE%D0%BD%D0%BE" hreflang="bg" lang="bg" title="Жан Жионо — болгарский"><span>Български</span></a></li><li class="interlanguage-link interwiki-br mw-list-item"><a class="interlanguage-link-target" href="https://br.wikipedia.org/wiki/Jean_Giono" hreflang="br" lang="br" title="Jean Giono — бретонский"><span>Brezhoneg</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a class="interlanguage-link-target" href="https://ca.wikipedia.org/wiki/Jean_Giono" hreflang="ca" lang="ca" title="Jean Giono — каталанский"><span>Català</span></a></li><li class="interlanguage-link interwiki-ckb mw-list-item"><a class="interlanguage-link-target" href="https://ckb.wikipedia.org/wiki/%DA%98%D8%A7%D9%86_%DA%98%DB%8C%D9%88%D9%86%DB%86" hreflang="ckb" lang="ckb" title="ژان ژیونۆ — центральнокурдский"><span>کوردی</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a class="interlanguage-link-target" href="https://cs.wikipedia.org/wiki/Jean_Giono" hreflang="cs" lang="cs" title="Jean Giono — чешский"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a class="interlanguage-link-target" href="https://de.wikipedia.org/wiki/Jean_Giono" hreflang="de" lang="de" title="Jean Giono — немецкий"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a class="interlanguage-link-target" href="https://el.wikipedia.org/wiki/%CE%96%CE%B1%CE%BD_%CE%96%CE%B9%CE%BF%CE%BD%CF%8C" hreflang="el" lang="el" title="Ζαν Ζιονό — греческий"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a class="interlanguage-link-target" href="https://en.wikipedia.org/wiki/Jean_Giono" hreflang="en" lang="en" title="Jean Giono — английский"><span>English</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a class="interlanguage-link-target" href="https://eo.wikipedia.org/wiki/Jean_Giono" hreflang="eo" lang="eo" title="Jean Giono — эсперанто"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a class="interlanguage-link-target" href="https://es.wikipedia.org/wiki/Jean_Giono" hreflang="es" lang="es" title="Jean Giono — испанский"><span>Español</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a class="interlanguage-link-target" href="https://eu.wikipedia.org/wiki/Jean_Giono" hreflang="eu" lang="eu" title="Jean Giono — баскский"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a class="interlanguage-link-target" href="https://fa.wikipedia.org/wiki/%DA%98%D8%A7%D9%86_%DA%98%DB%8C%D9%88%D9%86%D9%88" hreflang="fa" lang="fa" title="ژان ژیونو — персидский"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a class="interlanguage-link-target" href="https://fi.wikipedia.org/wiki/Jean_Giono" hreflang="fi" lang="fi" title="Jean Giono — финский"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a class="interlanguage-link-target" href="https://fr.wikipedia.org/wiki/Jean_Giono" hreflang="fr" lang="fr" title="Jean Giono — французский"><span>Français</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a class="interlanguage-link-target" href="https://he.wikipedia.org/wiki/%D7%96%27%D7%90%D7%9F_%D7%96%27%D7%99%D7%95%D7%A0%D7%95" hreflang="he" lang="he" title="ז'אן ז'יונו — иврит"><span>עברית</span></a></li><li class="interlanguage-link interwiki-ht mw-list-item"><a class="interlanguage-link-target" href="https://ht.wikipedia.org/wiki/Jean_Giono" hreflang="ht" lang="ht" title="Jean Giono — гаитянский"><span>Kreyòl ayisyen</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a class="interlanguage-link-target" href="https://hu.wikipedia.org/wiki/Jean_Giono" hreflang="hu" lang="hu" title="Jean Giono — венгерский"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-hy mw-list-item"><a class="interlanguage-link-target" href="https://hy.wikipedia.org/wiki/%D4%BA%D5%A1%D5%B6_%D4%BA%D5%AB%D5%B8%D5%B6%D5%B8" hreflang="hy" lang="hy" title="Ժան Ժիոնո — армянский"><span>Հայերեն</span></a></li><li class="interlanguage-link interwiki-io mw-list-item"><a class="interlanguage-link-target" href="https://io.wikipedia.org/wiki/Jean_Giono" hreflang="io" lang="io" title="Jean Giono — идо"><span>Ido</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a class="interlanguage-link-target" href="https://it.wikipedia.org/wiki/Jean_Giono" hreflang="it" lang="it" title="Jean Giono — итальянский"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a class="interlanguage-link-target" href="https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%82%B8%E3%82%AA%E3%83%8E" hreflang="ja" lang="ja" title="ジャン・ジオノ — японский"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a class="interlanguage-link-target" href="https://ko.wikipedia.org/wiki/%EC%9E%A5_%EC%A7%80%EC%98%A4%EB%85%B8" hreflang="ko" lang="ko" title="장 지오노 — корейский"><span>한국어</span></a></li><li class="interlanguage-link interwiki-la mw-list-item"><a class="interlanguage-link-target" href="https://la.wikipedia.org/wiki/Ioannes_Giono" hreflang="la" lang="la" title="Ioannes Giono — латинский"><span>Latina</span></a></li><li class="interlanguage-link interwiki-mk mw-list-item"><a class="interlanguage-link-target" href="https://mk.wikipedia.org/wiki/%D0%96%D0%B0%D0%BD_%D0%96%D0%B8%D0%BE%D0%BD%D0%BE" hreflang="mk" lang="mk" title="Жан Жионо — македонский"><span>Македонски</span></a></li><li class="interlanguage-link interwiki-mzn mw-list-item"><a class="interlanguage-link-target" href="https://mzn.wikipedia.org/wiki/%DA%98%D8%A7%D9%86_%DA%98%DB%8C%D9%88%D9%86%D9%88" hreflang="mzn" lang="mzn" title="ژان ژیونو — мазандеранский"><span>مازِرونی</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a class="interlanguage-link-target" href="https://nl.wikipedia.org/wiki/Jean_Giono" hreflang="nl" lang="nl" title="Jean Giono — нидерландский"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-oc mw-list-item"><a class="interlanguage-link-target" href="https://oc.wikipedia.org/wiki/Joan_Giono" hreflang="oc" lang="oc" title="Joan Giono — окситанский"><span>Occitan</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a class="interlanguage-link-target" href="https://pl.wikipedia.org/wiki/Jean_Giono" hreflang="pl" lang="pl" title="Jean Giono — польский"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pms mw-list-item"><a class="interlanguage-link-target" href="https://pms.wikipedia.org/wiki/Jean_Giono" hreflang="pms" lang="pms" title="Jean Giono — Piedmontese"><span>Piemontèis</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a class="interlanguage-link-target" href="https://pt.wikipedia.org/wiki/Jean_Giono" hreflang="pt" lang="pt" title="Jean Giono — португальский"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a class="interlanguage-link-target" href="https://ro.wikipedia.org/wiki/Jean_Giono" hreflang="ro" lang="ro" title="Jean Giono — румынский"><span>Română</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a class="interlanguage-link-target" href="https://sh.wikipedia.org/wiki/Jean_Giono" hreflang="sh" lang="sh" title="Jean Giono — сербскохорватский"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-sk mw-list-item"><a class="interlanguage-link-target" href="https://sk.wikipedia.org/wiki/Jean_Giono" hreflang="sk" lang="sk" title="Jean Giono — словацкий"><span>Slovenčina</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a class="interlanguage-link-target" href="https://sv.wikipedia.org/wiki/Jean_Giono" hreflang="sv" lang="sv" title="Jean Giono — шведский"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a class="interlanguage-link-target" href="https://tr.wikipedia.org/wiki/Jean_Giono" hreflang="tr" lang="tr" title="Jean Giono — турецкий"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a class="interlanguage-link-target" href="https://uk.wikipedia.org/wiki/%D0%96%D0%B0%D0%BD_%D0%96%D1%96%D0%BE%D0%BD%D0%BE" hreflang="uk" lang="uk" title="Жан Жіоно — украинский"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a class="interlanguage-link-target" href="https://zh.wikipedia.org/wiki/%E8%AE%A9%C2%B7%E5%AD%A3%E5%A5%A5%E8%AF%BA" hreflang="zh" lang="zh" title="让·季奥诺 — китайский"><span>中文</span></a></li></ul>
-<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q177411#sitelinks-wikipedia" title="Править межъязыковые ссылки">Править ссылки</a></span></div>
-</div>
+<div class="dropdown-box _select">
+<nav class="dropdown-select-options">
+<a data-ng-click="selectCategory(-1, 'Без темы')" href="#" onclick="return false" rel="nofollow">Без темы</a>
+<a data-ng-click="selectCategory(7, 'Ошибка в информации о книге')" href="#" onclick="return false" rel="nofollow">
+Ошибка в информации о книге
+</a>
+<a data-ng-click="selectCategory(8, 'Плагиат')" href="#" onclick="return false" rel="nofollow">
+Плагиат
+</a>
+<a data-ng-click="selectCategory(9, 'Спойлер')" href="#" onclick="return false" rel="nofollow">
+Спойлер
+</a>
+<a data-ng-click="selectCategory(10, 'Другая ошибка')" href="#" onclick="return false" rel="nofollow">
+Другая ошибка
+</a>
+<a data-ng-click="selectCategory(11, 'Авторы')" href="#" onclick="return false" rel="nofollow">
+Авторы
+</a>
 </nav>
 </div>
 </div>
-<footer class="mw-footer" id="footer" role="contentinfo">
-<ul id="footer-info">
-<li id="footer-info-lastmod"> Эта страница в последний раз была отредактирована 30 октября 2021 в 12:05.</li>
-<li id="footer-info-copyright">Текст доступен по <a href="//ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" rel="license">лицензии Creative Commons Attribution-ShareAlike</a><a href="//creativecommons.org/licenses/by-sa/3.0/" rel="license" style="display:none;"></a>; в отдельных случаях могут действовать дополнительные условия.
-<span class="noprint">Подробнее см. <a href="//foundation.wikimedia.org/wiki/Terms_of_Use/ru">Условия использования</a>.</span><br/>
-Wikipedia® — зарегистрированный товарный знак некоммерческой организации <a href="//wikimediafoundation.org">Wikimedia Foundation, Inc.</a></li>
-</ul>
-<ul id="footer-places">
-<li id="footer-places-privacy"><a href="https://meta.wikimedia.org/wiki/Privacy_policy/ru">Политика конфиденциальности</a></li>
-<li id="footer-places-about"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5">Описание Википедии</a></li>
-<li id="footer-places-disclaimers"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Отказ от ответственности</a></li>
-<li id="footer-places-contact"><a href="//ru.wikipedia.org/wiki/Википедия:Контакты">Свяжитесь с нами</a></li>
-<li id="footer-places-mobileview"><a class="noprint stopMobileRedirectToggle" href="//ru.m.wikipedia.org/w/index.php?title=%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD&amp;mobileaction=toggle_view_mobile">Мобильная версия</a></li>
-<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Разработчики</a></li>
-<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/ru.wikipedia.org">Статистика</a></li>
-<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Заявление о куки</a></li>
-</ul>
-<ul class="noprint" id="footer-icons">
-<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img alt="Wikimedia Foundation" height="31" loading="lazy" src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88"/></a></li>
-<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" loading="lazy" src="/static/images/footer/poweredby_mediawiki_88x31.png" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88"/></a></li>
-</ul>
-</footer>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.425","walltime":"0.569","ppvisitednodes":{"value":1700,"limit":1000000},"postexpandincludesize":{"value":53022,"limit":2097152},"templateargumentsize":{"value":6273,"limit":2097152},"expansiondepth":{"value":20,"limit":100},"expensivefunctioncount":{"value":7,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1431,"limit":5000000},"entityaccesscount":{"value":6,"limit":400},"timingprofile":["100.00%  506.163      1 -total"," 70.02%  354.396      1 Шаблон:Писатель"," 61.35%  310.539      1 Шаблон:Карточка"," 25.70%  130.089      1 Шаблон:Библиоинформация"," 20.04%  101.420     11 Шаблон:Wikidata","  7.41%   37.530      1 Шаблон:Карточка/Викитека","  5.03%   25.451      1 Шаблон:Карточка/оригинал_имени","  3.08%   15.607      1 Шаблон:Карточка/Викицитатник","  2.93%   14.838      1 Шаблон:Удалить_теги","  2.21%   11.181      1 Шаблон:Wikidata/p569"]},"scribunto":{"limitreport-timeusage":{"value":"0.295","limit":"10.000"},"limitreport-memusage":{"value":9857846,"limit":52428800},"limitreport-logs":"Loaded datatype string of P742 from wikidata, consider passing datatype argument to formatProperty call or to Wikidata/config\nLoaded datatype wikibase-item of P136 from wikidata, consider passing datatype argument to formatProperty call or to Wikidata/config\nLoaded datatype wikibase-item of P6886 from wikidata, consider passing datatype argument to formatProperty call or to Wikidata/config\n"},"cachereport":{"origin":"mw2313","timestamp":"20230307124409","ttl":1814400,"transientcontent":false}}});});</script>
-<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"\u0416\u0438\u043e\u043d\u043e, \u0416\u0430\u043d","url":"https:\/\/ru.wikipedia.org\/wiki\/%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD","sameAs":"http:\/\/www.wikidata.org\/entity\/Q177411","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q177411","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"\u0424\u043e\u043d\u0434 \u0412\u0438\u043a\u0438\u043c\u0435\u0434\u0438\u0430","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2009-05-28T06:57:09Z","dateModified":"2021-10-30T12:05:10Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/09\/Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg","headline":"\u0444\u0440\u0430\u043d\u0446\u0443\u0437\u0441\u043a\u0438\u0439 \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u044c"}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"\u0416\u0438\u043e\u043d\u043e, \u0416\u0430\u043d","url":"https:\/\/ru.wikipedia.org\/wiki\/%D0%96%D0%B8%D0%BE%D0%BD%D0%BE,_%D0%96%D0%B0%D0%BD","sameAs":"http:\/\/www.wikidata.org\/entity\/Q177411","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q177411","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"\u0424\u043e\u043d\u0434 \u0412\u0438\u043a\u0438\u043c\u0435\u0434\u0438\u0430","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2009-05-28T06:57:09Z","dateModified":"2021-10-30T12:05:10Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/09\/Eug%C3%A8ne_Martel_Portrait_de_Jean_Giono_en_1937.jpg","headline":"\u0444\u0440\u0430\u043d\u0446\u0443\u0437\u0441\u043a\u0438\u0439 \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u044c"}</script>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":154,"wgHostname":"mw2413"});});</script>
+<span class="feedback-category-text">Категория:</span>
+<textarea class="generic-input-20" data-ng-model="message" placeholder="Опишите ошибку..." rows="10"></textarea>
+<button class="btn-blue-20" data-ng-click="send()" data-ng-disabled="loading">
+Отправить
+</button>
+</div>
+</div>
+<div class="feedback-form-thanks" data-ng-hide="showSendForm">
+<div class="feedback-head">
+<span>Ваше сообщение отправлено</span>
+</div>
+<div class="feedback-body">
+<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
+нашими специалистами в самое ближайшее время.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="help-readly">
+<div>
+<span class="help-readly--title">Помоги Ридли!</span>
+<div class="help-readly--text">
+Мы вкладываем душу в Ридли. Спасибо, что вы с нами! Расскажите о нас друзьям, чтобы они могли присоединиться к нашей дружной семье книголюбов.
+</div>
+<div class="social">
+<div class="social-buttons">
+<a class="vk" href="https://vk.com/share.php?url=http%3A%2F%2Freadly.ru&amp;title=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru&amp;image=" rel="nofollow" target="_blank" title="Вконтакте"></a>
+<a class="tw" href="https://twitter.com/intent/tweet?status=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Twitter"></a>
+<a class="gp" href="https://plus.google.com/share?url=http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Google+"></a>
+<a class="ok" href="https://www.ok.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=http%3A%2F%2Freadly.ru&amp;st.comments=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru" rel="nofollow" target="_blank" title="Odnoklassniki"></a>
+</div>
+</div>
+</div>
+</div>
+<script src="/public/static/dist/js/readly.js?b8cabe27e37a" type="text/javascript"></script>
+<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.librarianEmitter.js" type="text/javascript"></script>
+<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
+<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
+<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.bookTimelineBox.js"></script>
+<script>
+
+if (typeof React === 'undefined') throw new Error('Cannot find `React` global variable. Have you added a script element to this page which points to React?');
+if (typeof Readly.bookTimelineBox === 'undefined') throw new Error('Cannot find component variable `Readly.bookTimelineBox`');
+(function(React, component, containerId) {
+  var props = {"perPage": 5, "bookId": 7340, "initialParams": {"comment_count": 3, "object_type": "reviews", "book_id": 7340}, "initialItems": [{"rating": {"positive": 3, "negative": 0}, "hashtags": [], "text": "<p>\u00ab\u2026\u0412\u0435\u0442\u0435\u0440, \u043a\u043e\u0433\u0434\u0430-\u0442\u043e \u043f\u043e\u0439\u043c\u0430\u043d\u043d\u044b\u0439 \u0437\u0430 \u0445\u0432\u043e\u0441\u0442, \u0432\u0441\u0435-\u0442\u0430\u043a\u0438 \u0434\u043e\u043d\u0435\u0441 \u0432\u0441\u0435\u0445 \u043d\u0430\u0441 \u043f\u043e\u0447\u0442\u0438 \u0434\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0439 \u0447\u0435\u0440\u0442\u044b.\u00bb<br />\u041e\u0445 \u0443\u0436 \u044d\u0442\u043e\u0442 \u0432\u0435\u0442\u0435\u0440, \u043e\u043d \u043d\u0435\u0441\u0435\u0442 \u043d\u0430\u0448\u0438\u0445 \u0433\u0435\u0440\u043e\u0435\u0432 \u043a\u0430\u043a \u043f\u0443\u0448\u0438\u043d\u043a\u0438, \u0442\u043e \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u043d\u0430 \u0432\u0440\u0435\u043c\u044f \u0432 \u043f\u043e\u043a\u043e\u0435, \u0442\u043e \u043f\u043e\u0440\u044b\u0432\u0430\u043c\u0438 \u043a\u0438\u0434\u0430\u0435\u0442 \u0438\u0437 \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u0432 \u0441\u0442\u043e\u0440\u043e\u043d\u0443, \u043d\u043e \u0432\u0441\u0451 \u0440\u0430\u0432\u043d\u043e \u043d\u0435\u0441\u0435\u0442 \u0432\u043f\u0435\u0440\u0435\u0434. <br />\u041a\u043d\u0438\u0433\u0430 \u043c\u043d\u0435 \u043f\u043e\u043a\u0430\u0437\u0430\u043b\u0430\u0441\u044c \u043d\u0430\u043c\u043d\u043e\u0433\u043e \u0434\u0438\u043d\u0430\u043c\u0438\u0447\u043d\u0435\u0435 \u0442\u0440\u0435\u0442\u044c\u0435\u0439. \u0418 \u043d\u0435\u043e\u0436\u0438\u0434\u0430\u043d\u043d\u044b\u0445 (\u043c\u0430\u043b\u043e\u043e\u0436\u0438\u0434\u0430\u0435\u043c\u044b\u0445) \u043c\u043e\u043c\u0435\u043d\u0442\u043e\u0432 \u0445\u0432\u0430\u0442\u0430\u043b\u043e. \u0425\u043e\u0442\u044f \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0442\u0440\u0430\u0433\u0438\u0447\u043d\u044b\u0445 \u043c\u043e\u043c\u0435\u043d\u0442\u043e\u0432, \u0442\u0435\u0440\u044f\u043b\u0438\u0441\u044c \u043d\u0430 \u0444\u043e\u043d\u0435 \u0432\u0442\u043e\u0440\u043e\u0439 \u043a\u043d\u0438\u0433\u0438. \u0412\u043e \u0447\u0442\u043e-\u0442\u043e \u043d\u0435 \u043f\u043e\u0432\u0435\u0440\u0438\u043b\u043e\u0441\u044c, \u043f\u0440\u043e \u0447\u0442\u043e-\u0442\u043e \u0431\u044b\u043b\u043e \u043b\u0438\u0448\u044c \u043c\u0435\u043b\u044c\u043a\u043e\u043c. \u041d\u0435 \u043e\u0431\u043e\u0448\u043b\u043e\u0441\u044c \u0438 \u0431\u0435\u0437 \u043f\u043e\u0442\u0435\u0440\u044c \u0441\u0440\u0435\u0434\u0438 \u0433\u0435\u0440\u043e\u0435\u0432 (\u0430 \u044f \u043e\u0434\u043d\u043e\u043c\u0443 \u043e\u0447\u0435\u043d\u044c \u0441\u0438\u043c\u043f\u0430\u0442\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043b\u0430 \u0422.\u0422) \u041d\u043e \u0431\u043e\u043b\u044c\u0448\u0438\u043d\u0441\u0442\u0432\u043e \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u0445 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0435\u0439 \u0434\u043e\u0436\u0438\u0432\u0443\u0442 \u0434\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446, \u0445\u043e\u0442\u044c \u0438 \u043d\u0435 \u0431\u0435\u0437 \u0442\u0440\u0443\u0434\u0430. \u0410 \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0434\u0430\u0436\u0435 \u043f\u043e\u0437\u043d\u0430\u044e\u0442 \u0441\u0430\u043c\u0443\u044e \u0433\u043b\u0430\u0432\u043d\u0443\u044e \u0441\u0438\u043b\u0443, \u043d\u0430 \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u0438\u0437\u043d\u0430\u0447\u0430\u043b\u044c\u043d\u043e \u0441\u0442\u0440\u043e\u0438\u043b\u0430\u0441\u044c \u0425\u0430\u0440\u0430 \u2013 \u00ab\u0414\u043e\u043c \u041b\u044e\u0431\u0432\u0438\u00bb.<br />\u0427\u0442\u043e \u043f\u043e\u0440\u0430\u0434\u043e\u0432\u0430\u043b\u043e, \u041d\u044d\u0441\u0441 \u043d\u0435 \u0431\u044b\u043b \u0432 \u043a\u0430\u0436\u0434\u043e\u0439 \u0431\u0438\u0442\u0432\u0435 \u00ab\u0433\u0435\u0440\u043e\u0435\u043c\u00bb, \u0445\u043e\u0442\u044f (\u0447\u0442\u043e \u0432\u0435\u0441\u044c\u043c\u0430 \u0437\u0430\u0431\u0430\u0432\u043d\u043e, \u0443\u0447\u0438\u0442\u044b\u0432\u0430\u044f \u0441\u043f\u043e\u0440\u044b \u0441 \u0428\u0435\u043d\u043e\u043c \u0432\u0441\u0451 \u0432 \u0442\u043e\u0439 \u0436\u0435 \u0432\u0442\u043e\u0440\u043e\u0439 \u0447\u0430\u0441\u0442\u0438) \u043f\u043e\u0432\u043e\u044e\u0435\u0442 \u043d\u0430\u0448 \u043b\u044e\u0431\u0438\u043c\u044b\u0439 \u0433\u0438\u044f\u043d \u0432 \u0430\u0440\u043c\u0438\u0438)))<br />\u0427\u0442\u043e \u0436\u0435 \u043a\u0430\u0441\u0430\u0435\u0442\u0441\u044f \u043e\u043a\u043e\u043d\u0447\u0430\u043d\u0438\u044f \u0432\u043e\u0439\u043d\u044b\u2026 \u044f \u0434\u0443\u043c\u0430\u043b\u0430, \u0435\u0441\u043b\u0438 \u0447\u0435\u0441\u0442\u043d\u043e, \u0447\u0442\u043e \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b \u0431\u0443\u0434\u0443\u0442 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0431\u043e\u043b\u0435\u0435 \u044f\u0440\u043a\u043e \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u043d\u044b\u0435 (\u0434\u043b\u044f \u0438\u0441\u043a\u0440\u044b), \u0445\u043e\u0442\u044f \u0438 \u0432\u044b\u0448\u043b\u043e \u043f\u0440\u0430\u0432\u0434\u043e\u043f\u043e\u0434\u043e\u0431\u043d\u0435\u0435, \u0447\u0435\u043c \u043c\u043d\u0435 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u043b\u043e\u0441\u044c.<br />\u0412 \u044d\u0442\u043e\u0439 \u0447\u0430\u0441\u0442\u0438 \u0431\u044b\u043b\u043e \u043d\u0435\u043c\u0430\u043b\u043e \u00ab\u043f\u0440\u043e\u0432\u0430\u043b\u043e\u0432\u00bb \u0432 \u043f\u0440\u043e\u0448\u043b\u043e\u0435, \u0447\u0442\u043e \u043f\u043e\u0437\u0432\u043e\u043b\u0438\u043b\u043e \u0435\u0449\u0451 \u0431\u043e\u043b\u044c\u0448\u0435 \u0441\u0431\u043b\u0438\u0437\u0438\u0442\u044c\u0441\u044f \u0441 \u0433\u0435\u0440\u043e\u044f\u043c\u0438 (\u044f, \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u043d\u0430\u0447\u0430\u043b\u0430 \u0441\u043e\u0447\u0443\u0432\u0441\u0442\u0432\u043e\u0432\u0430\u0442\u044c \u0422\u0438\u0444). \u041d\u043e \u044d\u0442\u043e \u043d\u0435 \u0443\u043c\u0435\u043d\u044c\u0448\u0430\u043b\u043e \u0434\u0438\u043d\u0430\u043c\u0438\u0447\u043d\u043e\u0441\u0442\u0438, \u043d\u0430\u0432\u0435\u0440\u043d\u043e\u0435, \u043f\u043e\u0442\u043e\u043c\u0443, \u0447\u0442\u043e \u043f\u0440\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u043d\u0435 \u0431\u044b\u043b\u043e \u00ab\u0431\u044b\u0442\u043e\u0432\u044b\u0445 \u043c\u0435\u043b\u043e\u0447\u0435\u0439\u00bb \u0438 \u0432 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0435 \u0432 \u043a\u043d\u0438\u0433\u0435 \u0437\u0430\u0445\u0432\u0430\u0447\u0435\u043d \u0434\u043e\u0432\u043e\u043b\u044c\u043d\u043e-\u0442\u0430\u043a\u0438 \u0431\u043e\u043b\u044c\u0448\u043e\u0439 \u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0439 \u043f\u0435\u0440\u0438\u043e\u0434.<br />\u0410 \u0443\u0436 \u043a\u0430\u043a\u0438\u0435 \u0431\u0443\u0434\u0443\u0442 \u0440\u0430\u0437\u0433\u0430\u0434\u0430\u043d\u044b \u0442\u0430\u0439\u043d\u044b\u2026 \u0412\u043e\u0442 \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0432\u044b \u0434\u0443\u043c\u0430\u0435\u0442\u0435, \u0447\u0442\u043e \u0437\u043d\u0430\u0435\u0442\u0435 \u0432\u0441\u0435 \u0441\u0435\u043a\u0440\u0435\u0442\u044b \u041b\u0430\u044d\u043d?))) \u0445\u0435\u0445\u0435\u0445\u0435\u2026. \u0410\u0432\u0442\u043e\u0440\u0443 \u0435\u0449\u0435 \u043d\u0430\u0439\u0434\u0435\u0442\u0441\u044f, \u0447\u0435\u043c \u0432\u0430\u0441 \u0443\u0434\u0438\u0432\u0438\u0442\u044c.<br />\u0414\u0443\u043c\u0430\u044e, \u0432\u0441\u0435\u0445 \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043e\u0432\u0430\u043b \u043a\u0442\u043e \u0442\u0430\u043a\u043e\u0439 \u0413\u0430\u0440\u0440\u0435\u0442?) \u0443 \u043c\u0435\u043d\u044f \u0431\u044b\u043b\u043e \u0434\u0432\u0430 \u043f\u0440\u0435\u0434\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044f, \u043e\u0434\u043d\u043e \u0440\u0430\u0437\u0432\u0435\u044f\u043b\u043e\u0441\u044c \u043a \u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0435 \u043a\u043d\u0438\u0433\u0438, \u0432\u0442\u043e\u0440\u043e\u0435, \u043e\u043a\u0430\u0437\u0430\u043b\u043e\u0441\u044c \u0441\u043e\u0437\u0432\u0443\u0447\u043d\u043e \u0441 \u043f\u0440\u0435\u0434\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435\u043c \u041d\u044d\u0441\u0441\u0430, \u043d\u043e \u0442\u043e\u0436\u0435 \u043d\u0435 \u0432\u0435\u0440\u043d\u043e, \u0430 \u043a\u043e\u0433\u0434\u0430 \u0432\u044b \u0443\u0437\u043d\u0430\u0435\u0442\u0435 \u043a\u0442\u043e \u043d\u0430 \u0441\u0430\u043c\u043e\u043c \u0434\u0435\u043b\u0435 \u0442\u043e\u0442, \u043d\u0430 \u043a\u043e\u0433\u043e \u043c\u044b \u043f\u043e\u0434\u0443\u043c\u0430\u043b\u0438\u2026 \u041d\u043e \u0432\u044b\u0448\u043b\u043e \u043a\u0440\u0430\u0441\u0438\u0432\u043e)) </p>\n\n<p>\u00ab\u2013 \u0418 \u0447\u0442\u043e \u0442\u0435\u043f\u0435\u0440\u044c? \u0425\u0430\u0440\u0430 \u0441\u043f\u0430\u0441\u0435\u043d\u0430?<br />\u2013\u041d\u0443, \u043f\u043e \u043a\u0440\u0430\u0439\u043d\u0435\u0439 \u043c\u0435\u0440\u0435, \u0443 \u043d\u0435\u0435 \u043f\u043e\u044f\u0432\u0438\u043b\u0441\u044f \u043a\u0430\u043a\u043e\u0439-\u043d\u0438\u043a\u0430\u043a\u043e\u0439, \u0430 \u0448\u0430\u043d\u0441. \u041e\u0434\u043d\u043e \u043c\u043e\u0433\u0443 \u0441\u043a\u0430\u0437\u0430\u0442\u044c \u0442\u043e\u0447\u043d\u043e \u2013 \u044d\u0442\u0430 \u0438\u0441\u0442\u043e\u0440\u0438\u044f \u043f\u043e\u0434\u043e\u0448\u043b\u0430 \u043a \u043a\u043e\u043d\u0446\u0443. \u041d\u043e \u0431\u0443\u0434\u0443\u0442 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435. \u0411\u044b\u0432\u0430\u0439, \u0421\u0435\u0440\u044b\u0439, \u0438 \u0434\u0435\u0440\u0436\u0438\u0441\u044c \u0432\u0435\u0442\u0440\u0430. \u041e\u043d \u0432\u044b\u0432\u0435\u0434\u0435\u0442\u2026\u00bb<br />P.S. \u043d\u0430\u0434\u0435\u044e\u0441\u044c \u043c\u043d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u0437\u0430\u043f\u0443\u0442\u0430\u0442\u044c \u043d\u0435 \u043c\u0435\u043d\u044c\u0448\u0435 \u0447\u0435\u043c \u043d\u0430\u0441\u043f\u043e\u0439\u043b\u0435\u0440\u0438\u0442\u044c))<br /></p>", "created_at": "2021-01-26T11:53:49", "object_type": 18, "updated_at": "2021-01-26T11:53:49", "object_id": 75921, "comment_count": 0, "book": {"id": 7340, "name": "\u0418\u0441\u043a\u0440\u0430 \u0438 \u0432\u0435\u0442\u0435\u0440", "cover": "covers/4/1/414d7c9b069140d61b4f0c57477e8ec6.jpg", "authors": [{"name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439  \u041f\u0435\u0445\u043e\u0432", "url": "/author/3793/", "id": 3793}], "url": "/book/7340/"}, "user": {"id": 95850, "name": "\u0410\u043b\u0435\u043d\u0430 (@bepeck)", "avatar": "avatars/2/3/236c2aac06e86f9b67fae6d56b6c0c5e.jpg", "url": "/user/95850/", "username": "Bepeck", "gender": 0}, "has_spoilers": false, "review_type": 1, "rated_users": {"positive": [7, 8379, 23315], "negative": []}, "comments": []}, {"book_rating": 9, "hashtags": ["\u0422\u0430\u0439\u043d\u044b\u0435_\u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430_\u0420\u0438\u0434\u043b\u04384"], "rating": {"positive": 1, "negative": 0}, "text": "<p>\u041b\u044e\u0431\u043b\u044e \u044f \u041f\u0435\u0445\u043e\u0432\u0430. \u041d\u0430\u0442\u043a\u043d\u0443\u043b\u0430\u0441\u044c \u043e\u0434\u0438\u043d \u0440\u0430\u0437 (\u043a\u0430\u0436\u0435\u0442\u0441\u044f, \u0447\u0442\u043e \u044d\u0442\u043e \u0431\u044b\u043b\u043e \u0432 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0430\u0446\u0438\u044f\u0445 \u0434\u043b\u044f \u043c\u0435\u043d\u044f \u043e\u0442 Readly), \u0442\u0430\u043a \u0432 \u043e\u0431\u0449\u0435\u043c \u0432\u0437\u0430\u0445\u043b\u0435\u0431 \u044f \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043b\u0430 \u0432\u0441\u0435, \u0447\u0442\u043e \u0441\u043c\u043e\u0433\u043b\u0430 \u0434\u043e\u0441\u0442\u0430\u0442\u044c. <br />\u0412 \u0440\u0435\u0446\u0435\u043d\u0437\u0438\u0438 \u043d\u0430 \u044d\u0442\u0443 \u043a\u043d\u0438\u0433\u0443, \u044f \u043e\u043f\u0438\u0448\u0443 \u043f\u043e\u0436\u0430\u043b\u0443\u0439, \u0441\u0432\u043e\u0435 \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u0435 \u043e \u0441\u0435\u0440\u0438\u0438. \u041f\u043e\u043c\u0438\u043c\u043e \u043c\u043e\u0435\u0439 \u0440\u0435\u0446\u0435\u043d\u0437\u0438\u0438 \u043d\u0430 \u0441\u0435\u0440\u0438\u044e, \u043d\u0430 \u043f\u0435\u0440\u0432\u043e\u0439 \u043a\u043d\u0438\u0433\u0435 \u0434\u0440\u0443\u0433\u0438\u0435 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u0438 \u0442\u043e\u0436\u0435 \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u043b\u0438 \u0440\u0435\u0446\u0435\u043d\u0437\u0438\u0438 \u043e \u0441\u0435\u0440\u0438\u0438, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u044e \u043e\u0437\u043d\u0430\u043a\u043e\u043c\u0438\u0442\u044c\u0441\u044f \u0438 \u0441 \u043d\u0438\u043c\u0438 (<a href=\"http://readly.ru/book/7329/\">\u0418\u0441\u043a\u0430\u0442\u0435\u043b\u0438 \u0432\u0435\u0442\u0440\u0430</a>), \u0438\u0431\u043e \u043c\u043d\u0435\u043d\u0438\u044f \u0440\u0430\u0441\u0445\u043e\u0434\u044f\u0442\u0441\u044f \u0438 \u043d\u0430 \u0432\u043a\u0443\u0441 \u0438 \u0446\u0432\u0435\u0442 \u0432\u0441\u0435 \u0444\u043b\u043e\u043c\u0430\u0441\u0442\u0435\u0440\u044b \u0440\u0430\u0437\u043d\u044b\u0435.<br />\u0421\u0435\u0440\u0438\u044f \u0438\u0437 \u0440\u0430\u0437\u0440\u044f\u0434\u0430 \u0442\u0438\u043f\u0438\u0447\u043d\u043e\u0433\u043e \u0444\u0435\u043d\u0442\u0435\u0437\u0438 (\u0443 \u041f\u0435\u0445\u043e\u0432\u0430 \u043d\u0435 \u0432\u0441\u0435 \u0442\u0430\u043a\u043e\u0435), \u0447\u0442\u043e \u0441\u043b\u0435\u0433\u043a\u0430 \u0443\u043c\u0435\u043d\u044c\u0448\u0430\u0435\u0442 \u0448\u0430\u043d\u0441\u044b \u0432\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u0442\u044c \u0441\u0435\u0440\u0438\u044e \u0432 \u0441\u043f\u0438\u0441\u043a\u0435 \u201c\u043b\u044e\u0431\u043e\u0432\u044c \u0432\u0441\u0435\u0439 \u0436\u0438\u0437\u043d\u0438\u201d. \u041d\u043e \u0441\u0435\u0440\u0438\u044f \u043e\u0447\u0435\u043d\u044c \u0445\u043e\u0440\u043e\u0448\u043e \u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044f. \u041f\u043e\u0436\u0430\u043b\u0443\u0439 \u043d\u0430 \u0440\u0430\u0432\u043d\u0435 \u0441 \u0434\u0440\u0443\u0433\u0438\u043c\u0438 \u0440\u0435\u0446\u0435\u043d\u0437\u0435\u043d\u0442\u0430\u043c\u0438 \u0441\u0440\u0430\u0432\u043d\u044e \u0441\u0435\u0440\u0438\u044e \u0441 \u0425\u0440\u043e\u043d\u0438\u043a\u0430\u043c\u0438 \u0421\u0438\u0430\u043b\u044b. \u0422\u0430\u043a \u0432\u043e\u0442 \u043f\u043e \u0435\u0441\u043b\u0438 \u0432 \u0425\u0440\u043e\u043d\u0438\u043a\u0430\u0445 \u0431\u044b\u043b \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436 \u0430 \u0432\u0441\u0435 \u043e\u0441\u0442\u0430\u043b\u044c\u043d\u044b\u0435 \u0442\u0440\u0435\u0442\u044c\u0435\u0441\u0442\u0435\u043f\u0435\u043d\u043d\u044b\u0435, \u0442\u043e \u0442\u0443\u0442 \u043d\u0435 \u0433\u043b\u0430\u0432\u043d\u044b\u0435 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0438 \u0440\u0430\u0441\u043a\u0440\u044b\u0442\u044b \u043a\u0443\u0434\u0430 \u0431\u043e\u043b\u044c\u0448\u0435, \u0447\u0442\u043e \u043c\u043d\u0435 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e \u0438 \u043f\u043e\u043d\u0440\u0430\u0432\u0438\u043b\u043e\u0441\u044c. <br />\u041f\u043e\u043d\u0440\u0430\u0432\u0438\u043b\u043e\u0441\u044c \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u201c\u0432\u0435\u0440\u0445\u0443\u0448\u043a\u0438\u201d \u043e\u0431\u043e\u0438\u0445 \u043b\u0430\u0433\u0435\u0440\u0435\u0439. \u0414\u0430\u0436\u0435 \u0438\u043d\u0442\u0440\u0438\u0433\u0438 \u0440\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u044b \u043f\u0440\u043e\u0441\u0442\u043e \u0438 \u0432 \u0442\u043e \u0436\u0435 \u0432\u0440\u0435\u043c\u044f \u0441\u0442\u0438\u043b\u044c\u043d\u0435\u043d\u044c\u043a\u043e, \u0447\u0442\u043e \u043b\u0438. \u0427\u0435\u043c-\u0442\u043e, \u0435\u0441\u043b\u0438 \u0447\u0435\u0441\u0442\u043d\u043e, \u043e\u0431\u0449\u0435\u043f\u0440\u0438\u043d\u044f\u0442\u044b\u0435 \u0432 \u043c\u0438\u0440\u0435 \u0437\u043b\u043e\u0434\u0435\u0438 \u043d\u0430\u043f\u043e\u043c\u043d\u0438\u043b\u0438 \u201c\u0425\u0440\u043e\u043d\u0438\u043a\u0438 \u0427\u0435\u0440\u043d\u043e\u0433\u043e \u041e\u0442\u0440\u044f\u0434\u0430\u201d \u0432 \u043f\u0435\u0440\u0432\u044b\u0445 \u043a\u043d\u0438\u0433\u0430\u0445. <br />\u041d\u0435 \u043f\u043e\u043d\u0440\u0430\u0432\u0438\u043b\u0438\u0441\u044c \u043e\u0442\u0441\u044b\u043b\u043a\u0438 \u043a \u201c\u0447\u0435\u043c\u0443-\u0442\u043e \u0431\u043e\u043b\u044c\u0448\u0435\u043c\u0443\u201d, \u043d\u043e \u0435\u0441\u043b\u0438 \u0432 \u0425\u0440\u043e\u043d\u0438\u043a\u0430\u0445 \u0421\u0438\u0430\u043b\u044b \u0434\u043e\u0445\u043e\u0434\u0438\u043b\u043e \u0434\u043e \u0444\u0435\u0439\u0441\u043f\u0430\u043b\u043c\u0430, \u0442\u043e \u0442\u0443\u0442 \u0432\u0441\u0435 \u0436\u0435 \u0430\u0432\u0442\u043e\u0440 \u0431\u044b\u043b \u0441\u0434\u0435\u0440\u0436\u0430\u043d\u043d\u0435\u0439. \u0412\u0432\u0435\u0434\u0435\u043d\u043d\u044b\u0435 \u201c\u0447\u0438\u0441\u0442\u044b\u0435 \u0434\u0443\u0448\u043e\u0439\u201d \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0438 \u0442\u0438\u043f\u0430 \u0428\u0435\u043d\u0430 \u0438 \u0435\u0449\u0435 \u043e\u0434\u043d\u043e\u0439 \u0434\u0435\u0432\u0443\u0448\u043a\u0438 (\u0434\u0430\u0436\u0435 \u0441 \u0443\u0447\u0435\u0442\u043e\u043c \u043f\u043e\u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0445 \u0438\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 \u0438 \u0440\u0435\u0448\u0435\u043d\u0438\u0439) \u0440\u0430\u0437\u0434\u0440\u0430\u0436\u0430\u043b\u0438 \u0431\u0435\u0437\u043c\u0435\u0440\u043d\u043e. \u041b\u0430\u0434\u043d\u043e \u043e\u0434\u0438\u043d \u0438\u0434\u0438\u043e\u0442, \u043a\u043e\u0442\u043e\u0440\u043e\u043c\u0443 \u0441 \u0442\u0430\u043a\u0438\u043c\u0438 \u0432\u0437\u0433\u043b\u044f\u0434\u0430\u043c\u0438  \u0432 \u0442\u0430\u043a\u0438\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u0432\u044b\u0436\u0438\u0442\u044c, \u043d\u043e \u043a\u043e\u0433\u0434\u0430 \u0438\u0445 \u0431\u043e\u043b\u044c\u0448\u0435, \u0440\u0435\u0430\u043b\u044c\u043d\u043e \u043f\u043e\u0440\u0442\u0438\u0442 \u043a\u0430\u0440\u0442\u0438\u043d\u0443. \u0417\u0430\u0442\u043e \u0432\u0441\u0435 \u043a\u043e\u0440\u044b\u0441\u0442\u043d\u044b\u0435 \u0438 \u043f\u043b\u043e\u0445\u0438\u0435 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0438 \u0432\u044b\u0433\u043b\u044f\u0434\u044f\u0442 \u043a\u0443\u0434\u0430 \u043a\u0430\u043a \u043b\u0443\u0447\u0448\u0435: \u0432 \u0438\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f\u0445 \u043f\u0440\u043e\u0441\u043b\u0435\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043b\u043e\u0433\u0438\u043a\u0430. <br />\u0412 \u043e\u0431\u0449\u0435\u043c, \u043f\u043e\u0447\u0438\u0442\u0430\u0442\u044c \u0447\u0442\u043e\u0431\u044b \u043e\u0442\u0434\u043e\u0445\u043d\u0443\u0442\u044c \u043c\u043e\u0436\u043d\u043e. \u042f \u0447\u0438\u0442\u0430\u043b\u0430 \u0434\u0432\u0430\u0436\u0434\u044b, \u0438\u0431\u043e \u0447\u0442\u0435\u043d\u0438\u0435 \u0442\u0430\u043a\u043e\u0439 \u043b\u0435\u0433\u043a\u043e\u0439 \u0438 \u043d\u0435\u043d\u0430\u0432\u044f\u0437\u0447\u0438\u0432\u043e\u0439 \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u043c\u043e\u0435\u043c\u0443 \u043c\u043e\u0437\u0433\u0443 \u043d\u0430\u0433\u0435\u043d\u0435\u043d\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u044f\u0440\u043a\u0438\u0445 \u043a\u0430\u0440\u0442\u0438\u043d\u043e\u043a \u0432 \u0433\u043e\u043b\u043e\u0432\u0435 \u0438 \u043e\u0442\u0434\u043e\u0445\u043d\u0443\u0442\u044c \u043e\u0442 \u0432\u0441\u0435\u0433\u043e \u0442\u043e\u0433\u043e \u0437\u0430\u0443\u043c\u043d\u043e\u0433\u043e, \u0447\u0442\u043e \u043f\u0440\u0438\u0445\u043e\u0434\u0438\u0442\u0441\u044f \u0442\u0432\u043e\u0440\u0438\u0442\u044c \u043d\u0430 \u0440\u0430\u0431\u043e\u0442\u0435.</p>\n\n<p><a href=\"/tag/%D0%A2%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5_%D1%81%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D0%B8%D1%89%D0%B0_%D0%A0%D0%B8%D0%B4%D0%BB%D0%B84/\">#\u0422\u0430\u0439\u043d\u044b\u0435_\u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430_\u0420\u0438\u0434\u043b\u04384</a></p>", "created_at": "2017-07-28T08:48:28", "object_type": 18, "updated_at": "2017-07-28T08:48:28", "object_id": 43618, "comment_count": 0, "book": {"id": 7340, "name": "\u0418\u0441\u043a\u0440\u0430 \u0438 \u0432\u0435\u0442\u0435\u0440", "cover": "covers/4/1/414d7c9b069140d61b4f0c57477e8ec6.jpg", "authors": [{"name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439  \u041f\u0435\u0445\u043e\u0432", "url": "/author/3793/", "id": 3793}], "url": "/book/7340/"}, "user": {"id": 27568, "name": "@kupalinka", "avatar": "avatars/c/0/c021bdc57c43ded600dadf1a1c2e3b00.jpg", "url": "/user/27568/", "username": "kupalinka", "gender": 0}, "has_spoilers": false, "review_type": 0, "rated_users": {"positive": [39773], "negative": []}, "comments": []}], "user": {"username": "", "name": "AnonymousUser"}, "objectType": "reviews"};
+  var element = React.createElement(component, props);
+  var container = document.getElementById(containerId);
+  if (!container) throw new Error('Cannot find the container element `#reactComponent-Readly.bookTimelineBox` for component `Readly.bookTimelineBox`');
+  React.render(element, container);
+})(React, Readly.bookTimelineBox, 'reactComponent-Readly.bookTimelineBox');
+
+</script>
+<script>
+
+ga('create', 'UA-47935002-1', 'readly.ru');
+ga('require', 'displayfeatures');
+ga('set', 'dimension1', userName);
+ga('set', 'dimension3', 0);
+ga('set', 'dimension4', 1);
+ga('send', 'pageview');
+
+</script>
+<script async="" defer="" src="https://apis.google.com/js/platform.js">
+  {lang: 'ru'}
+</script>
+<footer class="cf" id="footer"><div class="wrapper"><div class="footer-column"><a class="footer-logo" href="#" rel="nofollow"></a><p class="copy">Ридли.ру © 2013-2023<p><div class="footer--meta"><a class="footer--bookmark" href="javascript:addToFavorite()" rel="nofollow"><i class="icon_sprite bookmark"></i><span>В закладки</span></a><a class="footer--mobile" href="http://m.readly.ru/"><i class="icon_sprite mobile"></i><span>Мобильная версия</span></a></div></p></p></div><div class="footer-column"><span class="h4">Разделы</span><nav><a href="/books/">Что почитать</a><a href="/books/popular/">Популярные книги</a><a href="/books/top/">Рейтинг книг</a><a href="/collections/">Подборки книг</a><a href="/books/new/">Книжные новинки</a><a href="/authors/">Популярные авторы</a><a href="/books/i_am_lucky/">Случайная книга</a></nav></div><div class="footer-column"><span class="h4">Обсуждения</span><nav><a href="/discussions/theme/last/" rel="nofollow">Топики</a><a href="/discussions/reviews/last/" rel="nofollow">Рецензии</a><a href="/discussions/flashmob/last/" rel="nofollow">Флешмобы</a><a href="/discussions/game/last/" rel="nofollow">Игры</a><a href="/discussions/competition/last/" rel="nofollow">Конкурсы</a><a href="/discussions/academy/last/" rel="nofollow">Книжная академия</a><a href="/discussions/flood/last/" rel="nofollow">Флудилка</a></nav></div><div class="footer-column"><span class="h4">Подписки</span><nav><a href="https://vk.com/vmireknig" rel="nofollow" target="_blank">Вконтакте</a><a href="https://twitter.com/ReadlyRu" rel="nofollow" target="_blank">Твиттер</a></nav></div><div class="footer-column"><span class="h4">О проекте</span><nav><a href="/pages/about/" rel="nofollow">Описание сервиса</a><a href="/pages/faq/" rel="nofollow">Вопрос-ответ</a><a class="fancybox fancybox-feedback-form" data-ng-href="#!/#feedback-form" rel="nofollow">Обратная связь</a><a href="http://readly.reformal.ru" rel="nofollow" target="_blank">Предложения</a><a href="/pages/copyright/" rel="nofollow">Правообладателям</a><a href="/pages/contacts/" rel="nofollow">Контакты</a><a href="/pages/rules/" rel="nofollow">Правила</a></nav></div><div class="footer-column footer-column-apps"><span class="h4">Приложения</span><img class="appstore" src="/public/static//images/appstore.png"><img src="/public/static//images/googleplay.png"/></img></div></div></footer>
+<div class="singin-form" id="login-form">
+<div class="singin__head">
+<span class="singin__title">Зарегистрируйтесь, и вы сможете:</span>
+<div class="singin__possibilities clearfix">
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico1"><i></i></div>
+<div class="singin__poss_item_text">
+Получать персональные
+<strong>рекомендации книг</strong>
+</div>
+</div>
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico2"><i></i></div>
+<div class="singin__poss_item_text">
+Создать собственную
+<strong>виртуальную библиотеку</strong>
+</div>
+</div>
+<div class="singin__poss_item">
+<div class="singin__poss_item_ico ico3"><i></i></div>
+<div class="singin__poss_item_text">
+Следить за тем,
+<strong>что читают Ваши друзья</strong>
+</div>
+</div>
+</div>
+</div>
+<div class="singin__body clearfix">
+<div class="singin__body_col">
+<div class="singin__form_tabs">
+<a class="active" href="/user/register/" rel="nofollow">Регистрация</a>
+</div>
+<form action="/user/register/?next=/book/7340/" method="post">
+<input name="csrfmiddlewaretoken" type="hidden" value="JM85Sx525BW3nYpwXh8OQlmeZUGrf0im"/>
+<div class="singin__inputs_form">
+<input name="email" placeholder="E-mail адрес" type="text"/>
+<input name="username" placeholder="Логин" type="text"/>
+<input name="password" placeholder="Пароль" type="password"/>
+<div class="singin__submit_foot">
+<button class="btn-blue-20 fr" onclick="yaCounter22692712.reachGoal('register_button');">Регистрация</button>
+</div>
+</div>
+</form>
+</div>
+<div class="singin__body_col">
+<span class="singin__sub_title">Через соцсети</span>
+<div class="big_social_buttons__container">
+<a class="big_social_button vk" href="/login/vk-oauth2/?next=/" rel="nofollow" title="Вконтакте">
+<i class="icon"></i> Войти через Вконтакт
+</a>
+<a class="big_social_button tw" href="/login/twitter/?next=/" rel="nofollow" title="Twitter">
+<i class="icon"></i> Войти через Твиттер
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function open_reg_form() {
+        ga('send','event', 'Регистрация', 'open_form_reg');
+        ga('send','pageview', '/user/reg_form/');
+    }
+</script>
+<div id="registration-alert">
+<span>Данное действие доступно только для</span>
+<b>зарегистрированных пользователей</b>
+<a class="btn-green-20" href="/user/register/">Регистрация</a>
+<a class="ui-20" href="/user/login/">Войти на сайт</a>
+</div>
 </body>
