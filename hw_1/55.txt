@@ -1,784 +1,238 @@
-<body itemscope="" itemtype="http://schema.org/WebPage" onload="">
-<script type="text/javascript">
-      var yaParams = {'Логин': 'Гость'};
-      var userName = 'Гость';
-    </script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  </script>
-<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
-<script type="text/javascript">
-    try {
-        var yaCounter22692712 = new Ya.Metrika({
-            id:22692712,
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    } catch(e) { }
-    </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/22692712" style="position:absolute; left:-9999px;"/></div></noscript>
-<header class="cf" id="header"><div class="wrapper cf"><a class="header-logo" href="/"></a><nav class="header-nav"><a href="/discussions/" onclick="yaCounter22692712.reachGoal('clickDiscussion'); return true;">Обсуждения</a><a href="/books/popular/" onclick="yaCounter22692712.reachGoal('clickBooks');return true;">Книги</a><a href="/authors/" onclick="yaCounter22692712.reachGoal('clickAuthors'); return true;">Авторы</a><a href="/users/" onclick="yaCounter22692712.reachGoal('clickUsers'); return true;">Читатели</a></nav><div class="header-search" data-ng-controller="BookSearchCtrl" data-outside-click="closeDropDown()"><form action="/search/" class="dropdown-triger"><input autocomplete="off" data-ng-change="search()" data-ng-click="openDropDown()" data-ng-init="q=''" data-ng-model="q" data-ng-model-options="{debounce: 300}" name="q" placeholder="Поиск автора или книги..." type="text"/><a href="/search/?q={[{ q }]}" rel="nofollow"><i class="icon_sprite search-w"></i></a></form><div class="dropdown-content ng-cloak" data-ng-show="isOpen()"><div class="dd-search-result-list" data-load-spinner="" data-loading="loading"><div class="dd-search-result-counter">
-Книги <span>{[{ count }]}</span></div><div class="user-lib-new--book-list--item cf" data-ng-repeat="book in results"><div class="book-cover"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}" title="{[{ book.title }]}"><img alt="{[{ book.title }]}" class="dropdown-content--search-bimage" data-ng-src="{[{ book.cover | imageUrl:'book.Book':1 }]}"/></a></div><div class="book-main-info"><h3 class="book-title dropdown-content--book-title"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}">{[{ book.title }]}</a></h3><p>{[{ book.author[0].name }]}</p></div></div><div class="dd-goToResult" data-ng-show="results.length"><a href="/search/?q={[{ q }]}" rel="nofollow">
-К результатам поиска по запросу {[{ q }]} »
-</a></div></div></div></div><a class="shuffle-btn header-btn-icon" href="/books/i_am_lucky/" rel="nofollow"><i class="icon_sprite shuffle"></i></a><div class="header--login-new"><a class="header--login-btn-new" href="/user/login/" rel="nofollow">Войти</a><a class="button-normal fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form()" rel="nofollow">Регистрация</a></div></div></header>
-<div id="global-wrap">
-<a class="fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form();yaCounter22692712.reachGoal('open_banner');" rel="nofollow"><div class="top_banner visible-lg visible-md"> </div></a>
-<script>
-    var book_profile = {"rating": 9.2, "quote_count": 12, "isbn": "5-93556-783-0", "content_type": 13, "links": [], "show": true, "rates_count": 149, "quotes": [{"hashtags": [], "author": "", "text": "<p>\u0414\u0443\u0440\u0430\u043a \u043d\u0435 \u0437\u043d\u0430\u0435\u0442 \u0441\u043e\u043c\u043d\u0435\u043d\u0438\u0439 - \u043e\u043d \u0431\u0435\u0440\u0435\u0442\u0441\u044f \u0438 \u0434\u0435\u043b\u0430\u0435\u0442. \u0417\u0430\u0442\u043e \u043a\u0430\u0436\u0434\u044b\u0439 \u0432\u0442\u043e\u0440\u043e\u0439 \u0443\u043c\u043d\u044b\u0439 \u043e\u0442\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043f\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0432 \u0441\u0435\u0431\u044f \u0438 \u043f\u043e\u044d\u0442\u043e\u043c\u0443 \u0442\u0430\u043a \u0438 \u0441\u0438\u0434\u0438\u0442 \u0443 \u0440\u0430\u0437\u0431\u0438\u0442\u043e\u0433\u043e \u043a\u043e\u0440\u044b\u0442\u0430. \u041e\u0442\u0442\u043e\u0433\u043e-\u0442\u043e \u043c\u0438\u0440\u043e\u043c \u0438 \u043f\u0440\u0430\u0432\u044f\u0442 \u044d\u043d\u0435\u0440\u0433\u0438\u0447\u043d\u044b\u0435 \u0442\u0443\u043f\u0438\u0446\u044b.</p>", "created_at": "2017-04-22T13:14:14", "object_type": 20, "updated_at": "2017-04-22T13:14:14", "object_id": 59224, "comment_count": 0, "book": {"id": 7372, "name": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "authors": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "url": "/book/7372/"}, "user": {"id": 84580, "name": "\u041f\u0435\u0442\u0440 \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447 (@torp)", "avatar": "", "url": "/user/84580/", "username": "TorP", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>\u0412 \u043c\u0438\u0440\u0435 \u0447\u0435\u0440\u0435\u0441\u0447\u0443\u0440 \u043c\u043d\u043e\u0433\u043e \u0442\u0430\u043a\u043e\u0433\u043e, \u0447\u0442\u043e \u0435\u0434\u0438\u043d\u043e\u0436\u0434\u044b \u043f\u043e\u0442\u0435\u0440\u044f\u0432, \u043d\u0435\u043b\u044c\u0437\u044f \u0432\u0435\u0440\u043d\u0443\u0442\u044c \u043e\u0431\u0440\u0430\u0442\u043d\u043e. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0432\u0430\u0448\u0443 \u0436\u0438\u0437\u043d\u044c.</p>", "created_at": "2017-04-22T13:13:48", "object_type": 20, "updated_at": "2017-04-22T13:13:48", "object_id": 59223, "comment_count": 0, "book": {"id": 7372, "name": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "authors": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "url": "/book/7372/"}, "user": {"id": 84580, "name": "\u041f\u0435\u0442\u0440 \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447 (@torp)", "avatar": "", "url": "/user/84580/", "username": "TorP", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>\u041d\u0435\u0438\u043c\u043e\u0432\u0435\u0440\u043d\u043e \u0442\u044f\u0436\u0435\u043b\u043e, \u043a\u043e\u0433\u0434\u0430 \u0442\u0432\u043e\u044f \u0434\u0443\u0448\u0430 \u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u0435 \u0432 \u043b\u0430\u0434\u0430\u0445 \u0441 \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u0439 \u0436\u0438\u0437\u043d\u044c\u044e.</p>", "created_at": "2017-04-22T13:11:06", "object_type": 20, "updated_at": "2017-04-22T13:11:06", "object_id": 59222, "comment_count": 0, "book": {"id": 7372, "name": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "authors": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "url": "/book/7372/"}, "user": {"id": 84580, "name": "\u041f\u0435\u0442\u0440 \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447 (@torp)", "avatar": "", "url": "/user/84580/", "username": "TorP", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>\u041d\u0430 \u0432\u043e\u0439\u043d\u0435 \u043d\u0435 \u043c\u0435\u0441\u0442\u043e \u0434\u043b\u044f \u043f\u0443\u0441\u0442\u044b\u0445 \u0442\u0435\u043e\u0440\u0438\u0439 \u0438\u043b\u0438 \u043d\u0443\u0434\u043d\u044b\u0445 \u0440\u0430\u0441\u0441\u0443\u0436\u0434\u0435\u043d\u0438\u0439. \u0412 \u0431\u0438\u0442\u0432\u0435 \u043d\u0430\u0434\u043e \u0441\u0440\u0430\u0436\u0430\u0442\u044c\u0441\u044f!</p>", "created_at": "2017-04-22T13:10:25", "object_type": 20, "updated_at": "2017-04-22T13:10:25", "object_id": 59221, "comment_count": 0, "book": {"id": 7372, "name": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "authors": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "url": "/book/7372/"}, "user": {"id": 84580, "name": "\u041f\u0435\u0442\u0440 \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447 (@torp)", "avatar": "", "url": "/user/84580/", "username": "TorP", "gender": 1}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>...\u043d\u0435\u043f\u043e\u043d\u0438\u043c\u0430\u043d\u0438\u0435 \u0438 \u043e\u0434\u0438\u043d\u043e\u0447\u0435\u0441\u0442\u0432\u043e \u2014 \u0443\u0434\u0435\u043b \u0432\u0441\u0435\u0445 \u0438\u0434\u0443\u0449\u0438\u0445 \u0437\u0430\u0431\u044b\u0442\u044b\u043c\u0438 \u043f\u0443\u0442\u044f\u043c\u0438\u2026</p>", "created_at": "2017-04-22T13:10:01", "object_type": 20, "updated_at": "2017-04-22T13:10:01", "object_id": 59220, "comment_count": 0, "book": {"id": 7372, "name": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "authors": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "url": "/book/7372/"}, "user": {"id": 84580, "name": "\u041f\u0435\u0442\u0440 \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447 (@torp)", "avatar": "", "url": "/user/84580/", "username": "TorP", "gender": 1}, "favorited_users": []}, {"book": {"id": 7372, "name": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "authors": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "url": "/book/7372/"}, "slideMoreLink": true}], "tag": [], "year": 2006, "facts": [], "id": 7372, "by_shelves": {"shelf_count_1": 21, "shelf_count_2": 1, "shelf_count_3": 186, "shelf_count_4": 3}, "rating_sort": 0.0, "review_count": 2, "author": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "create": "2013-07-21T00:00:00", "unique_text": false, "filming": [], "comment_count": 0, "show_rating": 9.2, "description": "\u0412\u043b\u0430\u0441\u0442\u044c \u043d\u0430\u0434 \u0422\u043e\u0440\u043d\u043e\u043c \u043c\u0430\u043d\u0438\u0442 \u043c\u043d\u043e\u0433\u0438\u0445. \u0412\u044b\u0445\u043e\u0434\u044f\u0442 \u0438\u0437 \u043b\u0435\u0441\u043e\u0432 \u0421\u0432\u0435\u0442\u043b\u044b\u0435 \u0438 \u0422\u0435\u043c\u043d\u044b\u0435 \u044d\u043b\u044c\u0444\u044b, \u0431\u043e\u0440\u043e\u0437\u0434\u044f\u0442 \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u044b\u0435 \u043e\u043a\u0435\u0430\u043d\u044b \u0444\u043b\u043e\u0442\u0438\u043b\u0438\u0438 \u041d\u043e\u043b\u0434\u0430, \u0430 \u043d\u0435\u043a\u0440\u043e\u043c\u0430\u043d\u0442\u044b \u0422\u043b\u0430\u043d\u0442\u043e\u0441\u0430 \u0432\u0437\u044b\u0432\u0430\u044e\u0442 \u043a \u0422\u044c\u043c\u0435\u2026 \u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0441\u043c\u0443\u0442\u043d\u043e\u0435 \u0432\u0440\u0435\u043c\u044f, \u0438 \u0432\u043e\u0442 \u0443\u0436\u0435 \u0437\u0432\u0435\u043d\u044f\u0442 \u043a\u043b\u0438\u043d\u043a\u0438 \u0432 \u043f\u043e\u0434\u0437\u0435\u043c\u043d\u044b\u0445 \u0433\u043e\u0440\u043e\u0434\u0430\u0445 \u0433\u043d\u043e\u043c\u043e\u0432, \u0430 \u0434\u0435\u043c\u043e\u043d\u044b \u0411\u0435\u0437\u0434\u043d\u044b \u0448\u0442\u0443\u0440\u043c\u0443\u044e\u0442 \u0433\u043e\u0440\u043e\u0434\u0430 \u0431\u0435\u0437\u0437\u0430\u0449\u0438\u0442\u043d\u044b\u0445 \u0441\u043c\u0435\u0440\u0442\u043d\u044b\u0445. \u0412 \u043c\u0438\u0440\u0435, \u0433\u0434\u0435 \u043d\u0430 \u0432\u0435\u0442\u0440\u0443 \u0440\u0430\u0437\u0432\u0435\u0432\u0430\u0435\u0442\u0441\u044f \u0437\u043d\u0430\u043c\u044f \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430, \u043d\u0438\u043a\u0442\u043e \u043d\u0435 \u0441\u043c\u043e\u0436\u0435\u0442 \u043e\u0441\u0442\u0430\u0442\u044c\u0441\u044f \u043d\u0430\u0434 \u0441\u0445\u0432\u0430\u0442\u043a\u043e\u0439!", "readers_count": 208, "award": [], "sorter": 9.15, "series_position": 3, "seria": 1298, "favorites": 3, "genre": [{"url": "/genre/56/", "id": 56, "name": "\u0411\u043e\u0435\u0432\u043e\u0435 \u0444\u044d\u043d\u0442\u0435\u0437\u0438", "is_show": true}, {"url": "/genre/190/", "id": 190, "name": "\u0424\u044d\u043d\u0442\u0435\u0437\u0438", "is_show": true}], "fact_count": 0, "pages": 570, "publisher": "\u0410\u0432\u0442\u043e\u0440", "url": "/book/7372/", "title": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "_id": 7372, "user": {"possible_rate": null, "id": null}};
-</script>
-<div class="wrapper content clearfix">
-<article class="book-article" itemscope="" itemtype="http://schema.org/Book">
-<div class="content-cols">
-<div class="content-cols--main">
-<h1 class="book-article--title" itemprop="name">Под знаменем пророчества</h1>
-<div class="book-article--author">
-<label class="author-name">Автор книги:</label>
-<a href="/author/3924/"><h2 itemprop="author">Виталий Зыков</h2></a>
+<body class="is-preload" itemscope="" itemtype="https://schema.org/WebPage">
+<div id="wrapper">
+<header id="header">
+<div class="inner"><a class="logo" href="/"><span class="title">Fantasy Book Review</span></a>
+<nav>
+<ul>
+<li><a href="#menu">Menu</a></li>
+</ul>
+</nav>
 </div>
-<div class="book-article--details">
-<div class="ba-details--row">
-<label class="row-label"><span>год написания:</span></label>
-<span class="row-value">2006</span>
+</header>
+<nav id="menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/top-100-fantasy-books/">Top 100</a></li>
+<li><a href="/fantasy-books-of-the-year/">Fantasy Books of the Year</a></li>
+<li><a href="/best-fantasy-series.html">Best Fantasy Series</a></li>
+<li><a href="/fantasy-sub-genres/">Fantasy Sub Genres</a></li>
+<li><a href="/interviews/">Interviews</a></li>
+</ul>
+</nav>
+<div id="main">
+<div class="inner">
+<h1>The Stand by Stephen King
+</h1>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Book">
+<meta content="The Stand" itemprop="name"/>
+<meta content="Stephen King" itemprop="author"/>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<div itemprop="reviewBody">
+<p>I don’t know why it's taken me so long to reread the Stand. Certainly (unlike say The Tommyknockers or Misery) it isn’t because I didn’t enjoy it first time around, nor is it, despite its definitely extended length, because I found its beginning long winded or hard to get into. For whatever reason it’s been quite literally half a lifetime since I first read The Stand so; both due to my recent rediscovery of a love of Mr. King’s writing, and the far greater prevalence of apocalyptic and post-apocalyptic books today it was definitely time to give it another look.</p><p>Even as a premise, The Stand is rather unique. A super flu virus, dubbed Captain Trips by its sufferers is released across America which wipes out more than 99% of the population, despite increasingly draconian efforts by the US government to cover up the fact: introduce martial law to a disintegrating social order and even infect other countries with strains of the virus too.</p><p>What is truly unique however, is all of this is dealt with summarily in less than a week of real time, and less than twelve hours of the book’s monstrous 46 hour length. This is because after King has set the stage the real conflict begins. Through prophetic dreams some survivors are led to Mother Abigail, a saintly 108 year old Christian woman who speaks for God and the forces of good. Others however are led to Randall Flagg, The Dark Man, a creature whose been walking the highways of America in rundown cowboy boots, waiting for its hour to come around at last and the chance to forge a new society of torture and tyranny. So the stage is set for a confrontation of good and evil of quite literally biblical proportions, a confrontation which will lead to one simple moment, The Stand.</p><p>One of the most astounding things about The Stand is the fact noted by Floresiensis, that returning to King as a more experienced reader I realize just how carefully crafted the book is, especially since King was able to restore the 400 pages cut from the original edition for space reasons.</p><p>Many authors have a distinctive writing style all their own, with their own quirks, strengths and weaknesses. King however has that rare gift of being able to shift his style, his use of language, even his scene pacing to evoke the mood he’s trying to conjure. From long deserted views of the American wasteland both pre and post virus, to the darkly mysterious depiction of Randall Flagg, to the series of short punchy vignettes which illustrate nasty little details of the spread of Captain Trips and the breakdown of society. King actually resembles his own creation Pennywise the clown, able to shift his form to give us new senses of fear wonder or mystery as occasion demands, popping up with unexpected surprises, or teasing out the pace or detail of a specific scene to evoke a certain note or colour, from the horrific terror of the New York Lincoln tunnel filled with cars and dead bodies, to the grotesquely comic idea of a glitzy hotel and famous casino turned into the seat for a brutal dictatorship.</p><p>King’s shifting style also insures that we really get inside the heads of the books 10 or so major players, see them grow and change, and understand their struggles both before and after the virus, indeed it is quite astounding that in a book whose basic underlying cosmology is so blatantly black and white, King creates such a range of characters with complexities and journeys to travel, particularly since we don’t necessarily know where their journeys will take them. Indeed from Larry Underwood, a successful rock singer battling with his own selfishness, to Harold Lauder, a frighteningly intelligent yet socially outcast sixteen year old trying to find his identity, to the Trashcan Man, a pitiable pyromaniac tormented by memories of bullying and abuse and his own love of fire, The Stand features some truly complex and three dimensional villains and heroes many of whom, like the quietly strong Stu Redman, learning disabled Tom Cullen and his friend, deaf drifter Nick Andros are characters we come to truly love.</p><p>One issue I did have with the book, is despite a few changes and updates to the setting for the 1990 uncut edition such as the insertion of President Reagan, the book still retains the flavour of the 1970’s when it was originally written. Of course minor anachronisms such as government protest groups and Larry’s ability to instantly write a hit rock and roll song and hold Hollywood pot parties are easy enough to overlook, however a more serious problem is the way gender affects characterisation and setting.</p><p>My lady accused King in much of his early work of writing his female characters as “wet tissues,” and unfortunately The Stand is no exception. Franny Goldsmith, the female character we see most of is a 21 year old student who finds out at the beginning of the book she is pregnant. I can understand King wishing to write a gentle female character, however in Franny King overshoots gentle and lands squarely in childish. From her actually quite unpleasant dismissal of her baby’s father as “weak” despite the fact that all we see of him is his desire to marry Fran and not run out on his child, and the way Fran rather cattily rejects Harold’s unrequited affection, not to mention Fran’s constant habit of crying literally at the drop of her hat and of course her absolute obsession about having a baby (accidental though her pregnancy was), Fran in general was a major disappointment.</p><p>This would matter less if there were a range of female characters in the book, but with the exception of the semi mystical mother Abigail most women we meet are emotionally needy and often dependent, indeed the closest thing we have to a competent or self sufficient female character is said to be a “women’s libber” and a lesbian (two terms which King implies are synonymous).</p><p>The book also features a large amount of subtle comments about women in its narration, from way men frequently describe their partners as of “my woman”, to Stu Redman’s rather disgusting assertion to the protective yet slimy Harold that he wouldn’t need to force a woman because he “had his hand”, to even the narrator’s note that “some girls you could possess” when Stu meets Fran, not to mention the fact that the new society that is formed still seems pretty strict on gender lines as regards division of labour.</p><p>While some of these assertions may be taken as in character, such as Fran’s rather hysterical observation that she “needs a man” and that women’s liberation meant nothing in a post virus world, to mother Abigail’s disapproval of girls who take sex as a playground, (an attitude we’d expect in a woman born in the 1880’s), the fact that these attitudes spread into narrative voice and the general constancy of them did increasingly take me out of the book and alienate me from some characters.</p><p>Of course this isn’t to say that all women, even in post-apocalyptic situations need to be hard as nails, any more than all men must show their sensitivity by constant emotional displays, but it is odd that a book which features such complexity in most of its characters so often falls down in depicting motivations when those characters had two x chromosomes.</p><p>Sadly it wasn’t even just the female characters who were affected by this. I was greatly disappointed in one scene when the likable and sensitive Nick Andros casually and rather brutally has sex with a psychotic and promiscuous girl almost on a whim, an action which seemed so out of character it was actively jarring, or when the otherwise straight up and honest Stu Redman rather casually talks about trips to brothels as though they were fairly standard nights out with the boys.</p><p>Yet not all the relationships in the book are problematic. Larry’s struggle with his demons and how this struggle reflects upon the woman Nadine Cross’s strange quest was one of the high points of the book for me. Indeed in Nadine King manages to achieve something I would have assumed impossible, feature a plot concerning a corruption by use of lust which does not objectify lust as an end in itself, but instead is focused entirely upon the weaknesses of his characters, both Nadine’s and those of her intended victims, especially given the genuinely touching relationship one of those victims already has, a relationship which you don’t want to see ruined.</p><p>Of course as a confrontation between good and evil, you always need a villain, and Randall Flagg is one of King’s best known and most compelling creations, an iconic drifter come provocateur with demonic origins, mysterious powers and a dark, blazing charisma. What is especially compelling about Flagg is that even when you have read books like The Dark Tower and are aware who Flagg is and what his origins are, he still retains that sense of mystery and compelling enigma that he had on first reading, much the way Sauron remains a mysterious being however many times you reread Lord of the Rings; a feat which is doubly astounding given the views from Flagg’s perspective we get during the book since usually seeing things from the villain’s point of view is death to suspense. The Stand however shows its quality in one of the hallmarks of great fiction, even amazingly powerful demonic beings can’t see all ends, and Flagg’s plans are just as prone to go awry as others are, especially given how fallible, human and complex his minions are.</p><p>One thing I did find a little odd, was the book’s relationship to society. The US government are painted as the villains of the piece, not only releasing the super flu accidently but also going to increasingly more brutal lengths to cover up their blunders, even going as far as dispersing the virus world wide so that America can maintain plausible deniability. When Mother Abigail’s converts reach their destination a considerable time is spent debating the start of a representative government with political voting, in fighting and even the generally virtuous characters engaged in a little back room dealing to get their people in charge.</p><p>With discourses from Glen Bateman, an opinionated professor of sociology we are often treated to rather oddly nuanced views about the troubles of government and organisation, and even a minor suggestion that Flagg represents not just absolute evil but the structure and mystique of technological progress (a fact reinforced by Flagg’s own brutal, totalitarian government). This strand of the book did feel a little aimless, particularly because other than a vague sense of “society is bad” King doesn’t seem to have come down with any certainty on any given position, indeed King himself noted that he needed an explosive game changer to bring the action back on track. Of course not every book needs a political point, but with the concentration on themes of society and especially Glen’s rather gloom laden discourses King probably should have been a little more definite, indeed this is one of the few areas The Stand falls short of one of King’s later books as Under the Dome was far more definite with how its political anarchy intersected with its characters and setting.</p><p>That being said King does manage something in The Stand which I found extremely positive, he writes a book with not only an American setting, but one deeply rooted in American culture that does not alienate none American readers, indeed even though I found the political discussion a little aimless I did enjoy one section in which the survivors sing the American national anthem, because unlike the vast majority of writers King doesn’t rely on simply the invocation of “Truth, Justice and the American way”, to create an emotional scene, but simply works on what that particular thing means at this particular time to the people who have lost so much in a post-virus world, and since these are characters we care deeply about this is affecting for any reader, American or not.</p><p>The book’s ending has received a huge amount of criticism over the years, many noting that it is literally a Deus ex Machina. One thing however which people levelling this criticism miss, is that The Stand is unashamedly a book written in a Christian context. Several characters, especially Mother Abigail quite freely talk of messages from God and putting trust in God, and Flagg is depicted as much as “Satan’s imp” or the demon Legion as something extra dimensional. Whether one is a Christian or not, there is no escaping the fact that the Christian story; even considered as a story, has had a huge effect on the way western culture considers matters of good evil and power.</p><p>The power of Evil, as T. H. White’s Arthur reminds us, is built on one simple premise, might makes right. The Hero, the power of good is able to check that balance, to see the powers of good succeed despite lacking that might. The story of Jesus is significant because at rock bottom it is the story of a man who had little power beyond his convictions, spoke out against the evils of his day and succeeded. Yet Jesus was not a mighty Hercules, successful through superior strength of arms, nor even a wily Odysseus, successful through trickery or cunning. Jesus simply endured a horrific death, and showed his strength of conviction through that endurance; a conviction which was in the end rewarded.</p><p>This idea of the hero overcoming might through endurance is one of the most beautiful tropes in fiction, since it gives us hope that eventually the powerless (which sadly these days includes most of the world’s population), will be shown to be virtuous in the end despite their lack of military, economic or other types of might, and the powerful, the selfish and yes the evil will not conquer forever. After all Jesus himself mentions that it is the meek who shall inherit the earth, and the last who will be first.</p><p>Tolkien understood the power of this ideal when he wrote of a little hobbit carrying a heavy burden to Mordor. Rowling understood it when a boy wizard leapt before a murderous psychopath shouting a disarming charm, and King understood it when he called his own American Lord of the Rings “The Stand”.</p><p>The power of good in this case is not cunning or strength or a last minute power from inside, it is simply being there and enduring as evil ends.</p><p>This is why for me The Stand couldn’t have had any other ending and why I think King himself called The Stand “a work of dark Christianity”.</p><p>Likely how well the ending works for you will depend upon your appreciation of this trope, since certainly if your looking for almighty heroes who punch out the bad guys or turn the tables in one last desperate bit of ingenuity, or suddenly gain power from inside themselves to win out you’ll be disappointed. If however you can appreciate the idea that King works to, the very “stand” of the book’s title, you’ll find the ending a beautiful and terrible experience.</p><p>My only minor niggle with the ending goes back to the books more serious issue, that of gender. All of the characters who take the stand are male, while the women are quite literally left at home to have babies. Only one relationship is actually given time to be depicted in light of the ending (and that involves the childish Fran). This is extremely disappointing since one extremely likable character is left hanging rather badly, and the “woman” of one of the men taking the stand is barely mentioned at all.</p><p>Indeed here King seems to subscribe to the decidedly old fashioned idea that for a woman having a baby pretty much equals happily ever after, and it’s sad to see more complex relationships fall off because of that.</p><p>King has stated The Stand is the book he’s most commonly asked about, even though he doesn’t believe it’s his best book, and this I don’t find surprising. I could likely write ten times this amount and still just scratch the surface, since The Stand is at rock bottom a big book. Not just because of its length, but because of its complexity. King’s shifting style and moments of horror and cynicism cover a huge range of visions, experiences and ideas. Yes, some work better than others and some are rather dated, but there is no point being hung up on one issue or other when there is so much else to see.</p><p>In this review I’ve tried to give a flavour of the salient points of the book, and yet there are a massive amount of things I’ve not touched on, Tom Cullen’s unique M-O-O-N speech, Nick Andros struggles as a deaf person, Mother Abigail’s trip into the desert, King’s rather pleasant depiction of most survivors (though by no means all), as comparatively decent people, the interesting mix of poverty and plenty in a post virus world where companionship is now the new scarcity, the horrific problems of a world where simple medical operations are impossible, and on and on.</p><p>Suffice it to say, if you call yourself any kind of reader of speculative fiction and can appreciate a truly rich and complex book, The Stand is a must read. Even if you’ve never read Stephen King before, even if neither horror nor post-apocalyptic are your usual genre choice, you won’t be disappointed.<br/><strong>Dark, 9.3/10</strong></p><p>The Stand, first published in 1978, was nominated for the World Fantasy Award in 1979. It was author Stephen King's sixth work of fiction, a cross-over of epic fantasy, horror and dystopia which still remains one of the finest works of its type and the novel that King's legions of fans love most.</p><p>The Stand begins as the first days of the plague hits the US. Then come the dreams, dark dreams that warn of the coming of the dark man, the apostate of death, his worn-down boot heels tramping the night roads, the warlord of the charnel house and Prince of Evil. His time is at hand and as His Empire grows in the west so looms the Apocalypse.</p><p>I first read The Stand in 1989 and I was completely blown away by it. The story, the characters, the tension - I had never read a book of its size so quickly. So, 23 years later I decided to read it again, finding that although I was able to remember certain parts, almost everything other than the memory of loving it had been forgotten. I found it interesting that King himself said, in the forward, that he doesn't think The Stand is amongst his best books, but the one he is asked most questions about. I would agree with the author here as books like It, Salem’s Lot and The Shining are better-written books but there is just something about The Stand, and if the reader connects with it they are in for a thrilling ride.</p><p>So what inspired King to kill of 99% of the world’s population? "I love to burn things up," he said. "It's the werewolf in me, I guess... The Stand was particularly fulfilling, because there I got a chance to scrub the whole human race, and man, it was fun! ... Much of the compulsive, driven feeling I had while I worked on The Stand came from the vicarious thrill of imagining an entire entrenched social order destroyed in one stroke."</p><p>I am now old enough, and have read enough across all the varying literature that is available to confidently state that King is an excellent, and by many underrated, author. To put is simply, he is one of the greatest storytellers of his generation who is only pigeon-holed as a schlock horror writer by those who haven’t actually read his work. And The Stand is one of his best stories, not the best executed arguably but always compelling and never dull. And it's great to finally have it on Kindle, and it can now be read by commuters without having to carry the weight about as the uncut edition weighs in around at 1,400 pages (bigger than all 3 Lord of the Rings books put together!) and for many will be the biggest book they have ever read, and as such it is not just an enjoyment but also an achievement to complete. By the end the story, which reaches Biblical proportions, the reader will feel like they have been on a journey every bit as unforgettable as the characters themselves.</p><p>The Stand is King near the top of his game (and having recently read 11.22.63 I am delighted to say he is still producing). The writing is excellent, the imagery horrifying and the atmosphere hypnotic. After the first few pages you will either find yourself hooked or repelled… it’s that kind of book. But if you want to read one of the greatest examples of dystopian fiction with a healthy dose of fantasy thrown in then look no further.<br/><strong>Floresiensis, 9/10</strong></p><p><span class="rating">10/10</span> <em>A cross-over of epic fantasy, horror and dystopia which still remains one of the finest works of its</em></p>
 </div>
-<div class="ba-details--row">
-<label class="row-label"><span>серия книг:</span></label>
-<span class="row-value">
-<a href="/serie/1298/">Дорога домой</a>
-
-(3 книга из 8)
-</span>
+<ul class="actions stacked">
+<li><a class="button primary" href="https://www.amazon.com/dp/B0037TPMP4?tag=heavenlyholid-20" rel="nofollow" target="_blank">Buy on Amazon</a></li>
+</ul>
+<p>Reviews by <a href="/reviewers/Dark.html"><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Dark</span></span></a> and <a href="/reviewers/Floresiensis.html">Floresiensis</a></p>
+<p><a href="#readerreviews">11 positive reader review(s)</a> for The Stand</p>
+<meta content="2021-08-19" itemprop="dateModified"/>
 </div>
-<div class="ba-details--row">
-<label class="row-label"><span>жанры:</span></label>
-<span class="row-value">
-<a href="/genre/56/">боевое фэнтези</a>
-,
-<a href="/genre/190/">фэнтези</a>
-</span>
-</div>
-<div class="book-article--description">
-<br/>
-<h3 class="book-author-title">Описание</h3>
-<p><p>Власть над Торном манит многих. Выходят из лесов Светлые и Темные эльфы, бороздят воздушные океаны флотилии Нолда, а некроманты Тлантоса взывают к Тьме… Наступает смутное время, и вот уже звенят клинки в подземных городах гномов, а демоны Бездны штурмуют города беззащитных смертных. В мире, где на ветру развевается знамя пророчества, никто не сможет остаться над схваткой!</p></p>
-</div>
-<div class="ng-cloak book-profile-rating-height" data-ng-controller="BookProfileCtrl" id="book_profile_book-rating-app" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-<div data-book-id="book.id" data-book-rating="" data-rating="book.user.rating"></div>
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating">
+<meta content="9.6" itemprop="ratingValue"/>
 <meta content="10" itemprop="bestRating"/>
-<meta content="9,2" itemprop="ratingValue"/>
-<meta content="149" itemprop="ratingCount"/>
-<div class="book-circular-correct">
-<span class="book-profile--rate">9,2</span>
-<span class="book-profile--rates-count">(149 оценок)</span>
-</div>
-<div class="book-top100">
-<a href="/books/top/">
-<span>Топ-100:</span> 71
-</a>
-</div>
-</div>
-<div class="ng-cloak" data-ng-controller="WhereToBuyCtrl" data-ng-init="aggregate('Под знаменем пророчества', 'Виталий  Зыков')" id="book_profile-where_to_buy-app">
-<h2 class="where-to-buy-title book-author-title rel-h2" data-ng-show="aggregated.length">Купить книгу Под знаменем пророчества, Виталий Зыков</h2>
-<div class="books-aggregate">
-<div class="aggregate-row" data-ng-class-odd="'book-aggregate-row-odd'" data-ng-repeat="agg in aggregated">
-<a data-ng-href="{[{ agg.url }]}" target="_blank"><img alt="" class="aggregate-shop-img" data-ng-src="{[{ agg.market_logo }]}"/></a>
-<a class="aggregate-shop" data-ng-bind="agg.market_name" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<a class="aggregate-book" data-ng-bind="agg.title" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<div class="fr">
-<b class="aggregate-price"><span data-ng-bind="agg.price"></span> р.</b>
-<a class="aggregate-buy-button-litres" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market=='litres'" target="_blank">Скачать</a>
-<a class="aggregate-buy-button" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market!='litres'" target="_blank">Купить</a>
+</meta></div>
+<h2 id="readerreviews">The Stand reader reviews
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Harry Tasias</span></span> from Greece</strong></p>
+<blockquote><span itemprop="reviewBody">I have always been a Steven King fan but I only read The Stand the past month. In my opinion it is one of his best books together with Salem's Lot and The Shining, great character development and a story that you never forget!!! Yes, it has religious overtones but Randall Flagg, the main villian of the story is actually a demon. You can't beat an evil spirit with grenades and bazookas so the deus ex machina in the ending fits very well. I recommend it to anyone who wants an exciting, thrilling story with a lot of heart in it.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2021-05-28</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">TColl</span></span> from Australia</strong></p>
+<blockquote><span itemprop="reviewBody">***SPOILERS**** A lot of people criticise King's treatment of female characters in this book, as the main review did. This seems to totally forget two characters - Dayna and Mother Abigail both had strength in buckets. Moreover, Stu's survival would have been impossible if Dayna had cracked. Mother Abigail is pure strength - a survivor who has enough character and will to do her duty as she (and her god) sees it. Additionally, people are pretty hard on Fran. She was young, still in college, and pregnant when the end of the world came. Ok, she wasn't the brightest spark in the book and some of her worries seemed very small, but when you consider the situation she was in (pregnant without any modern medicine to ensure the health of her and her baby) and the fact her hormones would have been going mad as well I think she did okay. Even Nadine plays such a pivotal and interesting role in beating RF. So while there might be less female characters, those that are there are pretty powerful in their own right.</span></blockquote>
+<strong>7/10</strong> (<span itemprop="datePublished">2020-07-13</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="7" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<br class="clear"/>
-<div data-ng-controller="BookProfileCtrl" id="book_profile_facts-quotes-app">
-<div data-book-id="book.id" data-fact-list="" data-facts="book.facts"></div>
-<div data-book-id="book.id" data-quote-list="" data-quotes="book.quotes" data-user-id="book.user.id"></div>
-</div>
-<div class="invisible-content">
-<div class="h3-title-wadd"><h3>Интересные факты</h3></div>
-<div class="ba-facts-list">
-</div>
-</div>
-<div class="invisible-content">
-<div class="h3-title-wadd">
-<h3>Цитаты из книги</h3>
-</div>
-<div class="ba-facts-list">
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Дурак не знает сомнений - он берется и делает. Зато каждый второй умный отказывается поверить в себя и поэтому так и сидит у разбитого корыта. Оттого-то миром и правят энергичные тупицы.&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавил: <a class="user" href="/user/84580/" rel="nofollow"><i class="ico"></i>TorP</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Karlis</span></span> from Latvia</strong></p>
+<blockquote><span itemprop="reviewBody">I eventually started to believe that Stephen King was cranking books out too quickly, which meant, at least to my eyes, a drop in quality, but I read "The Stand" when I was a teenager and was completely blown away by the sheer scope of the thing. To me, there are three true Stephen King masterpieces -- "The Stand," for which the subsequent miniseries was wonderful, "Carrie," the movie for which I saw when I was 16 and which scared the Bejesus out of me in the final scene, and "Salem's Lot," which made me sleep with the lights on for about two weeks. Thank you for the author's very interesting review of "The Stand." I guess I'll have to read the book again.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2020-03-30</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;В мире чересчур много такого, что единожды потеряв, нельзя вернуть обратно. Например, вашу жизнь.&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавил: <a class="user" href="/user/84580/" rel="nofollow"><i class="ico"></i>TorP</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Неимоверно тяжело, когда твоя душа оказывается не в ладах с реальной жизнью.&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавил: <a class="user" href="/user/84580/" rel="nofollow"><i class="ico"></i>TorP</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Michael</span></span> from US</strong></p>
+<blockquote><span itemprop="reviewBody">I was 11 years old the first time I read The Stand. I had read several other Stephen King books before, and was already on my way to becoming a Stephen King superfan. His books have a tendency to start out slow and then pick up as you read. The opposite could be said for this one, as the flu is sprung on you practically from the start. King connects the dots exceptionally well when describing how the flu could spread from a military base in California first to a small town in Texas then to the entire world. It seamlessly transitions from one character to another, giving insight into each one's strengths and liabilities. For instance, Stewart Redmond's loyalty for his friends, yet his feelings of not being strong enough to be a leader. The ending was a little blasé, but it makes sense in a way. The three men who went to Las Vegas brought God with them to a Godless place. It was their faith that let God finally deal with Flagg and his army. All in all, I would absolutely recommend this book to anyone who not only like horror and fantasy books, but just good stories. I'd just have to warn them about the length and recommend an eBook copy.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2018-03-08</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;На войне не место для пустых теорий или нудных рассуждений. В битве надо сражаться!&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавил: <a class="user" href="/user/84580/" rel="nofollow"><i class="ico"></i>TorP</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;...непонимание и одиночество — удел всех идущих забытыми путями…&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавил: <a class="user" href="/user/84580/" rel="nofollow"><i class="ico"></i>TorP</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">August Profumo</span></span> from UK</strong></p>
+<blockquote><span itemprop="reviewBody">The Stand book Review By August Profumo PART II Nick Andros About five gang members were shadowing Nick closely through a field of hay in the middle of the night between neighboring backyards, where he was looking for a place to stay. But, he had just worked for two months doing odd jobs and pumping recently. So, his wallet was bulging a little too prominently. So, they beat him up and stole it (although it was an extremely protracted struggle, I can’t remember the precise details. But, it was dramatic and well choreographed). Hence, immediately after this Nick hobbled, painfully, to visit the Sheriff’s office. Then he communicated what had transpired by writing it down with a mechanical pencil and a sheet of white paper. He included physical descriptions. But, one of the perpetrators was the Sheriffs brother in law (because he matched Nick’s description to a T with his telltale tattoo). Thus, the Sheriff didn’t lose sight of his duty to preserve justice. So, he helped Nick even though his brother in law was certainly guilty: two of his friends who were gang members were identified by Nick Andros as accessories. So, they were apprehended, handcuffed and jailed. Then the Local doctor had to fix Nick’s injured foot and toes. Then Capt. Trips strikes. Its First bout with the Sheriff had laid him low for while. But, he recovered long enough to ask Nick to fill in for him. Since, nobody else was available to be deputized: all of the reserve units had been ordered away. Thus, Nick was sworn in (and then the Sherriff died followed by his wife). So, Nick ordered food from a local diner to supply food to the two inmates that shared a cell. But, both demanded to be freed before it struck because they saw many people (with tube necks), dropping like flies, everywhere. But, eventually they’ll die. But, Nick Survived. Then Nick becomes somewhat closer to the Sheriff’s wife, before she died. Then shortly later, the guilty Brother in law returns to get even with Nick after nearly everyone else had died of plague. So, he gouged one of Nick’s eyes out (terribly). But, Nick killed his assailant in self-defense. Even though its duration was brief, it had two or three distinct phases while both men remained standing face to face without throwing any punches, kicking or using any weapons. It was an intense struggle similar to upright wrestling. I think he broke his neck. But, Only Nick survived (so, he probably had to bandage his wounded eye first). Then he walked away slowly (and serenely) and day dreamed vividly of Mother Abigail with many Rows of corn and fresh piping hot biscuits. Broadcasting telepathically, this is Mother Abigail, please come to my farm, you all. We’ll have some fried chicken instead of Turkey. In this age of modern conveniences, she still didn’t have a toilet. She had a privy with lime to make it smell sweet. When Nick first met Tom Cullen, he didn’t understand what a deaf mute was: this concept comes to him like a lightning bolt, unexpectedly (but it took awhile before it registers). He doesn’t understand how to pantomime since he’s retarded; he shouldn’t be able to read Nick’s writing or read his lips. But, technically, Nick can Read Tom’s lips easily. So, there’s a magical Understanding between them like telepathy in order to communicate. So, whenever, they conserve, it’s sheer fantasy. One time, Tom saved Nick by warning him about a Tornado that had just started to reap havoc in their vicinity by ripping the barn’s top off. So, Tom had to drag Nick by the arm at the last instant to escape by jumping down and through the floors’ cellar door and remaining there until it had subsided, with the door bolted tightly shut. Since, this was Tom’s territory, he knew what to expect and that this type of danger occurred frequently and routinely. But, for Nick this was his very first time, so he felt completely out of his element. Thus, he was shocked and even concerned that that Tom had it all figured out precisely, gamely, and eagerly. Nick as a Good party committee member had nominated Tom Cullen to be one of their three spies. Tom was easy to hypnotize so that he was amenable to post hypnotize suggestions for him to remember an elaborate cover story: they drove him away because they didn’t want him to pollute their gene pool with retarded children, (I don’t know if it’d be plausible). Then when the moon was full to return homeward bound. If hypnotism were realistic, this’d be tenable. Only Tom will survive, however, and the other two were killed: The Judge didn’t make it into their territory. He made it across the first border checkpoint, but when he tries to circle around, he was finally apprehended (or seized) while crossing through Oregon. But, the other girl (Deana) had successfully infiltrated. Thus, she had gleaned a lot of useful (spy type) information by sleeping with the evil vice-president in Las Vegas. (I can’t remember precisely how her cover had been blown, however.) Thus, when Flag finally caught her and tried to execute her, she jumped from his (interior) office window, landed on a shard of broken glass (on the floor) and cut her throat, committing suicide. She herself had been nominated because she had survived many ordeals with men drugging her in order to have sex. She had been held prisoner for perhaps six months, and there were about eight other girls in this harem. So, when the good party, which included Harold, was passing by her jailers on the road (driving in a caravan in the opposite direction), there was a brief shoot out. Then the good gang was finally able to win because this Deana had had the presence of mind to arm herself. When a rapist was shot in the belly, he dropped his gun, and then it skirted her way on the truck bed’s floor. Then she participated in shooting her own abductors, jailers and tormentors. The wild gunfire, which ensued, caused the girls’ deaths, but only two survived. Both girls had to defend themselves: one using a gun but the other via a knife. But, when the moon was full, Tom Cullen returned homeward as planned. But, his instructions were to only travel at night and sleep during the day. But, Flag was looking for him on the crossroads only during the day. Thus, Flag called off further searches after the first one had failed. Because Tom didn’t return the entire way home, he was strategically located next to Stu (although unscripted). Since, the good person’s mission was successful via a self-inflicted A-bomb blast by trashcan man that he had liberated in the Nevada desert at Nellis Air Force Base. But, only Stu survived, because he’d broken his leg while falling down an escarpment on the way. But, the A-bomb had killed everyone including his teammates. But, Stu had to be safely out of its range in order to have survived—although I don’t know about the fallout. Fortunately, Tom was nearby, so Kojak found him and brought him back. But, initially, Kojak was with Stu from the very beginning, rendering aid by hunting for game (rabbits) and giving it to Stu. This included all of the essentials like fetching a stick in order to make a splint for his leg (it seemed to heal a little too fast), water, clothing, firewood, flint for the fire, etc. Stu needed Tom’s strength. Since, it was winter and snow covered every square inch of ground, so they created a makeshift ski transport. But, its runners were stuck in the ice. Thus, it’d only move, when all three of them were pulling together (in unison or in tandem) like a team of pack dogs with its tie ropes lashed securely. So, Tom made it possible. But, when the weather improved, they traveled on foot and searched for a decent car: with its keys still in the ignition but with a dead battery (so it couldn’t be hotwired). But, they continued searching until they found one pointing downhill. So, Stu was able to compression start its engine (since they found gas for it) by rolling it down the hill and then waiting for its speed to reach about twenty miles per hour (by looking at the speedometer). Then, when its momentum was optimal, he popped the clutch and its engine fired up. Although there was a dense cloud of smoke coming from under its hood that entered the cab, revoltingly, when it sputtered and almost died. So, Stu had to pump on the gas pedal a few more times to get it going again and revving up its tachometer. So, for the first time in months, Stu had serious transportation—and they zoomed down the road like Heaven’s devils with roaring engines and flames pouring out of its dual exhaust pipes. Then they make fair headway all the way home and they’re highly motivated to see how Frannie’s child will be when he’s eventually born in a few weeks.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2016-11-16</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>
-<blockquote class="book-profile--quote-more-slide">
-<a href="/book/7372/quotes/">Все цитаты из книги "Под знаменем пророчества" →</a>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<h2 class="book-author-title rel-h2">С этой книгой читают:</h2>
-<div class="book-related-list">
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7371/" rel="nofollow">
-<img alt="Ааргх на троне" src="/public/media/covers/e/b/eb8d49c252756c1224580128e620207b_160x0.jpg" title="Ааргх на троне"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7371/">
-Ааргх на троне
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">August</span></span> from USA</strong></p>
+<blockquote><span itemprop="reviewBody">The Stand book Review By August Profumo I had to read it twice: my first (ever novel) written by Stephen King and my Last. But, for the second I had to wait until I was in the proper mood. Since, I knew that it was slightly longer—in fact, my version was uncut but the original was cut. Moreover, the horror aspect was more pronounced. So, even though I spent approximately 100% of my total time reading, it still took about twelve full days. My memories of the entire first half were extraordinarily vague: confabulation prevailed. Indeed, I thought that the plague’s cause was natural. But, rather the US military had instigated it even though it was prohibited. But, somehow, it had inadvertently escaped (or leaked) from a Top Secret Testing facility. But, the government and the US military continued to be evasive. Hence, Newspapers and Broadcasting stations were forced to Lie and cover-up the truth under threats of death by armed military guards. So, thousands of citizens were summarily executed by the army with machine guns, and nearly everyone else died of the plague (known as Mr. Trips), except for a few rugged individualists. But, after their ordeal, (perhaps it was three months); they had to make their Stand (that is for the genuine Apocalypse in the future and they share the same dreams: Good or evil). I thought that the initial plague victim’s car had crashed into a gas station smashing the pumps (dramatically) and that they had instantly exploded (with a dazzling flash of pyrotechnics). But, it was actually turned off at the last second by the attendant, Stu Redman: the Stand’s future hero. When it finally struck; however, it was only going about ten miles per hour. So, that’s what stopped its momentum. In fact, the driver survived the crash itself, but his family was in the back seats. Then the driver died of the plague after asking Stu, who had investigated the occupant on foot, if his wife and infant son were still Ok. So, Stu lied and said that they were Ok. Then the driver died. But, he had narrowly escaped from a top secret Army Plague testing center, where he was stationed with his wife (and son) and that’s where it had originated: it had accidently leaked from a hermetically sealed lab room with test tubes. But, this was the primary reason for it spreading rampantly, out of control. Or, I thought that the beginning events occurred at the end. For example, I thought that Flag could levitate (or fly) about a foot off the ground. But, at the end, he could only manage a quarter inch or so. He was the leader of the Evil gang based in Las Vegas. My favorite characters were Larry Underwood (former Rock Star, and writer of “Baby, can you dig your man?”), Harold Lauder (with his fake smile due to losing his beloved Frannie Goldsmith to Stewart Redman who he loathed and wished was dead, who loved Payday candy bars with peanuts), Nick Andros (the deaf mute and Tom’s best friend), Tom Cullen (The retarded man) and Nadine Cross (Flag’s reluctant wife and Harold Lauder’s confidant on the “Good” side, where they plant a bomb to kill a few including Nick). The good party was led by Mother Abigail based out of Denver Colorado (but they had to move there from back east). She was the one that everybody had dreamed of before meeting her—with many rows of corn and homemade biscuits. (She fried three chickens for her guests, but her favorite food was Planter’s peanuts with lots of salt). She explained how to deal with the Evil gang based in Las Vegas by sending only four persons—Larry Underwood, Stuart Redman, Ralph, and Glen. She said that that was God’s will after communing (with him) via a vision after spending about three weeks outside without food or water. Harold Lauder When Frannie Goldsmith’s was burying her father in her backyard, Harold drove by with his new car, which he had requisitioned from their home town dealership. Harold was a neighbor, but his sister was a good friend of Frannie. Then he told Frannie that he’d come by later after she had finished. Then he drove to his house and started typing noisily on his typewriter—and she heard it, as if it were nearer. According to Frannie, Harold was a slightly portly teenager, with acne, but he loved Payday candy bars with peanuts. He considered himself a talented literacy artist, but nobody else did. Someday, he’ll write his own diary in order to compete with Frannie. But, even though Larry Underwood will find it hidden under a loose masonry stone inside Harold’s homemade chimney, he didn’t read it. There wasn’t enough time. After Ms. Goldsmith finished burying her father, she heard Harold trying to mow his front lawn with a John deer tractor setup. But, as she walks closer, she saw that Harold was in fact crying, with tears streaming down his face, from his own deaths in his own family, including his sister, mother and father. The freshly mowed grass is in the back of the truck and he’s about half way finished, as he zig zags, back and forth across his old front yard. Then when Frannie arrived, she said hello. Then he stopped crying immediately and he said that he could feel empathy with her tears over burying her father. Then Frannie told Harold that she wants to visit a Government Disease treatment center nearby, where they could learn more about what had happened in that regard. So, Harold agreed. Then Harold takes charge of her in grand fashion afterward and he’s extremely pleased with his new role: since, he’s quite dashing for a change. But, first, they had to plan by provisioning themselves with all of the essentials like food, water, clothing, gas and pistols. This included teaching Frannie how to ride a small two stroke motorcycle (that is a Honda or Yamaha). So, this takes a while before she’s officially ready, without crashing that many times before seriously injuring herself. Before, departing, however, Harold had the presence of mind to leave a message behind on a barn top that told their names, the date and their destination. He had to paint it there in large enough Letters, so that it’d be seen readily from miles away. But, he also drew a small picture of a heart with His name and Frannie’s as true Love inside the Barn somewhere (this will be seen by Larry Underwood). Then when Harold and Frannie finally depart, they make fair headway to their destination. Stewart Redman When a military doctor came to kill Redman in his hospital bed, since he was their prize guineas pig for experiments with Mr. Trips, Stu had to kill him with a heavy chair. Thus, it penetrated his heavy metal helmet, according to plan. Then when he scampered away through his doorway (outside), he peered about briefly. But, all of the other base personnel were dead from plague. So, all he had do in order to escape (fully) was examine a wall-map that showed his location (that is you are here) relative to nearby Exits of the mazelike building. So, once he espied it, it was a walk in the park. But, it took a while. Then after acquiring a new wardrobe and a pair of shoes from the local stores, free: Since nearly everyone else had died, nobody remained to operate the cash-registers and collect the usual fees. Thus, equipped, he was finally able to amble down the road again (in relative comfort). Then he finally, meets his new friend, Ralph. First, he meets his (adopted) dog called Kojak. Then the dog leads, Stu, to Ralph who’s painting natural scenery with a lake in the background, with a dense forest for contrast. Then they begin conversing and he gives him about six beers that were submerged in a lake. Then they become steady friends (until Ralph dies) and they camp out every day, and eat canned foods. Ralph is a retired high school Sociology Teacher. They remained in same camp and talked. So, he said that most people had an innate latent talent to predict the future like plane fights crashes. For example, most of the planes that had crashed were nearly empty. So, somehow, they had avoided only the ones that crashed and the ones that didn’t crash were always full to capacity. So, he studied stuff like that. Harold and Frannie Suddenly, Harold and Frannie are coming around the curb, riding their motor cycles. But, as soon as they see Stu and Ralph off to one side of the road, they pulled over and stopped, immediately, to investigate. Harold tells them their Destination, and that it was worth a gander. But, Stu, explained not to waste any time. Since, that’s where he had escaped. However, Harold had insisted that they should go; he said that Stu was lying. So, they ended up going all the way back there in order to prove that he was telling the truth. But, Harold doubted it until the very end. When they finally arrived at the very room with the dead medical doctor that Stu had to kill with a chair, then he admitted that Stu was telling the truth. Initially, Harold had agreed to allow Stu Redman to travel with them, because Stu had promised that he wasn’t interested in Frannie, personally. But, he lied. Harold had hoped to woo (or love) Frannie for himself. But, Stu ended up having sex with her after about a week after they had met—but their match was forged in Heaven. But, one night Harold decided to steal (stealthily) Frannie’s diary from her knapsack while everyone else slept. Then, afterward, he took it back to his tent to read with a flashlight (privately), but when he reads the page that says that Frannie, loved Stu, he became quite mad, and marked the page (inadvertently) with a Payday candy bar smudge print. Frannie will eventually notice (and recognize) it as Harold’s. But, it’s fairly incriminating. So, at this time Harold started to keep a diary like Frannie. But, he dreamed only of Killing Stu Redman. But, he wrote about it in graphic detail inside his diary. Then he used a mirror in order to practice smiling, so that whenever he thought of killing Stu Redman, he wouldn’t give himself away. Then they continued to travel together en route to meet Mother Abigail: their communal goal. Larry Underwood Before meeting Mother Abigail, Larry Underwood had to escape via subway tunnels in New York, but it was too dark. He had a small butane cigarette lighter. So, he had to grope along blindly, feeling his way along one side of a walkway’s wall with his bare hands. But, sometimes his path was blocked with bodies that had been shot by the US army with machine guns. But, also, most of the others in that tunnel were plague victims that had fled in their cars. With a flick of his bic, that’s how he was able to see, casting blurred shadows on the walls around him. Then one time he heard a strange noise that sounded like footsteps coming from behind him. But, it turned out to be his first girl friend that he had hooked up with after everyone else had died of the plague. That was three weeks after his mother had died and her rich husband had died of plague. But, even though Larry kept yelling out asking (imploringly), if anyone else was following him, she didn’t say a word, remaining silent. So, Larry nearly shot her (twice) by accident with his pistol and rifle. Initially, they had become inadvertently separated by arguing over something ridiculous like how much water to carry vs. food, etc. So, somehow, they negotiated through without encountering any persons. Then Larry gets a motorcycle at a local store—since there’s plenty of free goods around—in order to travel generally from town to town. Since otherwise, this was the first time that they didn’t travel on foot. In fact, most people acquired canned goods like chili beans or Dinty Moore beef stew in grocery stores or dried goods like peanuts, crackers, and strawberry jam, marmalade, slim Jims and peanut butter. They get camping gear, clothing, boots etc. Larry Underwood was dreaming of Flag when he got in a wreck with his Harley Davidson. But, fortunately, his new girl friend who had survived the plague wasn’t with him, since she had died of a drug overdose (that is sleeping pills). Larry had discovered this when investigating their new tent: he found barbiturates in her purse and he wasn’t aware of her addiction. Perhaps, that was the reason why they had argued previously. Larry was intensely upset when she died because he was doting on her—and thus it was excruciatingly painful—because they were getting along so splendidly. Because he injured his leg during his accident, he’s too frightened to travel using any other vehicle (or means of conveyance) including a bicycle. So, he has to forge ahead on foot, otherwise, he’ll dream of Flag, the Walking Dud. But, his injuries weren’t serous: only one knee was injured while he took a spill on his Harley, trying to negotiate around an old Oak tree on the pavement. But, he didn’t make it. But, when he fell, he wasn’t wearing a helmet, but fortunately, he didn’t need to. Thus, he had to apply first aid to himself with his own kit—with his uninjured hands. First, in order to stop the bleeding, he applies pressure with his bare bloody hands—and he’s feeling a fair amount of pain. However, because it’s moist, his hands keep slipping and it’s extremely tough to get a firm grip. Then he had to make a makeshift tourniquet with his leather belt, which he loops around it, tightly. Then he cleans his hands off with a wet towel. Then he cleans it daily with soap, alcohol and mercurochrome as an antiseptic. Then he applies fresh bandages, so he doesn’t get gangrene. Then he drinks a bottle of Jack Daniels to kill the pain. Then after a few more weeks of easy trekking (all of his wounds have healed, miraculously), Larry was walking by Nadine Cross’s house where she’s staying with a ten year boy that she calls Joe (who survived also). But, they left the house before he arrived. But, Joe who always had his trusty knife with him was creeping up (silently on the balls of his feet) on Larry through the foliage to see if he entered. But, Nadine saw him just in time to stop him. She said, “No, Joe! Stop it!” That was the first time, however. But, Larry as he walks by senses that someone is watching him from behind. But, he decides to stay in the area, since he needed food and shelter. So, he goes shopping for canned food at the local supermarket, and ends up with higher quality food than Nadine had given Joe. Then he decides to stay in a house that’s relatively close to Nadine’s, with her feral child and surrogate son, Joe. Moreover, due to shock, he’s mute. Then in the middle of the night, Joe, decides to visit Larry’s camp again where he’s sleeping. Then Joe, armed with his knife, is waving it high above Larry’s head a few times in circles (just missing his face), but he doesn’t strike. But, he’s notices that Larry’s Dinty Moore canned stew was better than his Nabisco crackers with cheese. But, he didn’t even touch a single crumb. Then the next Morning, Nadine decides that she will meet Larry and introduce Joe. So, generally, they were amiable after agreeing to stay traveling together. So, they went to the Atlantic Ocean where Joe becomes (increasingly, day by day) more humane. So, after reaching there, Larry demands that as a priori condition (or token of) his continued goodwill that Joe should get rid of his knife. So, Joe throws his trusty knife, arcing high in the air, so that it lands in the Ocean where it disappears forever in the breakers, with a splashing sound. But, as a surrogate, he’s given a beautiful (Gibson twelve string classical) guitar. Moreover, Joe’s no longer mute; he talks to Larry about his former Rock Star Music days. Then Larry teaches him how to play—but Joe seems to be a prodigy like Mozart, with remarkable talent. But, afterward this facet of his personality isn’t even mentioned. When they ultimately meet, Mother Abigail, she knows his real name, but it wasn’t Joe. She warned Nadine Cross to stay away from Flag, if possible. But, she does get involved deeper in time, including some escapades with Harold Lauder. But, ultimately, she committed suicide by jumping out of her bedroom window, after causing Harold to die by Flag’s hand. Since, he had had his side of the road side blocked with a stone abutment, but Nadine’s side was free, when they departed together (driving Motorcycles) from the Good person’s camp, after setting off their bomb that killed at least 20 people including Nick Andros. But, Stu and Frannie had survived since she had had a premonition concerning it. But, she was too late to save Nick. Nadine was aware of what would happen to Harold, before departing. Afterward, he plummeted downward about 30 ft. Consequently, when landing on a tree stump, he shattered both legs and his left collarbone broke. Then Nadine said that Flag had barricaded Harold’s side of the roadside. Then Harold took his colt 45 out from his holster and almost shot at Nadine, but he knew if he did, that’d end everything. So, as long as she still lingered, entertainingly, she might attempt helping him out of his predicament. Then after a while, Harold finally realized that he should’ve shot her from the very beginning because she departed abruptly. After, this Harold writes in his diary, about what had happened and he said that it was best writing that he had ever performed. Then he signed it, Hawk, which was a nick name that a Good party coworker had given him while working on a volunteer burial (plague victim’s) detail. He was extremely proud of it. Stu (et al) will find his wreck later.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2016-11-08</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7370/" rel="nofollow">
-<img alt="Тяжела учительская доля" src="/public/media/covers/9/2/92178b5d7658725b9b85ad5575220669_160x0.jpg" title="Тяжела учительская доля"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7370/">
-Тяжела учительская доля
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Steve</span></span> from UK</strong></p>
+<blockquote><span itemprop="reviewBody">Great book, read it years ago planning on rereading soon. Excellently written, rilliantly realised characters, fabulous, good verses evil narrative. Highly recommended!</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2016-10-13</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7367/" rel="nofollow">
-<img alt="Рождение Мага" src="/public/media/covers/7/d/7d85d42b26759b9a639d1fb67fda0673_160x0.jpg" title="Рождение Мага"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7367/">
-Рождение Мага
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Geoffrey</span></span> from U.S.A.</strong></p>
+<blockquote><span itemprop="reviewBody">Stephen King's "The Stand" is an epic in the classical sense of the word. It is huge, broad and all-encompassing, and addresses the national characteristics of Americans, both weaknesses and strengths. It was the first King book which I ever read and remains my favorite. The novel is really two separate novels. Of its roughly 1200 pages, the first 600 or so address the experiences of survivors of a humanly engineered world-wide plague ("Blue," or "The Superflu," or "Tube Neck," or "Captain Trips.") It only addresses what is going on in the United States, although we are given to understand that the rest of the world has suffered a similar fate. About .7 % (that is .007) of the world population and the population of the U.S. survives. The second part of the book is about an apocolyptic confrontation between the good people of the United States and the evil people. The good people, congregated in Boulder, Colorado--a western, moutainous state, for you Brits--are led by a 108 year old black woman from Nebraska. The bad people are led by a mysterious, satanic figure, whom the black woman calls, "Satan's Imp." King dwells much more on the satanic figure than on the grandmotherly woman, since the grandmother follows the instructions which she has perceived come from God (and they do), but she has no insight into what God's plan is. it is a lot clearer what the satanic figure's goals are: conquest, misery and death. The implication is that he is trying to establish Satan's kingdom on earth. King draws detailed portraits of about six or seven characters, who are flawed but good-hearted and likeable. He spends hundreds of pages on these characters and their experiences. So, by the last quarter of the book, we are really hooked and rooting for them. Most of them are not particularly religious, but their own personalities drive them to do good, at risk to themselves, and to defeat evil. It is only late in the story that some of the characters acknowledge that they are being directed by God. King's ability to draw convincing, entertaining and likeable characters (among the good guys) and convincing, entertaining and dislikeable characters among the bad guys, sets this book apart from most others. Believable characterization is the hardest thing to write, I believe. And King manages to do this routinely. There are two versions of "The Stand" available. The first version was cut at the behest of Doubleday's marketing department, which determined how big a book Doubleday could publish and still make a decent profit, based on the performance of King's previous five books. This was around 1972 at the beginning of King's career. When King's popularity took off, the marketing people at Doubleday agreed to publish the book at approximately its original length. I have read both versions and, because I loved the book originally in its roughly 800 page form, I loved it even more in its roughly 1200 page form. My guess is that if you are not picking up a used copy, you will only find the longer version available, although I cannot be certain about this.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2016-08-02</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7366/" rel="nofollow">
-<img alt="Ловцы удачи" src="/public/media/covers/3/1/31bb51d8a349e25849d8e23b0f119393_160x0.jpg" title="Ловцы удачи"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7366/">
-Ловцы удачи
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Randy</span></span> from Australia</strong></p>
+<blockquote><span itemprop="reviewBody">I loved 99.99% of this book. the reason why I said that, is because the ending isn't all that I would like it to be. What I noticed, is that Steven King is a very very very good writer when the subject is realistic. The more far fetched the subject is, the worse the ending. That is to be expected with all Steven kKing books, but what surprised me, is that for a far fetched book, the ending isn't 100% crap. the only slip up that he made (SPOILER ALERT!!!!!!! IT WILL BE SAFE TO RESUME AT THE NEXT PERENTACES) is by making the Hand of God reach down, and kill Randall Flagg. (SAFE TO RESUME) So over all, this book is 999 and 3/4 great. (it has a total lot 1000 pages). I would recommend this book to anyone who can read a 1,000 page book.</span></blockquote>
+<strong>9/10</strong> (<span itemprop="datePublished">2015-12-27</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="9" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7365/" rel="nofollow">
-<img alt="Обратная сторона пути" src="/public/media/covers/7/f/7f724e607e793fe44b139747d7448913_160x0.jpg" title="Обратная сторона пути"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7365/">
-Обратная сторона пути
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Anton</span></span> from US</strong></p>
+<blockquote><span itemprop="reviewBody">The characters in The Stand are wonderfully realized. They stay with you. Great story. One of my comfort books. Want to be friends with all the good guys.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2014-11-07</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Niall</span></span> from UK</strong></p>
+<blockquote><span itemprop="reviewBody">One of my favorite books of all time. Beautifully written with brilliant characters. A pleasure to read!</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2013-07-15</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="ba-timeline-container">
-<nav class="tape-select" id="timelinenav">
+<div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="bestRating"/>
+<p><span itemprop="ratingValue">9.6</span>/10 from <span itemprop="reviewCount">12</span> reviews</p>
+</div>
+<h2>All Stephen King Reviews</h2>
 <ul>
-<li class="active">
-<a href="/book/7372/?filter=reviews#!/#timelinenav" rel="nofollow">Рецензии</a>
-</li>
-<li>
-<a href="/book/7372/?filter=comments#!/#timelinenav" rel="nofollow">Отзывы</a>
-</li>
+<li><a href="/Stephen-King/Joyland.html">Joyland (Hard Case Crime Series)</a></li>
+<li><a href="/Stephen-King/Under-the-Dome.html">Under the Dome </a></li>
+<li><a href="/Stephen-King/The-Gunslinger.html">The Dark Tower series </a></li>
+<li><a href="/Stephen-King/The-Talisman-Road-of-Trials.html">The Talisman: Road of Trials </a></li>
+<li><a href="/Stephen-King/11-22-63.html">11.22.63 </a></li>
+<li><a href="/Stephen-King/The-Stand.html">The Stand </a></li>
+<li><a href="/Stephen-King/It.html">It </a></li>
+<li><a href="/Stephen-King/The-Eyes-of-the-Dragon.html">The Eyes of the Dragon </a></li>
+<li><a href="/Stephen-King/Needful-Things.html">Needful Things </a></li>
+<li><a href="/Stephen-King/Rose-Madder.html">Rose Madder </a></li>
+<li><a href="/Stephen-King/Desperation.html">Desperation </a></li>
+<li><a href="/Stephen-King/The-Long-Walk.html">The Long Walk </a></li>
+<li><a href="/Stephen-King/Geralds-Game.html">Gerald's Game </a></li>
+<li><a href="/Stephen-King/Bag-of-Bones.html">Bag of Bones </a></li>
+<li><a href="/Stephen-King/Duma-Key.html">Duma Key </a></li>
+<li><a href="/Stephen-King/Salems-Lot.html">Salem's Lot </a></li>
+<li><a href="/Stephen-King/Firestarter.html">Firestarter </a></li>
+<li><a href="/Stephen-King/The-Shining.html">The Shining </a></li>
+<li><a href="/Stephen-King/Pet-Sematary.html">Pet Sematary </a></li>
+<li><a href="/Stephen-King/The-Talisman.html">The Talisman (Talisman: Book 2)</a></li>
+<li><a href="/Stephen-King/Black-House.html">Black House (Talisman: Book 2)</a></li>
+<li><a href="/Stephen-King/The-Gunslinger.html">The Gunslinger (The Dark Tower series: Book 1)</a></li>
+<li><a href="/Stephen-King/Drawing-of-the-Three.html">The Drawing of the Three (The Dark Tower series: Book 2)</a></li>
+<li><a href="/Stephen-King/The-Waste-Lands.html">The Waste Lands (The Dark Tower series: Book 3)</a></li>
+<li><a href="/Stephen-King/Wizard-and-Glass.html">Wizard and Glass (The Dark Tower series: Book 4)</a></li>
+<li><a href="/Stephen-King/The-Wind-Through-The-Keyhole.html">The Wind Through The Keyhole (The Dark Tower series: Book 4.5)</a></li>
+<li><a href="/Stephen-King/Wolves-of-the-Calla.html">Wolves of the Calla (The Dark Tower series: Book 5)</a></li>
+<li><a href="/Stephen-King/Song-of-Susannah.html">Song of Susannah (The Dark Tower series: Book 6)</a></li>
+<li><a href="/Stephen-King/The-Dark-Tower.html">The Dark Tower (The Dark Tower series: Book 7)</a></li>
 </ul>
-</nav>
-<div id="filter-search-results-container">
-<div class="filter-panel-index">
-<div class="page-column-main __timeline">
-<section class="review-timeline-list">
-<nav class="nav-filter">
-<ul class="nav-filter-list">
-<li class="active">
-<a href="/book/7372/
-?filter=reviews&amp;sort=last#!/timelinenav" rel="nofollow">Последнее</a>
-</li>
-<li>
-<a href="/book/7372/
-?filter=reviews&amp;sort=useful#!/timelinenav" rel="nofollow">Популярное</a>
-</li>
-<li>
-<a href="/book/7372/
-?filter=reviews&amp;sort=new#!/timelinenav" rel="nofollow">Новое</a>
-</li>
-</ul>
-</nav>
-<div id="book_profile_timeline-app">
-<span id="reactComponent-Readly.bookTimelineBox"><div data-react-checksum="-54349188" data-reactid=".16rkvwmt43k"><div class="rtl--comment-add" data-reactid=".16rkvwmt43k.0"><div class="rtl--start-discussion rtl--start-discussion-compat bookpost bookpost-review" data-reactid=".16rkvwmt43k.0.0"><textarea class="sd--input" data-reactid=".16rkvwmt43k.0.0.0" placeholder="Оставить рецензию..."></textarea></div></div><div data-reactid=".16rkvwmt43k.1"><div data-reactid=".16rkvwmt43k.1.0"><div class="discussion-wrap" data-reactid=".16rkvwmt43k.1.0.$36765"><div class="discussion-item clearfix" data-reactid=".16rkvwmt43k.1.0.$36765.0"><div data-reactid=".16rkvwmt43k.1.0.$36765.0.0"><div class="discussion-item-user-avatar" data-reactid=".16rkvwmt43k.1.0.$36765.0.0.0"><a class="user-avatar-50-50" data-reactid=".16rkvwmt43k.1.0.$36765.0.0.0.0" href="/user/81216/" rel="nofollow"><img data-reactid=".16rkvwmt43k.1.0.$36765.0.0.0.0.0" src="/public/static/images/new/default_avatar.jpg"/></a></div><div class="user-name" data-reactid=".16rkvwmt43k.1.0.$36765.0.0.1"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.0.1.0"><a data-reactid=".16rkvwmt43k.1.0.$36765.0.0.1.0.0" href="/user/81216/" rel="nofollow">@lev_567</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".16rkvwmt43k.1.0.$36765.0.1"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.1.0">написал(а) рецензию</span><span class="dashed-row" data-reactid=".16rkvwmt43k.1.0.$36765.0.1.1">20 декабря 2016 13:08</span><div class="stars-rating" data-reactid=".16rkvwmt43k.1.0.$36765.0.1.2"></div></div><div class="reviews-status" data-reactid=".16rkvwmt43k.1.0.$36765.0.2"><img alt="" data-reactid=".16rkvwmt43k.1.0.$36765.0.2.0" src="/public/static/images/new/positive.png"/></div><div class="discussion-item-index clearfix" data-reactid=".16rkvwmt43k.1.0.$36765.0.3"><div class="reveal-block-index clearfix" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.0"><div class="book-pic" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.0.0"><img data-reactid=".16rkvwmt43k.1.0.$36765.0.3.0.0.0" src="/public/media/covers/d/d/ddc8cddb67a28553141e87645e413fed_100x0.jpg"/></div><span class="book-name" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.0.1">Под знаменем пророчества</span><span class="book-autor" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.0.2">Виталий Зыков</span></div><div class="discussion-item-text clearfix" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.1"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.1.1"> </span><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.1.3"> </span><div data-reactid=".16rkvwmt43k.1.0.$36765.0.3.1.4"><div class="rc-review--text-short" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.1.4.1"><p>Интересный мир, интересный автор, интересный сюжет. ! всем этим не устаёшь восхищаться. Первая, вторая книги - бесподобны! А вот в третьей присутствует некоторая натянутость. Словно автор, почуяв интерес читателя, решил изначально задуманную трилогию превратить в "Сагу о Форсайтах". Нет, стиль есть, и сюжет присутствует, и интрига намечается.... Но словно взяли повесть и растянули до романа. <br>Всё-таки нужно уметь останавливаться. !<br>По моему, автор и сам это понимает. Что ж ему мешает? жажда лёгких гонораров? Ну так разочарование читателей убьёт их на корню. <br>Хотя, конечно, бывает и такое: созданный мир настолько поглощает автора, что он сам не хочет из него уходить. Сложно, но нужно. Уйти, что бы идти дальше! к радости читателей... и издателей<br>к тому же сюжет уже примерно понятен. Три иномирца займут места пророчества и схватятся за судьбу мира, а местные будут тут только зрителями. Не стоит из этой интриги писать ещё три романа))))</br></br></br></br></p></div></div></div><div class="bottom-part" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2"><div class="discussion-item-filter" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0"><div data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0"><noindex data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0"><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/36765/" rel="nofollow" target="_blank"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0"><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/36765/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/36765/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/36765/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/36765/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/36765/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2"><div data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0.1.3">3</span><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.1" href="" rel="nofollow"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.3.2.1.0"></span></a></div></div><div class="comments-start" data-reactid=".16rkvwmt43k.1.0.$36765.0.4"></div><div class="discussion-item--comment clearfix" data-reactid=".16rkvwmt43k.1.0.$36765.0.5"><div data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172"><div data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0"><div class="discussion-item-user-avatar" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.0"><a class="user-avatar-50-50" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.0.0" href="/user/14331/" rel="nofollow"><img data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.0.0.0" src="/public/media/avatars/7/1/71a301f8bd9be936b503d2c0130a2f9a_80x80.jpg"/></a></div><div class="user-name-smaller" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.1"><a data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.1.0" href="/user/14331/" rel="nofollow">Ксения (@ryzhaya)</a><span class="date-time-post" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.1.1">20 декабря 2016 15:32</span></div><div class="discussion-item-comment" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.2"><p data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.2.0"><p>Камшу читали? Вот там уже не то чтобы остановится надо, а и отмотать назад))</p>
-<p> А почему рецензию написали именно на этой книге?</p></p></div><a class="send-reply ui-20" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.3" href="#36765_18" rel="nofollow"><span data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.3.0">Ответить</span></a><div class="like-heart rtl-comment-like data-like" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.5" href=""><span class="like-heart--num like-counter" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.5.0">0</span><i class="icon-like" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.5.1"></i><span class="like-heart--text" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.0:$212172.0.5.2">Мне нравится</span></div></div></div><a class="anchor" data-reactid=".16rkvwmt43k.1.0.$36765.0.5.1" name="36765_18" rel="nofollow"></a></div></div></div><div class="discussion-wrap" data-reactid=".16rkvwmt43k.1.0.$6227"><div class="discussion-item clearfix" data-reactid=".16rkvwmt43k.1.0.$6227.0"><div data-reactid=".16rkvwmt43k.1.0.$6227.0.0"><div class="discussion-item-user-avatar" data-reactid=".16rkvwmt43k.1.0.$6227.0.0.0"><a class="user-avatar-50-50" data-reactid=".16rkvwmt43k.1.0.$6227.0.0.0.0" href="/user/18714/" rel="nofollow"><img data-reactid=".16rkvwmt43k.1.0.$6227.0.0.0.0.0" src="/public/media/avatars/e/f/ef2b2c81aaaa7c44af607ad5ff0dd9e8_80x80.jpg"/></a></div><div class="user-name" data-reactid=".16rkvwmt43k.1.0.$6227.0.0.1"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.0.1.0"><a data-reactid=".16rkvwmt43k.1.0.$6227.0.0.1.0.0" href="/user/18714/" rel="nofollow">Светлана (@set)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".16rkvwmt43k.1.0.$6227.0.1"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".16rkvwmt43k.1.0.$6227.0.1.1">1 сентября 2014 18:51</span><div class="stars-rating" data-reactid=".16rkvwmt43k.1.0.$6227.0.1.2"><div data-reactid=".16rkvwmt43k.1.0.$6227.0.1.2.0"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".16rkvwmt43k.1.0.$6227.0.1.2.0.1"><div class="ur-rate-stars _9" data-reactid=".16rkvwmt43k.1.0.$6227.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".16rkvwmt43k.1.0.$6227.0.1.2.0.2">9/10</span></div></div></div><div class="reviews-status" data-reactid=".16rkvwmt43k.1.0.$6227.0.2"><img alt="" data-reactid=".16rkvwmt43k.1.0.$6227.0.2.0" src="/public/static/images/new/positive.png"/></div><div class="discussion-item-index clearfix" data-reactid=".16rkvwmt43k.1.0.$6227.0.3"><div class="reveal-block-index clearfix" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.0"><div class="book-pic" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.0.0"><img data-reactid=".16rkvwmt43k.1.0.$6227.0.3.0.0.0" src="/public/media/covers/d/d/ddc8cddb67a28553141e87645e413fed_100x0.jpg"/></div><span class="book-name" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.0.1">Под знаменем пророчества</span><span class="book-autor" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.0.2">Виталий Зыков</span></div><div class="discussion-item-text clearfix" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.1"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.1.1"> </span><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.1.3"> </span><div data-reactid=".16rkvwmt43k.1.0.$6227.0.3.1.4"><div class="rc-review--text-short" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.1.4.1"><p>Зачиталась я этой серией, так что третью книгу, прочитала довольно быстро, но она не принесла такого наслаждения, как первая или вторая книга. К тому же выяснился тот факт, что серия не законченна автором, хоть есть ещё и четвертая книга, но она не финальная. Официальный сайт автора подсказал, что продолжение пишется, но когда оно будет. Сей факт как-то охладил мой пыл, желание узнать, чем же все это закончится, будет ещё долго не удовлетворенно, что есть печальный факт...<br>Но собственно о самой книге! На этот раз сюжет не стремительно несется вперед, отсчитывая года легко и просто, теперь у нас есть хоть какая-то основательность. Только вот героям так и не получается отдохнуть, спокойной выдохнуть и перевести дыхание. Если у некоторых хоть немного, да получается выкроить хоть минутку свободную от дел и тягостных мыслей, то главный герой, К'ирсан Кайфат, не может себе этого позволить вот уже, как третью книгу подряд! Выдался один спокойный вечер и тот обернулся неприятными последствиями... Не везет ему просто колоссально.<br>Как и в предыдущих книгах некоторые герои пересекаются между собой и не всегда понятно, чем могут закончатся эти встречи. Иногда ждешь совершенно другого развития событий. Снова же нам встречаются герои, которых мы не видели с первой книги. Это не перестает меня, наверное, даже восхищать, потому что не так-то просто снова взять и вписать героя в сюжет, когда его не было целую книгу! Это говорит о продуманности сюжета, это несомненно радует! Это огромный плюс автора.<br>Да и сам Торн, мир, огромен и чем дальше в повествование, тем больше он открывается перед нами с разных сторон. Разные страны, континенты, люди и обычаи. По мне так мир продуман и описан на 5+, белых пятен нет, как бывает в произведениях других авторов. А вот тут у нас белое пятно, потому что там опасное место, поэтому и не изученное. Тут все не так, кажется, что вместе с героями мы побывали во всех уголках мира!<br/>Касаемо самих героев... Поведение двух из них меня как-то отталкивает, Насти и Олега. Если в фэнтази я уже не жду большого ума, характера не как у стервы и логики от героинь, то в первой и во второй книге, Настя меня радовала. Логика её была присуща, но после рождения сына, она как-то так изменилась и пошла во все тяжкие, а её поступки просто вызывают омерзение, больше это никак не назвать. Олег же, ему пока что достаются маленькие роли в повествование, но мне он не гармонирует никак. Вроде взрослый мужик, а ведет себя, как девица на выданье! В общем, как-то они меня совсем не порадовали...<br/>Слегка начинает надоедать тот факт, что все больше и больше народа идут настраиваются против главного героя. Никто не хочет спросить у него объяснений, просто делают его виноватым во всех бедах и стараются убить. Интересно, конечно, читать о том, как герой пытается выжить и спастись, но напрягает, вызывает чувство несправедливости. Хотя и сам герой не так уж и безгрешен, но все же те, кто против него совсем опьянели от своей власти! Много там собралось таких, кто считает себя пупами мира, ведать и не зря появился в этом мире наш герой. Для того, что бы всем показать, как же они ошибаются и на сколько они не всемогущие :)<br/>Книга в целом понравилась, читается, как ровное продолжение второй книги. Но чего-то все же не хватает! Чего-то совсем неожиданного, что бы читаю можно было бы сказать "вау". Надеюсь, что в четвертой книги это "вау" появится :)</br></br></br></p></div></div></div><div class="bottom-part" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2"><div class="discussion-item-filter" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0"><div data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0"><noindex data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0"><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/6227/" rel="nofollow" target="_blank"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0"><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/6227/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/6227/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/6227/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/6227/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/6227/" rel="nofollow" target="_self"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2"><div data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0.1.3">4</span><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.1" href="" rel="nofollow"><span data-reactid=".16rkvwmt43k.1.0.$6227.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".16rkvwmt43k.1.0.$6227.0.5"><a class="anchor" data-reactid=".16rkvwmt43k.1.0.$6227.0.5.1" name="6227_18" rel="nofollow"></a></div></div></div></div><div class="section-buttons" data-reactid=".16rkvwmt43k.1.1"><a class="btn-simple loadmore" data-reactid=".16rkvwmt43k.1.1.0" href=""><i class="b-icon loadmore" data-reactid=".16rkvwmt43k.1.1.0.0"></i><span data-reactid=".16rkvwmt43k.1.1.0.1">Показать еще</span></a></div></div></div></span>
+</h2></div>
+<section class="tiles">
+<article class="style1">
+<span class="image"><img alt="top 100 background" class="lazyload" height="326" src="/images/pic01.jpg" width="353"/></span>
+<a href="/top-100-fantasy-books/">
+<h2>Top 100 Fantasy Books Of All Time</h2>
+<div class="content">
+<p>Looking for great fantasy books? Take a look at the 100 pages we rate highest</p>
 </div>
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="content-cols--aside">
-<div class="book-article--aside" data-inject-global-var="book_profile">
-<div class="book-article--img">
-<img alt="Обложка Под знаменем пророчества" src="/public/media/covers/d/d/ddc8cddb67a28553141e87645e413fed_200x0.jpg" title="Под знаменем пророчества"/>
-</div>
-<div class="ba-about">
-<h3>О книге</h3>
-<ul class="ba-counters">
-<li>
-<i class="bc-icon readers"></i>
-<a href="/book/7372/readers/5/" rel="nofollow">
-Читатели (208)
 </a>
-</li>
-<li class="reviews">
-<i class="bc-icon reviews"></i>
-<a alt="Под знаменем пророчества рецензии" href="/book/7372/reviews/">
-Рецензии (2)
-</a>
-</li>
-<li class="quotes">
-<i class="bc-icon quotes"></i>
-<a alt="Под знаменем пророчества цитаты" href="/book/7372/quotes/">
-Цитаты (12)
-</a>
-</li>
-<li class="facts">
-<i class="bc-icon facts"></i>
-<a alt="Под знаменем пророчества интересные факты" href="/book/7372/facts/">
-Факты (0)
-</a>
-</li>
-<li class="reviews">
-<i class="bc-icon comments"></i>
-<a alt="Под знаменем пророчества отзывы" href="/book/7372/comments/">
-Отзывы (0)
-</a>
-</li>
-</ul>
-</div>
-</div>
-<ul class="book-article--links" data-hide-show="">
-<li class="book--share" data-ng-class="{_opened: isVisible()}">
-<i class="b-icon" data-ng-class="{'share-plus': !isVisible(), 'share-minus': isVisible()}"></i>
-<a class="book-share--toggle" data-ng-click="toggle()" href="" rel="nofollow">
-Поделиться книгой с друзьями
-</a>
-<div class="book-share--counters">
-<div class="ya-share-book-profile">
-<script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript"></script>
-<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharequickservices="vkontakte,twitter,odnoklassniki,gplus" data-yasharetheme="counter" data-yasharetype="small"></div>
-</div>
-</div>
-</li>
-</ul>
-<div class="ba--edit-info edit-book-info-margin">
-<a class="fancybox-book-edit-info-form" data-ng-href="#!/#book-edit-info-form" rel="nofollow">
-Изменить информацию о книге
-</a>
-<span class="rarr">→</span>
-</div>
-<a class="centered h3-top100-title" href="/books/top/">
-<div class="b-icon thebest"></div>Лучшие книги - Топ 100
-</a>
-<div class="aside-top100">
-<div class="a-top100-item">
-<div class="a-t100-number">93.</div>
-<div class="a-t100-image">
-<a href="/book/12667/" rel="nofollow">
-<img alt="Человек с рассеченной губой" src="/public/media/covers/1/9/19886c0b2febbd027a6e53ae72977c1c_100x0.jpg" title="Человек с рассеченной губой"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/12667/">Человек с рассеченной губой</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.0</strong>
-(329 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">94.</div>
-<div class="a-t100-image">
-<a href="/book/57735/" rel="nofollow">
-<img alt="Меч Предназначения" src="/public/media/covers/e/e/eecdd5f34b8cec5493ce784018f0b1cf_100x0.jpg" title="Меч Предназначения"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57735/">Меч Предназначения</a>
-</div>
-<div class="a-t100-rating">
-<strong>8.9</strong>
-(1425 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">95.</div>
-<div class="a-t100-image">
-<a href="/book/71973/" rel="nofollow">
-<img alt="Ведьмак (цикл)" src="/public/media/covers/2/f/2f4edd4f81955f744628057ef07eab48_100x0.jpg" title="Ведьмак (цикл)"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/71973/">Ведьмак (цикл)</a>
-</div>
-<div class="a-t100-rating">
-<strong>8.9</strong>
-(1355 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">96.</div>
-<div class="a-t100-image">
-<a href="/book/58800/" rel="nofollow">
-<img alt="Часодеи. Часовое имя" src="/public/media/covers/d/c/dc6f1a582d6dd7331ab4f2de20f65056_100x0.jpg" title="Часодеи. Часовое имя"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/58800/">Часодеи. Часовое имя</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.0</strong>
-(319 оценок)
-</div>
-</div>
-</div>
-<div class="a-t100--show-all"><a class="a-arrowed" href="/books/top/" rel="nofollow">Весь рейтинг</a></div>
-</div>
-</div>
-</div>
 </article>
+<article class="style2">
+<span class="image"><img alt="fantasy series background" class="lazyload" height="326" src="/images/pic02.jpg" width="353"/></span>
+<a href="/best-fantasy-series.html">
+<h2>Fantasy Series We Recommend</h2>
+<div class="content">
+<p>There's nothing better than finding a fantasy series you can lose yourself in</p>
 </div>
-<div id="book-edit-info-form">
-<div data-ng-controller="BookEditInfoCtrl" id="book_edit_info_form-book-edit-info-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<p>Редактирование информации:</p>
-<span class="book-edit-form-book-name">Под знаменем пророчества</span>
-</div>
-<div class="feedback-body">
-<span class="book-edit-thanks">Спасибо, что помогаете делать наш сайт лучше!</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Напишите, что вы предлагаете исправить: название книги, обложку, автора, описание, год написания произведения, серию?" rows="10"></textarea>
-<a class="ui-20 show-filming" data-ng-click="addFilms=true" data-ng-hide="addFilms" href="" rel="nofollow">Указать экранизацию книги?</a>
-<input class="ui-20 show-filming" data-ng-model="filming" data-ng-show="addFilms" placeholder="Добавьте ссылку с кинопоиска на фильм, снятый по книге" type="text"/>
-<button class="btn-blue-20 send-book-info" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
-</div>
-</div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="libr" id="libr">
-<div class="libr-lightbox">
-<div class="libr-heading">
-<span class="libr-title libr-dark-gray">Гарри Поттер и Орден Феникса</span>
-<ul class="libr-heading-icons">
-<li><a class="libr-ico-help" href="">Помощь</a></li>
-<li><a class="libr-ico-close" href="">Закрыть</a></li>
-</ul>
-</div>
-<form action="#" class="libr-form-librarian">
-<fieldset>
-<aside class="libr-sidebar">
-<div class="libr-buttons">
-<a class="libr-button libr-will-read" href="">Хочу прочитать</a>
-<a class="libr-button libr-now-reading" href="">Читаю</a>
-<a class="libr-button libr-already-read active" href="">Прочитал</a>
-</div>
-<div class="libr-check-area">
-<div class="libr-form-row">
-<input checked="" hidden="" id="print" type="checkbox">
-<label for="print">Печатное издание</label>
-</input></div>
-<div class="libr-form-row">
-<input hidden="" id="audiobook" type="checkbox"/>
-<label for="audiobook">Аудиокнигу</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="electronic-version" type="checkbox"/>
-<label for="electronic-version">Электронную версию</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="original-language" type="checkbox"/>
-<label for="original-language">На оригинальном языке</label>
-</div>
-</div>
-<ul class="libr-sidebar-icons">
-<li><a class="libr-ico-favorite" href="">В избранное</a></li>
-<li><a class="libr-ico-rss" href="">Подписаться на рецензии</a></li>
-</ul>
-</aside>
-<div class="libr-main-block">
-<ul class="libr-tabset">
-<li><a class="active" href="#libr-tab1"><span class="libr-inner libr-create-shelf">Добавить/Оценить</span></a></li>
-<li><a class="disabled" href="#libr-tab2"><span class="libr-inner libr-calendar">Указать период</span></a></li>
-<li><a href="#libr-tab3"><span class="libr-inner libr-edit-note">Добавить заметку</span></a></li>
-</ul>
-<div class="libr-tabs-content">
-<div id="libr-tab1">
-<div class="libr-content-block">
-<div class="libr-add-shelf-section">
-<div class="libr-heading-block">
-<strong class="libr-title">Добавить на полку:</strong>
-<a class="alignright" href="">Создать полку</a>
-</div>
-<div class="libr-select-block libr-popup-holder">
-<div class="libr-open">
-<input readonly="readonly" type="text" value="Выбрать созданную полку"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li class="libr-red">
-<span class="libr-text-link">Хотите удалить полку?</span>
-<div class="libr-block-links"><a href="">Да</a> / <a href="">Нет</a></div>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Книги, которые не дочитал</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Книги от друзей</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Полка под флешмоб</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Для личностного роста</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Детям на ночь</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015 - добавление</a>
-<a class="libr-delete" href="">Удалить</a>
-<span class="libr-loader-white"></span>
-</li>
-<li class="libr-red">
-<span class="libr-loader-white"></span>
-<span class="libr-text-link">Удаление...</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="libr-heading-block">
-<strong class="libr-title">Поставить оценку:</strong>
-<span class="alignright">Средняя оценка 7.4</span>
-</div>
-<ul class="libr-rating">
-<li><a href="">1</a></li>
-<li><a href="">2</a></li>
-<li><a href="">3</a></li>
-<li><a href="">4</a></li>
-<li><a href="">5</a></li>
-<li><a href="">6</a></li>
-<li><a href="">7</a></li>
-<li><a href="">8</a></li>
-<li><a href="">9</a></li>
-<li><a href="">10</a></li>
-</ul>
-<div class="libr-text-row">Вероятно, Вы оцените книгу на: <span class="circle green">7</span></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright" href="">Сохранено</a>
-</div>
-</div>
-<div id="libr-tab2">
-<div class="libr-content-block">
-<div class="libr-calendar-section">
-<div class="libr-top-block-calendar">
-<div class="libr-arrows"></div>
-<span class="libr-text-period">Июль - Август, 2015</span>
-<div class="libr-select-block libr-popup-holder libr-select-year alignright">
-<div class="libr-open">
-<input type="text" value="2015"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li><a class="text-link" href="">2015</a></li>
-<li><a class="text-link" href="">2016</a></li>
-<li><a class="text-link" href="">2017</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="libr-calendar-block"></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<div class="alignleft libr-calendar-bottom">
-<input type="text" value="20-07-2015"/>
-<span class="text">-</span>
-<input type="text" value="14-08-2015"/>
-<a class="libr-text" href="">Убрать период?</a>
-</div>
-<a class="libr-button alignright libr-blue" href="">Сохранить</a>
-</div>
-</div>
-<div id="libr-tab3">
-<div class="libr-content-block">
-<div class="libr-text-note">Заметки - это удобный и простой способ хранить нужную информацию <br/>или мысли о книге для личного использования. Ваша заметка будет видна только вам.</div>
-<textarea class="libr-textarea-scrollbar scrollbar-outer" cols="40" placeholder="Заметка..." rows="8"></textarea>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright libr-blue" href="">Добавить</a>
-</div>
-</div>
-</div>
-</div>
-</fieldset>
-</form>
-</div>
-</div>
-</div>
-<div id="libr"></div>
-<div id="feedback-form">
-<div data-ng-controller="FeedbackCtrl" id="feedback_form_feedback-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<span>Нашли ошибку?</span>
-<p>Расскажите нам о найденной ошибке, и мы сможем сделать наш сервис еще лучше.</p>
-</div>
-<div class="feedback-body">
-<div class="select-box _fr" id="feedback-form-select-box">
-<div class="select-box--current">
-<span>{[{ currentCategoryName }]}</span>
-</div>
-<div class="dropdown-box _select">
-<nav class="dropdown-select-options">
-<a data-ng-click="selectCategory(-1, 'Без темы')" href="#" onclick="return false" rel="nofollow">Без темы</a>
-<a data-ng-click="selectCategory(7, 'Ошибка в информации о книге')" href="#" onclick="return false" rel="nofollow">
-Ошибка в информации о книге
 </a>
-<a data-ng-click="selectCategory(8, 'Плагиат')" href="#" onclick="return false" rel="nofollow">
-Плагиат
+</article>
+<article class="style3">
+<span class="image"><img alt="fantasy book of the year background" class="lazyload" height="326" src="/images/pic03.jpg" width="353"/></span>
+<a href="/fantasy-books-of-the-year/">
+<h2>Fantasy Books Of The Year</h2>
+<div class="content">
+<p>Our fantasy books of the year, from 2006 to 2021</p>
+</div>
 </a>
-<a data-ng-click="selectCategory(9, 'Спойлер')" href="#" onclick="return false" rel="nofollow">
-Спойлер
-</a>
-<a data-ng-click="selectCategory(10, 'Другая ошибка')" href="#" onclick="return false" rel="nofollow">
-Другая ошибка
-</a>
-<a data-ng-click="selectCategory(11, 'Авторы')" href="#" onclick="return false" rel="nofollow">
-Авторы
-</a>
-</nav>
+</article>
+</section>
+<script async="" src="/assets/js/lazysizes.min.js"></script>
 </div>
 </div>
-<span class="feedback-category-text">Категория:</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Опишите ошибку..." rows="10"></textarea>
-<button class="btn-blue-20" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
+<footer id="footer">
+<div class="inner">
+<ul class="copyright"><li>© 2023 Fantasy Book Review</li></ul>
 </div>
+</footer>
 </div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="help-readly">
-<div>
-<span class="help-readly--title">Помоги Ридли!</span>
-<div class="help-readly--text">
-Мы вкладываем душу в Ридли. Спасибо, что вы с нами! Расскажите о нас друзьям, чтобы они могли присоединиться к нашей дружной семье книголюбов.
-</div>
-<div class="social">
-<div class="social-buttons">
-<a class="vk" href="https://vk.com/share.php?url=http%3A%2F%2Freadly.ru&amp;title=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru&amp;image=" rel="nofollow" target="_blank" title="Вконтакте"></a>
-<a class="tw" href="https://twitter.com/intent/tweet?status=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Twitter"></a>
-<a class="gp" href="https://plus.google.com/share?url=http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Google+"></a>
-<a class="ok" href="https://www.ok.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=http%3A%2F%2Freadly.ru&amp;st.comments=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru" rel="nofollow" target="_blank" title="Odnoklassniki"></a>
-</div>
-</div>
-</div>
-</div>
-<script src="/public/static/dist/js/readly.js?b8cabe27e37a" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.librarianEmitter.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.bookTimelineBox.js"></script>
-<script>
-
-if (typeof React === 'undefined') throw new Error('Cannot find `React` global variable. Have you added a script element to this page which points to React?');
-if (typeof Readly.bookTimelineBox === 'undefined') throw new Error('Cannot find component variable `Readly.bookTimelineBox`');
-(function(React, component, containerId) {
-  var props = {"perPage": 5, "bookId": 7372, "initialParams": {"comment_count": 3, "object_type": "reviews", "book_id": 7372}, "initialItems": [{"rating": {"positive": 3, "negative": 0}, "hashtags": [], "text": "<p>\u0418\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0439 \u043c\u0438\u0440, \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0439 \u0430\u0432\u0442\u043e\u0440, \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0439 \u0441\u044e\u0436\u0435\u0442. ! \u0432\u0441\u0435\u043c \u044d\u0442\u0438\u043c \u043d\u0435 \u0443\u0441\u0442\u0430\u0451\u0448\u044c \u0432\u043e\u0441\u0445\u0438\u0449\u0430\u0442\u044c\u0441\u044f. \u041f\u0435\u0440\u0432\u0430\u044f, \u0432\u0442\u043e\u0440\u0430\u044f \u043a\u043d\u0438\u0433\u0438 - \u0431\u0435\u0441\u043f\u043e\u0434\u043e\u0431\u043d\u044b! \u0410 \u0432\u043e\u0442 \u0432 \u0442\u0440\u0435\u0442\u044c\u0435\u0439 \u043f\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u0430\u044f \u043d\u0430\u0442\u044f\u043d\u0443\u0442\u043e\u0441\u0442\u044c. \u0421\u043b\u043e\u0432\u043d\u043e \u0430\u0432\u0442\u043e\u0440, \u043f\u043e\u0447\u0443\u044f\u0432 \u0438\u043d\u0442\u0435\u0440\u0435\u0441 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044f, \u0440\u0435\u0448\u0438\u043b \u0438\u0437\u043d\u0430\u0447\u0430\u043b\u044c\u043d\u043e \u0437\u0430\u0434\u0443\u043c\u0430\u043d\u043d\u0443\u044e \u0442\u0440\u0438\u043b\u043e\u0433\u0438\u044e \u043f\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u044c \u0432 \"\u0421\u0430\u0433\u0443 \u043e \u0424\u043e\u0440\u0441\u0430\u0439\u0442\u0430\u0445\". \u041d\u0435\u0442, \u0441\u0442\u0438\u043b\u044c \u0435\u0441\u0442\u044c, \u0438 \u0441\u044e\u0436\u0435\u0442 \u043f\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442, \u0438 \u0438\u043d\u0442\u0440\u0438\u0433\u0430 \u043d\u0430\u043c\u0435\u0447\u0430\u0435\u0442\u0441\u044f.... \u041d\u043e \u0441\u043b\u043e\u0432\u043d\u043e \u0432\u0437\u044f\u043b\u0438 \u043f\u043e\u0432\u0435\u0441\u0442\u044c \u0438 \u0440\u0430\u0441\u0442\u044f\u043d\u0443\u043b\u0438 \u0434\u043e \u0440\u043e\u043c\u0430\u043d\u0430. <br />\u0412\u0441\u0451-\u0442\u0430\u043a\u0438 \u043d\u0443\u0436\u043d\u043e \u0443\u043c\u0435\u0442\u044c \u043e\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438\u0432\u0430\u0442\u044c\u0441\u044f. !<br />\u041f\u043e \u043c\u043e\u0435\u043c\u0443, \u0430\u0432\u0442\u043e\u0440 \u0438 \u0441\u0430\u043c \u044d\u0442\u043e \u043f\u043e\u043d\u0438\u043c\u0430\u0435\u0442. \u0427\u0442\u043e \u0436 \u0435\u043c\u0443 \u043c\u0435\u0448\u0430\u0435\u0442? \u0436\u0430\u0436\u0434\u0430 \u043b\u0451\u0433\u043a\u0438\u0445 \u0433\u043e\u043d\u043e\u0440\u0430\u0440\u043e\u0432? \u041d\u0443 \u0442\u0430\u043a \u0440\u0430\u0437\u043e\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u0435\u0439 \u0443\u0431\u044c\u0451\u0442 \u0438\u0445 \u043d\u0430 \u043a\u043e\u0440\u043d\u044e. <br />\u0425\u043e\u0442\u044f, \u043a\u043e\u043d\u0435\u0447\u043d\u043e, \u0431\u044b\u0432\u0430\u0435\u0442 \u0438 \u0442\u0430\u043a\u043e\u0435: \u0441\u043e\u0437\u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u0438\u0440 \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043a\u043e \u043f\u043e\u0433\u043b\u043e\u0449\u0430\u0435\u0442 \u0430\u0432\u0442\u043e\u0440\u0430, \u0447\u0442\u043e \u043e\u043d \u0441\u0430\u043c \u043d\u0435 \u0445\u043e\u0447\u0435\u0442 \u0438\u0437 \u043d\u0435\u0433\u043e \u0443\u0445\u043e\u0434\u0438\u0442\u044c.  \u0421\u043b\u043e\u0436\u043d\u043e, \u043d\u043e \u043d\u0443\u0436\u043d\u043e. \u0423\u0439\u0442\u0438, \u0447\u0442\u043e \u0431\u044b \u0438\u0434\u0442\u0438 \u0434\u0430\u043b\u044c\u0448\u0435! \u043a \u0440\u0430\u0434\u043e\u0441\u0442\u0438 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u0435\u0439... \u0438 \u0438\u0437\u0434\u0430\u0442\u0435\u043b\u0435\u0439<br />\u043a \u0442\u043e\u043c\u0443 \u0436\u0435 \u0441\u044e\u0436\u0435\u0442 \u0443\u0436\u0435 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u043f\u043e\u043d\u044f\u0442\u0435\u043d. \u0422\u0440\u0438 \u0438\u043d\u043e\u043c\u0438\u0440\u0446\u0430 \u0437\u0430\u0439\u043c\u0443\u0442 \u043c\u0435\u0441\u0442\u0430 \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430 \u0438 \u0441\u0445\u0432\u0430\u0442\u044f\u0442\u0441\u044f \u0437\u0430 \u0441\u0443\u0434\u044c\u0431\u0443 \u043c\u0438\u0440\u0430, \u0430 \u043c\u0435\u0441\u0442\u043d\u044b\u0435 \u0431\u0443\u0434\u0443\u0442 \u0442\u0443\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u0437\u0440\u0438\u0442\u0435\u043b\u044f\u043c\u0438. \u041d\u0435 \u0441\u0442\u043e\u0438\u0442 \u0438\u0437 \u044d\u0442\u043e\u0439 \u0438\u043d\u0442\u0440\u0438\u0433\u0438 \u043f\u0438\u0441\u0430\u0442\u044c \u0435\u0449\u0451 \u0442\u0440\u0438 \u0440\u043e\u043c\u0430\u043d\u0430))))</p>", "created_at": "2016-12-20T10:08:05", "object_type": 18, "updated_at": "2016-12-20T12:32:13", "object_id": 36765, "comment_count": 1, "book": {"id": 7372, "name": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "authors": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "url": "/book/7372/"}, "user": {"id": 81216, "name": "@lev_567", "avatar": "", "url": "/user/81216/", "username": "LEV_567", "gender": -1}, "has_spoilers": false, "review_type": 1, "rated_users": {"positive": [7, 14331, 38034], "negative": []}, "comments": [{"text": "<p>\u041a\u0430\u043c\u0448\u0443 \u0447\u0438\u0442\u0430\u043b\u0438? \u0412\u043e\u0442 \u0442\u0430\u043c \u0443\u0436\u0435 \u043d\u0435 \u0442\u043e \u0447\u0442\u043e\u0431\u044b \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0441\u044f \u043d\u0430\u0434\u043e, \u0430 \u0438 \u043e\u0442\u043c\u043e\u0442\u0430\u0442\u044c \u043d\u0430\u0437\u0430\u0434))</p>\n\n<p> \u0410 \u043f\u043e\u0447\u0435\u043c\u0443 \u0440\u0435\u0446\u0435\u043d\u0437\u0438\u044e \u043d\u0430\u043f\u0438\u0441\u0430\u043b\u0438 \u0438\u043c\u0435\u043d\u043d\u043e \u043d\u0430 \u044d\u0442\u043e\u0439 \u043a\u043d\u0438\u0433\u0435?</p>", "created_at": "2016-12-20T12:32:13", "object_id": 212172, "item_type": 18, "likes": 0, "item_id": 36765, "liked_users": [], "user": {"id": 14331, "name": "\u041a\u0441\u0435\u043d\u0438\u044f (@ryzhaya)", "avatar": "avatars/7/1/71a301f8bd9be936b503d2c0130a2f9a.jpg", "url": "/user/14331/", "username": "ryzhaya", "gender": 0}}]}, {"book_rating": 9, "hashtags": [], "rating": {"positive": 4, "negative": 0}, "text": "<p>\u0417\u0430\u0447\u0438\u0442\u0430\u043b\u0430\u0441\u044c \u044f \u044d\u0442\u043e\u0439 \u0441\u0435\u0440\u0438\u0435\u0439, \u0442\u0430\u043a \u0447\u0442\u043e \u0442\u0440\u0435\u0442\u044c\u044e \u043a\u043d\u0438\u0433\u0443, \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043b\u0430 \u0434\u043e\u0432\u043e\u043b\u044c\u043d\u043e \u0431\u044b\u0441\u0442\u0440\u043e, \u043d\u043e \u043e\u043d\u0430 \u043d\u0435 \u043f\u0440\u0438\u043d\u0435\u0441\u043b\u0430 \u0442\u0430\u043a\u043e\u0433\u043e \u043d\u0430\u0441\u043b\u0430\u0436\u0434\u0435\u043d\u0438\u044f, \u043a\u0430\u043a \u043f\u0435\u0440\u0432\u0430\u044f \u0438\u043b\u0438 \u0432\u0442\u043e\u0440\u0430\u044f \u043a\u043d\u0438\u0433\u0430. \u041a \u0442\u043e\u043c\u0443 \u0436\u0435 \u0432\u044b\u044f\u0441\u043d\u0438\u043b\u0441\u044f \u0442\u043e\u0442 \u0444\u0430\u043a\u0442, \u0447\u0442\u043e \u0441\u0435\u0440\u0438\u044f \u043d\u0435 \u0437\u0430\u043a\u043e\u043d\u0447\u0435\u043d\u043d\u0430 \u0430\u0432\u0442\u043e\u0440\u043e\u043c, \u0445\u043e\u0442\u044c \u0435\u0441\u0442\u044c \u0435\u0449\u0451 \u0438 \u0447\u0435\u0442\u0432\u0435\u0440\u0442\u0430\u044f \u043a\u043d\u0438\u0433\u0430, \u043d\u043e \u043e\u043d\u0430 \u043d\u0435 \u0444\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f. \u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0430\u0439\u0442 \u0430\u0432\u0442\u043e\u0440\u0430 \u043f\u043e\u0434\u0441\u043a\u0430\u0437\u0430\u043b, \u0447\u0442\u043e \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u043f\u0438\u0448\u0435\u0442\u0441\u044f, \u043d\u043e \u043a\u043e\u0433\u0434\u0430 \u043e\u043d\u043e \u0431\u0443\u0434\u0435\u0442. \u0421\u0435\u0439 \u0444\u0430\u043a\u0442 \u043a\u0430\u043a-\u0442\u043e \u043e\u0445\u043b\u0430\u0434\u0438\u043b \u043c\u043e\u0439 \u043f\u044b\u043b, \u0436\u0435\u043b\u0430\u043d\u0438\u0435 \u0443\u0437\u043d\u0430\u0442\u044c, \u0447\u0435\u043c \u0436\u0435 \u0432\u0441\u0435 \u044d\u0442\u043e \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u0441\u044f, \u0431\u0443\u0434\u0435\u0442 \u0435\u0449\u0451 \u0434\u043e\u043b\u0433\u043e \u043d\u0435 \u0443\u0434\u043e\u0432\u043b\u0435\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u043e, \u0447\u0442\u043e \u0435\u0441\u0442\u044c \u043f\u0435\u0447\u0430\u043b\u044c\u043d\u044b\u0439 \u0444\u0430\u043a\u0442...<br />\u041d\u043e \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e \u043e \u0441\u0430\u043c\u043e\u0439 \u043a\u043d\u0438\u0433\u0435! \u041d\u0430 \u044d\u0442\u043e\u0442 \u0440\u0430\u0437 \u0441\u044e\u0436\u0435\u0442 \u043d\u0435 \u0441\u0442\u0440\u0435\u043c\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043d\u0435\u0441\u0435\u0442\u0441\u044f \u0432\u043f\u0435\u0440\u0435\u0434, \u043e\u0442\u0441\u0447\u0438\u0442\u044b\u0432\u0430\u044f \u0433\u043e\u0434\u0430 \u043b\u0435\u0433\u043a\u043e \u0438 \u043f\u0440\u043e\u0441\u0442\u043e, \u0442\u0435\u043f\u0435\u0440\u044c \u0443 \u043d\u0430\u0441 \u0435\u0441\u0442\u044c \u0445\u043e\u0442\u044c \u043a\u0430\u043a\u0430\u044f-\u0442\u043e \u043e\u0441\u043d\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c. \u0422\u043e\u043b\u044c\u043a\u043e \u0432\u043e\u0442 \u0433\u0435\u0440\u043e\u044f\u043c \u0442\u0430\u043a \u0438 \u043d\u0435 \u043f\u043e\u043b\u0443\u0447\u0430\u0435\u0442\u0441\u044f \u043e\u0442\u0434\u043e\u0445\u043d\u0443\u0442\u044c, \u0441\u043f\u043e\u043a\u043e\u0439\u043d\u043e\u0439 \u0432\u044b\u0434\u043e\u0445\u043d\u0443\u0442\u044c \u0438 \u043f\u0435\u0440\u0435\u0432\u0435\u0441\u0442\u0438 \u0434\u044b\u0445\u0430\u043d\u0438\u0435. \u0415\u0441\u043b\u0438 \u0443 \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0445 \u0445\u043e\u0442\u044c \u043d\u0435\u043c\u043d\u043e\u0433\u043e, \u0434\u0430 \u043f\u043e\u043b\u0443\u0447\u0430\u0435\u0442\u0441\u044f \u0432\u044b\u043a\u0440\u043e\u0438\u0442\u044c \u0445\u043e\u0442\u044c \u043c\u0438\u043d\u0443\u0442\u043a\u0443 \u0441\u0432\u043e\u0431\u043e\u0434\u043d\u0443\u044e \u043e\u0442 \u0434\u0435\u043b \u0438 \u0442\u044f\u0433\u043e\u0441\u0442\u043d\u044b\u0445 \u043c\u044b\u0441\u043b\u0435\u0439, \u0442\u043e \u0433\u043b\u0430\u0432\u043d\u044b\u0439 \u0433\u0435\u0440\u043e\u0439, \u041a'\u0438\u0440\u0441\u0430\u043d \u041a\u0430\u0439\u0444\u0430\u0442, \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0441\u0435\u0431\u0435 \u044d\u0442\u043e\u0433\u043e \u043f\u043e\u0437\u0432\u043e\u043b\u0438\u0442\u044c \u0432\u043e\u0442 \u0443\u0436\u0435, \u043a\u0430\u043a \u0442\u0440\u0435\u0442\u044c\u044e \u043a\u043d\u0438\u0433\u0443 \u043f\u043e\u0434\u0440\u044f\u0434! \u0412\u044b\u0434\u0430\u043b\u0441\u044f \u043e\u0434\u0438\u043d \u0441\u043f\u043e\u043a\u043e\u0439\u043d\u044b\u0439 \u0432\u0435\u0447\u0435\u0440 \u0438 \u0442\u043e\u0442 \u043e\u0431\u0435\u0440\u043d\u0443\u043b\u0441\u044f \u043d\u0435\u043f\u0440\u0438\u044f\u0442\u043d\u044b\u043c\u0438 \u043f\u043e\u0441\u043b\u0435\u0434\u0441\u0442\u0432\u0438\u044f\u043c\u0438... \u041d\u0435 \u0432\u0435\u0437\u0435\u0442 \u0435\u043c\u0443 \u043f\u0440\u043e\u0441\u0442\u043e \u043a\u043e\u043b\u043e\u0441\u0441\u0430\u043b\u044c\u043d\u043e.<br />\u041a\u0430\u043a \u0438 \u0432 \u043f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0438\u0445 \u043a\u043d\u0438\u0433\u0430\u0445 \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0433\u0435\u0440\u043e\u0438 \u043f\u0435\u0440\u0435\u0441\u0435\u043a\u0430\u044e\u0442\u0441\u044f \u043c\u0435\u0436\u0434\u0443 \u0441\u043e\u0431\u043e\u0439 \u0438 \u043d\u0435 \u0432\u0441\u0435\u0433\u0434\u0430 \u043f\u043e\u043d\u044f\u0442\u043d\u043e, \u0447\u0435\u043c \u043c\u043e\u0433\u0443\u0442 \u0437\u0430\u043a\u043e\u043d\u0447\u0430\u0442\u0441\u044f \u044d\u0442\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0438. \u0418\u043d\u043e\u0433\u0434\u0430 \u0436\u0434\u0435\u0448\u044c \u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u0434\u0440\u0443\u0433\u043e\u0433\u043e \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044f \u0441\u043e\u0431\u044b\u0442\u0438\u0439. \u0421\u043d\u043e\u0432\u0430 \u0436\u0435 \u043d\u0430\u043c \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u044e\u0442\u0441\u044f \u0433\u0435\u0440\u043e\u0438, \u043a\u043e\u0442\u043e\u0440\u044b\u0445 \u043c\u044b \u043d\u0435 \u0432\u0438\u0434\u0435\u043b\u0438 \u0441 \u043f\u0435\u0440\u0432\u043e\u0439 \u043a\u043d\u0438\u0433\u0438. \u042d\u0442\u043e \u043d\u0435 \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0435\u0442 \u043c\u0435\u043d\u044f, \u043d\u0430\u0432\u0435\u0440\u043d\u043e\u0435, \u0434\u0430\u0436\u0435 \u0432\u043e\u0441\u0445\u0438\u0449\u0430\u0442\u044c, \u043f\u043e\u0442\u043e\u043c\u0443 \u0447\u0442\u043e \u043d\u0435 \u0442\u0430\u043a-\u0442\u043e \u043f\u0440\u043e\u0441\u0442\u043e \u0441\u043d\u043e\u0432\u0430 \u0432\u0437\u044f\u0442\u044c \u0438 \u0432\u043f\u0438\u0441\u0430\u0442\u044c \u0433\u0435\u0440\u043e\u044f \u0432 \u0441\u044e\u0436\u0435\u0442, \u043a\u043e\u0433\u0434\u0430 \u0435\u0433\u043e \u043d\u0435 \u0431\u044b\u043b\u043e \u0446\u0435\u043b\u0443\u044e \u043a\u043d\u0438\u0433\u0443! \u042d\u0442\u043e \u0433\u043e\u0432\u043e\u0440\u0438\u0442 \u043e \u043f\u0440\u043e\u0434\u0443\u043c\u0430\u043d\u043d\u043e\u0441\u0442\u0438 \u0441\u044e\u0436\u0435\u0442\u0430, \u044d\u0442\u043e \u043d\u0435\u0441\u043e\u043c\u043d\u0435\u043d\u043d\u043e \u0440\u0430\u0434\u0443\u0435\u0442! \u042d\u0442\u043e \u043e\u0433\u0440\u043e\u043c\u043d\u044b\u0439 \u043f\u043b\u044e\u0441 \u0430\u0432\u0442\u043e\u0440\u0430.<br />\u0414\u0430 \u0438 \u0441\u0430\u043c \u0422\u043e\u0440\u043d, \u043c\u0438\u0440, \u043e\u0433\u0440\u043e\u043c\u0435\u043d \u0438 \u0447\u0435\u043c \u0434\u0430\u043b\u044c\u0448\u0435 \u0432 \u043f\u043e\u0432\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043d\u0438\u0435, \u0442\u0435\u043c \u0431\u043e\u043b\u044c\u0448\u0435 \u043e\u043d \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043f\u0435\u0440\u0435\u0434 \u043d\u0430\u043c\u0438 \u0441 \u0440\u0430\u0437\u043d\u044b\u0445 \u0441\u0442\u043e\u0440\u043e\u043d. \u0420\u0430\u0437\u043d\u044b\u0435 \u0441\u0442\u0440\u0430\u043d\u044b, \u043a\u043e\u043d\u0442\u0438\u043d\u0435\u043d\u0442\u044b, \u043b\u044e\u0434\u0438 \u0438 \u043e\u0431\u044b\u0447\u0430\u0438. \u041f\u043e \u043c\u043d\u0435 \u0442\u0430\u043a \u043c\u0438\u0440 \u043f\u0440\u043e\u0434\u0443\u043c\u0430\u043d \u0438 \u043e\u043f\u0438\u0441\u0430\u043d \u043d\u0430 5+, \u0431\u0435\u043b\u044b\u0445 \u043f\u044f\u0442\u0435\u043d \u043d\u0435\u0442, \u043a\u0430\u043a \u0431\u044b\u0432\u0430\u0435\u0442 \u0432 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f\u0445 \u0434\u0440\u0443\u0433\u0438\u0445 \u0430\u0432\u0442\u043e\u0440\u043e\u0432. \u0410 \u0432\u043e\u0442 \u0442\u0443\u0442 \u0443 \u043d\u0430\u0441 \u0431\u0435\u043b\u043e\u0435 \u043f\u044f\u0442\u043d\u043e, \u043f\u043e\u0442\u043e\u043c\u0443 \u0447\u0442\u043e \u0442\u0430\u043c \u043e\u043f\u0430\u0441\u043d\u043e\u0435 \u043c\u0435\u0441\u0442\u043e, \u043f\u043e\u044d\u0442\u043e\u043c\u0443 \u0438 \u043d\u0435 \u0438\u0437\u0443\u0447\u0435\u043d\u043d\u043e\u0435. \u0422\u0443\u0442 \u0432\u0441\u0435 \u043d\u0435 \u0442\u0430\u043a, \u043a\u0430\u0436\u0435\u0442\u0441\u044f, \u0447\u0442\u043e \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u0433\u0435\u0440\u043e\u044f\u043c\u0438 \u043c\u044b \u043f\u043e\u0431\u044b\u0432\u0430\u043b\u0438 \u0432\u043e \u0432\u0441\u0435\u0445 \u0443\u0433\u043e\u043b\u043a\u0430\u0445 \u043c\u0438\u0440\u0430!<br />\u041a\u0430\u0441\u0430\u0435\u043c\u043e \u0441\u0430\u043c\u0438\u0445 \u0433\u0435\u0440\u043e\u0435\u0432... \u041f\u043e\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0434\u0432\u0443\u0445 \u0438\u0437 \u043d\u0438\u0445 \u043c\u0435\u043d\u044f \u043a\u0430\u043a-\u0442\u043e \u043e\u0442\u0442\u0430\u043b\u043a\u0438\u0432\u0430\u0435\u0442, \u041d\u0430\u0441\u0442\u0438 \u0438 \u041e\u043b\u0435\u0433\u0430. \u0415\u0441\u043b\u0438 \u0432 \u0444\u044d\u043d\u0442\u0430\u0437\u0438 \u044f \u0443\u0436\u0435 \u043d\u0435 \u0436\u0434\u0443 \u0431\u043e\u043b\u044c\u0448\u043e\u0433\u043e \u0443\u043c\u0430, \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0430 \u043d\u0435 \u043a\u0430\u043a \u0443 \u0441\u0442\u0435\u0440\u0432\u044b \u0438 \u043b\u043e\u0433\u0438\u043a\u0438 \u043e\u0442 \u0433\u0435\u0440\u043e\u0438\u043d\u044c, \u0442\u043e \u0432 \u043f\u0435\u0440\u0432\u043e\u0439 \u0438 \u0432\u043e \u0432\u0442\u043e\u0440\u043e\u0439 \u043a\u043d\u0438\u0433\u0435, \u041d\u0430\u0441\u0442\u044f \u043c\u0435\u043d\u044f \u0440\u0430\u0434\u043e\u0432\u0430\u043b\u0430. \u041b\u043e\u0433\u0438\u043a\u0430 \u0435\u0451 \u0431\u044b\u043b\u0430 \u043f\u0440\u0438\u0441\u0443\u0449\u0430, \u043d\u043e \u043f\u043e\u0441\u043b\u0435 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f \u0441\u044b\u043d\u0430, \u043e\u043d\u0430 \u043a\u0430\u043a-\u0442\u043e \u0442\u0430\u043a \u0438\u0437\u043c\u0435\u043d\u0438\u043b\u0430\u0441\u044c \u0438 \u043f\u043e\u0448\u043b\u0430 \u0432\u043e \u0432\u0441\u0435 \u0442\u044f\u0436\u043a\u0438\u0435, \u0430 \u0435\u0451 \u043f\u043e\u0441\u0442\u0443\u043f\u043a\u0438 \u043f\u0440\u043e\u0441\u0442\u043e \u0432\u044b\u0437\u044b\u0432\u0430\u044e\u0442 \u043e\u043c\u0435\u0440\u0437\u0435\u043d\u0438\u0435, \u0431\u043e\u043b\u044c\u0448\u0435 \u044d\u0442\u043e \u043d\u0438\u043a\u0430\u043a \u043d\u0435 \u043d\u0430\u0437\u0432\u0430\u0442\u044c. \u041e\u043b\u0435\u0433 \u0436\u0435, \u0435\u043c\u0443 \u043f\u043e\u043a\u0430 \u0447\u0442\u043e \u0434\u043e\u0441\u0442\u0430\u044e\u0442\u0441\u044f \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u0438\u0435 \u0440\u043e\u043b\u0438 \u0432 \u043f\u043e\u0432\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043d\u0438\u0435, \u043d\u043e \u043c\u043d\u0435 \u043e\u043d \u043d\u0435 \u0433\u0430\u0440\u043c\u043e\u043d\u0438\u0440\u0443\u0435\u0442 \u043d\u0438\u043a\u0430\u043a. \u0412\u0440\u043e\u0434\u0435 \u0432\u0437\u0440\u043e\u0441\u043b\u044b\u0439 \u043c\u0443\u0436\u0438\u043a, \u0430 \u0432\u0435\u0434\u0435\u0442 \u0441\u0435\u0431\u044f, \u043a\u0430\u043a \u0434\u0435\u0432\u0438\u0446\u0430 \u043d\u0430 \u0432\u044b\u0434\u0430\u043d\u044c\u0435! \u0412 \u043e\u0431\u0449\u0435\u043c, \u043a\u0430\u043a-\u0442\u043e \u043e\u043d\u0438 \u043c\u0435\u043d\u044f \u0441\u043e\u0432\u0441\u0435\u043c \u043d\u0435 \u043f\u043e\u0440\u0430\u0434\u043e\u0432\u0430\u043b\u0438...<br />\u0421\u043b\u0435\u0433\u043a\u0430 \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442 \u043d\u0430\u0434\u043e\u0435\u0434\u0430\u0442\u044c \u0442\u043e\u0442 \u0444\u0430\u043a\u0442, \u0447\u0442\u043e \u0432\u0441\u0435 \u0431\u043e\u043b\u044c\u0448\u0435 \u0438 \u0431\u043e\u043b\u044c\u0448\u0435 \u043d\u0430\u0440\u043e\u0434\u0430 \u0438\u0434\u0443\u0442 \u043d\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u044e\u0442\u0441\u044f \u043f\u0440\u043e\u0442\u0438\u0432 \u0433\u043b\u0430\u0432\u043d\u043e\u0433\u043e \u0433\u0435\u0440\u043e\u044f. \u041d\u0438\u043a\u0442\u043e \u043d\u0435 \u0445\u043e\u0447\u0435\u0442 \u0441\u043f\u0440\u043e\u0441\u0438\u0442\u044c \u0443 \u043d\u0435\u0433\u043e \u043e\u0431\u044a\u044f\u0441\u043d\u0435\u043d\u0438\u0439, \u043f\u0440\u043e\u0441\u0442\u043e \u0434\u0435\u043b\u0430\u044e\u0442 \u0435\u0433\u043e \u0432\u0438\u043d\u043e\u0432\u0430\u0442\u044b\u043c \u0432\u043e \u0432\u0441\u0435\u0445 \u0431\u0435\u0434\u0430\u0445 \u0438 \u0441\u0442\u0430\u0440\u0430\u044e\u0442\u0441\u044f \u0443\u0431\u0438\u0442\u044c. \u0418\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u043e, \u043a\u043e\u043d\u0435\u0447\u043d\u043e, \u0447\u0438\u0442\u0430\u0442\u044c \u043e \u0442\u043e\u043c, \u043a\u0430\u043a \u0433\u0435\u0440\u043e\u0439 \u043f\u044b\u0442\u0430\u0435\u0442\u0441\u044f \u0432\u044b\u0436\u0438\u0442\u044c \u0438 \u0441\u043f\u0430\u0441\u0442\u0438\u0441\u044c, \u043d\u043e \u043d\u0430\u043f\u0440\u044f\u0433\u0430\u0435\u0442, \u0432\u044b\u0437\u044b\u0432\u0430\u0435\u0442 \u0447\u0443\u0432\u0441\u0442\u0432\u043e \u043d\u0435\u0441\u043f\u0440\u0430\u0432\u0435\u0434\u043b\u0438\u0432\u043e\u0441\u0442\u0438. \u0425\u043e\u0442\u044f \u0438 \u0441\u0430\u043c \u0433\u0435\u0440\u043e\u0439 \u043d\u0435 \u0442\u0430\u043a \u0443\u0436 \u0438 \u0431\u0435\u0437\u0433\u0440\u0435\u0448\u0435\u043d, \u043d\u043e \u0432\u0441\u0435 \u0436\u0435 \u0442\u0435, \u043a\u0442\u043e \u043f\u0440\u043e\u0442\u0438\u0432 \u043d\u0435\u0433\u043e \u0441\u043e\u0432\u0441\u0435\u043c \u043e\u043f\u044c\u044f\u043d\u0435\u043b\u0438 \u043e\u0442 \u0441\u0432\u043e\u0435\u0439 \u0432\u043b\u0430\u0441\u0442\u0438! \u041c\u043d\u043e\u0433\u043e \u0442\u0430\u043c \u0441\u043e\u0431\u0440\u0430\u043b\u043e\u0441\u044c \u0442\u0430\u043a\u0438\u0445, \u043a\u0442\u043e \u0441\u0447\u0438\u0442\u0430\u0435\u0442 \u0441\u0435\u0431\u044f \u043f\u0443\u043f\u0430\u043c\u0438 \u043c\u0438\u0440\u0430, \u0432\u0435\u0434\u0430\u0442\u044c \u0438 \u043d\u0435 \u0437\u0440\u044f \u043f\u043e\u044f\u0432\u0438\u043b\u0441\u044f \u0432 \u044d\u0442\u043e\u043c \u043c\u0438\u0440\u0435 \u043d\u0430\u0448 \u0433\u0435\u0440\u043e\u0439. \u0414\u043b\u044f \u0442\u043e\u0433\u043e, \u0447\u0442\u043e \u0431\u044b \u0432\u0441\u0435\u043c \u043f\u043e\u043a\u0430\u0437\u0430\u0442\u044c, \u043a\u0430\u043a \u0436\u0435 \u043e\u043d\u0438 \u043e\u0448\u0438\u0431\u0430\u044e\u0442\u0441\u044f \u0438 \u043d\u0430 \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043e\u043d\u0438 \u043d\u0435 \u0432\u0441\u0435\u043c\u043e\u0433\u0443\u0449\u0438\u0435 :)<br />\u041a\u043d\u0438\u0433\u0430 \u0432 \u0446\u0435\u043b\u043e\u043c \u043f\u043e\u043d\u0440\u0430\u0432\u0438\u043b\u0430\u0441\u044c, \u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044f, \u043a\u0430\u043a \u0440\u043e\u0432\u043d\u043e\u0435 \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u0432\u0442\u043e\u0440\u043e\u0439 \u043a\u043d\u0438\u0433\u0438. \u041d\u043e \u0447\u0435\u0433\u043e-\u0442\u043e \u0432\u0441\u0435 \u0436\u0435 \u043d\u0435 \u0445\u0432\u0430\u0442\u0430\u0435\u0442! \u0427\u0435\u0433\u043e-\u0442\u043e \u0441\u043e\u0432\u0441\u0435\u043c \u043d\u0435\u043e\u0436\u0438\u0434\u0430\u043d\u043d\u043e\u0433\u043e, \u0447\u0442\u043e \u0431\u044b \u0447\u0438\u0442\u0430\u044e \u043c\u043e\u0436\u043d\u043e \u0431\u044b\u043b\u043e \u0431\u044b \u0441\u043a\u0430\u0437\u0430\u0442\u044c \"\u0432\u0430\u0443\". \u041d\u0430\u0434\u0435\u044e\u0441\u044c, \u0447\u0442\u043e \u0432 \u0447\u0435\u0442\u0432\u0435\u0440\u0442\u043e\u0439 \u043a\u043d\u0438\u0433\u0438 \u044d\u0442\u043e \"\u0432\u0430\u0443\" \u043f\u043e\u044f\u0432\u0438\u0442\u0441\u044f :)</p>", "created_at": "2014-09-01T15:51:14", "object_type": 18, "updated_at": "2014-09-01T15:51:14", "object_id": 6227, "comment_count": 0, "book": {"id": 7372, "name": "\u041f\u043e\u0434 \u0437\u043d\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0440\u043e\u0440\u043e\u0447\u0435\u0441\u0442\u0432\u0430", "cover": "covers/d/d/ddc8cddb67a28553141e87645e413fed.jpg", "authors": [{"name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439  \u0417\u044b\u043a\u043e\u0432", "url": "/author/3924/", "id": 3924}], "url": "/book/7372/"}, "user": {"id": 18714, "name": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 (@set)", "avatar": "avatars/e/f/ef2b2c81aaaa7c44af607ad5ff0dd9e8.png", "url": "/user/18714/", "username": "set", "gender": 0}, "has_spoilers": false, "review_type": 1, "rated_users": {"positive": [7, 15917, 21611, 21925], "negative": []}, "comments": []}], "user": {"username": "", "name": "AnonymousUser"}, "objectType": "reviews"};
-  var element = React.createElement(component, props);
-  var container = document.getElementById(containerId);
-  if (!container) throw new Error('Cannot find the container element `#reactComponent-Readly.bookTimelineBox` for component `Readly.bookTimelineBox`');
-  React.render(element, container);
-})(React, Readly.bookTimelineBox, 'reactComponent-Readly.bookTimelineBox');
-
-</script>
-<script>
-
-ga('create', 'UA-47935002-1', 'readly.ru');
-ga('require', 'displayfeatures');
-ga('set', 'dimension1', userName);
-ga('set', 'dimension3', 0);
-ga('set', 'dimension4', 1);
-ga('send', 'pageview');
-
-</script>
-<script async="" defer="" src="https://apis.google.com/js/platform.js">
-  {lang: 'ru'}
-</script>
-<footer class="cf" id="footer"><div class="wrapper"><div class="footer-column"><a class="footer-logo" href="#" rel="nofollow"></a><p class="copy">Ридли.ру © 2013-2023<p><div class="footer--meta"><a class="footer--bookmark" href="javascript:addToFavorite()" rel="nofollow"><i class="icon_sprite bookmark"></i><span>В закладки</span></a><a class="footer--mobile" href="http://m.readly.ru/"><i class="icon_sprite mobile"></i><span>Мобильная версия</span></a></div></p></p></div><div class="footer-column"><span class="h4">Разделы</span><nav><a href="/books/">Что почитать</a><a href="/books/popular/">Популярные книги</a><a href="/books/top/">Рейтинг книг</a><a href="/collections/">Подборки книг</a><a href="/books/new/">Книжные новинки</a><a href="/authors/">Популярные авторы</a><a href="/books/i_am_lucky/">Случайная книга</a></nav></div><div class="footer-column"><span class="h4">Обсуждения</span><nav><a href="/discussions/theme/last/" rel="nofollow">Топики</a><a href="/discussions/reviews/last/" rel="nofollow">Рецензии</a><a href="/discussions/flashmob/last/" rel="nofollow">Флешмобы</a><a href="/discussions/game/last/" rel="nofollow">Игры</a><a href="/discussions/competition/last/" rel="nofollow">Конкурсы</a><a href="/discussions/academy/last/" rel="nofollow">Книжная академия</a><a href="/discussions/flood/last/" rel="nofollow">Флудилка</a></nav></div><div class="footer-column"><span class="h4">Подписки</span><nav><a href="https://vk.com/vmireknig" rel="nofollow" target="_blank">Вконтакте</a><a href="https://twitter.com/ReadlyRu" rel="nofollow" target="_blank">Твиттер</a></nav></div><div class="footer-column"><span class="h4">О проекте</span><nav><a href="/pages/about/" rel="nofollow">Описание сервиса</a><a href="/pages/faq/" rel="nofollow">Вопрос-ответ</a><a class="fancybox fancybox-feedback-form" data-ng-href="#!/#feedback-form" rel="nofollow">Обратная связь</a><a href="http://readly.reformal.ru" rel="nofollow" target="_blank">Предложения</a><a href="/pages/copyright/" rel="nofollow">Правообладателям</a><a href="/pages/contacts/" rel="nofollow">Контакты</a><a href="/pages/rules/" rel="nofollow">Правила</a></nav></div><div class="footer-column footer-column-apps"><span class="h4">Приложения</span><img class="appstore" src="/public/static//images/appstore.png"><img src="/public/static//images/googleplay.png"/></img></div></div></footer>
-<div class="singin-form" id="login-form">
-<div class="singin__head">
-<span class="singin__title">Зарегистрируйтесь, и вы сможете:</span>
-<div class="singin__possibilities clearfix">
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico1"><i></i></div>
-<div class="singin__poss_item_text">
-Получать персональные
-<strong>рекомендации книг</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico2"><i></i></div>
-<div class="singin__poss_item_text">
-Создать собственную
-<strong>виртуальную библиотеку</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico3"><i></i></div>
-<div class="singin__poss_item_text">
-Следить за тем,
-<strong>что читают Ваши друзья</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="singin__body clearfix">
-<div class="singin__body_col">
-<div class="singin__form_tabs">
-<a class="active" href="/user/register/" rel="nofollow">Регистрация</a>
-</div>
-<form action="/user/register/?next=/book/7372/
-" method="post">
-<input name="csrfmiddlewaretoken" type="hidden" value="02jw7RTZtbstP01fuC4ijcnnAzm0unWO"/>
-<div class="singin__inputs_form">
-<input name="email" placeholder="E-mail адрес" type="text"/>
-<input name="username" placeholder="Логин" type="text"/>
-<input name="password" placeholder="Пароль" type="password"/>
-<div class="singin__submit_foot">
-<button class="btn-blue-20 fr" onclick="yaCounter22692712.reachGoal('register_button');">Регистрация</button>
-</div>
-</div>
-</form>
-</div>
-<div class="singin__body_col">
-<span class="singin__sub_title">Через соцсети</span>
-<div class="big_social_buttons__container">
-<a class="big_social_button vk" href="/login/vk-oauth2/?next=/" rel="nofollow" title="Вконтакте">
-<i class="icon"></i> Войти через Вконтакт
-</a>
-<a class="big_social_button tw" href="/login/twitter/?next=/" rel="nofollow" title="Twitter">
-<i class="icon"></i> Войти через Твиттер
-</a>
-</div>
-</div>
-</div>
-</div>
-<script>
-    function open_reg_form() {
-        ga('send','event', 'Регистрация', 'open_form_reg');
-        ga('send','pageview', '/user/reg_form/');
-    }
-</script>
-<div id="registration-alert">
-<span>Данное действие доступно только для</span>
-<b>зарегистрированных пользователей</b>
-<a class="btn-green-20" href="/user/register/">Регистрация</a>
-<a class="ui-20" href="/user/login/">Войти на сайт</a>
-</div>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>

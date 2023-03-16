@@ -1,767 +1,423 @@
-<body itemscope="" itemtype="http://schema.org/WebPage" onload="">
-<script type="text/javascript">
-      var yaParams = {'Логин': 'Гость'};
-      var userName = 'Гость';
-    </script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  </script>
-<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
-<script type="text/javascript">
-    try {
-        var yaCounter22692712 = new Ya.Metrika({
-            id:22692712,
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    } catch(e) { }
-    </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/22692712" style="position:absolute; left:-9999px;"/></div></noscript>
-<header class="cf" id="header"><div class="wrapper cf"><a class="header-logo" href="/"></a><nav class="header-nav"><a href="/discussions/" onclick="yaCounter22692712.reachGoal('clickDiscussion'); return true;">Обсуждения</a><a href="/books/popular/" onclick="yaCounter22692712.reachGoal('clickBooks');return true;">Книги</a><a href="/authors/" onclick="yaCounter22692712.reachGoal('clickAuthors'); return true;">Авторы</a><a href="/users/" onclick="yaCounter22692712.reachGoal('clickUsers'); return true;">Читатели</a></nav><div class="header-search" data-ng-controller="BookSearchCtrl" data-outside-click="closeDropDown()"><form action="/search/" class="dropdown-triger"><input autocomplete="off" data-ng-change="search()" data-ng-click="openDropDown()" data-ng-init="q=''" data-ng-model="q" data-ng-model-options="{debounce: 300}" name="q" placeholder="Поиск автора или книги..." type="text"/><a href="/search/?q={[{ q }]}" rel="nofollow"><i class="icon_sprite search-w"></i></a></form><div class="dropdown-content ng-cloak" data-ng-show="isOpen()"><div class="dd-search-result-list" data-load-spinner="" data-loading="loading"><div class="dd-search-result-counter">
-Книги <span>{[{ count }]}</span></div><div class="user-lib-new--book-list--item cf" data-ng-repeat="book in results"><div class="book-cover"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}" title="{[{ book.title }]}"><img alt="{[{ book.title }]}" class="dropdown-content--search-bimage" data-ng-src="{[{ book.cover | imageUrl:'book.Book':1 }]}"/></a></div><div class="book-main-info"><h3 class="book-title dropdown-content--book-title"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}">{[{ book.title }]}</a></h3><p>{[{ book.author[0].name }]}</p></div></div><div class="dd-goToResult" data-ng-show="results.length"><a href="/search/?q={[{ q }]}" rel="nofollow">
-К результатам поиска по запросу {[{ q }]} »
-</a></div></div></div></div><a class="shuffle-btn header-btn-icon" href="/books/i_am_lucky/" rel="nofollow"><i class="icon_sprite shuffle"></i></a><div class="header--login-new"><a class="header--login-btn-new" href="/user/login/" rel="nofollow">Войти</a><a class="button-normal fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form()" rel="nofollow">Регистрация</a></div></div></header>
-<div id="global-wrap">
-<a class="fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form();yaCounter22692712.reachGoal('open_banner');" rel="nofollow"><div class="top_banner visible-lg visible-md"> </div></a>
-<script>
-    var book_profile = {"rating": 9.1, "quote_count": 3, "isbn": "978-5-4357-0035-0", "content_type": 13, "links": [], "show": true, "rates_count": 312, "quotes": [{"hashtags": [], "author": "\u0428\u0435\u0440\u043b\u043e\u043a \u0425\u043e\u043b\u043c\u0441", "text": "<p>\u041e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0432 \u0431\u043b\u0438\u0436\u0430\u0439\u0448\u0435\u0435 \u0431\u0443\u0434\u0443\u0449\u0435\u0435, \u043c\u044b \u043c\u043e\u0436\u0435\u043c \u0431\u043e\u043b\u0435\u0435 \u0441\u043d\u0438\u0441\u0445\u043e\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043e\u0442\u043d\u0435\u0441\u0442\u0438\u0441\u044c \u043a \u043d\u0435\u0434\u0430\u0432\u043d\u0435\u043c\u0443 \u043f\u0440\u043e\u0448\u043b\u043e\u043c\u0443.</p>", "created_at": "2015-11-21T08:07:48", "object_type": 20, "updated_at": "2015-11-21T08:07:48", "object_id": 43809, "comment_count": 0, "book": {"id": 62999, "name": "\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435", "cover": "covers/c/4/c44fad056869a5b5dab0e55e9554f772.jpg", "authors": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "url": "/book/62999/"}, "user": {"id": 48825, "name": "\u0412\u0435\u0442\u0430 \u0413\u043e\u0440\u0434\u043e\u043d (@schoegar)", "avatar": "avatars/2/5/25f9784da973ce01f54e2c49773fb20c.jpg", "url": "/user/48825/", "username": "schoegar", "gender": 0}, "favorited_users": []}, {"hashtags": [], "author": "\u0428\u0435\u0440\u043b\u043e\u043a \u0425\u043e\u043b\u043c\u0441", "text": "<p>\u041a\u043e\u0433\u0434\u0430 \u0447\u0435\u043b\u043e\u0432\u0435\u043a \u0441\u0442\u0430\u043b \u043d\u0430 \u043f\u0443\u0442\u044c \u043f\u0440\u0435\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u044f, \u043e\u043d \u0434\u043e\u043b\u0436\u0435\u043d \u043d\u0435\u0441\u0442\u0438 \u043c\u043e\u0440\u0430\u043b\u044c\u043d\u0443\u044e \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0437\u0430 \u0432\u0441\u0435 \u043f\u043e\u0441\u043b\u0435\u0434\u0441\u0442\u0432\u0438\u044f \u0441\u0432\u043e\u0435\u0433\u043e \u043f\u043e\u0441\u0442\u0443\u043f\u043a\u0430.</p>", "created_at": "2015-11-21T08:07:07", "object_type": 20, "updated_at": "2015-11-21T08:07:07", "object_id": 43808, "comment_count": 0, "book": {"id": 62999, "name": "\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435", "cover": "covers/c/4/c44fad056869a5b5dab0e55e9554f772.jpg", "authors": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "url": "/book/62999/"}, "user": {"id": 48825, "name": "\u0412\u0435\u0442\u0430 \u0413\u043e\u0440\u0434\u043e\u043d (@schoegar)", "avatar": "avatars/2/5/25f9784da973ce01f54e2c49773fb20c.jpg", "url": "/user/48825/", "username": "schoegar", "gender": 0}, "favorited_users": []}, {"hashtags": [], "author": "\u0414\u043e\u043a\u0442\u043e\u0440 \u0423\u043e\u0442\u0441\u043e\u043d \u043e \u0434\u043e\u043a\u0442\u043e\u0440\u0435 \u0422\u043e\u0440\u043d\u0438\u043a\u0440\u043e\u0444\u0442\u0435 \u0425\u0430\u043a\u0441\u0442\u0435\u0439\u0431\u043b\u0435", "text": "<p>\u0423\u0442\u043e\u043d\u0447\u0451\u043d\u043d\u044b\u0439 \u0430\u0440\u0438\u0441\u0442\u043e\u043a\u0440\u0430\u0442\u0438\u0437\u043c \u044d\u0442\u043e\u0433\u043e \u0432\u0435\u043b\u044c\u043c\u043e\u0436\u0438 \u043d\u0435 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u043b \u0435\u043c\u0443 \u0432\u0445\u043e\u0434\u0438\u0442\u044c \u0432 \u043e\u0431\u0441\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u0441\u0435\u043c\u0435\u0439\u043d\u044b\u0445 \u0434\u0435\u043b \u0441 \u043f\u043e\u0441\u0442\u043e\u0440\u043e\u043d\u043d\u0438\u043c \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u043e\u043c, \u0438 \u043e\u043d, \u0432\u0438\u0434\u0438\u043c\u043e, \u0431\u043e\u044f\u043b\u0441\u044f, \u0447\u0442\u043e \u043a\u0430\u0436\u0434\u044b\u0439 \u043d\u043e\u0432\u044b\u0439 \u0432\u043e\u043f\u0440\u043e\u0441 \u0431\u0440\u043e\u0441\u0438\u0442 \u0431\u0435\u0437\u0436\u0430\u043b\u043e\u0441\u0442\u043d\u044b\u0439 \u0441\u0432\u0435\u0442 \u043d\u0430 \u0441\u0442\u0430\u0440\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0437\u0430\u0442\u0435\u043c\u043d\u0451\u043d\u043d\u044b\u0435 \u0443\u0433\u043e\u043b\u043a\u0438 \u0435\u0433\u043e \u0436\u0438\u0437\u043d\u0438.</p>", "created_at": "2015-11-21T08:04:21", "object_type": 20, "updated_at": "2015-11-21T08:04:21", "object_id": 43807, "comment_count": 0, "book": {"id": 62999, "name": "\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435", "cover": "covers/c/4/c44fad056869a5b5dab0e55e9554f772.jpg", "authors": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "url": "/book/62999/"}, "user": {"id": 48825, "name": "\u0412\u0435\u0442\u0430 \u0413\u043e\u0440\u0434\u043e\u043d (@schoegar)", "avatar": "avatars/2/5/25f9784da973ce01f54e2c49773fb20c.jpg", "url": "/user/48825/", "username": "schoegar", "gender": 0}, "favorited_users": []}], "tag": [], "alter_titles": "\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0448\u043a\u043e\u043b\u0435; \u041f\u0440\u043e\u0438\u0441\u0448\u0435\u0441\u0442\u0432\u0438\u0435 \u0432 \u0448\u043a\u043e\u043b\u0435 \u00ab\u041f\u0440\u0430\u0439\u0435\u0440\u0438\u00bb; \u0418\u043d\u0442\u0435\u0440\u043d\u0430\u0442 \u0434\u043b\u044f \u043c\u0430\u043b\u044c\u0447\u0438\u043a\u043e\u0432", "year": 1904, "facts": [{"hashtags": [], "text": "<p>\u041a\u043e\u0433\u0434\u0430 \u043a \u041a\u043e\u043d\u0430\u043d \u0414\u043e\u0439\u043b\u0443 \u043e\u0434\u043d\u0430\u0436\u0434\u044b \u043e\u0431\u0440\u0430\u0442\u0438\u043b\u0438\u0441\u044c \u0441 \u043f\u0440\u043e\u0441\u044c\u0431\u043e\u0439 \u043f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u0438\u0442\u044c \u043b\u0443\u0447\u0448\u0438\u0435 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u044b \u043e \u0425\u043e\u043b\u043c\u0441\u0435, \u0430\u0432\u0442\u043e\u0440 \u043e\u0442\u043e\u0431\u0440\u0430\u043b 12 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439, \u0432 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435 \u0438 \u00ab\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435\u00bb.</p>", "created_at": "2014-11-08T15:50:24", "object_type": 89, "updated_at": "2014-11-08T15:50:24", "object_id": 1015, "comment_count": 0, "book": {"id": 62999, "name": "\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435", "cover": "covers/c/4/c44fad056869a5b5dab0e55e9554f772.jpg", "authors": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "url": "/book/62999/"}, "user": {"id": 17166, "name": "\u042f\u043d\u0430 (@yana_owl)", "avatar": "avatars/2/c/2c74868299e1970c00b6abe562117e21.png", "url": "/user/17166/", "username": "yana_owl", "gender": 0}}, {"hashtags": [], "text": "<p>\u0422\u043e\u043b\u044c\u043a\u043e \u0432 \u0434\u0432\u0443\u0445 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u0430\u0445 \u041a\u043e\u043d\u0430\u043d \u0414\u043e\u0439\u043b\u0430 \u0432 \u0442\u0435\u043a\u0441\u0442\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f \u043f\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u044e\u0442 \u043e\u0440\u0438\u0433\u0438\u043d\u0430\u043b\u044c\u043d\u044b\u0435 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f: \u00ab\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435\u00bb - \u043f\u043b\u0430\u043d-\u0441\u0445\u0435\u043c\u0430 \u043c\u0435\u0441\u0442\u0430 \u043f\u0440\u043e\u0438\u0441\u0448\u0435\u0441\u0442\u0432\u0438\u044f, \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u043d\u0430\u044f \u0425\u043e\u043b\u043c\u0441\u043e\u043c; \u00ab\u041f\u043b\u044f\u0448\u0443\u0449\u0438\u0435 \u0447\u0435\u043b\u043e\u0432\u0435\u0447\u043a\u0438\u00bb - \u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0437\u0430\u043f\u0438\u0441\u043a\u0438.</p>", "created_at": "2014-11-08T15:49:11", "object_type": 89, "updated_at": "2014-11-08T15:49:11", "object_id": 1013, "comment_count": 0, "book": {"id": 62999, "name": "\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435", "cover": "covers/c/4/c44fad056869a5b5dab0e55e9554f772.jpg", "authors": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "url": "/book/62999/"}, "user": {"id": 17166, "name": "\u042f\u043d\u0430 (@yana_owl)", "avatar": "avatars/2/c/2c74868299e1970c00b6abe562117e21.png", "url": "/user/17166/", "username": "yana_owl", "gender": 0}}], "id": 62999, "by_shelves": {"shelf_count_1": 161, "shelf_count_2": 2, "shelf_count_3": 478, "shelf_count_4": 2}, "rating_sort": 0.0, "review_count": 0, "author": [{"name": "\u0410\u0440\u0442\u0443\u0440 \u041a\u043e\u043d\u0430\u043d  \u0414\u043e\u0439\u043b", "url": "/author/208/", "id": 208}], "create": "2013-10-29T14:32:38", "unique_text": false, "filming": [], "comment_count": 1, "show_rating": 9.1, "description": "\u041e\u0434\u043d\u0430\u0436\u0434\u044b \u043d\u043e\u0447\u044c\u044e \u044e\u043d\u044b\u0439 \u043b\u043e\u0440\u0434 \u0421\u043e\u043b\u0442\u0430\u0439\u0440, \u0435\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0441\u044b\u043d \u0433\u0435\u0440\u0446\u043e\u0433\u0430 \u0425\u043e\u043b\u0434\u0435\u0440\u043d\u0435\u0441\u0441\u0430, \u043e\u0434\u043d\u043e\u0433\u043e \u0438\u0437 \u0441\u0430\u043c\u044b\u0445 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u044b\u0445 \u043b\u044e\u0434\u0435\u0439 \u0410\u043d\u0433\u043b\u0438\u0438, \u0431\u0435\u0441\u0441\u043b\u0435\u0434\u043d\u043e \u0438\u0441\u0447\u0435\u0437 \u0438\u0437 \u0441\u0432\u043e\u0435\u0439 \u043a\u043e\u043c\u043d\u0430\u0442\u044b \u0432 \u043f\u0440\u0435\u0441\u0442\u0438\u0436\u043d\u043e\u043c \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435. \u0412 \u043e\u0442\u0447\u0430\u044f\u043d\u0438\u0438 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0430 \u043e\u0431\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044f \u0437\u0430 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u043a \u0428\u0435\u0440\u043b\u043e\u043a\u0443 \u0425\u043e\u043b\u043c\u0441\u0443.\n\u041f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043e \u0432 \u0430\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0439 \u0441\u0431\u043e\u0440\u043d\u0438\u043a <a href=\"/book/62516/\">\u00ab\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0428\u0435\u0440\u043b\u043e\u043a\u0430 \u0425\u043e\u043b\u043c\u0441\u0430\u00bb</a>.\n\u0427\u0438\u0442\u0430\u0439\u0442\u0435 \u043e \u043d\u043e\u0432\u043e\u043c \u0440\u0430\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0438 \u0437\u043d\u0430\u043c\u0435\u043d\u0438\u0442\u043e\u0433\u043e \u0441\u044b\u0449\u0438\u043a\u0430 \u0432 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0438 <a href=\"/book/12764/\">\u00ab\u0427\u0435\u0440\u043d\u044b\u0439 \u041f\u0438\u0442\u0435\u0440\u00bb</a>.", "readers_count": 641, "award": [], "sorter": 9.08, "series_position": 35, "seria": 2, "favorites": 2, "genre": [{"url": "/genre/180/", "id": 180, "name": "\u041a\u043b\u0430\u0441\u0441\u0438\u043a\u0430", "is_show": true}, {"url": "/genre/58/", "id": 58, "name": "\u0417\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u0430\u044f \u043a\u043b\u0430\u0441\u0441\u0438\u043a\u0430", "is_show": true}, {"url": "/genre/188/", "id": 188, "name": "\u0414\u0435\u0442\u0435\u043a\u0442\u0438\u0432\u044b \u0438 \u0442\u0440\u0438\u043b\u043b\u0435\u0440\u044b", "is_show": true}, {"url": "/genre/76/", "id": 76, "name": "\u041b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430 20 \u0432\u0435\u043a\u0430", "is_show": true}, {"url": "/genre/109/", "id": 109, "name": "\u041a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0434\u0435\u0442\u0435\u043a\u0442\u0438\u0432\u044b", "is_show": true}], "fact_count": 2, "publisher": "\u041f\u0435\u0442\u0440\u043e\u0433\u043b\u0438\u0444", "url": "/book/62999/", "title": "\u0421\u043b\u0443\u0447\u0430\u0439 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0442\u0435", "cover": "covers/c/4/c44fad056869a5b5dab0e55e9554f772.jpg", "_id": 62999, "user": {"possible_rate": null, "id": null}};
-</script>
-<div class="wrapper content clearfix">
-<article class="book-article" itemscope="" itemtype="http://schema.org/Book">
-<div class="content-cols">
-<div class="content-cols--main">
-<h1 class="book-article--title" itemprop="name">Случай в интернате</h1>
-<div class="book-article--author">
-<label class="author-name">Автор книги:</label>
-<a href="/author/208/"><h2 itemprop="author">Артур Конан Дойл</h2></a>
+<body class="is-preload" itemscope="" itemtype="https://schema.org/WebPage">
+<div id="wrapper">
+<header id="header">
+<div class="inner"><a class="logo" href="/"><span class="title">Fantasy Book Review</span></a>
+<nav>
+<ul>
+<li><a href="#menu">Menu</a></li>
+</ul>
+</nav>
 </div>
-<div class="book-article--details">
-<div class="ba-details--row">
-<label class="row-label"><span>год написания:</span></label>
-<span class="row-value">1904</span>
+</header>
+<nav id="menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/top-100-fantasy-books/">Top 100</a></li>
+<li><a href="/fantasy-books-of-the-year/">Fantasy Books of the Year</a></li>
+<li><a href="/best-fantasy-series.html">Best Fantasy Series</a></li>
+<li><a href="/fantasy-sub-genres/">Fantasy Sub Genres</a></li>
+<li><a href="/interviews/">Interviews</a></li>
+</ul>
+</nav>
+<div id="main">
+<div class="inner">
+<h1>The Way of Shadows by Brent Weeks
+(The Night Angel Trilogy: Book 1)</h1>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Book">
+<meta content="The Way of Shadows" itemprop="name"/>
+<meta content="Brent Weeks" itemprop="author"/>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<div itemprop="reviewBody">
+<p>I Twittered the other day (follow me at <a href="https://twitter.com/JoshSHill/">Twitter.com/JoshSHill/</a>) that I had just realized people don’t actually want good writing, they just want to be entertained. This might seem like a realization I should have made earlier, but there it is. And while some may think that that is obvious, I think it’s just plain sad. Books should be a combination of entertainment and good writing.</p><p>That leads me to The Way of Shadows, by Brent Weeks. My girlfriend leant me the book and I was tasked with reading it as soon as possible. And while the intent of the author was laudable, the actual telling of the story was ... amateurish.</p><p>First let me praise the book though, so that any of my grievances will not necessarily dissuade you from reading The Way of Shadows.</p><p>The first in a trilogy of books, Weeks introduces us to a master assassin and his new apprentice. The world is intriguing, and any book that looks into the dark and shadowy world of assassins is immediately interesting to me.</p><p>Sticking with my desire not to summarize the entirety of the book for you, and negate any need to actually read the book (looking at you SFFWorld), here’s what I can say. Coming up from the gutters where life is less than cheap, Azoth, aka, Kylar, is apprenticed to the cities best wetboy (better than an assassin).</p><p>Over the course of a decade and more Kylar is trained in the arts of death. But at the same time the city in which he trains is itself coming closer to its own death. Political intrigue, the life and times of the noble court and lots of death make up what was a brilliant concept. </p><p>Apparently though, I am doomed to continually read books by authors who have conceived of a novel and, at times, brilliant idea, but failed to complete even a basic introductory writing course.</p><p>The Way of Shadows was poorly written. From basic grammar and spelling mistakes and whole words missing from sentences leaving the reader baffled, to a structuring that seems to only be suitable to a rare type of schizophrenic, this book was a very tough read.</p><p>Any character that sees their name written more than once in the book was eventually given their own perspective, leaving the storytelling muddy and confused. I was often left spellbound, only to be unexpectedly dragged away to some irrelevant and boring passage. I’m all for cliffhangers, but they have to be done well, and Weeks hasn’t the writing know-how to pull this off.</p><p>Often characters or descriptions would stray so far into the obscure, uninformed or downright confusing that the story would halt and leave you scratching your head. Whole pieces of information were left by the wayside and dragged the reader down with it.</p><p>Should you read this book? I am not going to be giving this to people for presents anytime soon, but maybe lack of serious writing talent is not a hindrance to an enjoyable book for you. It’s your choice. Either way, Weeks had serious potential, and one can only hope that it gets better in the books to come.</p><p><span class="rating">9/10</span> <em>Weeks had serious potential.</em></p>
 </div>
-<div class="ba-details--row">
-<label class="row-label"><span>серия книг:</span></label>
-<span class="row-value">
-<a href="/serie/2/">Шерлок Холмс</a>
-(35 книга из 67)
-</span>
+<ul class="actions stacked">
+<li><a class="button primary" href="https://www.amazon.com/dp/B002TXZRPE?tag=heavenlyholid-20" rel="nofollow" target="_blank">Buy on Amazon</a></li>
+</ul>
+<p>Review by <a href="/reviewers/Joshua-S-Hill.html"><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Joshua S Hill</span></span></a></p>
+<p><a href="#readerreviews">31 positive reader review(s)</a> for The Way of Shadows</p>
+<p>30 positive reader review(s) in total for the The Night Angel Trilogy series</p>
+<meta content="2021-04-18" itemprop="dateModified"/>
 </div>
-<div class="ba-details--row">
-<label class="row-label"><span>жанры:</span></label>
-<span class="row-value">
-<a href="/genre/180/">классика</a>
-,
-<a href="/genre/58/">зарубежная классика</a>
-,
-<a href="/genre/188/">детективы и триллеры</a>
-,
-<a href="/genre/76/">литература 20 века</a>
-,
-<a href="/genre/109/">классические детективы</a>
-</span>
-</div>
-<div class="book-article--description">
-<br/>
-<h3 class="book-author-title">Описание</h3>
-<p><p>Однажды ночью юный лорд Солтайр, единственный сын герцога Холдернесса, одного из самых известных людей Англии, бесследно исчез из своей комнаты в престижном интернате. В отчаянии директор интерната обращается за помощью к Шерлоку Холмсу.<br>Произведение включено в авторский сборник <a href="/book/62516/">«Возвращение Шерлока Холмса»</a>.<br/>Читайте о новом расследовании знаменитого сыщика в произведении <a href="/book/12764/">«Черный Питер»</a>.</br></p></p>
-</div>
-<div class="ng-cloak book-profile-rating-height" data-ng-controller="BookProfileCtrl" id="book_profile_book-rating-app" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-<div data-book-id="book.id" data-book-rating="" data-rating="book.user.rating"></div>
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating">
+<meta content="8.7" itemprop="ratingValue"/>
 <meta content="10" itemprop="bestRating"/>
-<meta content="9,1" itemprop="ratingValue"/>
-<meta content="312" itemprop="ratingCount"/>
-<div class="book-circular-correct">
-<span class="book-profile--rate">9,1</span>
-<span class="book-profile--rates-count">(312 оценок)</span>
-</div>
-<div class="book-top100">
-<a href="/books/top/">
-<span>Топ-100:</span> 62
-</a>
-</div>
-</div>
-<div class="ng-cloak" data-ng-controller="WhereToBuyCtrl" data-ng-init="aggregate('Случай в интернате', 'Артур Конан  Дойл')" id="book_profile-where_to_buy-app">
-<h2 class="where-to-buy-title book-author-title rel-h2" data-ng-show="aggregated.length">Купить книгу Случай в интернате, Артур Конан Дойл</h2>
-<div class="books-aggregate">
-<div class="aggregate-row" data-ng-class-odd="'book-aggregate-row-odd'" data-ng-repeat="agg in aggregated">
-<a data-ng-href="{[{ agg.url }]}" target="_blank"><img alt="" class="aggregate-shop-img" data-ng-src="{[{ agg.market_logo }]}"/></a>
-<a class="aggregate-shop" data-ng-bind="agg.market_name" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<a class="aggregate-book" data-ng-bind="agg.title" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<div class="fr">
-<b class="aggregate-price"><span data-ng-bind="agg.price"></span> р.</b>
-<a class="aggregate-buy-button-litres" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market=='litres'" target="_blank">Скачать</a>
-<a class="aggregate-buy-button" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market!='litres'" target="_blank">Купить</a>
+</meta></div>
+<h2 id="readerreviews">The Way of Shadows reader reviews
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Enai</span></span> from US</strong></p>
+<blockquote><span itemprop="reviewBody">I'm not sure what this person was reading, but it wasn't the Night Angel trilogy. The story is interesting, the pacing top-notch, the characters reasonably well-rounded and believable/likable. The writing is perfectly competent. There may well have been typos, possibly even more than is usual (all books have some), but I doubt you'll notice unless you're specifically looking for it- I certainly didn't. It definitely doesn't take away from the story, at any rate. Sort of an amateurish thing to harp on in a book review, tbh. Strongly recommended. I'm a fairly picky reader and had tried and aborted several books prior to this (I always have trouble getting started on a new book or series after finishing a previous one), but this one kept me enthralled from page 1. I wouldn't say that its an all-time great fantasy series like Tolkien or RR Martin or anything, but its probably in the next tier down, easily one of the better fantasy series you'll read.</span></blockquote>
+<strong>9/10</strong> (<span itemprop="datePublished">2020-12-31</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="9" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Camden</span></span> from America</strong></p>
+<blockquote><span itemprop="reviewBody">I think that the book was really good, but there was some of those typos that left me baffled. But as I kept reading the book, the typos didn't madder any more, it was addicting to read so I read the first book in a day. S o I recommend this book to read and I think that you will most definitely enjoy this book alot.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2018-04-23</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<br class="clear"/>
-<div data-ng-controller="BookProfileCtrl" id="book_profile_facts-quotes-app">
-<div data-book-id="book.id" data-fact-list="" data-facts="book.facts"></div>
-<div data-book-id="book.id" data-quote-list="" data-quotes="book.quotes" data-user-id="book.user.id"></div>
-</div>
-<div class="invisible-content">
-<div class="h3-title-wadd"><h3>Интересные факты</h3></div>
-<div class="ba-facts-list">
-<div class="ba-fact-item"><i class="bull">•</i><p>Когда к Конан Дойлу однажды обратились с просьбой перечислить лучшие рассказы о Холмсе, автор отобрал 12 произведений, в том числе и «Случай в интернате».</p></div>
-<div class="ba-fact-item"><i class="bull">•</i><p>Только в двух рассказах Конан Дойла в тексте произведения присутствуют оригинальные изображения: «Случай в интернате» - план-схема места происшествия, выполненная Холмсом; «Пляшущие человечки» - шифрованные записки.</p></div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Me</span></span> from US</strong></p>
+<blockquote><span itemprop="reviewBody">To be fair... we all want to be entertained more than anything while reading books. If your paying attention more to grammar and spelling errors than to the story itself you should probably pick up a dictionary instead. The overall story of the entire series is very good. Leaves just enough to the imagination that you want to pick up the next book and continue the story.</span></blockquote>
+<strong>9/10</strong> (<span itemprop="datePublished">2014-01-08</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="9" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="invisible-content">
-<div class="h3-title-wadd">
-<h3>Цитаты из книги</h3>
-</div>
-<div class="ba-facts-list">
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Обеспечив ближайшее будущее, мы можем более снисходительно отнестись к недавнему прошлому.&lt;/p&gt;<br/><em class="quote-sign">Шерлок Холмс</em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/48825/" rel="nofollow"><i class="ico"></i>schoegar</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Nick Davison</span></span> from England</strong></p>
+<blockquote><span itemprop="reviewBody">I had no problems following the storyline and have to say that the Night Angel trilogy as a whole, is one of the richest, most engrossing, creative, and entertaining fantasy works I have ever read. Perhaps there are editorial mistakes in this book, I can't remember having read it a few years ago, but don't let that put you off. As a trilogy, Night Angel is one of the very best out there.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2013-08-26</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Когда человек стал на путь преступления, он должен нести моральную ответственность за все последствия своего поступка.&lt;/p&gt;<br/><em class="quote-sign">Шерлок Холмс</em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/48825/" rel="nofollow"><i class="ico"></i>schoegar</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Утончённый аристократизм этого вельможи не позволял ему входить в обсуждение семейных дел с посторонним человеком, и он, видимо, боялся, что каждый новый вопрос бросит безжалостный свет на старательно затемнённые уголки его жизни.&lt;/p&gt;<br/><em class="quote-sign">Доктор Уотсон о докторе Торникрофте Хакстейбле</em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/48825/" rel="nofollow"><i class="ico"></i>schoegar</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Aniek</span></span> from Netherlands</strong></p>
+<blockquote><span itemprop="reviewBody">I thought this was one of the most amazing books I´ve ever read. The action is awesome and I loved how mysterious everything was. Maybe not always correct spelling, but that´s only relative with the awesomeness of this book.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2013-05-29</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Raven</span></span> from United States of America</strong></p>
+<blockquote><span itemprop="reviewBody">The most awesome book I have ever read.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-09-28</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-</div>
-<h2 class="book-author-title rel-h2">С этой книгой читают:</h2>
-<div class="book-related-list">
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/62998/" rel="nofollow">
-<img alt="Суждения и беседы" src="/public/media/covers/5/4/541ef5532e37942e057688db23012c33_160x0.jpg" title="Суждения и беседы"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/62998/">
-Суждения и беседы
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Eric</span></span> from Canada</strong></p>
+<blockquote><span itemprop="reviewBody">My favorite book of all time!!!!! Great characters, plot, and action scenes. I could not put it down! </span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-09-10</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/62994/" rel="nofollow">
-<img alt="Планета мистера Сэммлера" src="/public/media/covers/c/6/c6bd3c976a39fbefcb649dd8e201e284_160x0.jpg" title="Планета мистера Сэммлера"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/62994/">
-Планета мистера Сэммлера
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Joe Davies</span></span> from England</strong></p>
+<blockquote><span itemprop="reviewBody">Easy to read, fast paced and keeps you guessing. Read this for quick, action packed scenes with quite a complex plot. However, don't expect literary perfection. Suitable for mature teens and over. </span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-08-29</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/62992/" rel="nofollow">
-<img alt="Гордость и предубеждение 2" src="/public/media/covers/2/2/22d37211d59aaef9cd20f0299d1b3a8d_160x0.jpg" title="Гордость и предубеждение 2"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/62992/">
-Гордость и предубеждение 2
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Anthony</span></span> from Sydney</strong></p>
+<blockquote><span itemprop="reviewBody">Great book, a must read.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-04-13</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/62989/" rel="nofollow">
-<img alt="Цветик-семицветик" src="/public/media/covers/e/c/eceb4b3ce50ce84639472796100db10f_160x0.jpg" title="Цветик-семицветик"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/62989/">
-Цветик-семицветик
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Tarje </span></span> from Norway</strong></p>
+<blockquote><span itemprop="reviewBody">This is, without doubt. The best book i have ever read, and i have read a lot of books. But the world Weeks have made in this books is simply amasing, and with both lovable, and hateable characters and a great complex storry that would make anyone proud. It has great language and is writen so well i never put it away once i start reading it, i have read all his books many times and never grow tired og the amazing storyline. </span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/62987/" rel="nofollow">
-<img alt="Сказки" src="/public/media/covers/4/0/407e464fcedaea668efe05d2dc0c90ff_160x0.jpg" title="Сказки"/>
-</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Slip</span></span> from The Slipstream's Concscious</strong></p>
+<blockquote><span itemprop="reviewBody">Decent?!? Being a fan of fantasy I have read both ends of the spectrum and everything in between. I forgot to pack a book when traveling recently and could only grab a book by cover art due to the limited time restraints of my flight departure. I chose this unfortunately.
+The book has the framework to be developed into an incredible and almost original story. Its copywrite is 2008 and I'm pretty sure Assassin's Creed came out before or during that period. Regardless, all forms of pop-culture and media feed off each other and we are forced to swallow this.
+I enjoyed the charcter development...when they were being developed. Years went missing in this story when all of a sudden childhood friends have ascended to an influential part of society. Weeks attempts to persuade the reader in a short few sentences that this is ok, and I suppose it is b/c it is mainly about Kylar/Azoth's acceptance of his role and the struggle he has to let go of his past.
+It insists on the reader to assume the happenings in the gaps of time...then BOOM! Kylar/Azoth is face to face with Doll Girl/Elene after his first kill(s)...then BOOM! Durzo has a daughter...then BOOM! It goes on and on and on.
+Worth a read, shit I gave it an 7 out of 10 but this could have easily been a 9 or 10 with proper patience and development of environment and character/story arcs. Descripitive and at times brutal, it has enough of the superficial to overlook the lack of profound writing.
+Cheap and rewarding.</span></blockquote>
+<strong>7/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="7" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
-<div class="related-book--title">
-<a href="/book/62987/">
-Сказки
-</a>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Sarah</span></span> from West Midlands</strong></p>
+<blockquote><span itemprop="reviewBody">Loved it! Couldn't put it down and finished the 2nd and 3rd in short order to. And I think a few foibles in the writing (not that I noticed enough to get hung up on it) only make it more real!</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Nancy</span></span> from Minnesota, USA</strong></p>
+<blockquote><span itemprop="reviewBody">The cover was a serious turn off, I wasn't expecting much, but started reading because my husband couldn't put the book down. I finished the book in one day, I couldn't put it down. You know so many books get high reviews because of their so-called great writing, and I can barely finish them, they are so boring, almost feels like the authors are in love with their own writing. This book is not about great writing, this book is about a GREAT STORY, told in an exciting, well edited way, without boring paragraphs describing what the hero is wearing or what the town looks like.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="ba-timeline-container">
-<nav class="tape-select" id="timelinenav">
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Graeme</span></span> from Newcastle</strong></p>
+<blockquote><span itemprop="reviewBody">I honestly thought when I first started reading The Way of Shadows that it was going to be a winner, but unfortunatley I was left dissapointed. It seemed that Kylars ageing happened to quickly, throw some random bad language in and you've generally got a book that had great potential but went off the boil. The plus side is Durzo Blint is a cool character.</span></blockquote>
+<strong>6/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="6" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Dave</span></span> from Melbourne</strong></p>
+<blockquote><span itemprop="reviewBody">Best Book ever! I read a book to be entertained and that is exactly what it did.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Torak</span></span> from Somewhere</strong></p>
+<blockquote><span itemprop="reviewBody">I thought the characters were realistic, the world was well developed and it didn't try and be nice. More still, when you read the other books you realize it is more complex and clever than just an Assassin Creed type bloodbath.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Tom</span></span> from Ohio</strong></p>
+<blockquote><span itemprop="reviewBody">Great characters and a little on the dark side.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Stephen King</span></span> from Portland</strong></p>
+<blockquote><span itemprop="reviewBody">I 'm in a state of utter disbelief to find that it was possible for a few select people to label this novel, and its author as anything short of genius. Brent Weeks created a world with the capability to challenge Tolkein and his Middle Earth. The genuine characters were backed with incredible depth in such a way so as cultivate an incredible journey, which is at the heart of any good fiction novel. His co-linear storyline would hook me instantly, leave me at a climax and then real me in with a new chapter. All in all a masterfully addictive piece of writing in which the world and characters unravel before you; only to be re-strung by the many twists and turns, leaving the reader with an uplifting sense of catharsis. 10/10 I couldn't put it down.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Josh</span></span> from Yorkshire</strong></p>
+<blockquote><span itemprop="reviewBody">I don't think it's the writing, I think it's the love for the characters and the place and the culture that makes it a good book; one that builds up the history and surroundings so that it becomes a real world instead of just some people in a book. I was moved by The Way of Shadows because I wanted him to succeed and because I felt sorry for Azoth. I think that the passion for the characters is enough to beat good writing for this time.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Leanne</span></span> from East Anglia</strong></p>
+<blockquote><span itemprop="reviewBody">I disagree with many of the points about the writing, I didn't find it confusing, in fact I found it well written because it suited the characters themselves. Personally I couldn't put it down and had to order the next in the trilogy as soon as possible!</span></blockquote>
+<strong>9/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="9" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Shawn</span></span> from West Virginia</strong></p>
+<blockquote><span itemprop="reviewBody">I found this book to be very good. It is true that there are some confusing moments. However, if you slow down a moment and read on through, the story will grab you and take off. It's a great story, definitely worth a read.</span></blockquote>
+<strong>8/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="8" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Jeff</span></span> from Michigan</strong></p>
+<blockquote><span itemprop="reviewBody">You sir must enjoy reading dictionaries. I found the book to bee thouroughly enjooable. Sorry for mi spelling and sentense structure.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Anonymous</span></span> from Where?</strong></p>
+<blockquote><span itemprop="reviewBody">Good writing can only be read by good readers, Literature if for writing, Fantasy is for enjoyment. Good book, I never really had a problem with reading it. I found I could never put it down :)</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Kyle</span></span> from New Hampshire</strong></p>
+<blockquote><span itemprop="reviewBody">I loved this book. Although I agree that it can be confusing at times, and jumpy at other times, there are just some pivotal points and areas of the book that grabbed my interest so deeply that it urged me to keep reading. I'm probably a little biased, I'm not judging this by grammar, spelling, or anything like that. I'm judging it by how much I enjoyed it as a whole. </span></blockquote>
+<strong>9/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="9" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Noor</span></span> from Canada</strong></p>
+<blockquote><span itemprop="reviewBody">WOW this is an amazing book. I can't find anything better then this. I'm actually trying to find a book with the same story line but I can't :(</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Cory</span></span> from Oklahoma</strong></p>
+<blockquote><span itemprop="reviewBody">The concept of this story is outstanding. The people and their stories are very enjoyable. I don't know if it is Mr Weeks's writing or his editor but it feels as if whole sections of story are missing. Like you just catch up with the characters weeks or months later. But I would recomend this series to anyone...</span></blockquote>
+<strong>7/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="7" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Jamie</span></span> from Wichita, KS</strong></p>
+<blockquote><span itemprop="reviewBody">I completely disagree with the review. I don't care much for trying to give an English lesson. I care about the story which was a great start to one of the most amazing series I've read. Book 2 is even better than the first, and Book 3 is even better than that. If you don't take the time and read "The Night Angel" trilogy, then that's your loss.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Jim</span></span> from Chicago</strong></p>
+<blockquote><span itemprop="reviewBody">I completely agree with your assessment. Finding a grammatical or spelling error in a (supposedly) proof-read novel is like listening to a (supposedly) competent speaker who says "um" or "uh" multiple times. I find myself counting the mistakes... I did, however, enjoy the book and would recommend it to anyone looking for a good fantasy novel.</span></blockquote>
+<strong>6/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="6" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Dan</span></span> from England</strong></p>
+<blockquote><span itemprop="reviewBody">Massivly disagree with the reveiw. OK, some of the writing is not brilliant but I found that with this book that I couldn't care less. The story line and range of incredible characters more than makes up for a few spelling and grammatical errors. Buy this book!</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Steve</span></span> from Calgary</strong></p>
+<blockquote><span itemprop="reviewBody">I can hardly find words to describe how much I disagree with this review. This book was absolutely thrilling from beginning to end. If you have a hunger for proper spelling and grammar as much as the reviewer I suggest picking up the latest installment in the Merriam-Webster dictionary series. I like my fantasy gritty, bloody and absolutely no "Warrior on a quest" type garbage; needless to say this book delivered. I was not too thrilled with some of the characters right off the bat (Logan Gyre comes to mind.) but by the end of the book I knew I was going to be buying the rest of the trilogy.
+Buy it, read it, love it.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Kyle</span></span> from Texas</strong></p>
+<blockquote><span itemprop="reviewBody">I completely and utterly disagree with you on most of your points; granted there are numerous spelling and grammatical errors. The first of a trilogy (soon to be more, Brent is working on three more books in the same world) has to introduce a lot of story and character and world building. To me, Brent is already a master of his craft. He is ballsy and took a completely new approach to fantasy, which is highly admirable because he probably knew he would get people like you slamming him for it. But he did it.
+You must read all of the books in the series to fully understand why it was necessary for him to incorporate so many perspectives; it makes for a vast experience of a story. It is a massive achievement and I have read it through at least twice already. If you read all three and still hold that Mr. Weeks is a poor writer, I feel pity for you, my friend. Anyone reading this, get the books; you will not be disappointed.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2012-03-01</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
+</div>
+</div>
+<div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="bestRating"/>
+<p><span itemprop="ratingValue">9.3</span>/10 from <span itemprop="reviewCount">32</span> reviews</p>
+</div>
+<h2>All Brent Weeks Reviews</h2>
 <ul>
-<li class="active">
-<a href="/book/62999/?filter=reviews#!/#timelinenav" rel="nofollow">Рецензии</a>
-</li>
-<li>
-<a href="/book/62999/?filter=comments#!/#timelinenav" rel="nofollow">Отзывы</a>
-</li>
+<li><a href="/Brent-Weeks/Perfect-Shadow.html">Perfect Shadow (A Night Angel Novella)</a></li>
+<li><a href="/Brent-Weeks/The-Black-Prism.html">The Black Prism (Lightbringer: Book 1)</a></li>
+<li><a href="/Brent-Weeks/The-Blinding-Knife.html">The Blinding Knife (Lightbringer: Book 2)</a></li>
+<li><a href="/Brent-Weeks/The-Burning-White.html">The Burning White  (Lightbringer: Book 5)</a></li>
+<li><a href="/Brent-Weeks/The-Black-Prism.html">The Lightbringer Trilogy (The Lightbringer Trilogy)</a></li>
+<li><a href="/Brent-Weeks/The-Way-of-Shadows.html">The Way of Shadows (The Night Angel Trilogy: Book 1)</a></li>
 </ul>
-</nav>
-<div id="filter-search-results-container">
-<div class="filter-panel-index">
-<div class="page-column-main __timeline">
-<section class="review-timeline-list">
-<nav class="nav-filter">
-<ul class="nav-filter-list">
-<li class="active">
-<a href="/book/62999/
-?filter=reviews&amp;sort=last#!/timelinenav" rel="nofollow">Последнее</a>
-</li>
-<li>
-<a href="/book/62999/
-?filter=reviews&amp;sort=useful#!/timelinenav" rel="nofollow">Популярное</a>
-</li>
-<li>
-<a href="/book/62999/
-?filter=reviews&amp;sort=new#!/timelinenav" rel="nofollow">Новое</a>
-</li>
-</ul>
-</nav>
-<div id="book_profile_timeline-app">
-<span id="reactComponent-Readly.bookTimelineBox"><div data-react-checksum="-348795633" data-reactid=".2f8j5fqxog0"><div class="rtl--comment-add" data-reactid=".2f8j5fqxog0.0"><div class="rtl--start-discussion rtl--start-discussion-compat bookpost bookpost-review" data-reactid=".2f8j5fqxog0.0.0"><textarea class="sd--input" data-reactid=".2f8j5fqxog0.0.0.0" placeholder="Оставить рецензию..."></textarea></div></div><div data-reactid=".2f8j5fqxog0.1"><div data-reactid=".2f8j5fqxog0.1.0"></div></div></div></span>
+</h2></div>
+<section class="tiles">
+<article class="style1">
+<span class="image"><img alt="top 100 background" class="lazyload" height="326" src="/images/pic01.jpg" width="353"/></span>
+<a href="/top-100-fantasy-books/">
+<h2>Top 100 Fantasy Books Of All Time</h2>
+<div class="content">
+<p>Looking for great fantasy books? Take a look at the 100 pages we rate highest</p>
 </div>
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="content-cols--aside">
-<div class="book-article--aside" data-inject-global-var="book_profile">
-<div class="book-article--img">
-<img alt="Обложка Случай в интернате" src="/public/media/covers/c/4/c44fad056869a5b5dab0e55e9554f772_200x0.jpg" title="Случай в интернате"/>
-</div>
-<div class="ba-about">
-<h3>О книге</h3>
-<ul class="ba-counters">
-<li>
-<i class="bc-icon readers"></i>
-<a href="/book/62999/readers/5/" rel="nofollow">
-Читатели (641)
 </a>
-</li>
-<li class="reviews">
-<i class="bc-icon reviews"></i>
-<a alt="Случай в интернате рецензии" href="/book/62999/reviews/">
-Рецензии (0)
-</a>
-</li>
-<li class="quotes">
-<i class="bc-icon quotes"></i>
-<a alt="Случай в интернате цитаты" href="/book/62999/quotes/">
-Цитаты (3)
-</a>
-</li>
-<li class="facts">
-<i class="bc-icon facts"></i>
-<a alt="Случай в интернате интересные факты" href="/book/62999/facts/">
-Факты (2)
-</a>
-</li>
-<li class="reviews">
-<i class="bc-icon comments"></i>
-<a alt="Случай в интернате отзывы" href="/book/62999/comments/">
-Отзывы (1)
-</a>
-</li>
-</ul>
-</div>
-</div>
-<ul class="book-article--links" data-hide-show="">
-<li class="book--share" data-ng-class="{_opened: isVisible()}">
-<i class="b-icon" data-ng-class="{'share-plus': !isVisible(), 'share-minus': isVisible()}"></i>
-<a class="book-share--toggle" data-ng-click="toggle()" href="" rel="nofollow">
-Поделиться книгой с друзьями
-</a>
-<div class="book-share--counters">
-<div class="ya-share-book-profile">
-<script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript"></script>
-<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharequickservices="vkontakte,twitter,odnoklassniki,gplus" data-yasharetheme="counter" data-yasharetype="small"></div>
-</div>
-</div>
-</li>
-</ul>
-<div class="ba--edit-info edit-book-info-margin">
-<a class="fancybox-book-edit-info-form" data-ng-href="#!/#book-edit-info-form" rel="nofollow">
-Изменить информацию о книге
-</a>
-<span class="rarr">→</span>
-</div>
-<a class="centered h3-top100-title" href="/books/top/">
-<div class="b-icon thebest"></div>Лучшие книги - Топ 100
-</a>
-<div class="aside-top100">
-<div class="a-top100-item">
-<div class="a-t100-number">33.</div>
-<div class="a-t100-image">
-<a href="/book/57889/" rel="nofollow">
-<img alt="Крёстный отец" src="/public/media/covers/1/f/1fb3bb5686c743ab51c0a99f69e0cd57_100x0.jpg" title="Крёстный отец"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57889/">Крёстный отец</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.1</strong>
-(1798 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">34.</div>
-<div class="a-t100-image">
-<a href="/book/57754/" rel="nofollow">
-<img alt="Дары волхвов" src="/public/media/covers/f/d/fd93005de3e0f1c80757b4383d3e45dd_100x0.jpg" title="Дары волхвов"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57754/">Дары волхвов</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.1</strong>
-(1771 оценка)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">35.</div>
-<div class="a-t100-image">
-<a href="/book/13146/" rel="nofollow">
-<img alt="Случай с переводчиком" src="/public/media/covers/2/b/2b9e0ab50f1341fb217d9e2d8bb0de31_100x0.jpg" title="Случай с переводчиком"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/13146/">Случай с переводчиком</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.2</strong>
-(359 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">36.</div>
-<div class="a-t100-image">
-<a href="/book/61733/" rel="nofollow">
-<img alt="Черный человек" src="/public/media/covers/6/d/6d6dc039c8356018efa77570b25dc181_100x0.jpg" title="Черный человек"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/61733/">Черный человек</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.1</strong>
-(918 оценок)
-</div>
-</div>
-</div>
-<div class="a-t100--show-all"><a class="a-arrowed" href="/books/top/" rel="nofollow">Весь рейтинг</a></div>
-</div>
-</div>
-</div>
 </article>
+<article class="style2">
+<span class="image"><img alt="fantasy series background" class="lazyload" height="326" src="/images/pic02.jpg" width="353"/></span>
+<a href="/best-fantasy-series.html">
+<h2>Fantasy Series We Recommend</h2>
+<div class="content">
+<p>There's nothing better than finding a fantasy series you can lose yourself in</p>
 </div>
-<div id="book-edit-info-form">
-<div data-ng-controller="BookEditInfoCtrl" id="book_edit_info_form-book-edit-info-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<p>Редактирование информации:</p>
-<span class="book-edit-form-book-name">Случай в интернате</span>
-</div>
-<div class="feedback-body">
-<span class="book-edit-thanks">Спасибо, что помогаете делать наш сайт лучше!</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Напишите, что вы предлагаете исправить: название книги, обложку, автора, описание, год написания произведения, серию?" rows="10"></textarea>
-<a class="ui-20 show-filming" data-ng-click="addFilms=true" data-ng-hide="addFilms" href="" rel="nofollow">Указать экранизацию книги?</a>
-<input class="ui-20 show-filming" data-ng-model="filming" data-ng-show="addFilms" placeholder="Добавьте ссылку с кинопоиска на фильм, снятый по книге" type="text"/>
-<button class="btn-blue-20 send-book-info" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
-</div>
-</div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="libr" id="libr">
-<div class="libr-lightbox">
-<div class="libr-heading">
-<span class="libr-title libr-dark-gray">Гарри Поттер и Орден Феникса</span>
-<ul class="libr-heading-icons">
-<li><a class="libr-ico-help" href="">Помощь</a></li>
-<li><a class="libr-ico-close" href="">Закрыть</a></li>
-</ul>
-</div>
-<form action="#" class="libr-form-librarian">
-<fieldset>
-<aside class="libr-sidebar">
-<div class="libr-buttons">
-<a class="libr-button libr-will-read" href="">Хочу прочитать</a>
-<a class="libr-button libr-now-reading" href="">Читаю</a>
-<a class="libr-button libr-already-read active" href="">Прочитал</a>
-</div>
-<div class="libr-check-area">
-<div class="libr-form-row">
-<input checked="" hidden="" id="print" type="checkbox">
-<label for="print">Печатное издание</label>
-</input></div>
-<div class="libr-form-row">
-<input hidden="" id="audiobook" type="checkbox"/>
-<label for="audiobook">Аудиокнигу</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="electronic-version" type="checkbox"/>
-<label for="electronic-version">Электронную версию</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="original-language" type="checkbox"/>
-<label for="original-language">На оригинальном языке</label>
-</div>
-</div>
-<ul class="libr-sidebar-icons">
-<li><a class="libr-ico-favorite" href="">В избранное</a></li>
-<li><a class="libr-ico-rss" href="">Подписаться на рецензии</a></li>
-</ul>
-</aside>
-<div class="libr-main-block">
-<ul class="libr-tabset">
-<li><a class="active" href="#libr-tab1"><span class="libr-inner libr-create-shelf">Добавить/Оценить</span></a></li>
-<li><a class="disabled" href="#libr-tab2"><span class="libr-inner libr-calendar">Указать период</span></a></li>
-<li><a href="#libr-tab3"><span class="libr-inner libr-edit-note">Добавить заметку</span></a></li>
-</ul>
-<div class="libr-tabs-content">
-<div id="libr-tab1">
-<div class="libr-content-block">
-<div class="libr-add-shelf-section">
-<div class="libr-heading-block">
-<strong class="libr-title">Добавить на полку:</strong>
-<a class="alignright" href="">Создать полку</a>
-</div>
-<div class="libr-select-block libr-popup-holder">
-<div class="libr-open">
-<input readonly="readonly" type="text" value="Выбрать созданную полку"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li class="libr-red">
-<span class="libr-text-link">Хотите удалить полку?</span>
-<div class="libr-block-links"><a href="">Да</a> / <a href="">Нет</a></div>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Книги, которые не дочитал</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Книги от друзей</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Полка под флешмоб</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Для личностного роста</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Детям на ночь</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015 - добавление</a>
-<a class="libr-delete" href="">Удалить</a>
-<span class="libr-loader-white"></span>
-</li>
-<li class="libr-red">
-<span class="libr-loader-white"></span>
-<span class="libr-text-link">Удаление...</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="libr-heading-block">
-<strong class="libr-title">Поставить оценку:</strong>
-<span class="alignright">Средняя оценка 7.4</span>
-</div>
-<ul class="libr-rating">
-<li><a href="">1</a></li>
-<li><a href="">2</a></li>
-<li><a href="">3</a></li>
-<li><a href="">4</a></li>
-<li><a href="">5</a></li>
-<li><a href="">6</a></li>
-<li><a href="">7</a></li>
-<li><a href="">8</a></li>
-<li><a href="">9</a></li>
-<li><a href="">10</a></li>
-</ul>
-<div class="libr-text-row">Вероятно, Вы оцените книгу на: <span class="circle green">7</span></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright" href="">Сохранено</a>
-</div>
-</div>
-<div id="libr-tab2">
-<div class="libr-content-block">
-<div class="libr-calendar-section">
-<div class="libr-top-block-calendar">
-<div class="libr-arrows"></div>
-<span class="libr-text-period">Июль - Август, 2015</span>
-<div class="libr-select-block libr-popup-holder libr-select-year alignright">
-<div class="libr-open">
-<input type="text" value="2015"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li><a class="text-link" href="">2015</a></li>
-<li><a class="text-link" href="">2016</a></li>
-<li><a class="text-link" href="">2017</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="libr-calendar-block"></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<div class="alignleft libr-calendar-bottom">
-<input type="text" value="20-07-2015"/>
-<span class="text">-</span>
-<input type="text" value="14-08-2015"/>
-<a class="libr-text" href="">Убрать период?</a>
-</div>
-<a class="libr-button alignright libr-blue" href="">Сохранить</a>
-</div>
-</div>
-<div id="libr-tab3">
-<div class="libr-content-block">
-<div class="libr-text-note">Заметки - это удобный и простой способ хранить нужную информацию <br>или мысли о книге для личного использования. Ваша заметка будет видна только вам.</br></div>
-<textarea class="libr-textarea-scrollbar scrollbar-outer" cols="40" placeholder="Заметка..." rows="8"></textarea>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright libr-blue" href="">Добавить</a>
-</div>
-</div>
-</div>
-</div>
-</fieldset>
-</form>
-</div>
-</div>
-</div>
-<div id="libr"></div>
-<div id="feedback-form">
-<div data-ng-controller="FeedbackCtrl" id="feedback_form_feedback-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<span>Нашли ошибку?</span>
-<p>Расскажите нам о найденной ошибке, и мы сможем сделать наш сервис еще лучше.</p>
-</div>
-<div class="feedback-body">
-<div class="select-box _fr" id="feedback-form-select-box">
-<div class="select-box--current">
-<span>{[{ currentCategoryName }]}</span>
-</div>
-<div class="dropdown-box _select">
-<nav class="dropdown-select-options">
-<a data-ng-click="selectCategory(-1, 'Без темы')" href="#" onclick="return false" rel="nofollow">Без темы</a>
-<a data-ng-click="selectCategory(7, 'Ошибка в информации о книге')" href="#" onclick="return false" rel="nofollow">
-Ошибка в информации о книге
 </a>
-<a data-ng-click="selectCategory(8, 'Плагиат')" href="#" onclick="return false" rel="nofollow">
-Плагиат
+</article>
+<article class="style3">
+<span class="image"><img alt="fantasy book of the year background" class="lazyload" height="326" src="/images/pic03.jpg" width="353"/></span>
+<a href="/fantasy-books-of-the-year/">
+<h2>Fantasy Books Of The Year</h2>
+<div class="content">
+<p>Our fantasy books of the year, from 2006 to 2021</p>
+</div>
 </a>
-<a data-ng-click="selectCategory(9, 'Спойлер')" href="#" onclick="return false" rel="nofollow">
-Спойлер
-</a>
-<a data-ng-click="selectCategory(10, 'Другая ошибка')" href="#" onclick="return false" rel="nofollow">
-Другая ошибка
-</a>
-<a data-ng-click="selectCategory(11, 'Авторы')" href="#" onclick="return false" rel="nofollow">
-Авторы
-</a>
-</nav>
+</article>
+</section>
+<script async="" src="/assets/js/lazysizes.min.js"></script>
 </div>
 </div>
-<span class="feedback-category-text">Категория:</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Опишите ошибку..." rows="10"></textarea>
-<button class="btn-blue-20" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
+<footer id="footer">
+<div class="inner">
+<ul class="copyright"><li>© 2023 Fantasy Book Review</li></ul>
 </div>
+</footer>
 </div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="help-readly">
-<div>
-<span class="help-readly--title">Помоги Ридли!</span>
-<div class="help-readly--text">
-Мы вкладываем душу в Ридли. Спасибо, что вы с нами! Расскажите о нас друзьям, чтобы они могли присоединиться к нашей дружной семье книголюбов.
-</div>
-<div class="social">
-<div class="social-buttons">
-<a class="vk" href="https://vk.com/share.php?url=http%3A%2F%2Freadly.ru&amp;title=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru&amp;image=" rel="nofollow" target="_blank" title="Вконтакте"></a>
-<a class="tw" href="https://twitter.com/intent/tweet?status=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Twitter"></a>
-<a class="gp" href="https://plus.google.com/share?url=http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Google+"></a>
-<a class="ok" href="https://www.ok.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=http%3A%2F%2Freadly.ru&amp;st.comments=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru" rel="nofollow" target="_blank" title="Odnoklassniki"></a>
-</div>
-</div>
-</div>
-</div>
-<script src="/public/static/dist/js/readly.js?b8cabe27e37a" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.librarianEmitter.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.bookTimelineBox.js"></script>
-<script>
-
-if (typeof React === 'undefined') throw new Error('Cannot find `React` global variable. Have you added a script element to this page which points to React?');
-if (typeof Readly.bookTimelineBox === 'undefined') throw new Error('Cannot find component variable `Readly.bookTimelineBox`');
-(function(React, component, containerId) {
-  var props = {"perPage": 5, "bookId": 62999, "initialParams": {"comment_count": 3, "object_type": "reviews", "book_id": 62999}, "initialItems": [], "user": {"username": "", "name": "AnonymousUser"}, "objectType": "reviews"};
-  var element = React.createElement(component, props);
-  var container = document.getElementById(containerId);
-  if (!container) throw new Error('Cannot find the container element `#reactComponent-Readly.bookTimelineBox` for component `Readly.bookTimelineBox`');
-  React.render(element, container);
-})(React, Readly.bookTimelineBox, 'reactComponent-Readly.bookTimelineBox');
-
-</script>
-<script>
-
-ga('create', 'UA-47935002-1', 'readly.ru');
-ga('require', 'displayfeatures');
-ga('set', 'dimension1', userName);
-ga('set', 'dimension3', 0);
-ga('set', 'dimension4', 1);
-ga('send', 'pageview');
-
-</script>
-<script async="" defer="" src="https://apis.google.com/js/platform.js">
-  {lang: 'ru'}
-</script>
-<footer class="cf" id="footer"><div class="wrapper"><div class="footer-column"><a class="footer-logo" href="#" rel="nofollow"></a><p class="copy">Ридли.ру © 2013-2023<p><div class="footer--meta"><a class="footer--bookmark" href="javascript:addToFavorite()" rel="nofollow"><i class="icon_sprite bookmark"></i><span>В закладки</span></a><a class="footer--mobile" href="http://m.readly.ru/"><i class="icon_sprite mobile"></i><span>Мобильная версия</span></a></div></p></p></div><div class="footer-column"><span class="h4">Разделы</span><nav><a href="/books/">Что почитать</a><a href="/books/popular/">Популярные книги</a><a href="/books/top/">Рейтинг книг</a><a href="/collections/">Подборки книг</a><a href="/books/new/">Книжные новинки</a><a href="/authors/">Популярные авторы</a><a href="/books/i_am_lucky/">Случайная книга</a></nav></div><div class="footer-column"><span class="h4">Обсуждения</span><nav><a href="/discussions/theme/last/" rel="nofollow">Топики</a><a href="/discussions/reviews/last/" rel="nofollow">Рецензии</a><a href="/discussions/flashmob/last/" rel="nofollow">Флешмобы</a><a href="/discussions/game/last/" rel="nofollow">Игры</a><a href="/discussions/competition/last/" rel="nofollow">Конкурсы</a><a href="/discussions/academy/last/" rel="nofollow">Книжная академия</a><a href="/discussions/flood/last/" rel="nofollow">Флудилка</a></nav></div><div class="footer-column"><span class="h4">Подписки</span><nav><a href="https://vk.com/vmireknig" rel="nofollow" target="_blank">Вконтакте</a><a href="https://twitter.com/ReadlyRu" rel="nofollow" target="_blank">Твиттер</a></nav></div><div class="footer-column"><span class="h4">О проекте</span><nav><a href="/pages/about/" rel="nofollow">Описание сервиса</a><a href="/pages/faq/" rel="nofollow">Вопрос-ответ</a><a class="fancybox fancybox-feedback-form" data-ng-href="#!/#feedback-form" rel="nofollow">Обратная связь</a><a href="http://readly.reformal.ru" rel="nofollow" target="_blank">Предложения</a><a href="/pages/copyright/" rel="nofollow">Правообладателям</a><a href="/pages/contacts/" rel="nofollow">Контакты</a><a href="/pages/rules/" rel="nofollow">Правила</a></nav></div><div class="footer-column footer-column-apps"><span class="h4">Приложения</span><img class="appstore" src="/public/static//images/appstore.png"><img src="/public/static//images/googleplay.png"/></img></div></div></footer>
-<div class="singin-form" id="login-form">
-<div class="singin__head">
-<span class="singin__title">Зарегистрируйтесь, и вы сможете:</span>
-<div class="singin__possibilities clearfix">
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico1"><i></i></div>
-<div class="singin__poss_item_text">
-Получать персональные
-<strong>рекомендации книг</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico2"><i></i></div>
-<div class="singin__poss_item_text">
-Создать собственную
-<strong>виртуальную библиотеку</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico3"><i></i></div>
-<div class="singin__poss_item_text">
-Следить за тем,
-<strong>что читают Ваши друзья</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="singin__body clearfix">
-<div class="singin__body_col">
-<div class="singin__form_tabs">
-<a class="active" href="/user/register/" rel="nofollow">Регистрация</a>
-</div>
-<form action="/user/register/?next=/book/62999/
-" method="post">
-<input name="csrfmiddlewaretoken" type="hidden" value="pFRDPj6ElN9sBaFnDgKgQi7QFO4w1lOY"/>
-<div class="singin__inputs_form">
-<input name="email" placeholder="E-mail адрес" type="text"/>
-<input name="username" placeholder="Логин" type="text"/>
-<input name="password" placeholder="Пароль" type="password"/>
-<div class="singin__submit_foot">
-<button class="btn-blue-20 fr" onclick="yaCounter22692712.reachGoal('register_button');">Регистрация</button>
-</div>
-</div>
-</form>
-</div>
-<div class="singin__body_col">
-<span class="singin__sub_title">Через соцсети</span>
-<div class="big_social_buttons__container">
-<a class="big_social_button vk" href="/login/vk-oauth2/?next=/" rel="nofollow" title="Вконтакте">
-<i class="icon"></i> Войти через Вконтакт
-</a>
-<a class="big_social_button tw" href="/login/twitter/?next=/" rel="nofollow" title="Twitter">
-<i class="icon"></i> Войти через Твиттер
-</a>
-</div>
-</div>
-</div>
-</div>
-<script>
-    function open_reg_form() {
-        ga('send','event', 'Регистрация', 'open_form_reg');
-        ga('send','pageview', '/user/reg_form/');
-    }
-</script>
-<div id="registration-alert">
-<span>Данное действие доступно только для</span>
-<b>зарегистрированных пользователей</b>
-<a class="btn-green-20" href="/user/register/">Регистрация</a>
-<a class="ui-20" href="/user/login/">Войти на сайт</a>
-</div>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>

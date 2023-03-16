@@ -1,773 +1,130 @@
-<body itemscope="" itemtype="http://schema.org/WebPage" onload="">
-<script type="text/javascript">
-      var yaParams = {'Логин': 'Гость'};
-      var userName = 'Гость';
-    </script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  </script>
-<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
-<script type="text/javascript">
-    try {
-        var yaCounter22692712 = new Ya.Metrika({
-            id:22692712,
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    } catch(e) { }
-    </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/22692712" style="position:absolute; left:-9999px;"/></div></noscript>
-<header class="cf" id="header"><div class="wrapper cf"><a class="header-logo" href="/"></a><nav class="header-nav"><a href="/discussions/" onclick="yaCounter22692712.reachGoal('clickDiscussion'); return true;">Обсуждения</a><a href="/books/popular/" onclick="yaCounter22692712.reachGoal('clickBooks');return true;">Книги</a><a href="/authors/" onclick="yaCounter22692712.reachGoal('clickAuthors'); return true;">Авторы</a><a href="/users/" onclick="yaCounter22692712.reachGoal('clickUsers'); return true;">Читатели</a></nav><div class="header-search" data-ng-controller="BookSearchCtrl" data-outside-click="closeDropDown()"><form action="/search/" class="dropdown-triger"><input autocomplete="off" data-ng-change="search()" data-ng-click="openDropDown()" data-ng-init="q=''" data-ng-model="q" data-ng-model-options="{debounce: 300}" name="q" placeholder="Поиск автора или книги..." type="text"/><a href="/search/?q={[{ q }]}" rel="nofollow"><i class="icon_sprite search-w"></i></a></form><div class="dropdown-content ng-cloak" data-ng-show="isOpen()"><div class="dd-search-result-list" data-load-spinner="" data-loading="loading"><div class="dd-search-result-counter">
-Книги <span>{[{ count }]}</span></div><div class="user-lib-new--book-list--item cf" data-ng-repeat="book in results"><div class="book-cover"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}" title="{[{ book.title }]}"><img alt="{[{ book.title }]}" class="dropdown-content--search-bimage" data-ng-src="{[{ book.cover | imageUrl:'book.Book':1 }]}"/></a></div><div class="book-main-info"><h3 class="book-title dropdown-content--book-title"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}">{[{ book.title }]}</a></h3><p>{[{ book.author[0].name }]}</p></div></div><div class="dd-goToResult" data-ng-show="results.length"><a href="/search/?q={[{ q }]}" rel="nofollow">
-К результатам поиска по запросу {[{ q }]} »
-</a></div></div></div></div><a class="shuffle-btn header-btn-icon" href="/books/i_am_lucky/" rel="nofollow"><i class="icon_sprite shuffle"></i></a><div class="header--login-new"><a class="header--login-btn-new" href="/user/login/" rel="nofollow">Войти</a><a class="button-normal fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form()" rel="nofollow">Регистрация</a></div></div></header>
-<div id="global-wrap">
-<a class="fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form();yaCounter22692712.reachGoal('open_banner');" rel="nofollow"><div class="top_banner visible-lg visible-md"> </div></a>
-<script>
-    var book_profile = {"rating": 9.2, "quote_count": 15, "isbn": "978-5-389-00437-5", "content_type": 13, "links": [], "show": true, "rates_count": 147, "quotes": [{"hashtags": [], "author": "", "text": "<p>\u0414\u0430, \u0441\u043b\u0443\u0448\u0430\u0439\u0442\u0435 \u0441\u043e\u0432\u0435\u0442\u044b \u0421\u043a\u0440\u0438\u043f\u0430\u0447\u0430,<br />\u043a\u0430\u043a \u0441\u043b\u0435\u0434\u0443\u0435\u0442 \u0441\u0442\u0440\u0435\u043b\u044f\u0442\u044c\u0441\u044f \u0441\u0433\u043e\u0440\u044f\u0447\u0430:<br />\u043d\u0435 \u0432 \u0433\u043e\u043b\u043e\u0432\u0443, \u0430 \u043e\u043a\u043e\u043b\u043e \u043f\u043b\u0435\u0447\u0430!<br />\u0416\u0438\u0432\u0438\u0442\u0435 \u0442\u043e\u043b\u044c\u043a\u043e, \u043f\u043b\u0430\u0447\u0430 \u0438 \u043a\u0440\u0438\u0447\u0430!</p>", "created_at": "2015-03-03T10:08:51", "object_type": 20, "updated_at": "2015-03-03T10:08:51", "object_id": 26920, "comment_count": 0, "book": {"id": 77281, "name": "\u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435", "cover": "covers/e/8/e882175c1ceb4c613b0ba156f48f5205.jpg", "authors": [{"name": "\u0418\u043e\u0441\u0438\u0444  \u0411\u0440\u043e\u0434\u0441\u043a\u0438\u0439", "url": "/author/15969/", "id": 15969}], "url": "/book/77281/"}, "user": {"id": 8452, "name": "\u042f\u043d\u0430 \u0411\u0430\u0442\u0443\u0440\u043e\u0432\u0430 (@yana767)", "avatar": "avatars/a/0/a0b47ddd22951463b230e1f9e3c49e72.jpg", "url": "/user/8452/", "username": "yana767", "gender": 0}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>\u0422\u043e\u0433\u0434\u0430, \u043a\u043e\u0433\u0434\u0430 \u043b\u044e\u0431\u043e\u0432\u0435\u0439 \u0441 \u043d\u0430\u043c\u0438 \u043d\u0435\u0442,<br />\u0442\u043e\u0433\u0434\u0430, \u043a\u043e\u0433\u0434\u0430 \u043e\u0442 \u0445\u043e\u043b\u043e\u0434\u0430 \u0433\u043e\u0440\u0431\u0430\u0442,<br />\u0434\u043e\u0441\u0442\u0430\u043d\u044c \u0438\u0437 \u0447\u0435\u043c\u043e\u0434\u0430\u043d\u0430 \u043f\u0438\u0441\u0442\u043e\u043b\u0435\u0442,<br />\u0434\u043e\u0441\u0442\u0430\u043d\u044c \u0438 \u0437\u0430\u043b\u043e\u0436\u0438 \u0435\u0433\u043e \u0432 \u043b\u043e\u043c\u0431\u0430\u0440\u0434.<br />\u041a\u0443\u043f\u0438 \u043d\u0430 \u044d\u0442\u0438 \u0434\u0435\u043d\u044c\u0433\u0438 \u043f\u0430\u0442\u0435\u0444\u043e\u043d<br />\u0418 \u0433\u0434\u0435-\u043d\u0438\u0431\u0443\u0434\u044c \u043d\u0430 \u0441\u0432\u0435\u0442\u0435 \u043f\u043e\u0442\u0430\u043d\u0446\u0443\u0439</p>", "created_at": "2015-03-03T10:08:35", "object_type": 20, "updated_at": "2015-03-03T10:08:35", "object_id": 26919, "comment_count": 0, "book": {"id": 77281, "name": "\u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435", "cover": "covers/e/8/e882175c1ceb4c613b0ba156f48f5205.jpg", "authors": [{"name": "\u0418\u043e\u0441\u0438\u0444  \u0411\u0440\u043e\u0434\u0441\u043a\u0438\u0439", "url": "/author/15969/", "id": 15969}], "url": "/book/77281/"}, "user": {"id": 8452, "name": "\u042f\u043d\u0430 \u0411\u0430\u0442\u0443\u0440\u043e\u0432\u0430 (@yana767)", "avatar": "avatars/a/0/a0b47ddd22951463b230e1f9e3c49e72.jpg", "url": "/user/8452/", "username": "yana767", "gender": 0}, "favorited_users": [65273]}, {"hashtags": [], "author": "", "text": "<p>\u0415\u0441\u043b\u0438 \u0432\u044b\u043f\u0430\u043b\u043e \u0432 \u0418\u043c\u043f\u0435\u0440\u0438\u0438 \u0440\u043e\u0434\u0438\u0442\u044c\u0441\u044f,<br />\u043b\u0443\u0447\u0448\u0435 \u0436\u0438\u0442\u044c \u0432 \u0433\u043b\u0443\u0445\u043e\u0439 \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u0438 \u0443 \u043c\u043e\u0440\u044f.</p>", "created_at": "2015-03-03T10:06:38", "object_type": 20, "updated_at": "2015-03-03T10:06:38", "object_id": 26918, "comment_count": 0, "book": {"id": 77281, "name": "\u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435", "cover": "covers/e/8/e882175c1ceb4c613b0ba156f48f5205.jpg", "authors": [{"name": "\u0418\u043e\u0441\u0438\u0444  \u0411\u0440\u043e\u0434\u0441\u043a\u0438\u0439", "url": "/author/15969/", "id": 15969}], "url": "/book/77281/"}, "user": {"id": 8452, "name": "\u042f\u043d\u0430 \u0411\u0430\u0442\u0443\u0440\u043e\u0432\u0430 (@yana767)", "avatar": "avatars/a/0/a0b47ddd22951463b230e1f9e3c49e72.jpg", "url": "/user/8452/", "username": "yana767", "gender": 0}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>\u0412\u0441\u0435 \u0431\u0443\u0434\u0443\u0442 \u043e\u0434\u0438\u043d\u0430\u043a\u043e\u0432\u044b \u0432 \u0433\u0440\u043e\u0431\u0443, \u0442\u0430\u043a \u0431\u0443\u0434\u0435\u043c \u0445\u043e\u0442\u044c \u043f\u0440\u0438 \u0436\u0438\u0437\u043d\u0438 \u0440\u0430\u0437\u043d\u043e\u043b\u0438\u043a\u0438!</p>", "created_at": "2015-03-03T10:06:15", "object_type": 20, "updated_at": "2015-03-03T10:06:15", "object_id": 26917, "comment_count": 0, "book": {"id": 77281, "name": "\u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435", "cover": "covers/e/8/e882175c1ceb4c613b0ba156f48f5205.jpg", "authors": [{"name": "\u0418\u043e\u0441\u0438\u0444  \u0411\u0440\u043e\u0434\u0441\u043a\u0438\u0439", "url": "/author/15969/", "id": 15969}], "url": "/book/77281/"}, "user": {"id": 8452, "name": "\u042f\u043d\u0430 \u0411\u0430\u0442\u0443\u0440\u043e\u0432\u0430 (@yana767)", "avatar": "avatars/a/0/a0b47ddd22951463b230e1f9e3c49e72.jpg", "url": "/user/8452/", "username": "yana767", "gender": 0}, "favorited_users": []}, {"hashtags": [], "author": "", "text": "<p>\u0412\u0441\u0435 \u0431\u0443\u0434\u0443\u0442 \u043e\u0434\u0438\u043d\u0430\u043a\u043e\u0432\u044b \u0432 \u0433\u0440\u043e\u0431\u0443, \u0442\u0430\u043a \u0431\u0443\u0434\u0435\u043c \u0445\u043e\u0442\u044c \u043f\u0440\u0438 \u0436\u0438\u0437\u043d\u0438 \u0440\u0430\u0437\u043d\u043e\u043b\u0438\u043a\u0438!</p>", "created_at": "2015-03-03T09:55:52", "object_type": 20, "updated_at": "2015-03-03T09:55:52", "object_id": 26915, "comment_count": 0, "book": {"id": 77281, "name": "\u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435", "cover": "covers/e/8/e882175c1ceb4c613b0ba156f48f5205.jpg", "authors": [{"name": "\u0418\u043e\u0441\u0438\u0444  \u0411\u0440\u043e\u0434\u0441\u043a\u0438\u0439", "url": "/author/15969/", "id": 15969}], "url": "/book/77281/"}, "user": {"id": 8452, "name": "\u042f\u043d\u0430 \u0411\u0430\u0442\u0443\u0440\u043e\u0432\u0430 (@yana767)", "avatar": "avatars/a/0/a0b47ddd22951463b230e1f9e3c49e72.jpg", "url": "/user/8452/", "username": "yana767", "gender": 0}, "favorited_users": []}, {"book": {"id": 77281, "name": "\u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435", "cover": "covers/e/8/e882175c1ceb4c613b0ba156f48f5205.jpg", "authors": [{"name": "\u0418\u043e\u0441\u0438\u0444  \u0411\u0440\u043e\u0434\u0441\u043a\u0438\u0439", "url": "/author/15969/", "id": 15969}], "url": "/book/77281/"}, "slideMoreLink": true}], "tag": [], "alter_titles": "", "year": 2009, "facts": [], "id": 77281, "by_shelves": {"shelf_count_1": 132, "shelf_count_2": 10, "shelf_count_3": 180, "shelf_count_4": 6}, "rating_sort": 9.6, "review_count": 0, "author": [{"name": "\u0418\u043e\u0441\u0438\u0444  \u0411\u0440\u043e\u0434\u0441\u043a\u0438\u0439", "url": "/author/15969/", "id": 15969}], "create": "2013-10-29T14:32:38", "unique_text": false, "filming": [], "comment_count": 1, "show_rating": 9.2, "description": "\u0412 \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0438\u0439 \u0442\u043e\u043c \u0438\u0437\u0431\u0440\u0430\u043d\u043d\u044b\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u0418\u043e\u0441\u0438\u0444\u0430 \u0411\u0440\u043e\u0434\u0441\u043a\u043e\u0433\u043e \u0432\u043e\u0448\u043b\u0438 \u043f\u043e\u044d\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0441\u0431\u043e\u0440\u043d\u0438\u043a\u0438 \u00ab\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u0432 \u043f\u0443\u0441\u0442\u044b\u043d\u0435\u00bb, \u00ab\u041a\u043e\u043d\u0435\u0446 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e\u0439 \u044d\u043f\u043e\u0445\u0438\u00bb, \u00ab\u0427\u0430\u0441\u0442\u044c \u0440\u0435\u0447\u0438\u00bb, \u00ab\u041d\u043e\u0432\u044b\u0435 \u0441\u0442\u0430\u043d\u0441\u044b \u043a \u0410\u0432\u0433\u0443\u0441\u0442\u0435\u00bb, \u00ab\u0423\u0440\u0430\u043d\u0438\u044f\u00bb \u0438 \u00ab\u041f\u0435\u0439\u0437\u0430\u0436 \u0441 \u043d\u0430\u0432\u043e\u0434\u043d\u0435\u043d\u0438\u0435\u043c\u00bb, \u0432\u044b\u043f\u0443\u0441\u043a\u0430\u0432\u0448\u0438\u0435\u0441\u044f \u0430\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u043c \u0438\u0437\u0434\u0430\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e\u043c \u00ab\u0410\u0440\u0434\u0438\u0441\u00bb \u0441 1970 \u043f\u043e 1996 \u0433\u043e\u0434\u044b, \u0430 \u0442\u0430\u043a\u0436\u0435 \u043f\u044c\u0435\u0441\u0430 \u00ab\u041c\u0440\u0430\u043c\u043e\u0440\u00bb \u0438 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u044d\u0441\u0441\u0435. \u0412\u043f\u0435\u0440\u0432\u044b\u0435 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u0438 \u0441\u043c\u043e\u0433\u0443\u0442 \u0443\u0432\u0438\u0434\u0435\u0442\u044c \u0438 \u043e\u0446\u0435\u043d\u0438\u0442\u044c \u0440\u0438\u0441\u0443\u043d\u043a\u0438, \u0441\u043e\u0437\u0434\u0430\u043d\u043d\u044b\u0435 \u0411\u0440\u043e\u0434\u0441\u043a\u0438\u043c.", "readers_count": 322, "award": [], "sorter": 9.15, "user": {"possible_rate": null, "id": null}, "favorites": 6, "genre": [{"url": "/genre/193/", "id": 193, "name": "\u041f\u043e\u044d\u0437\u0438\u044f", "is_show": true}], "fact_count": 0, "publisher": "\u0418\u043d\u043e\u0441\u0442\u0440\u0430\u043d\u043a\u0430", "url": "/book/77281/", "title": "\u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435", "cover": "covers/e/8/e882175c1ceb4c613b0ba156f48f5205.jpg", "_id": 77281};
-</script>
-<div class="wrapper content clearfix">
-<article class="book-article" itemscope="" itemtype="http://schema.org/Book">
-<div class="content-cols">
-<div class="content-cols--main">
-<h1 class="book-article--title" itemprop="name">Избранное</h1>
-<div class="book-article--author">
-<label class="author-name">Автор книги:</label>
-<a href="/author/15969/"><h2 itemprop="author">Иосиф Бродский</h2></a>
+<body class="is-preload" itemscope="" itemtype="https://schema.org/WebPage">
+<div id="wrapper">
+<header id="header">
+<div class="inner"><a class="logo" href="/"><span class="title">Fantasy Book Review</span></a>
+<nav>
+<ul>
+<li><a href="#menu">Menu</a></li>
+</ul>
+</nav>
 </div>
-<div class="book-article--details">
-<div class="ba-details--row">
-<label class="row-label"><span>год написания:</span></label>
-<span class="row-value">2009</span>
+</header>
+<nav id="menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/top-100-fantasy-books/">Top 100</a></li>
+<li><a href="/fantasy-books-of-the-year/">Fantasy Books of the Year</a></li>
+<li><a href="/best-fantasy-series.html">Best Fantasy Series</a></li>
+<li><a href="/fantasy-sub-genres/">Fantasy Sub Genres</a></li>
+<li><a href="/interviews/">Interviews</a></li>
+</ul>
+</nav>
+<div id="main">
+<div class="inner">
+<h1>The Ocean at the End of the Lane by Neil Gaiman
+</h1>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Book">
+<meta content="The Ocean at the End of the Lane" itemprop="name"/>
+<meta content="Neil Gaiman" itemprop="author"/>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<div itemprop="reviewBody">
+<p>This may sound slightly biased, but I am always excited to read a Neil Gaiman story and as soon as I had read the prologue to this story I knew I was already hooked and looking forward to the adventure this book would take me on. The prologue itself serves as a reminder that some memories, however hidden, are not truly forgotten, but may just need a gentle reminder. In this story we follow the Narrator down memory lane, to when the Boy (the Narrator) met the Hempstocks and the events leading up and around that first meeting, which is all told from the perspective of a remarkable intelligent 7 year old.</p><p>The Boy, when we meet him, is fairly content. Although seemingly friendless, he is happy with his new kitten Fluffy and enjoying the fact that he can disappear into stories. His life changes when his parents have to start allowing lodgers to live in their home for the extra cash. Through this he gets to meet the Hempstocks, who apart from the animals, are the only named characters. After the Boy’s family car is stolen he meets Lettie Hempstock who is a couple of years older than him, her mother Mrs Hempstock and Old Mrs Hempstock, her grandmother. These three women remind me of the three fates: The Maiden, The Mother and the Crone, who is some stories weave the fates of heroes. The Hempstock’s are fascinating characters who give the Boy a safe harbour without ever fully explaining anything to him, in his troubled times.</p><p>And these are troubled times indeed for this Boy who has to come to terms with the fact that monsters do exist. With the Hempstock’s he knows they will believe him, whereas to his parents as Grown Ups he doesn’t feel he can tell them what is going on as they may not believe him. As a child shouldn’t everything be magical? Even if that sometimes makes things terrifying? We all go through stages as children when we can believe there is a monster under our beds and feel comfort from having a hall light switched on as we go to sleep. The Boy’s story is relatable on many levels and Neil Gaiman has managed to mix the fantastic with the mundane, so each line as written takes us one step further on not just the Boy’s journey but our own.<br/>Michelle Herbert, 10/10</p><p>--</p><p>The Ocean at the End of the Lane is the latest novel from Neil Gaiman, and in my opinion one of his best. The blurb does this book a disservice by describing it a fable that will reshape modern fantasy (it doesn't and it's not trying to) - this book is a deeply personal reminiscence by the author, infused with fantastical and horrific elements, and what you get out of it as a reader depends entirely on how well you are able to connect with it.</p><p>The story follows a 47 year old man who, in his escape from a funeral, finds himself exploring the old neighbourhood / farmlands where he grew up. As he travels down towards the house at the end of the lane, he starts reminiscing about his seven year old self, remembering what this journey down the lane used to feel like. When he sits by the pond at the end of the lane, the memories start flooding back - fantastical memories full of magical beings and hidden worlds, and Lettie Hempstock, the girl who thinks this pond is actually an ocean.</p><p>It's hard to know where to start talking about a book like The Ocean at the End of the Lane. It is a tale that starts as a reminiscence of long lost childhood, but then it evolves into something akin to magic realism - the magic of childhood manifested as real magic. There is a depth of emotion here that is enhanced by magic - remembering the good times creates a sense of warmth and comfort, while remembering the bad times creates a sense of horror and dread. It is a story that is trying to make you feel something, but what you feel and depth to which you feel it will be completely unique to you.</p><p>I know this review doesn't really tell you what the book is about, but I think to do so in more detail would spoil what is supposed to be an intimate trip down memory lane to a time when things were much more fantastical than what they are now. This a story that is simple on the surface, but with a depth of immersion that depends entirely on how much you connect with the story. My guess is that the further you are away from your childhood, be it through age or experience, the more you will connect with this story and the more you will fall in love with it.<br/>Ryan Lawler, 9.5/10</p><p>--</p><p>There are times when a reviewer simply needs to go have a troll through some of the other reviews in an effort to get an idea of what people are saying about a book. ‘The Ocean at the End of the Lane’ by Neil Gaiman seems to be reviewing rather well – receiving 4.4 stars out of 5 from 568 customer reviews on Amazon.com and 4.25 out of 5 stars on Goodreads with 19,969 ratings.</p><p>Which leaves me feeling a little like the odd-duck out, considering I didn’t feel the same obsessive-compulsive love for it that so many others have.</p><p>Billed as Gaiman’s first adult book since ‘Anansi Boys’, I can see why some would be confused by the intended audience. While the book does revolve around a 7 year-old Neil Gaiman, the book is definitely a book of reminiscence, rather than a book for young adults or teenagers.</p><p>I was disappointed with this book, though not for some of the reasons I have seen others voice. I rather liked the story, as it had the sense of childhood fantasy that is simply lost when you grow up. The characters were rich and there was no happy ending, all of which makes for a very realistic tale.</p><p>However I simply feel that Neil Gaiman tried too hard to make this book a competitor for ‘The Night Circus’ or something similar. Overly wordy sentences and paragraphs abound, in this book. The “authentic and compelling”-ness that so many reviewers are commenting on seems dumped on top, rather than grown from the bottom up, as if Gaiman wanted to write a “genuine” book and therefore tried so hard to write one that he forgot how to let it be genuine.</p><p>It took me a long time to read this book, though it should have been a quick read, given its size and readability. I imagine that many will enjoy this book thoroughly, and I do recommend it to you; but I caution you to allow your own thoughts to praise the book, and not the pressure of the thousands and popular-literati.<br/>Joshua S Hill, 7/10</p><p><span class="rating">9/10</span> <em>Each line takes us one step further on not just the boy's journey but our own.</em></p>
 </div>
-<div class="ba-details--row">
-<label class="row-label"><span>жанры:</span></label>
-<span class="row-value">
-<a href="/genre/193/">поэзия</a>
-</span>
+<ul class="actions stacked">
+<li><a class="button primary" href="https://www.amazon.com/dp/B00ABLJ5NQ?tag=heavenlyholid-20" rel="nofollow" target="_blank">Buy on Amazon</a></li>
+</ul>
+<p>Reviews by <a href="/reviewers/Michelle-Herbert.html"><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Michelle Herbert</span></span></a> and <a href="/reviewers/Ryan-Lawler.html">Ryan Lawler</a> and <a href="/reviewers/Joshua-S-Hill.html">Joshua S Hill</a></p>
+<p><a href="#readerreviews">2 positive reader review(s)</a> for The Ocean at the End of the Lane</p>
+<meta content="2013-07-01" itemprop="datePublished"/>
+<meta content="2021-04-18" itemprop="dateModified"/>
 </div>
-<div class="book-article--description">
-<br/>
-<h3 class="book-author-title">Описание</h3>
-<p><p>В настоящий том избранных произведений Иосифа Бродского вошли поэтические сборники «Остановка в пустыне», «Конец прекрасной эпохи», «Часть речи», «Новые стансы к Августе», «Урания» и «Пейзаж с наводнением», выпускавшиеся американским издательством «Ардис» с 1970 по 1996 годы, а также пьеса «Мрамор» и несколько эссе. Впервые читатели смогут увидеть и оценить рисунки, созданные Бродским.</p></p>
-</div>
-<div class="ng-cloak book-profile-rating-height" data-ng-controller="BookProfileCtrl" id="book_profile_book-rating-app" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-<div data-book-id="book.id" data-book-rating="" data-rating="book.user.rating"></div>
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating">
+<meta content="9.2" itemprop="ratingValue">
 <meta content="10" itemprop="bestRating"/>
-<meta content="9,2" itemprop="ratingValue"/>
-<meta content="147" itemprop="ratingCount"/>
-<div class="book-circular-correct">
-<span class="book-profile--rate">9,2</span>
-<span class="book-profile--rates-count">(147 оценок)</span>
-</div>
-<div class="book-top100">
-<a href="/books/top/">
-<span>Топ-100:</span> 72
-</a>
-</div>
-</div>
-<div class="ng-cloak" data-ng-controller="WhereToBuyCtrl" data-ng-init="aggregate('Избранное', 'Иосиф  Бродский')" id="book_profile-where_to_buy-app">
-<h2 class="where-to-buy-title book-author-title rel-h2" data-ng-show="aggregated.length">Купить книгу Избранное, Иосиф Бродский</h2>
-<div class="books-aggregate">
-<div class="aggregate-row" data-ng-class-odd="'book-aggregate-row-odd'" data-ng-repeat="agg in aggregated">
-<a data-ng-href="{[{ agg.url }]}" target="_blank"><img alt="" class="aggregate-shop-img" data-ng-src="{[{ agg.market_logo }]}"/></a>
-<a class="aggregate-shop" data-ng-bind="agg.market_name" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<a class="aggregate-book" data-ng-bind="agg.title" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<div class="fr">
-<b class="aggregate-price"><span data-ng-bind="agg.price"></span> р.</b>
-<a class="aggregate-buy-button-litres" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market=='litres'" target="_blank">Скачать</a>
-<a class="aggregate-buy-button" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market!='litres'" target="_blank">Купить</a>
+</meta></meta></div>
+<h2 id="readerreviews">The Ocean at the End of the Lane reader reviews
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Nhu Tran</span></span> from Vietnam</strong></p>
+<blockquote><span itemprop="reviewBody">Neil Gaiman is unquestionably an “unclassifiable” writer. The Ocean at the End of the Lane - the whole story is lyrical, just like the name itself. I reckon its genre might as well be categorised as magical realism. It recites the nightmare world of a boy, which only relives vividly when he is standing by “the ocean at the end of the lane“. How can something as small as a lane can end with an ocean, right? But that’s the point for the readers to find out. Through his writing, the characters are as if illustrated right in front of me, really. The horrific elements are just right, enough to jumble up your mind a bit, but surely not to the point of upsetting you. Such horrible imagination is the embodiment of childhood fear and obsession, sometimes it makes me doubt if Neil has put a touch of his personal true story there. The story ends in a way that makes me wonder if everything happened to the boy was real, or it was just imagination at all. It’s a beautifully haunting ending!</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2020-04-14</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">David</span></span> from United Kingdom</strong></p>
+<blockquote><span itemprop="reviewBody">The Ocean at the End of The Lane is, I think, Gaiman's most personal novel to date. A hauntingly beautiful tale of a seven year old boy and his brush with the nightmare world that lives just below the surface of reality, this is the type of book that will stay with you for ages after you have finished it. The protagonist revisits his old childhood haunts after a funeral and finds himself remembering a half-forgotten episode from his childhood. We meet the Hempstocks, three women (well, a girl and two women who are obvious representations of the Maid, Mother, Crone triple goddess beloved of our pagan ancestors) who seem to live out of time, yet are as old, if not older than time itself. There is a death which sets off a chain reaction of events with our seven year old hero at the centre. It is a simple story of sacrifice and the way an innocent action can unleash a whirlwind of consequences. The prose has a dreamlike, even nightmare quality to it at times, as the things that live on the shadowy borders of our imaginations come rushing in. Gaiman has the ability to tell the tale through a young boy's eyes and make it work. It is wonderful writing. I used to say that American Gods was his masterpiece. I think he has just surpassed himself. Very highly recommended.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2019-03-21</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<br class="clear"/>
-<div data-ng-controller="BookProfileCtrl" id="book_profile_facts-quotes-app">
-<div data-book-id="book.id" data-fact-list="" data-facts="book.facts"></div>
-<div data-book-id="book.id" data-quote-list="" data-quotes="book.quotes" data-user-id="book.user.id"></div>
+<div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="bestRating"/>
+<p><span itemprop="ratingValue">9.7</span>/10 from <span itemprop="reviewCount">3</span> reviews</p>
 </div>
-<div class="invisible-content">
-<div class="h3-title-wadd"><h3>Интересные факты</h3></div>
-<div class="ba-facts-list">
-</div>
-</div>
-<div class="invisible-content">
-<div class="h3-title-wadd">
-<h3>Цитаты из книги</h3>
-</div>
-<div class="ba-facts-list">
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Да, слушайте советы Скрипача,&lt;br /&gt;как следует стреляться сгоряча:&lt;br /&gt;не в голову, а около плеча!&lt;br /&gt;Живите только, плача и крича!&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/8452/" rel="nofollow"><i class="ico"></i>yana767</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Тогда, когда любовей с нами нет,&lt;br /&gt;тогда, когда от холода горбат,&lt;br /&gt;достань из чемодана пистолет,&lt;br /&gt;достань и заложи его в ломбард.&lt;br /&gt;Купи на эти деньги патефон&lt;br /&gt;И где-нибудь на свете потанцуй&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/8452/" rel="nofollow"><i class="ico"></i>yana767</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Если выпало в Империи родиться,&lt;br /&gt;лучше жить в глухой провинции у моря.&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/8452/" rel="nofollow"><i class="ico"></i>yana767</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Все будут одинаковы в гробу, так будем хоть при жизни разнолики!&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/8452/" rel="nofollow"><i class="ico"></i>yana767</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Все будут одинаковы в гробу, так будем хоть при жизни разнолики!&lt;/p&gt;<br/><em class="quote-sign"></em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/8452/" rel="nofollow"><i class="ico"></i>yana767</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>
-<blockquote class="book-profile--quote-more-slide">
-<a href="/book/77281/quotes/">Все цитаты из книги "Избранное" →</a>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<h2 class="book-author-title rel-h2">С этой книгой читают:</h2>
-<div class="book-related-list">
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/77280/" rel="nofollow">
-<img alt=" Лирика" src="/public/media/covers/7/c/7cc253faf3acb347f09b397099da70cc_160x0.jpg" title=" Лирика"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/77280/">
-Лирика
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/77279/" rel="nofollow">
-<img alt="Аббатство Кошмаров" src="/public/media/covers/9/9/997c709ab5d519eb1c7f21e216d4f658_160x0.jpg" title="Аббатство Кошмаров"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/77279/">
-Аббатство Кошмаров
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/77278/" rel="nofollow">
-<img alt="Когда тебе грустно…Как поднять себе настроение" src="/public/media/covers/a/7/a7151294ca7521d449ab046e9c8e4e2c_160x0.jpg" title="Когда тебе грустно…Как поднять себе настроение"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/77278/">
-Когда тебе грустно…Как поднять себе н...
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/77277/" rel="nofollow">
-<img alt="Не жалею, не зову, не плачу..." src="/public/media/covers/c/0/c0a309dd24ff252b18f7e06ae0216df4_160x0.jpg" title="Не жалею, не зову, не плачу..."/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/77277/">
-Не жалею, не зову, не плачу...
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/77276/" rel="nofollow">
-<img alt="Заметки о женской логике" src="/public/media/covers/3/1/31ae5e8bf52f4b487c860cef0e6b08e8_160x0.jpg" title="Заметки о женской логике"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/77276/">
-Заметки о женской логике
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="ba-timeline-container">
-<nav class="tape-select" id="timelinenav">
+<h2>All Neil Gaiman Reviews</h2>
 <ul>
-<li class="active">
-<a href="/book/77281/?filter=reviews#!/#timelinenav" rel="nofollow">Рецензии</a>
-</li>
-<li>
-<a href="/book/77281/?filter=comments#!/#timelinenav" rel="nofollow">Отзывы</a>
-</li>
+<li><a href="/Neil-Gaiman/Neverwhere.html">Neverwhere </a></li>
+<li><a href="/Neil-Gaiman/Marvel-1602.html">Marvel 1602 </a></li>
+<li><a href="/Neil-Gaiman/Interworld.html">Interworld (Interworld #1)</a></li>
+<li><a href="/Neil-Gaiman/American-Gods.html">American Gods </a></li>
+<li><a href="/Neil-Gaiman/The-Graveyard-Book.html">The Graveyard Book </a></li>
+<li><a href="/Neil-Gaiman/The-Ocean-at-the-End-of-the-Lane.html">The Ocean at the End of the Lane </a></li>
+<li><a href="/Neil-Gaiman/The-Sandman-Vol-1-Preludes-and-Nocturnes.html">The Sandman Vol 1: Preludes and Nocturnes </a></li>
+<li><a href="/Neil-Gaiman/Norse-Mythology.html">Norse Mythology </a></li>
+<li><a href="/Neil-Gaiman/Stardust.html">Stardust </a></li>
+<li><a href="/Neil-Gaiman/The-Ocean-at-the-End-of-the-Lane-Illustrated-Edition.html">The Ocean at the End of the Lane Illustrated Edition </a></li>
 </ul>
-</nav>
-<div id="filter-search-results-container">
-<div class="filter-panel-index">
-<div class="page-column-main __timeline">
-<section class="review-timeline-list">
-<nav class="nav-filter">
-<ul class="nav-filter-list">
-<li class="active">
-<a href="/book/77281/
-?filter=reviews&amp;sort=last#!/timelinenav" rel="nofollow">Последнее</a>
-</li>
-<li>
-<a href="/book/77281/
-?filter=reviews&amp;sort=useful#!/timelinenav" rel="nofollow">Популярное</a>
-</li>
-<li>
-<a href="/book/77281/
-?filter=reviews&amp;sort=new#!/timelinenav" rel="nofollow">Новое</a>
-</li>
-</ul>
-</nav>
-<div id="book_profile_timeline-app">
-<span id="reactComponent-Readly.bookTimelineBox"><div data-react-checksum="-839398327" data-reactid=".wtg2q0h5vk"><div class="rtl--comment-add" data-reactid=".wtg2q0h5vk.0"><div class="rtl--start-discussion rtl--start-discussion-compat bookpost bookpost-review" data-reactid=".wtg2q0h5vk.0.0"><textarea class="sd--input" data-reactid=".wtg2q0h5vk.0.0.0" placeholder="Оставить рецензию..."></textarea></div></div><div data-reactid=".wtg2q0h5vk.1"><div data-reactid=".wtg2q0h5vk.1.0"></div></div></div></span>
+</h2></div>
+<section class="tiles">
+<article class="style1">
+<span class="image"><img alt="top 100 background" class="lazyload" height="326" src="/images/pic01.jpg" width="353"/></span>
+<a href="/top-100-fantasy-books/">
+<h2>Top 100 Fantasy Books Of All Time</h2>
+<div class="content">
+<p>Looking for great fantasy books? Take a look at the 100 pages we rate highest</p>
 </div>
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="content-cols--aside">
-<div class="book-article--aside" data-inject-global-var="book_profile">
-<div class="book-article--img">
-<img alt="Обложка Избранное" src="/public/media/covers/e/8/e882175c1ceb4c613b0ba156f48f5205_200x0.jpg" title="Избранное"/>
-</div>
-<div class="ba-about">
-<h3>О книге</h3>
-<ul class="ba-counters">
-<li>
-<i class="bc-icon readers"></i>
-<a href="/book/77281/readers/5/" rel="nofollow">
-Читатели (322)
 </a>
-</li>
-<li class="reviews">
-<i class="bc-icon reviews"></i>
-<a alt="Избранное рецензии" href="/book/77281/reviews/">
-Рецензии (0)
-</a>
-</li>
-<li class="quotes">
-<i class="bc-icon quotes"></i>
-<a alt="Избранное цитаты" href="/book/77281/quotes/">
-Цитаты (15)
-</a>
-</li>
-<li class="facts">
-<i class="bc-icon facts"></i>
-<a alt="Избранное интересные факты" href="/book/77281/facts/">
-Факты (0)
-</a>
-</li>
-<li class="reviews">
-<i class="bc-icon comments"></i>
-<a alt="Избранное отзывы" href="/book/77281/comments/">
-Отзывы (1)
-</a>
-</li>
-</ul>
-</div>
-</div>
-<ul class="book-article--links" data-hide-show="">
-<li class="book--share" data-ng-class="{_opened: isVisible()}">
-<i class="b-icon" data-ng-class="{'share-plus': !isVisible(), 'share-minus': isVisible()}"></i>
-<a class="book-share--toggle" data-ng-click="toggle()" href="" rel="nofollow">
-Поделиться книгой с друзьями
-</a>
-<div class="book-share--counters">
-<div class="ya-share-book-profile">
-<script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript"></script>
-<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharequickservices="vkontakte,twitter,odnoklassniki,gplus" data-yasharetheme="counter" data-yasharetype="small"></div>
-</div>
-</div>
-</li>
-</ul>
-<div class="ba--edit-info edit-book-info-margin">
-<a class="fancybox-book-edit-info-form" data-ng-href="#!/#book-edit-info-form" rel="nofollow">
-Изменить информацию о книге
-</a>
-<span class="rarr">→</span>
-</div>
-<a class="centered h3-top100-title" href="/books/top/">
-<div class="b-icon thebest"></div>Лучшие книги - Топ 100
-</a>
-<div class="aside-top100">
-<div class="a-top100-item">
-<div class="a-t100-number">76.</div>
-<div class="a-t100-image">
-<a href="/book/57634/" rel="nofollow">
-<img alt="Маленький принц" src="/public/media/covers/b/b/bbf92e83025590e38c74a6491a9078a1_100x0.jpg" title="Маленький принц"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57634/">Маленький принц</a>
-</div>
-<div class="a-t100-rating">
-<strong>8.9</strong>
-(5734 оценки)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">77.</div>
-<div class="a-t100-image">
-<a href="/book/57622/" rel="nofollow">
-<img alt="Три товарища" src="/public/media/covers/8/f/8f934e62c331869729787a4a6ece3345_100x0.jpg" title="Три товарища"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57622/">Три товарища</a>
-</div>
-<div class="a-t100-rating">
-<strong>8.9</strong>
-(4569 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">78.</div>
-<div class="a-t100-image">
-<a href="/book/57656/" rel="nofollow">
-<img alt="Имя ветра" src="/public/media/covers/e/5/e577557ae9f6354ad5418e34f4b203bf_100x0.jpg" title="Имя ветра"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57656/">Имя ветра</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.0</strong>
-(397 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">79.</div>
-<div class="a-t100-image">
-<a href="/book/58991/" rel="nofollow">
-<img alt="Конец Вечности" src="/public/media/covers/7/d/7d1c769e8b56936f610da9410632a012_100x0.jpg" title="Конец Вечности"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/58991/">Конец Вечности</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.0</strong>
-(397 оценок)
-</div>
-</div>
-</div>
-<div class="a-t100--show-all"><a class="a-arrowed" href="/books/top/" rel="nofollow">Весь рейтинг</a></div>
-</div>
-</div>
-</div>
 </article>
+<article class="style2">
+<span class="image"><img alt="fantasy series background" class="lazyload" height="326" src="/images/pic02.jpg" width="353"/></span>
+<a href="/best-fantasy-series.html">
+<h2>Fantasy Series We Recommend</h2>
+<div class="content">
+<p>There's nothing better than finding a fantasy series you can lose yourself in</p>
 </div>
-<div id="book-edit-info-form">
-<div data-ng-controller="BookEditInfoCtrl" id="book_edit_info_form-book-edit-info-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<p>Редактирование информации:</p>
-<span class="book-edit-form-book-name">Избранное</span>
-</div>
-<div class="feedback-body">
-<span class="book-edit-thanks">Спасибо, что помогаете делать наш сайт лучше!</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Напишите, что вы предлагаете исправить: название книги, обложку, автора, описание, год написания произведения, серию?" rows="10"></textarea>
-<a class="ui-20 show-filming" data-ng-click="addFilms=true" data-ng-hide="addFilms" href="" rel="nofollow">Указать экранизацию книги?</a>
-<input class="ui-20 show-filming" data-ng-model="filming" data-ng-show="addFilms" placeholder="Добавьте ссылку с кинопоиска на фильм, снятый по книге" type="text"/>
-<button class="btn-blue-20 send-book-info" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
-</div>
-</div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="libr" id="libr">
-<div class="libr-lightbox">
-<div class="libr-heading">
-<span class="libr-title libr-dark-gray">Гарри Поттер и Орден Феникса</span>
-<ul class="libr-heading-icons">
-<li><a class="libr-ico-help" href="">Помощь</a></li>
-<li><a class="libr-ico-close" href="">Закрыть</a></li>
-</ul>
-</div>
-<form action="#" class="libr-form-librarian">
-<fieldset>
-<aside class="libr-sidebar">
-<div class="libr-buttons">
-<a class="libr-button libr-will-read" href="">Хочу прочитать</a>
-<a class="libr-button libr-now-reading" href="">Читаю</a>
-<a class="libr-button libr-already-read active" href="">Прочитал</a>
-</div>
-<div class="libr-check-area">
-<div class="libr-form-row">
-<input checked="" hidden="" id="print" type="checkbox">
-<label for="print">Печатное издание</label>
-</input></div>
-<div class="libr-form-row">
-<input hidden="" id="audiobook" type="checkbox"/>
-<label for="audiobook">Аудиокнигу</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="electronic-version" type="checkbox"/>
-<label for="electronic-version">Электронную версию</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="original-language" type="checkbox"/>
-<label for="original-language">На оригинальном языке</label>
-</div>
-</div>
-<ul class="libr-sidebar-icons">
-<li><a class="libr-ico-favorite" href="">В избранное</a></li>
-<li><a class="libr-ico-rss" href="">Подписаться на рецензии</a></li>
-</ul>
-</aside>
-<div class="libr-main-block">
-<ul class="libr-tabset">
-<li><a class="active" href="#libr-tab1"><span class="libr-inner libr-create-shelf">Добавить/Оценить</span></a></li>
-<li><a class="disabled" href="#libr-tab2"><span class="libr-inner libr-calendar">Указать период</span></a></li>
-<li><a href="#libr-tab3"><span class="libr-inner libr-edit-note">Добавить заметку</span></a></li>
-</ul>
-<div class="libr-tabs-content">
-<div id="libr-tab1">
-<div class="libr-content-block">
-<div class="libr-add-shelf-section">
-<div class="libr-heading-block">
-<strong class="libr-title">Добавить на полку:</strong>
-<a class="alignright" href="">Создать полку</a>
-</div>
-<div class="libr-select-block libr-popup-holder">
-<div class="libr-open">
-<input readonly="readonly" type="text" value="Выбрать созданную полку"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li class="libr-red">
-<span class="libr-text-link">Хотите удалить полку?</span>
-<div class="libr-block-links"><a href="">Да</a> / <a href="">Нет</a></div>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Книги, которые не дочитал</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Книги от друзей</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Полка под флешмоб</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Для личностного роста</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Детям на ночь</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015 - добавление</a>
-<a class="libr-delete" href="">Удалить</a>
-<span class="libr-loader-white"></span>
-</li>
-<li class="libr-red">
-<span class="libr-loader-white"></span>
-<span class="libr-text-link">Удаление...</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="libr-heading-block">
-<strong class="libr-title">Поставить оценку:</strong>
-<span class="alignright">Средняя оценка 7.4</span>
-</div>
-<ul class="libr-rating">
-<li><a href="">1</a></li>
-<li><a href="">2</a></li>
-<li><a href="">3</a></li>
-<li><a href="">4</a></li>
-<li><a href="">5</a></li>
-<li><a href="">6</a></li>
-<li><a href="">7</a></li>
-<li><a href="">8</a></li>
-<li><a href="">9</a></li>
-<li><a href="">10</a></li>
-</ul>
-<div class="libr-text-row">Вероятно, Вы оцените книгу на: <span class="circle green">7</span></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright" href="">Сохранено</a>
-</div>
-</div>
-<div id="libr-tab2">
-<div class="libr-content-block">
-<div class="libr-calendar-section">
-<div class="libr-top-block-calendar">
-<div class="libr-arrows"></div>
-<span class="libr-text-period">Июль - Август, 2015</span>
-<div class="libr-select-block libr-popup-holder libr-select-year alignright">
-<div class="libr-open">
-<input type="text" value="2015"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li><a class="text-link" href="">2015</a></li>
-<li><a class="text-link" href="">2016</a></li>
-<li><a class="text-link" href="">2017</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="libr-calendar-block"></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<div class="alignleft libr-calendar-bottom">
-<input type="text" value="20-07-2015"/>
-<span class="text">-</span>
-<input type="text" value="14-08-2015"/>
-<a class="libr-text" href="">Убрать период?</a>
-</div>
-<a class="libr-button alignright libr-blue" href="">Сохранить</a>
-</div>
-</div>
-<div id="libr-tab3">
-<div class="libr-content-block">
-<div class="libr-text-note">Заметки - это удобный и простой способ хранить нужную информацию <br>или мысли о книге для личного использования. Ваша заметка будет видна только вам.</br></div>
-<textarea class="libr-textarea-scrollbar scrollbar-outer" cols="40" placeholder="Заметка..." rows="8"></textarea>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright libr-blue" href="">Добавить</a>
-</div>
-</div>
-</div>
-</div>
-</fieldset>
-</form>
-</div>
-</div>
-</div>
-<div id="libr"></div>
-<div id="feedback-form">
-<div data-ng-controller="FeedbackCtrl" id="feedback_form_feedback-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<span>Нашли ошибку?</span>
-<p>Расскажите нам о найденной ошибке, и мы сможем сделать наш сервис еще лучше.</p>
-</div>
-<div class="feedback-body">
-<div class="select-box _fr" id="feedback-form-select-box">
-<div class="select-box--current">
-<span>{[{ currentCategoryName }]}</span>
-</div>
-<div class="dropdown-box _select">
-<nav class="dropdown-select-options">
-<a data-ng-click="selectCategory(-1, 'Без темы')" href="#" onclick="return false" rel="nofollow">Без темы</a>
-<a data-ng-click="selectCategory(7, 'Ошибка в информации о книге')" href="#" onclick="return false" rel="nofollow">
-Ошибка в информации о книге
 </a>
-<a data-ng-click="selectCategory(8, 'Плагиат')" href="#" onclick="return false" rel="nofollow">
-Плагиат
+</article>
+<article class="style3">
+<span class="image"><img alt="fantasy book of the year background" class="lazyload" height="326" src="/images/pic03.jpg" width="353"/></span>
+<a href="/fantasy-books-of-the-year/">
+<h2>Fantasy Books Of The Year</h2>
+<div class="content">
+<p>Our fantasy books of the year, from 2006 to 2021</p>
+</div>
 </a>
-<a data-ng-click="selectCategory(9, 'Спойлер')" href="#" onclick="return false" rel="nofollow">
-Спойлер
-</a>
-<a data-ng-click="selectCategory(10, 'Другая ошибка')" href="#" onclick="return false" rel="nofollow">
-Другая ошибка
-</a>
-<a data-ng-click="selectCategory(11, 'Авторы')" href="#" onclick="return false" rel="nofollow">
-Авторы
-</a>
-</nav>
+</article>
+</section>
+<script async="" src="/assets/js/lazysizes.min.js"></script>
 </div>
 </div>
-<span class="feedback-category-text">Категория:</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Опишите ошибку..." rows="10"></textarea>
-<button class="btn-blue-20" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
+<footer id="footer">
+<div class="inner">
+<ul class="copyright"><li>© 2023 Fantasy Book Review</li></ul>
 </div>
+</footer>
 </div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="help-readly">
-<div>
-<span class="help-readly--title">Помоги Ридли!</span>
-<div class="help-readly--text">
-Мы вкладываем душу в Ридли. Спасибо, что вы с нами! Расскажите о нас друзьям, чтобы они могли присоединиться к нашей дружной семье книголюбов.
-</div>
-<div class="social">
-<div class="social-buttons">
-<a class="vk" href="https://vk.com/share.php?url=http%3A%2F%2Freadly.ru&amp;title=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru&amp;image=" rel="nofollow" target="_blank" title="Вконтакте"></a>
-<a class="tw" href="https://twitter.com/intent/tweet?status=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Twitter"></a>
-<a class="gp" href="https://plus.google.com/share?url=http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Google+"></a>
-<a class="ok" href="https://www.ok.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=http%3A%2F%2Freadly.ru&amp;st.comments=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru" rel="nofollow" target="_blank" title="Odnoklassniki"></a>
-</div>
-</div>
-</div>
-</div>
-<script src="/public/static/dist/js/readly.js?b8cabe27e37a" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.librarianEmitter.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.bookTimelineBox.js"></script>
-<script>
-
-if (typeof React === 'undefined') throw new Error('Cannot find `React` global variable. Have you added a script element to this page which points to React?');
-if (typeof Readly.bookTimelineBox === 'undefined') throw new Error('Cannot find component variable `Readly.bookTimelineBox`');
-(function(React, component, containerId) {
-  var props = {"perPage": 5, "bookId": 77281, "initialParams": {"comment_count": 3, "object_type": "reviews", "book_id": 77281}, "initialItems": [], "user": {"username": "", "name": "AnonymousUser"}, "objectType": "reviews"};
-  var element = React.createElement(component, props);
-  var container = document.getElementById(containerId);
-  if (!container) throw new Error('Cannot find the container element `#reactComponent-Readly.bookTimelineBox` for component `Readly.bookTimelineBox`');
-  React.render(element, container);
-})(React, Readly.bookTimelineBox, 'reactComponent-Readly.bookTimelineBox');
-
-</script>
-<script>
-
-ga('create', 'UA-47935002-1', 'readly.ru');
-ga('require', 'displayfeatures');
-ga('set', 'dimension1', userName);
-ga('set', 'dimension3', 0);
-ga('set', 'dimension4', 1);
-ga('send', 'pageview');
-
-</script>
-<script async="" defer="" src="https://apis.google.com/js/platform.js">
-  {lang: 'ru'}
-</script>
-<footer class="cf" id="footer"><div class="wrapper"><div class="footer-column"><a class="footer-logo" href="#" rel="nofollow"></a><p class="copy">Ридли.ру © 2013-2023<p><div class="footer--meta"><a class="footer--bookmark" href="javascript:addToFavorite()" rel="nofollow"><i class="icon_sprite bookmark"></i><span>В закладки</span></a><a class="footer--mobile" href="http://m.readly.ru/"><i class="icon_sprite mobile"></i><span>Мобильная версия</span></a></div></p></p></div><div class="footer-column"><span class="h4">Разделы</span><nav><a href="/books/">Что почитать</a><a href="/books/popular/">Популярные книги</a><a href="/books/top/">Рейтинг книг</a><a href="/collections/">Подборки книг</a><a href="/books/new/">Книжные новинки</a><a href="/authors/">Популярные авторы</a><a href="/books/i_am_lucky/">Случайная книга</a></nav></div><div class="footer-column"><span class="h4">Обсуждения</span><nav><a href="/discussions/theme/last/" rel="nofollow">Топики</a><a href="/discussions/reviews/last/" rel="nofollow">Рецензии</a><a href="/discussions/flashmob/last/" rel="nofollow">Флешмобы</a><a href="/discussions/game/last/" rel="nofollow">Игры</a><a href="/discussions/competition/last/" rel="nofollow">Конкурсы</a><a href="/discussions/academy/last/" rel="nofollow">Книжная академия</a><a href="/discussions/flood/last/" rel="nofollow">Флудилка</a></nav></div><div class="footer-column"><span class="h4">Подписки</span><nav><a href="https://vk.com/vmireknig" rel="nofollow" target="_blank">Вконтакте</a><a href="https://twitter.com/ReadlyRu" rel="nofollow" target="_blank">Твиттер</a></nav></div><div class="footer-column"><span class="h4">О проекте</span><nav><a href="/pages/about/" rel="nofollow">Описание сервиса</a><a href="/pages/faq/" rel="nofollow">Вопрос-ответ</a><a class="fancybox fancybox-feedback-form" data-ng-href="#!/#feedback-form" rel="nofollow">Обратная связь</a><a href="http://readly.reformal.ru" rel="nofollow" target="_blank">Предложения</a><a href="/pages/copyright/" rel="nofollow">Правообладателям</a><a href="/pages/contacts/" rel="nofollow">Контакты</a><a href="/pages/rules/" rel="nofollow">Правила</a></nav></div><div class="footer-column footer-column-apps"><span class="h4">Приложения</span><img class="appstore" src="/public/static//images/appstore.png"><img src="/public/static//images/googleplay.png"/></img></div></div></footer>
-<div class="singin-form" id="login-form">
-<div class="singin__head">
-<span class="singin__title">Зарегистрируйтесь, и вы сможете:</span>
-<div class="singin__possibilities clearfix">
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico1"><i></i></div>
-<div class="singin__poss_item_text">
-Получать персональные
-<strong>рекомендации книг</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico2"><i></i></div>
-<div class="singin__poss_item_text">
-Создать собственную
-<strong>виртуальную библиотеку</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico3"><i></i></div>
-<div class="singin__poss_item_text">
-Следить за тем,
-<strong>что читают Ваши друзья</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="singin__body clearfix">
-<div class="singin__body_col">
-<div class="singin__form_tabs">
-<a class="active" href="/user/register/" rel="nofollow">Регистрация</a>
-</div>
-<form action="/user/register/?next=/book/77281/
-" method="post">
-<input name="csrfmiddlewaretoken" type="hidden" value="pjCZcZN01iEupuZTKvHfsVoU6K41r3a2"/>
-<div class="singin__inputs_form">
-<input name="email" placeholder="E-mail адрес" type="text"/>
-<input name="username" placeholder="Логин" type="text"/>
-<input name="password" placeholder="Пароль" type="password"/>
-<div class="singin__submit_foot">
-<button class="btn-blue-20 fr" onclick="yaCounter22692712.reachGoal('register_button');">Регистрация</button>
-</div>
-</div>
-</form>
-</div>
-<div class="singin__body_col">
-<span class="singin__sub_title">Через соцсети</span>
-<div class="big_social_buttons__container">
-<a class="big_social_button vk" href="/login/vk-oauth2/?next=/" rel="nofollow" title="Вконтакте">
-<i class="icon"></i> Войти через Вконтакт
-</a>
-<a class="big_social_button tw" href="/login/twitter/?next=/" rel="nofollow" title="Twitter">
-<i class="icon"></i> Войти через Твиттер
-</a>
-</div>
-</div>
-</div>
-</div>
-<script>
-    function open_reg_form() {
-        ga('send','event', 'Регистрация', 'open_form_reg');
-        ga('send','pageview', '/user/reg_form/');
-    }
-</script>
-<div id="registration-alert">
-<span>Данное действие доступно только для</span>
-<b>зарегистрированных пользователей</b>
-<a class="btn-green-20" href="/user/register/">Регистрация</a>
-<a class="ui-20" href="/user/login/">Войти на сайт</a>
-</div>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>

@@ -1,789 +1,103 @@
-<body itemscope="" itemtype="http://schema.org/WebPage" onload="">
-<script type="text/javascript">
-      var yaParams = {'Логин': 'Гость'};
-      var userName = 'Гость';
-    </script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  </script>
-<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
-<script type="text/javascript">
-    try {
-        var yaCounter22692712 = new Ya.Metrika({
-            id:22692712,
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    } catch(e) { }
-    </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/22692712" style="position:absolute; left:-9999px;"/></div></noscript>
-<header class="cf" id="header"><div class="wrapper cf"><a class="header-logo" href="/"></a><nav class="header-nav"><a href="/discussions/" onclick="yaCounter22692712.reachGoal('clickDiscussion'); return true;">Обсуждения</a><a href="/books/popular/" onclick="yaCounter22692712.reachGoal('clickBooks');return true;">Книги</a><a href="/authors/" onclick="yaCounter22692712.reachGoal('clickAuthors'); return true;">Авторы</a><a href="/users/" onclick="yaCounter22692712.reachGoal('clickUsers'); return true;">Читатели</a></nav><div class="header-search" data-ng-controller="BookSearchCtrl" data-outside-click="closeDropDown()"><form action="/search/" class="dropdown-triger"><input autocomplete="off" data-ng-change="search()" data-ng-click="openDropDown()" data-ng-init="q=''" data-ng-model="q" data-ng-model-options="{debounce: 300}" name="q" placeholder="Поиск автора или книги..." type="text"/><a href="/search/?q={[{ q }]}" rel="nofollow"><i class="icon_sprite search-w"></i></a></form><div class="dropdown-content ng-cloak" data-ng-show="isOpen()"><div class="dd-search-result-list" data-load-spinner="" data-loading="loading"><div class="dd-search-result-counter">
-Книги <span>{[{ count }]}</span></div><div class="user-lib-new--book-list--item cf" data-ng-repeat="book in results"><div class="book-cover"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}" title="{[{ book.title }]}"><img alt="{[{ book.title }]}" class="dropdown-content--search-bimage" data-ng-src="{[{ book.cover | imageUrl:'book.Book':1 }]}"/></a></div><div class="book-main-info"><h3 class="book-title dropdown-content--book-title"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}">{[{ book.title }]}</a></h3><p>{[{ book.author[0].name }]}</p></div></div><div class="dd-goToResult" data-ng-show="results.length"><a href="/search/?q={[{ q }]}" rel="nofollow">
-К результатам поиска по запросу {[{ q }]} »
-</a></div></div></div></div><a class="shuffle-btn header-btn-icon" href="/books/i_am_lucky/" rel="nofollow"><i class="icon_sprite shuffle"></i></a><div class="header--login-new"><a class="header--login-btn-new" href="/user/login/" rel="nofollow">Войти</a><a class="button-normal fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form()" rel="nofollow">Регистрация</a></div></div></header>
-<div id="global-wrap">
-<a class="fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form();yaCounter22692712.reachGoal('open_banner');" rel="nofollow"><div class="top_banner visible-lg visible-md"> </div></a>
-<script>
-    var book_profile = {"rating": 9.0, "quote_count": 17, "isbn": "978-5-271-44921-5", "content_type": 13, "links": [], "show": true, "rates_count": 1407, "quotes": [{"hashtags": [], "author": "\u0414\u0436\u043e\u043d \u0421\u043d\u043e\u0443", "text": "<p>- \u0422\u0430\u043a\u043e\u0432 \u043c\u043e\u0439 \u0436\u0440\u0435\u0431\u0438\u0439, - \u0441\u043a\u0430\u0437\u0430\u043b \u0441\u0435\u0431\u0435 \u043b\u043e\u0440\u0434-\u043a\u043e\u043c\u0430\u043d\u0434\u0443\u044e\u0449\u0438\u0439, \u043b\u043e\u0436\u0430\u0441\u044c \u043d\u0430 \u0443\u0437\u043a\u0443\u044e \u043a\u043e\u0439\u043a\u0443 \u0414\u043e\u043d\u0430\u043b\u0430 \u041d\u043e\u0439\u0435. - \u041e\u0442\u043d\u044b\u043d\u0435 \u0438 \u0434\u043e \u043a\u043e\u043d\u0446\u0430 \u043c\u043e\u0438\u0445 \u0434\u043d\u0435\u0439.</p>", "created_at": "2017-12-04T13:37:01", "object_type": 20, "updated_at": "2017-12-04T13:37:01", "object_id": 63613, "comment_count": 0, "book": {"id": 7282, "name": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "authors": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "url": "/book/7282/"}, "user": {"id": 89639, "name": "\u0421\u0438\u043d\u0435\u0435 \u043e\u0431\u043b\u0430\u043a\u043e (@synee_oblako)", "avatar": "avatars/7/f/7f0f6a4a22f8c1f50b9946710b09aa38.jpg", "url": "/user/89639/", "username": "synee_oblako", "gender": -1}, "favorited_users": []}, {"hashtags": [], "author": "\u0422\u0438\u0440\u0438\u043e\u043d", "text": "<p>\u0422\u0430\u043a \u0438 \u0431\u0443\u0434\u0435\u0448\u044c \u0432\u0441\u044e \u0436\u0438\u0437\u043d\u044c \u0443\u0431\u0435\u0433\u0430\u0442\u044c?</p>", "created_at": "2016-08-08T15:48:32", "object_type": 20, "updated_at": "2016-08-08T15:48:32", "object_id": 53300, "comment_count": 0, "book": {"id": 7282, "name": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "authors": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "url": "/book/7282/"}, "user": {"id": 3479, "name": "\u041b\u044e\u0431\u043e\u0432\u044c \u0421\u0430\u043f\u043e\u0436\u043a\u043e\u0432\u0430 (@lyba)", "avatar": "avatars/c/f/cf5a2cb13b2724b4a42c350a073d6f20.jpg", "url": "/user/3479/", "username": "lyba", "gender": 0}, "favorited_users": []}, {"hashtags": [], "author": "\u0422\u0438\u0440\u0438\u043e\u043d", "text": "<p>\u0412\u0441\u044f\u043a\u043e\u043c\u0443 \u0434\u0443\u0440\u0430\u043a\u0443 \u043f\u0440\u0438\u044f\u0442\u043d\u043e \u0443\u0441\u043b\u044b\u0448\u0430\u0442\u044c, \u0447\u0442\u043e \u043e\u043d \u0447\u0442\u043e-\u043d\u0438\u0431\u0443\u0434\u044c \u0437\u043d\u0430\u0447\u0438\u0442.</p>", "created_at": "2016-08-08T15:44:27", "object_type": 20, "updated_at": "2016-08-08T15:44:27", "object_id": 53299, "comment_count": 0, "book": {"id": 7282, "name": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "authors": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "url": "/book/7282/"}, "user": {"id": 3479, "name": "\u041b\u044e\u0431\u043e\u0432\u044c \u0421\u0430\u043f\u043e\u0436\u043a\u043e\u0432\u0430 (@lyba)", "avatar": "avatars/c/f/cf5a2cb13b2724b4a42c350a073d6f20.jpg", "url": "/user/3479/", "username": "lyba", "gender": 0}, "favorited_users": []}, {"hashtags": [], "author": "\u041b\u043e\u0440\u0434 \u0411\u043e\u043b\u0442\u043e\u043d", "text": "<p>\u041d\u0435\u043b\u044c\u0437\u044f \u043c\u044b\u0441\u043b\u0438\u0442\u044c \u0437\u0434\u0440\u0430\u0432\u043e, \u0435\u0441\u043b\u0438 \u0432\u0441\u0451 \u0432\u0440\u0435\u043c\u044f \u0437\u043b\u0438\u0448\u044c\u0441\u044f.</p>", "created_at": "2016-08-08T15:42:52", "object_type": 20, "updated_at": "2016-08-08T15:42:52", "object_id": 53298, "comment_count": 0, "book": {"id": 7282, "name": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "authors": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "url": "/book/7282/"}, "user": {"id": 3479, "name": "\u041b\u044e\u0431\u043e\u0432\u044c \u0421\u0430\u043f\u043e\u0436\u043a\u043e\u0432\u0430 (@lyba)", "avatar": "avatars/c/f/cf5a2cb13b2724b4a42c350a073d6f20.jpg", "url": "/user/3479/", "username": "lyba", "gender": 0}, "favorited_users": []}, {"hashtags": [], "author": "\u041b\u043e\u0440\u0434 \u0411\u0440\u0438\u043d\u0434\u0435\u043d", "text": "<p>\u041f\u0440\u043e\u0448\u043b\u043e\u0435 \u043e\u0441\u0442\u0430\u0451\u0442\u0441\u044f \u043f\u0440\u043e\u0448\u043b\u044b\u043c. \u041e\u043d\u043e \u043f\u043e\u0443\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e, \u043d\u043e \u0438\u0437\u043c\u0435\u043d\u0438\u0442\u044c \u0435\u0433\u043e \u043c\u044b \u043d\u0435 \u0432 \u0441\u0438\u043b\u0430\u0445.</p>", "created_at": "2016-08-08T15:41:57", "object_type": 20, "updated_at": "2016-08-08T15:41:57", "object_id": 53297, "comment_count": 0, "book": {"id": 7282, "name": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "authors": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "url": "/book/7282/"}, "user": {"id": 3479, "name": "\u041b\u044e\u0431\u043e\u0432\u044c \u0421\u0430\u043f\u043e\u0436\u043a\u043e\u0432\u0430 (@lyba)", "avatar": "avatars/c/f/cf5a2cb13b2724b4a42c350a073d6f20.jpg", "url": "/user/3479/", "username": "lyba", "gender": 0}, "favorited_users": []}, {"book": {"id": 7282, "name": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "authors": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "url": "/book/7282/"}, "slideMoreLink": true}], "tag": [], "alter_titles": "", "year": 2011, "facts": [], "id": 7282, "by_shelves": {"shelf_count_1": 760, "shelf_count_2": 31, "shelf_count_3": 1856, "shelf_count_4": 23}, "rating_sort": 0.0, "review_count": 2, "author": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "create": "2013-07-21T00:00:00", "unique_text": false, "filming": [], "comment_count": 0, "show_rating": 9.0, "description": "", "readers_count": 2647, "award": [], "sorter": 9.0, "series_position": 5, "seria": 37, "favorites": 23, "genre": [{"url": "/genre/35/", "id": 35, "name": "\u0421\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u0430\u044f \u0437\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u0430\u044f \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "is_show": true}, {"url": "/genre/48/", "id": 48, "name": "\u0418\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0444\u044d\u043d\u0442\u0435\u0437\u0438", "is_show": true}, {"url": "/genre/195/", "id": 195, "name": "\u042d\u043a\u0440\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044f", "is_show": true}, {"url": "/genre/182/", "id": 182, "name": "\u0421\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u0430\u044f \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "is_show": true}, {"url": "/genre/56/", "id": 56, "name": "\u0411\u043e\u0435\u0432\u043e\u0435 \u0444\u044d\u043d\u0442\u0435\u0437\u0438", "is_show": true}, {"url": "/genre/156/", "id": 156, "name": "\u0424\u044d\u043d\u0442\u0435\u0437\u0438 \u043f\u0440\u043e \u0434\u0440\u0430\u043a\u043e\u043d\u043e\u0432", "is_show": true}, {"url": "/genre/190/", "id": 190, "name": "\u0424\u044d\u043d\u0442\u0435\u0437\u0438", "is_show": true}, {"url": "/genre/191/", "id": 191, "name": "\u041f\u0440\u0438\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f", "is_show": true}], "fact_count": 0, "publisher": "\u0410\u0421\u0422", "url": "/book/7282/", "title": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "_id": 7282, "user": {"possible_rate": null, "id": null}};
-</script>
-<div class="wrapper content clearfix">
-<article class="book-article" itemscope="" itemtype="http://schema.org/Book">
-<div class="content-cols">
-<div class="content-cols--main">
-<h1 class="book-article--title" itemprop="name">Танец с драконами. Книга 1. Грёзы и пыль</h1>
-<div class="book-article--author">
-<label class="author-name">Автор книги:</label>
-<a href="/author/3795/"><h2 itemprop="author">Джордж Мартин</h2></a>
+<body class="is-preload" itemscope="" itemtype="https://schema.org/WebPage">
+<div id="wrapper">
+<header id="header">
+<div class="inner"><a class="logo" href="/"><span class="title">Fantasy Book Review</span></a>
+<nav>
+<ul>
+<li><a href="#menu">Menu</a></li>
+</ul>
+</nav>
 </div>
-<div class="book-article--details">
-<div class="ba-details--row">
-<label class="row-label"><span>год написания:</span></label>
-<span class="row-value">2011</span>
+</header>
+<nav id="menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/top-100-fantasy-books/">Top 100</a></li>
+<li><a href="/fantasy-books-of-the-year/">Fantasy Books of the Year</a></li>
+<li><a href="/best-fantasy-series.html">Best Fantasy Series</a></li>
+<li><a href="/fantasy-sub-genres/">Fantasy Sub Genres</a></li>
+<li><a href="/interviews/">Interviews</a></li>
+</ul>
+</nav>
+<div id="main">
+<div class="inner">
+<h1>City of Stairs by Robert Jackson Bennett
+(The Divine Cities: Book 1)</h1>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Book">
+<meta content="City of Stairs" itemprop="name"/>
+<meta content="Robert Jackson Bennett" itemprop="author"/>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<div itemprop="reviewBody">
+<p>Shara and her assistant Sigurd have arrived in the Continental city of Belikov in search of Dr. Efrem Pangyui's killers, but are about to discover so much more. Belikov is a city of twisted realities and things are definitely not what they seem. Shara and her associates must find the killers and stop their extremist plot before it is too late.</p><p>City of Stairs had a very slow start, and it took a while for me to become enveloped in the story. Bennett's writing style caught me off-guard but in a way I feel that this unique narration added to the story, as the city of Belikov is just as disconcerting. The writing and the setting are unsettling at first, but I soon became accustomed to what was previously so alien.</p><p>Shara is not a typical fantasy heroine – she is not particularly comely, and while she is a leading member of her field, she is not exactly celebrated for it and at one point, her aunt (and her boss) corrects her by saying that Shara is the agent most obsessed with the Divinities and the Continent as opposed to the leading expert.</p><p>The world-building that went into this book was amazing. It was more of a bottom-top approach but there was still a sufficient amount of background information. I found the way that Bennett approached religion to be extremely interesting and I loved the way that the reader was kept in the dark about the history of Belikov and the Divinities - just as the people of the Continent were.</p><p>City of Stairs definitely makes my list of favourite fantasy novels, and I would definitely read a sequel, as well as more of Bennett's work. Excellent and I wouldn't hesitate to recommend it.</p><p><span class="rating">9/10</span> <em>Makes my list of favourite fantasy novels.</em></p>
 </div>
-<div class="ba-details--row">
-<label class="row-label"><span>серия книг:</span></label>
-<span class="row-value">
-<a href="/serie/37/">Песнь Льда и Пламени</a>
-(5 книга из 9)
-</span>
+<ul class="actions stacked">
+<li><a class="button primary" href="https://www.amazon.com/dp/B00L7SLSXM?tag=heavenlyholid-20" rel="nofollow" target="_blank">Buy on Amazon</a></li>
+</ul>
+<p>Review by <a href="/reviewers/Kat-Berwick.html"><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Kat Berwick</span></span></a></p>
+<meta content="2014-11-15" itemprop="datePublished"/>
+<meta content="2021-09-29" itemprop="dateModified"/>
 </div>
-<div class="ba-details--row">
-<label class="row-label"><span>жанры:</span></label>
-<span class="row-value">
-<a href="/genre/35/">современная зарубежная литература</a>
-,
-<a href="/genre/48/">историческое фэнтези</a>
-,
-<a href="/genre/195/">экранизация</a>
-,
-<a href="/genre/182/">современная литература</a>
-,
-<a href="/genre/56/">боевое фэнтези</a>
-,
-<a href="/genre/156/">фэнтези про драконов</a>
-,
-<a href="/genre/190/">фэнтези</a>
-,
-<a href="/genre/191/">приключения</a>
-</span>
-</div>
-<div class="ng-cloak book-profile-rating-height" data-ng-controller="BookProfileCtrl" id="book_profile_book-rating-app" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-<div data-book-id="book.id" data-book-rating="" data-rating="book.user.rating"></div>
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating">
+<meta content="9.2" itemprop="ratingValue">
 <meta content="10" itemprop="bestRating"/>
-<meta content="9,0" itemprop="ratingValue"/>
-<meta content="1407" itemprop="ratingCount"/>
-<div class="book-circular-correct">
-<span class="book-profile--rate">9,0</span>
-<span class="book-profile--rates-count">(1 407 оценок)</span>
+</meta></meta></div>
+<h2 id="readerreviews">City of Stairs reader reviews
+<div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="bestRating"/>
+<p><span itemprop="ratingValue">9.2</span>/10 from <span itemprop="reviewCount">1</span> reviews</p>
 </div>
-<div class="book-top100">
-<a href="/books/top/">
-<span>Топ-100:</span> 48
-</a>
-</div>
-</div>
-<div class="ng-cloak" data-ng-controller="WhereToBuyCtrl" data-ng-init="aggregate('Танец с драконами. Книга 1. Грёзы и пыль', 'Джордж  Мартин')" id="book_profile-where_to_buy-app">
-<h2 class="where-to-buy-title book-author-title rel-h2" data-ng-show="aggregated.length">Купить книгу Танец с драконами. Книга 1. Грёзы и пыль, Джордж Мартин</h2>
-<div class="books-aggregate">
-<div class="aggregate-row" data-ng-class-odd="'book-aggregate-row-odd'" data-ng-repeat="agg in aggregated">
-<a data-ng-href="{[{ agg.url }]}" target="_blank"><img alt="" class="aggregate-shop-img" data-ng-src="{[{ agg.market_logo }]}"/></a>
-<a class="aggregate-shop" data-ng-bind="agg.market_name" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<a class="aggregate-book" data-ng-bind="agg.title" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<div class="fr">
-<b class="aggregate-price"><span data-ng-bind="agg.price"></span> р.</b>
-<a class="aggregate-buy-button-litres" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market=='litres'" target="_blank">Скачать</a>
-<a class="aggregate-buy-button" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market!='litres'" target="_blank">Купить</a>
-</div>
-</div>
-</div>
-</div>
-<br class="clear"/>
-<div data-ng-controller="BookProfileCtrl" id="book_profile_facts-quotes-app">
-<div data-book-id="book.id" data-fact-list="" data-facts="book.facts"></div>
-<div data-book-id="book.id" data-quote-list="" data-quotes="book.quotes" data-user-id="book.user.id"></div>
-</div>
-<div class="invisible-content">
-<div class="h3-title-wadd"><h3>Интересные факты</h3></div>
-<div class="ba-facts-list">
-</div>
-</div>
-<div class="invisible-content">
-<div class="h3-title-wadd">
-<h3>Цитаты из книги</h3>
-</div>
-<div class="ba-facts-list">
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;- Таков мой жребий, - сказал себе лорд-командующий, ложась на узкую койку Донала Нойе. - Отныне и до конца моих дней.&lt;/p&gt;<br/><em class="quote-sign">Джон Сноу</em>
-<div class="discussion-item-author disable-float">
-
-Добавил(а): <a class="user" href="/user/89639/" rel="nofollow"><i class="ico"></i>synee_oblako</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Так и будешь всю жизнь убегать?&lt;/p&gt;<br/><em class="quote-sign">Тирион</em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/3479/" rel="nofollow"><i class="ico"></i>lyba</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Всякому дураку приятно услышать, что он что-нибудь значит.&lt;/p&gt;<br/><em class="quote-sign">Тирион</em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/3479/" rel="nofollow"><i class="ico"></i>lyba</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Нельзя мыслить здраво, если всё время злишься.&lt;/p&gt;<br/><em class="quote-sign">Лорд Болтон</em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/3479/" rel="nofollow"><i class="ico"></i>lyba</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>&lt;p&gt;Прошлое остаётся прошлым. Оно поучительно, но изменить его мы не в силах.&lt;/p&gt;<br/><em class="quote-sign">Лорд Бринден</em>
-<div class="discussion-item-author disable-float">
-
-Добавила: <a class="user" href="/user/3479/" rel="nofollow"><i class="ico"></i>lyba</a>
-</div>
-</div>
-</div>
-<div class="discussion-item-text clearfix">
-<div class="ba-fact-item"><i class="bull">•</i>
-<blockquote class="book-profile--quote-more-slide">
-<a href="/book/7282/quotes/">Все цитаты из книги "Танец с драконами. Книга 1. Грёзы и пыль" →</a>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<h2 class="book-author-title rel-h2">С этой книгой читают:</h2>
-<div class="book-related-list">
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7281/" rel="nofollow">
-<img alt="Новый Дозор" src="/public/media/covers/c/8/c873b52d16a61c40a4f307cd24a577ee_160x0.jpg" title="Новый Дозор"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7281/">
-Новый Дозор
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7280/" rel="nofollow">
-<img alt="Бэтман Аполло" src="/public/media/covers/e/5/e5dfa00892b98dbee64f40133fbe61f1_160x0.jpg" title="Бэтман Аполло"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7280/">
-Бэтман Аполло
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7279/" rel="nofollow">
-<img alt="Егерь" src="/public/media/covers/e/2/e2d729e18c79f6e36404032faff37c73_160x0.jpg" title="Егерь"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7279/">
-Егерь
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7278/" rel="nofollow">
-<img alt="Обладатель-десятник" src="/public/media/covers/a/d/adb7db402d089f3088fd3e0688efe439_160x0.jpg" title="Обладатель-десятник"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7278/">
-Обладатель-десятник
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/7277/" rel="nofollow">
-<img alt="Рождение империи" src="/public/media/covers/e/8/e896055d353f7bb8d0b220cbf4536b03_160x0.jpg" title="Рождение империи"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/7277/">
-Рождение империи
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="ba-timeline-container">
-<nav class="tape-select" id="timelinenav">
+<h2>All Robert Jackson Bennett Reviews</h2>
 <ul>
-<li class="active">
-<a href="/book/7282/?filter=reviews#!/#timelinenav" rel="nofollow">Рецензии</a>
-</li>
-<li>
-<a href="/book/7282/?filter=comments#!/#timelinenav" rel="nofollow">Отзывы</a>
-</li>
+<li><a href="/Robert-Jackson-Bennett/Foundryside.html">Foundryside (Founders #1)</a></li>
+<li><a href="/Robert-Jackson-Bennett/Shorefall.html">Shorefall (Founders #2)</a></li>
+<li><a href="/Robert-Jackson-Bennett/Divine-Cities-Trilogy.html">The Divine Cities Trilogy (The Divine Cities trilogy #1 - #3)</a></li>
+<li><a href="/Robert-Jackson-Bennett/City-of-Stairs.html">City of Stairs (The Divine Cities: Book 1)</a></li>
 </ul>
-</nav>
-<div id="filter-search-results-container">
-<div class="filter-panel-index">
-<div class="page-column-main __timeline">
-<section class="review-timeline-list">
-<nav class="nav-filter">
-<ul class="nav-filter-list">
-<li class="active">
-<a href="/book/7282/
-?filter=reviews&amp;sort=last#!/timelinenav" rel="nofollow">Последнее</a>
-</li>
-<li>
-<a href="/book/7282/
-?filter=reviews&amp;sort=useful#!/timelinenav" rel="nofollow">Популярное</a>
-</li>
-<li>
-<a href="/book/7282/
-?filter=reviews&amp;sort=new#!/timelinenav" rel="nofollow">Новое</a>
-</li>
-</ul>
-</nav>
-<div id="book_profile_timeline-app">
-<span id="reactComponent-Readly.bookTimelineBox"><div data-react-checksum="-1281501339" data-reactid=".1m4kykxsiyo"><div class="rtl--comment-add" data-reactid=".1m4kykxsiyo.0"><div class="rtl--start-discussion rtl--start-discussion-compat bookpost bookpost-review" data-reactid=".1m4kykxsiyo.0.0"><textarea class="sd--input" data-reactid=".1m4kykxsiyo.0.0.0" placeholder="Оставить рецензию..."></textarea></div></div><div data-reactid=".1m4kykxsiyo.1"><div data-reactid=".1m4kykxsiyo.1.0"><div class="discussion-wrap" data-reactid=".1m4kykxsiyo.1.0.$71705"><div class="discussion-item clearfix" data-reactid=".1m4kykxsiyo.1.0.$71705.0"><div data-reactid=".1m4kykxsiyo.1.0.$71705.0.0"><div class="discussion-item-user-avatar" data-reactid=".1m4kykxsiyo.1.0.$71705.0.0.0"><a class="user-avatar-50-50" data-reactid=".1m4kykxsiyo.1.0.$71705.0.0.0.0" href="/user/99589/" rel="nofollow"><img data-reactid=".1m4kykxsiyo.1.0.$71705.0.0.0.0.0" src="/public/media/avatars/1/7/174b7b4b0ccf343bc5d0f12dc2009843_80x80.jpg"/></a></div><div class="user-name" data-reactid=".1m4kykxsiyo.1.0.$71705.0.0.1"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.0.1.0"><a data-reactid=".1m4kykxsiyo.1.0.$71705.0.0.1.0.0" href="/user/99589/" rel="nofollow">Кириша (@irischarichert)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".1m4kykxsiyo.1.0.$71705.0.1"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".1m4kykxsiyo.1.0.$71705.0.1.1">19 мая 2020 8:06</span><div class="stars-rating" data-reactid=".1m4kykxsiyo.1.0.$71705.0.1.2"><div data-reactid=".1m4kykxsiyo.1.0.$71705.0.1.2.0"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".1m4kykxsiyo.1.0.$71705.0.1.2.0.1"><div class="ur-rate-stars _9" data-reactid=".1m4kykxsiyo.1.0.$71705.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".1m4kykxsiyo.1.0.$71705.0.1.2.0.2">9/10</span></div></div></div><div class="reviews-status" data-reactid=".1m4kykxsiyo.1.0.$71705.0.2"><img alt="" data-reactid=".1m4kykxsiyo.1.0.$71705.0.2.0" src="/public/static/images/new/positive.png"/></div><div class="discussion-item-index clearfix" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3"><div class="reveal-block-index clearfix" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.0"><div class="book-pic" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.0.0"><img data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.0.0.0" src="/public/media/covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a_100x0.jpg"/></div><span class="book-name" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.0.1">Танец с драконами. Книга 1. Грёзы и пыль</span><span class="book-autor" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.0.2">Джордж Мартин</span></div><div class="discussion-item-text clearfix" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.1"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.1.1"> </span><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.1.3"> </span><div data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.1.4"><div class="rc-review--text-short" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.1.4.1"><p>Танец с драконами захватывает читателя и уносит в непримиримое противостояние между обитателями 7 королевств и сопредельных территорий. В этой части автор то и дело мотыляет нас по Вестеросу и Эссосу: от Черного замка к Белой Гавани, от Тироша к Королевской Гавани, а еще будет Пентос, Мир, Волантис и тысяча других мест. <br>Ключевые герои здесь не многочисленны: Тирион, Дейнерис, Джон, Бран, Давос, Вонючка, Мелисандра и многие другие. У каждого героя своя роль и с каждым словом начинает прорисовываться картинка будущего и мало по малу становится ясно, кто же главный герой в сюжете. Побочных героев в сюжете как всегда предостаточно, но он вносят колорит в сюжет, а иногда очень круто его разворачивают. <br>Каждый герой прописан идеально: свой характер, шуточки, поведение и даже походка. <br>Тирион - карлик из богатого семейства с язвительным языком всю книгу в дороге, только куда и зачем, так и не понятно ему самому, а вот читателю стоит поразмыслить в последствии этого путешествия.<br>Дейнерис - властительная дева 16-ти лет. Имея амбициозные планы она стремится покорить Вестерос и вернуть себе трон, за одна захватив полмира.<br>Джон - правильный юноша, на которого неожиданно свалилась непосильная ноша и власть. Всю книгу так и бореться с собой и своим внутренним миром.<br>Бран - все еще бежит. Но ура, в этой книге его путь получит передышку. Правда опять не совсем понятно, к чему он его ведет, вно что-то грандиозное.<br/>Давос - мой любимый герой. Самый спокойный в мире контрабандист. Умеет здраво рассуждать и никогда не подчиняется своим чувствам. Только разум.<br/>Вонючка, просто сломленный человек. <br/>Мелисандра - тайна, окутанная тьмой, которую она не любит. Ио ночь темна и полна ужасов.<br/>Так и читаешь, на одном дыхании, еле успевая переворачивать страницы. <br/>С нетерпением жду развязки.<br/><a href="/tag/%D0%BA%D0%BD%D0%B8%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD2020/">#книжный_марафон2020</a><br/><a href="/tag/%D0%91%D0%9A_2020/">#БК_2020</a> (10. Книга, название которой состоит из 5 слов).</br></br></br></br></br></br></p></div></div></div><div class="bottom-part" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2"><div class="discussion-item-filter" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0"><div data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0"><noindex data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0"><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/71705/" rel="nofollow" target="_blank"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0"><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/71705/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/71705/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/71705/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/71705/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/71705/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2"><div data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0.1.3">0</span><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.1" href="" rel="nofollow"><span data-reactid=".1m4kykxsiyo.1.0.$71705.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".1m4kykxsiyo.1.0.$71705.0.5"><a class="anchor" data-reactid=".1m4kykxsiyo.1.0.$71705.0.5.1" name="71705_18" rel="nofollow"></a></div></div></div><div class="discussion-wrap" data-reactid=".1m4kykxsiyo.1.0.$12456"><div class="discussion-item clearfix" data-reactid=".1m4kykxsiyo.1.0.$12456.0"><div data-reactid=".1m4kykxsiyo.1.0.$12456.0.0"><div class="discussion-item-user-avatar" data-reactid=".1m4kykxsiyo.1.0.$12456.0.0.0"><a class="user-avatar-50-50" data-reactid=".1m4kykxsiyo.1.0.$12456.0.0.0.0" href="/user/9699/" rel="nofollow"><img data-reactid=".1m4kykxsiyo.1.0.$12456.0.0.0.0.0" src="/public/media/avatars/3/b/3b1ea223e15fdfaff36ac03e135acb5c_80x80.jpg"/></a></div><div class="user-name" data-reactid=".1m4kykxsiyo.1.0.$12456.0.0.1"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.0.1.0"><a data-reactid=".1m4kykxsiyo.1.0.$12456.0.0.1.0.0" href="/user/9699/" rel="nofollow">FOX SLY (@sly_fox)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".1m4kykxsiyo.1.0.$12456.0.1"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".1m4kykxsiyo.1.0.$12456.0.1.1">24 апреля 2015 23:34</span><div class="stars-rating" data-reactid=".1m4kykxsiyo.1.0.$12456.0.1.2"></div></div><div class="reviews-status" data-reactid=".1m4kykxsiyo.1.0.$12456.0.2"><img alt="" data-reactid=".1m4kykxsiyo.1.0.$12456.0.2.0" src="/public/static/images/new/positive.png"/></div><div class="discussion-item-index clearfix" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3"><div class="reveal-block-index clearfix" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.0"><div class="book-pic" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.0.0"><img data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.0.0.0" src="/public/media/covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a_100x0.jpg"/></div><span class="book-name" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.0.1">Танец с драконами. Книга 1. Грёзы и пыль</span><span class="book-autor" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.0.2">Джордж Мартин</span></div><div class="discussion-item-text clearfix" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.1"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.1.1"> </span><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.1.3"> </span><div data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.1.4"><div class="rc-review--text-short" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.1.4.1"><p>Я думаю, что ни для кого не секрет, что книга "Танец с драконами" на самом деле не состоит из двух частей в первоначальном варианте. Но до нас она дошла разделенной: "Грезы и пыль" и "Искры над пеплом". <br/>Эта часть приближает нас к неизвестной разгадке удивительной, кровавой, страстной и действительно по-настоящему боевой истории. Переживания за героев растут с каждой главой, неожиданные повороты событий и судьбы появляются в самых спокойных местах, а герои возмужают и борются за место на Железном троне.<br/>События в этой части связаны с третьей книгой - "Бурей мечей". То есть, те персонажи, которые не вошли в "Пир Стервятников" - найдут себя здесь. <br/>Тяжелое путешествие Тириона, сбежавшего из Гавани. Пытающаяся сохранить мир в своем королевстве драконья королева. Лорд на Стене, который сражается не только с силами Вечной Тьмы и Холода. Опасное путешествие маленького Брана и его товарищей. Верный подчиненный Луковый Рыцарь, отважно выполняющий поручения короля. Совершенно сломанный, но все еще пытающийся бороться за жизнь Переметчивый Теон-Вонючка. И многие другие персонажи, о которых вы даже не подозревали! И когда страницы истории внезапно обрываются, все, чего вы желаете - это немедленно возобновить прерванный "Танец"...</p></div></div></div><div class="bottom-part" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2"><div class="discussion-item-filter" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0"><div data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0"><noindex data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0"><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/12456/" rel="nofollow" target="_blank"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0"><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/12456/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/12456/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/12456/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/12456/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/12456/" rel="nofollow" target="_self"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2"><div data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0.1.3">7</span><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.1" href="" rel="nofollow"><span data-reactid=".1m4kykxsiyo.1.0.$12456.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".1m4kykxsiyo.1.0.$12456.0.5"><a class="anchor" data-reactid=".1m4kykxsiyo.1.0.$12456.0.5.1" name="12456_18" rel="nofollow"></a></div></div></div></div><div class="section-buttons" data-reactid=".1m4kykxsiyo.1.1"><a class="btn-simple loadmore" data-reactid=".1m4kykxsiyo.1.1.0" href=""><i class="b-icon loadmore" data-reactid=".1m4kykxsiyo.1.1.0.0"></i><span data-reactid=".1m4kykxsiyo.1.1.0.1">Показать еще</span></a></div></div></div></span>
+</h2></div>
+<section class="tiles">
+<article class="style1">
+<span class="image"><img alt="top 100 background" class="lazyload" height="326" src="/images/pic01.jpg" width="353"/></span>
+<a href="/top-100-fantasy-books/">
+<h2>Top 100 Fantasy Books Of All Time</h2>
+<div class="content">
+<p>Looking for great fantasy books? Take a look at the 100 pages we rate highest</p>
 </div>
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="content-cols--aside">
-<div class="book-article--aside" data-inject-global-var="book_profile">
-<div class="book-article--img">
-<img alt="Обложка Танец с драконами. Книга 1. Грёзы и пыль" src="/public/media/covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a_200x0.jpg" title="Танец с драконами. Книга 1. Грёзы и пыль"/>
-</div>
-<div class="ba-about">
-<h3>О книге</h3>
-<ul class="ba-counters">
-<li>
-<i class="bc-icon readers"></i>
-<a href="/book/7282/readers/5/" rel="nofollow">
-Читатели (2647)
 </a>
-</li>
-<li class="reviews">
-<i class="bc-icon reviews"></i>
-<a alt="Танец с драконами. Книга 1. Грёзы и пыль рецензии" href="/book/7282/reviews/">
-Рецензии (2)
-</a>
-</li>
-<li class="quotes">
-<i class="bc-icon quotes"></i>
-<a alt="Танец с драконами. Книга 1. Грёзы и пыль цитаты" href="/book/7282/quotes/">
-Цитаты (17)
-</a>
-</li>
-<li class="facts">
-<i class="bc-icon facts"></i>
-<a alt="Танец с драконами. Книга 1. Грёзы и пыль интересные факты" href="/book/7282/facts/">
-Факты (0)
-</a>
-</li>
-<li class="reviews">
-<i class="bc-icon comments"></i>
-<a alt="Танец с драконами. Книга 1. Грёзы и пыль отзывы" href="/book/7282/comments/">
-Отзывы (0)
-</a>
-</li>
-</ul>
-</div>
-</div>
-<ul class="book-article--links" data-hide-show="">
-<li class="book--share" data-ng-class="{_opened: isVisible()}">
-<i class="b-icon" data-ng-class="{'share-plus': !isVisible(), 'share-minus': isVisible()}"></i>
-<a class="book-share--toggle" data-ng-click="toggle()" href="" rel="nofollow">
-Поделиться книгой с друзьями
-</a>
-<div class="book-share--counters">
-<div class="ya-share-book-profile">
-<script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript"></script>
-<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharequickservices="vkontakte,twitter,odnoklassniki,gplus" data-yasharetheme="counter" data-yasharetype="small"></div>
-</div>
-</div>
-</li>
-</ul>
-<div class="ba--edit-info edit-book-info-margin">
-<a class="fancybox-book-edit-info-form" data-ng-href="#!/#book-edit-info-form" rel="nofollow">
-Изменить информацию о книге
-</a>
-<span class="rarr">→</span>
-</div>
-<a class="centered h3-top100-title" href="/books/top/">
-<div class="b-icon thebest"></div>Лучшие книги - Топ 100
-</a>
-<div class="aside-top100">
-<div class="a-top100-item">
-<div class="a-t100-number">33.</div>
-<div class="a-t100-image">
-<a href="/book/57889/" rel="nofollow">
-<img alt="Крёстный отец" src="/public/media/covers/1/f/1fb3bb5686c743ab51c0a99f69e0cd57_100x0.jpg" title="Крёстный отец"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57889/">Крёстный отец</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.1</strong>
-(1798 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">34.</div>
-<div class="a-t100-image">
-<a href="/book/57754/" rel="nofollow">
-<img alt="Дары волхвов" src="/public/media/covers/f/d/fd93005de3e0f1c80757b4383d3e45dd_100x0.jpg" title="Дары волхвов"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57754/">Дары волхвов</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.1</strong>
-(1771 оценка)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">35.</div>
-<div class="a-t100-image">
-<a href="/book/13146/" rel="nofollow">
-<img alt="Случай с переводчиком" src="/public/media/covers/2/b/2b9e0ab50f1341fb217d9e2d8bb0de31_100x0.jpg" title="Случай с переводчиком"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/13146/">Случай с переводчиком</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.2</strong>
-(359 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">36.</div>
-<div class="a-t100-image">
-<a href="/book/61733/" rel="nofollow">
-<img alt="Черный человек" src="/public/media/covers/6/d/6d6dc039c8356018efa77570b25dc181_100x0.jpg" title="Черный человек"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/61733/">Черный человек</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.1</strong>
-(918 оценок)
-</div>
-</div>
-</div>
-<div class="a-t100--show-all"><a class="a-arrowed" href="/books/top/" rel="nofollow">Весь рейтинг</a></div>
-</div>
-</div>
-</div>
 </article>
+<article class="style2">
+<span class="image"><img alt="fantasy series background" class="lazyload" height="326" src="/images/pic02.jpg" width="353"/></span>
+<a href="/best-fantasy-series.html">
+<h2>Fantasy Series We Recommend</h2>
+<div class="content">
+<p>There's nothing better than finding a fantasy series you can lose yourself in</p>
 </div>
-<div id="book-edit-info-form">
-<div data-ng-controller="BookEditInfoCtrl" id="book_edit_info_form-book-edit-info-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<p>Редактирование информации:</p>
-<span class="book-edit-form-book-name">Танец с драконами. Книга 1. Грёзы и пыль</span>
-</div>
-<div class="feedback-body">
-<span class="book-edit-thanks">Спасибо, что помогаете делать наш сайт лучше!</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Напишите, что вы предлагаете исправить: название книги, обложку, автора, описание, год написания произведения, серию?" rows="10"></textarea>
-<a class="ui-20 show-filming" data-ng-click="addFilms=true" data-ng-hide="addFilms" href="" rel="nofollow">Указать экранизацию книги?</a>
-<input class="ui-20 show-filming" data-ng-model="filming" data-ng-show="addFilms" placeholder="Добавьте ссылку с кинопоиска на фильм, снятый по книге" type="text"/>
-<button class="btn-blue-20 send-book-info" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
-</div>
-</div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="libr" id="libr">
-<div class="libr-lightbox">
-<div class="libr-heading">
-<span class="libr-title libr-dark-gray">Гарри Поттер и Орден Феникса</span>
-<ul class="libr-heading-icons">
-<li><a class="libr-ico-help" href="">Помощь</a></li>
-<li><a class="libr-ico-close" href="">Закрыть</a></li>
-</ul>
-</div>
-<form action="#" class="libr-form-librarian">
-<fieldset>
-<aside class="libr-sidebar">
-<div class="libr-buttons">
-<a class="libr-button libr-will-read" href="">Хочу прочитать</a>
-<a class="libr-button libr-now-reading" href="">Читаю</a>
-<a class="libr-button libr-already-read active" href="">Прочитал</a>
-</div>
-<div class="libr-check-area">
-<div class="libr-form-row">
-<input checked="" hidden="" id="print" type="checkbox">
-<label for="print">Печатное издание</label>
-</input></div>
-<div class="libr-form-row">
-<input hidden="" id="audiobook" type="checkbox"/>
-<label for="audiobook">Аудиокнигу</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="electronic-version" type="checkbox"/>
-<label for="electronic-version">Электронную версию</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="original-language" type="checkbox"/>
-<label for="original-language">На оригинальном языке</label>
-</div>
-</div>
-<ul class="libr-sidebar-icons">
-<li><a class="libr-ico-favorite" href="">В избранное</a></li>
-<li><a class="libr-ico-rss" href="">Подписаться на рецензии</a></li>
-</ul>
-</aside>
-<div class="libr-main-block">
-<ul class="libr-tabset">
-<li><a class="active" href="#libr-tab1"><span class="libr-inner libr-create-shelf">Добавить/Оценить</span></a></li>
-<li><a class="disabled" href="#libr-tab2"><span class="libr-inner libr-calendar">Указать период</span></a></li>
-<li><a href="#libr-tab3"><span class="libr-inner libr-edit-note">Добавить заметку</span></a></li>
-</ul>
-<div class="libr-tabs-content">
-<div id="libr-tab1">
-<div class="libr-content-block">
-<div class="libr-add-shelf-section">
-<div class="libr-heading-block">
-<strong class="libr-title">Добавить на полку:</strong>
-<a class="alignright" href="">Создать полку</a>
-</div>
-<div class="libr-select-block libr-popup-holder">
-<div class="libr-open">
-<input readonly="readonly" type="text" value="Выбрать созданную полку"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li class="libr-red">
-<span class="libr-text-link">Хотите удалить полку?</span>
-<div class="libr-block-links"><a href="">Да</a> / <a href="">Нет</a></div>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Книги, которые не дочитал</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Книги от друзей</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Полка под флешмоб</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Для личностного роста</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Детям на ночь</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015 - добавление</a>
-<a class="libr-delete" href="">Удалить</a>
-<span class="libr-loader-white"></span>
-</li>
-<li class="libr-red">
-<span class="libr-loader-white"></span>
-<span class="libr-text-link">Удаление...</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="libr-heading-block">
-<strong class="libr-title">Поставить оценку:</strong>
-<span class="alignright">Средняя оценка 7.4</span>
-</div>
-<ul class="libr-rating">
-<li><a href="">1</a></li>
-<li><a href="">2</a></li>
-<li><a href="">3</a></li>
-<li><a href="">4</a></li>
-<li><a href="">5</a></li>
-<li><a href="">6</a></li>
-<li><a href="">7</a></li>
-<li><a href="">8</a></li>
-<li><a href="">9</a></li>
-<li><a href="">10</a></li>
-</ul>
-<div class="libr-text-row">Вероятно, Вы оцените книгу на: <span class="circle green">7</span></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright" href="">Сохранено</a>
-</div>
-</div>
-<div id="libr-tab2">
-<div class="libr-content-block">
-<div class="libr-calendar-section">
-<div class="libr-top-block-calendar">
-<div class="libr-arrows"></div>
-<span class="libr-text-period">Июль - Август, 2015</span>
-<div class="libr-select-block libr-popup-holder libr-select-year alignright">
-<div class="libr-open">
-<input type="text" value="2015"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li><a class="text-link" href="">2015</a></li>
-<li><a class="text-link" href="">2016</a></li>
-<li><a class="text-link" href="">2017</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="libr-calendar-block"></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<div class="alignleft libr-calendar-bottom">
-<input type="text" value="20-07-2015"/>
-<span class="text">-</span>
-<input type="text" value="14-08-2015"/>
-<a class="libr-text" href="">Убрать период?</a>
-</div>
-<a class="libr-button alignright libr-blue" href="">Сохранить</a>
-</div>
-</div>
-<div id="libr-tab3">
-<div class="libr-content-block">
-<div class="libr-text-note">Заметки - это удобный и простой способ хранить нужную информацию <br/>или мысли о книге для личного использования. Ваша заметка будет видна только вам.</div>
-<textarea class="libr-textarea-scrollbar scrollbar-outer" cols="40" placeholder="Заметка..." rows="8"></textarea>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright libr-blue" href="">Добавить</a>
-</div>
-</div>
-</div>
-</div>
-</fieldset>
-</form>
-</div>
-</div>
-</div>
-<div id="libr"></div>
-<div id="feedback-form">
-<div data-ng-controller="FeedbackCtrl" id="feedback_form_feedback-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<span>Нашли ошибку?</span>
-<p>Расскажите нам о найденной ошибке, и мы сможем сделать наш сервис еще лучше.</p>
-</div>
-<div class="feedback-body">
-<div class="select-box _fr" id="feedback-form-select-box">
-<div class="select-box--current">
-<span>{[{ currentCategoryName }]}</span>
-</div>
-<div class="dropdown-box _select">
-<nav class="dropdown-select-options">
-<a data-ng-click="selectCategory(-1, 'Без темы')" href="#" onclick="return false" rel="nofollow">Без темы</a>
-<a data-ng-click="selectCategory(7, 'Ошибка в информации о книге')" href="#" onclick="return false" rel="nofollow">
-Ошибка в информации о книге
 </a>
-<a data-ng-click="selectCategory(8, 'Плагиат')" href="#" onclick="return false" rel="nofollow">
-Плагиат
+</article>
+<article class="style3">
+<span class="image"><img alt="fantasy book of the year background" class="lazyload" height="326" src="/images/pic03.jpg" width="353"/></span>
+<a href="/fantasy-books-of-the-year/">
+<h2>Fantasy Books Of The Year</h2>
+<div class="content">
+<p>Our fantasy books of the year, from 2006 to 2021</p>
+</div>
 </a>
-<a data-ng-click="selectCategory(9, 'Спойлер')" href="#" onclick="return false" rel="nofollow">
-Спойлер
-</a>
-<a data-ng-click="selectCategory(10, 'Другая ошибка')" href="#" onclick="return false" rel="nofollow">
-Другая ошибка
-</a>
-<a data-ng-click="selectCategory(11, 'Авторы')" href="#" onclick="return false" rel="nofollow">
-Авторы
-</a>
-</nav>
+</article>
+</section>
+<script async="" src="/assets/js/lazysizes.min.js"></script>
 </div>
 </div>
-<span class="feedback-category-text">Категория:</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Опишите ошибку..." rows="10"></textarea>
-<button class="btn-blue-20" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
+<footer id="footer">
+<div class="inner">
+<ul class="copyright"><li>© 2023 Fantasy Book Review</li></ul>
 </div>
+</footer>
 </div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="help-readly">
-<div>
-<span class="help-readly--title">Помоги Ридли!</span>
-<div class="help-readly--text">
-Мы вкладываем душу в Ридли. Спасибо, что вы с нами! Расскажите о нас друзьям, чтобы они могли присоединиться к нашей дружной семье книголюбов.
-</div>
-<div class="social">
-<div class="social-buttons">
-<a class="vk" href="https://vk.com/share.php?url=http%3A%2F%2Freadly.ru&amp;title=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru&amp;image=" rel="nofollow" target="_blank" title="Вконтакте"></a>
-<a class="tw" href="https://twitter.com/intent/tweet?status=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Twitter"></a>
-<a class="gp" href="https://plus.google.com/share?url=http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Google+"></a>
-<a class="ok" href="https://www.ok.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=http%3A%2F%2Freadly.ru&amp;st.comments=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru" rel="nofollow" target="_blank" title="Odnoklassniki"></a>
-</div>
-</div>
-</div>
-</div>
-<script src="/public/static/dist/js/readly.js?b8cabe27e37a" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.librarianEmitter.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.bookTimelineBox.js"></script>
-<script>
-
-if (typeof React === 'undefined') throw new Error('Cannot find `React` global variable. Have you added a script element to this page which points to React?');
-if (typeof Readly.bookTimelineBox === 'undefined') throw new Error('Cannot find component variable `Readly.bookTimelineBox`');
-(function(React, component, containerId) {
-  var props = {"perPage": 5, "bookId": 7282, "initialParams": {"comment_count": 3, "object_type": "reviews", "book_id": 7282}, "initialItems": [{"book_rating": 9, "hashtags": ["\u043a\u043d\u0438\u0436\u043d\u044b\u0439_\u043c\u0430\u0440\u0430\u0444\u043e\u043d2020", "\u0411\u041a_2020"], "rating": {"positive": 0, "negative": 0}, "text": "<p>\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438 \u0437\u0430\u0445\u0432\u0430\u0442\u044b\u0432\u0430\u0435\u0442 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044f \u0438 \u0443\u043d\u043e\u0441\u0438\u0442 \u0432 \u043d\u0435\u043f\u0440\u0438\u043c\u0438\u0440\u0438\u043c\u043e\u0435 \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0435 \u043c\u0435\u0436\u0434\u0443 \u043e\u0431\u0438\u0442\u0430\u0442\u0435\u043b\u044f\u043c\u0438 7 \u043a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432 \u0438 \u0441\u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044c\u043d\u044b\u0445 \u0442\u0435\u0440\u0440\u0438\u0442\u043e\u0440\u0438\u0439.  \u0412 \u044d\u0442\u043e\u0439 \u0447\u0430\u0441\u0442\u0438 \u0430\u0432\u0442\u043e\u0440 \u0442\u043e \u0438 \u0434\u0435\u043b\u043e \u043c\u043e\u0442\u044b\u043b\u044f\u0435\u0442 \u043d\u0430\u0441 \u043f\u043e \u0412\u0435\u0441\u0442\u0435\u0440\u043e\u0441\u0443 \u0438 \u042d\u0441\u0441\u043e\u0441\u0443: \u043e\u0442 \u0427\u0435\u0440\u043d\u043e\u0433\u043e \u0437\u0430\u043c\u043a\u0430 \u043a \u0411\u0435\u043b\u043e\u0439 \u0413\u0430\u0432\u0430\u043d\u0438, \u043e\u0442 \u0422\u0438\u0440\u043e\u0448\u0430 \u043a \u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u043a\u043e\u0439 \u0413\u0430\u0432\u0430\u043d\u0438, \u0430 \u0435\u0449\u0435 \u0431\u0443\u0434\u0435\u0442 \u041f\u0435\u043d\u0442\u043e\u0441, \u041c\u0438\u0440, \u0412\u043e\u043b\u0430\u043d\u0442\u0438\u0441 \u0438 \u0442\u044b\u0441\u044f\u0447\u0430 \u0434\u0440\u0443\u0433\u0438\u0445 \u043c\u0435\u0441\u0442. <br />\u041a\u043b\u044e\u0447\u0435\u0432\u044b\u0435 \u0433\u0435\u0440\u043e\u0438 \u0437\u0434\u0435\u0441\u044c \u043d\u0435 \u043c\u043d\u043e\u0433\u043e\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u044b: \u0422\u0438\u0440\u0438\u043e\u043d, \u0414\u0435\u0439\u043d\u0435\u0440\u0438\u0441, \u0414\u0436\u043e\u043d, \u0411\u0440\u0430\u043d, \u0414\u0430\u0432\u043e\u0441, \u0412\u043e\u043d\u044e\u0447\u043a\u0430, \u041c\u0435\u043b\u0438\u0441\u0430\u043d\u0434\u0440\u0430 \u0438 \u043c\u043d\u043e\u0433\u0438\u0435 \u0434\u0440\u0443\u0433\u0438\u0435. \u0423 \u043a\u0430\u0436\u0434\u043e\u0433\u043e \u0433\u0435\u0440\u043e\u044f \u0441\u0432\u043e\u044f \u0440\u043e\u043b\u044c \u0438 \u0441 \u043a\u0430\u0436\u0434\u044b\u043c \u0441\u043b\u043e\u0432\u043e\u043c \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442 \u043f\u0440\u043e\u0440\u0438\u0441\u043e\u0432\u044b\u0432\u0430\u0442\u044c\u0441\u044f \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0430 \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e \u0438 \u043c\u0430\u043b\u043e \u043f\u043e \u043c\u0430\u043b\u0443 \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0441\u044f \u044f\u0441\u043d\u043e, \u043a\u0442\u043e \u0436\u0435 \u0433\u043b\u0430\u0432\u043d\u044b\u0439 \u0433\u0435\u0440\u043e\u0439 \u0432 \u0441\u044e\u0436\u0435\u0442\u0435. \u041f\u043e\u0431\u043e\u0447\u043d\u044b\u0445 \u0433\u0435\u0440\u043e\u0435\u0432 \u0432 \u0441\u044e\u0436\u0435\u0442\u0435 \u043a\u0430\u043a \u0432\u0441\u0435\u0433\u0434\u0430 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u043e, \u043d\u043e \u043e\u043d \u0432\u043d\u043e\u0441\u044f\u0442 \u043a\u043e\u043b\u043e\u0440\u0438\u0442 \u0432 \u0441\u044e\u0436\u0435\u0442, \u0430 \u0438\u043d\u043e\u0433\u0434\u0430 \u043e\u0447\u0435\u043d\u044c \u043a\u0440\u0443\u0442\u043e \u0435\u0433\u043e \u0440\u0430\u0437\u0432\u043e\u0440\u0430\u0447\u0438\u0432\u0430\u044e\u0442. <br />\u041a\u0430\u0436\u0434\u044b\u0439 \u0433\u0435\u0440\u043e\u0439 \u043f\u0440\u043e\u043f\u0438\u0441\u0430\u043d \u0438\u0434\u0435\u0430\u043b\u044c\u043d\u043e: \u0441\u0432\u043e\u0439 \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440, \u0448\u0443\u0442\u043e\u0447\u043a\u0438, \u043f\u043e\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0438 \u0434\u0430\u0436\u0435 \u043f\u043e\u0445\u043e\u0434\u043a\u0430. <br />\u0422\u0438\u0440\u0438\u043e\u043d - \u043a\u0430\u0440\u043b\u0438\u043a \u0438\u0437 \u0431\u043e\u0433\u0430\u0442\u043e\u0433\u043e \u0441\u0435\u043c\u0435\u0439\u0441\u0442\u0432\u0430 \u0441 \u044f\u0437\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c \u0432\u0441\u044e \u043a\u043d\u0438\u0433\u0443 \u0432 \u0434\u043e\u0440\u043e\u0433\u0435, \u0442\u043e\u043b\u044c\u043a\u043e \u043a\u0443\u0434\u0430 \u0438 \u0437\u0430\u0447\u0435\u043c, \u0442\u0430\u043a \u0438 \u043d\u0435 \u043f\u043e\u043d\u044f\u0442\u043d\u043e \u0435\u043c\u0443 \u0441\u0430\u043c\u043e\u043c\u0443, \u0430 \u0432\u043e\u0442 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044e \u0441\u0442\u043e\u0438\u0442 \u043f\u043e\u0440\u0430\u0437\u043c\u044b\u0441\u043b\u0438\u0442\u044c \u0432 \u043f\u043e\u0441\u043b\u0435\u0434\u0441\u0442\u0432\u0438\u0438 \u044d\u0442\u043e\u0433\u043e \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u044f.<br />\u0414\u0435\u0439\u043d\u0435\u0440\u0438\u0441 - \u0432\u043b\u0430\u0441\u0442\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0434\u0435\u0432\u0430 16-\u0442\u0438 \u043b\u0435\u0442. \u0418\u043c\u0435\u044f \u0430\u043c\u0431\u0438\u0446\u0438\u043e\u0437\u043d\u044b\u0435 \u043f\u043b\u0430\u043d\u044b \u043e\u043d\u0430 \u0441\u0442\u0440\u0435\u043c\u0438\u0442\u0441\u044f \u043f\u043e\u043a\u043e\u0440\u0438\u0442\u044c \u0412\u0435\u0441\u0442\u0435\u0440\u043e\u0441 \u0438 \u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0441\u0435\u0431\u0435 \u0442\u0440\u043e\u043d, \u0437\u0430 \u043e\u0434\u043d\u0430 \u0437\u0430\u0445\u0432\u0430\u0442\u0438\u0432 \u043f\u043e\u043b\u043c\u0438\u0440\u0430.<br />\u0414\u0436\u043e\u043d - \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u044e\u043d\u043e\u0448\u0430, \u043d\u0430 \u043a\u043e\u0442\u043e\u0440\u043e\u0433\u043e \u043d\u0435\u043e\u0436\u0438\u0434\u0430\u043d\u043d\u043e \u0441\u0432\u0430\u043b\u0438\u043b\u0430\u0441\u044c \u043d\u0435\u043f\u043e\u0441\u0438\u043b\u044c\u043d\u0430\u044f \u043d\u043e\u0448\u0430 \u0438 \u0432\u043b\u0430\u0441\u0442\u044c. \u0412\u0441\u044e \u043a\u043d\u0438\u0433\u0443 \u0442\u0430\u043a \u0438 \u0431\u043e\u0440\u0435\u0442\u044c\u0441\u044f \u0441 \u0441\u043e\u0431\u043e\u0439 \u0438 \u0441\u0432\u043e\u0438\u043c \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u043c \u043c\u0438\u0440\u043e\u043c.<br />\u0411\u0440\u0430\u043d - \u0432\u0441\u0435 \u0435\u0449\u0435 \u0431\u0435\u0436\u0438\u0442. \u041d\u043e \u0443\u0440\u0430, \u0432 \u044d\u0442\u043e\u0439 \u043a\u043d\u0438\u0433\u0435 \u0435\u0433\u043e \u043f\u0443\u0442\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442 \u043f\u0435\u0440\u0435\u0434\u044b\u0448\u043a\u0443. \u041f\u0440\u0430\u0432\u0434\u0430 \u043e\u043f\u044f\u0442\u044c \u043d\u0435 \u0441\u043e\u0432\u0441\u0435\u043c \u043f\u043e\u043d\u044f\u0442\u043d\u043e, \u043a \u0447\u0435\u043c\u0443 \u043e\u043d \u0435\u0433\u043e \u0432\u0435\u0434\u0435\u0442, \u0432\u043d\u043e \u0447\u0442\u043e-\u0442\u043e \u0433\u0440\u0430\u043d\u0434\u0438\u043e\u0437\u043d\u043e\u0435.<br />\u0414\u0430\u0432\u043e\u0441 - \u043c\u043e\u0439 \u043b\u044e\u0431\u0438\u043c\u044b\u0439 \u0433\u0435\u0440\u043e\u0439. \u0421\u0430\u043c\u044b\u0439 \u0441\u043f\u043e\u043a\u043e\u0439\u043d\u044b\u0439 \u0432 \u043c\u0438\u0440\u0435 \u043a\u043e\u043d\u0442\u0440\u0430\u0431\u0430\u043d\u0434\u0438\u0441\u0442.  \u0423\u043c\u0435\u0435\u0442 \u0437\u0434\u0440\u0430\u0432\u043e \u0440\u0430\u0441\u0441\u0443\u0436\u0434\u0430\u0442\u044c \u0438 \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u043f\u043e\u0434\u0447\u0438\u043d\u044f\u0435\u0442\u0441\u044f \u0441\u0432\u043e\u0438\u043c \u0447\u0443\u0432\u0441\u0442\u0432\u0430\u043c. \u0422\u043e\u043b\u044c\u043a\u043e \u0440\u0430\u0437\u0443\u043c.<br />\u0412\u043e\u043d\u044e\u0447\u043a\u0430, \u043f\u0440\u043e\u0441\u0442\u043e \u0441\u043b\u043e\u043c\u043b\u0435\u043d\u043d\u044b\u0439 \u0447\u0435\u043b\u043e\u0432\u0435\u043a. <br />\u041c\u0435\u043b\u0438\u0441\u0430\u043d\u0434\u0440\u0430 - \u0442\u0430\u0439\u043d\u0430, \u043e\u043a\u0443\u0442\u0430\u043d\u043d\u0430\u044f \u0442\u044c\u043c\u043e\u0439, \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u043e\u043d\u0430 \u043d\u0435 \u043b\u044e\u0431\u0438\u0442.  \u0418\u043e \u043d\u043e\u0447\u044c \u0442\u0435\u043c\u043d\u0430 \u0438 \u043f\u043e\u043b\u043d\u0430 \u0443\u0436\u0430\u0441\u043e\u0432.<br />\u0422\u0430\u043a \u0438 \u0447\u0438\u0442\u0430\u0435\u0448\u044c, \u043d\u0430 \u043e\u0434\u043d\u043e\u043c \u0434\u044b\u0445\u0430\u043d\u0438\u0438, \u0435\u043b\u0435 \u0443\u0441\u043f\u0435\u0432\u0430\u044f \u043f\u0435\u0440\u0435\u0432\u043e\u0440\u0430\u0447\u0438\u0432\u0430\u0442\u044c \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b. <br />\u0421 \u043d\u0435\u0442\u0435\u0440\u043f\u0435\u043d\u0438\u0435\u043c \u0436\u0434\u0443 \u0440\u0430\u0437\u0432\u044f\u0437\u043a\u0438.<br /><a href=\"/tag/%D0%BA%D0%BD%D0%B8%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD2020/\">#\u043a\u043d\u0438\u0436\u043d\u044b\u0439_\u043c\u0430\u0440\u0430\u0444\u043e\u043d2020</a><br /><a href=\"/tag/%D0%91%D0%9A_2020/\">#\u0411\u041a_2020</a> (10. \u041a\u043d\u0438\u0433\u0430, \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u0441\u043e\u0441\u0442\u043e\u0438\u0442 \u0438\u0437 5 \u0441\u043b\u043e\u0432).</p>", "created_at": "2020-05-19T05:06:55", "object_type": 18, "updated_at": "2020-05-19T05:06:55", "object_id": 71705, "comment_count": 0, "book": {"id": 7282, "name": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "authors": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "url": "/book/7282/"}, "user": {"id": 99589, "name": "\u041a\u0438\u0440\u0438\u0448\u0430   (@irischarichert)", "avatar": "avatars/1/7/174b7b4b0ccf343bc5d0f12dc2009843.jpg", "url": "/user/99589/", "username": "irischarichert", "gender": 0}, "has_spoilers": false, "review_type": 1, "rated_users": {"positive": [], "negative": []}, "comments": []}, {"rating": {"positive": 7, "negative": 0}, "hashtags": [], "text": "<p>\u042f \u0434\u0443\u043c\u0430\u044e, \u0447\u0442\u043e \u043d\u0438 \u0434\u043b\u044f \u043a\u043e\u0433\u043e \u043d\u0435 \u0441\u0435\u043a\u0440\u0435\u0442, \u0447\u0442\u043e \u043a\u043d\u0438\u0433\u0430 \"\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438\" \u043d\u0430 \u0441\u0430\u043c\u043e\u043c \u0434\u0435\u043b\u0435 \u043d\u0435 \u0441\u043e\u0441\u0442\u043e\u0438\u0442 \u0438\u0437 \u0434\u0432\u0443\u0445 \u0447\u0430\u0441\u0442\u0435\u0439 \u0432 \u043f\u0435\u0440\u0432\u043e\u043d\u0430\u0447\u0430\u043b\u044c\u043d\u043e\u043c \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0435. \u041d\u043e \u0434\u043e \u043d\u0430\u0441 \u043e\u043d\u0430 \u0434\u043e\u0448\u043b\u0430 \u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u043d\u043e\u0439: \"\u0413\u0440\u0435\u0437\u044b \u0438 \u043f\u044b\u043b\u044c\" \u0438 \"\u0418\u0441\u043a\u0440\u044b \u043d\u0430\u0434 \u043f\u0435\u043f\u043b\u043e\u043c\". <br />\u042d\u0442\u0430 \u0447\u0430\u0441\u0442\u044c \u043f\u0440\u0438\u0431\u043b\u0438\u0436\u0430\u0435\u0442 \u043d\u0430\u0441 \u043a \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e\u0439 \u0440\u0430\u0437\u0433\u0430\u0434\u043a\u0435 \u0443\u0434\u0438\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0439, \u043a\u0440\u043e\u0432\u0430\u0432\u043e\u0439, \u0441\u0442\u0440\u0430\u0441\u0442\u043d\u043e\u0439 \u0438 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043f\u043e-\u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u043c\u0443 \u0431\u043e\u0435\u0432\u043e\u0439 \u0438\u0441\u0442\u043e\u0440\u0438\u0438. \u041f\u0435\u0440\u0435\u0436\u0438\u0432\u0430\u043d\u0438\u044f \u0437\u0430 \u0433\u0435\u0440\u043e\u0435\u0432 \u0440\u0430\u0441\u0442\u0443\u0442 \u0441 \u043a\u0430\u0436\u0434\u043e\u0439 \u0433\u043b\u0430\u0432\u043e\u0439, \u043d\u0435\u043e\u0436\u0438\u0434\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u0432\u043e\u0440\u043e\u0442\u044b \u0441\u043e\u0431\u044b\u0442\u0438\u0439 \u0438 \u0441\u0443\u0434\u044c\u0431\u044b \u043f\u043e\u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u0432 \u0441\u0430\u043c\u044b\u0445 \u0441\u043f\u043e\u043a\u043e\u0439\u043d\u044b\u0445 \u043c\u0435\u0441\u0442\u0430\u0445, \u0430 \u0433\u0435\u0440\u043e\u0438 \u0432\u043e\u0437\u043c\u0443\u0436\u0430\u044e\u0442 \u0438 \u0431\u043e\u0440\u044e\u0442\u0441\u044f \u0437\u0430 \u043c\u0435\u0441\u0442\u043e \u043d\u0430 \u0416\u0435\u043b\u0435\u0437\u043d\u043e\u043c \u0442\u0440\u043e\u043d\u0435.<br />\u0421\u043e\u0431\u044b\u0442\u0438\u044f \u0432 \u044d\u0442\u043e\u0439 \u0447\u0430\u0441\u0442\u0438 \u0441\u0432\u044f\u0437\u0430\u043d\u044b \u0441 \u0442\u0440\u0435\u0442\u044c\u0435\u0439 \u043a\u043d\u0438\u0433\u043e\u0439 - \"\u0411\u0443\u0440\u0435\u0439 \u043c\u0435\u0447\u0435\u0439\". \u0422\u043e \u0435\u0441\u0442\u044c, \u0442\u0435 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0438, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043d\u0435 \u0432\u043e\u0448\u043b\u0438 \u0432 \"\u041f\u0438\u0440 \u0421\u0442\u0435\u0440\u0432\u044f\u0442\u043d\u0438\u043a\u043e\u0432\" - \u043d\u0430\u0439\u0434\u0443\u0442 \u0441\u0435\u0431\u044f \u0437\u0434\u0435\u0441\u044c. <br />\u0422\u044f\u0436\u0435\u043b\u043e\u0435 \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435 \u0422\u0438\u0440\u0438\u043e\u043d\u0430, \u0441\u0431\u0435\u0436\u0430\u0432\u0448\u0435\u0433\u043e \u0438\u0437 \u0413\u0430\u0432\u0430\u043d\u0438. \u041f\u044b\u0442\u0430\u044e\u0449\u0430\u044f\u0441\u044f \u0441\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u043c\u0438\u0440 \u0432 \u0441\u0432\u043e\u0435\u043c \u043a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u0435 \u0434\u0440\u0430\u043a\u043e\u043d\u044c\u044f \u043a\u043e\u0440\u043e\u043b\u0435\u0432\u0430. \u041b\u043e\u0440\u0434 \u043d\u0430 \u0421\u0442\u0435\u043d\u0435, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0441\u0440\u0430\u0436\u0430\u0435\u0442\u0441\u044f \u043d\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0441 \u0441\u0438\u043b\u0430\u043c\u0438 \u0412\u0435\u0447\u043d\u043e\u0439 \u0422\u044c\u043c\u044b \u0438 \u0425\u043e\u043b\u043e\u0434\u0430. \u041e\u043f\u0430\u0441\u043d\u043e\u0435 \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435 \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u043e\u0433\u043e \u0411\u0440\u0430\u043d\u0430 \u0438 \u0435\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0438\u0449\u0435\u0439. \u0412\u0435\u0440\u043d\u044b\u0439 \u043f\u043e\u0434\u0447\u0438\u043d\u0435\u043d\u043d\u044b\u0439 \u041b\u0443\u043a\u043e\u0432\u044b\u0439 \u0420\u044b\u0446\u0430\u0440\u044c, \u043e\u0442\u0432\u0430\u0436\u043d\u043e \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u044e\u0449\u0438\u0439 \u043f\u043e\u0440\u0443\u0447\u0435\u043d\u0438\u044f \u043a\u043e\u0440\u043e\u043b\u044f. \u0421\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u0441\u043b\u043e\u043c\u0430\u043d\u043d\u044b\u0439, \u043d\u043e \u0432\u0441\u0435 \u0435\u0449\u0435 \u043f\u044b\u0442\u0430\u044e\u0449\u0438\u0439\u0441\u044f \u0431\u043e\u0440\u043e\u0442\u044c\u0441\u044f \u0437\u0430 \u0436\u0438\u0437\u043d\u044c \u041f\u0435\u0440\u0435\u043c\u0435\u0442\u0447\u0438\u0432\u044b\u0439 \u0422\u0435\u043e\u043d-\u0412\u043e\u043d\u044e\u0447\u043a\u0430. \u0418 \u043c\u043d\u043e\u0433\u0438\u0435 \u0434\u0440\u0443\u0433\u0438\u0435 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0438, \u043e \u043a\u043e\u0442\u043e\u0440\u044b\u0445 \u0432\u044b \u0434\u0430\u0436\u0435 \u043d\u0435 \u043f\u043e\u0434\u043e\u0437\u0440\u0435\u0432\u0430\u043b\u0438! \u0418 \u043a\u043e\u0433\u0434\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0438\u0441\u0442\u043e\u0440\u0438\u0438 \u0432\u043d\u0435\u0437\u0430\u043f\u043d\u043e \u043e\u0431\u0440\u044b\u0432\u0430\u044e\u0442\u0441\u044f, \u0432\u0441\u0435, \u0447\u0435\u0433\u043e \u0432\u044b \u0436\u0435\u043b\u0430\u0435\u0442\u0435 - \u044d\u0442\u043e \u043d\u0435\u043c\u0435\u0434\u043b\u0435\u043d\u043d\u043e \u0432\u043e\u0437\u043e\u0431\u043d\u043e\u0432\u0438\u0442\u044c \u043f\u0440\u0435\u0440\u0432\u0430\u043d\u043d\u044b\u0439 \"\u0422\u0430\u043d\u0435\u0446\"...</p>", "created_at": "2015-04-24T20:34:26", "object_type": 18, "updated_at": "2015-04-24T20:34:26", "object_id": 12456, "comment_count": 0, "book": {"id": 7282, "name": "\u0422\u0430\u043d\u0435\u0446 \u0441 \u0434\u0440\u0430\u043a\u043e\u043d\u0430\u043c\u0438. \u041a\u043d\u0438\u0433\u0430 1. \u0413\u0440\u0451\u0437\u044b \u0438 \u043f\u044b\u043b\u044c", "cover": "covers/9/3/93fea41db9a7edb1cbd93d44af5b6a2a.jpeg", "authors": [{"name": "\u0414\u0436\u043e\u0440\u0434\u0436  \u041c\u0430\u0440\u0442\u0438\u043d", "url": "/author/3795/", "id": 3795}], "url": "/book/7282/"}, "user": {"id": 9699, "name": "FOX SLY (@sly_fox)", "avatar": "avatars/3/b/3b1ea223e15fdfaff36ac03e135acb5c.JPG", "url": "/user/9699/", "username": "sly_fox", "gender": 0}, "has_spoilers": false, "review_type": 1, "rated_users": {"positive": [7, 3173, 11489, 13484, 26545, 38034, 90228], "negative": []}, "comments": []}], "user": {"username": "", "name": "AnonymousUser"}, "objectType": "reviews"};
-  var element = React.createElement(component, props);
-  var container = document.getElementById(containerId);
-  if (!container) throw new Error('Cannot find the container element `#reactComponent-Readly.bookTimelineBox` for component `Readly.bookTimelineBox`');
-  React.render(element, container);
-})(React, Readly.bookTimelineBox, 'reactComponent-Readly.bookTimelineBox');
-
-</script>
-<script>
-
-ga('create', 'UA-47935002-1', 'readly.ru');
-ga('require', 'displayfeatures');
-ga('set', 'dimension1', userName);
-ga('set', 'dimension3', 0);
-ga('set', 'dimension4', 1);
-ga('send', 'pageview');
-
-</script>
-<script async="" defer="" src="https://apis.google.com/js/platform.js">
-  {lang: 'ru'}
-</script>
-<footer class="cf" id="footer"><div class="wrapper"><div class="footer-column"><a class="footer-logo" href="#" rel="nofollow"></a><p class="copy">Ридли.ру © 2013-2023<p><div class="footer--meta"><a class="footer--bookmark" href="javascript:addToFavorite()" rel="nofollow"><i class="icon_sprite bookmark"></i><span>В закладки</span></a><a class="footer--mobile" href="http://m.readly.ru/"><i class="icon_sprite mobile"></i><span>Мобильная версия</span></a></div></p></p></div><div class="footer-column"><span class="h4">Разделы</span><nav><a href="/books/">Что почитать</a><a href="/books/popular/">Популярные книги</a><a href="/books/top/">Рейтинг книг</a><a href="/collections/">Подборки книг</a><a href="/books/new/">Книжные новинки</a><a href="/authors/">Популярные авторы</a><a href="/books/i_am_lucky/">Случайная книга</a></nav></div><div class="footer-column"><span class="h4">Обсуждения</span><nav><a href="/discussions/theme/last/" rel="nofollow">Топики</a><a href="/discussions/reviews/last/" rel="nofollow">Рецензии</a><a href="/discussions/flashmob/last/" rel="nofollow">Флешмобы</a><a href="/discussions/game/last/" rel="nofollow">Игры</a><a href="/discussions/competition/last/" rel="nofollow">Конкурсы</a><a href="/discussions/academy/last/" rel="nofollow">Книжная академия</a><a href="/discussions/flood/last/" rel="nofollow">Флудилка</a></nav></div><div class="footer-column"><span class="h4">Подписки</span><nav><a href="https://vk.com/vmireknig" rel="nofollow" target="_blank">Вконтакте</a><a href="https://twitter.com/ReadlyRu" rel="nofollow" target="_blank">Твиттер</a></nav></div><div class="footer-column"><span class="h4">О проекте</span><nav><a href="/pages/about/" rel="nofollow">Описание сервиса</a><a href="/pages/faq/" rel="nofollow">Вопрос-ответ</a><a class="fancybox fancybox-feedback-form" data-ng-href="#!/#feedback-form" rel="nofollow">Обратная связь</a><a href="http://readly.reformal.ru" rel="nofollow" target="_blank">Предложения</a><a href="/pages/copyright/" rel="nofollow">Правообладателям</a><a href="/pages/contacts/" rel="nofollow">Контакты</a><a href="/pages/rules/" rel="nofollow">Правила</a></nav></div><div class="footer-column footer-column-apps"><span class="h4">Приложения</span><img class="appstore" src="/public/static//images/appstore.png"><img src="/public/static//images/googleplay.png"/></img></div></div></footer>
-<div class="singin-form" id="login-form">
-<div class="singin__head">
-<span class="singin__title">Зарегистрируйтесь, и вы сможете:</span>
-<div class="singin__possibilities clearfix">
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico1"><i></i></div>
-<div class="singin__poss_item_text">
-Получать персональные
-<strong>рекомендации книг</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico2"><i></i></div>
-<div class="singin__poss_item_text">
-Создать собственную
-<strong>виртуальную библиотеку</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico3"><i></i></div>
-<div class="singin__poss_item_text">
-Следить за тем,
-<strong>что читают Ваши друзья</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="singin__body clearfix">
-<div class="singin__body_col">
-<div class="singin__form_tabs">
-<a class="active" href="/user/register/" rel="nofollow">Регистрация</a>
-</div>
-<form action="/user/register/?next=/book/7282/
-" method="post">
-<input name="csrfmiddlewaretoken" type="hidden" value="H4toqd81bgFH1OmJ3fjrIkQw7GK7lkcj"/>
-<div class="singin__inputs_form">
-<input name="email" placeholder="E-mail адрес" type="text"/>
-<input name="username" placeholder="Логин" type="text"/>
-<input name="password" placeholder="Пароль" type="password"/>
-<div class="singin__submit_foot">
-<button class="btn-blue-20 fr" onclick="yaCounter22692712.reachGoal('register_button');">Регистрация</button>
-</div>
-</div>
-</form>
-</div>
-<div class="singin__body_col">
-<span class="singin__sub_title">Через соцсети</span>
-<div class="big_social_buttons__container">
-<a class="big_social_button vk" href="/login/vk-oauth2/?next=/" rel="nofollow" title="Вконтакте">
-<i class="icon"></i> Войти через Вконтакт
-</a>
-<a class="big_social_button tw" href="/login/twitter/?next=/" rel="nofollow" title="Twitter">
-<i class="icon"></i> Войти через Твиттер
-</a>
-</div>
-</div>
-</div>
-</div>
-<script>
-    function open_reg_form() {
-        ga('send','event', 'Регистрация', 'open_form_reg');
-        ga('send','pageview', '/user/reg_form/');
-    }
-</script>
-<div id="registration-alert">
-<span>Данное действие доступно только для</span>
-<b>зарегистрированных пользователей</b>
-<a class="btn-green-20" href="/user/register/">Регистрация</a>
-<a class="ui-20" href="/user/login/">Войти на сайт</a>
-</div>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>

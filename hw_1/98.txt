@@ -1,733 +1,122 @@
-<body itemscope="" itemtype="http://schema.org/WebPage" onload="">
-<script type="text/javascript">
-      var yaParams = {'Логин': 'Гость'};
-      var userName = 'Гость';
-    </script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  </script>
-<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
-<script type="text/javascript">
-    try {
-        var yaCounter22692712 = new Ya.Metrika({
-            id:22692712,
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    } catch(e) { }
-    </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/22692712" style="position:absolute; left:-9999px;"/></div></noscript>
-<header class="cf" id="header"><div class="wrapper cf"><a class="header-logo" href="/"></a><nav class="header-nav"><a href="/discussions/" onclick="yaCounter22692712.reachGoal('clickDiscussion'); return true;">Обсуждения</a><a href="/books/popular/" onclick="yaCounter22692712.reachGoal('clickBooks');return true;">Книги</a><a href="/authors/" onclick="yaCounter22692712.reachGoal('clickAuthors'); return true;">Авторы</a><a href="/users/" onclick="yaCounter22692712.reachGoal('clickUsers'); return true;">Читатели</a></nav><div class="header-search" data-ng-controller="BookSearchCtrl" data-outside-click="closeDropDown()"><form action="/search/" class="dropdown-triger"><input autocomplete="off" data-ng-change="search()" data-ng-click="openDropDown()" data-ng-init="q=''" data-ng-model="q" data-ng-model-options="{debounce: 300}" name="q" placeholder="Поиск автора или книги..." type="text"/><a href="/search/?q={[{ q }]}" rel="nofollow"><i class="icon_sprite search-w"></i></a></form><div class="dropdown-content ng-cloak" data-ng-show="isOpen()"><div class="dd-search-result-list" data-load-spinner="" data-loading="loading"><div class="dd-search-result-counter">
-Книги <span>{[{ count }]}</span></div><div class="user-lib-new--book-list--item cf" data-ng-repeat="book in results"><div class="book-cover"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}" title="{[{ book.title }]}"><img alt="{[{ book.title }]}" class="dropdown-content--search-bimage" data-ng-src="{[{ book.cover | imageUrl:'book.Book':1 }]}"/></a></div><div class="book-main-info"><h3 class="book-title dropdown-content--book-title"><a data-ng-href="{[{ Url.bookDetail(book.id) }]}">{[{ book.title }]}</a></h3><p>{[{ book.author[0].name }]}</p></div></div><div class="dd-goToResult" data-ng-show="results.length"><a href="/search/?q={[{ q }]}" rel="nofollow">
-К результатам поиска по запросу {[{ q }]} »
-</a></div></div></div></div><a class="shuffle-btn header-btn-icon" href="/books/i_am_lucky/" rel="nofollow"><i class="icon_sprite shuffle"></i></a><div class="header--login-new"><a class="header--login-btn-new" href="/user/login/" rel="nofollow">Войти</a><a class="button-normal fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form()" rel="nofollow">Регистрация</a></div></div></header>
-<div id="global-wrap">
-<a class="fancybox" data-fancybox="" data-ng-href="#!/#login-form" onclick="open_reg_form();yaCounter22692712.reachGoal('open_banner');" rel="nofollow"><div class="top_banner visible-lg visible-md"> </div></a>
-<script>
-    var book_profile = {"rating": 9.0, "quote_count": 0, "isbn": "978-5-389-02688-9", "content_type": 13, "links": [], "show": true, "rates_count": 258, "quotes": [], "tag": [], "alter_titles": "", "year": 0, "facts": [{"hashtags": [], "text": "<p>\u0418 \u0421\u0442\u0430\u043b\u0438\u043d \u0438 \u0413\u0430\u043d\u0441 \u0425\u0440\u0438\u0441\u0442\u0438\u0430\u043d \u0410\u043d\u0434\u0435\u0440\u0441\u0435\u043d (1805-1875) \u0431\u044b\u043b\u0438 \u0441\u044b\u043d\u043e\u0432\u044c\u044f\u043c\u0438 \u0441\u0430\u043f\u043e\u0436\u043d\u0438\u043a\u0430 \u0438 \u043f\u0440\u0430\u0447\u043a\u0438.</p>", "created_at": "2015-05-15T06:54:42", "object_type": 89, "updated_at": "2015-05-15T06:54:42", "object_id": 1775, "comment_count": 0, "book": {"id": 11482, "name": "\u0421\u043a\u0430\u0437\u043a\u0438", "cover": "covers/e/b/eb3826d164dca5291aa62ed9bbabe784.jpg", "authors": [{"name": "\u0413\u0430\u043d\u0441  \u0425\u0440\u0438\u0441\u0442\u0438\u0430\u043d  \u0410\u043d\u0434\u0435\u0440\u0441\u0435\u043d", "url": "/author/4854/", "id": 4854}], "url": "/book/11482/"}, "user": {"id": 3037, "name": "\u042e\u043b\u0438\u044f  \u041b\u0430\u0437\u0430\u0440\u0435\u0432\u0430 (@alisaaismontas)", "avatar": "avatars/a/4/a4e312776806548f2fc4fd4cc0c8d379.JPG", "url": "/user/3037/", "username": "alisaaismontas", "gender": 0}}], "id": 11482, "by_shelves": {"shelf_count_1": 22, "shelf_count_2": 3, "shelf_count_3": 402, "shelf_count_4": 4}, "rating_sort": 9.11, "review_count": 1, "author": [{"name": "\u0413\u0430\u043d\u0441  \u0425\u0440\u0438\u0441\u0442\u0438\u0430\u043d  \u0410\u043d\u0434\u0435\u0440\u0441\u0435\u043d", "url": "/author/4854/", "id": 4854}], "create": "2013-07-21T00:00:00", "unique_text": false, "filming": [], "comment_count": 0, "show_rating": 9.0, "description": "\u0412 \u0441\u0431\u043e\u0440\u043d\u0438\u043a \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u044f \u0425\u0430\u043d\u0441\u0430 \u041a\u0440\u0438\u0441\u0442\u0438\u0430\u043d\u0430 \u0410\u043d\u0434\u0435\u0440\u0441\u0435\u043d\u0430 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u044b \u0441\u043a\u0430\u0437\u043a\u0438 \u0440\u0430\u0437\u043d\u044b\u0445 \u043b\u0435\u0442: \u2022 \u041e\u0433\u043d\u0438\u0432\u043e \u2022 \u0414\u044e\u0439\u043c\u043e\u0432\u043e\u0447\u043a\u0430 \u2022 \u041d\u043e\u0432\u043e\u0435 \u043f\u043b\u0430\u0442\u044c\u0435 \u043a\u043e\u0440\u043e\u043b\u044f \u2022 \u0421\u0442\u043e\u0439\u043a\u0438\u0439 \u043e\u043b\u043e\u0432\u044f\u043d\u043d\u044b\u0439 \u0441\u043e\u043b\u0434\u0430\u0442\u0438\u043a \u2022 \u0421\u0432\u0438\u043d\u043e\u043f\u0430\u0441 \u2022 \u0413\u0430\u0434\u043a\u0438\u0439 \u0443\u0442\u0435\u043d\u043e\u043a \u2022 \u0421\u043d\u0435\u0436\u043d\u0430\u044f \u043a\u043e\u0440\u043e\u043b\u0435\u0432\u0430 \u2022 \u0414\u0438\u043a\u0438\u0435 \u043b\u0435\u0431\u0435\u0434\u0438 \u2022 \u041f\u0440\u0438\u043d\u0446\u0435\u0441\u0441\u0430 \u043d\u0430 \u0433\u043e\u0440\u043e\u0448\u0438\u043d\u0435", "readers_count": 427, "award": [], "sorter": 8.98, "user": {"possible_rate": null, "id": null}, "favorites": 4, "genre": [{"url": "/genre/185/", "id": 185, "name": "\u0414\u0435\u0442\u0441\u043a\u0430\u044f \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "is_show": true}, {"url": "/genre/117/", "id": 117, "name": "\u0414\u0435\u0442\u0441\u043a\u0430\u044f \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430: \u043f\u0440\u043e\u0447\u0435\u0435", "is_show": true}, {"url": "/genre/159/", "id": 159, "name": "\u0421\u043a\u0430\u0437\u043a\u0438", "is_show": true}], "fact_count": 1, "pages": 150, "publisher": "\u0410\u0437\u0431\u0443\u043a\u0430-\u0410\u0442\u0442\u0438\u043a\u0443\u0441", "url": "/book/11482/", "title": "\u0421\u043a\u0430\u0437\u043a\u0438", "cover": "covers/e/b/eb3826d164dca5291aa62ed9bbabe784.jpg", "_id": 11482};
-</script>
-<div class="wrapper content clearfix">
-<article class="book-article" itemscope="" itemtype="http://schema.org/Book">
-<div class="content-cols">
-<div class="content-cols--main">
-<h1 class="book-article--title" itemprop="name">Сказки</h1>
-<div class="book-article--author">
-<label class="author-name">Автор книги:</label>
-<a href="/author/4854/"><h2 itemprop="author">Ганс Христиан Андерсен</h2></a>
+<body class="is-preload" itemscope="" itemtype="https://schema.org/WebPage">
+<div id="wrapper">
+<header id="header">
+<div class="inner"><a class="logo" href="/"><span class="title">Fantasy Book Review</span></a>
+<nav>
+<ul>
+<li><a href="#menu">Menu</a></li>
+</ul>
+</nav>
 </div>
-<div class="book-article--details">
-<div class="ba-details--row">
-<label class="row-label"><span>жанры:</span></label>
-<span class="row-value">
-<a href="/genre/185/">детская литература</a>
-,
-<a href="/genre/117/">детская литература: прочее</a>
-,
-<a href="/genre/159/">сказки</a>
-</span>
+</header>
+<nav id="menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/top-100-fantasy-books/">Top 100</a></li>
+<li><a href="/fantasy-books-of-the-year/">Fantasy Books of the Year</a></li>
+<li><a href="/best-fantasy-series.html">Best Fantasy Series</a></li>
+<li><a href="/fantasy-sub-genres/">Fantasy Sub Genres</a></li>
+<li><a href="/interviews/">Interviews</a></li>
+</ul>
+</nav>
+<div id="main">
+<div class="inner">
+<h1>The Rage of Dragons by Evan Winter
+(The Burning #1)</h1>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Book">
+<meta content="The Rage of Dragons" itemprop="name"/>
+<meta content="Evan Winter" itemprop="author"/>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<div itemprop="reviewBody">
+<p><em>The Rage of Dragons</em> is an African-inspired revenge fantasy novel. This is worthy of attention in and of itself, simply because fantasy is dominated by white male authors who write about white male characters.  Admittedly I enjoy reading such books, though it’s refreshing to see more diverse books appearing in the fantasy genre in recent years. There are other voices out there, and they really are worth listening to.</p><p>The story begins in the middle of a battle, which sets the tone for the martial focus for the book. There is so much action and so much struggle for victory across these pages. Dragons are the absolute last resort, a weapon that should only be used when there is no other choice because it is such a terribly powerful one. The prologue captures this very quickly, and as the book progresses the significance of that first scene is later expanded upon with a great amount of detail which really helped to strengthen the world building. And this is a world that is slightly different to the Eurocentric medieval fantasy that many of us are used to. It’s all in the small details, the land is hot and barren, the warriors fight with bronze swords and bone spears. All these simple things, along with the names of characters and places, help to give the book a distinct feel. </p><p>Tau is a solid protagonist and his reactions to his circumstances are entirely normal and human. It’s easy to become invested in him. He didn’t want to be a warrior and he was looking for a way out, but the injustice of his world took someone from him, so he becomes driven by revenge and blood. And judging by his determination, he will clearly get what he wants. He lives to train, and eventually becomes skilful enough to best opponents twice his size. The book took a somewhat predictable direction because of this, but the strength of Tau’s convictions and personality made up for the linearity. The action was also constant, never relenting until the final chapters.</p><p>I enjoyed the magic system, the idea that a “gifted” could use special powers to improve the strength and speed of warriors in battle. The two work together to ensure victory. It remined me somewhat of Kursed in <em>Thor: Dark World</em> and it gave the fighting (especially the large-scale battles) an added element, making them more complex and interesting to read about. It wasn’t as simple as knife work; tactics were needed to bring down powerful foes. And whilst I’m on the subject of the Marvel Cinematic Universe, I recommend this to fans of <em>Black Panther</em> because it is put together just as well and has a similar feel.</p><p>Overall, this is a strong first novel in the series. It’s unique and offers a totally different version of fantasy. Orbit were totally right to snap this up (it was previously only a self-published title.) More please.<br/><strong>Sean Barrs, 8.5/10</strong></p><p><em>"We know your witches are dying," shouted the warlord, near the edge of hearing. "We know it as we know that, in the coming cycles, you will have too few to call the fire-demons. We know it and offered you peace. You saw that as weakness, paying it back with the blood of our innocent. Queen of demons, what you saw was kindness, not weakness. Queen of demons, what you will see is vengeance, righteous in cause and unholy in deliverance."</em></p><p>Revenge is a dish best served cold - this we know. It serves as a powerful motivational tool, but one that can be difficult to tell. The entire focus cannot just be vengeance. There has to be something more.</p><p>The Rage of Dragons is a large tome that definitely requires a substantial time investment. It's nearly 550 pages, which isn't all that huge in size, but what it contains inside is a story that you must take care to give your full attention. It is absolutely massive in scope. However, I never felt overwhelmed or bogged down with information.</p><p>Similar to Josiah Bancroft &amp; Jonathan French, The Rage of Dragons was originally a self-published release (back in 2017) before getting scooped up by Orbit. The folks there clearly know what they are doing, because HOLY FORKING SHIRTBALLS!! Also? Check out that stunning cover art by Karla Ortiz (you must take a look at her work if you are unfamiliar with it) &amp; designed by the super-talent that is Lauren Panepinto.</p><p>Immediately The Rage of Dragons thrusts the reader into a battle that is already in progress. Queen Taifa &amp; the Omehi people have arrived on the shores of Xidda &amp; wish to take over. The local inhabitants, the Hedeni, are so very <em>very</em> opposed to that idea.</p><p>Explosive violence ensues.</p><p>From there, Winter builds his story from the ground up, with the main story taking place two centuries after the intense prologue. Centered around Tau, a lower-class Omehi warrior.</p><p>Tau didn't start out striving to be a leader, in fact he wanted to settle down somewhere quiet &amp; live a peaceful life. But now he must follow an ambitious plan in order to avenge his loss.</p><p>At one point I saw this referred to as Game of Thrones meets Gladiator. It's certainly got a Gladiator feel along with the politics of Game of Thrones, but for me I would say that it is closer to a Blood Song meets Red Rising vibe than anything else. Admittedly, some of that is because of the trope that I will never tire of - an institute of sorts that focuses on learning &amp; combat. Stabby, glorious combat! In this case, Tau training to be an Ihashe, an elite military fighter.</p><p>This is a hard book to describe, without getting into spoiler territory. There is just SO MUCH going on.</p><p>It's quintessential sword &amp; sorcery, yet one of the few African-inspired epic fantasies out there, which is completely refreshing. These are stories that absolutely must be told!</p><p>There are many, many, many themes throughout this beautifully crafted tale - among them revenge, war, politics, inequality &amp; love.</p><p><em>"A dragon had been called, and someone would have to die."</em></p><p>The Rage of Dragons explodes at a breakneck pace. Complex characters, dragons, revenge, ALL THE STABBY-STABBY-STAB-STAB. I adored everything about this book! The cover, the chapter titles, the maps, the wee dragon on the spine, the notes from Winter at the back... it was just fucking phenomenal. Truly.</p><p>What a brilliant debut!<br/><strong>Holly Grimdragon, 10/10</strong></p><p>A heart-stoppingly ferocious fantasy achievement, The Rage of Dragons is exhilarating in its execution and an enthralling debut you won’t want to miss.</p><p>Let’s not deny it. We have all bought a book based on its cover alone. Most of the times we get lucky and the story is great, but now and then we feel like fools for making such impulsive purchases without checking reviews. The Rage of Dragons lured me in with just such a cover in a moment of weakness, but I can happily say the contents match, if not surpass the exterior. Before I get carried away though, let’s take a moment to appreciate the art of Karla Ortiz.</p><p>The story starts with a roar of a prologue, dropping us into a massive battle that immediately thrills with its sheer scope, breathtaking duels, bloodthirsty ferocity and glimpses of unknown magic. It’s reminiscent of the prologue that Brandon Sanderson wrote in The Way of Kings, in that it is a glimpse of a terrible event with far-reaching consequences for the story we are about to follow and it takes place in the distant past. As the story shifts to our present, we meet our protagonist Tau, who is no-one important.</p><p>He is a Lesser among his people, the Omehi, whose society is based on a caste system. Tau serves his betters as is his place and expected of him. Some would rage against these shackles and want more than they are given, but Tau, for the most part, is content. He has a plan, and with some minor luck he will be able to avoid becoming a soldier; fodder in the everlasting war his people fight against the natives. If his plan succeeds, peace and the woman he loves will be within his grasp. Fate is ever a cruel and fickle mistress though, and events cause a dramatic shift in Tau’s future outlook, giving birth to a burning hatred within him and a plot device that stokes the flames of my bookish heart:</p><p>VENGEANCE.</p><p>To quote one of my favourite films:</p><p>"My name is Maximus Decimus Meridius, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And I will have my vengeance, in this life or the next."</p><p>GOOSEBUMPS…</p><p>I don’t want to cover the plot much more than that, because this is such a great experience of a book, but I will say that Tau is consumed by an overwhelming anger, hatred and the need for revenge, and through sheer will and determination sets himself on the path of becoming an elite soldier in order to fulfill his vengeance. His single-mindedness is an effective tool that helps his quest of becoming the weapon he needs to be, but boy could it be frustrating at times. So much so that at one point I complained to a friend that I wanted to slap Tau in the hope of removing his blinkers. His character motivations are always believable though, and I found myself easily invested in him, despite his moments of madness, bad judgement or stubbornness. Tau is not always likeable, but he is human, and just like any of us, fallible. How do we react in the face of violence, murder, bloodshed? Can we rise above and find a path to peace? Can we break the cycle of violence? Turn the other cheek? Forgive? These are some of the questions that Evan Winter asks of his creations, and there is a delight in seeing how they respond.</p><p>Speaking of the characters... The only quibble I have with the story is something I noticed about halfway through that felt off. There is a distinct lack of women featured in the story, apart from Tau’s love interest, Zuri, and one other. And it is weird because the Omehi venerates females. They are above men in standing, with many women in powerful positions. They are ruled by a queen for example, and their magic wielders known as Gifted, are all extremely powerful women. Thinking back on the story, I think there was a female warrior among the enemies of the Omehi, so perhaps it’s a cultural thing specific to them. I just felt it needed a mention, as once you notice - it’s hard to ignore. Hopefully, they get more page time in book two, because the little bit of them we see shows interesting, complex characters that can add even more to the story.</p><p>Hints of a larger world are present as early as the gripping opening sequence, but The Rage of Dragons chooses to tell us a much more intimate, personal story of one man’s vengeance, and as such we are confined to a small corner of what sounds like a vast, imaginative world. The author has mentioned that the story is African-inspired and I imagine I enjoyed this facet a bit more than most people will, recognising many of the foreign words. I was born in a place called KwaZulu Natal and Zulu is one of the main languages. Words such as Indlovu (elephants) as a name for a warrior group or Inyoku (snake) for a warrior that is said to strike very fast or even Isihogo, which means hell, are prominent throughout and I loved knowing their meaning. Although I have heard that the words used are Xhosa, they are similar if not the same as many of the Zulu words that I know (I have since read that they are mutually intelligible) and they reinforced the African feel, deepening my immersion.</p><p>“I can't imagine a world where the man holding a sword does not have the last say over the man without one.”</p><p>With vengeance being Tau’s main driving force, it is not surprising that scintillating action takes centre stage in The Rage of Dragons. And I mean, FRONT and CENTRE. Major battles, skirmishes and duels are prevalent throughout, but that would mean nothing if they weren't well written, and boyyyyyyy are they well written. Evan Winter should not be able to pull off this level of skill in a debut, but he must have made a sacrifice to the writing gods because he is clearly gifted. Scintillating, immersive, vivid, ferocious and cinematic - there are not many authors able to match the pulse-pounding action scenes that The Rage of Dragons brings to the table and I couldn't get enough of it. Five hundred plus pages? Who knew? The pace never flagged, and even though this is a chonker of a book it was over too soon. The sequel, please Mr Winter!</p><p>“That’s the price. Life is nothing more than moments in time. To achieve greatness, you have to give up those moments. You have to give your life to your goal.”</p><p>Without a doubt, The Rage of Dragons is a stellar debut and easily one of the best books I have read this year. Don’t take my word for it though. Read it, experience it for yourself and remember Evan Winter’s name; he is going to be a giant in fantasy.</p><p>Oh, did I mention that there are DRAGONS?</p><p>Should have led with that probably :)</p><p>We should forgive our enemies, but not before they are hanged. - Heinrich Heine<br/><strong>Eon Van Aeswagen, 9/10</strong></p><p><span class="rating">9/10</span> <em>A strong African-inspired revenge fantasy novel</em></p>
 </div>
-<div class="book-article--description">
-<br/>
-<h3 class="book-author-title">Описание</h3>
-<p><p>В сборник произведений писателя Ханса Кристиана Андерсена включены сказки разных лет: • Огниво • Дюймовочка • Новое платье короля • Стойкий оловянный солдатик • Свинопас • Гадкий утенок • Снежная королева • Дикие лебеди • Принцесса на горошине</p></p>
+<ul class="actions stacked">
+<li><a class="button primary" href="https://www.amazon.com/dp/B07NJC4HFM?tag=heavenlyholid-20" rel="nofollow" target="_blank">Buy on Amazon</a></li>
+</ul>
+<p>Reviews by <a href="/reviewers/Sean-Barrs.html"><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Sean Barrs</span></span></a> and <a href="/reviewers/Holly-Grimdragon.html">Holly Grimdragon</a> and <a href="/reviewers/Eon-Van-Aswegen.html">Eon Van Aswegen</a></p>
+<p><a href="#readerreviews">2 positive reader review(s)</a> for The Rage of Dragons</p>
+<p>2 positive reader review(s) in total for the The Burning series</p>
+<meta content="2019-04-25" itemprop="datePublished"/>
+<meta content="2021-06-02" itemprop="dateModified"/>
 </div>
-<div class="ng-cloak book-profile-rating-height" data-ng-controller="BookProfileCtrl" id="book_profile_book-rating-app" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-<div data-book-id="book.id" data-book-rating="" data-rating="book.user.rating"></div>
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating">
+<meta content="9.2" itemprop="ratingValue">
 <meta content="10" itemprop="bestRating"/>
-<meta content="9,0" itemprop="ratingValue"/>
-<meta content="258" itemprop="ratingCount"/>
-<div class="book-circular-correct">
-<span class="book-profile--rate">9,0</span>
-<span class="book-profile--rates-count">(258 оценок)</span>
+</meta></meta></div>
+<h2 id="readerreviews">The Rage of Dragons reader reviews
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Holly</span></span> from US</strong></p>
+<blockquote><span itemprop="reviewBody">The Rage of Dragons explodes at a breakneck pace. Complex characters, dragons, revenge, ALL THE STABBY-STABBY-STAB-STAB. I adored everything about this book! The cover, the chapter titles, the maps, the wee dragon on the spine, the notes from Winter at the back... it was just fucking phenomenal. Truly.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2020-06-29</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
-<div class="ng-cloak" data-ng-controller="WhereToBuyCtrl" data-ng-init="aggregate('Сказки', 'Ганс  Христиан  Андерсен')" id="book_profile-where_to_buy-app">
-<h2 class="where-to-buy-title book-author-title rel-h2" data-ng-show="aggregated.length">Купить книгу Сказки, Ганс Христиан Андерсен</h2>
-<div class="books-aggregate">
-<div class="aggregate-row" data-ng-class-odd="'book-aggregate-row-odd'" data-ng-repeat="agg in aggregated">
-<a data-ng-href="{[{ agg.url }]}" target="_blank"><img alt="" class="aggregate-shop-img" data-ng-src="{[{ agg.market_logo }]}"/></a>
-<a class="aggregate-shop" data-ng-bind="agg.market_name" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<a class="aggregate-book" data-ng-bind="agg.title" data-ng-href="{[{ agg.url }]}" target="_blank"></a>
-<div class="fr">
-<b class="aggregate-price"><span data-ng-bind="agg.price"></span> р.</b>
-<a class="aggregate-buy-button-litres" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market=='litres'" target="_blank">Скачать</a>
-<a class="aggregate-buy-button" data-ng-href="{[{agg.url}]}" data-ng-if="agg.market!='litres'" target="_blank">Купить</a>
+<div itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+<p><strong><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Eon</span></span> from South Africa</strong></p>
+<blockquote><span itemprop="reviewBody">Without a doubt, The Rage of Dragons is a stellar debut and easily one of the best books I have read this year. Don’t take my word for it though. Read it, experience it for yourself and remember Evan Winter’s name; he is going to be a giant in fantasy.</span></blockquote>
+<strong>10/10</strong> (<span itemprop="datePublished">2020-06-29</span>)
+<div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="ratingValue"/>
+<meta content="10" itemprop="bestRating"/>
 </div>
 </div>
+<div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<meta content="1" itemprop="worstRating"/>
+<meta content="10" itemprop="bestRating"/>
+<p><span itemprop="ratingValue">9.7</span>/10 from <span itemprop="reviewCount">3</span> reviews</p>
 </div>
-</div>
-<br class="clear"/>
-<div data-ng-controller="BookProfileCtrl" id="book_profile_facts-quotes-app">
-<div data-book-id="book.id" data-fact-list="" data-facts="book.facts"></div>
-<div data-book-id="book.id" data-quote-list="" data-quotes="book.quotes" data-user-id="book.user.id"></div>
-</div>
-<div class="invisible-content">
-<div class="h3-title-wadd"><h3>Интересные факты</h3></div>
-<div class="ba-facts-list">
-<div class="ba-fact-item"><i class="bull">•</i><p>И Сталин и Ганс Христиан Андерсен (1805-1875) были сыновьями сапожника и прачки.</p></div>
-</div>
-</div>
-<div class="invisible-content">
-<div class="h3-title-wadd">
-<h3>Цитаты из книги</h3>
-</div>
-<div class="ba-facts-list">
-</div>
-</div>
-<h2 class="book-author-title rel-h2">С этой книгой читают:</h2>
-<div class="book-related-list">
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/11480/" rel="nofollow">
-<img alt="Радуга для друга" src="/public/media/covers/1/b/1b3dc274a4ba1dfd6fdc6f2962a18c46_160x0.jpg" title="Радуга для друга"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/11480/">
-Радуга для друга
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/11479/" rel="nofollow">
-<img alt="Решаем примеры. 1 класс" src="/public/media/covers/6/7/67e168e6f7ac7888f1e6f44e03183489_160x0.jpg" title="Решаем примеры. 1 класс"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/11479/">
-Решаем примеры. 1 класс
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/11478/" rel="nofollow">
-<img alt="Друг детства" src="/public/media/covers/b/0/b06152913e3d262534e2ea9b3151f58f_160x0.jpg" title="Друг детства"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/11478/">
-Друг детства
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/11477/" rel="nofollow">
-<img alt="Повесть о том, как один мужик двух генералов прокормил" src="/public/media/covers/f/e/fee41df21492b594839d1030f63a7608_160x0.jpg" title="Повесть о том, как один мужик двух генералов прокормил"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/11477/">
-Повесть о том, как один мужик двух ге...
-</a>
-</div>
-</div>
-<div class="related-book--item">
-<div class="related-book--image">
-<a href="/book/11475/" rel="nofollow">
-<img alt="Суперпамять. Проверенный тренинг для школьника" src="/public/media/covers/f/e/fedc579d676ee0bc48eaa512b0bb6495_160x0.jpg" title="Суперпамять. Проверенный тренинг для школьника"/>
-</a>
-</div>
-<div class="related-book--title">
-<a href="/book/11475/">
-Суперпамять. Проверенный тренинг для ...
-</a>
-</div>
-</div>
-</div>
-<h2 class="book-author-title rel-h2">Упоминание книги:</h2>
-<div class="book-mentions">
-<ul class="book-mentions--ul">
-<li><a href="/collection/112/">Какие книги читать детям, чтобы привить любовь к чтению</a><span class="mention-type">Подборки</span></li>
-<li><a href="/collection/453/">ЕвГениальный список книг (часть 1)</a><span class="mention-type">Подборки</span></li>
-</ul>
-</div>
-</div>
-<div class="ba-timeline-container">
-<nav class="tape-select" id="timelinenav">
+<h2>All Evan Winter Reviews</h2>
 <ul>
-<li class="active">
-<a href="/book/11482/?filter=reviews#!/#timelinenav" rel="nofollow">Рецензии</a>
-</li>
-<li>
-<a href="/book/11482/?filter=comments#!/#timelinenav" rel="nofollow">Отзывы</a>
-</li>
+<li><a href="/Evan-Winter/The-Rage-Of-Dragons.html">The Rage of Dragons (The Burning #1)</a></li>
 </ul>
-</nav>
-<div id="filter-search-results-container">
-<div class="filter-panel-index">
-<div class="page-column-main __timeline">
-<section class="review-timeline-list">
-<nav class="nav-filter">
-<ul class="nav-filter-list">
-<li class="active">
-<a href="/book/11482/
-?filter=reviews&amp;sort=last#!/timelinenav" rel="nofollow">Последнее</a>
-</li>
-<li>
-<a href="/book/11482/
-?filter=reviews&amp;sort=useful#!/timelinenav" rel="nofollow">Популярное</a>
-</li>
-<li>
-<a href="/book/11482/
-?filter=reviews&amp;sort=new#!/timelinenav" rel="nofollow">Новое</a>
-</li>
-</ul>
-</nav>
-<div id="book_profile_timeline-app">
-<span id="reactComponent-Readly.bookTimelineBox"><div data-react-checksum="-1190728663" data-reactid=".euz2mnooao"><div class="rtl--comment-add" data-reactid=".euz2mnooao.0"><div class="rtl--start-discussion rtl--start-discussion-compat bookpost bookpost-review" data-reactid=".euz2mnooao.0.0"><textarea class="sd--input" data-reactid=".euz2mnooao.0.0.0" placeholder="Оставить рецензию..."></textarea></div></div><div data-reactid=".euz2mnooao.1"><div data-reactid=".euz2mnooao.1.0"><div class="discussion-wrap" data-reactid=".euz2mnooao.1.0.$11590"><div class="discussion-item clearfix" data-reactid=".euz2mnooao.1.0.$11590.0"><div data-reactid=".euz2mnooao.1.0.$11590.0.0"><div class="discussion-item-user-avatar" data-reactid=".euz2mnooao.1.0.$11590.0.0.0"><a class="user-avatar-50-50" data-reactid=".euz2mnooao.1.0.$11590.0.0.0.0" href="/user/39182/" rel="nofollow"><img data-reactid=".euz2mnooao.1.0.$11590.0.0.0.0.0" src="/public/media/avatars/d/7/d7cb155dcbac78a73b64e18797b15e61_80x80.jpg"/></a></div><div class="user-name" data-reactid=".euz2mnooao.1.0.$11590.0.0.1"><span data-reactid=".euz2mnooao.1.0.$11590.0.0.1.0"><a data-reactid=".euz2mnooao.1.0.$11590.0.0.1.0.0" href="/user/39182/" rel="nofollow">Мария (@marushka)</a></span></div></div><div class="discussion-item-descripiton" data-reactid=".euz2mnooao.1.0.$11590.0.1"><span data-reactid=".euz2mnooao.1.0.$11590.0.1.0">написала рецензию</span><span class="dashed-row" data-reactid=".euz2mnooao.1.0.$11590.0.1.1">2 апреля 2015 12:17</span><div class="stars-rating" data-reactid=".euz2mnooao.1.0.$11590.0.1.2"><div data-reactid=".euz2mnooao.1.0.$11590.0.1.2.0"><span data-reactid=".euz2mnooao.1.0.$11590.0.1.2.0.0">Оценка книге:</span><div class="rr-stars" data-reactid=".euz2mnooao.1.0.$11590.0.1.2.0.1"><div class="ur-rate-stars _10" data-reactid=".euz2mnooao.1.0.$11590.0.1.2.0.1.0"></div></div><span class="stars-rating-counts" data-reactid=".euz2mnooao.1.0.$11590.0.1.2.0.2">10/10</span></div></div></div><div class="reviews-status" data-reactid=".euz2mnooao.1.0.$11590.0.2"><img alt="" data-reactid=".euz2mnooao.1.0.$11590.0.2.0" src="/public/static/images/new/positive.png"/></div><div class="discussion-item-index clearfix" data-reactid=".euz2mnooao.1.0.$11590.0.3"><div class="reveal-block-index clearfix" data-reactid=".euz2mnooao.1.0.$11590.0.3.0"><div class="book-pic" data-reactid=".euz2mnooao.1.0.$11590.0.3.0.0"><img data-reactid=".euz2mnooao.1.0.$11590.0.3.0.0.0" src="/public/media/covers/e/b/eb3826d164dca5291aa62ed9bbabe784_100x0.jpg"/></div><span class="book-name" data-reactid=".euz2mnooao.1.0.$11590.0.3.0.1">Сказки</span><span class="book-autor" data-reactid=".euz2mnooao.1.0.$11590.0.3.0.2">Ганс Христиан Андерсен</span></div><div class="discussion-item-text clearfix" data-reactid=".euz2mnooao.1.0.$11590.0.3.1"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.1.1"> </span><span data-reactid=".euz2mnooao.1.0.$11590.0.3.1.3"> </span><div data-reactid=".euz2mnooao.1.0.$11590.0.3.1.4"><div class="rc-review--text-short" data-reactid=".euz2mnooao.1.0.$11590.0.3.1.4.1"><p>Дюймовочка, Оле-Лукойе, гадкий утенок, снежная королева и многие другие... Всеми любимые с детства герои вышли из под пера замечательного автора.</p>
-<p>Сегодня 210 лет со дня рождения Ханса Кристиана Андерсена!</p>
-<p>Пожалуй самый известный зарубежный сказочник. Его произведения понятны каждому. Детям невероятно интересно окунуться в приключения вместе с героями, а взрослые могут найти глубокий смысл. Темы надежды и взаимопомощи пронизывают весь сказочный мир Андерсена. Мне нравится реалистичность обстановки, остается только дорисовать в своем воображении героев и наслаждаться захватывающими событиями. </p>
-<p>В детстве это была моя любимая книга. В ней даже не было картинок, поэтому простор для фантазии был огромен. Сейчас невероятное количество изданий с не менее невероятными красочными картинками.</p>
-<p>Читайте сказки!)))</p></div></div></div><div class="bottom-part" data-reactid=".euz2mnooao.1.0.$11590.0.3.2"><div class="discussion-item-filter" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0"><div data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0"><noindex data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0"><div class="discussion-item-filter-item" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0"><div class="filter-more" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0"><ul class="fly-out-list" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0"><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0"><a class="drop tooltips" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.0.0">Опции</span></a><ul data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.1"><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.1.$0"><a class="feedback-alert" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.1.$0.0" rel="nofollow"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.1.$0.0.0">Пожаловаться</span></a></li><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.1.$1"><noindex data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.1.$1.0"><a data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.1.$1.0.0" href="/review/11590/" rel="nofollow" target="_blank"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.0.0.0.0.1.$1.0.0.0">Открыть в новом окне</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1"><div class="filter-share" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0"><ul class="fly-out-list" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0"><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0"><a class="drop tooltips" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.0" style="cursor:pointer;" tabindex="1"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.0.0">Поделиться</span></a><ul data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1"><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$0"><noindex data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$0.0"><a data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$0.0.0" href="https://vk.com/share.php?url=http://readly.ru/review/11590/" rel="nofollow" target="_self"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$0.0.0.0">ВКонтакте</span></a></noindex></li><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$1"><noindex data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$1.0"><a data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$1.0.0" href="https://twitter.com/intent/tweet?url=http://readly.ru/review/11590/" rel="nofollow" target="_self"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$1.0.0.0">Твиттер</span></a></noindex></li><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$2"><noindex data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$2.0"><a data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$2.0.0" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=http://readly.ru/review/11590/" rel="nofollow" target="_self"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$2.0.0.0">Одноклассники</span></a></noindex></li><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$3"><noindex data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$3.0"><a data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$3.0.0" href="http://connect.mail.ru/share?url=http://readly.ru/review/11590/" rel="nofollow" target="_self"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$3.0.0.0">Мой Мир</span></a></noindex></li><li data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$4"><noindex data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$4.0"><a data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$4.0.0" href="https://plus.google.com/share?url=http://readly.ru/review/11590/" rel="nofollow" target="_self"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.1.0.0.0.1.$4.0.0.0">Googe+</span></a></noindex></li></ul></li></ul></div></div><div class="discussion-item-filter-item-linked" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2"><div data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0"><span class="vote-question" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0.0">Полезная рецензия?</span><div class="vote-block" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0.1"><a class="vote-yes" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0.1.0" href="" rel="nofollow">Да</a><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0.1.1"> / </span><a class="vote-no" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0.1.2" href="" rel="nofollow">Нет</a><span class="vote-digit-yes" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0.1.3">5</span><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0.1.4"> / </span><span class="vote-digit-no" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.0.0.0.2.0.1.5">0</span></div></div></div></noindex></div></div><a class="comment-first" data-reactid=".euz2mnooao.1.0.$11590.0.3.2.1" href="" rel="nofollow"><span data-reactid=".euz2mnooao.1.0.$11590.0.3.2.1.0">Добавить комментарий</span></a></div></div><div class="discussion-item--comment clearfix" data-reactid=".euz2mnooao.1.0.$11590.0.5"><a class="anchor" data-reactid=".euz2mnooao.1.0.$11590.0.5.1" name="11590_18" rel="nofollow"></a></div></div></div></div><div class="section-buttons" data-reactid=".euz2mnooao.1.1"><a class="btn-simple loadmore" data-reactid=".euz2mnooao.1.1.0" href=""><i class="b-icon loadmore" data-reactid=".euz2mnooao.1.1.0.0"></i><span data-reactid=".euz2mnooao.1.1.0.1">Показать еще</span></a></div></div></div></span>
+</h2></div>
+<section class="tiles">
+<article class="style1">
+<span class="image"><img alt="top 100 background" class="lazyload" height="326" src="/images/pic01.jpg" width="353"/></span>
+<a href="/top-100-fantasy-books/">
+<h2>Top 100 Fantasy Books Of All Time</h2>
+<div class="content">
+<p>Looking for great fantasy books? Take a look at the 100 pages we rate highest</p>
 </div>
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="content-cols--aside">
-<div class="book-article--aside" data-inject-global-var="book_profile">
-<div class="book-article--img">
-<img alt="Обложка Сказки" src="/public/media/covers/e/b/eb3826d164dca5291aa62ed9bbabe784_200x0.jpg" title="Сказки"/>
-</div>
-<div class="ba-about">
-<h3>О книге</h3>
-<ul class="ba-counters">
-<li>
-<i class="bc-icon readers"></i>
-<a href="/book/11482/readers/5/" rel="nofollow">
-Читатели (427)
 </a>
-</li>
-<li class="reviews">
-<i class="bc-icon reviews"></i>
-<a alt="Сказки рецензии" href="/book/11482/reviews/">
-Рецензии (1)
-</a>
-</li>
-<li class="quotes">
-<i class="bc-icon quotes"></i>
-<a alt="Сказки цитаты" href="/book/11482/quotes/">
-Цитаты (0)
-</a>
-</li>
-<li class="facts">
-<i class="bc-icon facts"></i>
-<a alt="Сказки интересные факты" href="/book/11482/facts/">
-Факты (1)
-</a>
-</li>
-<li class="reviews">
-<i class="bc-icon comments"></i>
-<a alt="Сказки отзывы" href="/book/11482/comments/">
-Отзывы (0)
-</a>
-</li>
-</ul>
-</div>
-</div>
-<ul class="book-article--links" data-hide-show="">
-<li class="book--share" data-ng-class="{_opened: isVisible()}">
-<i class="b-icon" data-ng-class="{'share-plus': !isVisible(), 'share-minus': isVisible()}"></i>
-<a class="book-share--toggle" data-ng-click="toggle()" href="" rel="nofollow">
-Поделиться книгой с друзьями
-</a>
-<div class="book-share--counters">
-<div class="ya-share-book-profile">
-<script charset="utf-8" src="//yandex.st/share/share.js" type="text/javascript"></script>
-<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharequickservices="vkontakte,twitter,odnoklassniki,gplus" data-yasharetheme="counter" data-yasharetype="small"></div>
-</div>
-</div>
-</li>
-</ul>
-<div class="ba--edit-info edit-book-info-margin">
-<a class="fancybox-book-edit-info-form" data-ng-href="#!/#book-edit-info-form" rel="nofollow">
-Изменить информацию о книге
-</a>
-<span class="rarr">→</span>
-</div>
-<a class="centered h3-top100-title" href="/books/top/">
-<div class="b-icon thebest"></div>Лучшие книги - Топ 100
-</a>
-<div class="aside-top100">
-<div class="a-top100-item">
-<div class="a-t100-number">4.</div>
-<div class="a-t100-image">
-<a href="/book/57630/" rel="nofollow">
-<img alt="Гарри Поттер и узник Азкабана" src="/public/media/covers/c/b/cb3716efab47ad122bf97285924c72ac_100x0.jpg" title="Гарри Поттер и узник Азкабана"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57630/">Гарри Поттер и узник Азкабана</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.2</strong>
-(7476 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">5.</div>
-<div class="a-t100-image">
-<a href="/book/57646/" rel="nofollow">
-<img alt="Гарри Поттер и Дары смерти" src="/public/media/covers/8/b/8bac111a615a75289e5549a73b72f756_100x0.jpg" title="Гарри Поттер и Дары смерти"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57646/">Гарри Поттер и Дары смерти</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.2</strong>
-(6805 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">6.</div>
-<div class="a-t100-image">
-<a href="/book/61114/" rel="nofollow">
-<img alt="Властелин Колец" src="/public/media/covers/0/d/0d4835e1c72e65c80259d00d340d5833_100x0.jpg" title="Властелин Колец"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/61114/">Властелин Колец</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.2</strong>
-(3597 оценок)
-</div>
-</div>
-</div>
-<div class="a-top100-item">
-<div class="a-t100-number">7.</div>
-<div class="a-t100-image">
-<a href="/book/57638/" rel="nofollow">
-<img alt="Унесенные ветром" src="/public/media/covers/9/2/92e4f74d325bb32cd3b1a9d13ba8f380_100x0.jpg" title="Унесенные ветром"/>
-</a>
-</div>
-<div class="a-t100-desc">
-<div class="a-t100-title">
-<a href="/book/57638/">Унесенные ветром</a>
-</div>
-<div class="a-t100-rating">
-<strong>9.2</strong>
-(3553 оценки)
-</div>
-</div>
-</div>
-<div class="a-t100--show-all"><a class="a-arrowed" href="/books/top/" rel="nofollow">Весь рейтинг</a></div>
-</div>
-</div>
-</div>
 </article>
+<article class="style2">
+<span class="image"><img alt="fantasy series background" class="lazyload" height="326" src="/images/pic02.jpg" width="353"/></span>
+<a href="/best-fantasy-series.html">
+<h2>Fantasy Series We Recommend</h2>
+<div class="content">
+<p>There's nothing better than finding a fantasy series you can lose yourself in</p>
 </div>
-<div id="book-edit-info-form">
-<div data-ng-controller="BookEditInfoCtrl" id="book_edit_info_form-book-edit-info-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<p>Редактирование информации:</p>
-<span class="book-edit-form-book-name">Сказки</span>
-</div>
-<div class="feedback-body">
-<span class="book-edit-thanks">Спасибо, что помогаете делать наш сайт лучше!</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Напишите, что вы предлагаете исправить: название книги, обложку, автора, описание, год написания произведения, серию?" rows="10"></textarea>
-<a class="ui-20 show-filming" data-ng-click="addFilms=true" data-ng-hide="addFilms" href="" rel="nofollow">Указать экранизацию книги?</a>
-<input class="ui-20 show-filming" data-ng-model="filming" data-ng-show="addFilms" placeholder="Добавьте ссылку с кинопоиска на фильм, снятый по книге" type="text"/>
-<button class="btn-blue-20 send-book-info" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
-</div>
-</div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="libr" id="libr">
-<div class="libr-lightbox">
-<div class="libr-heading">
-<span class="libr-title libr-dark-gray">Гарри Поттер и Орден Феникса</span>
-<ul class="libr-heading-icons">
-<li><a class="libr-ico-help" href="">Помощь</a></li>
-<li><a class="libr-ico-close" href="">Закрыть</a></li>
-</ul>
-</div>
-<form action="#" class="libr-form-librarian">
-<fieldset>
-<aside class="libr-sidebar">
-<div class="libr-buttons">
-<a class="libr-button libr-will-read" href="">Хочу прочитать</a>
-<a class="libr-button libr-now-reading" href="">Читаю</a>
-<a class="libr-button libr-already-read active" href="">Прочитал</a>
-</div>
-<div class="libr-check-area">
-<div class="libr-form-row">
-<input checked="" hidden="" id="print" type="checkbox">
-<label for="print">Печатное издание</label>
-</input></div>
-<div class="libr-form-row">
-<input hidden="" id="audiobook" type="checkbox"/>
-<label for="audiobook">Аудиокнигу</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="electronic-version" type="checkbox"/>
-<label for="electronic-version">Электронную версию</label>
-</div>
-<div class="libr-form-row">
-<input disabled="" hidden="" id="original-language" type="checkbox"/>
-<label for="original-language">На оригинальном языке</label>
-</div>
-</div>
-<ul class="libr-sidebar-icons">
-<li><a class="libr-ico-favorite" href="">В избранное</a></li>
-<li><a class="libr-ico-rss" href="">Подписаться на рецензии</a></li>
-</ul>
-</aside>
-<div class="libr-main-block">
-<ul class="libr-tabset">
-<li><a class="active" href="#libr-tab1"><span class="libr-inner libr-create-shelf">Добавить/Оценить</span></a></li>
-<li><a class="disabled" href="#libr-tab2"><span class="libr-inner libr-calendar">Указать период</span></a></li>
-<li><a href="#libr-tab3"><span class="libr-inner libr-edit-note">Добавить заметку</span></a></li>
-</ul>
-<div class="libr-tabs-content">
-<div id="libr-tab1">
-<div class="libr-content-block">
-<div class="libr-add-shelf-section">
-<div class="libr-heading-block">
-<strong class="libr-title">Добавить на полку:</strong>
-<a class="alignright" href="">Создать полку</a>
-</div>
-<div class="libr-select-block libr-popup-holder">
-<div class="libr-open">
-<input readonly="readonly" type="text" value="Выбрать созданную полку"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li class="libr-red">
-<span class="libr-text-link">Хотите удалить полку?</span>
-<div class="libr-block-links"><a href="">Да</a> / <a href="">Нет</a></div>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Моя летнаяя полка</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Книги, которые не дочитал</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Книги от друзей</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Полка под флешмоб</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li class="selected">
-<a class="libr-text-link" href="">Для личностного роста</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Детям на ночь</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015</a>
-<a class="libr-delete" href="">Удалить</a>
-</li>
-<li>
-<a class="libr-text-link" href="">Коллекция 2015 - добавление</a>
-<a class="libr-delete" href="">Удалить</a>
-<span class="libr-loader-white"></span>
-</li>
-<li class="libr-red">
-<span class="libr-loader-white"></span>
-<span class="libr-text-link">Удаление...</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="libr-heading-block">
-<strong class="libr-title">Поставить оценку:</strong>
-<span class="alignright">Средняя оценка 7.4</span>
-</div>
-<ul class="libr-rating">
-<li><a href="">1</a></li>
-<li><a href="">2</a></li>
-<li><a href="">3</a></li>
-<li><a href="">4</a></li>
-<li><a href="">5</a></li>
-<li><a href="">6</a></li>
-<li><a href="">7</a></li>
-<li><a href="">8</a></li>
-<li><a href="">9</a></li>
-<li><a href="">10</a></li>
-</ul>
-<div class="libr-text-row">Вероятно, Вы оцените книгу на: <span class="circle green">7</span></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright" href="">Сохранено</a>
-</div>
-</div>
-<div id="libr-tab2">
-<div class="libr-content-block">
-<div class="libr-calendar-section">
-<div class="libr-top-block-calendar">
-<div class="libr-arrows"></div>
-<span class="libr-text-period">Июль - Август, 2015</span>
-<div class="libr-select-block libr-popup-holder libr-select-year alignright">
-<div class="libr-open">
-<input type="text" value="2015"/>
-</div>
-<div class="libr-popup">
-<ul>
-<li><a class="text-link" href="">2015</a></li>
-<li><a class="text-link" href="">2016</a></li>
-<li><a class="text-link" href="">2017</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="libr-calendar-block"></div>
-</div>
-</div>
-<div class="libr-bottom-block">
-<div class="alignleft libr-calendar-bottom">
-<input type="text" value="20-07-2015"/>
-<span class="text">-</span>
-<input type="text" value="14-08-2015"/>
-<a class="libr-text" href="">Убрать период?</a>
-</div>
-<a class="libr-button alignright libr-blue" href="">Сохранить</a>
-</div>
-</div>
-<div id="libr-tab3">
-<div class="libr-content-block">
-<div class="libr-text-note">Заметки - это удобный и простой способ хранить нужную информацию <br>или мысли о книге для личного использования. Ваша заметка будет видна только вам.</br></div>
-<textarea class="libr-textarea-scrollbar scrollbar-outer" cols="40" placeholder="Заметка..." rows="8"></textarea>
-</div>
-<div class="libr-bottom-block">
-<a class="libr-button alignright libr-blue" href="">Добавить</a>
-</div>
-</div>
-</div>
-</div>
-</fieldset>
-</form>
-</div>
-</div>
-</div>
-<div id="libr"></div>
-<div id="feedback-form">
-<div data-ng-controller="FeedbackCtrl" id="feedback_form_feedback-form-app">
-<div class="feedback-form-send" data-ng-show="showSendForm">
-<div class="feedback-head">
-<span>Нашли ошибку?</span>
-<p>Расскажите нам о найденной ошибке, и мы сможем сделать наш сервис еще лучше.</p>
-</div>
-<div class="feedback-body">
-<div class="select-box _fr" id="feedback-form-select-box">
-<div class="select-box--current">
-<span>{[{ currentCategoryName }]}</span>
-</div>
-<div class="dropdown-box _select">
-<nav class="dropdown-select-options">
-<a data-ng-click="selectCategory(-1, 'Без темы')" href="#" onclick="return false" rel="nofollow">Без темы</a>
-<a data-ng-click="selectCategory(7, 'Ошибка в информации о книге')" href="#" onclick="return false" rel="nofollow">
-Ошибка в информации о книге
 </a>
-<a data-ng-click="selectCategory(8, 'Плагиат')" href="#" onclick="return false" rel="nofollow">
-Плагиат
+</article>
+<article class="style3">
+<span class="image"><img alt="fantasy book of the year background" class="lazyload" height="326" src="/images/pic03.jpg" width="353"/></span>
+<a href="/fantasy-books-of-the-year/">
+<h2>Fantasy Books Of The Year</h2>
+<div class="content">
+<p>Our fantasy books of the year, from 2006 to 2021</p>
+</div>
 </a>
-<a data-ng-click="selectCategory(9, 'Спойлер')" href="#" onclick="return false" rel="nofollow">
-Спойлер
-</a>
-<a data-ng-click="selectCategory(10, 'Другая ошибка')" href="#" onclick="return false" rel="nofollow">
-Другая ошибка
-</a>
-<a data-ng-click="selectCategory(11, 'Авторы')" href="#" onclick="return false" rel="nofollow">
-Авторы
-</a>
-</nav>
+</article>
+</section>
+<script async="" src="/assets/js/lazysizes.min.js"></script>
 </div>
 </div>
-<span class="feedback-category-text">Категория:</span>
-<textarea class="generic-input-20" data-ng-model="message" placeholder="Опишите ошибку..." rows="10"></textarea>
-<button class="btn-blue-20" data-ng-click="send()" data-ng-disabled="loading">
-Отправить
-</button>
+<footer id="footer">
+<div class="inner">
+<ul class="copyright"><li>© 2023 Fantasy Book Review</li></ul>
 </div>
+</footer>
 </div>
-<div class="feedback-form-thanks" data-ng-hide="showSendForm">
-<div class="feedback-head">
-<span>Ваше сообщение отправлено</span>
-</div>
-<div class="feedback-body">
-<p>Спасибо, что помогаете нам стать лучше! Ваше сообщение будет рассмотрено
-нашими специалистами в самое ближайшее время.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="help-readly">
-<div>
-<span class="help-readly--title">Помоги Ридли!</span>
-<div class="help-readly--text">
-Мы вкладываем душу в Ридли. Спасибо, что вы с нами! Расскажите о нас друзьям, чтобы они могли присоединиться к нашей дружной семье книголюбов.
-</div>
-<div class="social">
-<div class="social-buttons">
-<a class="vk" href="https://vk.com/share.php?url=http%3A%2F%2Freadly.ru&amp;title=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru&amp;image=" rel="nofollow" target="_blank" title="Вконтакте"></a>
-<a class="tw" href="https://twitter.com/intent/tweet?status=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Twitter"></a>
-<a class="gp" href="https://plus.google.com/share?url=http%3A%2F%2Freadly.ru" rel="nofollow" target="_blank" title="Google+"></a>
-<a class="ok" href="https://www.ok.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=http%3A%2F%2Freadly.ru&amp;st.comments=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B8%20%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8%20-%20Readly.ru" rel="nofollow" target="_blank" title="Odnoklassniki"></a>
-</div>
-</div>
-</div>
-</div>
-<script src="/public/static/dist/js/readly.js?b8cabe27e37a" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.librarianEmitter.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/node_modules/react/dist/react.min.js" type="text/javascript"></script>
-<script src="/public/static/js/build/client/3fc85e2227e3ffe803c5/Readly.bookTimelineBox.js"></script>
-<script>
-
-if (typeof React === 'undefined') throw new Error('Cannot find `React` global variable. Have you added a script element to this page which points to React?');
-if (typeof Readly.bookTimelineBox === 'undefined') throw new Error('Cannot find component variable `Readly.bookTimelineBox`');
-(function(React, component, containerId) {
-  var props = {"perPage": 5, "bookId": 11482, "initialParams": {"comment_count": 3, "object_type": "reviews", "book_id": 11482}, "initialItems": [{"book_rating": 10, "hashtags": [], "rating": {"positive": 5, "negative": 0}, "text": "<p>\u0414\u044e\u0439\u043c\u043e\u0432\u043e\u0447\u043a\u0430, \u041e\u043b\u0435-\u041b\u0443\u043a\u043e\u0439\u0435, \u0433\u0430\u0434\u043a\u0438\u0439 \u0443\u0442\u0435\u043d\u043e\u043a, \u0441\u043d\u0435\u0436\u043d\u0430\u044f \u043a\u043e\u0440\u043e\u043b\u0435\u0432\u0430 \u0438 \u043c\u043d\u043e\u0433\u0438\u0435 \u0434\u0440\u0443\u0433\u0438\u0435... \u0412\u0441\u0435\u043c\u0438 \u043b\u044e\u0431\u0438\u043c\u044b\u0435 \u0441 \u0434\u0435\u0442\u0441\u0442\u0432\u0430 \u0433\u0435\u0440\u043e\u0438 \u0432\u044b\u0448\u043b\u0438 \u0438\u0437 \u043f\u043e\u0434 \u043f\u0435\u0440\u0430 \u0437\u0430\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u0430\u0432\u0442\u043e\u0440\u0430.</p>\n\n<p>\u0421\u0435\u0433\u043e\u0434\u043d\u044f 210 \u043b\u0435\u0442 \u0441\u043e \u0434\u043d\u044f \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f \u0425\u0430\u043d\u0441\u0430 \u041a\u0440\u0438\u0441\u0442\u0438\u0430\u043d\u0430 \u0410\u043d\u0434\u0435\u0440\u0441\u0435\u043d\u0430!</p>\n\n<p>\u041f\u043e\u0436\u0430\u043b\u0443\u0439 \u0441\u0430\u043c\u044b\u0439 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u044b\u0439 \u0437\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u044b\u0439 \u0441\u043a\u0430\u0437\u043e\u0447\u043d\u0438\u043a. \u0415\u0433\u043e \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f \u043f\u043e\u043d\u044f\u0442\u043d\u044b \u043a\u0430\u0436\u0434\u043e\u043c\u0443. \u0414\u0435\u0442\u044f\u043c \u043d\u0435\u0432\u0435\u0440\u043e\u044f\u0442\u043d\u043e \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u043e \u043e\u043a\u0443\u043d\u0443\u0442\u044c\u0441\u044f \u0432 \u043f\u0440\u0438\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u0433\u0435\u0440\u043e\u044f\u043c\u0438, \u0430 \u0432\u0437\u0440\u043e\u0441\u043b\u044b\u0435 \u043c\u043e\u0433\u0443\u0442 \u043d\u0430\u0439\u0442\u0438 \u0433\u043b\u0443\u0431\u043e\u043a\u0438\u0439 \u0441\u043c\u044b\u0441\u043b. \u0422\u0435\u043c\u044b \u043d\u0430\u0434\u0435\u0436\u0434\u044b \u0438 \u0432\u0437\u0430\u0438\u043c\u043e\u043f\u043e\u043c\u043e\u0449\u0438 \u043f\u0440\u043e\u043d\u0438\u0437\u044b\u0432\u0430\u044e\u0442 \u0432\u0435\u0441\u044c \u0441\u043a\u0430\u0437\u043e\u0447\u043d\u044b\u0439 \u043c\u0438\u0440 \u0410\u043d\u0434\u0435\u0440\u0441\u0435\u043d\u0430. \u041c\u043d\u0435 \u043d\u0440\u0430\u0432\u0438\u0442\u0441\u044f \u0440\u0435\u0430\u043b\u0438\u0441\u0442\u0438\u0447\u043d\u043e\u0441\u0442\u044c \u043e\u0431\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438, \u043e\u0441\u0442\u0430\u0435\u0442\u0441\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043e\u0440\u0438\u0441\u043e\u0432\u0430\u0442\u044c \u0432 \u0441\u0432\u043e\u0435\u043c \u0432\u043e\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0438 \u0433\u0435\u0440\u043e\u0435\u0432 \u0438 \u043d\u0430\u0441\u043b\u0430\u0436\u0434\u0430\u0442\u044c\u0441\u044f \u0437\u0430\u0445\u0432\u0430\u0442\u044b\u0432\u0430\u044e\u0449\u0438\u043c\u0438 \u0441\u043e\u0431\u044b\u0442\u0438\u044f\u043c\u0438. </p>\n\n<p>\u0412 \u0434\u0435\u0442\u0441\u0442\u0432\u0435 \u044d\u0442\u043e \u0431\u044b\u043b\u0430 \u043c\u043e\u044f \u043b\u044e\u0431\u0438\u043c\u0430\u044f \u043a\u043d\u0438\u0433\u0430. \u0412 \u043d\u0435\u0439 \u0434\u0430\u0436\u0435 \u043d\u0435 \u0431\u044b\u043b\u043e \u043a\u0430\u0440\u0442\u0438\u043d\u043e\u043a, \u043f\u043e\u044d\u0442\u043e\u043c\u0443 \u043f\u0440\u043e\u0441\u0442\u043e\u0440 \u0434\u043b\u044f \u0444\u0430\u043d\u0442\u0430\u0437\u0438\u0438 \u0431\u044b\u043b \u043e\u0433\u0440\u043e\u043c\u0435\u043d. \u0421\u0435\u0439\u0447\u0430\u0441 \u043d\u0435\u0432\u0435\u0440\u043e\u044f\u0442\u043d\u043e\u0435 \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0438\u0437\u0434\u0430\u043d\u0438\u0439 \u0441 \u043d\u0435 \u043c\u0435\u043d\u0435\u0435 \u043d\u0435\u0432\u0435\u0440\u043e\u044f\u0442\u043d\u044b\u043c\u0438 \u043a\u0440\u0430\u0441\u043e\u0447\u043d\u044b\u043c\u0438 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0430\u043c\u0438.</p>\n\n<p>\u0427\u0438\u0442\u0430\u0439\u0442\u0435 \u0441\u043a\u0430\u0437\u043a\u0438!)))</p>", "created_at": "2015-04-02T09:17:40", "object_type": 18, "updated_at": "2015-04-02T09:17:40", "object_id": 11590, "comment_count": 0, "book": {"id": 11482, "name": "\u0421\u043a\u0430\u0437\u043a\u0438", "cover": "covers/e/b/eb3826d164dca5291aa62ed9bbabe784.jpg", "authors": [{"name": "\u0413\u0430\u043d\u0441  \u0425\u0440\u0438\u0441\u0442\u0438\u0430\u043d  \u0410\u043d\u0434\u0435\u0440\u0441\u0435\u043d", "url": "/author/4854/", "id": 4854}], "url": "/book/11482/"}, "user": {"id": 39182, "name": "\u041c\u0430\u0440\u0438\u044f (@marushka)", "avatar": "avatars/d/7/d7cb155dcbac78a73b64e18797b15e61.jpg", "url": "/user/39182/", "username": "marushka", "gender": 0}, "has_spoilers": false, "review_type": 1, "rated_users": {"positive": [7, 1980, 3094, 8669, 25952], "negative": []}, "comments": []}], "user": {"username": "", "name": "AnonymousUser"}, "objectType": "reviews"};
-  var element = React.createElement(component, props);
-  var container = document.getElementById(containerId);
-  if (!container) throw new Error('Cannot find the container element `#reactComponent-Readly.bookTimelineBox` for component `Readly.bookTimelineBox`');
-  React.render(element, container);
-})(React, Readly.bookTimelineBox, 'reactComponent-Readly.bookTimelineBox');
-
-</script>
-<script>
-
-ga('create', 'UA-47935002-1', 'readly.ru');
-ga('require', 'displayfeatures');
-ga('set', 'dimension1', userName);
-ga('set', 'dimension3', 0);
-ga('set', 'dimension4', 1);
-ga('send', 'pageview');
-
-</script>
-<script async="" defer="" src="https://apis.google.com/js/platform.js">
-  {lang: 'ru'}
-</script>
-<footer class="cf" id="footer"><div class="wrapper"><div class="footer-column"><a class="footer-logo" href="#" rel="nofollow"></a><p class="copy">Ридли.ру © 2013-2023<p><div class="footer--meta"><a class="footer--bookmark" href="javascript:addToFavorite()" rel="nofollow"><i class="icon_sprite bookmark"></i><span>В закладки</span></a><a class="footer--mobile" href="http://m.readly.ru/"><i class="icon_sprite mobile"></i><span>Мобильная версия</span></a></div></p></p></div><div class="footer-column"><span class="h4">Разделы</span><nav><a href="/books/">Что почитать</a><a href="/books/popular/">Популярные книги</a><a href="/books/top/">Рейтинг книг</a><a href="/collections/">Подборки книг</a><a href="/books/new/">Книжные новинки</a><a href="/authors/">Популярные авторы</a><a href="/books/i_am_lucky/">Случайная книга</a></nav></div><div class="footer-column"><span class="h4">Обсуждения</span><nav><a href="/discussions/theme/last/" rel="nofollow">Топики</a><a href="/discussions/reviews/last/" rel="nofollow">Рецензии</a><a href="/discussions/flashmob/last/" rel="nofollow">Флешмобы</a><a href="/discussions/game/last/" rel="nofollow">Игры</a><a href="/discussions/competition/last/" rel="nofollow">Конкурсы</a><a href="/discussions/academy/last/" rel="nofollow">Книжная академия</a><a href="/discussions/flood/last/" rel="nofollow">Флудилка</a></nav></div><div class="footer-column"><span class="h4">Подписки</span><nav><a href="https://vk.com/vmireknig" rel="nofollow" target="_blank">Вконтакте</a><a href="https://twitter.com/ReadlyRu" rel="nofollow" target="_blank">Твиттер</a></nav></div><div class="footer-column"><span class="h4">О проекте</span><nav><a href="/pages/about/" rel="nofollow">Описание сервиса</a><a href="/pages/faq/" rel="nofollow">Вопрос-ответ</a><a class="fancybox fancybox-feedback-form" data-ng-href="#!/#feedback-form" rel="nofollow">Обратная связь</a><a href="http://readly.reformal.ru" rel="nofollow" target="_blank">Предложения</a><a href="/pages/copyright/" rel="nofollow">Правообладателям</a><a href="/pages/contacts/" rel="nofollow">Контакты</a><a href="/pages/rules/" rel="nofollow">Правила</a></nav></div><div class="footer-column footer-column-apps"><span class="h4">Приложения</span><img class="appstore" src="/public/static//images/appstore.png"><img src="/public/static//images/googleplay.png"/></img></div></div></footer>
-<div class="singin-form" id="login-form">
-<div class="singin__head">
-<span class="singin__title">Зарегистрируйтесь, и вы сможете:</span>
-<div class="singin__possibilities clearfix">
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico1"><i></i></div>
-<div class="singin__poss_item_text">
- Получать персональные
-<strong>рекомендации книг</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico2"><i></i></div>
-<div class="singin__poss_item_text">
-Создать собственную
-<strong>виртуальную библиотеку</strong>
-</div>
-</div>
-<div class="singin__poss_item">
-<div class="singin__poss_item_ico ico3"><i></i></div>
-<div class="singin__poss_item_text">
-Следить за тем,
-<strong>что читают Ваши друзья</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="singin__body clearfix">
-<div class="singin__body_col">
-<div class="singin__form_tabs">
-<a class="active" href="/user/register/" rel="nofollow">Регистрация</a>
-</div>
-<form action="/user/register/?next=/book/11482/
-" method="post">
-<input name="csrfmiddlewaretoken" type="hidden" value="4Yk1uwKXV2gnCSQav2af3ZtaOGsbVtS1"/>
-<div class="singin__inputs_form">
-<input name="email" placeholder="E-mail адрес" type="text"/>
-<input name="username" placeholder="Логин" type="text"/>
-<input name="password" placeholder="Пароль" type="password"/>
-<div class="singin__submit_foot">
-<button class="btn-blue-20 fr" onclick="yaCounter22692712.reachGoal('register_button');">Регистрация</button>
-</div>
-</div>
-</form>
-</div>
-<div class="singin__body_col">
-<span class="singin__sub_title">Через соцсети</span>
-<div class="big_social_buttons__container">
-<a class="big_social_button vk" href="/login/vk-oauth2/?next=/" rel="nofollow" title="Вконтакте">
-<i class="icon"></i> Войти через Вконтакт
-</a>
-<a class="big_social_button tw" href="/login/twitter/?next=/" rel="nofollow" title="Twitter">
-<i class="icon"></i> Войти через Твиттер
-</a>
-</div>
-</div>
-</div>
-</div>
-<script>
-    function open_reg_form() {
-        ga('send','event', 'Регистрация', 'open_form_reg');
-        ga('send','pageview', '/user/reg_form/');
-    }
-</script>
-<div id="registration-alert">
-<span>Данное действие доступно только для</span>
-<b>зарегистрированных пользователей</b>
-<a class="btn-green-20" href="/user/register/">Регистрация</a>
-<a class="ui-20" href="/user/login/">Войти на сайт</a>
-</div>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
