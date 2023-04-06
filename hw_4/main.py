@@ -73,6 +73,7 @@ def create_lemm_list():
             for form in w[1].split(','):
                 if form in file.split():
                     k += 1
+                    break
         if k == 0:
             idf[w[0].rstrip(':')] = 0
         else:
@@ -89,7 +90,7 @@ def create_lemm_list():
 
 def main():
     # lemmas
-    #create_lemm_list()
+    create_lemm_list()
 
 
 
