@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 import string
 from nltk import word_tokenize
 import math
@@ -40,14 +41,16 @@ def create_termin_list(filename):
         src_text = f.read().lower()
         return tokenize(src_text)
 
+
 def create_lemm_list():
     lemmas_dict = {}
-    with open('hw_2/lemmas.txt', 'r', encoding='utf-8') as f:
+    with open('../hw_2/lemmas.txt', 'r', encoding='utf-8') as f:
         lemmas = [k.split() for k in f.read().split('\n')]
 
     for k in range(100):
-        with open(f'hw_1/{k}.txt', 'r', encoding='utf-8') as f:
+        with open(f'../hw_1/{k}.txt', 'r', encoding='utf-8') as f:
             file = f.read()
+            file = BeautifulSoup(file).find('body').text
 
         for lem in lemmas:
             count = 0
@@ -55,16 +58,45 @@ def create_lemm_list():
                 count += file.count(form)
             lemmas_dict[lem[0].rstrip(':')] = count
 
-        with open(f'lemm_tf_idf/{k}.txt', 'w', encoding='utf-8') as f:
+    idf = {}
+    corpuses = []
+    for i in range(100):
+        with open(f'../hw_1/{i}.txt', 'r', encoding='utf-8') as f:
+            file = f.read()
+            corpuses.append(BeautifulSoup(file).find('body').text)
+
+    for w in lemmas:
+        print("start lemma: " + w[1])
+        k = 0  # number of documents in the corpus that contain this word
+        for i in range(100):
+            file = corpuses[i]
+            for form in w[1].split(','):
+                if form in file.split():
+                    k += 1
+        if k == 0:
+            idf[w[0].rstrip(':')] = 0
+        else:
+            idf[w[0].rstrip(':')] = math.log(100 / k, 10)
+
+    for k in range(100):
+        with open(f'../hw_1/{k}.txt', 'r', encoding='utf-8') as f:
+            file = f.read()
+            file = BeautifulSoup(file).find('body').text
+        with open(f'{k}_lemm_tf_idf.txt', 'w', encoding='utf-8') as f:
             for x in lemmas_dict.keys():
-                f.write((f'{x} {lemmas_dict[x] / len(file.split())} \n'))
+                f.write(f'{x} {idf[x]} {idf[x] * (lemmas_dict[x] / len(file.split()))} \n')
 
 
 def main():
-    create_lemm_list()
-    '''all_tf_dict = []
+    # lemmas
+    #create_lemm_list()
+
+
+
+    # default tf-idf
+    all_tf_dict = []
     for file_num in range(100):
-        filename = f'hw_1/{file_num}.txt'
+        filename = f'../hw_1/{file_num}.txt'
         termin_list = create_termin_list(filename)
         all_tf_dict.append(create_tf_dict(filename, termin_list))
 
@@ -76,9 +108,9 @@ def main():
                     count += 1
             all_tf_dict[number][word].append(float(all_tf_dict[number][word][0] * math.log(100 / count, 10)))
 
-        with open(f'tf_idf/{number}_tf-ifd.txt', 'w', encoding='utf-8') as f:
+        with open(f'{number}_tf-ifd.txt', 'w', encoding='utf-8') as f:
             for k in tf_dict.keys():
-                f.write(f"{k} {tf_dict[k][0]} {tf_dict[k][1]}'\n'")'''
+                f.write(f"{k} {tf_dict[k][0]} {tf_dict[k][1]}\n")
 
 
 if __name__ == '__main__':
